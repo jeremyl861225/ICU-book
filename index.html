@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ICU Book 重症筆記</title>
+<link rel="stylesheet" href="./css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="./css/ui-sentence.css">
+<script src="./js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="./data/facets.js" defer></script>
+<script src="./js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="./css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="./js/backlink.js" defer></script>
+</head>
+<body>
+<div class="sheet">
+<div class="view active" id="view-home">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book · 5th Edition</div><h1>ICU Book 重症筆記</h1><div class="sub">17 個 Section 的統整式互動筆記：重點卡、對照表、章內公式計算器、決策流程、章末測驗。設計沿用臨床工具箱，可離線使用。</div><div class="xlinks home-xlinks"><a class="flow-link" href="./chapters.html">分章節索引（53 章＋附錄）→</a></div></div>
+  </div>
+
+
+  <!-- 六大範圖的資料節點：造句導覽（js/sentence-nav.js hubsHTML）讀這裡的 id／data-* 畫出六格，
+       與臨床工具箱 index.html 的 #hub 同契約。本套沒有方磚圖版，這一塊由 css/icu.css 隱藏，
+       純當資料；正式版（貓咪）主題下看到的是下面 #home-body 的卡片清單。 -->
+  <div class="hub-grid" id="hub" hidden>
+    <a class="hub-card" id="card-view-access" href="#access" data-label="通路與常規" data-en="Access &amp; Common Practices" data-sub="Section I–III：血管通路、ICU 常規、生理監測"></a>
+    <a class="hub-card" id="card-view-fluid" href="#fluid" data-label="輸液與血品" data-en="Fluids &amp; Blood" data-sub="Section IV–V：靜脈輸液治療、血液成分"></a>
+    <a class="hub-card" id="card-view-circ" href="#circ" data-label="休克與心臟" data-en="Shock &amp; Cardiac" data-sub="Section VI–VII：休克症候群、心臟疾患"></a>
+    <a class="hub-card" id="card-view-resp" href="#resp" data-label="呼吸" data-en="Respiratory" data-sub="Section VIII–IX：呼吸疾患、呼吸治療"></a>
+    <a class="hub-card" id="card-view-renal" href="#renal" data-label="酸鹼、腎臟與電解質" data-en="Acid-Base, Renal &amp; Electrolytes" data-sub="Section X–XI：酸鹼失衡、腎臟與電解質"></a>
+    <a class="hub-card" id="card-view-misc" href="#misc" data-label="腹部、體溫、神經、營養、中毒" data-en="Abdomen · Temperature · Neuro · Nutrition · Toxicology" data-sub="Section XII–XVII"></a>
+  </div>
+  <div class="gs-box" id="gs-home" hidden></div>
+  <div id="home-body">
+  <p class="home-note">每一頁對應原書一個 Section，章節是分頁。內容是<b>改寫與重組</b>後的整理，不搬原書文字與圖表；數字以原書為準，作者觀點與現行指引不同處會分別標示。17 個 Section 全部完成；要找某一章，用<a href="./chapters.html">分章節索引</a>。</p>
+
+  <div class="tool-group">
+    <div class="group-head"><span class="group-title">血管通路與常規</span><span class="group-en">Sections I–III</span><span class="group-count">3 項</span></div>
+    <div class="home-list">
+      <div class="tool-card" id="card-view-access-sec" onclick="location.href='sections/access.html'"><div class="tool-name">血管通路 <span class="tool-en">I · Vascular Access</span></div><div class="tool-desc">Ch 1–3：通路入門、中央靜脈、留置導管 · 3 分頁 · 4 個計算器 · 3 條流程 · 20 題</div></div>
+      <div class="tool-card" id="card-view-practices" onclick="location.href='sections/practices.html'"><div class="tool-name">ICU 常規 <span class="tool-en">II · Common Practices</span></div><div class="tool-desc">Ch 4–6：消化道預防、靜脈血栓預防、鎮痛鎮靜 · 3 分頁 · 5 個計算器 · 3 條流程 · 19 題</div></div>
+      <div class="tool-card" id="card-view-monitoring" onclick="location.href='sections/monitoring.html'"><div class="tool-name">生理監測 <span class="tool-en">III · Physiological Monitoring</span></div><div class="tool-desc">Ch 7–9：血氧與二氧化碳監測、肺動脈導管、全身氧合 · 3 分頁 · 5 個計算器 · 3 條流程 · 18 題</div></div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <div class="group-head"><span class="group-title">循環：輸液、血品、休克、心臟</span><span class="group-en">Sections IV–VII</span><span class="group-count">4 項</span></div>
+    <div class="home-list">
+      <div class="tool-card" id="card-view-fluids" onclick="location.href='sections/fluids.html'"><div class="tool-name">靜脈輸液治療 <span class="tool-en">IV · Intravenous Fluid Therapy</span></div><div class="tool-desc">Ch 10–11：輸液種類、輸液管理與液體反應性 · 2 分頁 · 9 個計算器 · 2 條流程 · 14 題</div></div>
+      <div class="tool-card" id="card-view-blood" onclick="location.href='sections/blood.html'"><div class="tool-name">血液成分 <span class="tool-en">V · Blood Components</span></div><div class="tool-desc">Ch 12–13：貧血與紅血球輸血、血小板與血漿 · 2 分頁 · 8 個計算器 · 2 條流程 · 14 題</div></div>
+      <div class="tool-card" id="card-view-shock" onclick="location.href='sections/shock.html'"><div class="tool-name">休克症候群 <span class="tool-en">VI · Shock Syndromes</span></div><div class="tool-desc">Ch 14–17：總論、出血性、心因性、發炎性（敗血／毒性／過敏）· 4 分頁 · 12 個計算器 · 4 條流程 · 32 題</div></div>
+      <div class="tool-card" id="card-view-cardiac" onclick="location.href='sections/cardiac.html'"><div class="tool-name">心臟疾患 <span class="tool-en">VII · Cardiac Disorders</span></div><div class="tool-desc">Ch 18–21：急性心衰竭、心搏過速、急性冠心症、心跳停止 · 4 分頁 · 16 個計算器 · 4 條流程 · 28 題</div></div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <div class="group-head"><span class="group-title">呼吸</span><span class="group-en">Sections VIII–IX</span><span class="group-count">2 項</span></div>
+    <div class="home-list">
+      <div class="tool-card" id="card-view-respdis" onclick="location.href='sections/respdis.html'"><div class="tool-name">呼吸疾患 <span class="tool-en">VIII · Respiratory Disorders</span></div><div class="tool-desc">Ch 22–24：肺栓塞、氣喘與 COPD、ARDS · 3 分頁 · 13 個計算器 · 3 條流程 · 21 題</div></div>
+      <div class="tool-card" id="card-view-vent" onclick="location.href='sections/vent.html'"><div class="tool-name">呼吸治療 <span class="tool-en">IX · Respiratory Management</span></div><div class="tool-desc">Ch 25–30：氧氣、非侵襲性通氣、傳統機械通氣、呼吸器依賴、VAP、脫離呼吸器 · 6 分頁 · 16 個計算器 · 6 條流程 · 36 題</div></div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <div class="group-head"><span class="group-title">酸鹼、腎臟與電解質</span><span class="group-en">Sections X–XI</span><span class="group-count">2 項</span></div>
+    <div class="home-list">
+      <div class="tool-card" id="card-view-acidbase" onclick="location.href='sections/acidbase.html'"><div class="tool-name">酸鹼失衡 <span class="tool-en">X · Acid-Base Disorders</span></div><div class="tool-desc">Ch 31–33：酸鹼分析、乳酸與酮酸中毒、代謝性鹼中毒 · 3 分頁 · 9 個計算器 · 3 條流程 · 18 題</div></div>
+      <div class="tool-card" id="card-view-renallyte" onclick="location.href='sections/renallyte.html'"><div class="tool-name">腎臟與電解質 <span class="tool-en">XI · Renal &amp; Electrolyte</span></div><div class="tool-desc">Ch 34–38：急性腎損傷、血鈉、鉀、鎂、鈣與磷 · 5 分頁 · 15 個計算器 · 5 條流程 · 30 題</div></div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <div class="group-head"><span class="group-title">腹部、體溫、神經、營養、中毒</span><span class="group-en">Sections XII–XVII</span><span class="group-count">6 項</span></div>
+    <div class="home-list">
+      <div class="tool-card" id="card-view-abdomen" onclick="location.href='sections/abdomen.html'"><div class="tool-name">腹部與骨盆 <span class="tool-en">XII · Abdomen &amp; Pelvis</span></div><div class="tool-desc">Ch 39–42：肝衰竭、急性胰臟炎、腹腔感染、泌尿道感染 · 4 分頁 · 12 個計算器 · 4 條流程 · 24 題</div></div>
+      <div class="tool-card" id="card-view-temp" onclick="location.href='sections/temp.html'"><div class="tool-name">體溫異常 <span class="tool-en">XIII · Altered Body Temperature</span></div><div class="tool-desc">Ch 43–44：體溫調節障礙、ICU 發燒 · 2 分頁 · 10 個計算器 · 2 條流程 · 12 題</div></div>
+      <div class="tool-card" id="card-view-neuro" onclick="location.href='sections/neuro.html'"><div class="tool-name">神經系統 <span class="tool-en">XIV · Nervous System</span></div><div class="tool-desc">Ch 45–47：意識障礙、運動障礙、急性中風 · 3 分頁 · 12 個計算器 · 3 條流程 · 18 題</div></div>
+      <div class="tool-card" id="card-view-nutrition" onclick="location.href='sections/nutrition.html'"><div class="tool-name">營養與代謝 <span class="tool-en">XV · Nutrition &amp; Metabolism</span></div><div class="tool-desc">Ch 48–51：營養需求、腸道營養、靜脈營養、腎上腺與甲狀腺 · 4 分頁 · 12 個計算器 · 3 條流程 · 24 題</div></div>
+      <div class="tool-card" id="card-view-tox" onclick="location.href='sections/tox.html'"><div class="tool-name">中毒與藥物過量 <span class="tool-en">XVI · Overdoses &amp; Poisons</span></div><div class="tool-desc">Ch 52–53：藥物過量、非藥物中毒 · 2 分頁 · 8 個計算器 · 2 條流程 · 12 題</div></div>
+      <div class="tool-card" id="card-view-appendix" onclick="location.href='sections/appendix.html'"><div class="tool-name">附錄 <span class="tool-en">XVII · Appendices</span></div><div class="tool-desc">單位換算、參考值範圍、奇妙的身體 · 3 分頁 · 7 個換算器 · 6 題</div></div>
+    </div>
+  </div>
+
+  </div><!-- /#home-body -->
+
+  <footer class="tool-footer">整理自 Marino PL. Marino's The ICU Book. 5th ed. Wolters Kluwer. 本站為學習筆記，內容經改寫與重組，不含原書文字、圖與表格的複製；臨床決策請以現行指引與病人狀況為準。</footer>
+</div>
+</div>
+<script src="./js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

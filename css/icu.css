@@ -1,0 +1,91 @@
+/* ICU Book（Marino 5e 整理版）— 本套專用的少量補充
+ * 原則：內頁一律用臨床工具箱既有的元件（.lede／.dirhead／details.def-box／.kbox／.def-table／
+ * .rxbox+.rx-*／.flow-*／.refbar／.sp-chips／.flow-link），讓 styles.css → ui-sentence.css → guide.css
+ * 的級聯原樣套上，本檔只補那幾個既有元件沒有的小地方，而且不碰顏色以外的語意。 */
+
+/* 摺疊重點卡的 summary 內附英文小字 */
+details.def-box > summary .en{font-family:var(--mono); font-size:10.5px; font-weight:400; color:var(--muted-soft); margin-left:6px;}
+[data-ui="sentence"] details.def-box > summary .en{font-family:var(--sentence-mono); color:var(--sentence-dim); font-size:10px; letter-spacing:.04em;}
+/* 重點卡第一行的主張 */
+.box-inner .kp{margin:8px 0 6px; font-size:13px; line-height:1.7;}
+/* 卡片內的標籤列（沿用 .dg-tag） */
+.kc-tags{display:flex; gap:5px; flex-wrap:wrap; margin-top:6px;}
+
+/* 區段抬頭右側的「全部展開」鍵 */
+.dirhead .flow-link{margin:0 0 0 auto; padding:3px 9px; font-size:11px;}
+
+/* ── 章內導覽 ──────────────────────────────────────────────────────
+   一條等分的格線列（gap:1px 露出髮絲線的作法與造句首頁的六格相同），每格＝編號小字＋名稱、
+   文字置中；目前所在的區段以 2px 墨底線標示（由 js/icu.js 的捲動偵測更新），不用填色。
+   貼頂：捲到該章深處時仍看得到，只在自己那一個分頁（section）內黏住。 */
+.ch-nav{display:grid; grid-template-columns:repeat(6, minmax(0,1fr)); gap:1px; background:var(--line);
+        border:1px solid var(--line); margin:0 0 16px; padding:0; position:sticky; top:0; z-index:5;}
+.ch-nav .sp-chip{display:flex; align-items:center; justify-content:center; gap:7px; min-height:42px; padding:0 8px;
+        border:0; border-radius:0; background:var(--paper); font-family:var(--sans); font-size:12.5px; letter-spacing:.02em;
+        color:var(--muted); text-decoration:none; position:relative; white-space:nowrap;}
+.ch-nav .sp-chip i{font-style:normal; font-family:var(--mono); font-size:9.5px; letter-spacing:.14em; color:var(--muted-soft);}
+.ch-nav .sp-chip:hover{color:var(--ink); background:var(--hover-bg);}
+.ch-nav .sp-chip.is-cur{color:var(--ink);}
+.ch-nav .sp-chip.is-cur i{color:var(--ink);}
+.ch-nav .sp-chip.is-cur::after{content:''; position:absolute; left:10px; right:10px; bottom:0; height:2px; background:var(--ink);}
+@media (max-width:560px){ .ch-nav{grid-template-columns:repeat(3, minmax(0,1fr));} .ch-nav .sp-chip{min-height:40px; font-size:12px; gap:5px;} }
+[data-ui="sentence"] .ch-nav{background:var(--sentence-line); border-color:var(--sentence-line);}
+[data-ui="sentence"] .ch-nav .sp-chip{background:var(--sentence-bg); border:0; font-family:var(--sentence-sans); font-size:12.5px; color:var(--sentence-fg2); min-height:42px; padding:0 8px;}
+[data-ui="sentence"] .ch-nav .sp-chip i{font-family:var(--sentence-mono); color:var(--sentence-dim);}
+[data-ui="sentence"] .ch-nav .sp-chip:hover{background:var(--sentence-shade); color:var(--sentence-fg);}
+[data-ui="sentence"] .ch-nav .sp-chip.is-cur{color:var(--sentence-fg);}
+[data-ui="sentence"] .ch-nav .sp-chip.is-cur i{color:var(--sentence-fg);}
+[data-ui="sentence"] .ch-nav .sp-chip.is-cur::after{background:var(--sentence-fg);}
+
+/* 計算輸出：每顆 .rx-metric 底下一行小字（旗標＋備註），guide.css 沒有這一格 */
+.rx-sub{font-family:var(--mono); font-size:10px; line-height:1.55; color:#9fb3b8; margin-top:2px;}
+.rx-sub .f-ok{color:#93d3b0;} .rx-sub .f-bad{color:#f0a58e;}
+[data-ui="sentence"] .rx-sub{font-family:var(--sentence-mono); color:var(--sentence-dim);}
+[data-ui="sentence"] .rx-sub .f-ok{color:var(--sentence-calm);} [data-ui="sentence"] .rx-sub .f-bad{color:var(--sentence-hot);}
+.rx-out .rx-grid{gap:10px 16px;}
+/* 輸入區兩欄在窄螢幕會撐出橫向捲軸（label＋input＋單位一列就 200px）：≤560px 改單欄，與 hypertension.html 同一條。輸出格線 ≤420px 才改單欄。 */
+@media (max-width:560px){ .rxbox .rx-grid{grid-template-columns:1fr;} .rx-out .rx-grid{grid-template-columns:1fr 1fr;} }
+@media (max-width:420px){ .rx-out .rx-grid{grid-template-columns:1fr;} }
+/* 輸入列（與 pathways/hypertension.html 同一套）：標籤在左、單位小字在標籤下一行，
+   輸入框一律固定寬、靠右對齊；.rx-u 留空只當佔位，所以每一列的框都對齊同一條右緣。 */
+.rx-row{padding:6px 0; border-bottom:1px dotted var(--line);}
+.rx-row:last-child{border-bottom:0;}
+.rx-row label .rx-en{display:block; font-family:var(--mono); font-size:10px; color:var(--muted); letter-spacing:.04em; margin-top:1px;}
+.rx-row input[type=number], .rx-row select{width:140px; min-width:140px; max-width:140px; box-sizing:border-box; flex:none; text-align:left;
+        height:38px; padding:5px 8px; font-size:15px;}
+.rx-row select{font-family:var(--mono); font-weight:600; appearance:auto; font-size:13px; padding-right:2px;}
+[data-ui="sentence"] .rx-row select{font-size:13px !important; font-weight:600 !important;}
+[data-ui="sentence"] .rx-row input[type=number], [data-ui="sentence"] .rx-row select{width:140px; min-width:140px; max-width:140px; height:40px; padding:5px 8px;
+        background:var(--sentence-bg); border:1px solid var(--sentence-line2); border-radius:0; color:var(--sentence-fg); font-family:var(--sentence-mono); font-weight:700; font-size:16px;}
+.rx-row .toggle-inline{flex:1 1 auto;}
+[data-ui="sentence"] .rx-row{border-bottom-color:var(--sentence-line);}
+[data-ui="sentence"] .rx-row label .rx-en{color:var(--sentence-dim);}
+
+/* 測驗：答完的題目選項不再像可點 */
+.qz-q.done .flow-opt{cursor:default;}
+.qz-q .flow-opt .mono{font-family:var(--mono); font-size:11px; opacity:.7;}
+
+/* 相關工具連結一排 */
+.xlinks{display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 4px;}
+.xlinks .flow-link{margin-top:0; text-decoration:none;}
+
+/* 首頁 */
+.home-note{font-size:12.5px; line-height:1.7; color:var(--muted); margin:0 0 14px;}
+[data-ui="sentence"] .home-note{color:var(--sentence-fg2);}
+.tool-card.soon{opacity:.55; cursor:default;}
+.tool-card.soon .tool-desc:after{content:' · 籌備中'; font-family:var(--mono); font-size:10.5px; color:var(--muted-soft);}
+/* 首頁 #hub 只是造句導覽的資料節點（六格的名稱與說明），本套沒有方磚圖版，兩個主題都不顯示。 */
+#hub{display:none !important;}
+
+/* 單位小字：SI 單位大小寫有意義（mL、mmHg），任何版本的樣式表都不可把它轉大寫 */
+.rx-row label .rx-en{text-transform:none !important;}
+
+/* 指標名稱保留化學符號大小寫（SvO₂、PaCO₂） */
+.rx-metric .rx-lab{text-transform:none !important}
+
+/* 分章節索引 */
+.home-xlinks{margin-top:10px}
+.ch-index td.mono{white-space:nowrap;width:5.5em;color:var(--ink-3,#666)}
+.ch-index td.en{color:var(--ink-3,#666);font-size:.85em}
+.ch-index a.flow-link{padding:0;border:0;background:none;font-weight:600}
+#sec-jump{margin:14px 0 6px}

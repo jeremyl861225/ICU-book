@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>神經系統 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="神經系統">
+<div class="sheet">
+<div class="view active" id="view-neuro">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XIV</div><h1>神經系統</h1><div class="sub">Nervous System Disorders · 意識障礙 → 運動障礙 → 急性中風 · 第 45–47 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-neuro'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="neuro_tabs">
+    <button class="tab-btn active" data-p="consc">意識障礙 <span class="mono">Ch45</span></button>
+    <button class="tab-btn" data-p="move">運動障礙 <span class="mono">Ch46</span></button>
+    <button class="tab-btn" data-p="stroke">急性中風 <span class="mono">Ch47</span></button>
+  </div>
+
+  <!-- ==================== Ch45 Disorders of Consciousness ==================== -->
+  <section class="neuro-panel" data-panel="consc" id="neuro-p-consc">
+    <div class="dirhead"><span class="dh-n">第 45 章 意識障礙</span><span class="dh-e">Chapter 45 · Disorders of Consciousness</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#consc/cs-key"><i>01</i>重點卡</a><a class="sp-chip" href="#consc/cs-tab"><i>02</i>對照表</a><a class="sp-chip" href="#consc/cs-calc"><i>03</i>計算</a><a class="sp-chip" href="#consc/cs-flow"><i>04</i>流程</a><a class="sp-chip" href="#consc/cs-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#consc/cs-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>意識＝覺醒＋覺察</b>：譫妄（覺醒完好、覺察波動；低活動型最常見、BZD 是促發者、沒有藥能治）、植物狀態（有覺醒無覺察）、閉鎖（兩者完整只剩眼動）、昏迷（都沒有）。</span></div>
+        <div class="lede-item"><span>②</span><span><b>酒精戒斷靠 BZD、壓不住想別的</b>：癲癇 lorazepam 2 mg；DT 48–96 小時；抗性（3–4 小時 30–40 mg lorazepam）加 propofol 或 phenobarbital；像戒斷又無效想 Wernicke 與 gabapentin 戒斷。</span></div>
+        <div class="lede-item"><span>③</span><span><b>昏迷看瞳孔、眼反射與 GCS</b>（≤8 昏迷、插管）；腦死＝前提＋腦幹反射全無＋呼吸暫停試驗（PaCO₂ 升 20、6–7 分鐘）、兩次間隔 12 小時。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="cs-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="cs-kc">全部展開</button></div>
+    <div id="cs-kc">
+      <details class="def-box"><summary>01 · 意識的兩個成分 <span class="en">Arousal &amp; awareness</span></summary>
+        <div class="box-inner"><p class="kp"><b>覺醒（可喚醒、清醒度）與覺察（理解自己與環境的關係、反應性）。可喚醒且有覺察：焦慮、嗜睡、閉鎖狀態（腹側橋腦雙側運動路徑受損，只剩上下眼動與眨眼）；可喚醒但無覺察：譫妄（波動）、失智（持續）、精神病、木僵、植物狀態（一個月後稱持續性）；無法喚醒無覺察：昏迷、腦死（再加腦幹功能全失、不可逆）。</b></p>
+          <ul><li>ICU 常見原因：呼吸器鎮靜、休克、腦病變（缺血、敗血、代謝）、藥物過量或戒斷；非抽搐性癲癇常被忽略。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 譫妄 <span class="en">Delirium</span></summary>
+        <div class="box-inner"><p class="kp"><b>腦功能失常、多器官失能的一部分；25–50%，老人與呼吸器病人多。定義：注意力不集中＋急性起病或 24 小時內波動＋（思考混亂或意識改變）。低活動型最常見、最常被漏（「譫妄＝躁動」是誤解）；40% 有精神病症狀，「ICU 精神病」是誤稱；與失智的差別是急性與波動。誘因：敗血症、肝衰竭、尿毒、鎮靜安眠藥——BZD 是主要促發者。</b></p></div></details>
+      <details class="def-box"><summary>03 · 譫妄的處置 <span class="en">Management of delirium</span></summary>
+        <div class="box-inner"><p class="kp"><b>CAM-ICU 篩檢（附錄 II）。沒有藥能預防或矯正；藥只為讓嚴重躁動者平靜：dexmedetomidine 首選（1 μg/kg 10 分可省 → 0.2–1.5 μg/kg/hr；心搏過緩、低血壓、戒斷亢奮）、haloperidol 5 mg IV → 15 分無效 10 mg 或換藥（起效慢）、ziprasidone 只能 IM（沒有靜脈通路時）。預防：止痛、避深鎮靜、睡醒週期、家屬探視、早期活動、避 BZD——重症病人未見成效。</b></p></div></details>
+      <details class="def-box"><summary>04 · 酒精戒斷的時序 <span class="en">Alcohol withdrawal</span></summary>
+        <div class="box-inner"><p class="kp"><b>酒精刺激 GABA 釋放、慢性飲酒讓受體密度增加 → 停酒後興奮。早期（6–8 小時、1–2 天）焦慮噁心震顫；癲癇（6–48 小時、24 小時高峰、可單獨出現）：lorazepam 2 mg IV push，phenytoin 不用；幻覺 12–48 小時；震顫性譫妄 5%、48–96 小時起、3–5 天：高活動型譫妄、幻覺、發燒心搏快高血壓 → 血行動力不穩。譫妄 >5 天想別的原因；沒有低活動型。CIWA-Ar 不用於戒斷譫妄、用 CAM-ICU。</b></p></div></details>
+      <details class="def-box"><summary>05 · 戒斷的治療與 BZD 抗性 <span class="en">Treatment &amp; resistance</span></summary>
+        <div class="box-inner"><p class="kp"><b>Lorazepam 2–4 mg IV q5–10 分到平靜 → 2–4 mg q 幾小時；重症可能要 3–4 小時 30–40 mg lorazepam 或 150–200 mg diazepam。輸注 ≥0.1 mg/kg/hr 不超過 48 小時（propylene glycol）；脂溶性高、越早遞減越好。抗性（上述劑量仍壓不住）：propofol（插管者首選）、phenobarbital 130–260 mg IV q15–20 分（壓呼吸、低血壓）、dexmedetomidine（經驗不佳）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 像戒斷但不是 <span class="en">Wernicke &amp; gabapentin</span></summary>
+        <div class="box-inner"><p class="kp"><b>Wernicke：入院幾天後突然惡化——葡萄糖負荷用掉邊緣的 thiamine；眼震、眼肌麻痺少見；常規 thiamine 100 mg/天不夠治療（第 48 章）。Gabapentin 戒斷：≥3,000 mg/天、停後 12 小時到 7 天、與酒精戒斷無法區分、BZD 無效、恢復 gabapentin 效果戲劇性。</b></p></div></details>
+      <details class="def-box"><summary>07 · 昏迷的原因與運動反應 <span class="en">Coma: etiologies &amp; motor</span></summary>
+        <div class="box-inner"><p class="kp"><b>瀰漫性缺氧缺血、幕上腫塊經天幕疝脫、後顱窩腫塊壓腦幹、腦幹中風、中毒代謝性腦病變（含過量）、非抽搐性重積、假性昏迷（閉鎖、歇斯底里）。自發肌陣攣＝瀰漫失能或肌陣攣性癲癇；鬆弛＝瀰漫腦傷或腦幹；局部缺損（偏癱、反射不對稱）＝占位或局部損傷。對痛：有目的的迴避不是昏迷；去皮質屈曲＝視丘、去大腦伸展＝中腦上橋腦、鬆弛＝下腦幹。自發睜眼＝有覺醒、不是昏迷。</b></p></div></details>
+      <details class="def-box"><summary>08 · 瞳孔與眼反射 <span class="en">Pupils &amp; ocular reflexes</span></summary>
+        <div class="box-inner"><p class="kp"><b>放大有反應：抗膽鹼、興奮劑、dopamine、非抽搐性癲癇；放大無反應：瀰漫腦傷、低體溫 <28、腦幹受壓、顱內壓升；單側放大固定：眼外傷／手術或第三對腦神經受壓；中等有反應：代謝、鎮靜劑、肌鬆劑；中等無反應：急性肝衰竭、缺氧後、腦死；小有反應：代謝；針尖有反應：鴉片，無反應：橋腦。眼頭反射（頸椎不穩不做）：半球受損腦幹完好時眼睛偏離轉頭方向。眼前庭：每耳 50 mL 冰水（先看耳膜），腦幹完好雙眼緩慢偏向灌洗側，兩耳間隔 5 分鐘。</b></p></div></details>
+      <details class="def-box"><summary>09 · GCS <span class="en">Glasgow Coma Scale</span></summary>
+        <div class="box-inner"><p class="kp"><b>睜眼 4／語言 5／運動 6，3–15；插管者語言假分數 1、最高 11。用途：定義昏迷（≤8）、頭部外傷分級（13–15／9–12／≤8）、插管指徵（≤8 呼吸道反射失效）、預後（非外傷性昏迷 ≤6 甦醒機率是 ≤5 的 7 倍）。肌鬆、深鎮靜、低血壓時不可靠。</b></p></div></details>
+      <details class="def-box"><summary>10 · 腦死的前提 <span class="en">Brain death: prerequisites</span></summary>
+        <div class="box-inner"><p class="kp"><b>統一死亡判定法：循環呼吸不可逆停止，或全腦含腦幹功能不可逆停止。多來自 TBI 與 ICH（顱內壓讓腦血流停止）。前提：腦傷 ≥48 小時；收縮壓 ≥100（MAP ≥75 更重要，高於一般 65 以對抗顱內壓）；體溫 >36（TTM <36 者維持 >36 至少 24 小時）；無中樞抑制藥影響（無濃度就等 5 個半衰期，仍不保證腦內清除）。兩次評估間隔 ≥12 小時、有經驗者一人即可。</b></p>
+          <div class="note">原書表 45.6 在前提第二條截斷，依內文重建。</div></div></details>
+      <details class="def-box"><summary>11 · 腦幹反射與呼吸暫停試驗 <span class="en">Brainstem reflexes &amp; apnea test</span></summary>
+        <div class="box-inner"><p class="kp"><b>角膜、瞳孔光、眼頭、眼前庭、嘔吐、咳嗽全無才進行。呼吸暫停試驗：100% 氧預充、基線血氣、脫離呼吸器氣管內給氧、PaCO₂ 約 3 mmHg/分 → 6–7 分鐘升 20、抽血氣接回；升 ≥20 仍無呼吸＝腦死（PaCO₂ 升 1 正常人分鐘通氣多 2 L）。危險：去飽和、低血壓、心律不整——做不完要確認性檢查（EEG、誘發電位、CTA、MRA 不可接受）。死亡時間＝第二次血氣結果出來的時間。</b></p>
+          <ul><li>Lazarus 徵象：腦死者脫離呼吸器後頭、軀幹、上肢短暫自發動作（頸髓放電）。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 家屬 <span class="en">Family care</span></summary>
+        <div class="box-inner"><p class="kp"><b>持續昏迷或植物狀態，花時間向家屬解釋現況與可能的走向，與病人照護同等重要；避免「沉默的共謀」是醫師最大的服務之一。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="cs-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>可喚醒、有覺察</th><th>可喚醒、無覺察</th><th>無法喚醒、無覺察</th></tr>
+      <tr><td>焦慮、嗜睡、閉鎖狀態</td><td>譫妄、失智、精神病、木僵、植物狀態</td><td>昏迷、腦死</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>酒精戒斷</th><th>距最後一杯</th><th>持續</th></tr>
+      <tr><td>焦慮、噁心、震顫</td><td>6–8 小時</td><td>1–2 天</td></tr>
+      <tr><td>全身癲癇（一兩次）</td><td>6–48 小時</td><td>2–3 天</td></tr>
+      <tr><td>幻覺（視、聽、觸）</td><td>12–48 小時</td><td>1–2 天</td></tr>
+      <tr><td>震顫性譫妄</td><td>48–96 小時</td><td>3–5 天</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>GCS</th><th>4／5／6</th><th>3／4／5</th><th>2／3／4</th><th>1／2／3</th><th>—／1／2</th><th>—／—／1</th></tr>
+      <tr><td>睜眼</td><td>自發</td><td>對聲音</td><td>對痛</td><td>無</td><td></td><td></td></tr>
+      <tr><td>語言</td><td>定向</td><td>混亂</td><td>不當字詞</td><td>無意義聲音</td><td>無</td><td></td></tr>
+      <tr><td>運動</td><td>遵囑</td><td>定位痛</td><td>迴避痛</td><td>異常屈曲</td><td>異常伸展</td><td>無</td></tr>
+    </table></div>
+    <div class="dirhead" id="cs-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c45gcs">
+      <div class="rxbox-t">Glasgow Coma Score</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>睜眼 <span class="rx-en">eye</span></label><select id="gc_e"><option value="4">4 自發</option><option value="3">3 對聲音</option><option value="2">2 對痛</option><option value="1">1 無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>語言 <span class="rx-en">verbal</span></label><select id="gc_v"><option value="5">5 定向</option><option value="4">4 混亂</option><option value="3">3 不當字詞</option><option value="2">2 無意義聲音</option><option value="1">1 無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>運動 <span class="rx-en">motor</span></label><select id="gc_m"><option value="6">6 遵囑</option><option value="5">5 定位痛</option><option value="4">4 迴避痛</option><option value="3">3 異常屈曲</option><option value="2">2 異常伸展</option><option value="1">1 無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>已插管 <span class="rx-en">intubated</span></label><select id="gc_t"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c45gcs_out"></div>
+    </div>
+    <div class="rxbox" id="c45delir">
+      <div class="rxbox-t">譫妄：CAM-ICU 要件與躁動用藥</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>急性起病或波動 <span class="rx-en">acute／fluctuating</span></label><select id="dl_a"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>注意力不集中 <span class="rx-en">inattention</span></label><select id="dl_i"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>意識改變 <span class="rx-en">altered LOC</span></label><select id="dl_l"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>思考混亂 <span class="rx-en">disorganized</span></label><select id="dl_t"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>亞型 <span class="rx-en">subtype</span></label><select id="dl_s"><option value="hypo">低活動</option><option value="hyper">高活動</option><option value="mix">混合</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嚴重躁動 <span class="rx-en">severe agitation</span></label><select id="dl_g"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="dl_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c45delir_out"></div>
+    </div>
+    <div class="rxbox" id="c45etoh">
+      <div class="rxbox-t">酒精戒斷：時序與 BZD</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>距最後一杯 <span class="rx-en">hours</span></label><input type="number" id="et_h" step="1" placeholder="60"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="et_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>前 3–4 小時 lorazepam <span class="rx-en">mg</span></label><input type="number" id="et_lz" step="1" placeholder="36"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>已插管 <span class="rx-en">intubated</span></label><select id="et_t"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c45etoh_out"></div>
+    </div>
+    <div class="rxbox" id="c45pupil">
+      <div class="rxbox-t">瞳孔判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>大小 <span class="rx-en">size</span></label><select id="pu_s"><option value="dil">放大</option><option value="mid">中等</option><option value="small">小</option><option value="pin">針尖</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>對光反應 <span class="rx-en">reactive</span></label><select id="pu_r"><option value="y">有</option><option value="n">無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單側放大固定 <span class="rx-en">unilateral</span></label><select id="pu_u"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c45pupil_out"></div>
+    </div>
+    <div class="rxbox" id="c45apnea">
+      <div class="rxbox-t">腦死判定：前提與呼吸暫停試驗</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>距腦傷 <span class="rx-en">hours</span></label><input type="number" id="ap_h" step="1" placeholder="72"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>收縮壓 <span class="rx-en">mmHg</span></label><input type="number" id="ap_s" step="1" placeholder="110"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg（有動脈導管）</span></label><input type="number" id="ap_m" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體溫 <span class="rx-en">°C</span></label><input type="number" id="ap_t" step="0.1" placeholder="36.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>曾 TTM <36 <span class="rx-en">TTM</span></label><select id="ap_ttm"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>鎮靜藥仍有影響 <span class="rx-en">sedatives</span></label><select id="ap_sed"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>基線 PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="ap_b" step="1" placeholder="40"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c45apnea_out"></div>
+    </div>
+    <div class="dirhead" id="cs-flow"><span class="dh-n">決策流程</span><span class="dh-e">Altered consciousness</span></div>
+    <div id="cs_flow">
+      <div class="flow-step" id="cs_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">可以喚醒（或自發睜眼）嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('eye','yes',this)">可以</button>
+          <button class="flow-opt" onclick="csPick('eye','no',this)">不行</button>
+        </div></div>
+      <div class="flow-step" id="cs_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（可喚醒）有覺察嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('aware','yes',this)">有<span class="fo-sub">即使只剩眼動</span></button>
+          <button class="flow-opt" onclick="csPick('aware','no',this)">無</button>
+        </div></div>
+      <div class="flow-step" id="cs_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（昏迷）有局部徵象嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('foc','yes',this)">有<span class="fo-sub">偏癱、反射不對稱、凝視偏向、單側瞳孔</span></button>
+          <button class="flow-opt" onclick="csPick('foc','no',this)">無</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="cs_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="csReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="cs-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_consc"></div>
+    <div class="dirhead" id="cs-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/tbi.html" href="#">頭部外傷</a><a class="flow-link" data-ct="pathways/seizure.html" href="#">癲癇</a><a class="flow-link" href="practices.html#sed">Marino 第 6 章 鎮靜</a><a class="flow-link" href="temp.html#thermo">Marino 第 43 章 低體溫與腦死</a><a class="flow-link" href="cardiac.html#arrest">Marino 第 17 章 心搏停止後</a></div>
+  </section>
+
+  <!-- ==================== Ch46 Disorders of Movement ==================== -->
+  <section class="neuro-panel hidden" data-panel="move" id="neuro-p-move">
+    <div class="dirhead"><span class="dh-n">第 46 章 運動障礙</span><span class="dh-e">Chapter 46 · Disorders of Movement</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#move/mv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#move/mv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#move/mv-calc"><i>03</i>計算</a><a class="sp-chip" href="#move/mv-flow"><i>04</i>流程</a><a class="sp-chip" href="#move/mv-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#move/mv-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>癲癇重積三步</b>：lorazepam 0.1 mg/kg（沒有通路 midazolam IM）→ levetiracetam／fosphenytoin／valproate 等效 → 頑固者插管＋propofol 或 midazolam 麻醉劑量；非抽搐性重積用連續 EEG 找。</span></div>
+        <div class="lede-item"><span>②</span><span><b>無力分三種</b>：肌無力（眼肌、疲勞性、反射保留；血漿置換較快）、GBS（感染後、反射減弱、自主神經不穩；IVIG 或置換）、重症神經肌病變（脫離失敗才發現、無治療）；VC ≤15 mL/kg 或 MIP 弱於 −20 就插管。</span></div>
+        <div class="lede-item"><span>③</span><span><b>肌鬆劑用理想體重、避免長時間</b>：succinylcholine 五禁忌、rocuronium 拔不到管用 sugammadex 16 mg/kg、cisatracurium 不受腎肝影響；清醒癱瘓是酷刑。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="mv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="mv-kc">全部展開</button></div>
+    <div id="mv-kc">
+      <details class="def-box"><summary>01 · 誰會癲癇 <span class="en">Seizure risk</span></summary>
+        <div class="box-inner"><p class="kp"><b>由腦傷的有無與型別決定、不是病情輕重：TBI 20–50%（重積 15–25%）、缺血性腦傷 40%（30%）、腦炎 35–45%（20%）、ICH 20–30%（10–20%）、SAH 10–20%（15%）、無神經疾病 4–15%（<1%）、急性缺血性中風一週內 2–5%。強直、陣攣、肌陣攣（不規則、EEG 無節律放電、不一定算癲癇）、自動症；全身性一定失去意識但不一定抽搐，局部性可進展為全身性；複雜部分性＝清醒但無覺察、常有先兆與自動症。</b></p></div></details>
+      <details class="def-box"><summary>02 · 癲癇重積與非抽搐型 <span class="en">Status epilepticus</span></summary>
+        <div class="box-inner"><p class="kp"><b>≥5 分鐘連續或兩次之間沒恢復意識；>30 分鐘永久神經元傷害。約 20 型；ICU 常見全身抽搐與非抽搐型、肌陣攣型、局部運動型。非抽搐型難認：混亂 49%、昏迷 22%、嗜睡 21%（意識障礙 80%）、語言障礙 15%、肌陣攣 13%、怪異行為 11%、躁動譫妄 8%、幻覺 6%。ICU 意識障礙者連續 EEG（1–2 天）抓到 16%、間歇 4–8%；為意識障礙做的 EEG 37% 有——任何意識障礙都要想、有連續 EEG 就用。</b></p></div></details>
+      <details class="def-box"><summary>03 · 第一步：BZD <span class="en">Step 1</span></summary>
+        <div class="box-inner"><p class="kp"><b>Lorazepam IV 首選：0.05–0.1 mg/kg（或 4 mg）2 分鐘、可重複一次；約 2 分終止、持續 6–12 小時。Midazolam 0.15 mg/kg（或 10 mg）IV 或 IM——IM 與 IV lorazepam 等效、沒有通路時（院前）。Diazepam 從腦洗出快、復發多、不偏好。</b></p></div></details>
+      <details class="def-box"><summary>04 · 第二步：抗癲癇藥 <span class="en">Step 2</span></summary>
+        <div class="box-inner"><p class="kp"><b>1/3 對 BZD 無反應。Levetiracetam 60 mg/kg（≤4,500）5–15 分（無低血壓、無呼吸抑制、無交互作用，副作用最少常被偏好；維持 1,000 q12h）；fosphenytoin 20 mg PE/kg（≤1,500）≤150 mg/min（水溶性前驅藥、無 propylene glycol、比 phenytoin 快 3 倍；維持 100 PE q8h；肝衰竭轉換增加）；valproate 40 mg/kg（≤3,000）5–10 分（等效、不流行、高血氨 40%）。三者終止率相當（約半數）。</b></p></div></details>
+      <details class="def-box"><summary>05 · 第三步：頑固重積 <span class="en">Step 3</span></summary>
+        <div class="box-inner"><p class="kp"><b>10–15%。先插管＋機械通氣（都壓呼吸）、連續 EEG、照會神經重症。Propofol 1–2 mg/kg → 1 mg/kg/hr 到 15（>48 小時 5）；midazolam 0.2 mg/kg → 0.2 mg/kg/hr 到 4；也可 thiopental、phenobarbital、ketamine；無證據哪個較優。死亡率：抽搐型達 21%、非抽搐型約 50%、頑固型達 61%。</b></p>
+          <div class="note">原書表 46.3 在 midazolam 列、46.4 在第三種藥截斷，依內文重建。</div></div></details>
+      <details class="def-box"><summary>06 · 肌無力 <span class="en">Myasthenia gravis</span></summary>
+        <div class="box-inner"><p class="kp"><b>抗體破壞突觸後 ACh 受體、只影響骨骼肌；胸腺瘤 10%；手術、生理壓力、藥物（aminoglycoside、fluoroquinolone、macrolide、penicillin、β 阻斷劑、CCB、Ia 類、肌鬆劑、高劑量類固醇、吸入麻醉劑、鎂）誘發或加重。眼肌一定受累（複視、眼瞼下垂最早；15% 只有眼肌）、對稱肢體無力、活動後加重、純運動、反射保留；危象 15–20%。診斷：冰敷試驗（2 分鐘瞼裂增 2 mm；敏感度專一性 80%）、AChR 抗體（陰性 10–15% 驗 MuSK、其中 40% 陽性）。</b></p></div></details>
+      <details class="def-box"><summary>07 · 肌無力危象的處置 <span class="en">Myasthenic crisis</span></summary>
+        <div class="box-inner"><p class="kp"><b>惡化很快、別等極端：VC ≤15 mL/kg（<1 L）或 MIP 弱於 −20 cm H₂O（正常比 −100 更負）認真考慮插管；BiPAP 只在幾天內預期改善時。IVIG 2 g/kg 分 2–5 天 vs 血漿置換 5 次／7–10 天（各 1–1.5 血漿量）：等效約 70%，置換較快（第 2 次見效 vs 4–5 天）。呼吸衰竭時停 pyridostigmine（分泌物）；高劑量 methylprednisolone 2 g × 2 天有爭議、對 IVIG 或置換有反應者不給。Enoxaparin 40 mg、吞嚥評估、胸部顯影 CT 找胸腺瘤。住院存活 95%、少數完全恢復。</b></p></div></details>
+      <details class="def-box"><summary>08 · Guillain–Barré <span class="en">Guillain–Barré syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>感染後 1–3 週（Campylobacter、Zika、SARS-CoV-2；分子擬態）的發炎性脫髓鞘多發神經病變：感覺異常＋對稱肢體無力幾天到幾週進展、呼吸衰竭 25%、自主神經不穩；80% 自癒但殘疾常見。與 MG 的差別：無眼肌受累（Miller Fisher 變型例外：眼肌麻痺＋失調）、無疲勞性、反射減弱或消失、自主神經不穩、神經傳導慢、CSF 蛋白高。無法獨走或呼吸衰竭：IVIG 或血漿置換（同 MG 方案、指引無偏好）；疼痛是神經病變性：gabapentin 300 mg tid、急性可類鴉片。住院存活 97%、10–15% 重度殘疾。</b></p></div></details>
+      <details class="def-box"><summary>09 · 重症多發神經病變與肌病變 <span class="en">Critical illness neuromyopathy</span></summary>
+        <div class="box-inner"><p class="kp"><b>嚴重全身發炎的次發疾病、常共存、脫離呼吸器失敗才發現。CIP：瀰漫感覺運動軸突神經病變、敗血症最多、重症最常見的周邊神經病變；CIM：瀰漫發炎性肌病變。誘因：敗血症、不動（肌鬆）、高血糖；氣喘用類固醇＋肌鬆也會。鬆弛性肢體與軀幹無力、反射減弱；CIP 神經傳導慢、CIM 肌電圖肌病變與切片（肌凝蛋白喪失、發炎浸潤）。無治療；早期活動與營養未經驗證；一半數月後完全恢復。</b></p></div></details>
+      <details class="def-box"><summary>10 · 肌鬆劑 <span class="en">Neuromuscular blockers</span></summary>
+        <div class="box-inner"><p class="kp"><b>用途：插管、低溫防抖、嚴重不同步。去極化（succinylcholine：1–1.5 mg/kg、1–1.5 分起效、7–12 分；血鉀升 ≤0.5；禁忌高血鉀、惡性高熱、橫紋肌溶解、燒傷、脊髓損傷不動；心搏過緩）vs 非去極化競爭（rocuronium 1 mg/kg、1.5–3 分、50–70 分、5–12 μg/kg/min、無心血管作用、肝功能差延長、已取代 vecuronium；cisatracurium 0.15–0.2 mg/kg、5–7 分、35–50 分、1–3 μg/kg/min、不釋放組織胺、不受腎肝影響）。用理想體重；四連刺激（尺神經 2 Hz）目標 1–2 個抽動。</b></p>
+          <div class="note">原書表 46.7 在腎功能列截斷。</div></div></details>
+      <details class="def-box"><summary>11 · 逆轉與避免長時間肌鬆 <span class="en">Reversal &amp; a plea</span></summary>
+        <div class="box-inner"><p class="kp"><b>Neostigmine ≤70 μg/kg（抑制膽鹼酯酶；恢復 8–45 分視情況；超過有副交感副作用）。Sugammadex 直接結合 aminosteroid（rocuronium 最緊、vecuronium 等效、pancuronium 差）：插管後立即逆轉 16 mg/kg（2–3 分、比 succinylcholine 恢復還快）、深度 4、中度 2 mg/kg、無膽鹼副作用。清醒但癱瘓既恐怖又痛苦：必須重鎮靜＋止痛，但沒有連續 EEG 無法評估——避免長時間肌鬆的主因；還有 CIM、墜積性肺炎、VTE、壓瘡。</b></p></div></details>
+      <details class="def-box"><summary>12 · 發炎再度出擊 <span class="en">Inflammation strikes again</span></summary>
+        <div class="box-inner"><p class="kp"><b>ARDS、AKI、敗血性休克與心搏停止後的多器官衰竭之外，發炎也傷周邊神經（CIP）與骨骼肌（CIM）——發炎是 ICU 裡最致命的力量。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="mv-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>重積</th><th>藥</th><th>劑量</th><th>備註</th></tr>
+      <tr><td>第 1 步</td><td>Lorazepam</td><td>0.1 mg/kg（4 mg）IV 2 分，5 分後可重複</td><td>首選；<2 分起效、6–12 小時</td></tr>
+      <tr><td></td><td>Midazolam</td><td>0.15 mg/kg（10 mg）IV 或 IM</td><td>IM 與 IV lorazepam 等效</td></tr>
+      <tr><td>第 2 步</td><td>Levetiracetam</td><td>60 mg/kg（≤4,500）5–15 分</td><td>副作用最少；維持 1,000 q12h</td></tr>
+      <tr><td></td><td>Fosphenytoin</td><td>20 mg PE/kg（≤1,500）≤150 mg/min</td><td>維持 100 PE q8h</td></tr>
+      <tr><td></td><td>Valproic acid</td><td>40 mg/kg（≤3,000）5–10 分</td><td>高血氨 40%</td></tr>
+      <tr><td>第 3 步</td><td>Propofol</td><td>1–2 mg/kg → 1 mg/kg/hr，最高 15（>48 h 5）</td><td rowspan="2">先插管、連續 EEG</td></tr>
+      <tr><td></td><td>Midazolam</td><td>0.2 mg/kg → 0.2 mg/kg/hr，最高 4</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>特徵</th><th>Guillain–Barré</th><th>肌無力</th></tr>
+      <tr><td>眼肌無力</td><td>無</td><td>有</td></tr>
+      <tr><td>疲勞性無力</td><td>無</td><td>有</td></tr>
+      <tr><td>深腱反射</td><td>減弱</td><td>保留</td></tr>
+      <tr><td>自主神經不穩</td><td>有</td><td>無</td></tr>
+      <tr><td>神經傳導</td><td>慢</td><td>正常</td></tr>
+      <tr><td>腦脊髓液</td><td>蛋白高</td><td>正常</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th></th><th>Succinylcholine</th><th>Rocuronium</th><th>Cisatracurium</th></tr>
+      <tr><td>插管劑量</td><td>1–1.5 mg/kg</td><td>1.0 mg/kg</td><td>0.15–0.2 mg/kg</td></tr>
+      <tr><td>起效</td><td>1–1.5 分</td><td>1.5–3 分</td><td>5–7 分</td></tr>
+      <tr><td>持續</td><td>7–12 分</td><td>50–70 分</td><td>35–50 分</td></tr>
+      <tr><td>輸注</td><td>—</td><td>5–12 μg/kg/min</td><td>1–3 μg/kg/min</td></tr>
+      <tr><td>心血管</td><td>心搏過緩</td><td>無</td><td>無</td></tr>
+      <tr><td>禁忌</td><td>高血鉀、MH、橫紋肌溶解、燒傷、脊髓損傷</td><td>無</td><td>無</td></tr>
+    </table></div>
+    <div class="dirhead" id="mv-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c46se">
+      <div class="rxbox-t">癲癇重積：依體重的三步劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="se_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>步驟 <span class="rx-en">step</span></label><select id="se_s"><option value="1">1 BZD</option><option value="2">2 抗癲癇藥</option><option value="3">3 頑固</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>輸注將 >48 小時 <span class="rx-en">prolonged</span></label><select id="se_l"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c46se_out"></div>
+    </div>
+    <div class="rxbox" id="c46mg">
+      <div class="rxbox-t">神經肌肉無力：插管門檻與治療</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>疾病 <span class="rx-en">syndrome</span></label><select id="mg_d"><option value="mg">肌無力</option><option value="gbs">Guillain–Barré</option><option value="cinm">重症神經肌病變</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肺活量 <span class="rx-en">mL</span></label><input type="number" id="mg_vc" step="10" placeholder="900"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="mg_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>最大吸氣壓 <span class="rx-en">cm H₂O（負值）</span></label><input type="number" id="mg_mip" step="1" placeholder="-18"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>可獨立行走 <span class="rx-en">GBS</span></label><select id="mg_wk"><option value="y">可</option><option value="n">不可</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c46mg_out"></div>
+    </div>
+    <div class="rxbox" id="c46nmb">
+      <div class="rxbox-t">肌鬆劑與逆轉</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥 <span class="rx-en">agent</span></label><select id="nb_a"><option value="sux">Succinylcholine</option><option value="roc">Rocuronium</option><option value="cis">Cisatracurium</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>理想體重 <span class="rx-en">kg</span></label><input type="number" id="nb_w" step="1" placeholder="65"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>阻斷深度 <span class="rx-en">depth</span></label><select id="nb_d"><option value="mod">中度</option><option value="deep">深度</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c46nmb_out"></div>
+    </div>
+    <div class="dirhead" id="mv-flow"><span class="dh-n">決策流程</span><span class="dh-e">Weakness in the ICU</span></div>
+    <div id="wk_flow">
+      <div class="flow-step" id="wk_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">眼肌受累（複視、眼瞼下垂）且活動後加重？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="wkPick('eye','yes',this)">是</button>
+          <button class="flow-opt" onclick="wkPick('eye','no',this)">否</button>
+        </div></div>
+      <div class="flow-step" id="wk_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">深腱反射？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="wkPick('ref','low',this)">減弱或消失</button>
+          <button class="flow-opt" onclick="wkPick('ref','normal',this)">正常</button>
+        </div></div>
+      <div class="flow-step" id="wk_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">情境？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="wkPick2('inf',this)">感染後 1–3 週<span class="fo-sub">感覺異常、自主神經不穩</span></button>
+          <button class="flow-opt" onclick="wkPick2('icu',this)">重症多日、脫離失敗<span class="fo-sub">敗血症、肌鬆、高血糖</span></button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="wk_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="wkReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="mv-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_move"></div>
+    <div class="dirhead" id="mv-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/seizure.html" href="#">癲癇重積流程</a><a class="flow-link" data-ct="tools/rsi.html" href="#">快速插管 RSI</a><a class="flow-link" href="vent.html#wean">Marino 第 30 章 脫離呼吸器</a><a class="flow-link" href="practices.html#vte">Marino 第 5 章 VTE 預防</a><a class="flow-link" href="renallyte.html#k">Marino 第 36 章 高血鉀</a></div>
+  </section>
+
+  <!-- ==================== Ch47 Acute Stroke ==================== -->
+  <section class="neuro-panel hidden" data-panel="stroke" id="neuro-p-stroke">
+    <div class="dirhead"><span class="dh-n">第 47 章 ICU 的急性中風</span><span class="dh-e">Chapter 47 · Acute Stroke in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#stroke/st-key"><i>01</i>重點卡</a><a class="sp-chip" href="#stroke/st-tab"><i>02</i>對照表</a><a class="sp-chip" href="#stroke/st-calc"><i>03</i>計算</a><a class="sp-chip" href="#stroke/st-flow"><i>04</i>流程</a><a class="sp-chip" href="#stroke/st-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#stroke/st-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>缺血性中風的支持有四個數字</b>：SaO₂ 90–92（不是 >94）、血壓 >220/120 才降（溶栓後 <180/105）、血糖 140–180、前 48 小時的燒要壓；aspirin 325、LMWH、不抗凝。</span></div>
+        <div class="lede-item"><span>②</span><span><b>ICH 先逆轉再控壓</b>：warfarin 用 vitamin K ＋ 4F-PCC、dabigatran 用 idarucizumab、Xa 抑制劑用 andexanet；收縮壓 <140；GCS ≤8、腦室內血、疝脫就監測 ICP（<20、CPP 50–70）。</span></div>
+        <div class="lede-item"><span>③</span><span><b>SAH 是最致命的中風</b>：收縮壓 ≤140、3 天內處理動脈瘤、nimodipine 60 mg q4h × 3 週、第 4–14 天盯遲發性腦缺血；一半在 6 個月內死亡或殘疾。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="st-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="st-kc">全部展開</button></div>
+    <div id="st-kc">
+      <details class="def-box"><summary>01 · 氧與通氣 <span class="en">Respiratory support</span></summary>
+        <div class="box-inner"><p class="kp"><b>缺血性中風 85%（20% 栓塞、少數經卵圓孔）。氧是血管收縮劑（100% O₂ 腦血流降 15–30%）又產生活性氧：SaO₂ >94% 結局較差。指引「只在低血氧給氧」卻又「維持 >94」——作者取 90–92、不更高。插管：意識障礙無法保護呼吸道、或呼吸衰竭；正壓通氣升 ICP 降 CPP，審慎。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+      <details class="def-box"><summary>02 · 高血壓 <span class="en">Hypertension</span></summary>
+        <div class="box-inner"><p class="kp"><b>>60% 有高血壓，是維持半影區血流的生理反應（自動調節失靈、血流靠血壓）——早期降壓沒改善結局。未溶栓：前 72 小時只在 >220/120 降（左心衰竭等例外）、24 小時降幅 ≤15%；溶栓後 24 小時 <180/105；取栓後指引 <180/105、有些方案再灌流成功後目標正常。Labetalol 10 mg → 2–8 mg/min 與 nicardipine 5 → 15 mg/hr 等效（clevidipine 與 nicardipine 等效）；純 β 阻斷劑不建議（降心輸出量），取栓成功後可 metoprolol 5–10 mg q6h；nitroprusside 升 ICP 不用。</b></p></div></details>
+      <details class="def-box"><summary>03 · 低血壓、血糖、發燒 <span class="en">Hypotension, glucose, fever</span></summary>
+        <div class="box-inner"><p class="kp"><b>自動調節失靈：低血壓立刻矯正（等張食鹽水；晶體促水腫是用 5% albumin 的理由，尤其低白蛋白）、升壓劑 norepinephrine（快速心房顫動用 phenylephrine）、目標比 MAP 65 高。高血糖 30–50%、傷恢復（乳酸、活性氧、血腦障壁）：>180 才治、目標 140–180（暫時性、太嚴會低血糖）、避含糖輸液。發燒達 60%、前 24–48 小時傷恢復與存活：立刻降（acetaminophen）並找感染（多數研究有感染）；TTM 不改善結局。</b></p></div></details>
+      <details class="def-box"><summary>04 · 血栓預防、aspirin、心臟超音波 <span class="en">Other measures</span></summary>
+        <div class="box-inner"><p class="kp"><b>PE 只 0.4% 但仍預防：LMWH（溶栓者前 24 小時間歇加壓）。Aspirin 325 mg 入院就給（溶栓者第 2 天），每 100 人少 1 次早期復發；不建議抗凝。心臟超音波指徵：疑栓塞（多發梗塞）、心房顫動、透壁 MI、血液培養陽性、VTE 史或隱源性（<55 歲）；TTE 先、不明再 TEE。氣泡試驗：10 mL 攪動食鹽水快速注入（中心或上臂），幾個心動週期後左心出現＝右到左分流（PFO）；有 PFO 不等於因果，但神經恢復好可日後導管關閉。</b></p></div></details>
+      <details class="def-box"><summary>05 · 溶栓後出血 <span class="en">Hemorrhagic transformation</span></summary>
+        <div class="box-inner"><p class="kp"><b>症狀性 ICH 6.4–8.8%：高齡、>180/105、梗塞 >1/3 半球——溶栓後 24 小時 ICU 或中風單位、抗凝抗血小板停 24 小時。無經驗證的治療：cryoprecipitate 10 U（纖維蛋白原 <200 重複；要解凍延遲 ≥20 分，纖維蛋白原濃縮劑更好：免解凍、20 g/L 固定）；沒有 cryo 用 tranexamic acid 1,000 mg IV 10 分；照會神經外科（減壓開顱）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 腦水腫與癲癇 <span class="en">Cerebral edema &amp; seizures</span></summary>
+        <div class="box-inner"><p class="kp"><b>出血與腦水腫決定結局；細胞毒性（壞死）與血管源性（血腦障壁）。缺血性中風不建議監測 ICP、看神經徵象；惡化用高張食鹽水（bolus 優於持續、目標 Na 145–155；mannitol 較差）、不改結局。一週內 20% 症狀性癲癇、1/4 在 4 年內復發：levetiracetam 並出院後續用；不預防。</b></p>
+          <div class="note">原書表 47.3（高張食鹽水配方）只剩標題。</div></div></details>
+      <details class="def-box"><summary>07 · 自發性 ICH：逆轉 <span class="en">ICH: reversal</span></summary>
+        <div class="box-inner"><p class="kp"><b>10–15%（高血壓、抗凝）；30 天死亡一半、存活者 2/3 重度缺損；早期惡化＝血腫擴大 → 立刻逆轉。Warfarin：vitamin K 10 mg IV ＋ 4F-PCC（II、VII、IX、X；30 分 INR 正常化 60% vs FFP 9%、體積小；vitamin K 2 小時起效 24 小時最大）。Dabigatran：idarucizumab 2.5 g × 2（10–30 分）、沒有就 4F-PCC 50 IU/kg。Apixaban／rivaroxaban：andexanet alfa（低劑量 400 mg → 4 mg/min 120 分：末次 ≤5／≤10 mg 且 ≥8 小時；高劑量 800 → 8 mg/min：>5／>10 mg 或 <8 小時或不明；10 分抗 Xa 降 90%、12 小時止血、VTE 10%）、沒有就 4F-PCC 50 IU/kg。Aspirin／clopidogrel：desmopressin（釋放 vWF）。</b></p>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>表 47.4 印成 idarucizumab「2.5 mg」，仿單與 NCS/SCCM 指引都是 2.5 g × 2；4F-PCC 依 INR 的劑量表與 andexanet 高劑量方案在抽出時截斷。</div></div></details>
+      <details class="def-box"><summary>08 · ICH：血壓、ICP、其他 <span class="en">ICH: BP, ICP</span></summary>
+        <div class="box-inner"><p class="kp"><b>收縮壓 <140。ICP 監測指徵：GCS ≤8、腦室內血、經天幕疝脫證據（單側瞳孔放大）；ICP <20（腦室導管引流）；CPP ＝ MAP − ICP 目標 50–70。腦室內血常阻塞性水腦：腦室導管引流＋腦室內溶栓。DVT 預防入院就開始（前 24 小時間歇加壓、之後依穩定度 heparin）；不預防癲癇、一週內 15% 有癲癇要 levetiracetam；意識障礙者連續 EEG 24–36 小時；多數照會神經外科（大或擴大血腫、腦室內血）。</b></p></div></details>
+      <details class="def-box"><summary>09 · SAH：傷害來源與立即處置 <span class="en">SAH: injury &amp; immediate care</span></summary>
+        <div class="box-inner"><p class="kp"><b>囊狀動脈瘤破裂：25% 到院前死亡、住院再 20%、6 個月 35% 死亡或殘疾（合計過半）；平均 55 歲。傷害：蛛網膜下血的發炎（血管源性＋細胞毒性水腫、鐵的 hydroxyl radical 與 ferroptosis）、阻塞性水腦、第 4–14 天遲發性腦缺血（1/3；血管痙攣＋血栓）、腦外器官（ARDS、AKI）。立即：逆轉抗血栓、收縮壓 ≤140（<140 再出血少見；labetalol、不可增加心輸出量）、抗纖溶劑無效不用；3 天內處理動脈瘤（夾或栓塞）結局較好、別拖過 7–10 天。</b></p></div></details>
+      <details class="def-box"><summary>10 · SAH：遲發性腦缺血與一般措施 <span class="en">SAH: DCI &amp; general</span></summary>
+        <div class="box-inner"><p class="kp"><b>Nimodipine 60 mg PO q4h × 3 週、越早越好（減神經缺損、不改存活；IV 低血壓不用）。監測：新局部缺損或 GCS 掉 2；CTA 與經顱都卜勒（中大腦動脈流速）敏感度約 90%；嚴重用動脈內血管擴張劑或血管成形術。ICP 同 ICH（水腦引流、<20；存活者要永久分流）。VTE 達 25%：修補後 enoxaparin 40 mg 安全。發燒常見且傷結局，但退燒與降溫沒改善結局；前 72 小時高血糖傷結局但指引無建議；低血鈉 35%（可能腦性鹽耗）意義未定。</b></p></div></details>
+      <details class="def-box"><summary>11 · 牛肉在哪裡？ <span class="en">Where’s the beef?</span></summary>
+        <div class="box-inner"><p class="kp"><b>美國每年 795,000 中風、缺血性 676,000；接受溶栓 5% 與／或取栓 2% 共 47,320；1/9 獲益 → 5,258；占缺血性中風 0.8%。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="st-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>情境</th><th>血壓目標</th><th>備註</th></tr>
+      <tr><td>缺血性、未溶栓</td><td>前 72 小時只在 >220/120 降</td><td>24 小時降幅 ≤15%</td></tr>
+      <tr><td>溶栓後</td><td><180/105 × 24 小時</td><td>>180/105 是出血危險因子</td></tr>
+      <tr><td>取栓後</td><td><180/105（有些方案 <140/90）</td><td>可 metoprolol 5–10 mg q6h</td></tr>
+      <tr><td>ICH</td><td>收縮壓 <140</td><td>先逆轉抗血栓</td></tr>
+      <tr><td>SAH</td><td>收縮壓 ≤140</td><td>Labetalol；不增心輸出量</td></tr>
+      <tr><td colspan="3">Labetalol 10 mg IV → 2–8 mg/min；nicardipine 5 mg/hr → +2.5 到 15；nitroprusside 不用</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>抗血栓藥</th><th>逆轉</th></tr>
+      <tr><td>Warfarin</td><td>Vitamin K 10 mg IV ＋ 4F-PCC（依 INR）</td></tr>
+      <tr><td>Dabigatran</td><td>Idarucizumab 2.5 g IV，15 分內再 2.5 g；無則 4F-PCC 50 IU/kg</td></tr>
+      <tr><td>Apixaban／rivaroxaban</td><td>Andexanet alfa 低劑量 400 mg → 4 mg/min × 120 分；高劑量 800 mg → 8 mg/min × 120 分；無則 4F-PCC 50 IU/kg</td></tr>
+      <tr><td>Aspirin／clopidogrel</td><td>Desmopressin</td></tr>
+      <tr><td>溶栓後出血</td><td>Cryoprecipitate 10 U（纖維蛋白原濃縮劑更好）；無則 tranexamic acid 1 g</td></tr>
+    </table></div>
+    <div class="dirhead" id="st-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c47bp">
+      <div class="rxbox-t">血壓：目標與用藥</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>情境 <span class="rx-en">setting</span></label><select id="bp_t"><option value="isch">缺血性、未溶栓</option><option value="lytic">溶栓後</option><option value="thromb">取栓後</option><option value="ich">ICH</option><option value="sah">SAH</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>收縮壓 <span class="rx-en">mmHg</span></label><input type="number" id="bp_s" step="1" placeholder="195"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>舒張壓 <span class="rx-en">mmHg</span></label><input type="number" id="bp_d" step="1" placeholder="100"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>快速心房顫動 <span class="rx-en">rapid AF</span></label><select id="bp_af"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c47bp_out"></div>
+    </div>
+    <div class="rxbox" id="c47cpp">
+      <div class="rxbox-t">ICP 監測指徵與腦灌流壓</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>GCS <span class="rx-en">score</span></label><input type="number" id="cp_g" step="1" placeholder="7"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腦室內血 <span class="rx-en">IVH</span></label><select id="cp_v"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疝脫徵象 <span class="rx-en">unilateral pupil</span></label><select id="cp_h"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg</span></label><input type="number" id="cp_m" step="1" placeholder="85"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ICP <span class="rx-en">mmHg</span></label><input type="number" id="cp_i" step="1" placeholder="24"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c47cpp_out"></div>
+    </div>
+    <div class="rxbox" id="c47rev">
+      <div class="rxbox-t">顱內出血：逆轉抗血栓</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥物 <span class="rx-en">agent</span></label><select id="rv_a"><option value="warf">Warfarin</option><option value="dabi">Dabigatran</option><option value="xa">Apixaban／rivaroxaban</option><option value="plt">Aspirin／clopidogrel</option><option value="tpa">溶栓後出血</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rv_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>INR <span class="rx-en">warfarin</span></label><input type="number" id="rv_i" step="0.1" placeholder="3.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>末次劑量 <span class="rx-en">mg（Xa）</span></label><input type="number" id="rv_d" step="0.5" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>距末次 <span class="rx-en">hours</span></label><input type="number" id="rv_h" step="1" placeholder="6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>纖維蛋白原 <span class="rx-en">mg/dL</span></label><input type="number" id="rv_f" step="10" placeholder="150"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c47rev_out"></div>
+    </div>
+    <div class="rxbox" id="c47misc">
+      <div class="rxbox-t">支持目標：血糖、氧、體溫、SAH</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血糖 <span class="rx-en">mg/dL</span></label><input type="number" id="ms_g" step="1" placeholder="210"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SpO₂ <span class="rx-en">%</span></label><input type="number" id="ms_o" step="1" placeholder="97"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體溫 <span class="rx-en">°C</span></label><input type="number" id="ms_t" step="0.1" placeholder="38.4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SAH <span class="rx-en">aneurysmal</span></label><select id="ms_sah"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SAH 第幾天 <span class="rx-en">day</span></label><input type="number" id="ms_d" step="1" placeholder="6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>GCS 下降 <span class="rx-en">points</span></label><input type="number" id="ms_gd" step="1" placeholder="2"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c47misc_out"></div>
+    </div>
+    <div class="dirhead" id="st-flow"><span class="dh-n">決策流程</span><span class="dh-e">Stroke type: first priorities</span></div>
+    <div id="st_flow">
+      <div class="flow-step" id="st_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">中風型別？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="stPick('type','isch',this)">缺血性</button>
+          <button class="flow-opt" onclick="stPick('type','ich',this)">自發性腦出血</button>
+          <button class="flow-opt" onclick="stPick('type','sah',this)">蛛網膜下腔出血</button>
+        </div></div>
+      <div class="flow-step" id="st_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（ICH）正在用抗血栓藥嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="stPick('anti','yes',this)">有</button>
+          <button class="flow-opt" onclick="stPick('anti','no',this)">無</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="st_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="stReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="st-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_stroke"></div>
+    <div class="dirhead" id="st-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/stroke.html" href="#">中風</a><a class="flow-link" data-ct="tools/nihss.html" href="#">NIHSS</a><a class="flow-link" data-ct="pathways/ich.html" href="#">顱內出血流程</a><a class="flow-link" data-ct="tools/ich-score.html" href="#">ICH score</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a><a class="flow-link" href="temp.html#fever" >Marino 第 44 章 退燒</a><a class="flow-link" href="renallyte.html#na">Marino 第 35 章 高張食鹽水</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 45–47 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34401939/" target="_blank" rel="noopener" class="ref-link">Stollings et al. Delirium in critical illness: manifestations, outcomes, management. ICM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11730446/" target="_blank" rel="noopener" class="ref-link">Ely et al. Delirium in mechanically ventilated patients: CAM-ICU validity. JAMA 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11445689/" target="_blank" rel="noopener" class="ref-link">Ely et al. Validation of the CAM-ICU. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24476433/" target="_blank" rel="noopener" class="ref-link">Reade & Finfer. Sedation and delirium in the ICU. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30113379/" target="_blank" rel="noopener" class="ref-link">Devlin et al. PADIS guidelines: pain, agitation/sedation, delirium, immobility, sleep. CCM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30346242/" target="_blank" rel="noopener" class="ref-link">Girard et al. Haloperidol and ziprasidone for delirium in critical illness (MIND-USA). NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30506354/" target="_blank" rel="noopener" class="ref-link">Bannon et al. Non-pharmacological interventions for delirium in critically ill: meta-analysis. ICM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18929942/" target="_blank" rel="noopener" class="ref-link">Tetrault & O'Connor. Substance abuse and withdrawal in the critical care setting. Crit Care Clin 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10094637/" target="_blank" rel="noopener" class="ref-link">D'Onofrio et al. Lorazepam for prevention of recurrent alcohol-related seizures. NEJM 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24351375/" target="_blank" rel="noopener" class="ref-link">Mueller et al. Dexmedetomidine as adjunctive therapy for alcohol withdrawal: RCT. CCM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26721643/" target="_blank" rel="noopener" class="ref-link">Mersfelder & Nichols. Gabapentin: abuse, dependence, and withdrawal. Ann Pharmacother 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16374153/" target="_blank" rel="noopener" class="ref-link">Stevens & Bhardwaj. Approach to the comatose patient. CCM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11511736/" target="_blank" rel="noopener" class="ref-link">Bateman. Neurological assessment of coma. JNNP 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/4136544/" target="_blank" rel="noopener" class="ref-link">Teasdale & Jennett. Assessment of coma and impaired consciousness: a practical scale. Lancet 1974</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2241614/" target="_blank" rel="noopener" class="ref-link">Sacco et al. Nontraumatic coma: GCS and etiology as predictors of outcome. Arch Neurol 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37829552/" target="_blank" rel="noopener" class="ref-link">Lewis et al. 2023 AAN/AAP/CNS/SCCM brain death/death by neurologic criteria consensus guideline. Neurol Clin Pract 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11061269/" target="_blank" rel="noopener" class="ref-link">Goudreau et al. Complications during apnea testing in brain death determination. Neurology 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6540387/" target="_blank" rel="noopener" class="ref-link">Ropper. Unusual spontaneous movements in brain-dead patients. Neurology 1984</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/38117319/" target="_blank" rel="noopener" class="ref-link">Rossetti et al. Status epilepticus in the ICU. ICM 2024</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26336950/" target="_blank" rel="noopener" class="ref-link">Trinka et al. ILAE definition and classification of status epilepticus. Epilepsia 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30123679/" target="_blank" rel="noopener" class="ref-link">Sutter et al. Nonconvulsive status epilepticus: epidemiology, diagnosis, management. Neurol Clin Pract 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32716479/" target="_blank" rel="noopener" class="ref-link">Rossetti et al. Continuous vs routine EEG in critically ill adults with altered consciousness (CERTA). JAMA Neurol 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10668693/" target="_blank" rel="noopener" class="ref-link">Towne et al. Prevalence of nonconvulsive status epilepticus in comatose patients. Neurology 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26900382/" target="_blank" rel="noopener" class="ref-link">Glauser et al. AES guideline: treatment of convulsive status epilepticus. Epilepsy Curr 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22335736/" target="_blank" rel="noopener" class="ref-link">Silbergleit et al. Intramuscular vs intravenous therapy for prehospital status epilepticus (RAMPART). NEJM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9738086/" target="_blank" rel="noopener" class="ref-link">Treiman et al. Four treatments for generalized convulsive status epilepticus. NEJM 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31774955/" target="_blank" rel="noopener" class="ref-link">Kapur et al. Three anticonvulsant medications for status epilepticus (ESETT). NEJM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30953957/" target="_blank" rel="noopener" class="ref-link">Nordlund. IV valproic acid in status epilepticus and hyperammonemia. Seizure 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28029925/" target="_blank" rel="noopener" class="ref-link">Gilhus. Myasthenia gravis. NEJM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33917535/" target="_blank" rel="noopener" class="ref-link">Sheikh et al. Drugs that can induce or deteriorate myasthenia gravis. J Clin Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33064188/" target="_blank" rel="noopener" class="ref-link">Lotan et al. Exacerbation of myasthenia gravis following corticosteroids: systematic review. J Neurol 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37114503/" target="_blank" rel="noopener" class="ref-link">Claytor et al. Myasthenic crisis. Muscle Nerve 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10406606/" target="_blank" rel="noopener" class="ref-link">Golnik et al. An ice test for the diagnosis of myasthenia gravis. Ophthalmology 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15048899/" target="_blank" rel="noopener" class="ref-link">McConville et al. MuSK antibodies in seronegative myasthenia gravis. Ann Neurol 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33647239/" target="_blank" rel="noopener" class="ref-link">Shahrizaila et al. Guillain-Barré syndrome. Lancet 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37814552/" target="_blank" rel="noopener" class="ref-link">van Doorn et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18443311/" target="_blank" rel="noopener" class="ref-link">Alshekhlee et al. Guillain-Barré syndrome: incidence and mortality in US hospitals. Neurology 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32076765/" target="_blank" rel="noopener" class="ref-link">Vanhorebeek et al. ICU-acquired weakness. ICM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33734888/" target="_blank" rel="noopener" class="ref-link">Cheung et al. Pathophysiology and management of critical illness polyneuropathy and myopathy. J Appl Physiol 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16932235/" target="_blank" rel="noopener" class="ref-link">Maramattom & Wijdicks. Acute neuromuscular weakness in the ICU. CCM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27755068/" target="_blank" rel="noopener" class="ref-link">Murray et al. Guidelines for sustained neuromuscular blockade in the adult critically ill. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9926179/" target="_blank" rel="noopener" class="ref-link">Andrews et al. Rocuronium vs succinylcholine in rapid-sequence induction. Acta Anaesthesiol Scand 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6690210/" target="_blank" rel="noopener" class="ref-link">Parker et al. Perceptions of a critically ill patient experiencing therapeutic paralysis. CCM 1984</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29367334/" target="_blank" rel="noopener" class="ref-link">Powers et al. AHA/ASA 2018 guidelines for early management of acute ischemic stroke. Stroke 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26022637/" target="_blank" rel="noopener" class="ref-link">Hemphill et al. AHA/ASA guidelines for spontaneous intracerebral hemorrhage. Stroke 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37212182/" target="_blank" rel="noopener" class="ref-link">Hoh et al. 2023 AHA/ASA guideline for aneurysmal subarachnoid hemorrhage. Stroke 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31127402/" target="_blank" rel="noopener" class="ref-link">López et al. Post-procedural hyperoxia and poor outcome after mechanical thrombectomy. Ann Intensive Care 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18606927/" target="_blank" rel="noopener" class="ref-link">Qureshi. Acute hypertensive response in patients with stroke. Circulation 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34217067/" target="_blank" rel="noopener" class="ref-link">El-Ghoroury et al. Blood pressure control in acute stroke: labetalol or nicardipine? J Stroke Cerebrovasc Dis 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25643903/" target="_blank" rel="noopener" class="ref-link">Saxena et al. Early temperature and mortality in acute neurological diseases. ICM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33059297/" target="_blank" rel="noopener" class="ref-link">Keller et al. Pulmonary embolism and in-hospital mortality in ischemic stroke. J Neurol Sci 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18046029/" target="_blank" rel="noopener" class="ref-link">Handke et al. Patent foramen ovale and cryptogenic stroke in older patients. NEJM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27289487/" target="_blank" rel="noopener" class="ref-link">Whiteley et al. Risk of intracerebral hemorrhage with alteplase after ischemic stroke. Lancet Neurol 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32227294/" target="_blank" rel="noopener" class="ref-link">Cook et al. Guidelines for the acute treatment of cerebral edema in neurocritical care. Neurocrit Care 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9707191/" target="_blank" rel="noopener" class="ref-link">Schwarz et al. Hypertonic saline, HES and mannitol in increased ICP after stroke. Stroke 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26818728/" target="_blank" rel="noopener" class="ref-link">Leung et al. Prognosis of symptomatic seizures after ischaemic stroke. JNNP 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26714677/" target="_blank" rel="noopener" class="ref-link">Frontera et al. NCS/SCCM guideline for reversal of antithrombotics in intracranial hemorrhage. Neurocrit Care 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23935011/" target="_blank" rel="noopener" class="ref-link">Sarode et al. 4-factor PCC vs plasma in vitamin K antagonist major bleeding. Circulation 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30730782/" target="_blank" rel="noopener" class="ref-link">Connolly et al. Andexanet alfa for bleeding associated with factor Xa inhibitors (ANNEXA-4). NEJM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27637674/" target="_blank" rel="noopener" class="ref-link">Macdonald & Schweizer. Spontaneous subarachnoid haemorrhage. Lancet 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24323051/" target="_blank" rel="noopener" class="ref-link">Macdonald. Delayed neurological deterioration after subarachnoid haemorrhage. Nat Rev Neurol 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24911172/" target="_blank" rel="noopener" class="ref-link">Tang et al. Risk factors for rebleeding of aneurysmal SAH: meta-analysis. PLoS One 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18797350/" target="_blank" rel="noopener" class="ref-link">Naidech et al. Fever burden and functional recovery after subarachnoid hemorrhage. Neurosurgery 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28359980/" target="_blank" rel="noopener" class="ref-link">Church et al. Number needed to treat for stroke thrombectomy: meta-analysis. Clin Neurol Neurosurg 2017</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/neuro.js"></script>
+<script>ICU.makeTabs('neuro'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

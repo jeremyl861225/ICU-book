@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ICU 常規 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="ICU 常規">
+<div class="sheet">
+<div class="view active" id="view-practices">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section II</div><h1>ICU 常規</h1><div class="sub">Common Practices · 消化道預防 → 靜脈血栓預防 → 鎮痛與鎮靜 · 第 4–6 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-practices'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="practices_tabs">
+    <button class="tab-btn active" data-p="gi">消化道預防 <span class="mono">Ch4</span></button>
+    <button class="tab-btn" data-p="vte">血栓預防 <span class="mono">Ch5</span></button>
+    <button class="tab-btn" data-p="sed">鎮痛鎮靜 <span class="mono">Ch6</span></button>
+  </div>
+
+  <!-- ==================== Ch4 Alimentary Prophylaxis ==================== -->
+  <section class="practices-panel" data-panel="gi" id="practices-p-gi">
+    <div class="dirhead"><span class="dh-n">第 4 章 消化道預防</span><span class="dh-e">Chapter 4 · Alimentary Prophylaxis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#gi/gi-key"><i>01</i>重點卡</a><a class="sp-chip" href="#gi/gi-tab"><i>02</i>對照表</a><a class="sp-chip" href="#gi/gi-calc"><i>03</i>計算</a><a class="sp-chip" href="#gi/gi-flow"><i>04</i>流程</a><a class="sp-chip" href="#gi/gi-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#gi/gi-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>腸道是多重器官衰竭的馬達</b>：0.1 mm 厚的黏膜擋著 100–400 兆隻細菌，dysbiosis 或內臟低灌流一破，病原與發炎介質就入血、自我延續。</span></div>
+        <div class="lede-item"><span>②</span><span><b>胃酸是抗菌劑不是消化劑</b>：pH 2 一小時清掉 Salmonella；制酸換來 C. difficile 與肺炎。</span></div>
+        <div class="lede-item"><span>③</span><span><b>壓力性潰瘍預防「更多麻煩而非價值」</b>：顯著出血本來就少、藥效只有 1–2 個百分點、沒有存活效益、把副作用算進去淨效益為零——足量腸道餵食就是預防。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="gi-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="gi-kc">全部展開</button></div>
+    <div id="gi-kc">
+      <details class="def-box"><summary>01 · 腸道微生物群 <span class="en">Intestinal microbiome</span></summary>
+        <div class="box-inner"><p class="kp"><b>約 7 萬個菌種基因組、總重 2 kg、99% 在大腸；胃最少（&lt;1,000/mL）。</b></p>
+          <ul><li>保護機轉：常駐菌占滿黏附位、短鏈脂肪酸供黏膜細胞燃料、菌產物維持 GALT 功能。</li><li>Dysbiosis 三者皆失 → 病原移位（translocation）→ 敗血症與 MOF 的主要來源。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 腸道是 MOF 的馬達 <span class="en">The motor of multiorgan failure</span></summary>
+        <div class="box-inner"><p class="kp"><b>Dysbiosis 或內臟低灌流 → 黏膜屏障破 → 病原／介質入血 → 全身發炎 → 交感活化、內臟血管收縮 → 屏障再破。</b></p>
+          <ul><li>MOF 是重症最主要死因：持續或惡化的全身發炎＋≥2 個主要器官漸進失能。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 胃酸是抗菌劑 <span class="en">Gastric acid as antiseptic</span></summary>
+        <div class="box-inner"><p class="kp"><b>Achlorhydria 不會營養不良；Salmonella 在 pH 4 繁殖、pH 3 逐漸死、pH 2 一小時清光（胃液 pH 1–2）。</b></p>
+          <ul><li>制酸（H₂ 阻斷劑、PPI）→ Salmonella／Campylobacter 腸炎、C. difficile 增加。</li><li>Lister 的第一個消毒劑是石炭酸——酸的抗菌價值從消毒醫學誕生就已知。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 口腔去污：chlorhexidine 與 SOD <span class="en">Oral decontamination</span></summary>
+        <div class="box-inner"><p class="kp"><b>Chlorhexidine 證據翻船（合併分析死亡率上升，指引撤回）；SOD 有效卻被忽略。</b></p>
+          <ul><li>每天 750 mL 唾液、每 mL 百萬隻菌；吸入 0.13% 就是一百萬隻。重症者口咽被革蘭氏陰性桿菌定殖，是上皮黏附蛋白構型改變，與環境無關。</li>
+            <li>Chlorhexidine 0.12% q6h（2% 會黏膜潰瘍）：有研究 VAP 相對降 30% 但無死亡率效益，11 試驗合併死亡率上升 → ERS/ESICM 指引撤回；且它主要對革蘭氏陽性菌。</li>
+            <li><b>SOD</b>：2% gentamicin＋2% colistin＋2% vancomycin 藥膏塗口腔 qid → VAP↓、革蘭氏陰性菌血症相對 −33%。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 選擇性消化道去污 SDD <span class="en">Selective digestive decontamination</span></summary>
+        <div class="box-inner"><p class="kp"><b>降感染、降死亡率、GN 菌血症 −67%；30 年研究沒有看到抗藥性增加，仍被忽視。</b></p>
+          <ul><li>方案：口腔膏（2% polymyxin／tobramycin／amphotericin q6h）＋鼻胃管 10 mL（polymyxin E 100 mg、tobramycin 80 mg、amphotericin 500 mg）q6h ＋ IV cefuroxime 1.5 g q8h 前 4 天；去污需 5–7 天；預計 ICU >72 小時者用到轉出。</li>
+            <li>保留厭氧正常菌群；MDR 盛行的 ICU 效益消失。</li><li>有研究 SDD 讓導管相關菌血症<b>歸零</b>——呼應第 3 章「來源是腸道」。</li><li>5 年前瞻與 16 年生態研究都無抗藥性上升。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 益生菌 <span class="en">Probiotics</span></summary>
+        <div class="box-inner"><p class="kp"><b>Lactobacillus／Bifidobacterium／Saccharomyces；預防 C. difficile 只在抗生素開始 2 天內起用才有效。</b></p>
+          <ul><li>也可能減少肝性腦病變與 VAP；prebiotics 是纖維、兩者合稱 synbiotics。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 壓力性黏膜損傷的機轉 <span class="en">Stress-related mucosal injury</span></summary>
+        <div class="box-inner"><p class="kp"><b>起因是黏膜缺血，酸只是加重；胃 70–90% 血流供給黏膜。</b></p>
+          <ul><li>黏液層 pH 7 靠 prostacyclin／NO 維持的血流養著；非低血壓病人（尤其呼吸器）也常有隱性胃低灌流。</li><li>入 ICU 24 小時內 75–100% 可見糜爛，但「顯著出血」少見。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 出血風險分層（BMJ 2020） <span class="en">Risk stratification</span></summary>
+        <div class="box-inner"><p class="kp"><b>最高 8–10%：呼吸器 &gt;24 h 且無腸道餵食、慢性肝病；高 4–8%：凝血病變或 ≥2 項中度；中度 2–4% 不預防。</b></p>
+          <ul><li>顯著出血＝明顯出血＋（血壓降 ≥20 ／ 開升壓劑或 +20% ／ Hb 降 ≥2 g/dL ／ 輸 ≥2 U）。</li><li>凝血病變＝血小板 &lt;50k、INR &gt;1.5 或 PT &gt;20 秒。</li><li><b>類固醇不是危險因子</b>（25 研究合併對任何嚴重度出血都無影響）；治療性抗凝也不是。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文截斷</div>表 4.2 的中度風險條件在抽出時只剩第一項「呼吸器 &gt;24 h 且有餵食」，其餘依原表補不齊；計算器用「其他中度條件數」讓你自填。</div></div></details>
+      <details class="def-box"><summary>09 · 預防藥物與它們的代價 <span class="en">Prophylaxis: drugs, efficacy, risks</span></summary>
+        <div class="box-inner"><p class="kp"><b>效力 PPI &gt; H₂ &gt; sucralfate，沒有一種有存活效益；&gt;80% ICU 病人在吃、70% 不需要。</b></p>
+          <ul><li>Famotidine 20 mg q12h（CrCl &lt;50 減半，累積會神經毒性）；pantoprazole 40 mg qd（IV，腎不調）；omeprazole 40／lansoprazole 30 qd；sucralfate 1 g q6h。</li>
+            <li>SUP-ICU（3,298 人）：對照組出血 4.2%、pantoprazole 效果 1.7%；PPI 讓 C. difficile 三倍、肺炎增加；加上 clopidogrel 交互作用的心肌缺血後，<b>複合結局與安慰劑無差</b>。</li>
+            <li>Sucralfate 保留胃酸、肺炎較少，但不能與管灌併用（bezoar），且結合 ciprofloxacin、digoxin、phenytoin、thyroxine、warfarin 等。</li>
+            <li>六個試驗停 pantoprazole 不增出血；三個研究合併：足量腸道餵食下制酸效益消失。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 作者觀點：胃酸恐懼症 <span class="en">Gastric acidophobia</span></summary>
+        <div class="box-inner"><p class="kp"><b>可樂 pH 2.24、檸檬汁 2.0 都不傷人；酸腐蝕的是金屬不是有機物。我們天生就該有胃酸。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="gi-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>風險層</th><th>顯著出血</th><th>條件</th><th>預防？</th></tr>
+      <tr><td>最高</td><td>8–10%</td><td>呼吸器 &gt;24 h 且無腸道餵食；慢性肝病（肝硬化併門脈高壓）</td><td>是</td></tr>
+      <tr><td>高</td><td>4–8%</td><td>凝血病變（plt &lt;50k、INR &gt;1.5、PT &gt;20 s）；≥2 項中度條件</td><td>是（門檻）</td></tr>
+      <tr><td>中度</td><td>2–4%</td><td>呼吸器 &gt;24 h 且有餵食…（原表截斷）</td><td>否</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥物</th><th>類別</th><th>途徑</th><th>劑量</th><th>備註</th></tr>
+      <tr><td>Famotidine</td><td>H₂ 阻斷劑</td><td>PO／NG／IV</td><td>20 mg q12h</td><td>CrCl &lt;50 減半</td></tr>
+      <tr><td>Pantoprazole</td><td>PPI</td><td>PO／NG／IV</td><td>40 mg qd</td><td>ICU 最常用，腎不調</td></tr>
+      <tr><td>Omeprazole</td><td>PPI</td><td>PO／NG</td><td>40 mg qd</td><td></td></tr>
+      <tr><td>Lansoprazole</td><td>PPI</td><td>PO／NG</td><td>30 mg qd</td><td></td></tr>
+      <tr><td>Sucralfate</td><td>黏膜保護</td><td>PO／NG</td><td>1 g q6h</td><td>空腹、不可與管灌併用</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>去污方式</th><th>方案</th><th>證據</th></tr>
+      <tr><td>Chlorhexidine 口腔</td><td>0.12% q6h 至脫離呼吸器（2% 禁）</td><td>效益不確定、合併分析死亡率上升，指引撤回</td></tr>
+      <tr><td>SOD</td><td>2% gentamicin＋colistin＋vancomycin 膏 qid</td><td>VAP↓、GN 菌血症 −33%</td></tr>
+      <tr><td>SDD</td><td>口腔膏＋NG polymyxin E／tobramycin／amphotericin q6h＋IV cefuroxime 4 天</td><td>感染↓、死亡率↓、GN 菌血症 −67%；MDR 環境無效</td></tr>
+    </table></div>
+    <div class="dirhead" id="gi-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c4sup">
+      <div class="rxbox-t">壓力性潰瘍出血風險分層</div>
+      <div class="lead">依 BMJ 2020 指引；「其他中度條件」原表截斷，請自填數目。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>呼吸器 &gt;24 小時</label><select id="sup_mv"><option value="no">否</option><option value="yes">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>足量腸道餵食</label><select id="sup_feed"><option value="no">否</option><option value="yes">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label class="toggle-inline"><input type="checkbox" id="sup_liver"> 慢性肝病（肝硬化併門脈高壓）</label></div>
+        <div class="rx-row"><label class="toggle-inline"><input type="checkbox" id="sup_coag"> 凝血病變（plt &lt;50k／INR &gt;1.5／PT &gt;20 s）</label></div>
+        <div class="rx-row"><label>其他中度條件數 <span class="rx-en">0–3</span></label><input type="number" id="sup_mod" step="1" min="0" max="3" placeholder="0"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c4sup_out"></div>
+    </div>
+    <div class="dirhead" id="gi-flow"><span class="dh-n">決策流程</span><span class="dh-e">Stress ulcer prophylaxis?</span></div>
+    <div id="su_flow">
+      <div class="flow-step" id="su_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">預計呼吸器 &gt;24 小時？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="suPick('mv','yes',this)">是</button><button class="flow-opt" onclick="suPick('mv','no',this)">否</button></div></div>
+      <div class="flow-connector hidden" id="su_c2">↓</div>
+      <div class="flow-step hidden" id="su_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">腸道餵食開得起來嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="suPick('feed','yes',this)">可以，足量餵食</button><button class="flow-opt" onclick="suPick('feed','no',this)">不行</button></div></div>
+      <div class="flow-connector hidden" id="su_c3">↓</div>
+      <div class="flow-step hidden" id="su_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">其他條件？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="suPick('other','liver',this)">慢性肝病</button><button class="flow-opt" onclick="suPick('other','coag',this)">凝血病變<span class="fo-sub">plt &lt;50k、INR &gt;1.5、PT &gt;20 s</span></button><button class="flow-opt" onclick="suPick('other','none',this)">都沒有</button></div></div>
+      <div class="flow-rec rec-idle" id="su_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="suReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="gi-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_gi"></div>
+    <div class="dirhead" id="gi-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/gi-bleeding.html" href="#">消化道出血處置決策</a><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素指引</a><a class="flow-link" data-ct="tools/drug-database.html" href="#">藥物資料庫</a></div>
+  </section>
+
+  <!-- ==================== Ch5 Venous Thromboprophylaxis ==================== -->
+  <section class="practices-panel hidden" data-panel="vte" id="practices-p-vte">
+    <div class="dirhead"><span class="dh-n">第 5 章 靜脈血栓預防</span><span class="dh-e">Chapter 5 · Venous Thromboprophylaxis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#vte/vt-key"><i>01</i>重點卡</a><a class="sp-chip" href="#vte/vt-tab"><i>02</i>對照表</a><a class="sp-chip" href="#vte/vt-calc"><i>03</i>計算</a><a class="sp-chip" href="#vte/vt-flow"><i>04</i>流程</a><a class="sp-chip" href="#vte/vt-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#vte/vt-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>VTE 是住院病人最可預防的死因</b>：常見、隱匿、致命、可矯正；創傷未預防 DVT 58%，內科病人占事件的 50–75%。</span></div>
+        <div class="lede-item"><span>②</span><span><b>LMWH 是主力</b>：生體可用率 90%、HIT 十分之一；腎功能（CrCl &lt;30）與病態肥胖（BMI ≥40）要調劑量；CrCl &lt;15 只剩 UFH 與 warfarin。</span></div>
+        <div class="lede-item"><span>③</span><span><b>出血病人用 IPC，DOAC 只在髖膝置換</b>；各情境有各自的方案與延長天數（腹盆腔癌症 4 週、減重 2 週、髖膝 35 天）。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="vt-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="vt-kc">全部展開</button></div>
+    <div id="vt-kc">
+      <details class="def-box"><summary>01 · 危險因子 <span class="en">Risk factors</span></summary>
+        <div class="box-inner"><p class="kp"><b>大手術（&gt;45 分鐘）占 VTE 死亡 1/3、風險延續 6–12 週；重大創傷最高；內科住院 8 倍。</b></p>
+          <ul><li>手術：癌症、減重、髖膝；機轉：thromboplastin 釋放、發炎、血管損傷、臥床。</li><li>創傷：腦脊髓損傷、脊椎／骨盆／髖／長骨骨折（脂質入血）。</li><li>內科：癌症、中風併肢體無力、右心衰竭腿水腫。ICU 加分：呼吸器 &gt;48 h、敗血症、休克、升壓劑、血小板輸注、CVC／PICC。</li><li>病人：年齡、肥胖、懷孕、VTE 病史（最高）、遺傳（AT III 缺乏 14 倍）。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 禁忌 <span class="en">Contraindications</span></summary>
+        <div class="box-inner"><p class="kp"><b>絕對：顱內出血、臨床重要出血；相對：頭脊創傷、反覆 GI 出血、血小板 &lt;50k。月經不是禁忌。</b></p>
+          <ul><li>臨床重要出血＝SBP 降 ≥20、Hb 降 ≥2 g/dL 或輸 ≥2 U。</li></ul></div></details>
+      <details class="def-box"><summary>03 · UFH <span class="en">Unfractionated heparin</span></summary>
+        <div class="box-inner"><p class="kp"><b>5,000 U SC q8–12h（兩者效力與出血無差）；BMI ≥40 用 7,500 U q8h；腎功能不調。</b></p>
+          <ul><li>3,000–30,000 Da 的混合物：AT 活化 → 抗 Xa；電荷結合 thrombin → 抗 IIa（比抗 Xa 強 10 倍、隨分子長度而變 → 效果不穩）。</li><li>結合血漿蛋白降生體可用率、結合內皮／巨噬細胞加速清除；結合 PF4 → HIT（與劑量無關，預防劑量也會）。</li></ul></div></details>
+      <details class="def-box"><summary>04 · LMWH：enoxaparin 與 dalteparin <span class="en">Low-molecular-weight heparin</span></summary>
+        <div class="box-inner"><p class="kp"><b>平均 4,500 Da、以抗 Xa 為主：可預測、生體可用率 90%（UFH 15–30%）、HIT 0.2% vs 2.6%。</b></p>
+          <ul><li>Enoxaparin 40 mg qd 或 30 mg bid；<b>CrCl &lt;30 → 30 mg qd 或改 UFH（&lt;20 改 UFH）</b>；BMI ≥40 → 40 mg bid。髖膝與創傷優於 UFH。</li><li>Dalteparin 2,500–5,000 U qd、腎功能不調、肥胖經驗建議 200 U/kg。</li><li>Anti-Xa 峰值目標 0.2–0.5 IU/mL（固定劑量不確定時，如肥胖）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · Fondaparinux <span class="en">Selective Xa inhibitor</span></summary>
+        <div class="box-inner"><p class="kp"><b>2.5 mg SC qd（t½ 17 h）；CrCl 20–50 → 1.5 mg；&lt;20 禁用；HIT 疑似或病史可用。</b></p>
+          <ul><li>ICU 病人未研究；確診 HIT 的核准治療是 argatroban。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 口服：warfarin、DOAC、aspirin <span class="en">Oral agents</span></summary>
+        <div class="box-inner"><p class="kp"><b>DOAC 1–4 小時起效、不需監測，但預防只建議髖膝置換；嚴重腎損只有 warfarin 能用。</b></p>
+          <ul><li>Dabigatran 110 → 220 mg qd（BMI ≥40 或 &gt;120 kg 禁、CrCl &lt;30 禁）；apixaban 2.5 mg bid（肥胖標準劑量、CrCl &lt;15 禁）；rivaroxaban 10 mg qd（內科急症有核准，但 DOAC 在內科出血較多）。</li><li>髖膝置換：DOAC 優於 LMWH，dabigatran／rivaroxaban 出血較多 → apixaban 可能最佳；胃繞道後不用 DOAC。</li><li>Warfarin 起效 5–7 天、交互作用多、要監測 INR 1.5–2.5。</li><li>Aspirin 81 mg：ASH 條件性建議，但研究多是抗凝之後接續，單用不妥。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 神經軸操作前停藥 <span class="en">Neuraxial procedures</span></summary>
+        <div class="box-inner"><p class="kp"><b>UFH SC 12 小時、enoxaparin qd 24 小時；dabigatran／rivaroxaban 48 小時、apixaban 24 小時（腎功能差更久）。</b></p>
+          <ul><li>放置與拔除硬膜外／脊髓內導管都算；血腫壓迫脊髓會癱瘓。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 機械式預防 <span class="en">Mechanical prophylaxis</span></summary>
+        <div class="box-inner"><p class="kp"><b>GCS 踝 18／大腿 8 mmHg 最弱、從不單用；IPC 踝 35–40／大腿 20 mmHg、10 秒一週期，可等同抗凝、與抗凝加成。</b></p>
+          <ul><li>IPC 還促進纖溶；壓力不可超過舒張壓；限制活動、皮膚浸軟、清醒病人嫌吵 → 不需要就拿掉。</li><li>IVC filter 不防 DVT，只擋 PE；不建議用於預防。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 哪個病人用哪套 <span class="en">Which regimen for which patient</span></summary>
+        <div class="box-inner"><p class="kp"><b>先看三個特殊狀況：CrCl &lt;15 只能 UFH／warfarin；BMI &gt;40 加量；HIT 用 fondaparinux。</b></p>
+          <ul><li><b>一般大手術</b>：UFH 或 LMWH，高風險加 IPC；術前最後一劑 UFH 6 h／LMWH 12 h 前；術後 6／12 h 開始；腹盆腔癌症高風險延長 LMWH 4 週。</li>
+            <li><b>減重手術</b>：LMWH＋IPC，enoxaparin 40 bid（BMI 30–49）、60 bid（≥50）；80% VTE 在出院後 → 延長約 2 週。</li>
+            <li><b>髖膝置換</b>：DOAC 優於 LMWH＋早期 IPC，延長 35 天；<b>髖骨折</b>：LMWH。</li>
+            <li><b>神經外科</b>：IPC，出血風險過後高風險與癌症加 LMWH；<b>心臟手術</b>：IPC，複雜加 LMWH。</li>
+            <li><b>重大創傷</b>：實質器官／肢體 enoxaparin 40 bid（12–24 h 內）＋IPC；TBI 先 IPC，CT 24 h 無進展再 30 bid；脊椎 30 bid＋IPC；監測 anti-Xa。</li>
+            <li><b>內科急症與所有 ICU 病人</b>：LMWH，不加機械、出院不延長。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 作者觀點：不動不等於靜脈鬱滯 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>閉路系統裡心輸出＝靜脈回流，臥床本身沒有鬱滯；觸發 DVT 的多半是發炎——所以脊髓損傷只在受傷後 3–4 週高風險。</b></p>
+          <ul><li>安養院長期臥床的長者與截癱者並沒有猖獗的 DVT；「不動就要抗凝」是抗凝過度使用的來源。</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="vt-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥物</th><th>標準</th><th>病態肥胖 BMI ≥40</th><th>腎功能</th></tr>
+      <tr><td>UFH</td><td>5,000 U SC q8–12h</td><td>7,500 U q8h</td><td>不調</td></tr>
+      <tr><td>Enoxaparin</td><td>40 mg SC qd 或 30 mg q12h</td><td>40 mg q12h</td><td>CrCl &lt;30：30 mg qd 或改 UFH</td></tr>
+      <tr><td>Dalteparin</td><td>2,500–5,000 U SC qd</td><td>200 U/kg（經驗）</td><td>不調</td></tr>
+      <tr><td>Fondaparinux</td><td>2.5 mg SC qd</td><td>—</td><td>CrCl 20–50：1.5 mg；&lt;20 禁</td></tr>
+      <tr><td>Dabigatran</td><td>110 → 220 mg qd</td><td>BMI ≥40／&gt;120 kg 禁</td><td>CrCl &lt;30 禁</td></tr>
+      <tr><td>Apixaban</td><td>2.5 mg bid</td><td>標準</td><td>CrCl &lt;15 禁</td></tr>
+      <tr><td>Rivaroxaban</td><td>10 mg qd</td><td>標準</td><td>CrCl &lt;15 禁</td></tr>
+      <tr><td>Warfarin</td><td>2.5–5 mg qd，INR 1.5–2.5</td><td>—</td><td>不調</td></tr>
+    </table></div>
+    <div class="note">Rivaroxaban 那列由內文補（表 5.3 抽出時截斷）。</div>
+    <div class="tw"><table class="def-table">
+      <tr><th>情境</th><th>方案</th><th>延長</th></tr>
+      <tr><td>一般大手術</td><td>UFH 或 LMWH；高風險加 IPC</td><td>腹盆腔癌症高風險 4 週</td></tr>
+      <tr><td>減重手術</td><td>Enoxaparin 40 bid（BMI 30–49）／60 bid（≥50）＋IPC</td><td>約 2 週</td></tr>
+      <tr><td>髖／膝置換</td><td>DOAC（apixaban 較佳）＋早期 IPC</td><td>35 天</td></tr>
+      <tr><td>髖骨折</td><td>LMWH</td><td>35 天</td></tr>
+      <tr><td>神經外科</td><td>IPC → 出血風險過後加 LMWH</td><td>—</td></tr>
+      <tr><td>心臟手術</td><td>IPC；複雜加 LMWH</td><td>—</td></tr>
+      <tr><td>重大創傷</td><td>Enoxaparin 40 bid（TBI／脊椎 30 bid）＋IPC；監測 anti-Xa</td><td>—</td></tr>
+      <tr><td>內科急症／ICU</td><td>LMWH</td><td>不延長</td></tr>
+    </table></div>
+    <div class="dirhead" id="vt-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c5dose">
+      <div class="rxbox-t">預防劑量調整器</div>
+      <div class="lead">依 BMI、CrCl 與 HIT 病史列出各藥的預防劑量。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="vt_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="vt_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CrCl <span class="rx-en">mL/min</span></label><input type="number" id="vt_crcl" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label class="toggle-inline"><input type="checkbox" id="vt_hit"> HIT 疑似或病史</label></div>
+      </div>
+      <div class="rx-out" id="c5dose_out"></div>
+    </div>
+    <div class="rxbox" id="c5nx">
+      <div class="rxbox-t">神經軸操作前的停藥間隔</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥物</label><select id="nx_drug"><option value="ufh">UFH SC</option><option value="enox">Enoxaparin qd</option><option value="dabi">Dabigatran</option><option value="riva">Rivaroxaban</option><option value="apix">Apixaban</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>距上一劑 <span class="rx-en">h</span></label><input type="number" id="nx_t" step="1" placeholder="10"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c5nx_out"></div>
+    </div>
+    <div class="dirhead" id="vt-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which regimen</span></div>
+    <div id="vp_flow">
+      <div class="flow-step" id="vp_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">情境？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="vpPick('set','gen',this)">一般大手術</button><button class="flow-opt" onclick="vpPick('set','bari',this)">減重手術</button><button class="flow-opt" onclick="vpPick('set','tka',this)">髖／膝關節置換</button><button class="flow-opt" onclick="vpPick('set','hip',this)">髖骨折手術</button><button class="flow-opt" onclick="vpPick('set','neuro',this)">神經外科</button><button class="flow-opt" onclick="vpPick('set','card',this)">心臟手術</button><button class="flow-opt" onclick="vpPick('set','trauma',this)">重大創傷</button><button class="flow-opt" onclick="vpPick('set','med',this)">內科急症／ICU</button>
+        </div></div>
+      <div class="flow-connector" id="vp_c2">↓</div>
+      <div class="flow-step" id="vp_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">正在出血或高出血風險？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="vpPick('bleed','yes',this)">是<span class="fo-sub">顱內出血、臨床重要出血、頭脊創傷、反覆 GI 出血、plt &lt;50k</span></button><button class="flow-opt" onclick="vpPick('bleed','no',this)">否</button></div></div>
+      <div class="flow-rec rec-idle" id="vp_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="vpReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="vt-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_vte"></div>
+    <div class="dirhead" id="vt-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/vte-risk.html" href="#">🧮 VTE 風險評估（Caprini／Padua）</a><a class="flow-link" data-ct="tools/periop-anticoag.html" href="#">圍手術期抗凝</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a><a class="flow-link" data-ct="tools/pe.html" href="#">肺栓塞</a></div>
+  </section>
+
+  <!-- ==================== Ch6 Analgesia and Sedation ==================== -->
+  <section class="practices-panel hidden" data-panel="sed" id="practices-p-sed">
+    <div class="dirhead"><span class="dh-n">第 6 章 鎮痛與鎮靜</span><span class="dh-e">Chapter 6 · Analgesia and Sedation in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#sed/sd-key"><i>01</i>重點卡</a><a class="sp-chip" href="#sed/sd-tab"><i>02</i>對照表</a><a class="sp-chip" href="#sed/sd-calc"><i>03</i>計算</a><a class="sp-chip" href="#sed/sd-flow"><i>04</i>流程</a><a class="sp-chip" href="#sed/sd-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#sed/sd-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>先止痛、用量表、別看生命徵象</b>：重症病人痛覺放大（hypernociception），50% 靜息也痛；NRS &gt;3 或 BPS ≥6 就是不可接受。</span></div>
+        <div class="lede-item"><span>②</span><span><b>Fentanyl 取代 morphine，rapid-arousal 藥取代 benzodiazepine</b>：BZD 累積、促譫妄；propofol 快醒但只能用在呼吸器；dexmedetomidine 可喚醒、不抑制呼吸、譫妄最少。</span></div>
+        <div class="lede-item"><span>③</span><span><b>每種藥有一條紅線</b>：midazolam ≤48 h、lorazepam &gt;10 mg/h 看滲透壓間隙、propofol &gt;80 μg/kg/min 超過 48 h、haloperidol QTc &gt;500 禁。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="sd-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="sd-kc">全部展開</button></div>
+    <div id="sd-kc">
+      <details class="def-box"><summary>01 · ICU 的疼痛與評估 <span class="en">Pain in the ICU</span></summary>
+        <div class="box-inner"><p class="kp"><b>未緩解的疼痛是最常見的壓力源；翻身就痛、50% 靜息痛（下背與腿）；全身發炎與久臥放大痛覺。</b></p>
+          <ul><li>能自評：NRS 1–10，<b>&gt;3 不可接受</b>。</li><li>不能自評：BPS（臉部、上肢、呼吸器配合各 1–4 分），<b>≥6 不可接受</b>。</li><li>心跳血壓與疼痛強度相關性差，不要拿來當證據。長期呼吸器病人可有 PTSD。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 類鴉片三主角 <span class="en">Morphine · fentanyl · hydromorphone</span></summary>
+        <div class="box-inner"><p class="kp"><b>有效劑量由病人反應決定，不是表訂；fentanyl 已取代 morphine 成為首選。</b></p>
+          <ul><li><b>Morphine</b>：2–4 mg q1–2h、輸注 2–30 mg/h；活性代謝物 M3G（躁動、肌陣攣、癲癇）與 M6G（更強止痛）在腎衰累積 → 維持劑量減半；釋放組織胺 → 低血壓（不致支氣管收縮）。</li>
+            <li><b>Fentanyl</b>：600 倍脂溶、1–2 分鐘起效；0.35–0.5 μg/kg q0.5–1h、0.7–10 μg/kg/h；不釋放組織胺、無活性代謝物；缺點：脂溶累積在腦、ESRD 母藥累積。</li>
+            <li><b>Hydromorphone</b>：0.2–0.6 mg q1–2h、0.5–3 mg/h；腎衰不調；沒有優於 fentanyl 的證據。</li><li>類鴉片有輕度鎮靜但<b>無失憶</b>效果；都在肝代謝、腎排除。</li></ul></div></details>
+      <details class="def-box"><summary>03 · Remifentanil 與 meperidine <span class="en">Special opioids</span></summary>
+        <div class="box-inner"><p class="kp"><b>Remifentanil 血漿酯酶代謝、停藥 10 分鐘消失，適合 TBI 頻繁神經評估；meperidine 因 normeperidine 神經毒性已淘汰。</b></p>
+          <ul><li>Remifentanil 250 倍 morphine：負荷 1.5 μg/kg、0.5–15 μg/kg/h；腎肝不調；突然停會急性戒斷，配長效類鴉片。</li><li>Normeperidine t½ 15–40 小時 → 躁動、肌陣攣、譫妄、癲癇。</li></ul></div></details>
+      <details class="def-box"><summary>04 · PCA <span class="en">Patient-controlled analgesia</span></summary>
+        <div class="box-inner"><p class="kp"><b>Lockout 依藥物達峰時間；醫囑要寫負荷、lockout、每次 bolus。</b></p>
+          <ul><li>Morphine 0.5–3 mg／10–20 分；hydromorphone 0.1–0.5 mg／5–15 分；fentanyl 15–75 μg／3–10 分。可加低劑量背景輸注。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 類鴉片的副作用 <span class="en">Adverse effects</span></summary>
+        <div class="box-inner"><p class="kp"><b>常規劑量少見呼吸抑制；低血壓在低血容、心衰或併用 BZD 時明顯；腸蠕動抑制 → 管灌逆流吸入。</b></p>
+          <ul><li>睡眠呼吸中止與慢性高碳酸者特別敏感；影響喚醒的劑量會高碳酸。</li><li>Methylnaltrexone 12 mg IV qd 在 ICU（MOTION）沒有顯著改善排便。</li><li>嘔吐來自 CTZ，換一種類鴉片有時會好。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 非類鴉片鎮痛 <span class="en">Non-opioid analgesia</span></summary>
+        <div class="box-inner"><p class="kp"><b>Acetaminophen 1 g IV q6h（≤4 g）、ketorolac 30 mg IV q6h（減半條件：腎損、≥65 歲、&lt;50 kg）、低劑量 ketamine 60–120 μg/kg/h。</b></p>
+          <ul><li>Acetaminophen 無抗發炎；ketorolac 省類鴉片 25–50%、IM 會血腫、短期常規劑量安全。</li><li>Ketamine 擬交感（休克可能有利）、支氣管擴張（氣喘有利）、心肌缺血不建議；低劑量下精神副作用少。</li><li>神經痛：gabapentin 600 mg q8h、carbamazepine 100 mg q6h（都要腸道給）。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 焦慮、躁動、譫妄與 RASS <span class="en">Anxiety · agitation · delirium</span></summary>
+        <div class="box-inner"><p class="kp"><b>85% 的 ICU 病人有；RASS +4 到 −5，目標 0，輕度鎮靜 −1 到 −2。</b></p>
+          <ul><li>焦慮＝內生的恐懼；躁動＝焦慮＋動作增加；譫妄＝急性混亂（可有低活動型）。</li><li>RASS 可追蹤變化，適合當鎮靜輸注的終點；SAS 亦可靠。</li></ul></div></details>
+      <details class="def-box"><summary>08 · Benzodiazepines <span class="en">Midazolam · lorazepam</span></summary>
+        <div class="box-inner"><p class="kp"><b>累積與譫妄讓它退居二線；midazolam 輸注 ≤48 h，lorazepam 輸注要盯 propylene glycol。</b></p>
+          <ul><li>Midazolam 0.01–0.05 mg/kg bolus、3–5 分起、1–2 h、0.02–0.1 mg/kg/h；CYP450（diltiazem、erythromycin 增強）、活性代謝物腎排。停藥後 30 小時才醒 vs lorazepam 4–5 小時。</li>
+            <li>Lorazepam 0.02–0.04 mg/kg、5–15 分、2–6 h、0.01–0.1 mg/kg/h；<b>&gt;0.1 mg/kg/h 或 &gt;10 mg/h 超過 48 h</b> → propylene glycol 毒性（乳酸酸中毒、意識改變、全身發炎、腎衰）；監測<b>滲透壓間隙 &gt;10</b>，乳酸不可靠。</li>
+            <li>優點：起效快、順行性失憶（40% 出 ICU 不記得）、酒精／類鴉片戒斷首選。</li><li>對策：每日 sedation holiday、以量表為目標的輕鎮靜、呼吸器病人能不用就不用。Diazepam t½ 90 h 避免。</li></ul></div></details>
+      <details class="def-box"><summary>09 · Propofol <span class="en">Rapid arousal · GABAergic</span></summary>
+        <div class="box-inner"><p class="kp"><b>1–2 分鐘起效、輕鎮靜下停藥十幾分鐘醒；只能用於呼吸器病人；&gt;80 μg/kg/min 超過 48 h 是輸注症候群的溫床。</b></p>
+          <ul><li>負荷 5 μg/kg/min × 5 分（不穩者不打）、維持 5–50 μg/kg/min；用<b>理想體重</b>、腎肝不調；無鎮痛。</li><li>甦醒時間看深度與時間：24 h 輕鎮靜 13 分／深鎮靜 25 小時；14 天 3.4 小時／74 小時。</li><li>10% 脂肪乳劑 1 kcal/mL 算進熱量；高三酸甘油酯、罕見胰臟炎、綠尿。</li><li><b>Propofol 輸注症候群</b>：收縮性心衰竭、頑固乳酸酸中毒、橫紋肌溶解、腎衰 → MOF；中等速率也有報告；發生率約 3%、死亡率 30–35%；ECMO 曾用。</li></ul></div></details>
+      <details class="def-box"><summary>10 · Dexmedetomidine <span class="en">α₂ agonist · cooperative sedation</span></summary>
+        <div class="box-inner"><p class="kp"><b>可喚醒、放開又睡回去的「合作式鎮靜」，EEG 像自然睡眠；不抑制呼吸、譫妄最少、是 ICU 譫妄的首選。</b></p>
+          <ul><li>負荷 1 μg/kg／10 分、0.2–1.5 μg/kg/h、5–10 分起效、6–10 分醒；輕度鎮痛可省類鴉片；不需 sedation holiday；非呼吸器可用。</li><li>缺點：心搏過緩、低血壓（HFrEF 尤甚）；戒斷 30%（心搏過速、高血壓、躁動），與速率或時間無關。</li></ul></div></details>
+      <details class="def-box"><summary>11 · Haloperidol <span class="en">Antipsychotic for agitation</span></summary>
+        <div class="box-inner"><p class="kp"><b>5 mg IV → 15–20 分無效加倍 → 再無效換藥 → 有效以初始有效劑量 25% q4–6h；QTc &gt;500 ms 禁用。</b></p>
+          <ul><li>不抑制呼吸；起效 10–20 分、持續 3–4 h；急躁者可加 midazolam 1–2 mg 求快。</li><li>TdP 3–4%，多在 QTc &gt;500 或每日 &gt;35 mg；IV 給藥 EPS 反而少；<b>NMS</b>（高熱、僵硬、橫紋肌溶解）最易被忽略。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 作者觀點：從 opiophobia 到 opiophilia，再回去 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>1980 年代怕開類鴉片 → 「第五生命徵象」與一封讀者投書推動處方 → 2010 年每 100 人 81 張處方 → 50 萬人過量死亡 → 又回到怕開。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="sd-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>類鴉片</th><th>起效</th><th>Bolus</th><th>輸注</th><th>PCA bolus／lockout</th><th>脂溶</th><th>活性代謝物</th></tr>
+      <tr><td>Morphine</td><td>5–10 min</td><td>2–4 mg q1–2h</td><td>2–30 mg/h</td><td>0.5–3 mg／10–20 min</td><td>×1</td><td>有</td></tr>
+      <tr><td>Hydromorphone</td><td>5–15 min</td><td>0.2–0.6 mg q1–2h</td><td>0.5–3 mg/h</td><td>0.1–0.5 mg／5–15 min</td><td>×0.2</td><td>有</td></tr>
+      <tr><td>Fentanyl</td><td>1–2 min</td><td>0.35–0.5 μg/kg q0.5–1h</td><td>0.7–10 μg/kg/h</td><td>15–75 μg／3–10 min</td><td>×600</td><td>無</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>RASS</th><th>名稱</th><th>描述</th></tr>
+      <tr><td>+4</td><td>好鬥</td><td>暴力、立即危及工作人員</td></tr><tr><td>+3</td><td>非常躁動</td><td>拉扯或拔除管路、攻擊行為</td></tr><tr><td>+2</td><td>躁動</td><td>頻繁無目的動作、與呼吸器對抗</td></tr><tr><td>+1</td><td>不安</td><td>焦慮但動作不激烈</td></tr>
+      <tr><td>0</td><td>清醒平靜</td><td>目標</td></tr><tr><td>−1</td><td>昏昏欲睡</td><td>叫喚可維持眼神接觸 &gt;10 秒</td></tr><tr><td>−2</td><td>輕度鎮靜</td><td>叫喚短暫眼神接觸 &lt;10 秒</td></tr><tr><td>−3</td><td>中度鎮靜</td><td>叫喚有動作但無眼神接觸</td></tr><tr><td>−4</td><td>深度鎮靜</td><td>叫喚無反應，身體刺激有動作</td></tr><tr><td>−5</td><td>無法喚醒</td><td>叫喚與身體刺激皆無反應</td></tr>
+    </table></div>
+    <div class="note">RASS −1 到 −5 的描述依 Sessler 2002 原量表補（原表抽出時截斷）。</div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>鎮靜藥</th><th>負荷</th><th>起效</th><th>維持</th><th>醒</th><th>呼吸抑制</th><th>紅線</th></tr>
+      <tr><td>Midazolam</td><td>0.01–0.05 mg/kg</td><td>3–5 min</td><td>0.02–0.1 mg/kg/h</td><td>停藥後可達 30 h</td><td>有</td><td>輸注 ≤48 h</td></tr>
+      <tr><td>Lorazepam</td><td>0.02–0.04 mg/kg</td><td>5–15 min</td><td>0.01–0.1 mg/kg/h</td><td>4–5 h</td><td>有</td><td>&gt;0.1 mg/kg/h 或 &gt;10 mg/h × 48 h → 滲透壓間隙</td></tr>
+      <tr><td>Propofol</td><td>5 μg/kg/min × 5 min</td><td>1–2 min</td><td>5–50 μg/kg/min</td><td>10–15 min（輕、短）</td><td>有（限呼吸器）</td><td>&gt;80 μg/kg/min × 48 h → PRIS</td></tr>
+      <tr><td>Dexmedetomidine</td><td>1 μg/kg／10 min</td><td>5–10 min</td><td>0.2–1.5 μg/kg/h</td><td>6–10 min</td><td>無</td><td>心搏過緩、低血壓、戒斷 30%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Propofol 輸注時間</th><th>輕鎮靜 → 醒</th><th>深鎮靜 → 醒</th></tr>
+      <tr><td>24 小時</td><td>13 分</td><td>25 小時</td></tr><tr><td>72 小時</td><td>34 分</td><td>59 小時</td></tr><tr><td>7 天</td><td>3.3 小時</td><td>71 小時</td></tr><tr><td>14 天</td><td>3.4 小時</td><td>74 小時</td></tr>
+    </table></div>
+    <div class="dirhead" id="sd-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c6bps">
+      <div class="rxbox-t">Behavioral Pain Scale</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>臉部表情</label><select id="bps_f"><option value="1">放鬆</option><option value="2">部分緊繃</option><option value="3">完全緊繃</option><option value="4">扭曲</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>上肢</label><select id="bps_a"><option value="1">不動</option><option value="2">部分彎曲</option><option value="3">完全彎曲、手指屈曲</option><option value="4">持續攣縮</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>呼吸器配合</label><select id="bps_v"><option value="1">配合</option><option value="2">咳嗽但配合</option><option value="3">對抗</option><option value="4">無法控制通氣</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c6bps_out"></div>
+    </div>
+    <div class="rxbox" id="c6inf">
+      <div class="rxbox-t">鎮靜與鎮痛藥輸注換算</div>
+      <div class="lead">Propofol 以理想體重計（填身高與性別），其餘用實際體重；泡法留空就用常見濃度。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥物</label><select id="sd_drug"><option value="prop">Propofol</option><option value="dex">Dexmedetomidine</option><option value="mid">Midazolam</option><option value="lor">Lorazepam</option><option value="fen">Fentanyl</option><option value="mor">Morphine</option><option value="rem">Remifentanil</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>劑量 <span class="rx-en">依藥物單位（見輸出）</span></label><input type="number" id="sd_dose" step="0.01" placeholder="30"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="sd_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm（propofol 用）</span></label><input type="number" id="sd_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別</label><select id="sd_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>泡法濃度 <span class="rx-en">μg/mL（留空用預設）</span></label><input type="number" id="sd_conc" step="1" placeholder="10000"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c6inf_out"></div>
+    </div>
+    <div class="dirhead" id="sd-flow"><span class="dh-n">決策流程</span><span class="dh-e">Analgesia first, then sedation</span></div>
+    <div id="sd_flow">
+      <div class="flow-step" id="sd_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">疼痛評估？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="sdPick('pain','yes',this)">NRS &gt;3 或 BPS ≥6</button><button class="flow-opt" onclick="sdPick('pain','unstable',this)">有痛且血行動力不穩</button><button class="flow-opt" onclick="sdPick('pain','none',this)">目前可接受</button></div></div>
+      <div class="flow-connector" id="sd_c2">↓</div>
+      <div class="flow-step" id="sd_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">腎功能？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="sdPick('renal','yes',this)">腎衰竭</button><button class="flow-opt" onclick="sdPick('renal','no',this)">正常</button></div></div>
+      <div class="flow-connector" id="sd_c3">↓</div>
+      <div class="flow-step" id="sd_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">止痛後還需要什麼？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="sdPick('need','vent_light',this)">呼吸器、輕度鎮靜即可<span class="fo-sub">RASS −1 到 −2、要能常喚醒</span></button>
+          <button class="flow-opt" onclick="sdPick('need','vent_deep',this)">呼吸器、需要深鎮靜<span class="fo-sub">嚴重不同步、俯臥、神經肌肉阻斷</span></button>
+          <button class="flow-opt" onclick="sdPick('need','nonvent',this)">未插管但焦慮躁動</button>
+          <button class="flow-opt" onclick="sdPick('need','withdraw',this)">酒精或類鴉片戒斷</button>
+          <button class="flow-opt" onclick="sdPick('need','delirium',this)">譫妄（非戒斷）</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="sd_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="sdReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="sd-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_sed"></div>
+    <div class="dirhead" id="sd-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/rsi.html" href="#">RSI 插管用藥</a><a class="flow-link" data-ct="tools/osmolality.html" href="#">🧮 滲透壓與間隙</a><a class="flow-link" data-ct="tools/vasopressor.html" href="#">🧮 藥物流速換算</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 4–6 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19118302/" target="_blank" rel="noopener" class="ref-link">de Smet et al. SDD／SOD in ICU patients. NEJM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24687313/" target="_blank" rel="noopener" class="ref-link">Price et al. SDD／SOD／chlorhexidine network meta-analysis. BMJ 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24663255/" target="_blank" rel="noopener" class="ref-link">Klompas et al. Reappraisal of chlorhexidine oral care. JAMA Intern Med 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30347072/" target="_blank" rel="noopener" class="ref-link">Wittekamp et al. Decontamination and resistant bacteremia. JAMA 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28192108/" target="_blank" rel="noopener" class="ref-link">Shen et al. Timely probiotics and C. difficile. Gastroenterology 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31907223/" target="_blank" rel="noopener" class="ref-link">Ye et al. GI bleeding prophylaxis guideline. BMJ 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30354950/" target="_blank" rel="noopener" class="ref-link">Krag et al. SUP-ICU. NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31950977/" target="_blank" rel="noopener" class="ref-link">PEPTIC. JAMA 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31501997/" target="_blank" rel="noopener" class="ref-link">Butler et al. Corticosteroids and GI bleeding meta-analysis. ICM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28459708/" target="_blank" rel="noopener" class="ref-link">Alhazzani et al. Withholding pantoprazole. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20711074/" target="_blank" rel="noopener" class="ref-link">Marik et al. SUP in the new millennium. CCM 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31794602/" target="_blank" rel="noopener" class="ref-link">ASH 2019 VTE prevention in surgical patients. Blood Adv 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30482763/" target="_blank" rel="noopener" class="ref-link">ASH 2018 VTE prophylaxis in medical patients. Blood Adv 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32590563/" target="_blank" rel="noopener" class="ref-link">Ley et al. WTA VTE in trauma algorithm. JTACS 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34896011/" target="_blank" rel="noopener" class="ref-link">ASMBS position statement on VTE prophylaxis in bariatric surgery. SOARD 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24136071/" target="_blank" rel="noopener" class="ref-link">Wang et al. High-dose thromboprophylaxis in morbid obesity. Thromb Haemost 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15985543/" target="_blank" rel="noopener" class="ref-link">Martel et al. HIT with UFH vs LMWH meta-analysis. Blood 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29466159/" target="_blank" rel="noopener" class="ref-link">Anderson et al. Aspirin or rivaroxaban after arthroplasty. NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30113379/" target="_blank" rel="noopener" class="ref-link">Devlin et al. SCCM PADIS guideline. CCM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23269131/" target="_blank" rel="noopener" class="ref-link">Barr et al. SCCM PAD guideline. CCM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12421743/" target="_blank" rel="noopener" class="ref-link">Sessler et al. RASS. AJRCCM 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10816184/" target="_blank" rel="noopener" class="ref-link">Kress et al. Daily interruption of sedation. NEJM 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24476433/" target="_blank" rel="noopener" class="ref-link">Reade & Finfer. Sedation and delirium in the ICU. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8045143/" target="_blank" rel="noopener" class="ref-link">Pohlman et al. Lorazepam vs midazolam infusions. CCM 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16422667/" target="_blank" rel="noopener" class="ref-link">Barnes et al. Osmolal gap and propylene glycol. Pharmacotherapy 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30857601/" target="_blank" rel="noopener" class="ref-link">Hemphill et al. Propofol infusion syndrome review. BJA 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35648198/" target="_blank" rel="noopener" class="ref-link">Lewis et al. Dexmedetomidine vs other sedatives meta-analysis. ICM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33227592/" target="_blank" rel="noopener" class="ref-link">Pathan et al. Dexmedetomidine withdrawal. J Crit Care 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9591913/" target="_blank" rel="noopener" class="ref-link">Sharma et al. Torsade de pointes with IV haloperidol. AJC 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32016532/" target="_blank" rel="noopener" class="ref-link">Patel et al. Methylnaltrexone in ICU (MOTION). ICM 2020</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/practices.js"></script>
+<script>ICU.makeTabs('practices'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

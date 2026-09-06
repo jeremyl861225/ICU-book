@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>腎臟與電解質 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="腎臟與電解質">
+<div class="sheet">
+<div class="view active" id="view-renallyte">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XI</div><h1>腎臟與電解質</h1><div class="sub">Renal & Electrolyte Disorders · 急性腎損傷 → 血鈉 → 鉀 → 鎂 → 鈣與磷 · 第 34–38 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-renallyte'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="renallyte_tabs">
+    <button class="tab-btn active" data-p="aki">急性腎損傷 <span class="mono">Ch34</span></button>
+    <button class="tab-btn" data-p="na">血鈉 <span class="mono">Ch35</span></button>
+    <button class="tab-btn" data-p="k">鉀 <span class="mono">Ch36</span></button>
+    <button class="tab-btn" data-p="mg">鎂 <span class="mono">Ch37</span></button>
+    <button class="tab-btn" data-p="capo">鈣與磷 <span class="mono">Ch38</span></button>
+  </div>
+
+  <!-- ==================== Ch34 Acute Kidney Injury ==================== -->
+  <section class="renallyte-panel" data-panel="aki" id="renallyte-p-aki">
+    <div class="dirhead"><span class="dh-n">第 34 章 急性腎損傷</span><span class="dh-e">Chapter 34 · Acute Kidney Injury</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#aki/ak-key"><i>01</i>重點卡</a><a class="sp-chip" href="#aki/ak-tab"><i>02</i>對照表</a><a class="sp-chip" href="#aki/ak-calc"><i>03</i>計算</a><a class="sp-chip" href="#aki/ak-flow"><i>04</i>流程</a><a class="sp-chip" href="#aki/ak-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#aki/ak-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>肌酸酐在重症一律高估 GFR</b>：肌肉每天掉 2%、敗血症肌酸生成減少、血漿量稀釋、小管分泌——KDIGO 的門檻（48 小時 +0.3、7 天 ×1.5、尿量 <0.5 mL/kg/hr 6 小時）要帶著這些限制看。</span></div>
+        <div class="lede-item"><span>②</span><span><b>過濾梯度 ＝ MAP − 2 × IAP</b>：腹內壓對 GFR 的殺傷力是動脈壓的兩倍，理學檢查測不出，膀胱壓要量；正平衡 >5 L 者 85% 有腹內高壓。</span></div>
+        <div class="lede-item"><span>③</span><span><b>尿液指數分低灌流與小管損傷</b>（尿鈉 20／40、FENa 1／2、FEUrea 35／50），用利尿劑就看 FEUrea；低灌流給輸液挑戰、小管損傷只能支持——利尿劑與低劑量 dopamine 都不改善腎功能。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ak-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ak-kc">全部展開</button></div>
+    <div id="ak-kc">
+      <details class="def-box"><summary>01 · 定義與流行病學 <span class="en">Definition &amp; epidemiology</span></summary>
+        <div class="box-inner"><p class="kp"><b>KDIGO：48 小時內肌酸酐 +0.3 mg/dL、7 天內 ×1.5、或尿量 <0.5 mL/kg/hr 持續 6 小時。分期 1（×1.5–1.9 或 +0.3）、2（×2–2.9）、3（×3、≥4 mg/dL 或 RRT）。ICU 60% 有 AKI、15% 需 RRT、死亡率可達 60%；持續幾天叫急性腎臟病、≥90 天叫慢性腎臟病。</b></p>
+          <ul><li>寡尿可能是對低灌流的適當調整，不一定是損傷；基線肌酸酐常不知道。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 肌酸酐的四個限制 <span class="en">Creatinine as a GFR marker</span></summary>
+        <div class="box-inner"><p class="kp"><b>肌酸酐來自肌肉的肌酸——重症每天掉 2% 肌肉、敗血症肌酸生成減少；受血漿量稀釋；還有腎小管分泌（GFR 越低占比越高）。合起來：重症以肌酸酐估 GFR 一律高估。</b></p>
+          <ul><li>Cystatin C 不受肌肉影響，但常低估 GFR；兩者合併最準但太複雜不普及。</li><li>生物標記（NGAL、KIM-1、TIMP-2×IGFBP7）能早期偵測小管損傷，尚未普及。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 過濾梯度 <span class="en">Filtration gradient</span></summary>
+        <div class="box-inner"><p class="kp"><b>GFR 由 (MAP − 靜脈壓) − 近曲小管壓 決定：MAP 降、靜脈壓升（心腎症候群的主角）、小管壓升（ATN 脫落的細胞塞住管腔 → 管球回饋）都降 GFR。</b></p></div></details>
+      <details class="def-box"><summary>04 · 腹內高壓 <span class="en">Intra-abdominal hypertension</span></summary>
+        <div class="box-inner"><p class="kp"><b>IAP 正常 5–7、≥12 是 IAH、>20 併新器官失能是腹腔腔室症候群。過濾梯度 ＝ MAP − 2 × IAP：IAP 升 1 的殺傷力是 MAP 降 1 的兩倍，寡尿是 ACS 最早的徵象；腹部灌流壓 MAP − IAP >60 結局較好。</b></p>
+          <ul><li>內外科 ICU 盛行率達 60%：胃脹、腸阻塞、腹水、腸壁水腫、正壓通氣、肥胖；24 小時正平衡 >5 L 者 85% IAH、25% ACS。</li><li>膀胱壓：仰臥、腋中線歸零、注 25 mL、呼氣末、無腹肌收縮，單位 mmHg。理學檢查測不出。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 尿液指數 <span class="en">Urine indices</span></summary>
+        <div class="box-inner"><p class="kp"><b>低灌流：尿鈉 <20、FENa <1、FEUrea <35、尿滲透壓 >500、U/P >1.5；小管損傷：尿鈉 >40、FENa >2、FEUrea >50、尿滲透壓 300–400。利尿劑與慢性腎病讓尿鈉／FENa 假性升高——用 FEUrea；敗血症與肌紅蛋白尿的 ATN 反而可 FENa <1。</b></p>
+          <ul><li>床邊超音波先看：小腎＝慢性、水腎＝阻塞（尿有感染要緊急引流）。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 腎前性：輸液與升壓劑 <span class="en">Prerenal management</span></summary>
+        <div class="box-inner"><p class="kp"><b>指數偏低灌流：輸液挑戰 500 mL 10–15 分鐘看心搏量與尿量，無反應就停、別再灌。低血壓用 norepinephrine 把 MAP 撐到 ≥65。利尿劑<u>絕不</u>用來在低灌流時增加尿量。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+      <details class="def-box"><summary>07 · 敗血症 AKI 與腎毒 <span class="en">Sepsis &amp; nephrotoxins</span></summary>
+        <div class="box-inner"><p class="kp"><b>敗血症是 ICU AKI 首因（微循環、發炎、小管細胞代謝重編），非單純低灌流。停 NSAID、ACEi／ARB、aminoglycoside、cyclosporine、HES；顯影劑在對照良好的重症研究<u>不</u>增加 AKI、也不惡化既有 AKI，GFR <30 仍視為風險（前 1 小時起食鹽水到後 3–12 小時）。</b></p></div></details>
+      <details class="def-box"><summary>08 · 橫紋肌溶解 <span class="en">Rhabdomyolysis</span></summary>
+        <div class="box-inner"><p class="kp"><b>肌紅蛋白的血基質鐵產生 hydroxyl radical 傷小管，尿肌紅蛋白 >20 μg/L（尿轉褐、試紙潛血陽性但沉渣無紅血球）才是關鍵；CK 反映肌肉傷程度、不反映 AKI 風險。等張食鹽水 10–20 mL/kg 起、目標尿 ≥1 mL/kg/hr，幾小時仍寡尿就放棄灌水。</b></p>
+          <ul><li>鹼化到 pH >6.5 難做且有碳酸氫鹽的問題；mannitol／furosemide 與灌水目標矛盾。多重創傷 30% AKI、其中 30% 橫紋肌溶解；30% 需 RRT。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 肝腎症候群 <span class="en">Hepatorenal syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>晚期肝病的內臟血管擴張 → 腎血管收縮；排除低血容與 SBP 後，尿液指數（保鈉）可與 ATN 區分。肝移植是根治；短期 albumin ＋ 血管收縮劑見第 39 章。</b></p></div></details>
+      <details class="def-box"><summary>10 · 兩個壞習慣 <span class="en">Furosemide &amp; low-dose dopamine</span></summary>
+        <div class="box-inner"><p class="kp"><b>IV furosemide 在 AKI 只為水分管理、不改善腎功能也不縮短病程；「腎劑量」dopamine（1–3 μg/kg/min）增加尿量卻不改善結局、還有心律不整與腸缺血——作者稱它是「壞醫療」。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+      <details class="def-box"><summary>11 · 腎臟替代療法 <span class="en">Renal replacement therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>指徵：症狀性尿毒、頑固過載、頑固高血鉀、可透析的毒物；10–15% 的 AKI。血液透析靠擴散、快清小分子但除水與大分子差、不穩定者低血壓；血液過濾靠對流、除水達 3 L/hr、可清藥物與細胞激素、要連續（CVVH）；CVVHD 兼得、ICU 首選。</b></p>
+          <ul><li>導管走內頸或股靜脈，不走鎖骨下（狹窄）；早開始 vs 晚開始的大型試驗未見死亡率差異。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="ak-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>KDIGO 分期</th><th>肌酸酐</th><th>尿量</th></tr>
+      <tr><td>1</td><td>×1.5–1.9 或 +0.3 mg/dL</td><td><0.5 mL/kg/hr × 6–12 小時</td></tr>
+      <tr><td>2</td><td>×2–2.9</td><td><0.5 × ≥12 小時</td></tr>
+      <tr><td>3</td><td>×3、≥4 mg/dL、或開始 RRT</td><td><0.3 × ≥24 小時或無尿 ≥12 小時</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>指數</th><th>腎低灌流</th><th>小管損傷（ATN）</th><th>注意</th></tr>
+      <tr><td>尿鈉 mEq/L</td><td><20</td><td>>40</td><td>利尿劑、慢性腎病假性升高</td></tr>
+      <tr><td>FENa %</td><td><1</td><td>>2</td><td>敗血症、肌紅蛋白尿的 ATN 可 <1</td></tr>
+      <tr><td>FEUrea %</td><td><35</td><td>>50</td><td>不受利尿劑影響</td></tr>
+      <tr><td>尿滲透壓 mOsm/kg</td><td>>500</td><td>300–400</td><td>U/P >1.5 vs 1–1.3</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>模式</th><th>原理</th><th>強項</th><th>弱項</th></tr>
+      <tr><td>間歇血液透析</td><td>擴散</td><td>快清鉀、尿毒素</td><td>除水差、大分子差、不穩定者低血壓</td></tr>
+      <tr><td>連續血液過濾 CVVH</td><td>對流</td><td>除水達 3 L/hr、清藥物毒物細胞激素</td><td>慢、要連續、要抗凝</td></tr>
+      <tr><td>CVVHD</td><td>兩者</td><td>ICU 首選</td><td>表現不穩定</td></tr>
+    </table></div>
+    <div class="dirhead" id="ak-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c34kdigo">
+      <div class="rxbox-t">KDIGO 分期</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>基線肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="kd_b" step="0.1" placeholder="0.9"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>現在肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="kd_c" step="0.1" placeholder="2.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿量 <span class="rx-en">mL/kg/hr</span></label><input type="number" id="kd_uo" step="0.1" placeholder="0.3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>持續 <span class="rx-en">hours</span></label><input type="number" id="kd_h" step="1" placeholder="8"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c34kdigo_out"></div>
+    </div>
+    <div class="rxbox" id="c34press">
+      <div class="rxbox-t">灌流壓、腹內壓與過濾梯度</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg</span></label><input type="number" id="pr_map" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CVP <span class="rx-en">mmHg</span></label><input type="number" id="pr_cvp" step="1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>膀胱壓 IAP <span class="rx-en">mmHg</span></label><input type="number" id="pr_iap" step="1" placeholder="18"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c34press_out"></div>
+    </div>
+    <div class="rxbox" id="c34fe">
+      <div class="rxbox-t">FENa 與 FEUrea</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>尿鈉 <span class="rx-en">mEq/L</span></label><input type="number" id="fe_una" step="1" placeholder="15"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血鈉 <span class="rx-en">mEq/L</span></label><input type="number" id="fe_pna" step="1" placeholder="138"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="fe_ucr" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="fe_pcr" step="0.1" placeholder="2.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿尿素氮 <span class="rx-en">mg/dL</span></label><input type="number" id="fe_uur" step="1" placeholder="200"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>BUN <span class="rx-en">mg/dL</span></label><input type="number" id="fe_bun" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>正在用利尿劑 <span class="rx-en">diuretic</span></label><select id="fe_d"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c34fe_out"></div>
+    </div>
+    <div class="rxbox" id="c34rhab">
+      <div class="rxbox-t">橫紋肌溶解的輸液</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rh_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿肌紅蛋白 <span class="rx-en">μg/L</span></label><input type="number" id="rh_m" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>目前尿量 <span class="rx-en">mL/hr</span></label><input type="number" id="rh_uo" step="1" placeholder="40"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c34rhab_out"></div>
+    </div>
+    <div class="dirhead" id="ak-flow"><span class="dh-n">決策流程</span><span class="dh-e">AKI: where is the problem</span></div>
+    <div id="ak_flow">
+      <div class="flow-step" id="ak_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">床邊腎臟超音波？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="akPick('us','ok',this)">無水腎<span class="fo-sub">小腎＝慢性</span></button>
+          <button class="flow-opt" onclick="akPick('us','hydro',this)">水腎</button>
+        </div></div>
+      <div class="flow-step" id="ak_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">尿液指數偏向？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="akPick('idx','hypo',this)">低灌流<span class="fo-sub">尿鈉 <20、FENa <1、FEUrea <35</span></button>
+          <button class="flow-opt" onclick="akPick('idx','atn',this)">小管損傷<span class="fo-sub">尿鈉 >40、FENa >2、FEUrea >50</span></button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ak_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="akReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ak-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_aki"></div>
+    <div class="dirhead" id="ak-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/kdigo-aki.html" href="#">KDIGO AKI 分期</a><a class="flow-link" data-ct="tools/fena.html" href="#">FENa／FEUrea</a><a class="flow-link" data-ct="tools/egfr.html" href="#">eGFR</a><a class="flow-link" data-ct="tools/iah.html" href="#">腹內壓</a><a class="flow-link" data-ct="pathways/iah-acs.html" href="#">IAH／ACS 流程</a><a class="flow-link" data-ct="pathways/aki-crrt.html" href="#">AKI 與 CRRT</a><a class="flow-link" href="fluids.html#mgmt">Marino 第 11 章 液體反應性</a></div>
+  </section>
+
+  <!-- ==================== Ch35 Sodium ==================== -->
+  <section class="renallyte-panel hidden" data-panel="na" id="renallyte-p-na">
+    <div class="dirhead"><span class="dh-n">第 35 章 滲透壓與血鈉</span><span class="dh-e">Chapter 35 · Osmotic Disorders (Hypernatremia &amp; Hyponatremia)</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#na/na-key"><i>01</i>重點卡</a><a class="sp-chip" href="#na/na-tab"><i>02</i>對照表</a><a class="sp-chip" href="#na/na-calc"><i>03</i>計算</a><a class="sp-chip" href="#na/na-flow"><i>04</i>流程</a><a class="sp-chip" href="#na/na-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#na/na-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>血鈉是水的問題不是鈉的問題</b>：鈉占有效滲透壓 98%，高血鈉＝水相對不足、低血鈉＝水相對過多；先用細胞外容積分三型。</span></div>
+        <div class="lede-item"><span>②</span><span><b>高血鈉要慢</b>：腦細胞 9 小時起累積 osmolyte、48 小時恢復體積，補水太快會腦水腫；≤0.5 mEq/L/hr，低張流失用 ½NS，等張食鹽水救得了血壓救不了血鈉。</span></div>
+        <div class="lede-item"><span>③</span><span><b>低血鈉看症狀不看數字</b>：腦病變就給 3% 食鹽水 2 mL/kg，升 5–6 應改善；24 小時 ≤8–10、終點 130，過度矯正用 desmopressin 擋。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="na-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="na-kc">全部展開</button></div>
+    <div id="na-kc">
+      <details class="def-box"><summary>01 · 滲透壓與張力 <span class="en">Osmolality &amp; tonicity</span></summary>
+        <div class="box-inner"><p class="kp"><b>計算滲透壓 ＝ 2Na ＋ 葡萄糖/18 ＋ BUN/2.8 ≈ 290 mOsm/kg；尿素自由穿膜，有效滲透壓不算它——高氮血症是高滲透不是高張。鈉占有效滲透壓 98%，決定水在細胞內外的分布。</b></p></div></details>
+      <details class="def-box"><summary>02 · 高血鈉：三型 <span class="en">Hypernatremia by ECV</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 25%、多為住院中獲得。低 ECV：低張流失（嘔吐、腹瀉、利尿劑、糖尿）；正常 ECV：純水流失或尿崩；高 ECV：碳酸氫鈉或食鹽水灌太多。</b></p>
+          <ul><li>低張流失也丟鈉：胃液 Na 60、腹瀉 75–90、利尿尿 80、汗 65 mEq/L。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 尿崩 <span class="en">Diabetes insipidus</span></summary>
+        <div class="box-inner"><p class="kp"><b>限水後尿滲透壓不升 30 以上 → 尿崩；vasopressin 後升 ≥50% 是中樞性（尿滲透壓常 <200），不變是腎性（200–500）。中樞：desmopressin 1 μg SC 或 2 μg IV q12h（口服只吸收 5%）；腎性：停 amphotericin、aminoglycoside、dopamine、lithium，indomethacin 2 mg/kg/天；妊娠性由 vasopressinase 造成。</b></p></div></details>
+      <details class="def-box"><summary>04 · 高血鈉的矯正 <span class="en">Correcting hypernatremia</span></summary>
+        <div class="box-inner"><p class="kp"><b>腦細胞在 9 小時內開始累積 osmolyte、48 小時恢復體積——補水太快腦水腫。傳統上限 0.5 mEq/L/hr（也有更快仍安全的報告）。等張食鹽水只矯正低血壓；低張流失用 ½NS 較 D5W 合理；高 ECV 型腎正常自己排、不行 furosemide 配 D5W（利尿尿 Na 80 低於血漿，單用會加重）。</b></p></div></details>
+      <details class="def-box"><summary>05 · 假性與高血糖 <span class="en">Pseudohyponatremia &amp; glucose</span></summary>
+        <div class="box-inner"><p class="kp"><b>蛋白 ≥12 g/dL 或三酸甘油酯 ≥1,500 讓固相變多、機器算低（骨髓瘤、免疫球蛋白、DKA、胰臟炎、膽汁鬱積）：實測滲透壓正常（285–295）就是假的，真低血鈉 <275。高血糖把水拉出細胞：每 100 mg/dL 校正 ＋2.4。</b></p></div></details>
+      <details class="def-box"><summary>06 · 低血鈉：三型 <span class="en">Hyponatremia by ECV</span></summary>
+        <div class="box-inner"><p class="kp"><b>低 ECV（thiazide 1/3、原發性腎上腺功能不全、腦性鹽耗；尿鈉 >20 腎性、<20 腎外）；正常 ECV（SIADH 尿滲透壓 >100 尿鈉 >20、壓力與低張液、原發性多飲尿滲透壓 <200、啤酒多飲；甲狀腺低下證據薄弱）；高 ECV（心衰竭、肝硬化、腎衰竭；腎衰竭尿鈉 >20、其他 <20）。</b></p>
+          <ul><li>SIADH 與腦性鹽耗只差 ECV。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 低血鈉腦病變 <span class="en">Hyponatremic encephalopathy</span></summary>
+        <div class="box-inner"><p class="kp"><b>噁心嘔吐頭痛失調 → 躁動混亂癲癇昏迷；與血鈉高低不相關、急性（<48 小時）較常見。決定用 3% 食鹽水的是症狀不是數字：2 mL/kg 或 150 mL bolus，幾小時重複到緩解，升 5–6 mEq/L 應見改善；周邊靜脈可給。</b></p></div></details>
+      <details class="def-box"><summary>08 · 滲透性脫髓鞘與過度矯正 <span class="en">Osmotic demyelination</span></summary>
+        <div class="box-inner"><p class="kp"><b>太快或過頭 → 雙相病程：先好轉再構音障礙、眼動異常、四肢癱、閉鎖；慢性低血鈉風險更高。24 小時 ≤8–10、終點 130。過度矯正達 25%（自發水利尿讓 ECV 縮、鈉濃縮）：尿量驟增 >100 mL/hr 或超過上限 → desmopressin 2 μg SC 並限水；thiazide、腎上腺功能不全、多飲者常規給。</b></p></div></details>
+      <details class="def-box"><summary>09 · 無症狀低血鈉的處置 <span class="en">Asymptomatic hyponatremia</span></summary>
+        <div class="box-inner"><p class="kp"><b>低 ECV：等張食鹽水，治病因（礦物皮質素、停 thiazide）。正常 ECV：限水到比尿量少 500 mL/天；不耐限水 demeclocycline 600–1,200 mg/天（腎毒）或 vaptans（升 6–7 但貴不流行）。高 ECV：furosemide 理論上可，但 RAAS 持續活化維持低血鈉。</b></p></div></details>
+    </div>
+    <div class="dirhead" id="na-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>ECV</th><th>高血鈉</th><th>低血鈉</th></tr>
+      <tr><td>低</td><td>低張流失：嘔吐、腹瀉、利尿劑、糖尿 → 食鹽水救血壓再 ½NS</td><td>Thiazide、腎上腺功能不全、腦性鹽耗 → 等張食鹽水</td></tr>
+      <tr><td>正常</td><td>純水流失、尿崩 → D5W；中樞 desmopressin</td><td>SIADH、壓力、低張液、多飲 → 限水</td></tr>
+      <tr><td>高</td><td>碳酸氫鈉、食鹽水灌太多 → 腎排、furosemide ＋ D5W</td><td>心衰竭、肝硬化、腎衰竭 → 限水限鹽</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>流失液</th><th>Na mEq/L</th><th>流失液</th><th>Na mEq/L</th></tr>
+      <tr><td>胃液</td><td>60</td><td>利尿尿</td><td>80</td></tr>
+      <tr><td>腹瀉</td><td>75–90</td><td>汗</td><td>65</td></tr>
+    </table></div>
+    <div class="dirhead" id="na-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c35osm">
+      <div class="rxbox-t">滲透壓與高血糖校正鈉</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Na <span class="rx-en">mEq/L</span></label><input type="number" id="om_na" step="1" placeholder="130"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血糖 <span class="rx-en">mg/dL</span></label><input type="number" id="om_glu" step="1" placeholder="600"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>BUN <span class="rx-en">mg/dL</span></label><input type="number" id="om_bun" step="1" placeholder="28"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c35osm_out"></div>
+    </div>
+    <div class="rxbox" id="c35hyper">
+      <div class="rxbox-t">高血鈉：自由水缺口與矯正時間</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="hn_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="hn_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血鈉 <span class="rx-en">mEq/L</span></label><input type="number" id="hn_na" step="1" placeholder="160"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c35hyper_out"></div>
+    </div>
+    <div class="rxbox" id="c35hts">
+      <div class="rxbox-t">低血鈉：3% 食鹽水</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ht_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血鈉 <span class="rx-en">mEq/L</span></label><input type="number" id="ht_na" step="1" placeholder="118"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腦病變症狀 <span class="rx-en">symptoms</span></label><select id="ht_s"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>過度矯正高風險 <span class="rx-en">thiazide／adrenal／polydipsia</span></label><select id="ht_r"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c35hts_out"></div>
+    </div>
+    <div class="dirhead" id="na-flow"><span class="dh-n">決策流程</span><span class="dh-e">Sodium: which type, what to do</span></div>
+    <div id="sn_flow">
+      <div class="flow-step" id="sn_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">血鈉方向？（低血鈉先排除假性與高血糖）</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="snPick('dir','high',this)">高血鈉</button>
+          <button class="flow-opt" onclick="snPick('dir','low',this)">低血鈉</button>
+        </div></div>
+      <div class="flow-step" id="sn_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（低血鈉）有腦病變症狀嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="snPick('sym','yes',this)">有<span class="fo-sub">噁心嘔吐頭痛 → 混亂癲癇昏迷</span></button>
+          <button class="flow-opt" onclick="snPick('sym','no',this)">無</button>
+        </div></div>
+      <div class="flow-step" id="sn_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">細胞外容積？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="snPick('ecv','low',this)">低</button>
+          <button class="flow-opt" onclick="snPick('ecv','normal',this)">正常</button>
+          <button class="flow-opt" onclick="snPick('ecv','high',this)">高<span class="fo-sub">水腫</span></button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="sn_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="snReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="na-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_na"></div>
+    <div class="dirhead" id="na-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/water-deficit.html" href="#">自由水缺口</a><a class="flow-link" data-ct="tools/osmolality.html" href="#">滲透壓與間隙</a><a class="flow-link" data-ct="tools/corrected-labs.html" href="#">校正檢驗值</a><a class="flow-link" data-ct="pathways/electrolyte.html" href="#">電解質流程</a><a class="flow-link" href="fluids.html#iv">Marino 第 10 章 靜脈輸液</a><a class="flow-link" href="acidbase.html#lac">Marino 第 32 章 DKA</a></div>
+  </section>
+
+  <!-- ==================== Ch36 Potassium ==================== -->
+  <section class="renallyte-panel hidden" data-panel="k" id="renallyte-p-k">
+    <div class="dirhead"><span class="dh-n">第 36 章 鉀</span><span class="dh-e">Chapter 36 · Potassium</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#k/k-key"><i>01</i>重點卡</a><a class="sp-chip" href="#k/k-tab"><i>02</i>對照表</a><a class="sp-chip" href="#k/k-calc"><i>03</i>計算</a><a class="sp-chip" href="#k/k-flow"><i>04</i>流程</a><a class="sp-chip" href="#k/k-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#k/k-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>血鉀是冰山一角</b>：98% 在細胞內，血鉀每降 1 mEq/L 缺 10% 總體鉀（200–400 mEq）；補不上先想鎂，先排除跨細胞移動。</span></div>
+        <div class="lede-item"><span>②</span><span><b>低鉀本身不致心律不整</b>，只放大其他原因的風險；<2.5 才無力。補 20 mEq/hr，>20 別進上腔靜脈。</span></div>
+        <div class="lede-item"><span>③</span><span><b>高血鉀先想假性、再想腎</b>：嚴重（>6.5 或 ECG 變化）三步——鈣穩心、insulin 推進細胞、SZC 或透析排出；碳酸氫鈉無效、β2 不可單用。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="k-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="k-kc">全部展開</button></div>
+    <div id="k-kc">
+      <details class="def-box"><summary>01 · 分布 <span class="en">Distribution</span></summary>
+        <div class="box-inner"><p class="kp"><b>總體鉀 50 mEq/kg，98% 在細胞內、血漿 0.4%。血鉀每降 1 mEq/L 約缺 10% 總體鉀（200–400）；升 1 只要多 100–200。初期血鉀降得慢（曲線平段）。</b></p></div></details>
+      <details class="def-box"><summary>02 · 低血鉀：跨細胞移動 <span class="en">Transcellular shift</span></summary>
+        <div class="box-inner"><p class="kp"><b>β2 促效劑（降 ≤0.5，併利尿劑更多）、鹼中毒、低溫（回溫恢復）、insulin——先排除，這些不需要補。</b></p></div></details>
+      <details class="def-box"><summary>03 · 低血鉀：流失 <span class="en">Potassium depletion</span></summary>
+        <div class="box-inner"><p class="kp"><b>腎性（尿鉀 >30）：利尿劑首因、缺鎂（腎小管漏鉀，鎂補足前補不上）、鼻胃管引流（K 只 10–15 但丟體積與 H⁺）；尿氯 <15 是鼻胃管或鹼中毒、>25 是利尿劑或缺鎂。腎外（尿鉀 <30）：腹瀉——糞便 K 15–40 mEq/L、每天可達 10 L。</b></p></div></details>
+      <details class="def-box"><summary>04 · 低血鉀的表現 <span class="en">Manifestations</span></summary>
+        <div class="box-inner"><p class="kp"><b><2.5 才瀰漫無力；ECG（U 波 >1 mm、T 平／倒、QT 長）50% 有但不專一。低鉀單獨<u>不</u>造成嚴重心律不整，只放大其他原因（缺血、digitalis）的風險。</b></p></div></details>
+      <details class="def-box"><summary>05 · 補鉀 <span class="en">Replacement</span></summary>
+        <div class="box-inner"><p class="kp"><b>KCl 濃縮液 2 mEq/mL、4,000 mOsm/L 一定要稀釋：20 mEq 加 100 mL 食鹽水 1 小時，嚴重 40（用過到 100）；大中央靜脈較不刺激，但 >20/hr 別進上腔靜脈（心搏停止）。DKA 用磷酸鉀（4.5 mEq K ＋ 3 mmol P/mL）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 高血鉀：假性 <span class="en">Pseudohyperkalemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>溶血、血小板 >500k、白血球極高、握拳找血管、抽太用力、氣送管、放太久——不合理就自己重抽。高血鉀一定有腎排泄缺陷的成分（正常腎排得掉負荷）。</b></p></div></details>
+      <details class="def-box"><summary>07 · 高血鉀：原因 <span class="en">Causes</span></summary>
+        <div class="box-inner"><p class="kp"><b>腎排泄受損（尿鉀 <30）：腎病、慢性腎上腺功能不全、ACEi／ARB／spironolactone／amiloride／NSAID／TMP-SMX。推出細胞：β 阻斷劑、digitalis、succinylcholine（脊髓損傷可致命）、酸中毒。負荷：輸血（存 18 天每單位 2–3 mEq、7 單位起）、腫瘤溶解（高鉀＋高磷＋低鈣＋高尿酸＋AKI，7 天內）、橫紋肌溶解。</b></p></div></details>
+      <details class="def-box"><summary>08 · 高血鉀的 ECG <span class="en">ECG changes</span></summary>
+        <div class="box-inner"><p class="kp"><b>T 尖（V2–V3 最早）→ P 變小 PR 延長 → P 消失 QRS 變寬 → VF／asystole。血鉀與 ECG 不相關：>7 只 40% 有變化、14 無變化的案例。嚴重 ＝ >6.5 或有 ECG 變化。</b></p></div></details>
+      <details class="def-box"><summary>09 · 嚴重高血鉀三步 <span class="en">Three-step treatment</span></summary>
+        <div class="box-inner"><p class="kp"><b>①穩心：10% 葡萄糖酸鈣 10 mL/3 分（5 分後可重複；幾分鐘見效、30–60 分消退）；循環崩潰用氯化鈣（鈣 3 倍）。②推進細胞：regular insulin 10 U ＋ D50 50 mL（降 ≥0.6，30–60 分高峰）；吸入 β2 要 4 倍治療劑量才降 0.5–1、不可單用；碳酸氫鈉無效（非酸中毒）且與鈣結合。③排出：SZC 10 g tid × 48 小時（1 小時見效）；透析 1 小時降 1、3 小時降 2；SPS 效果不定、起效慢、腸壞死。</b></p>
+          <ul><li>Digitalis 中毒給鈣是傳統禁忌，但回溯研究多無害。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="k-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>血鉀 mEq/L</th><th>總體鉀缺口</th><th>70 kg 換算</th></tr>
+      <tr><td>3.0</td><td>5%</td><td>175 mEq</td></tr>
+      <tr><td>2.5</td><td>10%</td><td>350 mEq</td></tr>
+      <tr><td>2.0</td><td>15%</td><td>525 mEq</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>步驟</th><th>藥</th><th>起效／持續</th><th>備註</th></tr>
+      <tr><td>穩定心肌</td><td>10% 葡萄糖酸鈣 10 mL IV 3 分；氯化鈣 10 mL 用於崩潰</td><td>分鐘／30–60 分</td><td>不降血鉀</td></tr>
+      <tr><td>推進細胞</td><td>Regular insulin 10 U ＋ D50 50 mL</td><td>15 分／4–6 小時</td><td>降 ≥0.6；監測低血糖</td></tr>
+      <tr><td></td><td>吸入 albuterol 10–20 mg</td><td>30 分</td><td>降 0.5–1；不可單用</td></tr>
+      <tr><td>排出</td><td>Sodium zirconium cyclosilicate 10 g tid × 48 h</td><td>1 小時</td><td>優於 SPS</td></tr>
+      <tr><td></td><td>血液透析</td><td>1 小時降 1</td><td>腎衰竭、頑固</td></tr>
+    </table></div>
+    <div class="dirhead" id="k-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c36def">
+      <div class="rxbox-t">鉀缺口與補充速率</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血鉀 <span class="rx-en">mEq/L</span></label><input type="number" id="kd_k" step="0.1" placeholder="2.8"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="kd_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>補鉀補不上 <span class="rx-en">refractory</span></label><select id="kd_mg"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c36def_out"></div>
+    </div>
+    <div class="rxbox" id="c36hyper">
+      <div class="rxbox-t">高血鉀處方</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血鉀 <span class="rx-en">mEq/L</span></label><input type="number" id="hk_k" step="0.1" placeholder="7.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ECG 變化 <span class="rx-en">peaked T／wide QRS</span></label><select id="hk_ecg"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿鉀 <span class="rx-en">mEq/L</span></label><input type="number" id="hk_uk" step="1" placeholder="20"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>近期輸血 <span class="rx-en">units</span></label><input type="number" id="hk_u" step="1" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Digitalis 中毒 <span class="rx-en">digoxin</span></label><select id="hk_dig"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c36hyper_out"></div>
+    </div>
+    <div class="dirhead" id="k-flow"><span class="dh-n">決策流程</span><span class="dh-e">Hypokalemia: where is it going</span></div>
+    <div id="hk_flow">
+      <div class="flow-step" id="hk_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">（排除跨細胞移動後）尿鉀？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hkPick('uk','low',this)"><30 mEq/L<span class="fo-sub">腎外流失</span></button>
+          <button class="flow-opt" onclick="hkPick('uk','high',this)">>30 mEq/L<span class="fo-sub">腎性流失</span></button>
+        </div></div>
+      <div class="flow-step" id="hk_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">尿氯？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hkPick('ucl','low',this)"><15 mEq/L</button>
+          <button class="flow-opt" onclick="hkPick('ucl','high',this)">>25 mEq/L</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="hk_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="hkReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="k-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_k"></div>
+    <div class="dirhead" id="k-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/electrolyte.html" href="#">電解質流程</a><a class="flow-link" data-ct="tools/ekg.html" href="#">心電圖圖鑑</a><a class="flow-link" href="acidbase.html#alk">Marino 第 33 章 代謝性鹼中毒</a><a class="flow-link" href="blood.html#rbc">Marino 第 19 章 輸血</a></div>
+  </section>
+
+  <!-- ==================== Ch37 Magnesium ==================== -->
+  <section class="renallyte-panel hidden" data-panel="mg" id="renallyte-p-mg">
+    <div class="dirhead"><span class="dh-n">第 37 章 鎂</span><span class="dh-e">Chapter 37 · Magnesium</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#mg/mg-key"><i>01</i>重點卡</a><a class="sp-chip" href="#mg/mg-tab"><i>02</i>對照表</a><a class="sp-chip" href="#mg/mg-calc"><i>03</i>計算</a><a class="sp-chip" href="#mg/mg-flow"><i>04</i>流程</a><a class="sp-chip" href="#mg/mg-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#mg/mg-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>血鎂只占 1%</b>：血鎂正常不排除缺鎂，尿鎂比血鎂早掉；ICU 低血鎂達 65%、缺鎂更多，首因是 furosemide。</span></div>
+        <div class="lede-item"><span>②</span><span><b>缺鎂讓低鉀與低鈣補不上</b>：腎小管漏鉀、PTH 分泌與反應都差——頑固低鉀先補鎂。</span></div>
+        <div class="lede-item"><span>③</span><span><b>Torsade 與癲癇不等血鎂</b>：2 g MgSO₄ 推 → 5 g/6 h → 5 g q12h × 5 天；bolus 後 15 分鐘就掉，一定要接輸注；腎功能不全減半。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="mg-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="mg-kc">全部展開</button></div>
+    <div id="mg-kc">
+      <details class="def-box"><summary>01 · 鎂的角色 <span class="en">Why magnesium</span></summary>
+        <div class="box-inner"><p class="kp"><b>Na-K ATPase 的輔因子、天然鈣阻斷劑、thiamine 變 TPP 要它（缺鎂會造成 Wernicke）。總體 24 g／2,000 mEq：一半在骨、血漿只 1%，67% 游離。</b></p></div></details>
+      <details class="def-box"><summary>02 · 血鎂與尿鎂 <span class="en">Serum vs urine</span></summary>
+        <div class="box-inner"><p class="kp"><b>血鎂正常 1.7–2.4 mg/dL（1.4–2.0 mEq/L、0.7–1.0 mmol/L）；用血清不用血漿（抗凝劑污染）。無鎂飲食一週內尿鎂（正常 5–15 mEq/天）就掉到幾乎零、血鎂還正常——缺鎂時血鎂可正常。</b></p></div></details>
+      <details class="def-box"><summary>03 · 缺鎂的原因 <span class="en">Causes</span></summary>
+        <div class="box-inner"><p class="kp"><b>Furosemide 慢性使用 50%（保鉀利尿劑不會）、aminoglycoside 30%、酒精 44%、急性 MI 80%、DKA 12 小時內 50%（insulin 推進細胞）、PPI、metformin、cisplatin、amphotericin、cyclosporine；分泌性腹瀉（下消化道 10–14 mEq/L；上消化道少，嘔吐不會）。</b></p></div></details>
+      <details class="def-box"><summary>04 · 缺鎂的表現 <span class="en">Manifestations</span></summary>
+        <div class="box-inner"><p class="kp"><b>多半是伴隨的電解質異常：低鉀 40%、低磷 30%（磷是因不是果）、低鈉 27%、低鈣 22%；低鉀與低鈣補鎂前補不上。心律不整（torsade、digitalis 毒性）、神經肌肉（震顫、癲癇）。</b></p></div></details>
+      <details class="def-box"><summary>05 · 鎂保留試驗 <span class="en">Retention test</span></summary>
+        <div class="box-inner"><p class="kp"><b>6 g MgSO₄（48 mEq）加 250 mL 食鹽水 1 小時輸完，從輸注開始收 24 小時尿：≤50% 排出＝缺鎂繼續補，>80%＝庫存已足。庫存正常時再吸收已接近 Tmax、負荷多半排掉；腎功能差時不可靠。</b></p></div></details>
+      <details class="def-box"><summary>06 · 補鎂方案 <span class="en">Replacement protocols</span></summary>
+        <div class="box-inner"><p class="kp"><b>MgSO₄·7H₂O 每克 8 mEq（4 mmol）；稀釋別用 Ringer（鈣抵銷鎂）。輕度：假設缺 1–2 mEq/kg、尿丟 50% 所以 ×2——第 1 天 1 mEq/kg、之後 0.5 mEq/kg × 3–5 天。中度（<1 mEq/L 或併其他電解質異常）：6 g/3 h → 5 g/6 h → 5 g q12h × 5 天。危及生命：2 g/2–5 分 → 5 g/6 h → 5 g q12h × 5 天。腎功能不全減半。</b></p>
+          <ul><li>Bolus 後 15 分鐘血鎂就掉——要接輸注；血鎂 1–2 天正常、庫存要好幾天。口服氧化鎂 400 mg 含 20 mEq，ICU 吸收不穩用 IV。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 鎂與心律不整 <span class="en">Magnesium as antiarrhythmic</span></summary>
+        <div class="box-inner"><p class="kp"><b>IV 鎂在血鎂正常也能壓掉 digitalis 毒性與頑固心室心律不整（膜穩定效應）；torsade 首選。</b></p></div></details>
+      <details class="def-box"><summary>08 · 高血鎂 <span class="en">Hypermagnesemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>多為 CrCl <30 加鎂製劑（制酸劑、瀉藥）；大量溶血每 250 mL 紅血球升 0.1。>4 mEq/L 反射低、>5 一度 AV 阻斷、>10 完全阻斷、>13 心跳停止。透析為首選；葡萄糖酸鈣 1 g 暫時對抗；有腎功能可灌水＋furosemide。</b></p></div></details>
+    </div>
+    <div class="dirhead" id="mg-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>嚴重度</th><th>定義</th><th>方案（MgSO₄）</th></tr>
+      <tr><td>輕度、無症狀</td><td>1–1.4 mEq/L</td><td>第 1 天 1 mEq/kg，之後 0.5 mEq/kg/天 × 3–5 天</td></tr>
+      <tr><td>中度</td><td><1 mEq/L 或併其他電解質異常</td><td>6 g/3 h → 5 g/6 h → 5 g q12h × 5 天</td></tr>
+      <tr><td>危及生命</td><td>Torsade、癲癇</td><td>2 g/2–5 分 → 5 g/6 h → 5 g q12h × 5 天</td></tr>
+      <tr><td colspan="3">腎功能不全（CrCl 30–50）減半；1 g MgSO₄ ＝ 8 mEq ＝ 4 mmol</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>誘因</th><th>比例</th><th>誘因</th><th>比例</th></tr>
+      <tr><td>Furosemide 慢性使用</td><td>50%</td><td>急性心肌梗塞</td><td>80%</td></tr>
+      <tr><td>Aminoglycoside</td><td>30%</td><td>DKA（12 小時內）</td><td>50%</td></tr>
+      <tr><td>酒精</td><td>44%</td><td>ICU 整體低血鎂</td><td>65%</td></tr>
+    </table></div>
+    <div class="dirhead" id="mg-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c37conv">
+      <div class="rxbox-t">鎂的單位換算</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血鎂 <span class="rx-en">value</span></label><input type="number" id="mc_v" step="0.1" placeholder="1.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單位 <span class="rx-en">unit</span></label><select id="mc_u"><option value="mgdl">mg/dL</option><option value="meq">mEq/L</option><option value="mmol">mmol/L</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c37conv_out"></div>
+    </div>
+    <div class="rxbox" id="c37rep">
+      <div class="rxbox-t">補鎂方案</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="mr_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嚴重度 <span class="rx-en">severity</span></label><select id="mr_s"><option value="mild">輕度、無症狀</option><option value="mod">中度（<1 mEq/L 或併其他異常）</option><option value="sev">Torsade／癲癇</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腎功能不全 <span class="rx-en">CrCl 30–50</span></label><select id="mr_r"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c37rep_out"></div>
+    </div>
+    <div class="rxbox" id="c37ret">
+      <div class="rxbox-t">鎂保留試驗判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>24 小時尿鎂 <span class="rx-en">mEq</span></label><input type="number" id="rt_ex" step="1" placeholder="15"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c37ret_out"></div>
+    </div>
+    <div class="dirhead" id="mg-flow"><span class="dh-n">決策流程</span><span class="dh-e">Suspected magnesium deficiency</span></div>
+    <div id="mg_flow">
+      <div class="flow-step" id="mg_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">情境？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="mgPick('ctx','emerg',this)">Torsade／癲癇</button>
+          <button class="flow-opt" onclick="mgPick('ctx','sus',this)">有誘因<span class="fo-sub">利尿劑、頑固低鉀、酒精、MI、DKA</span></button>
+        </div></div>
+      <div class="flow-step" id="mg_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">血鎂？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="mgPick('level','low',this)">低</button>
+          <button class="flow-opt" onclick="mgPick('level','normal',this)">正常</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="mg_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="mgReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="mg-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_mg"></div>
+    <div class="dirhead" id="mg-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/electrolyte.html" href="#">電解質流程</a><a class="flow-link" data-ct="tools/acls.html" href="#">ACLS（torsade）</a><a class="flow-link" href="cardiac.html#tachy">Marino 第 21 章 心律不整</a></div>
+  </section>
+
+  <!-- ==================== Ch38 Calcium & Phosphorus ==================== -->
+  <section class="renallyte-panel hidden" data-panel="capo" id="renallyte-p-capo">
+    <div class="dirhead"><span class="dh-n">第 38 章 鈣與磷</span><span class="dh-e">Chapter 38 · Calcium and Phosphorus</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#capo/cp-key"><i>01</i>重點卡</a><a class="sp-chip" href="#capo/cp-tab"><i>02</i>對照表</a><a class="sp-chip" href="#capo/cp-calc"><i>03</i>計算</a><a class="sp-chip" href="#capo/cp-flow"><i>04</i>流程</a><a class="sp-chip" href="#capo/cp-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#capo/cp-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>白蛋白校正公式都不可靠</b>，直接測游離鈣（1.15–1.25 mmol/L）；ICU 88% 有游離低血鈣、幾乎都無後果，是疾病標記。</span></div>
+        <div class="lede-item"><span>②</span><span><b>IV 鈣會促進多器官衰竭</b>：只在有症狀或 <0.65 mmol/L 才補，缺鎂者先補鎂；鈣的主要用途是擋高血鉀的心臟毒性。</span></div>
+        <div class="lede-item"><span>③</span><span><b>低血磷 <1 一律補、1–2.5 只在器官失能時補</b>；高血鈣 >14 或神經症狀才治，食鹽水先、zoledronate 一決定就給。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="cp-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="cp-kc">全部展開</button></div>
+    <div id="cp-kc">
+      <details class="def-box"><summary>01 · 游離鈣才算數 <span class="en">Ionized calcium</span></summary>
+        <div class="box-inner"><p class="kp"><b>鈣半數游離、40% 結合白蛋白、10% 複合陰離子；低白蛋白降總鈣不降游離鈣，校正公式都不可靠——直接測游離鈣（避免氣泡、不用 heparin／citrate／EDTA 管）。</b></p></div></details>
+      <details class="def-box"><summary>02 · ICU 低血鈣的原因 <span class="en">Causes in the ICU</span></summary>
+        <div class="box-inner"><p class="kp"><b>鹼中毒（結合白蛋白）、碳酸氫鈉、缺鎂（PTH 分泌與反應差）、敗血症（細胞激素 → calcitonin）、腎衰竭（磷滯留、維生素 D）、大量輸血（citrate；創傷過半 <0.9）、胰臟炎、橫紋肌溶解、腫瘤溶解。副甲狀腺低下才是症狀性低血鈣的主角，ICU 少見。</b></p></div></details>
+      <details class="def-box"><summary>03 · 該不該補鈣 <span class="en">To treat or not</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 88% 有游離低血鈣、幾乎都無後果——是疾病標記不是病，有人主張別常規驗。IV 鈣促進重症多器官衰竭（細胞內鈣過載）。只在有症狀（tetany、癲癇、低血壓）或 <0.65 mmol/L 才補；缺鎂者先補鎂。Chvostek 徵象 50% 健康人也有。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+      <details class="def-box"><summary>04 · 補鈣 <span class="en">Calcium replacement</span></summary>
+        <div class="box-inner"><p class="kp"><b>200 mg 元素鈣 ≈ 22 mL 10% 葡萄糖酸鈣（9 mg/mL、680 mOsm）加 100 mL 食鹽水 5–10 分（升總鈣 0.5 mg/dL、30 分後開始掉）→ 1–2 mg/kg/hr 至少 6 小時，依游離鈣調。氯化鈣 27 mg/mL 但 2,000 mOsm 刺激。</b></p></div></details>
+      <details class="def-box"><summary>05 · 高血鈣 <span class="en">Hypercalcemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 多是惡性腫瘤（骨髓瘤、乳癌、肺癌、卵巢癌、頭頸鱗癌、淋巴瘤）。>12.5 開始有症狀（噁心嘔吐便秘腸阻塞、低血容低血壓 QT 短、多尿 AKI、混亂昏迷）；高鈣尿滲透性利尿 → 低血容 → 排鈣更少 → 鈣升更快。治療門檻 >14 mg/dL（游離 >3.5 mmol/L）或神經症狀。</b></p></div></details>
+      <details class="def-box"><summary>06 · 高血鈣的治療 <span class="en">Treating hypercalcemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>等張食鹽水到尿量 100–150 mL/hr（降 1–2）；furosemide 無加成證據、只用於過載。Calcitonin 4 U/kg SC q12h（2 小時起效、降 1–2、24–48 小時耐受）。Zoledronate 4 mg IV/15 分是第一線（2–4 天起效、4–7 天高峰、持續 1–4 週）——一決定治療就給。類固醇對骨髓瘤、淋巴瘤最有效；腎衰竭可透析。</b></p></div></details>
+      <details class="def-box"><summary>07 · 低血磷的原因 <span class="en">Hypophosphatemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 80% 有、多無症狀（<1 也常無害）。葡萄糖負荷最常見（磷跟葡萄糖進細胞：TPN 2 天出現、一週 <1；再餵食症候群；DKA 給 insulin 後）、呼吸性鹼中毒（糖解加速）、β 刺激、發炎、含鋁製劑（sucralfate）。</b></p></div></details>
+      <details class="def-box"><summary>08 · 缺磷的後果 <span class="en">Consequences</span></summary>
+        <div class="box-inner"><p class="kp"><b>威脅氧化代謝：心輸出量降、紅血球變形差溶血、2,3-DPG 降左移、ATP 少；橫紋肌溶解、呼吸肌無力。</b></p></div></details>
+      <details class="def-box"><summary>09 · 補磷 <span class="en">Phosphate replacement</span></summary>
+        <div class="box-inner"><p class="kp"><b><1 mg/dL 一律補；1–2.5 只在有心臟失能、呼吸衰竭或橫紋肌溶解時補。IV 磷酸鹽 3 mmol/mL，依體重（40–60／61–80／81–120 kg）與血磷給 10–50 mmol；血鉀 ≥4 用磷酸鈉、<4 用磷酸鉀。</b></p></div></details>
+      <details class="def-box"><summary>10 · 高血磷 <span class="en">Hyperphosphatemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>末期腎病、腫瘤溶解、副甲狀腺低下。磷結合劑：sevelamer 800–1,600 mg tid（用 carbonate 不用 hydrochloride）或 calcium acetate 1,334 mg tid，目標 <6 且不高血鈣；急性嚴重可透析。</b></p></div></details>
+      <details class="def-box"><summary>11 · 正常化捷思 <span class="en">The normalization heuristic</span></summary>
+        <div class="box-inner"><p class="kp"><b>把統計範圍外的數字矯正回來的習慣——很常見、也沒有價值；範圍外可能只是正常離群值，低血鈣與低血磷在 ICU 多是疾病標記而非需要矯正的病。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="cp-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>高血鈣</th><th>劑量</th><th>起效</th><th>備註</th></tr>
+      <tr><td>等張食鹽水</td><td>尿量 100–150 mL/hr</td><td>小時</td><td>降 1–2；先矯正低血容</td></tr>
+      <tr><td>Calcitonin</td><td>4 U/kg SC q12h</td><td>2 小時</td><td>降 1–2；24–48 小時耐受</td></tr>
+      <tr><td>Zoledronate</td><td>4 mg IV/15 分</td><td>2–4 天</td><td>第一線；持續 1–4 週；pamidronate 90 mg/2 h 替代</td></tr>
+      <tr><td>Hydrocortisone</td><td>200–400 mg/天 × 3 天 → prednisone 10–20 × 7 天</td><td>天</td><td>骨髓瘤、淋巴瘤</td></tr>
+      <tr><td>Furosemide</td><td>只用於過載</td><td>—</td><td>無加成證據</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>血磷 mg/dL</th><th>40–60 kg</th><th>61–80 kg</th><th>81–120 kg</th></tr>
+      <tr><td><1</td><td>30 mmol</td><td>40 mmol</td><td>50 mmol</td></tr>
+      <tr><td>1–1.7</td><td>20</td><td>30</td><td>40</td></tr>
+      <tr><td>1.8–2.5（有器官失能）</td><td>10</td><td>15</td><td>20</td></tr>
+      <tr><td colspan="4">磷酸鈉或磷酸鉀 3 mmol/mL；血鉀 ≥4 用鈉鹽、<4 用鉀鹽</td></tr>
+    </table></div>
+    <div class="dirhead" id="cp-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c38ca">
+      <div class="rxbox-t">游離鈣：判讀與補鈣</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>游離鈣 <span class="rx-en">value</span></label><input type="number" id="ca_i" step="0.01" placeholder="0.95"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單位 <span class="rx-en">unit</span></label><select id="ca_u"><option value="mmol">mmol/L</option><option value="mgdl">mg/dL</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>有症狀 <span class="rx-en">tetany／seizure／hypotension</span></label><select id="ca_s"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>缺鎂 <span class="rx-en">hypomagnesemia</span></label><select id="ca_mg"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ca_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c38ca_out"></div>
+    </div>
+    <div class="rxbox" id="c38hyca">
+      <div class="rxbox-t">高血鈣處方</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血鈣 <span class="rx-en">mg/dL</span></label><input type="number" id="hc_ca" step="0.1" placeholder="15.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="hc_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>神經症狀 <span class="rx-en">confusion／coma</span></label><select id="hc_n"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CrCl <span class="rx-en">mL/min</span></label><input type="number" id="hc_cr" step="1" placeholder="60"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c38hyca_out"></div>
+    </div>
+    <div class="rxbox" id="c38po4">
+      <div class="rxbox-t">血磷：該不該補、補多少</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血磷 <span class="rx-en">mg/dL</span></label><input type="number" id="po_p" step="0.1" placeholder="0.8"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="po_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血鉀 <span class="rx-en">mEq/L</span></label><input type="number" id="po_k" step="0.1" placeholder="3.6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>器官失能 <span class="rx-en">cardiac／respiratory／rhabdo</span></label><select id="po_o"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c38po4_out"></div>
+    </div>
+    <div class="dirhead" id="cp-flow"><span class="dh-n">決策流程</span><span class="dh-e">Ionized hypocalcemia: treat or not</span></div>
+    <div id="lc_flow">
+      <div class="flow-step" id="lc_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有低血鈣的症狀嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="lcPick('sym','yes',this)">有<span class="fo-sub">tetany、癲癇、低血壓；游離 <0.65</span></button>
+          <button class="flow-opt" onclick="lcPick('sym','no',this)">無</button>
+        </div></div>
+      <div class="flow-step" id="lc_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">缺鎂嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="lcPick('mg','yes',this)">是</button>
+          <button class="flow-opt" onclick="lcPick('mg','no',this)">否</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="lc_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="lcReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="cp-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_capo"></div>
+    <div class="dirhead" id="cp-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/corrected-labs.html" href="#">校正檢驗值</a><a class="flow-link" data-ct="pathways/electrolyte.html" href="#">電解質流程</a><a class="flow-link" data-ct="pathways/nutrition.html" href="#">營養（再餵食）</a><a class="flow-link" href="blood.html#rbc">Marino 第 19 章 大量輸血</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 34–38 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26162677/" target="_blank" rel="noopener" class="ref-link">Hoste et al. Epidemiology of AKI in critically ill patients (AKI-EPI). ICM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34213593/" target="_blank" rel="noopener" class="ref-link">Pickkers et al. Acute kidney injury in the critically ill: an updated review. ICM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29355173/" target="_blank" rel="noopener" class="ref-link">Kellum & Prowle. Paradigms of acute kidney injury in the intensive care setting. Nat Rev Nephrol 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22890468/" target="_blank" rel="noopener" class="ref-link">Khwaja. KDIGO clinical practice guidelines for acute kidney injury. Nephron Clin Pract 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24108501/" target="_blank" rel="noopener" class="ref-link">Puthucheary et al. Acute skeletal muscle wasting in critical illness. JAMA 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23673399/" target="_blank" rel="noopener" class="ref-link">Kirkpatrick et al. WSACS consensus definitions and guidelines on IAH/ACS. ICM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/14758472/" target="_blank" rel="noopener" class="ref-link">Malbrain et al. Prevalence of intra-abdominal hypertension in critically ill patients. ICM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17895487/" target="_blank" rel="noopener" class="ref-link">Daugherty et al. Abdominal compartment syndrome with positive fluid balance. J Intensive Care Med 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28197679/" target="_blank" rel="noopener" class="ref-link">Ehrmann et al. Contrast-associated AKI in the critically ill: meta-analysis. ICM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36715705/" target="_blank" rel="noopener" class="ref-link">Ehmann et al. Contrast-associated AKI in ICU patients with preexisting AKI. ICM 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24008958/" target="_blank" rel="noopener" class="ref-link">Zimmerman et al. Rhabdomyolysis. Chest 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25043142/" target="_blank" rel="noopener" class="ref-link">Petejova & Martinek. Acute kidney injury due to rhabdomyolysis and renal replacement therapy. Crit Care 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19114909/" target="_blank" rel="noopener" class="ref-link">van der Voort et al. Furosemide does not improve renal recovery after hemofiltration. CCM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11505120/" target="_blank" rel="noopener" class="ref-link">Kellum & Decker. Use of dopamine in acute renal failure: a meta-analysis. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12684320/" target="_blank" rel="noopener" class="ref-link">Holmes & Walley. Bad medicine: low-dose dopamine in the ICU. Chest 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33752864/" target="_blank" rel="noopener" class="ref-link">Bagshaw & Wald. Timing of renal replacement therapy in AKI. Crit Care Clin 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31606238/" target="_blank" rel="noopener" class="ref-link">Seay et al. Diagnosis and management of disorders of body tonicity. AJKD 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25551526/" target="_blank" rel="noopener" class="ref-link">Sterns. Disorders of plasma sodium: causes, consequences, and correction. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34939612/" target="_blank" rel="noopener" class="ref-link">Chand et al. Hypernatremia in the intensive care unit. Curr Opin Nephrol Hypertens 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30948456/" target="_blank" rel="noopener" class="ref-link">Chauhan et al. Rate of correction of hypernatremia and health outcomes in critically ill patients. CJASN 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35771962/" target="_blank" rel="noopener" class="ref-link">Tomkins et al. Diagnosis and management of central diabetes insipidus in adults. JCEM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15806465/" target="_blank" rel="noopener" class="ref-link">Garofeanu et al. Causes of reversible nephrogenic diabetes insipidus. AJKD 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24562549/" target="_blank" rel="noopener" class="ref-link">Spasovski et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. ICM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35852524/" target="_blank" rel="noopener" class="ref-link">Adrogué et al. Diagnosis and management of hyponatremia: a review. JAMA 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26422725/" target="_blank" rel="noopener" class="ref-link">Moritz & Ayus. Management of hyponatremia in various clinical situations. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28704229/" target="_blank" rel="noopener" class="ref-link">Achinger & Ayus. Treatment of hyponatremic encephalopathy in the critically ill. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25220878/" target="_blank" rel="noopener" class="ref-link">Singh et al. Central pontine and extrapontine myelinolysis: a systematic review. Eur J Neurol 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33104189/" target="_blank" rel="noopener" class="ref-link">Baek et al. Rapid intermittent bolus vs slow continuous infusion of hypertonic saline (SALSA). JAMA Intern Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23266328/" target="_blank" rel="noopener" class="ref-link">Sood et al. Hypertonic saline and desmopressin: a simple strategy for safe correction of severe hyponatremia. AJKD 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16600469/" target="_blank" rel="noopener" class="ref-link">Alfonzo et al. Potassium disorders: clinical spectrum and emergency management. Resuscitation 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6268928/" target="_blank" rel="noopener" class="ref-link">Sterns et al. Internal potassium balance and the control of the plasma potassium concentration. Medicine 1981</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2310280/" target="_blank" rel="noopener" class="ref-link">Kruse & Carlson. Rapid correction of hypokalemia using concentrated intravenous potassium chloride infusions. Arch Intern Med 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16145218/" target="_blank" rel="noopener" class="ref-link">Evans & Greenberg. Hyperkalemia: a review. J Intensive Care Med 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2325722/" target="_blank" rel="noopener" class="ref-link">Don et al. Pseudohyperkalemia caused by fist clenching during phlebotomy. NEJM 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21561350/" target="_blank" rel="noopener" class="ref-link">Howard et al. The tumor lysis syndrome. NEJM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15295051/" target="_blank" rel="noopener" class="ref-link">Palmer. Managing hyperkalemia caused by inhibitors of the renin–angiotensin–aldosterone system. NEJM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21498041/" target="_blank" rel="noopener" class="ref-link">Vraets et al. Transfusion-associated hyperkalemia. Transfus Med Rev 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18376177/" target="_blank" rel="noopener" class="ref-link">Aboudara et al. Hyperkalemia after packed red blood cell transfusion in trauma patients. J Trauma 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34890894/" target="_blank" rel="noopener" class="ref-link">Gupta et al. Treatment of hyperkalemia with sodium zirconium cyclosilicate. Am J Emerg Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18235147/" target="_blank" rel="noopener" class="ref-link">Montague et al. Retrospective review of the frequency of ECG changes in hyperkalemia. CJASN 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18936701/" target="_blank" rel="noopener" class="ref-link">Weisberg. Management of severe hyperkalemia. CCM 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19201134/" target="_blank" rel="noopener" class="ref-link">Levine et al. The effects of intravenous calcium in patients with digoxin toxicity. J Emerg Med 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25415807/" target="_blank" rel="noopener" class="ref-link">Packham et al. Sodium zirconium cyclosilicate in hyperkalemia. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12107669/" target="_blank" rel="noopener" class="ref-link">Noronha & Matuschak. Magnesium in critical illness: metabolism, assessment, and supplementation. ICM 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15665255/" target="_blank" rel="noopener" class="ref-link">Tong & Rude. Magnesium deficiency in critical illness. J Intensive Care Med 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6476998/" target="_blank" rel="noopener" class="ref-link">Whang et al. Predictors of clinical hypomagnesemia. Arch Intern Med 1984</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9187591/" target="_blank" rel="noopener" class="ref-link">Hébert et al. Functional magnesium deficiency in critically ill patients identified using a magnesium-loading test. CCM 1997</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35473642/" target="_blank" rel="noopener" class="ref-link">Mueller et al. Magnesium and its effect on arrhythmias. Resuscitation 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12771607/" target="_blank" rel="noopener" class="ref-link">Slomp et al. Albumin-adjusted calcium is not suitable for diagnosis of hyper- and hypocalcemia in the critically ill. CCM 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26836894/" target="_blank" rel="noopener" class="ref-link">Aberegg. Ionized calcium in the ICU: should it be measured and corrected? Chest 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21099425/" target="_blank" rel="noopener" class="ref-link">Egi et al. Ionized calcium concentration and outcome in critical illness. CCM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27083965/" target="_blank" rel="noopener" class="ref-link">Giancarelli et al. Hypocalcemia in trauma patients receiving massive transfusion. J Surg Res 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23887235/" target="_blank" rel="noopener" class="ref-link">Collage et al. Calcium supplementation during sepsis exacerbates organ failure and mortality. CCM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24130250/" target="_blank" rel="noopener" class="ref-link">Maier & Levine. Hypercalcemia in the intensive care unit. J Intensive Care Med 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18711156/" target="_blank" rel="noopener" class="ref-link">LeGrand et al. Narrative review: furosemide for hypercalcemia. Ann Intern Med 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32783487/" target="_blank" rel="noopener" class="ref-link">Sin et al. Hypophosphatemia and outcomes in ICU: a systematic review. J Intensive Care Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32115791/" target="_blank" rel="noopener" class="ref-link">da Silva et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/14759775/" target="_blank" rel="noopener" class="ref-link">Taylor et al. Treatment of hypophosphatemia using a protocol based on patient weight and serum phosphorus level. J Am Coll Surg 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19231086/" target="_blank" rel="noopener" class="ref-link">Aberegg & O'Brien. The normalization heuristic. Med Hypotheses 2009</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/renallyte.js"></script>
+<script>ICU.makeTabs('renallyte'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

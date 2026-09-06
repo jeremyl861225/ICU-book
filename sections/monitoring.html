@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>生理監測 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="生理監測">
+<div class="sheet">
+<div class="view active" id="view-monitoring">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section III</div><h1>生理監測</h1><div class="sub">Physiological Monitoring · 血氧與二氧化碳 → 肺動脈導管 → 全身氧合 · 第 7–9 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-monitoring'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="monitoring_tabs">
+    <button class="tab-btn active" data-p="ox">血氧與 CO₂ <span class="mono">Ch7</span></button>
+    <button class="tab-btn" data-p="pac">肺動脈導管 <span class="mono">Ch8</span></button>
+    <button class="tab-btn" data-p="o2">全身氧合 <span class="mono">Ch9</span></button>
+  </div>
+
+  <!-- ==================== Ch7 Oximetry and Capnography ==================== -->
+  <section class="monitoring-panel" data-panel="ox" id="monitoring-p-ox">
+    <div class="dirhead"><span class="dh-n">第 7 章 血氧與二氧化碳監測</span><span class="dh-e">Chapter 7 · Oximetry and Capnography</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ox/ox-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ox/ox-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ox/ox-calc"><i>03</i>計算</a><a class="sp-chip" href="#ox/ox-flow"><i>04</i>流程</a><a class="sp-chip" href="#ox/ox-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ox/ox-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>脈搏血氧只看搏動的那一部分光</b>，所以量到的是動脈；它不認得 COHb 與 metHb、在深膚色會高估、單次誤差 3–4%。</span></div>
+        <div class="lede-item"><span>②</span><span><b>SpO₂ 說不出組織氧合，SpO₂ − SvO₂ 可以</b>：這個差 ≈ 氧萃取率，≥50% 就是有氧代謝受威脅，也是輸血指標。</span></div>
+        <div class="lede-item"><span>③</span><span><b>PETCO₂ 有四個用途</b>：程序鎮靜比 SpO₂ 早警告、插管確認是標準作業、CPR 20 分鐘 ≤10 mmHg 預後差、PaCO₂ − PETCO₂ 差追蹤死腔。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ox-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ox-kc">全部展開</button></div>
+    <div id="ox-kc">
+      <details class="def-box"><summary>01 · 光與血紅素：脈搏血氧的原理 <span class="en">Pulse oximetry</span></summary>
+        <div class="box-inner"><p class="kp"><b>660 nm（紅）HbO₂ 吸收少、940 nm（紅外）HbO₂ 吸收多；只分析隨動脈搏動變化的光，就排除了靜脈與組織。</b></p>
+          <ul><li>1940 年代耳垂血氧因皮膚色素、組織厚度與動靜脈不分而失敗；1970 年代脈搏血氧解決了它。</li><li>SpO₂ ＝ HbO₂ / (Hb ＋ HbO₂) × 100。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 指尖 vs 額頭 <span class="en">Fingertip vs forehead</span></summary>
+        <div class="box-inner"><p class="kp"><b>低血壓或周邊血管收縮時指尖不可靠，額頭（內頸動脈供應）反射式較不受影響；要配彈性頭帶壓掉靜脈搏動。</b></p>
+          <ul><li>正壓通氣時額頭靜脈搏動明顯，會被誤讀成動脈。智慧手錶用的也是反射式。</li></ul></div></details>
+      <details class="def-box"><summary>03 · CO-oximetry：SpO₂ 看不到的兩種血紅素 <span class="en">COHb · metHb</span></summary>
+        <div class="box-inner"><p class="kp"><b>標準脈搏血氧不偵測 COHb 與 metHb；一氧化碳中毒與變性血紅素血症時 SpO₂ 高估 SaO₂。</b></p>
+          <ul><li>正常兩者合計 <5%。實驗室 CO-oximeter 用到 8 個波長、需動脈血；攜帶型 pulse CO-oximeter 準確度不一致。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 準確度與膚色 <span class="en">Accuracy</span></summary>
+        <div class="box-inner"><p class="kp"><b>單次 3–4%、連續 2–3%；SpO₂ 通常高於 SaO₂，深膚色多高估 1–3%。</b></p>
+          <ul><li>88,000 組配對：未偵測低血氧（SaO₂ <88% 而 SpO₂ ≥92%）黑人 6.9%、西語裔 6.0%、白人與亞裔 4.9%。</li><li>SpO₂ 變化 3–4% 才算顯著。</li></ul></div></details>
+      <details class="def-box"><summary>05 · SpO₂ 的用法與目標 <span class="en">Applications</span></summary>
+        <div class="box-inner"><p class="kp"><b>CaO₂ ＝ 1.34 × Hb × SaO₂（15 g/dL、98% → 19.7 mL/dL）；目標 SpO₂ 90–94%，高碳酸呼吸衰竭 88–92%。</b></p>
+          <ul><li>ICU 與手術室是病人安全要件，問題不是要不要用，是怎麼用。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 靜脈血氧與雙重血氧 <span class="en">Venous &amp; dual oximetry</span></summary>
+        <div class="box-inner"><p class="kp"><b>SvO₂ ＝ 1 − VO₂/DO₂，正常 70–75%；SpO₂ − SvO₂ ≈ 氧萃取，>25% DO₂ 相對不足、≥50% 威脅有氧代謝。</b></p>
+          <ul><li>光纖 oximetry 導管每 5 秒更新；PA 導管型準確 1–2%；穩定病人幾小時內 SvO₂ 自然波動 5–6% → <b>變化 >5% 且持續 >10 分鐘</b>才顯著。</li><li>ScvO₂（上腔靜脈）健康時略低於 SvO₂，休克時反而較高（腦血流相對保留）；單次可差 10%、多次在 5% 內 → 看趨勢。</li><li>SpO₂ − SvO₂ ≥50% 是驗證過的輸血指標。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 紅外線 capnography 與 capnogram 四相 <span class="en">Capnography</span></summary>
+        <div class="box-inner"><p class="kp"><b>I 解剖死腔（幾乎無 CO₂）→ II 上升（COPD 上升慢＝肺泡死腔多）→ III 平台 → IV 吸氣。</b></p>
+          <ul><li>探頭放在呼吸器與病人之間；非插管病人有鼻管型探頭。比色偵測只做定性（插管確認）。</li></ul></div></details>
+      <details class="def-box"><summary>08 · PETCO₂ 的四個用途 <span class="en">Applications of capnography</span></summary>
+        <div class="box-inner"><p class="kp"><b>程序鎮靜、插管確認、心輸出量／CPR、PaCO₂ − PETCO₂ 差。</b></p>
+          <ul><li><b>程序鎮靜</b>：低通氣先升 PETCO₂ 後降 SpO₂；高齡、肥胖、睡眠呼吸中止、慢性 CO₂ 滯留風險最高；所有程序鎮靜都建議。</li>
+            <li><b>插管確認</b>：未察覺食道插管每 18 次緊急插管 1 次；聽診不可靠；心跳停止時氣管內也可能無 CO₂。</li>
+            <li><b>心輸出量</b>：PETCO₂ 與 CO 變化相關，可預測呼吸器病人的液體反應性（自主呼吸健康人不行）；<b>CPR 20 分鐘後 ≤10 mmHg → ROSC 機會低</b>。</li>
+            <li><b>PaCO₂ − PETCO₂</b>：健康肺接近；死腔增加（肺炎、COPD、肺水腫、PE、CO 急降、管路漏氣、過度充氣）→ PETCO₂ 偏低；可用來找最適潮氣量。PETCO₂ > PaCO₂：高代謝、代謝性酸中毒、高氧。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 作者觀點：填補 PA 導管退場後的空缺 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>SpO₂ 本身說不出組織氧合，雙重血氧可以；PETCO₂ 可以抓心輸出量的急變、也是 CPR 預後的利器。</b></p></div></details>
+    </div>
+    <div class="dirhead" id="ox-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>PETCO₂ &lt; PaCO₂（死腔增加）</th><th>PETCO₂ &gt; PaCO₂</th></tr>
+      <tr><td>呼吸器管路漏氣、肺過度充氣、肺炎、阻塞性肺病、肺水腫、肺栓塞、心輸出急降</td><td>高代謝、代謝性酸中毒、高氧</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>指標</th><th>正常</th><th>DO₂ 相對不足</th><th>有氧代謝受威脅</th><th>氧利用缺陷</th></tr>
+      <tr><td>SpO₂ − SvO₂</td><td>20–30%</td><td>&gt;25–30%</td><td>≥50%</td><td>&lt;20%</td></tr>
+      <tr><td>SvO₂</td><td>65–75%</td><td>&lt;65%</td><td>≤50%</td><td>≥80%</td></tr>
+    </table></div>
+    <div class="dirhead" id="ox-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c7dual">
+      <div class="rxbox-t">雙重血氧 SpO₂ − SvO₂</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>SpO₂ <span class="rx-en">%</span></label><input type="number" id="du_sp" step="1" placeholder="97"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SvO₂ 或 ScvO₂ <span class="rx-en">%</span></label><input type="number" id="du_sv" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c7dual_out"></div>
+    </div>
+    <div class="rxbox" id="c7gap">
+      <div class="rxbox-t">PaCO₂ − PETCO₂ 差</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="cg_pa" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PETCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="cg_pe" step="1" placeholder="36"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c7gap_out"></div>
+    </div>
+    <div class="dirhead" id="ox-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which PETCO₂ question</span></div>
+    <div id="cp_flow">
+      <div class="flow-step" id="cp_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">你現在要用 PETCO₂ 回答什麼？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cpPick('ctx','tube',this)">管子在不在氣管裡</button>
+          <button class="flow-opt" onclick="cpPick('ctx','sed',this)">程序鎮靜有沒有低通氣</button>
+          <button class="flow-opt" onclick="cpPick('ctx','cpr',this)">CPR 要不要繼續</button>
+          <button class="flow-opt" onclick="cpPick('ctx','vent',this)">呼吸器病人的 PaCO₂ − PETCO₂ 變大了</button>
+          <button class="flow-opt" onclick="cpPick('ctx','fluid',this)">輸液會不會有反應</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="cp_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="cpReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ox-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_ox"></div>
+    <div class="dirhead" id="ox-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣判讀</a><a class="flow-link" data-ct="tools/acls.html" href="#">ACLS</a><a class="flow-link" data-ct="tools/rsi.html" href="#">RSI 插管</a><a class="flow-link" data-ct="pathways/respiratory-failure.html" href="#">呼吸衰竭總論</a></div>
+  </section>
+
+  <!-- ==================== Ch8 The Pulmonary Artery Catheter ==================== -->
+  <section class="monitoring-panel hidden" data-panel="pac" id="monitoring-p-pac">
+    <div class="dirhead"><span class="dh-n">第 8 章 肺動脈導管</span><span class="dh-e">Chapter 8 · The Pulmonary Artery Catheter</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#pac/pa-key"><i>01</i>重點卡</a><a class="sp-chip" href="#pac/pa-tab"><i>02</i>對照表</a><a class="sp-chip" href="#pac/pa-calc"><i>03</i>計算</a><a class="sp-chip" href="#pac/pa-flow"><i>04</i>流程</a><a class="sp-chip" href="#pac/pa-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#pac/pa-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>Wedge 壓＝左房壓＝左心室舒張末壓，前提有五個</b>：血流停止、微血管壓高於肺泡壓、呼氣末、無肺高壓、二尖瓣正常。</span></div>
+        <div class="lede-item"><span>②</span><span><b>熱稀釋是床邊心輸出量的黃金標準</b>，但三次差 ≤10% 才可信、變化 >10% 才顯著；三尖瓣逆流與分流會騙它。</span></div>
+        <div class="lede-item"><span>③</span><span><b>PA 導管的壞名聲是冤枉的</b>：它是監測工具不是治療，該用死亡率評的是治療；用量 1999–2013 降了 70%，而心因性休克用它反而結果較好。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="pa-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pa-kc">全部展開</button></div>
+    <div id="pa-kc">
+      <details class="def-box"><summary>01 · 導管本體 <span class="en">The catheter</span></summary>
+        <div class="box-inner"><p class="kp"><b>110 cm、2.3 mm（約 7 Fr）；遠端 PA 腔、近端 RA 腔在尖端後 30 cm；1.5 mL 氣球；thermistor 近尖端。</b></p>
+          <ul><li>經 8–9 Fr introducer 從鎖骨下或內頸靜脈進；氣球充飽時把尖端包住，避免刮血管壁。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 放置：靠壓力波形認位置 <span class="en">Placement &amp; waveforms</span></summary>
+        <div class="box-inner"><p class="kp"><b>SVC 小振幅靜脈波（＝CVP）→ RV 搏動波（舒張壓＝RA 壓）→ PA 舒張壓突升、收縮壓不變 → 搏動消失＝wedge（正常＝PA 舒張壓）。</b></p>
+          <ul><li>進 SVC 見靜脈波才充氣 1.5 mL，帶著氣球前進；wedge 出現就放氣，搏動波應回來。<b>球長期充氣 → 肺動脈破裂或肺梗塞</b>。</li><li>肺高壓時 PA 收縮壓也會升。wedge 一直不出現：沒有肺高壓才可用 PA 舒張壓代替。</li></ul></div></details>
+      <details class="def-box"><summary>03 · Wedge 的原理與波形 <span class="en">Wedge pressure principle</span></summary>
+        <div class="box-inner"><p class="kp"><b>球囊阻斷血流（Q＝0）後尖端到左房是一段靜止血柱：Pw ＝ Pc ＝ PLA；二尖瓣正常時 ＝ LVEDP。</b></p>
+          <ul><li>a 波左房收縮、c 波二尖瓣關閉、v 波心室收縮頂著關閉的二尖瓣；二尖瓣逆流的 v 波很大。</li><li>肺高壓：wedge 低於 PA 舒張壓。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 呼吸變異與 PEEP <span class="en">Respiratory variations · PEEP</span></summary>
+        <div class="box-inner"><p class="kp"><b>Wedge 只在肺微血管壓 > 肺泡壓時反映左房壓；有呼吸變異就在呼氣末讀——正壓通氣取最低點、自主呼吸取最高點。</b></p>
+          <ul><li>胸內壓變化會傳進低壓血管，記錄壓在動、穿壁壓沒動；呼氣末胸內壓＝0。</li><li>PEEP 讓呼氣末胸內壓 >0 → wedge 與 CVP 假性升高 → 可短暫脫離呼吸器測；intrinsic PEEP 更難（第 29 章有校正法）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 自發變異 <span class="en">Spontaneous variation</span></summary>
+        <div class="box-inner"><p class="kp"><b>60% 病人 ≤4 mmHg、可達 7；變化 >4 mmHg 才算臨床顯著。</b></p></div></details>
+      <details class="def-box"><summary>06 · Wedge ≠ 微血管靜水壓 <span class="en">Wedge vs hydrostatic pressure</span></summary>
+        <div class="box-inner"><p class="kp"><b>Pc − Pw ＝ Q × Rv：有血流時微血管壓一定高於 wedge；肺靜脈收縮（低血氧、內毒素、升壓劑、ARDS）會放大差距。</b></p>
+          <ul><li>所以「wedge 正常」不能排除靜水壓性肺水腫——把它當 ARDS 診斷條件應該廢棄。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 熱稀釋心輸出量 <span class="en">Thermodilution</span></summary>
+        <div class="box-inner"><p class="kp"><b>近端腔打 10 mL 冷液，遠端 thermistor 記溫度—時間曲線，曲線下面積與流量成反比；三次差 ≤10% 取平均。</b></p>
+          <ul><li>低 CO 曲線緩升緩降、面積大；高 CO 陡升、峰短、陡降。</li><li>病況不變 CO 也波動 10% → 變化 >10% 才顯著。</li><li>誤差：注射量少或太溫 → 高估；隨呼吸週期時機不一；三尖瓣逆流 → 注射液再循環，曲線拉長低幅 → 多為低估（回溫則高估）；心內分流 → 高估。</li><li><b>連續 CO</b>：加熱絲讓血升溫 0.02 °C，每 20–30 秒更新、3 分鐘平均；與 bolus 相關良好，省人力與液體，可併 SvO₂。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 十個參數與 BSA <span class="en">Catheter-derived hemodynamics</span></summary>
+        <div class="box-inner"><p class="kp"><b>BSA ＝ (身高 cm ＋ 體重 kg − 60) / 100；一般成人 1.7 m²。CO 與代謝率掛鉤，所以用 BSA 不用體重。</b></p>
+          <ul><li>CVP 0–5（＝RVEDP，坐姿可為負）；PAWP 6–12（略高於 CVP 以關閉卵圓孔）；CI 2.4–4.0；SI ＝ CI/HR 20–40 mL/m²。</li><li>SVRI ＝ (MAP − CVP)/CI 25–30 Wood；PVRI ＝ (PAP − PAWP)/CI 1–2 Wood；×80 轉 dyn 單位沒有好處。</li><li>DO₂ ＝ CO × 1.34 × Hb × SaO₂；VO₂ ＝ CO × 1.34 × Hb × (SaO₂ − SvO₂)；O₂ER ＝ VO₂/DO₂ 0.2–0.3。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 用在哪裡、與它的冤屈 <span class="en">Applications · A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>失代償心衰竭（血壓不穩、腎惡化）、心臟手術周術期、休克（心因性用它結果較好）、液體反應性、輸血與氧療的需求與反應、脫離呼吸器時的隱性心功能障礙。</b></p>
+          <ul><li>作者：監測工具不該用死亡率評估；調查顯示醫師常看不懂它的數值——工具在錯的手裡當然無效；不是每個介入都得救命才有價值。</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="pa-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>參數</th><th>縮寫</th><th>正常範圍</th><th>算法</th></tr>
+      <tr><td>中央靜脈壓</td><td>CVP</td><td>0–5 mmHg</td><td>近端腔</td></tr>
+      <tr><td>肺動脈楔壓</td><td>PAWP</td><td>6–12 mmHg</td><td>球囊阻斷、呼氣末</td></tr>
+      <tr><td>心指數</td><td>CI</td><td>2.4–4.0 L/min/m²</td><td>CO / BSA</td></tr>
+      <tr><td>心搏指數</td><td>SI</td><td>20–40 mL/m²</td><td>CI / HR</td></tr>
+      <tr><td>體循環阻力指數</td><td>SVRI</td><td>25–30 Wood</td><td>(MAP − CVP) / CI</td></tr>
+      <tr><td>肺循環阻力指數</td><td>PVRI</td><td>1–2 Wood</td><td>(PAP − PAWP) / CI</td></tr>
+      <tr><td>混合靜脈血氧</td><td>SvO₂</td><td>65–75%</td><td>遠端腔或光纖</td></tr>
+      <tr><td>氧輸送指數</td><td>DO₂I</td><td>520–600 mL/min/m²</td><td>CI × CaO₂ × 10</td></tr>
+      <tr><td>氧攝取指數</td><td>VO₂I</td><td>110–160 mL/min/m²</td><td>CI × (CaO₂ − CvO₂) × 10</td></tr>
+      <tr><td>氧萃取率</td><td>O₂ER</td><td>0.2–0.3</td><td>VO₂ / DO₂</td></tr>
+    </table></div>
+    <div class="dirhead" id="pa-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c8hd">
+      <div class="rxbox-t">血行動力學參數</div>
+      <div class="lead">BSA 用書中的 Mattar 簡式。PAP 填平均肺動脈壓。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="pa_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="pa_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心輸出量 CO <span class="rx-en">L/min</span></label><input type="number" id="pa_co" step="0.1" placeholder="5.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心率 <span class="rx-en">/min</span></label><input type="number" id="pa_hr" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg</span></label><input type="number" id="pa_map" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CVP <span class="rx-en">mmHg</span></label><input type="number" id="pa_cvp" step="1" placeholder="4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>平均 PAP <span class="rx-en">mmHg</span></label><input type="number" id="pa_pap" step="1" placeholder="15"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PAWP <span class="rx-en">mmHg</span></label><input type="number" id="pa_pawp" step="1" placeholder="10"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c8hd_out"></div>
+    </div>
+    <div class="rxbox" id="c8td">
+      <div class="rxbox-t">熱稀釋三次量測的一致性</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>第一次 <span class="rx-en">L/min</span></label><input type="number" id="td_1" step="0.1" placeholder="5.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>第二次 <span class="rx-en">L/min</span></label><input type="number" id="td_2" step="0.1" placeholder="5.3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>第三次 <span class="rx-en">L/min</span></label><input type="number" id="td_3" step="0.1" placeholder="5.1"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c8td_out"></div>
+    </div>
+    <div class="dirhead" id="pa-flow"><span class="dh-n">決策流程</span><span class="dh-e">Can I trust this wedge?</span></div>
+    <div id="wp_flow">
+      <div class="flow-step" id="wp_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">Wedge 波形有呼吸變異嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="wpPick('resp','yes',this)">有</button><button class="flow-opt" onclick="wpPick('resp','no',this)">沒有</button></div></div>
+      <div class="flow-connector" id="wp_c2">↓</div>
+      <div class="flow-step" id="wp_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">有 PEEP（含 intrinsic PEEP）嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="wpPick('peep','yes',this)">有</button><button class="flow-opt" onclick="wpPick('peep','no',this)">沒有</button></div></div>
+      <div class="flow-connector" id="wp_c3">↓</div>
+      <div class="flow-step" id="wp_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">有肺高壓嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="wpPick('ph','yes',this)">有<span class="fo-sub">PA 舒張壓明顯高於 wedge</span></button><button class="flow-opt" onclick="wpPick('ph','no',this)">沒有</button></div></div>
+      <div class="flow-connector" id="wp_c4">↓</div>
+      <div class="flow-step" id="wp_s4"><div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">二尖瓣逆流（大 v 波）？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="wpPick('mr','yes',this)">有</button><button class="flow-opt" onclick="wpPick('mr','no',this)">沒有</button></div></div>
+      <div class="flow-rec rec-idle" id="wp_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="wpReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="pa-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_pac"></div>
+    <div class="dirhead" id="pa-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/swan-ganz.html" href="#">Swan-Ganz 導管判讀</a><a class="flow-link" data-ct="pathways/cardiogenic-shock.html" href="#">心因性休克處置決策</a><a class="flow-link" data-ct="tools/body-metrics.html" href="#">🧮 體表面積與體重</a></div>
+  </section>
+
+  <!-- ==================== Ch9 Systemic Oxygenation ==================== -->
+  <section class="monitoring-panel hidden" data-panel="o2" id="monitoring-p-o2">
+    <div class="dirhead"><span class="dh-n">第 9 章 全身氧合</span><span class="dh-e">Chapter 9 · Systemic Oxygenation</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#o2/o2-key"><i>01</i>重點卡</a><a class="sp-chip" href="#o2/o2-tab"><i>02</i>對照表</a><a class="sp-chip" href="#o2/o2-calc"><i>03</i>計算</a><a class="sp-chip" href="#o2/o2-flow"><i>04</i>流程</a><a class="sp-chip" href="#o2/o2-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#o2/o2-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>氧幾乎全靠血紅素載</b>：CaO₂ ＝ 1.34 × Hb × SaO₂，溶解氧只占 1.5%；貧血對氧合的傷害遠大於低血氧。</span></div>
+        <div class="lede-item"><span>②</span><span><b>DO₂ 掉了身體先提高萃取</b>：萃取從 25% 升到 50% 都還能守住 VO₂，再掉 VO₂ 就變 delivery-dependent——SvO₂ ≤50%（或 SaO₂ − SvO₂ ≥50%）就是那條線。</span></div>
+        <div class="lede-item"><span>③</span><span><b>乳酸高不等於缺氧</b>：重症的高乳酸多半是有氧生成（敗血症的 PDH 抑制、壓力、硫胺缺乏、藥物），乳酸還是心腦的燃料——但初始值與清除時間仍與死亡率相關。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="o2-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="o2-kc">全部展開</button></div>
+    <div id="o2-kc">
+      <details class="def-box"><summary>01 · 血中氧的量 <span class="en">Oxygen in blood</span></summary>
+        <div class="box-inner"><p class="kp"><b>動脈：PO₂ 90、SO₂ 98%、含量 20 mL/dL；靜脈：40、73%、15；血量 1.25 L vs 3.75 L → 氧 250 mL vs 555 mL，70% 的氧在靜脈裡。</b></p></div></details>
+      <details class="def-box"><summary>02 · 解離曲線與 P50 <span class="en">Oxyhemoglobin dissociation curve</span></summary>
+        <div class="box-inner"><p class="kp"><b>S 形：動脈端平坦（PaO₂ 掉到 60 SO₂ 只小降）、靜脈端陡（利於肺內攝取）；P50 正常 27 mmHg。</b></p>
+          <ul><li>右移利於組織釋氧、左移相反；ACD 保存 3 週的血 P50 降到 15（2,3-DPG 耗盡）。</li><li>移動對肺與組織的效應相反，整體意義不明。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 氧含量：貧血 vs 低血氧 <span class="en">Oxygen content</span></summary>
+        <div class="box-inner"><p class="kp"><b>HbO₂ ＝ 1.34 × Hb × SO₂；溶解 ＝ 0.003 × PO₂。Hb 減半 → CaO₂ 減半；PaO₂ 減半（98 → 78%）→ 只減 20%。</b></p>
+          <ul><li>Ca − Cv ＝ 5 mL/dL ＝ 每公升血被拿走 50 mL 氧 × CO 5 L/min ＝ 靜息 VO₂ 250 mL/min。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 氧輸送三參數與變異 <span class="en">DO₂ · VO₂ · O₂ER</span></summary>
+        <div class="box-inner"><p class="kp"><b>DO₂ ＝ CO × CaO₂ × 10（900–1,100；520–600/m²）；VO₂ ＝ CO × 1.34 × Hb × (SaO₂ − SvO₂) × 10（200–270；110–160/m²）；O₂ER 0.2–0.3。</b></p>
+          <ul><li>計算 VO₂ 的變異 ±18%（CO 10、Hb 2、SO₂ 2、含量 4、動靜脈差 8）→ 變化要 >18% 才顯著；代謝車測量 VO₂ ＝ VE × (FIO₂ − FEO₂) 只 ±5%。</li><li>計算值不含肺的 VO₂（正常 <5%，肺發炎可達 20%）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 氧萃取的代償 <span class="en">Oxygen extraction</span></summary>
+        <div class="box-inner"><p class="kp"><b>VO₂ ＝ DO₂ × O₂ER：DO₂ 降時萃取從 25% 升到 50% 守住 VO₂；再降就 delivery-dependent，這是氧限制代謝的門檻。</b></p></div></details>
+      <details class="def-box"><summary>06 · SaO₂ − SvO₂ 與 SvO₂ 怎麼讀 <span class="en">Surrogates of extraction</span></summary>
+        <div class="box-inner"><p class="kp"><b>差 20–30% 正常、>30% DO₂ 降、≥50% 威脅、<20% 利用缺陷（敗血、周邊分流）；SvO₂ 65–75%、<65、≤50、≥80% 對應。</b></p>
+          <ul><li>前提：SaO₂ >90%、代謝率正常；SvO₂ 自然波動 5% → 變化 >5% 才顯著。</li></ul></div></details>
+      <details class="def-box"><summary>07 · ScvO₂ 與 StO₂ <span class="en">Central venous · tissue saturation</span></summary>
+        <div class="box-inner"><p class="kp"><b>ScvO₂ 在重症比 SvO₂ 高（平均 7%、休克可達 18%）；趨勢比單值可靠；休克目標 70%。NIRS 的 StO₂ 主要是靜脈飽和度，正常值定不出來。</b></p>
+          <ul><li>ScvO₂ 受腦靜脈血影響；休克時周邊收縮、腦血流相對保留。</li><li>StO₂ 肌肉受肌紅蛋白影響；光子散射個體差異大；與 DO₂ 變化相關但無法定義異常。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 乳酸與存活 <span class="en">Lactate and survival</span></summary>
+        <div class="box-inner"><p class="kp"><b>初始乳酸與清除時間都與死亡率相關，所以要監測；但這不證明乳酸＝缺氧——那是循環論證。</b></p>
+          <ul><li>反證：PET 顯示敗血性休克各器官無細胞缺氧；人類敗血症骨骼肌 PO₂ 反而升高；細胞內 PO₂ 本來就 5 mmHg（可 <1）、心肌 0.2–2.4——細胞在低氧環境運作，低 PO₂ 傷細胞不太可能。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 有氧的乳酸生成 <span class="en">Aerobic hyperlactatemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>每天有氧產乳酸 20 mmol/kg；LDH 平衡強烈偏向乳酸。敗血症是 PDH 被內毒素與細胞激素抑制＋兒茶酚胺驅動糖解。</b></p>
+          <ul><li>來源：氣喘、酮酸、肝功能、癲癇、敗血症、壓力（GLUT 轉位 → 糖解 +40–50%）、硫胺缺乏（TPP 是 PDH 輔因子）、腫瘤；藥物：β 激動劑、兒茶酚胺、氰化物、metformin、propofol、propylene glycol、salicylate、毒性醇。</li><li>「缺氧驅動的乳酸累積是例外不是規則」。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 乳酸是燃料；作者觀點 <span class="en">Lactate as fuel · A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>乳酸 3.62 kcal/g ≈ 葡萄糖 3.74；壓力下供心肌 60%、腦 25–30% 能量，改善休克的心功能。</b></p>
+          <ul><li>作者：細胞缺氧不是常見死因；細胞內低氧是設計（氧會分解有機物，所以食物要真空包裝）；MOF 的元凶更可能是發炎性細胞損傷。</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="o2-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>指標（37 °C、Hb 15）</th><th>動脈血</th><th>靜脈血</th></tr>
+      <tr><td>PO₂</td><td>90 mmHg</td><td>40 mmHg</td></tr><tr><td>SO₂</td><td>98%</td><td>73%</td></tr><tr><td>Hb 結合氧</td><td>19.7 mL/dL</td><td>14.7 mL/dL</td></tr><tr><td>溶解氧</td><td>0.27 mL/dL</td><td>0.1 mL/dL</td></tr><tr><td>總含量</td><td>20 mL/dL</td><td>15 mL/dL</td></tr><tr><td>血量（5 L 的 25／75%）</td><td>1.25 L</td><td>3.75 L</td></tr><tr><td>氧總量</td><td>250 mL</td><td>555 mL</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>參數</th><th>絕對值</th><th>指數化（/BSA）</th><th>計算變異</th></tr>
+      <tr><td>心輸出量</td><td>5–6 L/min</td><td>2.4–4.0 L/min/m²</td><td>±10%</td></tr>
+      <tr><td>DO₂</td><td>900–1,100 mL/min</td><td>520–600 mL/min/m²</td><td>—</td></tr>
+      <tr><td>VO₂</td><td>200–270 mL/min</td><td>110–160 mL/min/m²</td><td>計算 ±18%；測量 ±5%</td></tr>
+      <tr><td>O₂ER</td><td>0.2–0.3</td><td>—</td><td>—</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>有氧高乳酸：疾病</th><th>有氧高乳酸：藥物與毒物</th></tr>
+      <tr><td>重度氣喘、酮酸中毒、肝功能障礙、癲癇、敗血症、壓力、硫胺缺乏、腫瘤</td><td>β 激動劑、兒茶酚胺、氰化物、metformin、propofol、propylene glycol、salicylate、毒性醇</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>燃料</th><th>分子量</th><th>kcal/mole</th><th>kcal/g</th></tr>
+      <tr><td>葡萄糖</td><td>180</td><td>673</td><td>3.74</td></tr><tr><td>乳酸</td><td>90</td><td>326</td><td>3.62</td></tr><tr><td>乳酸 × 2</td><td>180</td><td>652</td><td>3.62</td></tr>
+    </table></div>
+    <div class="dirhead" id="o2-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c9o2">
+      <div class="rxbox-t">氧含量與氧輸送</div>
+      <div class="lead">PaO₂／PvO₂ 可留空（溶解氧不計）；身高體重填了就給指數化值。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Hb <span class="rx-en">g/dL</span></label><input type="number" id="o2_hb" step="0.1" placeholder="15"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SaO₂ <span class="rx-en">%</span></label><input type="number" id="o2_sa" step="1" placeholder="98"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PaO₂ <span class="rx-en">mmHg</span></label><input type="number" id="o2_pa" step="1" placeholder="90"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SvO₂ <span class="rx-en">%</span></label><input type="number" id="o2_sv" step="1" placeholder="73"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PvO₂ <span class="rx-en">mmHg</span></label><input type="number" id="o2_pv" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心輸出量 <span class="rx-en">L/min</span></label><input type="number" id="o2_co" step="0.1" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="o2_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="o2_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c9o2_out"></div>
+    </div>
+    <div class="dirhead" id="o2-flow"><span class="dh-n">決策流程</span><span class="dh-e">Reading oxygen extraction</span></div>
+    <div id="ox_flow">
+      <div class="flow-step" id="ox_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">SaO₂ − SvO₂（或 1 − SvO₂）落在哪裡？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="oxPick('er','lo',this)">&lt;20%<span class="fo-sub">SvO₂ ≥80%</span></button>
+          <button class="flow-opt" onclick="oxPick('er','ok',this)">20–30%<span class="fo-sub">SvO₂ 65–75%</span></button>
+          <button class="flow-opt" onclick="oxPick('er','mid',this)">30–49%<span class="fo-sub">SvO₂ 50–64%</span></button>
+          <button class="flow-opt" onclick="oxPick('er','hi',this)">≥50%<span class="fo-sub">SvO₂ ≤50%</span></button>
+        </div></div>
+      <div class="flow-connector" id="ox_c2">↓</div>
+      <div class="flow-step" id="ox_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">敗血症背景？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="oxPick('sep','yes',this)">是</button><button class="flow-opt" onclick="oxPick('sep','no',this)">否</button></div></div>
+      <div class="flow-rec rec-idle" id="ox_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="oxReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="o2-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_o2"></div>
+    <div class="dirhead" id="o2-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣判讀</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症處置決策</a><a class="flow-link" data-ct="pathways/swan-ganz.html" href="#">Swan-Ganz 導管判讀</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 7–9 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33326721/" target="_blank" rel="noopener" class="ref-link">Sjoding et al. Racial bias in pulse oximetry. NEJM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34730820/" target="_blank" rel="noopener" class="ref-link">Wong et al. SpO₂–SaO₂ discrepancy by race and outcomes. JAMA Netw Open 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30355567/" target="_blank" rel="noopener" class="ref-link">Siemieniuk et al. Oxygen therapy guideline (BMJ Rapid Rec). BMJ 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36278971/" target="_blank" rel="noopener" class="ref-link">PILOT: oxygen-saturation targets in ventilated adults. NEJM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16052106/" target="_blank" rel="noopener" class="ref-link">Dueck et al. Trends of ScvO₂ vs SvO₂. Anesthesiology 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26447854/" target="_blank" rel="noopener" class="ref-link">Nassar & Schmidt. Capnography during critical illness. Chest 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35977431/" target="_blank" rel="noopener" class="ref-link">PUMA consensus on preventing unrecognised oesophageal intubation. Anaesthesia 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33755076/" target="_blank" rel="noopener" class="ref-link">INTUBE: peri-intubation adverse events in 29 countries. JAMA 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21497076/" target="_blank" rel="noopener" class="ref-link">Waugh et al. Capnography during procedural sedation meta-analysis. J Clin Anesth 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22800647/" target="_blank" rel="noopener" class="ref-link">Monge García et al. PETCO₂ and passive leg raising. Ann Intensive Care 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7755197/" target="_blank" rel="noopener" class="ref-link">Wayne et al. End-tidal CO₂ and outcome in cardiac arrest. Ann Emerg Med 1995</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/5434111/" target="_blank" rel="noopener" class="ref-link">Swan et al. Flow-directed balloon-tipped catheter. NEJM 1970</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28593267/" target="_blank" rel="noopener" class="ref-link">Ikuta et al. PA catheter trends 1999–2013. JAMA Cardiol 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33564995/" target="_blank" rel="noopener" class="ref-link">Bootsma et al. Contemporary PA catheter, part 1. JCMC 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33646499/" target="_blank" rel="noopener" class="ref-link">Bootsma et al. Contemporary PA catheter, part 2. JCMC 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11098965/" target="_blank" rel="noopener" class="ref-link">Teboul et al. Filling pressure with hyperinflation. CCM 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33781307/" target="_blank" rel="noopener" class="ref-link">Kouz et al. Continuous vs intermittent thermodilution meta-analysis. Crit Care 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34423652/" target="_blank" rel="noopener" class="ref-link">Ranka et al. Right heart catheterization in cardiogenic shock. JAHA 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2232089/" target="_blank" rel="noopener" class="ref-link">Iberti et al. Physicians' knowledge of the PA catheter. JAMA 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15197435/" target="_blank" rel="noopener" class="ref-link">Reinhart et al. Continuous ScvO₂ and SvO₂ monitoring. ICM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17431582/" target="_blank" rel="noopener" class="ref-link">Trzeciak et al. Serum lactate and mortality. ICM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11754855/" target="_blank" rel="noopener" class="ref-link">McNelis et al. Prolonged lactate clearance and mortality. Am J Surg 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25494270/" target="_blank" rel="noopener" class="ref-link">Kraut & Madias. Lactic acidosis. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29322250/" target="_blank" rel="noopener" class="ref-link">Ferguson et al. Lactate metabolism: prior misinterpretations. EJAP 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/1538541/" target="_blank" rel="noopener" class="ref-link">Hotchkiss & Karl. Cellular hypoxia in sepsis reevaluated. JAMA 1992</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8143474/" target="_blank" rel="noopener" class="ref-link">Boekstegers et al. Skeletal muscle PO₂ in sepsis. CCM 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16810041/" target="_blank" rel="noopener" class="ref-link">Levy. Lactate and the shock state. Curr Opin Crit Care 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19337275/" target="_blank" rel="noopener" class="ref-link">van Hall et al. Lactate as energy source for the brain. JCBFM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30146080/" target="_blank" rel="noopener" class="ref-link">Attaluri et al. Thiamine deficiency in critically ill patients. Am J Med Sci 2018</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/monitoring.js"></script>
+<script>ICU.makeTabs('monitoring'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

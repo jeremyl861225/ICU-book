@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>體溫異常 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="體溫異常">
+<div class="sheet">
+<div class="view active" id="view-temp">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XIII</div><h1>體溫異常</h1><div class="sub">Altered Body Temperature · 體溫調節障礙 → ICU 的發燒 · 第 43–44 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-temp'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="temp_tabs">
+    <button class="tab-btn active" data-p="thermo">體溫調節障礙 <span class="mono">Ch43</span></button>
+    <button class="tab-btn" data-p="fever">ICU 的發燒 <span class="mono">Ch44</span></button>
+  </div>
+
+  <!-- ==================== Ch43 Thermoregulatory Disorders ==================== -->
+  <section class="temp-panel" data-panel="thermo" id="temp-p-thermo">
+    <div class="dirhead"><span class="dh-n">第 43 章 體溫調節障礙</span><span class="dh-e">Chapter 43 · Thermoregulatory Disorders</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#thermo/th-key"><i>01</i>重點卡</a><a class="sp-chip" href="#thermo/th-tab"><i>02</i>對照表</a><a class="sp-chip" href="#thermo/th-calc"><i>03</i>計算</a><a class="sp-chip" href="#thermo/th-flow"><i>04</i>流程</a><a class="sp-chip" href="#thermo/th-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#thermo/th-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>高體溫不是發燒</b>：調節失靈、退燒藥無效；熱中暑（≥41、中樞失能、多器官）要冰水或蒸發降溫到 38 並補體積，熱衰竭只要補水。</span></div>
+        <div class="lede-item"><span>②</span><span><b>三種藥物性高體溫先停藥</b>：惡性高熱（呼氣末 CO₂ 先升）dantrolene；NMS（鉛管樣僵硬、CK >1,000）bromocriptine；血清素症候群（反射亢進、陣攣）cyproheptadine。</span></div>
+        <div class="lede-item"><span>③</span><span><b>低體溫量核心、慢慢復溫</b>：<32 心律不整、<28 VF、<24 停止但復溫前不能宣告死亡；加熱吸入氣 2.5°C/hr、加熱輸液只防再冷、心搏停止用 VA-ECMO。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="th-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="th-kc">全部展開</button></div>
+    <div id="th-kc">
+      <details class="def-box"><summary>01 · 散熱的物理 <span class="en">Heat loss</span></summary>
+        <div class="box-inner"><p class="kp"><b>靜止每小時產熱可升 1°C，日變異只 ±0.6。散熱靠對流（皮膚血流、風把皮膚上方的暖空氣層吹走）與蒸發（每公升汗 580 kcal，約每日產熱 1/4；大汗 1–2 L/hr 每小時 >1,000 kcal）——汗要蒸發才散熱，擦掉沒用。</b></p></div></details>
+      <details class="def-box"><summary>02 · 高體溫 vs 發燒 <span class="en">Hyperthermia vs fever</span></summary>
+        <div class="box-inner"><p class="kp"><b>高體溫＝溫度調節失靈；發燒＝正常調節系統在較高設定點運作。機轉不同，所以退燒藥（acetaminophen）對高體溫無效。本章全是高體溫。</b></p></div></details>
+      <details class="def-box"><summary>03 · 熱衰竭與熱中暑 <span class="en">Heat exhaustion &amp; heat stroke</span></summary>
+        <div class="box-inner"><p class="kp"><b>熱衰竭：38–39、類流感、肌肉痙攣、脫水但血行動力穩、意識清（汗丟鈉可高血鈉、只補水可低血鈉）——補體積、冷氣房、不需主動降溫。熱中暑：≥41、譫妄昏迷癲癇、低血壓、橫紋肌溶解、AKI、DIC、轉胺酶大升（缺血性肝炎）；無汗典型但非必然；運動型比古典型嚴重。</b></p></div></details>
+      <details class="def-box"><summary>04 · 熱中暑的降溫 <span class="en">Cooling</span></summary>
+        <div class="box-inner"><p class="kp"><b>目標 38°C ＋ 體積復甦。現場：冷水／冰水浸泡最好，否則噴水＋風扇（0.3°C/分，熱而乾最有效）。急診：鼠蹊腋下冰袋、上胸頸部覆冰、全身降溫毯——缺點是發抖反升溫。內部：4°C 食鹽水；血管內降溫裝置更快但要中心靜脈、結局未證。</b></p></div></details>
+      <details class="def-box"><summary>05 · 橫紋肌溶解 <span class="en">Rhabdomyolysis</span></summary>
+        <div class="box-inner"><p class="kp"><b>所有高體溫症候群的常見併發症；CK ≥5 倍正常是建議切點（無標準）；後果是無力與肌紅蛋白造成的 AKI（處置見第 34 章）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 惡性高熱 <span class="en">Malignant hyperthermia</span></summary>
+        <div class="box-inner"><p class="kp"><b>1/50,000、體染色體顯性：吸入麻醉劑（halothane、isoflurane）或 succinylcholine 讓肌漿網過度釋鈣。最早是呼氣末 CO₂ 突然升（高代謝），幾分鐘到幾小時後僵硬（咬肌起），體溫 >40 較晚；意識改變、自主神經不穩、橫紋肌溶解常見。立刻停藥、dantrolene 1–2 mg/kg 快速 IV（早給死亡率 ≥70% → ≤10%）；控制僵硬體溫就降；副作用無力（握力，2–4 天恢復）。存活者戴手環、通知一等親。</b></p>
+          <div class="note">原書表 43.2 的 dantrolene 方案在「1–2 mg/kg 快速 IV」後截斷。</div></div></details>
+      <details class="def-box"><summary>07 · 神經抑制劑惡性症候群 <span class="en">Neuroleptic malignant syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>基底核與下視丘的多巴胺傳導減少：抑制多巴胺的藥（haloperidol 最常見、phenothiazine、clozapine、olanzapine、risperidone、metoclopramide、droperidol、amphetamine、cocaine、lithium、TCA）或停掉促進多巴胺的藥。<1%、與劑量無關（特異體質）。用藥 24–72 小時起、幾乎都在 2 週內；先僵硬與躁動混亂，體溫晚 8–10 小時；自主神經亢進（心搏快、出汗）；重症鉛管樣僵硬、橫紋肌溶解、意識下降。CK >1,000 分辨張力異常反應（只輕微升）。</b></p></div></details>
+      <details class="def-box"><summary>08 · NMS 的治療 <span class="en">Treating NMS</span></summary>
+        <div class="box-inner"><p class="kp"><b>停藥（停多巴胺藥誘發者立刻恢復）；輸液、必要時外部降溫（控制僵硬通常就夠）、VTE 預防必做（DVT 風險升）、躁動 BZD。Bromocriptine 10 mg PO tid（幾小時起效、完整反應數天；低血壓幻覺）；嚴重 dantrolene 1 mg/kg IV q8h 到緩解或累積 10 mg/kg → 口服 50–200 mg/天（試驗結果不一）。緩解後續治 10 天、長效針劑 2–3 週。</b></p></div></details>
+      <details class="def-box"><summary>09 · 血清素症候群 <span class="en">Serotonin syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>增加合成（L-tryptophan）、減少分解（MAOI 含 linezolid、ritonavir）、增加釋放（amphetamine、MDMA、cocaine）、減少回收（SSRI、TCA、dextromethorphan、meperidine、fentanyl、tramadol）、受體促效（lithium、sumatriptan）；兩種合用最常見。三類表現：運動亢進（反射亢進、肌陣攣、陣攣最專一；眼陣攣最可靠）、腎上腺素亢進（心搏快 85%、血壓高低 76%、瞳孔大 34%、體溫升只 60%）、意識改變（混亂 64%、躁動 56%、昏迷 11%）；橫紋肌溶解 15%。重症僵硬會遮住反射亢進、難與 NMS 分。</b></p></div></details>
+      <details class="def-box"><summary>10 · SS 的治療 <span class="en">Treating serotonin syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>停藥＋支持，多數幾天內緩解。嚴重：cyproheptadine（只有口服、可磨碎鼻胃管）12 mg → 持續症狀 2 mg q2h → 維持 8 mg q6h，鎮靜反而幫躁動；頑固僵硬與橫紋肌溶解用非去極化肌鬆（rocuronium）。</b></p></div></details>
+      <details class="def-box"><summary>11 · 低體溫的分級 <span class="en">Hypothermia staging</span></summary>
+        <div class="box-inner"><p class="kp"><b><35°C；原發（環境）、次發（疾病創傷）、治療性。人比較耐熱不耐冷：血管收縮與發抖（產熱加倍）只在早期有用，行為反應才是主力（酒精毒品破壞）。冷水 <15°C 浸泡 30 分鐘可致命、風寒指數、濕衣。輕度 32–35：混亂、冷白皮膚、發抖、心搏快血壓高；中度 28–31.9：嗜睡、發抖減少（>30 還有）、心搏與呼吸慢；重度 <28：昏迷、瞳孔放大固定、低血壓、嚴重心搏過緩、寡尿、水腫；<24 預期呼吸與心搏停止——但復溫到正常前不能宣告死亡。</b></p></div></details>
+      <details class="def-box"><summary>12 · 低體溫的檢驗與心電圖 <span class="en">Labs &amp; ECG</span></summary>
+        <div class="box-inner"><p class="kp"><b>量核心（膀胱、食道、直腸），周邊不行。血氣要校正到病人體溫（中重度：合併呼吸＋代謝性酸中毒）；高血鉀（發抖、橫紋肌溶解）；肌酸酐升（橫紋肌溶解、腎衰竭、冷利尿——小管對 ADH 反應差）；<34 凝血病變（37°C 跑的看不出）。Osborn（J）波：不專一（高血鈣、SAH、腦傷、心肌缺血）、幾乎沒有診斷或預後價值——被過度渲染。<32 心律不整閾值降、atropine 無效的心搏過緩；<28 VF／asystole。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+      <details class="def-box"><summary>13 · 復溫 <span class="en">Rewarming</span></summary>
+        <div class="box-inner"><p class="kp"><b>多數外部就夠：被動（脫濕衣、蓋毯）或主動（加熱墊、暖風系統）。內部留給重度且外部無效：插管者吸入氣加熱 40–45°C 約 2.5°C/hr；加熱輸液只防再冷、不會復溫；熱水洗胃（吸入）與膀胱灌洗（無效）不建議；心搏停止 VA-ECMO 已成功。中重度常低血容（冷利尿）、復溫的血管擴張造成低血壓：輸液要加熱（室溫 21°C 會再冷）；輸液無效考慮 VA-ECMO。</b></p></div></details>
+      <details class="def-box"><summary>14 · 能適應的人類 <span class="en">The adaptable human</span></summary>
+        <div class="box-inner"><p class="kp"><b>美國熱相關死亡每年約 702 人（心臟病 695,000）、紐約十年低體溫只 139 死（每百萬 1.7）——生理與行為適應的證明。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="th-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>特徵</th><th>熱衰竭</th><th>熱中暑</th></tr>
+      <tr><td>體溫</td><td>38–39°C</td><td>≥41°C</td></tr>
+      <tr><td>中樞失能</td><td>無</td><td>有</td></tr>
+      <tr><td>出汗</td><td>有</td><td>典型無（非必然）</td></tr>
+      <tr><td>脫水</td><td>有</td><td>有</td></tr>
+      <tr><td>血行動力不穩</td><td>無</td><td>有</td></tr>
+      <tr><td>多器官</td><td>無</td><td>有</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th></th><th>惡性高熱</th><th>NMS</th><th>血清素症候群</th></tr>
+      <tr><td>誘因</td><td>吸入麻醉劑、succinylcholine</td><td>抗多巴胺藥、停多巴胺藥</td><td>血清素藥（尤其合用）</td></tr>
+      <tr><td>起病</td><td>分鐘到小時；ETCO₂ 先升</td><td>24–72 小時、2 週內；體溫晚 8–10 小時</td><td>小時內</td></tr>
+      <tr><td>專一表現</td><td>咬肌僵硬、高代謝</td><td>鉛管樣僵硬、CK >1,000</td><td>反射亢進、陣攣、眼陣攣</td></tr>
+      <tr><td>解藥</td><td>Dantrolene 1–2 mg/kg IV</td><td>Bromocriptine 10 mg tid；dantrolene 1 mg/kg q8h</td><td>Cyproheptadine 12 → 2 q2h → 8 q6h</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>低體溫</th><th>核心溫度</th><th>表現</th></tr>
+      <tr><td>輕度</td><td>32–35°C</td><td>混亂、冷白皮膚、發抖、心搏快</td></tr>
+      <tr><td>中度</td><td>28–31.9°C</td><td>嗜睡、發抖減少或消失、心搏與呼吸慢</td></tr>
+      <tr><td>重度</td><td><28°C</td><td>昏迷、瞳孔放大固定、心搏過緩、低血壓、寡尿、水腫</td></tr>
+      <tr><td>致命</td><td><24°C</td><td>呼吸停止、心搏停止（復溫前不能宣告死亡）</td></tr>
+    </table></div>
+    <div class="note">原書表 43.2（MH）、43.3（NMS 藥物）、43.5（SS 表現）、43.6（低體溫）抽出時截斷，依內文重建。</div>
+    <div class="dirhead" id="th-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c43heat">
+      <div class="rxbox-t">熱相關疾病：分型與降溫</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體溫 <span class="rx-en">°C</span></label><input type="number" id="ht_t" step="0.1" placeholder="41.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>中樞失能 <span class="rx-en">delirium／coma／seizure</span></label><select id="ht_cns"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>仍有出汗 <span class="rx-en">sweating</span></label><select id="ht_sw"><option value="y">有</option><option value="n">無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血行動力不穩 <span class="rx-en">hypotension</span></label><select id="ht_hd"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>運動誘發 <span class="rx-en">exertional</span></label><select id="ht_ex"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c43heat_out"></div>
+    </div>
+    <div class="rxbox" id="c43ck">
+      <div class="rxbox-t">CK 判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>CK <span class="rx-en">U/L</span></label><input type="number" id="ck_v" step="10" placeholder="3200"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>實驗室上限 <span class="rx-en">ULN</span></label><input type="number" id="ck_u" step="10" placeholder="200"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>情境 <span class="rx-en">context</span></label><select id="ck_c"><option value="heat">熱中暑</option><option value="nms">疑 NMS</option><option value="ss">疑血清素症候群</option><option value="mh">惡性高熱</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c43ck_out"></div>
+    </div>
+    <div class="rxbox" id="c43drug">
+      <div class="rxbox-t">藥物性高體溫：解藥</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>症候群 <span class="rx-en">syndrome</span></label><select id="dr_s"><option value="mh">惡性高熱</option><option value="nms">NMS</option><option value="ss">血清素症候群</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="dr_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嚴重 <span class="rx-en">severe</span></label><select id="dr_sev"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c43drug_out"></div>
+    </div>
+    <div class="rxbox" id="c43hypo">
+      <div class="rxbox-t">低體溫：分級與復溫</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>核心溫度 <span class="rx-en">°C</span></label><input type="number" id="hy_t" step="0.1" placeholder="27.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>已插管 <span class="rx-en">intubated</span></label><select id="hy_tube"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心搏停止 <span class="rx-en">arrest</span></label><select id="hy_arr"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c43hypo_out"></div>
+    </div>
+    <div class="rxbox" id="c43conv">
+      <div class="rxbox-t">攝氏／華氏換算</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>攝氏 <span class="rx-en">°C</span></label><input type="number" id="cv_c" step="0.1" placeholder="38.3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>華氏 <span class="rx-en">°F</span></label><input type="number" id="cv_f" step="0.1" placeholder="101"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c43conv_out"></div>
+    </div>
+    <div class="dirhead" id="th-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which hyperthermia syndrome</span></div>
+    <div id="hp_flow">
+      <div class="flow-step" id="hp_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">高體溫的誘因？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hpPick('trig','env',this)">環境或運動</button>
+          <button class="flow-opt" onclick="hpPick('trig','anes',this)">吸入麻醉劑／succinylcholine</button>
+          <button class="flow-opt" onclick="hpPick('trig','drug',this)">精神或血清素藥物</button>
+        </div></div>
+      <div class="flow-step" id="hp_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（藥物）主要神經肌肉表現？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hpPick('sign','clonus',this)">反射亢進、陣攣<span class="fo-sub">眼陣攣</span></button>
+          <button class="flow-opt" onclick="hpPick('sign','rigid',this)">鉛管樣僵硬<span class="fo-sub">CK >1,000</span></button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="hp_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="hpReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="th-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_thermo"></div>
+    <div class="dirhead" id="th-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/dose-conversion.html" href="#">單位換算</a><a class="flow-link" data-ct="tools/ekg.html" href="#">心電圖圖鑑（Osborn 波）</a><a class="flow-link" href="renallyte.html#aki">Marino 第 34 章 橫紋肌溶解</a><a class="flow-link" href="cardiac.html#arrest">Marino 第 17 章 心搏停止</a><a class="flow-link" href="practices.html#vte">Marino 第 5 章 VTE 預防</a></div>
+  </section>
+
+  <!-- ==================== Ch44 Fever in the ICU ==================== -->
+  <section class="temp-panel hidden" data-panel="fever" id="temp-p-fever">
+    <div class="dirhead"><span class="dh-n">第 44 章 ICU 的發燒</span><span class="dh-e">Chapter 44 · Fever in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#fever/fv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#fever/fv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#fever/fv-calc"><i>03</i>計算</a><a class="sp-chip" href="#fever/fv-flow"><i>04</i>流程</a><a class="sp-chip" href="#fever/fv-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#fever/fv-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>發燒是發炎不是感染</b>：ICU 新發燒一半沒有感染；門檻 38.3（嗜中性球低下 38.0 持續 1 小時）、量核心或口腔／直腸，周邊不算數。</span></div>
+        <div class="lede-item"><span>②</span><span><b>非感染來源先過一遍</b>：術後 24 小時的組織傷害（不是肺擴張不全）、藥物熱、肺栓塞、輸血、戒斷、腎上腺功能不全、血清素症候群、加熱器溫控壞掉。</span></div>
+        <div class="lede-item"><span>③</span><span><b>血液培養 3–4 套每套 20–30 mL、多腔導管兩腔＋周邊；別常規壓燒</b>——發燒是宿主防禦，敗血症退燒者死亡率較高，降溫毯在發燒是反效果；例外是缺血性腦傷。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="fv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="fv-kc">全部展開</button></div>
+    <div id="fv-kc">
+      <details class="def-box"><summary>01 · 怎麼量 <span class="en">Thermometry</span></summary>
+        <div class="box-inner"><p class="kp"><b>首選熱敏電阻導管（肺動脈、食道、膀胱）：最準、可連續；其次口腔或直腸（呼吸快時口溫比核心低 0.5°C）；耳溫、顳動脈、腋下準確度不可接受、不能拿來做決定。</b></p></div></details>
+      <details class="def-box"><summary>02 · 發燒的定義 <span class="en">Definition</span></summary>
+        <div class="box-inner"><p class="kp"><b>日夜變異清晨 4–8 最低、下午 4–6 最高、可達 1.3°C；理想定義是超過個人日夜變異但不實用。指引：ICU 單次 ≥38.3°C 算發燒、要評估；嗜中性球低下 ≥38.0 持續 1 小時。</b></p></div></details>
+      <details class="def-box"><summary>03 · 發燒是發炎、是適應 <span class="en">The febrile response</span></summary>
+        <div class="box-inner"><p class="kp"><b>內生性致熱原（發炎細胞激素）作用於下視丘；任何全身發炎都會燒。發燒是發炎的徵象不是感染：ICU 新發燒約一半沒有感染證據；燒的高低與感染的有無輕重不相關。共識：發燒不是病、是增強抗感染防禦的適應反應。</b></p></div></details>
+      <details class="def-box"><summary>04 · 術後發燒與肺擴張不全 <span class="en">Postoperative fever</span></summary>
+        <div class="box-inner"><p class="kp"><b>大手術第一天發燒 15–40%，多無感染、24–48 小時退——是組織傷害。肺擴張不全<u>不會</u>發燒：心臟手術有燒者 90% 有擴張不全，但有擴張不全者 75% 沒燒；動物結紮主支氣管也不燒；全身麻醉 >90% 有擴張不全。術後即刻的例外：惡性高熱。</b></p></div></details>
+      <details class="def-box"><summary>05 · 其他非感染來源 <span class="en">Noninfectious sources</span></summary>
+        <div class="box-inner"><p class="kp"><b>肺栓塞（可燒一週；院內 DVT 多無症狀）、輸血（紅血球非溶血性發燒最常見、輸血中或 6 小時內、多次輸血者多；血小板約每 1,000 單位 1 次）、戒斷（酒精、鴉片、BZD、巴比妥、gabapentin，停後幾天）、腎上腺功能不全（抗凝或 DIC 的腎上腺出血）、ARDS、心腦腸梗塞、血清素症候群（fentanyl、tramadol、linezolid）、醫源性（水床與加濕器溫控壞掉：一分鐘就能查）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 藥物熱 <span class="en">Drug fever</span></summary>
+        <div class="box-inner"><p class="kp"><b>過敏或特異體質；幾天到一個月以上；可單獨發燒或伴寒顫 53%、肌痛 25%、白血球增多 22%、嗜酸性球 22%、皮疹 18%、低血壓 18%——可以看起來像重症；過敏證據 >75% 沒有。常見：amphotericin、carbamazepine、cephalosporin、heparin、penicillin、phenytoin、procainamide、quinidine。排除其他來源後停藥，72 小時內退。</b></p></div></details>
+      <details class="def-box"><summary>07 · 院內感染與手術部位感染 <span class="en">Nosocomial infections &amp; SSI</span></summary>
+        <div class="box-inner"><p class="kp"><b>主要：呼吸器相關肺炎（第 29 章）、導管血流感染（第 3 章）、UTI（第 42 章）、SSI、C. difficile（第 41 章）。SSI 典型術後 5–7 天、30 天內都算；紅腫壓痛、膿或惡臭；乾淨手術 1–2%（S. aureus）、污染手術 4–5%（革蘭陰性桿菌）；表淺較少發燒。處置清創、有燒加抗生素：疑 S. aureus vancomycin；污染手術 piperacillin-tazobactam 或第三代 cephalosporin ＋ metronidazole。</b></p></div></details>
+      <details class="def-box"><summary>08 · 壞死性傷口感染 <span class="en">Necrotizing wound infections</span></summary>
+        <div class="box-inner"><p class="kp"><b>術後頭幾天：明顯紅腫、與皮膚變化不成比例的痛（缺血性神經傷）；晚期捻髮音、水泡、乳白或惡臭分泌物；擴散到深層很快（橫紋肌溶解）。單一菌（β 溶血性鏈球菌、Clostridium）或多菌（腸道革蘭陰性＋厭氧）。緊急廣泛清創是存活必要條件；革蘭染色引導：鏈球菌／梭菌 penicillin ＋ clindamycin，腹腔胸腔深部手術 carbapenem。</b></p></div></details>
+      <details class="def-box"><summary>09 · 特定情境 <span class="en">Endocarditis, peritonitis, candidiasis</span></summary>
+        <div class="box-inner"><p class="kp"><b>心內膜炎：鏈球菌／葡萄球菌／腸球菌菌血症併瓣膜異常或人工瓣，或 S. aureus 菌血症一律評估；TTE 敏感度 60–70%（人工瓣 50%）、陰性接 TEE ≥90%；治療找感染科。腹膜炎／膿瘍：污染腹部手術後持續或晚發（一週後）的燒；肝硬化腹水不明熱想 SBP。播散性念珠菌症：CVC、腹部手術、廣效抗生素——持續不明熱或 Candida UTI 要想；血液培養敏感度低到 20%、PCR >90%；一半非 albicans，經驗性 echinocandin（重症 amphotericin）。</b></p></div></details>
+      <details class="def-box"><summary>10 · 血液培養 <span class="en">Blood cultures</span></summary>
+        <div class="box-inner"><p class="kp"><b>每處穿刺 20–30 mL（各 10 mL 進好氧與厭氧瓶；30 比 20 多 10% 產率，多的進好氧瓶）；3–4 套／24 小時偵測 >90%，心內膜炎 2 套即 94%（持續菌血）。多腔導管：兩腔各一套＋周邊一套（只抽一腔漏 40%），同菌比陽性時間、導管血早 ≥2 小時＝導管相關敗血症；每個腔都是來源。分子檢測（T2Bacteria 六菌 3–5 小時）改善結局的價值存疑。</b></p></div></details>
+      <details class="def-box"><summary>11 · 經驗性抗生素 <span class="en">Empiric antimicrobials</span></summary>
+        <div class="box-inner"><p class="kp"><b>感染可能性高就給；嗜中性球 <500 延遲幾小時就影響結局。ICU 感染多是 S. aureus 或腸道菌：蓋革蘭陰性桿菌（piperacillin-tazobactam、cefepime、meropenem）；導管感染與 VAP 加 vancomycin；有 CVC 且持續不明熱、污染腸道手術後、持續念珠菌尿 → echinocandin。</b></p></div></details>
+      <details class="def-box"><summary>12 · 別壓燒 <span class="en">Fever as host defense</span></summary>
+        <div class="box-inner"><p class="kp"><b>發燒升抗體與細胞激素、活化 T 細胞、趨化與吞噬；升 4°C 可完全抑制細菌生長。嚴重敗血症體溫與存活反比、退燒者死亡率較高；無燒的敗血症外部加溫 1.5°C 反而降死亡率。指引：不常規壓燒。例外：心搏停止後或急性中風的缺血性腦傷，發燒有害要壓。</b></p></div></details>
+      <details class="def-box"><summary>13 · 退燒藥與降溫毯 <span class="en">Antipyretics &amp; cooling blankets</span></summary>
+        <div class="box-inner"><p class="kp"><b>Acetaminophen 650 mg q6h PO/PR、IV 650 q6h 或 1,000 q8h，每日上限 3 g、肝功能不全禁忌；ibuprofen 10 mg/kg IV（≤800）q6h、ketorolac 0.5 mg/kg 單次（腎毒與消化道出血的恐懼被誇大）。降溫毯在發燒是反效果：發燒靠皮膚血管收縮與發抖升溫（像被裹在降溫毯裡），再加毯子只加重；降溫毯適合熱中暑。</b></p></div></details>
+      <details class="def-box"><summary>14 · 1927 年的諾貝爾獎 <span class="en">The 1927 Nobel Prize</span></summary>
+        <div class="box-inner"><p class="kp"><b>Wagner-Jauregg 觀察神經梅毒常在發燒後緩解，接種瘧疾 9 人 6 人大幅緩解、螺旋體在發燒期從腦組織消失；做法因「以病治病」放棄，「發燒能根除感染」的含意也一起被放棄了。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="fv-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>非感染來源（常見）</th><th>非感染來源（少見）</th></tr>
+      <tr><td>術後早期發燒、藥物熱、輸血、發炎性肺損傷、腸梗塞</td><td>靜脈血栓栓塞、心肌梗塞、戒斷、腎上腺功能不全、Dressler、脂肪栓塞、腫瘤溶解、惡性高熱、血清素症候群、缺血性中風、醫源性</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥物熱表現</th><th>比例</th><th>常見藥物</th></tr>
+      <tr><td>寒顫</td><td>53%</td><td rowspan="6">Amphotericin、carbamazepine、cephalosporin、heparin、penicillin、phenytoin、procainamide、quinidine</td></tr>
+      <tr><td>肌痛</td><td>25%</td></tr>
+      <tr><td>白血球增多</td><td>22%</td></tr>
+      <tr><td>嗜酸性球增多</td><td>22%</td></tr>
+      <tr><td>皮疹</td><td>18%</td></tr>
+      <tr><td>低血壓</td><td>18%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>美國 2021 院內感染</th><th>總數</th><th>ICU</th></tr>
+      <tr><td>呼吸器相關事件</td><td>50,050</td><td>47,254</td></tr>
+      <tr><td>C. difficile</td><td>44,948</td><td>—</td></tr>
+      <tr><td>導管相關血流感染</td><td>27,021</td><td>14,003</td></tr>
+      <tr><td>導管相關 UTI</td><td>24,710</td><td>12,208</td></tr>
+      <tr><td>手術部位感染</td><td>21,186</td><td>—</td></tr>
+    </table></div>
+    <div class="note">原書表 44.2、44.3 抽出時斷成兩段，依內文重組。</div>
+    <div class="dirhead" id="fv-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c44fever">
+      <div class="rxbox-t">算不算發燒</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體溫 <span class="rx-en">°C</span></label><input type="number" id="fv_t" step="0.1" placeholder="38.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>量測部位 <span class="rx-en">site</span></label><select id="fv_site"><option value="core">核心導管</option><option value="oral">口腔／直腸</option><option value="periph">耳溫／腋下</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>呼吸快 <span class="rx-en">tachypnea</span></label><select id="fv_tp"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嗜中性球低下 <span class="rx-en">neutropenia</span></label><select id="fv_neut"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>持續 ≥1 小時 <span class="rx-en">sustained</span></label><select id="fv_hr"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c44fever_out"></div>
+    </div>
+    <div class="rxbox" id="c44bc">
+      <div class="rxbox-t">血液培養怎麼抽</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>套數／24 小時 <span class="rx-en">sets</span></label><input type="number" id="bc_n" step="1" placeholder="2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>每套血量 <span class="rx-en">mL</span></label><input type="number" id="bc_v" step="1" placeholder="20"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑心內膜炎 <span class="rx-en">endocarditis</span></label><select id="bc_ie"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>多腔中心導管 <span class="rx-en">multilumen CVC</span></label><select id="bc_cvc"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c44bc_out"></div>
+    </div>
+    <div class="rxbox" id="c44drug">
+      <div class="rxbox-t">藥物熱與非感染來源</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>用藥天數 <span class="rx-en">days</span></label><input type="number" id="df_d" step="1" placeholder="9"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>寒顫 <span class="rx-en">rigors</span></label><select id="df_r"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>低血壓 <span class="rx-en">hypotension</span></label><select id="df_h"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嗜酸性球增多 <span class="rx-en">eosinophilia</span></label><select id="df_e"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>皮疹 <span class="rx-en">rash</span></label><select id="df_ra"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>還有其他可能來源 <span class="rx-en">other source</span></label><select id="df_o"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c44drug_out"></div>
+    </div>
+    <div class="rxbox" id="c44anti">
+      <div class="rxbox-t">要不要退燒、用什麼</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ap_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>缺血性腦傷 <span class="rx-en">post-arrest／stroke</span></label><select id="ap_b"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>敗血症 <span class="rx-en">sepsis</span></label><select id="ap_s"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肝功能不全 <span class="rx-en">hepatic</span></label><select id="ap_l"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c44anti_out"></div>
+    </div>
+    <div class="rxbox" id="c44ssi">
+      <div class="rxbox-t">手術部位感染</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>術後天數 <span class="rx-en">POD</span></label><input type="number" id="ss_d" step="1" placeholder="6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>傷口分類 <span class="rx-en">class</span></label><select id="ss_c"><option value="clean">乾淨</option><option value="cont">污染</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>深部 <span class="rx-en">deep</span></label><select id="ss_deep"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>有發燒 <span class="rx-en">fever</span></label><select id="ss_f"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>壞死徵象 <span class="rx-en">pain out of proportion／crepitus</span></label><select id="ss_nec"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c44ssi_out"></div>
+    </div>
+    <div class="dirhead" id="fv-flow"><span class="dh-n">決策流程</span><span class="dh-e">New fever in the ICU</span></div>
+    <div id="fv_flow">
+      <div class="flow-step" id="fv_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">時機？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fvPick('when','pod1',this)">術後 24 小時內</button>
+          <button class="flow-opt" onclick="fvPick('when','other',this)">其他</button>
+        </div></div>
+      <div class="flow-step" id="fv_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">感染有可能嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fvPick('inf','yes',this)">有可能</button>
+          <button class="flow-opt" onclick="fvPick('inf','no',this)">不太可能<span class="fo-sub">非感染來源明顯</span></button>
+        </div></div>
+      <div class="flow-step" id="fv_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">有中心靜脈導管嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fvPick('cvc','yes',this)">有</button>
+          <button class="flow-opt" onclick="fvPick('cvc','no',this)">無</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="fv_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="fvReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="fv-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_fever"></div>
+    <div class="dirhead" id="fv-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" data-ct="pathways/nsti.html" href="#">壞死性軟組織感染</a><a class="flow-link" data-ct="tools/candida-score.html" href="#">Candida score</a><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素</a><a class="flow-link" href="access.html#dwell">Marino 第 3 章 導管相關感染</a><a class="flow-link" href="vent.html#vap">Marino 第 29 章 VAP</a><a class="flow-link" href="abdomen.html#abdinf">Marino 第 41 章 腹腔感染</a><a class="flow-link" href="blood.html#rbc">Marino 第 12 章 輸血反應</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 43–44 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10331127/" target="_blank" rel="noopener" class="ref-link">Khosla & Guntupalli. Heat-related illnesses. Crit Care Clin 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30990296/" target="_blank" rel="noopener" class="ref-link">Gauer & Meyers. Heat-related illnesses. Am Fam Physician 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15248787/" target="_blank" rel="noopener" class="ref-link">Hadad et al. Heat stroke: a review of cooling methods. Sports Med 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29624537/" target="_blank" rel="noopener" class="ref-link">Yokobori et al. Intravascular temperature management for severe heat stroke. CCM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24008958/" target="_blank" rel="noopener" class="ref-link">Zimmerman & Shen. Rhabdomyolysis. Chest 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16227063/" target="_blank" rel="noopener" class="ref-link">Rusyniak & Sprague. Toxin-induced hyperthermic syndromes. Med Clin North Am 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15956637/" target="_blank" rel="noopener" class="ref-link">Litman & Rosenberg. Malignant hyperthermia. JAMA 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15062519/" target="_blank" rel="noopener" class="ref-link">Bhanushali & Tuite. Evaluation and management of neuroleptic malignant syndrome. Neurol Clin 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30459031/" target="_blank" rel="noopener" class="ref-link">Tormoehlen & Rusyniak. Neuroleptic malignant syndrome and serotonin syndrome. Handb Clin Neurol 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3892294/" target="_blank" rel="noopener" class="ref-link">Guze & Baxter. Neuroleptic malignant syndrome. NEJM 1985</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15784664/" target="_blank" rel="noopener" class="ref-link">Boyer & Shannon. The serotonin syndrome. NEJM 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8777769/" target="_blank" rel="noopener" class="ref-link">Demirkiran et al. Ecstasy intoxication: overlap between serotonin syndrome and NMS. Clin Neuropharmacol 1996</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27406219/" target="_blank" rel="noopener" class="ref-link">Werneke et al. Diagnosing serotonin syndrome: a meta-analysis of cases. BMC Neurol 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35010760/" target="_blank" rel="noopener" class="ref-link">Paal et al. Accidental hypothermia: 2021 update. Int J Environ Res Public Health 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34294536/" target="_blank" rel="noopener" class="ref-link">Lankford & Fox. The wind-chill index. Wilderness Environ Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33773826/" target="_blank" rel="noopener" class="ref-link">Lott et al. ERC Guidelines 2021: cardiac arrest in special circumstances. Resuscitation 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30459025/" target="_blank" rel="noopener" class="ref-link">Paal et al. Accidental hypothermia. Handb Clin Neurol 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26571241/" target="_blank" rel="noopener" class="ref-link">Niven et al. Accuracy of peripheral thermometers: meta-analysis. Ann Intern Med 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10331126/" target="_blank" rel="noopener" class="ref-link">Hanania & Zimmerman. Accidental hypothermia. Crit Care Clin 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16564768/" target="_blank" rel="noopener" class="ref-link">Aslam et al. Hypothermia: evaluation, ECG manifestations, and management. Am J Med 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31513865/" target="_blank" rel="noopener" class="ref-link">Ohbe et al. ECMO improves outcomes of accidental hypothermia without vital signs. Resuscitation 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32555133/" target="_blank" rel="noopener" class="ref-link">Vaidyanathan et al. Heat-related deaths, United States 2004–2018. MMWR 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37902340/" target="_blank" rel="noopener" class="ref-link">O'Grady et al. SCCM/IDSA guidelines for evaluating new fever in adult ICU patients. CCM 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6835296/" target="_blank" rel="noopener" class="ref-link">Tandberg & Sklar. Effect of tachypnea on oral temperature. NEJM 1983</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/1302471/" target="_blank" rel="noopener" class="ref-link">Mackowiak et al. A critical appraisal of 98.6°F. JAMA 1992</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12629243/" target="_blank" rel="noopener" class="ref-link">Commichau et al. Risk factors for fever in the intensive care unit. Neurology 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15127194/" target="_blank" rel="noopener" class="ref-link">Peres Bota et al. Body temperature alterations in the critically ill. ICM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7832832/" target="_blank" rel="noopener" class="ref-link">Saper & Breder. The neurologic basis of fever. NEJM 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8698984/" target="_blank" rel="noopener" class="ref-link">Kluger et al. The adaptive value of fever. Infect Dis Clin North Am 1996</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6410527/" target="_blank" rel="noopener" class="ref-link">Freischlag & Busuttil. The value of postoperative fever evaluation. Surgery 1983</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7813318/" target="_blank" rel="noopener" class="ref-link">Engoren. Lack of association between atelectasis and fever. Chest 1995</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/463928/" target="_blank" rel="noopener" class="ref-link">Murray et al. Fever and pulmonary thromboembolism. Am J Med 1979</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33934903/" target="_blank" rel="noopener" class="ref-link">Mowla et al. Transfusion-related adverse reactions among platelet products. Transfus Med Rev 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20030474/" target="_blank" rel="noopener" class="ref-link">Patel & Gallagher. Drug fever. Pharmacotherapy 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3565971/" target="_blank" rel="noopener" class="ref-link">Mackowiak & LeMaistre. Drug fever: a critical appraisal of conventional concepts. Ann Intern Med 1987</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25440122/" target="_blank" rel="noopener" class="ref-link">Young & Khadaroo. Surgical site infections. Surg Clin North Am 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21962737/" target="_blank" rel="noopener" class="ref-link">Ortega et al. Surgical site infections by wound classification (ACS-NSQIP). J Surg Res 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28363376/" target="_blank" rel="noopener" class="ref-link">Schipper & Tieu. Acute chest wall infections and necrotizing soft tissue infections. Thorac Surg Clin 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35942691/" target="_blank" rel="noopener" class="ref-link">Lakbar et al. Endocarditis in the intensive care unit: an update. Curr Opin Crit Care 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26373316/" target="_blank" rel="noopener" class="ref-link">Baddour et al. AHA scientific statement: infective endocarditis in adults. Circulation 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26444731/" target="_blank" rel="noopener" class="ref-link">Kullberg & Arendrup. Invasive candidiasis. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21106797/" target="_blank" rel="noopener" class="ref-link">Avni et al. PCR diagnosis of invasive candidiasis: meta-analysis. J Clin Microbiol 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18379262/" target="_blank" rel="noopener" class="ref-link">O'Grady et al. Guidelines for evaluation of new fever in critically ill adults: 2008 update. CCM 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21976759/" target="_blank" rel="noopener" class="ref-link">Patel et al. Optimized pathogen detection with 30- vs 20-mL blood culture draws. J Clin Microbiol 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15227618/" target="_blank" rel="noopener" class="ref-link">Cockerill et al. Optimal testing parameters for blood cultures. CID 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20455693/" target="_blank" rel="noopener" class="ref-link">Guembe et al. How many lumens should be cultured in catheter-related bloodstream infections? CID 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12794405/" target="_blank" rel="noopener" class="ref-link">Dobbins et al. Each lumen is a potential source of CVC-related bloodstream infection. CCM 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31083728/" target="_blank" rel="noopener" class="ref-link">Nguyen et al. Performance of the T2Bacteria panel for bloodstream infections. Ann Intern Med 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30629902/" target="_blank" rel="noopener" class="ref-link">Zimmer & Freifeld. Optimal management of neutropenic fever. J Oncol Pract 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/760197/" target="_blank" rel="noopener" class="ref-link">Kluger & Rothenburg. Fever and reduced iron as a host defense. Science 1979</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28141683/" target="_blank" rel="noopener" class="ref-link">Sundén-Cullberg et al. Fever in the ED predicts survival in severe sepsis and septic shock. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32931189/" target="_blank" rel="noopener" class="ref-link">Park et al. Normothermia in sepsis and increased in-hospital mortality. CCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2379391/" target="_blank" rel="noopener" class="ref-link">Clemmer et al. Hypothermia in the sepsis syndrome and clinical outcome. CCM 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22373120/" target="_blank" rel="noopener" class="ref-link">Lee et al. Body temperature and antipyretic treatments and mortality in critically ill patients (FACE). Crit Care 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35120040/" target="_blank" rel="noopener" class="ref-link">Drewry et al. Therapeutic hyperthermia in afebrile sepsis: pilot randomized trial. CCM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28319467/" target="_blank" rel="noopener" class="ref-link">Schell-Chaple et al. IV acetaminophen on core temperature in febrile critically ill adults. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22621696/" target="_blank" rel="noopener" class="ref-link">Scott. Intravenous ibuprofen. Drugs 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10919547/" target="_blank" rel="noopener" class="ref-link">Gerhardt & Gerhardt. Intravenous ketorolac in the treatment of fever. Am J Emerg Med 2000</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/temp.js"></script>
+<script>ICU.makeTabs('temp'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

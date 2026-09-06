@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>附錄 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="附錄">
+<div class="sheet">
+<div class="view active" id="view-appendix">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XVII</div><h1>附錄</h1><div class="sub">Appendices · 單位與換算 → 參考值範圍 → 奇妙的身體 · 附錄 1–3 統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-appendix'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="appendix_tabs">
+    <button class="tab-btn active" data-p="units">單位與換算 <span class="mono">App 1</span></button>
+    <button class="tab-btn" data-p="ranges">參考值 <span class="mono">App 2</span></button>
+    <button class="tab-btn" data-p="body">奇妙的身體 <span class="mono">App 3</span></button>
+  </div>
+
+  <!-- ==================== Appendix 1 Units and Conversions ==================== -->
+  <section class="appendix-panel" data-panel="units" id="appendix-p-units">
+    <div class="dirhead"><span class="dh-n">附錄 1 單位與換算</span><span class="dh-e">Appendix 1 · Units and Conversions</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#units/un-key"><i>01</i>重點卡</a><a class="sp-chip" href="#units/un-tab"><i>02</i>對照表</a><a class="sp-chip" href="#units/un-calc"><i>03</i>換算</a><a class="sp-chip" href="#units/un-x"><i>04</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一節的三句話 The Appendix in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>SI 單位是全球標準</b>：mol ＝ 分子量的克數、Eq ＝ mol × 價數；mg/dL × 10 ÷ 分子量 ＝ mmol/L。</span></div>
+        <div class="lede-item"><span>②</span><span><b>滲透活性看粒子數不看大小</b>：Na 140 mEq/L 貢獻 140 mOsm，葡萄糖 90 mg/dL 只 5 mOsm。</span></div>
+        <div class="lede-item"><span>③</span><span><b>壓力與管徑的換算陷阱</b>：1 mmHg ＝ 1.36 cm H₂O；French ≈ 外徑 mm × 3、Gauge 越大越細。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="un-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="un-kc">全部展開</button></div>
+    <div id="un-kc">
+      <details class="def-box"><summary>01 · SI 單位 <span class="en">Système Internationale</span></summary>
+        <div class="box-inner"><p class="kp"><b>公制（公分、公克、秒）源於法國大革命、1960 年修訂為 SI；長度 m（1 inch ＝ 2.54 cm）、面積 m²、體積 m³（1 L ＝ 0.001 m³、1 mL ＝ 1 cm³）、質量 kg（1 lb ＝ 453.5 g、1 kg ＝ 2.2 lb）、熱 J（1 kcal ＝ 4,184 J）、溫度 K（0°C ＝ 273 K）、黏度 N·s/m²（centipoise ＝ 10⁻³）、物質量 mol（分子量的克數）、Eq ＝ mol × 價數。</b></p></div></details>
+      <details class="def-box"><summary>02 · 濃度換算 <span class="en">Converting solute concentrations</span></summary>
+        <div class="box-inner"><p class="kp"><b>mmol/L ＝ mg/dL × 10 ÷ 分子量；mEq/L ＝ mmol/L × 價數；滲透壓（mOsm/L）＝ 溶液中的粒子數，每個完全解離的離子算一個。Na 140 mEq/L ＝ 140 mOsm；葡萄糖 90 mg/dL ＝ 5 mmol/L ＝ 5 mOsm——鈉的滲透活性遠大於葡萄糖，因為滲透活性由粒子數決定、與粒子大小無關。</b></p>
+          <div class="note">原書附錄 1 的換算公式與範例（式與部分表）抽出時遺失，依殘存內文重建。</div></div></details>
+      <details class="def-box"><summary>03 · 壓力與溫度 <span class="en">Pressure &amp; temperature</span></summary>
+        <div class="box-inner"><p class="kp"><b>1 mmHg ＝ 1.36 cm H₂O ＝ 0.133 kPa；1 psi ＝ 51.7 mmHg。°F ＝ 9/5 °C ＋ 32；°C ＝ 5/9 (°F − 32)。呼吸器壓力慣用 cm H₂O、血行動力與腹內壓用 mmHg——第 39 章把腹內壓寫成 cm H₂O 是原文疑義。</b></p></div></details>
+      <details class="def-box"><summary>04 · 導管與針的尺寸 <span class="en">Catheter &amp; needle sizes</span></summary>
+        <div class="box-inner"><p class="kp"><b>French（外徑）：經驗法則 外徑 mm × 3 ＝ Fr（20 Fr ≈ 6.6 mm、30 Fr ≈ 10 mm、38 Fr ≈ 12.6 mm）。Gauge 越大越細：26 G 0.45 mm、22 G 0.71、20 G 0.91、18 G 1.22、16 G 1.62、14 G 2.03、12 G 2.64 mm；各廠牌略有差異。流量與半徑四次方成正比、與長度成反比。</b></p>
+          <div class="note">French 對照表只剩尾段；16 G 外徑原文印 0.040 in 與 1.62 mm 不符（應約 0.064 in）。</div></div></details>
+    </div>
+    <div class="dirhead" id="un-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>量</th><th>SI 單位</th><th>等值</th></tr>
+      <tr><td>長度</td><td>公尺 m</td><td>1 inch ＝ 2.54 cm</td></tr>
+      <tr><td>體積</td><td>m³</td><td>1 L ＝ 0.001 m³；1 mL ＝ 1 cm³</td></tr>
+      <tr><td>質量</td><td>公斤 kg</td><td>1 lb ＝ 453.5 g；1 kg ＝ 2.2 lb</td></tr>
+      <tr><td>熱</td><td>焦耳 J</td><td>1 kcal ＝ 4,184 J</td></tr>
+      <tr><td>溫度</td><td>Kelvin K</td><td>0°C ＝ 273 K</td></tr>
+      <tr><td>物質量</td><td>mol</td><td>分子量的克數；Eq ＝ mol × 價數</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Gauge</th><th>外徑 mm</th><th>Gauge</th><th>外徑 mm</th></tr>
+      <tr><td>26 G</td><td>0.45</td><td>19 G</td><td>1.02</td></tr>
+      <tr><td>24 G</td><td>0.56</td><td>18 G</td><td>1.22</td></tr>
+      <tr><td>22 G</td><td>0.71</td><td>16 G</td><td>1.62</td></tr>
+      <tr><td>20 G</td><td>0.91</td><td>14 G</td><td>2.03</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>°C</th><th>30</th><th>32</th><th>34</th><th>36</th><th>37</th><th>38</th><th>39</th><th>40</th><th>41</th></tr>
+      <tr><td>°F</td><td>86</td><td>89.6</td><td>93.2</td><td>96.8</td><td>98.6</td><td>100.4</td><td>102.2</td><td>104</td><td>105.8</td></tr>
+    </table></div>
+    <div class="dirhead" id="un-calc"><span class="dh-n">換算</span><span class="dh-e">Converters</span></div>
+    <div class="rxbox" id="cA1conc">
+      <div class="rxbox-t">濃度：mg/dL ↔ mmol/L ↔ mEq/L</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>溶質 <span class="rx-en">solute</span></label><select id="cv_s"><option value="na">Na</option><option value="k">K</option><option value="ca">Ca</option><option value="mg">Mg</option><option value="cl">Cl</option><option value="glu">葡萄糖</option><option value="bun">BUN</option><option value="cr">肌酸酐</option><option value="lac">乳酸</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>數值 <span class="rx-en">value</span></label><input type="number" id="cv_v" step="0.1" placeholder="90"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單位 <span class="rx-en">unit</span></label><select id="cv_u"><option value="mgdl">mg/dL</option><option value="mmol">mmol/L</option><option value="meq">mEq/L</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA1conc_out"></div>
+    </div>
+    <div class="rxbox" id="cA1press">
+      <div class="rxbox-t">壓力：mmHg ↔ cm H₂O ↔ kPa ↔ psi</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>數值 <span class="rx-en">value</span></label><input type="number" id="pr_v" step="0.1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單位 <span class="rx-en">unit</span></label><select id="pr_u"><option value="mmhg">mmHg</option><option value="cmh2o">cm H₂O</option><option value="kpa">kPa</option><option value="psi">psi</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA1press_out"></div>
+    </div>
+    <div class="rxbox" id="cA1temp">
+      <div class="rxbox-t">溫度：°C ↔ °F</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>攝氏 <span class="rx-en">°C</span></label><input type="number" id="tp_c" step="0.1" placeholder="38.3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>華氏 <span class="rx-en">°F</span></label><input type="number" id="tp_f" step="0.1" placeholder="101"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA1temp_out"></div>
+    </div>
+    <div class="rxbox" id="cA1tube">
+      <div class="rxbox-t">管徑：French 與 Gauge</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>French <span class="rx-en">Fr</span></label><input type="number" id="tb_f" step="1" placeholder="28"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>針 Gauge <span class="rx-en">G</span></label><select id="tb_g"><option value="">—</option><option value="26">26 G</option><option value="25">25 G</option><option value="24">24 G</option><option value="23">23 G</option><option value="22">22 G</option><option value="21">21 G</option><option value="20">20 G</option><option value="19">19 G</option><option value="18">18 G</option><option value="16">16 G</option><option value="14">14 G</option><option value="12">12 G</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA1tube_out"></div>
+    </div>
+    <div class="dirhead" id="un-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/dose-conversion.html" href="#">劑量與單位換算</a><a class="flow-link" data-ct="tools/corrected-labs.html" href="#">校正檢驗值</a><a class="flow-link" href="access.html#primer">Marino 第 1 章 導管流量</a><a class="flow-link" href="renallyte.html#aki">Marino 第 34 章 腹內壓單位</a><a class="flow-link" href="temp.html#fever">Marino 第 44 章 體溫換算</a></div>
+  </section>
+
+  <!-- ==================== Appendix 2 Selected Reference Ranges ==================== -->
+  <section class="appendix-panel hidden" data-panel="ranges" id="appendix-p-ranges">
+    <div class="dirhead"><span class="dh-n">附錄 2 參考值範圍</span><span class="dh-e">Appendix 2 · Selected Reference Ranges</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ranges/rn-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ranges/rn-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ranges/rn-calc"><i>03</i>計算</a><a class="sp-chip" href="#ranges/rn-x"><i>04</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一節的三句話 The Appendix in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>影像的輻射劑量有數量級差</b>：胸部 X 光 0.02 mSv、腹部 CT 8、冠狀動脈攝影 16；年上限 50。</span></div>
+        <div class="lede-item"><span>②</span><span><b>血液量男 66、女 60 mL/kg</b>（紅血球 26／24、血漿 40／36）——輸血與失血估算的基準。</span></div>
+        <div class="lede-item"><span>③</span><span><b>理想體重、BMI、尖峰呼氣流速表與 CAM-ICU 都是圖表</b>；本頁以公式（Devine、Mosteller）代替，CAM-ICU 要件見第 45 章。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="rn-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="rn-kc">全部展開</button></div>
+    <div id="rn-kc">
+      <details class="def-box"><summary>01 · 輻射劑量 <span class="en">Radiation dose</span></summary>
+        <div class="box-inner"><p class="kp"><b>有效劑量（mSv）＝全身各器官的總和。胸部 X 光單張 0.02（0.007–0.05）、兩張 0.1、腹部 X 光 0.7；頭部 CT 2（0.9–4）、胸部 CT 7（4–18）、腹部 CT 8（3.5–25）、胸部 CTA 15（13–40）、冠狀動脈攝影 16（5–32）；EPA 年上限 50 mSv。</b></p></div></details>
+      <details class="def-box"><summary>02 · 血液量 <span class="en">Blood volumes</span></summary>
+        <div class="box-inner"><p class="kp"><b>男：血 66、紅血球 26、血漿 40 mL/kg；女：60、24、36（AABB）。70 kg 男約 4.6 L 血、1.8 L 紅血球、2.8 L 血漿。</b></p></div></details>
+      <details class="def-box"><summary>03 · 體型與 CAM-ICU <span class="en">Body size &amp; CAM-ICU</span></summary>
+        <div class="box-inner"><p class="kp"><b>原書的理想體重表、BMI 表、男女尖峰呼氣流速表與 CAM-ICU 流程圖都是圖檔。本頁：理想體重用 Devine（男 50、女 45.5 ＋ 0.91 × (cm − 152.4)）、BSA 用 Mosteller √(kg × cm ÷ 3600)、BMI ＝ kg ÷ m²；CAM-ICU 四要件（急性或波動、注意力不集中、思考混亂、意識改變）見第 45 章。</b></p>
+          <div class="note">原書附錄 2 的四張表為圖檔、未收錄。</div></div></details>
+    </div>
+    <div class="dirhead" id="rn-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>檢查</th><th>平均有效劑量</th><th>範圍</th></tr>
+      <tr><td>胸部 X 光（1 張）</td><td>0.02 mSv</td><td>0.007–0.05</td></tr>
+      <tr><td>胸部 X 光（2 張）</td><td>0.1 mSv</td><td>0.05–0.24</td></tr>
+      <tr><td>腹部 X 光</td><td>0.7 mSv</td><td>0.04–1.1</td></tr>
+      <tr><td>頭部 CT</td><td>2 mSv</td><td>0.9–4.0</td></tr>
+      <tr><td>胸部 CT</td><td>7 mSv</td><td>4–18</td></tr>
+      <tr><td>腹部 CT</td><td>8 mSv</td><td>3.5–25</td></tr>
+      <tr><td>胸部 CT 血管攝影</td><td>15 mSv</td><td>13–40</td></tr>
+      <tr><td>冠狀動脈攝影</td><td>16 mSv</td><td>5–32</td></tr>
+      <tr><td>年輻射上限（EPA）</td><td>50 mSv</td><td>—</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>血液量 mL/kg</th><th>男</th><th>女</th></tr>
+      <tr><td>全血</td><td>66</td><td>60</td></tr>
+      <tr><td>紅血球</td><td>26</td><td>24</td></tr>
+      <tr><td>血漿</td><td>40</td><td>36</td></tr>
+    </table></div>
+    <div class="dirhead" id="rn-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="cA2body">
+      <div class="rxbox-t">體型：BMI、理想體重、BSA、血液量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="bd_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="bd_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="bd_s"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA2body_out"></div>
+    </div>
+    <div class="rxbox" id="cA2rad">
+      <div class="rxbox-t">累積輻射劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>胸部 X 光 1 張 <span class="rx-en">次數</span></label><input type="number" id="rd_a" step="1" placeholder="10"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>胸部 X 光 2 張 <span class="rx-en">次數</span></label><input type="number" id="rd_b" step="1" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腹部 X 光 <span class="rx-en">次數</span></label><input type="number" id="rd_c" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>頭部 CT <span class="rx-en">次數</span></label><input type="number" id="rd_d" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>胸部 CT <span class="rx-en">次數</span></label><input type="number" id="rd_e" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腹部 CT <span class="rx-en">次數</span></label><input type="number" id="rd_f" step="1" placeholder="2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>胸部 CTA <span class="rx-en">次數</span></label><input type="number" id="rd_g" step="1" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>冠狀動脈攝影 <span class="rx-en">次數</span></label><input type="number" id="rd_h" step="1" placeholder="0"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA2rad_out"></div>
+    </div>
+    <div class="dirhead" id="rn-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/nutrition-risk.html" href="#">營養風險（BMI）</a><a class="flow-link" href="blood.html#rbc">Marino 第 12 章 輸血</a><a class="flow-link" href="nutrition.html#req">Marino 第 48 章 調整體重</a><a class="flow-link" href="neuro.html#consc">Marino 第 45 章 CAM-ICU</a></div>
+  </section>
+
+  <!-- ==================== Appendix 3 The Body Fantastic ==================== -->
+  <section class="appendix-panel hidden" data-panel="body" id="appendix-p-body">
+    <div class="dirhead"><span class="dh-n">附錄 3 奇妙的身體</span><span class="dh-e">Appendix 3 · The Body Fantastic</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#body/bd-key"><i>01</i>重點卡</a><a class="sp-chip" href="#body/bd-tab"><i>02</i>對照表</a><a class="sp-chip" href="#body/bd-calc"><i>03</i>計算</a><a class="sp-chip" href="#body/bd-quiz"><i>04</i>測驗</a><a class="sp-chip" href="#body/bd-x"><i>05</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一節的三句話 The Appendix in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>我們修的是一台 100 兆個零件的機器</b>，沒有一個看得見——這些數字是對人體的致敬，沒有臨床用途。</span></div>
+        <div class="lede-item"><span>②</span><span><b>活著的功率約 80 瓦</b>；每天週轉的 ATP 質量約等於體重；每秒製造 310 萬顆紅血球。</span></div>
+        <div class="lede-item"><span>③</span><span><b>一次心跳有 6 個變數，人腦一次只能處理 4 個</b>——每一次心跳在任何瞬間都無法被完整理解。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="bd-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="bd-kc">全部展開</button></div>
+    <div id="bd-kc">
+      <details class="def-box"><summary>01 · 管路 <span class="en">Vessels &amp; airways</span></summary>
+        <div class="box-inner"><p class="kp"><b>血管接起來約 10 萬公里（地球周長 2.5 倍）；氣道接起來約 2,500 公里（倫敦到莫斯科）。</b></p></div></details>
+      <details class="def-box"><summary>02 · 基因組 <span class="en">The genome</span></summary>
+        <div class="box-inner"><p class="kp"><b>2 公尺長的基因組塞進 6 微米的細胞核（曼哈頓長度的線塞進網球）；30 億個鹼基對、可能序列 4 的 30 億次方（宇宙電子數約 10⁸⁰）；DNA polymerase 校對每一個核苷酸、每 100 億個才錯一個；全身 DNA 接起來 100 億英里（太陽到冥王星近 3 倍）。</b></p></div></details>
+      <details class="def-box"><summary>03 · 能量與週轉 <span class="en">Energy &amp; turnover</span></summary>
+        <div class="box-inner"><p class="kp"><b>靜息 25 kcal/kg：80 kg 是 2,000 kcal/天 ＝ 83 kcal/hr ＝ 80 W（1 kcal/hr ＝ 1.16 W）——一顆燈泡。ATP 每天生產 2 × 10²⁶ 個分子、約 80 kg，等於北美成人平均體重：每天循環一個自己的重量才活著。紅血球 5.4 兆/L × 5 L ＝ 27 兆、每天換 1% ＝ 2,700 億 ＝ 每秒 310 萬顆。皮膚每分鐘掉 25,000 個細胞、每天 3,600 萬、30 天換一層、一年 12 層。</b></p></div></details>
+      <details class="def-box"><summary>04 · 腦與心 <span class="en">Brain &amp; heart</span></summary>
+        <div class="box-inner"><p class="kp"><b>大腦皮質突觸 10¹⁵ 個，一秒數一個要 3,200 萬年；日本記憶家 Akira Haraguchi 背 π 到 83,431 位、花 16 小時 28 分——腦容量遠未用盡。一次心跳有 6 個變數（收縮／舒張、左／右、吸／呼），人腦一次只能處理 4 個。</b></p>
+          <ul><li>作者推薦：Milo & Phillips, Cell Biology by the Numbers（2016）。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="bd-tab"><span class="dh-n">對照表</span><span class="dh-e">Numbers, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>項目</th><th>數字</th><th>比喻</th></tr>
+      <tr><td>血管總長</td><td>10 萬 km</td><td>地球周長 2.5 倍</td></tr>
+      <tr><td>氣道總長</td><td>2,500 km</td><td>倫敦到莫斯科</td></tr>
+      <tr><td>基因組</td><td>2 m 塞進 6 μm</td><td>曼哈頓長的線塞進網球</td></tr>
+      <tr><td>全身 DNA</td><td>100 億英里</td><td>太陽到冥王星 3 倍</td></tr>
+      <tr><td>靜息功率</td><td>80 W</td><td>一顆燈泡</td></tr>
+      <tr><td>每日 ATP</td><td>約 80 kg</td><td>等於體重</td></tr>
+      <tr><td>紅血球製造</td><td>310 萬/秒</td><td>每天 2,700 億</td></tr>
+      <tr><td>皮質突觸</td><td>10¹⁵</td><td>數完要 3,200 萬年</td></tr>
+    </table></div>
+    <div class="dirhead" id="bd-calc"><span class="dh-n">計算</span><span class="dh-e">Calculator</span></div>
+    <div class="rxbox" id="cA3watt">
+      <div class="rxbox-t">你的燈泡瓦數</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="bf_w" step="1" placeholder="80"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="cA3watt_out"></div>
+    </div>
+    <div class="dirhead" id="bd-quiz"><span class="dh-n">附錄測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_app"></div>
+    <div class="dirhead" id="bd-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" href="nutrition.html#req">Marino 第 48 章 能量需求</a><a class="flow-link" href="monitoring.html#o2">Marino 第 9 章 全身氧合</a><a class="flow-link" href="blood.html#rbc">Marino 第 12 章 紅血球</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）附錄 1–3的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18566177/" target="_blank" rel="noopener" class="ref-link">Mettler et al. Effective doses in radiology and diagnostic nuclear medicine: a catalogue. Radiology 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15660854/" target="_blank" rel="noopener" class="ref-link">Halford et al. How many variables can humans process? Psychol Sci 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22709383/" target="_blank" rel="noopener" class="ref-link">Walpole et al. The weight of nations: an estimation of adult human biomass. BMC Public Health 2012</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/appendix.js"></script>
+<script>ICU.makeTabs('appendix'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

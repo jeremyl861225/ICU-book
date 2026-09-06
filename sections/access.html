@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>血管通路 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="血管通路">
+<div class="sheet">
+<div class="view active" id="view-access">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section I</div><h1>血管通路</h1><div class="sub">Vascular Access · 通路入門 → 中央靜脈 → 留置導管 · 第 1–3 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-access'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="access_tabs">
+    <button class="tab-btn active" data-p="primer">通路入門 <span class="mono">Ch1</span></button>
+    <button class="tab-btn" data-p="cvc">中央靜脈 <span class="mono">Ch2</span></button>
+    <button class="tab-btn" data-p="dwell">留置導管 <span class="mono">Ch3</span></button>
+  </div>
+
+  <!-- ==================== Ch1 Vascular Access Primer ==================== -->
+  <section class="access-panel" data-panel="primer" id="access-p-primer">
+    <div class="dirhead"><span class="dh-n">第 1 章 通路入門</span><span class="dh-e">Chapter 1 · Vascular Access Primer</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#primer/pr-key"><i>01</i>重點卡</a><a class="sp-chip" href="#primer/pr-tab"><i>02</i>對照表</a><a class="sp-chip" href="#primer/pr-calc"><i>03</i>計算</a><a class="sp-chip" href="#primer/pr-flow"><i>04</i>流程</a><a class="sp-chip" href="#primer/pr-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#primer/pr-x"><i>06</i>相關工具</a></div>
+
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>輸液速率由導管決定，不是被插的靜脈。</b>流量與半徑四次方成正比、與長度成反比：要快就用短而粗的導管。</span></div>
+        <div class="lede-item"><span>②</span><span><b>Midline 導管正在取代 CVC 與 PICC</b>：15–20 cm 進上臂深靜脈，平均留置 14 天，升壓劑可走 7–8 天，阻塞與感染都比 PICC 少。</span></div>
+        <div class="lede-item"><span>③</span><span><b>看不到、摸不到的靜脈靠即時超音波；靜脈打不上的急救靠骨內通路。</b>IO 一次 IV 失敗就上，近端脛骨首選。</span></div>
+      </div>
+    </div>
+
+    <div class="dirhead" id="pr-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pr-kc">全部展開</button></div>
+    <div id="pr-kc">
+      <details class="def-box"><summary>01 · 材質與尺寸 <span class="en">Catheter basics</span></summary>
+        <div class="box-inner"><p class="kp"><b>短期用 polyurethane（抗扭折），長期植入用 silicone（更軟、傷血管少，但難經皮插入）。</b></p>
+          <ul><li><b>Gauge</b>：源自鐵絲，數字越大管越細（16 G 最粗 → 21 G 最細）；<b>各廠外徑不標準化</b>。用在針、小口徑單腔導管、多腔導管的各腔。</li>
+            <li><b>French</b>：從 0 起算，每一級外徑 +0.33 mm（<b class="mono">Fr × 0.33 ＝ 外徑 mm</b>）；4 Fr ＝ 1.2 mm、9 Fr ＝ 3.2 mm。用在多腔與大口徑導管、導尿管、鼻胃管、胸管。</li></ul></div></details>
+      <details class="def-box"><summary>02 · Hagen-Poiseuille：半徑四次方 <span class="en">Flow through catheters</span></summary>
+        <div class="box-inner"><p class="kp"><b>Q ＝ ΔP × πr⁴ / 8μL——口徑對流量的影響遠大於長度。</b></p>
+          <ul><li>實測重力流：<b class="mono">16 G</b> 是 18 G 的兩倍多、是 20 G 的近四倍，外徑差不到 1 mm。</li>
+            <li>長度：2 吋 → 6 吋（CVC 常見長度）流量降 <b class="mono">40%</b>，→ 12 吋再降 40%。</li>
+            <li>結論：需要快速輸液就用大口徑，<b>短而粗</b>最好。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 輸注壓力與幫浦 <span class="en">Infusion pressure &amp; pumps</span></summary>
+        <div class="box-inner"><p class="kp"><b>重力：袋子高 68 cm ＝ 50 mmHg（1 psi）、100 cm ＝ 75 mmHg；幫浦最高 15 psi。</b></p>
+          <ul><li>容積式幫浦 0.1–1,000 mL/h（一般輸液與藥物）；針筒式 ≤100 mL、0.1–100 mL/h（PCA）。</li>
+            <li>大出血專用快速輸液系統：加溫，最高 <b class="mono">1.5 L/min</b>，配 7–8 Fr、2–2.5 吋的快速輸液導管。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 周邊導管三種 <span class="en">Short · long · midline</span></summary>
+        <div class="box-inner"><p class="kp"><b>短（&lt;6 cm）快但 3 天內 40–60% 失效；長（6–&lt;15 cm）留 7–9 天；midline（15–20 cm）留兩週、可輸升壓劑。</b></p>
+          <ul><li><b>短周邊</b>：16–22 G、3–5 cm，catheter-over-needle 見回血再推；首次失敗約 <b class="mono">1/3</b>；失效原因：靜脈炎、阻塞、脫落、外滲——ICU 躁動病人尤其。</li>
+            <li><b>長周邊</b>（extended dwell）約 8 cm，北美不流行。</li>
+            <li><b>Midline</b>：超音波進 basilic（首選：直、不鄰近動脈神經）／brachial／cephalic；平均 14 天；<b>升壓劑 7–8 天無外滲</b>；比 PICC 阻塞少、CRBSI 少；DVT 略高但 <5%、差距 <2%。雙腔 15 cm 每腔重力流量約 1.3 L/h（短導管的 20%），仍超過幫浦上限。瓶頸是要專責團隊放。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 中央導管：PICC 與 CVC <span class="en">Central catheters</span></summary>
+        <div class="box-inner"><p class="kp"><b>尖端在腔靜脈才叫中央；PICC 太長流量剩 midline 的 20%，CVC 的遠端腔才是快速輸液用的那一腔。</b></p>
+          <ul><li><b>PICC</b> 40–55 cm，1–3 腔；曾是 CVC 的安全替代，現在被 midline 取代中；阻塞多與流量差有關。</li>
+            <li><b>CVC</b> 15／20／30 cm，最多 4 腔；三腔最常見：<b>遠端腔 16 G</b>、近端中間腔 18 G，遠端流量是其他腔兩倍以上。</li>
+            <li>CVC 需求逐年下降；仍是血行動力不穩病人的最後（go-to）通路。</li></ul></div></details>
+      <details class="def-box"><summary>06 · Seldinger 技術 <span class="en">Guidewire technique</span></summary>
+        <div class="box-inner"><p class="kp"><b>小針探到血管 → 軟頭導線進管腔 → 撤針 → 擴張器開通道 → 導管沿導線推入。</b></p>
+          <ul><li>除了最表淺可摸到的靜脈，其他都靠導線；軟頭減少內皮損傷。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 血管超音波 <span class="en">Vascular ultrasound</span></summary>
+        <div class="box-inner"><p class="kp"><b>短軸找血管、看伴行動脈、確認穿刺；長軸確認導線與導管在管腔內。</b></p>
+          <ul><li>線陣探頭 5–15 MHz，解析高、深度只到約 9 cm；B-mode 灰階，液體黑。</li>
+            <li><b>短軸</b>：容易找到目標、看得到動脈，但針只在到達血管時才成為一個亮點；<b>長軸</b>：整根針、導線、導管都看得到，但看不到伴行動脈、需要走直的靜脈。</li>
+            <li><b>後壁穿破</b>：短軸 <b class="mono">40%</b>、長軸 18%——所以一定要確認導線與導管在管腔內。</li>
+            <li>分辨動靜脈：<b>壓迫</b>（靜脈易塌；血栓例外）與<b>彩色 Doppler</b>（顏色是血流方向相對探頭，不是動靜脈本身）。</li>
+            <li>協定三步：找到目標靜脈 → 確認針穿入 → 確認導線與導管在腔內。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 骨內通路 <span class="en">Intraosseous access</span></summary>
+        <div class="box-inner"><p class="kp"><b>IV 一次失敗或不可行 → IO；髓腔不會因低血容塌陷。近端脛骨首選。</b></p>
+          <ul><li>適應：心跳停止、重大創傷、休克時 IV 困難；院外成功率達 <b class="mono">97%</b>；ATLS 也列入。</li>
+            <li>禁忌：該骨骨折或剛穿刺過（漏液）、該肢血管損傷、穿刺處燒傷／蜂窩組織炎／骨髓炎、osteopetrosis。</li>
+            <li>部位：<b>近端脛骨</b>（成功率高、不礙插管與 CPR；插入點髕骨下緣下 3 cm、內側 2 cm）；近端肱骨流量較高。</li>
+            <li>15 G 針 15／25／45 mm（兒童／成人／肥胖）；先用探針量皮到骨膜的距離；針垂直 90°，驅動器順時針轉入，<b>突然失去阻力</b>＝進髓腔；回抽不到血（骨髓像果凍）先沖 5–10 mL。不必無菌手套。</li>
+            <li>清醒病人：2% lidocaine <b class="mono">40 mg（2 mL）</b>打進髓腔 2 分鐘、留 1 分鐘、沖 10 mL 再輸液；不夠再 20 mg／1 分鐘；一小時後可能失效，可用 IO fentanyl。</li>
+            <li>流速只有周邊靜脈 <b class="mono">25%</b>（骨髓壓約 30 mmHg）→ 一律加壓（幫浦或壓力袋）；300 mmHg 仍可能不夠補大量失血 → 雙 IO。</li>
+            <li>≤24 小時（無確切證據）；拔除：接 luer-lock 針筒、順時針旋轉、90° 拔，<b>不要前後搖</b>。併發症 <1%：膿瘍、骨髓炎、脛骨骨折、腔室症候群、脂肪／骨髓栓塞。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>本章 A Final Word 與圖 1.10 說明寫「近端<b>股骨</b>」，內文全部是「近端<b>脛骨</b>」（插入點也是髕骨下 3 cm），依內文為準。</div></div></details>
+    </div>
+
+    <div class="dirhead" id="pr-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>French</th><th>Gauge</th><th>外徑</th></tr>
+      <tr><td>1</td><td>27</td><td>0.4 mm</td></tr><tr><td>3</td><td>20</td><td>0.9 mm</td></tr><tr><td>4</td><td>18</td><td>1.2 mm</td></tr>
+      <tr><td>5</td><td>16</td><td>1.7 mm</td></tr><tr><td>7</td><td>13</td><td>2.4 mm</td></tr><tr><td>9</td><td>11</td><td>3.2 mm</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>導管</th><th>尺寸</th><th>長度</th><th>重力流量（水、40 吋高）</th></tr>
+      <tr><td>短周邊</td><td>18 G</td><td>3 cm</td><td>6.0 L/h</td></tr>
+      <tr><td>長周邊</td><td>18 G</td><td>8 cm</td><td>3.7 L/h</td></tr>
+      <tr><td>雙腔 midline</td><td>5.5 Fr，各腔 18 G</td><td>15 cm</td><td>1.3 L/h／腔</td></tr>
+      <tr><td>雙腔 PICC</td><td>—</td><td>50 cm</td><td>約 midline 的 20%</td></tr>
+      <tr><td>三腔 CVC</td><td>遠端 16 G、其餘 18 G</td><td>15–30 cm</td><td>遠端腔 &gt; 其他腔 2 倍</td></tr>
+    </table></div>
+    <div class="note">PICC 與 CVC 兩列取自內文敘述（表 1.3 未完整抽出）。</div>
+    <div class="tw"><table class="def-table">
+      <tr><th>導管</th><th>優點</th><th>缺點</th><th>適合</th></tr>
+      <tr><td>短周邊</td><td>最快、敗血症風險低</td><td>留置短、失效率高</td><td>一開始的快速通路</td></tr>
+      <tr><td>長周邊</td><td>比短的留得久</td><td>可能需超音波</td><td>—（北美少用）</td></tr>
+      <tr><td>Midline</td><td>周邊裡留最久、可多腔、可長期升壓劑</td><td>需超音波與專責團隊</td><td>幾天到數週</td></tr>
+      <tr><td>PICC</td><td>可留數週到數月</td><td>流量差、阻塞多、血栓</td><td>預計好幾週的靜脈治療</td></tr>
+      <tr><td>CVC</td><td>穩定、多功能、可透析／監測</td><td>氣胸、感染、需要技術</td><td>血行動力不穩、特殊處置</td></tr>
+    </table></div>
+
+    <div class="dirhead" id="pr-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c1sz">
+      <div class="rxbox-t">French ↔ gauge ↔ 外徑</div>
+      <div class="lead">填其中一個。gauge 只列表 1.1 有的六個對照。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>French <span class="rx-en">Fr</span></label><input type="number" id="sz_fr" step="0.5" placeholder="7"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Gauge <span class="rx-en">G（27／20／18／16／13／11）</span></label><input type="number" id="sz_g" step="1" placeholder="16"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c1sz_out"></div>
+    </div>
+    <div class="rxbox" id="c1hp">
+      <div class="rxbox-t">兩條導管的相對流量 Hagen-Poiseuille</div>
+      <div class="lead">以表 1.1 的外徑當口徑代理，算 B 相對於 A 的流量倍數。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>導管 A gauge <span class="rx-en">G</span></label><input type="number" id="hp_g1" step="1" placeholder="18"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管 A 長度 <span class="rx-en">cm</span></label><input type="number" id="hp_l1" step="0.5" placeholder="3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管 B gauge <span class="rx-en">G</span></label><input type="number" id="hp_g2" step="1" placeholder="16"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管 B 長度 <span class="rx-en">cm</span></label><input type="number" id="hp_l2" step="0.5" placeholder="20"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c1hp_out"></div>
+    </div>
+    <div class="rxbox" id="c1ht">
+      <div class="rxbox-t">重力輸注壓力</div>
+      <div class="lead">輸液袋液面高於穿刺點的高度。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>高度 <span class="rx-en">cm</span></label><input type="number" id="ht_cm" step="5" placeholder="100"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c1ht_out"></div>
+    </div>
+
+    <div class="dirhead" id="pr-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which access</span></div>
+    <div class="lead">先分緊急或一般，再看周邊靜脈上不上得去、預計要用多久。</div>
+    <div id="ac_flow">
+      <div class="flow-step" id="ac_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">什麼情境？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="acPick('ctx','emerg',this)">緊急<span class="fo-sub">心跳停止、重大創傷、休克，現在就要通路</span></button>
+          <button class="flow-opt" onclick="acPick('ctx','ward',this)">一般住院／ICU 常規</button>
+        </div></div>
+      <div class="flow-connector hidden" id="ac_c2">↓</div>
+      <div class="flow-step hidden" id="ac_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">周邊靜脈一次就上得去嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="acPick('iv','yes',this)">可以</button>
+          <button class="flow-opt" onclick="acPick('iv','no',this)">失敗或不可行</button>
+        </div></div>
+      <div class="flow-connector hidden" id="ac_c3">↓</div>
+      <div class="flow-step hidden" id="ac_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">預計要用多久、要做什麼？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="acPick('dur','short',this)">幾天以內、一般輸液</button>
+          <button class="flow-opt" onclick="acPick('dur','mid',this)">幾天到數週<span class="fo-sub">含升壓劑、多重靜脈藥物</span></button>
+          <button class="flow-opt" onclick="acPick('dur','long',this)">數週以上的靜脈治療</button>
+          <button class="flow-opt" onclick="acPick('dur','cvc',this)">血行動力不穩、透析、節律、侵入性監測</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ac_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="acReset()">重新開始</button></div>
+    </div>
+
+    <div class="dirhead" id="pr-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_primer"></div>
+    <div class="dirhead" id="pr-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/trauma-resuscitation.html" href="#">重大創傷出血復甦決策</a><a class="flow-link" data-ct="tools/vasopressor.html" href="#">🧮 升壓／強心藥物流速換算</a><a class="flow-link" data-ct="tools/acls.html" href="#">ACLS</a></div>
+  </section>
+
+  <!-- ==================== Ch2 Central Venous Access ==================== -->
+  <section class="access-panel hidden" data-panel="cvc" id="access-p-cvc">
+    <div class="dirhead"><span class="dh-n">第 2 章 中央靜脈通路</span><span class="dh-e">Chapter 2 · Central Venous Access</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#cvc/cv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#cvc/cv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#cvc/cv-flow"><i>03</i>流程</a><a class="sp-chip" href="#cvc/cv-quiz"><i>04</i>測驗</a><a class="sp-chip" href="#cvc/cv-x"><i>05</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>中央導管的適應症在縮小</b>：六項傳統適應症有四項已被 midline 與 PICC 取代，剩下血行動力不穩與透析、節律、監測。</span></div>
+        <div class="lede-item"><span>②</span><span><b>即時超音波在每個部位都提高成功率、降低併發症</b>；頸動脈穿刺從 9.2% 降到 1.8%。</span></div>
+        <div class="lede-item"><span>③</span><span><b>股靜脈的壞名聲大多不成立，仰臥胸部 X 光的好名聲也是</b>：超音波看肺滑動與 bubble study 比 CXR 更能排除氣胸、確認位置；尖端進右心房可以留著。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="cv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="cv-kc">全部展開</button></div>
+    <div id="cv-kc">
+      <details class="def-box"><summary>01 · 縮小中的適應症 <span class="en">Shrinking indications</span></summary>
+        <div class="box-inner"><p class="kp"><b>周邊困難、長期通路、多重藥物、升壓劑／高張液／發泡劑——這四項 midline 或 PICC 都能做。</b></p>
+          <ul><li>仍需 CVC：<b>危及生命的血行動力不穩</b>；<b>急性透析、暫時性經靜脈節律、侵入性血行動力學監測</b>。</li>
+            <li>Midline／PICC 沒有氣胸風險、病人接受度高；CVC 需求逐年下降。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 沒有絕對禁忌 <span class="en">Contraindications</span></summary>
+        <div class="box-inner"><p class="kp"><b>凝血異常（不論嚴重度）都不是禁忌；plt &lt;20,000 或 INR &gt;3 先矯正的建議沒有證據。</b></p></div></details>
+      <details class="def-box"><summary>03 · 插入 bundle <span class="en">Central line insertion bundle</span></summary>
+        <div class="box-inner"><p class="kp"><b>手部衛生、chlorhexidine-alcohol、最大屏障、避開股靜脈——合起來用才降 CRBSI。</b></p>
+          <ul><li>手部衛生：酒精乾洗手優先；摸穿刺處前後、戴手套前後。</li>
+            <li>Chlorhexidine 在皮膚上活性 ≥6 小時，<b>要晾乾</b>（乾皮 30 秒、濕皮膚 2 分鐘）。</li>
+            <li>最大屏障：帽、口罩、無菌手套、無菌衣、全身鋪單；<b>周邊靜脈只需手套</b>（可不滅菌，別碰導管）。</li>
+            <li>部位：股靜脈血栓較多；感染風險現在認為<b>與部位無關、與維護有關</b>。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 內頸靜脈 <span class="en">Internal jugular vein</span></summary>
+        <div class="box-inner"><p class="kp"><b>最常用；右側較直。頭低 15° 就夠、頭轉不超過 40°、超音波是標準。</b></p>
+          <ul><li>解剖：SCM 下、耳垂到胸鎖關節連線；下頸部在頸動脈前外側，兩者都走在 SCM 兩頭的三角裡。</li>
+            <li>Trendelenburg 15° 直徑 +20–25%，再多無用；心衰竭鬱血不需要、顱內壓高不建議。頭轉 >40° 會把 IJV 拉到頸動脈上方。</li>
+            <li>超音波：成功率↑、次數↓、時間↓、頸動脈穿刺 <b class="mono">9.2% → 1.8%</b>；探頭放三角頂點、橫切肌肉；因有重疊，一定要確認導管在管腔內。</li>
+            <li><b>Landmark 前路</b>：三角頂點、bevel 朝上、朝同側乳頭 45°，5 cm 未進就退出偏外側再進；<b>後路</b>：EJV 越過 SCM 外緣上 1 cm，bevel 3 點鐘，沿肌肉下方朝胸骨上切跡，5–6 cm 進靜脈。</li>
+            <li>併發症：探針穿到頸動脈 → 拔針壓 5 分鐘（凝血異常加倍）；<b>導管進頸動脈 → 留著，會診血管外科／介入放射</b>（拔除可致命）。血／氣胸 landmark 2%、超音波 <1%。CRBSI 0.5% vs 鎖骨下 1.4%（視為相當）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 鎖骨下靜脈 <span class="en">Subclavian vein</span></summary>
+        <div class="box-inner"><p class="kp"><b>筋膜固定不塌陷、不隨呼吸變；離胸膜頂只 5 mm；超音波受鎖骨遮擋。</b></p>
+          <ul><li>3–4 cm 長、直徑 7–12 mm；坐在前斜角肌上，膈神經貼後下方；鎖骨下動脈與臂神經叢在深處。</li>
+            <li>Trendelenburg 15° 只讓直徑 +10%，但為了防空氣栓塞仍建議；<b>轉頭、墊肩會縮小截面，不建議</b>。</li>
+            <li>超音波（infraclavicular）：成功率 82 → 97%、併發症 30 → 11%；壓迫不易，可能要彩色 Doppler；結束時看肺滑動。</li>
+            <li>Landmark：標出鎖骨上覆蓋靜脈的區段（SCM 鎖骨頭附著處），從外側鎖骨下緣進、貼著鎖骨下方朝胸骨上切跡，bevel 12 → 進靜脈後轉 3 點鐘導線才會往 SVC。病態肥胖避免 landmark。</li>
+            <li>併發症：動脈穿刺 1–6%、氣胸 1–4%、臂神經叢 0–3%、膈神經 0–2%、位置不正 8–9%；<b>靜脈狹窄 15–50%</b> → 未來可能透析的手臂那側不要放。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 股靜脈 <span class="en">Femoral vein</span></summary>
+        <div class="box-inner"><p class="kp"><b>名聲最差但大多不成立：3SITES 的 CRBSI 與血栓風險在三個部位都低。</b></p>
+          <ul><li>股三角：腹股溝韌帶下，靜脈在動脈內側、離皮膚幾公分；<b>反 Trendelenburg 15° 截面 +50%</b>，腿外展。</li>
+            <li>超音波建議但證據少；Landmark：脈搏內側 1–2 cm、深 2–4 cm；摸不到脈搏就把 ASIS 到恥骨結節三等分，動脈在中內 1/3 交界下方，靜脈再內側 1–2 cm（成功 >90%）。</li>
+            <li>3SITES（2,532 條）：症狀性 DVT 股 1.4% 最高但整體小；CRBSI 三處都低。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>內文寫「股靜脈的導管相關敗血症風險其實<b>低於</b>內頸靜脈」，但同章表 2.2 的數字是 IJV 0.5%、股 1.2%。本頁以表格數字為準：股靜脈與其他部位<b>相當</b>，不是更低。</div></div></details>
+      <details class="def-box"><summary>07 · 靜脈空氣栓塞 <span class="en">Venous air embolism</span></summary>
+        <div class="box-inner"><p class="kp"><b>5 mmHg 的壓差經 14 G 每秒可吸入 100 mL 空氣；200–300 mL（3–5 mL/kg）幾秒內就致命。</b></p>
+          <ul><li>機轉：自主呼吸的胸內負壓；右心 air lock → 急性右心衰竭與心因性休克；肺微血管滲漏水腫；PFO → 栓塞性中風。</li>
+            <li>預防：IJV／鎖骨下用 Trendelenburg；股靜脈不進胸腔，不需要。</li>
+            <li>表現可無聲；有症狀者突發呼吸困難、咳嗽 → 呼吸衰竭與休克；mill-wheel 雜音。TEE 最敏感（0.02 mL/kg）；心前區 Doppler 可用但不特異。</li>
+            <li>處置（效果未證實）：從導管回抽空氣、100% O₂（把氮氣趕出氣泡）、<b>左側臥</b>、循環崩潰考慮體外支持。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 氣胸：超音波勝過仰臥 CXR <span class="en">Pneumothorax</span></summary>
+        <div class="box-inner"><p class="kp"><b>仰臥 portable CXR 漏掉多達 50% 的氣胸（積氣在前胸而非肺尖）；看肺滑動更敏感。</b></p>
+          <ul><li>多與鎖骨下有關（超音波 1%、否則 4%）。</li>
+            <li>肺滑動消失提示氣胸，但 bleb、肋膜沾黏也會沒有滑動——不是病徵性的。超音波已被建議取代插管後 CXR。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 導管位置 <span class="en">Catheter position</span></summary>
+        <div class="box-inner"><p class="kp"><b>尖端在上腔靜脈、右心房上 1–2 cm ＝ CXR 上 carina 的高度；誤位 15–18%，多是鎖骨下。</b></p>
+          <ul><li>超音波兩件事：鎖骨下導管先掃雙側 IJV 找往上跑的誤位（術中即可修正）；subcostal 看右心房內導管，看不到就 <b>bubble study</b>（遠端腔快推 10 mL 生理鹽水，2 秒內右心房出現微氣泡 ＝ 尖端在 SVC）。</li>
+            <li><b>尖端進右心房不必重放</b>：2,348 例無心臟穿孔或惱人心律不整；「晚期心包填塞」被稱為都市傳說。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="cv-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>3SITES（各約 845 條）</th><th>內頸</th><th>鎖骨下</th><th>股</th></tr>
+      <tr><td>導管相關血流感染</td><td>0.5%</td><td>1.4%</td><td>1.2%</td></tr>
+      <tr><td>症狀性 DVT</td><td>0.5%</td><td>0.9%</td><td>1.4%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>部位</th><th>擺位</th><th>超音波</th><th>急性併發症</th><th>不要選它的情況</th></tr>
+      <tr><td>內頸靜脈（右）</td><td>頭低 15°、頭轉 &lt;40°</td><td>標準做法；短軸找、長軸確認</td><td>頸動脈穿刺 1.8%（landmark 9.2%）、血氣胸 &lt;1%</td><td>顱內壓高（不能頭低）</td></tr>
+      <tr><td>鎖骨下靜脈</td><td>頭低 15°；不轉頭不墊肩</td><td>Infraclavicular；受鎖骨遮擋</td><td>動脈 1–6%、氣胸 1–4%、誤位 8–9%</td><td>未來透析側（狹窄 15–50%）、病態肥胖 landmark、凝血異常（不可壓迫）</td></tr>
+      <tr><td>股靜脈</td><td>上身抬 15°、腿外展</td><td>建議但證據少</td><td>DVT 1.4%；無氣胸與空氣栓塞</td><td>需要活動、鼠蹊污染</td></tr>
+    </table></div>
+    <div class="dirhead" id="cv-flow"><span class="dh-n">決策流程</span><span class="dh-e">Site &amp; confirmation</span></div>
+    <div class="lead">兩題定部位，建議卡把 bundle、擺位、插後確認一次列出。</div>
+    <div id="cv_flow">
+      <div class="flow-step" id="cv_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有即時超音波嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="cvPick('us','yes',this)">有</button><button class="flow-opt" onclick="cvPick('us','no',this)">沒有，要用 landmark</button></div></div>
+      <div class="flow-connector" id="cv_c2">↓</div>
+      <div class="flow-step" id="cv_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">病人有沒有特殊考量？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cvPick('need','std',this)">沒有</button>
+          <button class="flow-opt" onclick="cvPick('need','dial',this)">未來可能長期透析<span class="fo-sub">要保護手臂靜脈</span></button>
+          <button class="flow-opt" onclick="cvPick('need','icp',this)">顱內壓升高<span class="fo-sub">不能頭低腳高</span></button>
+          <button class="flow-opt" onclick="cvPick('need','obese',this)">病態肥胖</button>
+          <button class="flow-opt" onclick="cvPick('need','coag',this)">嚴重凝血異常</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="cv_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="cvReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="cv-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_cvc"></div>
+    <div class="dirhead" id="cv-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/swan-ganz.html" href="#">Swan-Ganz 導管判讀</a><a class="flow-link" data-ct="pathways/crrt.html" href="#">CRRT</a><a class="flow-link" data-ct="tools/pacemaker.html" href="#">暫時性節律器</a></div>
+  </section>
+
+  <!-- ==================== Ch3 The Indwelling Vascular Catheter ==================== -->
+  <section class="access-panel hidden" data-panel="dwell" id="access-p-dwell">
+    <div class="dirhead"><span class="dh-n">第 3 章 留置導管</span><span class="dh-e">Chapter 3 · The Indwelling Vascular Catheter</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#dwell/dw-key"><i>01</i>重點卡</a><a class="sp-chip" href="#dwell/dw-tab"><i>02</i>對照表</a><a class="sp-chip" href="#dwell/dw-calc"><i>03</i>計算</a><a class="sp-chip" href="#dwell/dw-flow"><i>04</i>流程</a><a class="sp-chip" href="#dwell/dw-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#dwell/dw-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>不要定期換管、不要用 heparin 沖、不要用導線通</b>：定期換管增加併發症，生理鹽水同效且沒有 HIT，導線會把血栓推成栓塞——阻塞用 alteplase 溶。</span></div>
+        <div class="lede-item"><span>②</span><span><b>導管相關血流感染沒有臨床診斷</b>：發燒是發炎、紅斑無預測價值，要靠配對培養（導管血 ≥3 倍或早 ≥2 小時陽性），而且每一腔都要抽。</span></div>
+        <div class="lede-item"><span>③</span><span><b>疑似案例只有 11% 最後確認，導管先留著；一旦確認，是否拔管與治多久由病原決定</b>——S. aureus 一律找心內膜炎。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="dw-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="dw-kc">全部展開</button></div>
+    <div id="dw-kc">
+      <details class="def-box"><summary>01 · 敷料 <span class="en">Dressings</span></summary>
+        <div class="box-inner"><p class="kp"><b>透明敷料至少 7 天換一次（潮濕、有血、封閉破壞就換）；紗布 48 小時；chlorhexidine 海綿最防感染但只在有問題的單位建議。</b></p>
+          <ul><li>透明敷料可看穿刺處、封閉隔離，但濕皮膚黏不住 → 皮膚難保持乾就用紗布。</li><li>紗布與透明敷料防感染效果相當。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 不要定期換管 <span class="en">Replacing catheters</span></summary>
+        <div class="box-inner"><p class="kp"><b>定期更換不減感染、反而增加機械與感染併發症。</b></p>
+          <ul><li>周邊：局部靜脈炎（多是機械／化學刺激，不是感染，除非有膿）、外滲、通不開的阻塞才換。</li><li>中央：有感染證據（出口膿或確認的導管相關菌血症）才換；<b>只有紅斑不換</b>。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 沖洗與鎖管 <span class="en">Flushing &amp; locking</span></summary>
+        <div class="box-inner"><p class="kp"><b>保存劑 free 的生理鹽水是首選；heparin（10–1,000 U/mL）有 HIT 風險且不比較好。</b></p>
+          <ul><li>動脈導管例外：生理鹽水不夠，1.4% sodium citrate 可取代 heparin。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 阻塞的導管 <span class="en">Occluded catheters</span></summary>
+        <div class="box-inner"><p class="kp"><b>60% 是血栓：alteplase 2 mg／2 mL 灌入、等 30 → 120 分鐘、可第二劑，80–90% 通；不通再想非血栓原因。</b></p>
+          <ul><li>表現：流速慢、無流、幫浦一直警報、回抽困難；<b>小針筒回抽</b>（負壓小不會把管腔吸扁）。</li>
+            <li>短周邊直接換；長導管盡量救；<b>不要用導線通</b>（推成栓塞）。</li>
+            <li>Alteplase：Cathflo 2 mg 加 2 mL 無菌水（1 mg/mL）→ 灌 2 mL 封住 → 30 分鐘試回抽 → 不通再等 90 分鐘（共 120）→ 不通第二劑重複 → 通了先抽掉 5 mL 血。血管性水腫 11 例報告、無異常出血。</li>
+            <li>非血栓：機械（縫線勒住）、位置、藥物或礦物沉澱——<b>鹼性沉澱用 NaHCO₃／NaOH、酸性用 HCl、脂質用 70% 乙醇</b>。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 導管相關血栓 <span class="en">Catheter-related thrombosis</span></summary>
+        <div class="box-inner"><p class="kp"><b>PICC 特別多但 >95% 無症狀；上肢 DVT 九成與導管有關；診斷靠壓迫超音波，不必拔管。</b></p>
+          <ul><li>上肢 DVT 占所有 DVT 約 5%；危險因子是導管與癌症（1/4–1/3 有活動性惡性腫瘤）。</li>
+            <li>表現：回抽困難 → 上臂腫、麻、無力、肩部淺靜脈怒張（Urschel 徵）；SVC 症候群罕見；症狀性 PE <10%。</li>
+            <li>壓迫超音波敏感 97%／特異 96%；重症病人 D-dimer 本來就高，<b>不能篩</b>。</li>
+            <li>只有嚴重腫痛或抗凝禁忌才拔管；抗凝療程比照下肢 DVT（第 22 章）。股靜脈導管症狀性 DVT 只有 1.6%、與留置天數無關。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 上腔靜脈穿孔 <span class="en">SVC perforation</span></summary>
+        <div class="box-inner"><p class="kp"><b>左側導管尖端抵在 SVC 外側壁會侵蝕穿孔：突然的縱膈變寬＋肋膜積液是線索。</b></p>
+          <ul><li>症狀不特異（胸骨後痛、咳、喘）；胸水成分像輸液；顯影劑經導管注射見縱膈或肋膜腔內即確診。</li>
+            <li>疑似就停止輸注；確診拔管（不會引發縱膈出血）；胸水無感染證據不需抗生素。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 心包填塞 <span class="en">Cardiac tamponade</span></summary>
+        <div class="box-inner"><p class="kp"><b>最致命的導管併發症（右心房穿孔），幸好罕見：突發呼吸困難、一小時內崩潰。</b></p>
+          <ul><li>超音波：心包積液＋右心舒張期塌陷 → <b>立即心包穿刺</b>；大裂口需緊急開胸。死亡率 40–100%。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 導管相關血流感染：機轉與 biofilm <span class="en">CRBSI pathogenesis</span></summary>
+        <div class="box-inner"><p class="kp"><b>留置導管是院內血流感染主因，死亡率 12–25%，4.6 次／1,000 導管日；biofilm 讓抗生素需要 100–1,000 倍濃度。</b></p>
+          <ul><li>四條路：污染的輸液（罕見）、接頭處進管腔（隧道式導管為主）、皮膚菌沿皮下徑（經皮導管的傳統主因）、血中菌附著血管內段。</li>
+            <li>Biofilm：adhesins 黏附 → 分泌 slime（多醣、蛋白、纖維蛋白、DNA）；吞噬細胞吃不到；<b>放一天的導管就有 biofilm</b>；CoNS 特別會產 slime。</li>
+            <li>意涵：系統性抗生素不是 CRBSI 的最佳治療（達到殺菌濃度會中毒）。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 診斷：配對培養 <span class="en">Diagnosis</span></summary>
+        <div class="box-inner"><p class="kp"><b>48 小時內不會發生；發燒、白血球、紅斑都不能診斷；要周邊血陽性＋導管是來源的證據。</b></p>
+          <ul><li><b>定量法</b>：導管血菌落數 ≥3 倍周邊血（準確 94%）；<b>時間差法</b>：導管血早 ≥2 小時轉陽（91%）——差別小、後者便宜。實務常只憑同菌種且無其他來源。</li>
+            <li>尖端半定量培養已退場：要拔管、且漏掉腔內感染。</li>
+            <li><b>每一腔都抽</b>：只抽一腔漏 38%；混合抽不夠靈敏。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 治療：經驗性用藥、拔管指徵、lock、療程 <span class="en">Management</span></summary>
+        <div class="box-inner"><p class="kp"><b>培養後立即 vancomycin；疑似案例只有 11% 確認，先留管；確認後依病原決定拔管與天數。</b></p>
+          <ul><li>葡萄球菌＋腸球菌占 45%；MRSA MIC >2 或 VRE 疑慮 → daptomycin。中性球低下或重症加 GN 覆蓋（carbapenem／cefepime／pip-tazo），疑 MDR 加 aminoglycoside。</li>
+            <li>Candida 覆蓋（echinocandin）：股靜脈導管、TPN、血液惡性腫瘤、長期抗生素、近期移植、他處有 Candida。</li>
+            <li><b>拔管</b>：不穩或 MOF 惡化、心內膜炎或化膿性血栓靜脈炎、S. aureus／Candida／Pseudomonas／MDR GN、適當治療 >96 小時仍菌血症。換新穿刺點、不走導線（血管極少例外）。</li>
+            <li><b>Antibiotic lock</b>：同一抗生素 2–5 mg/mL 於 heparinized saline，每腔留 24 小時、每天換，配合全身療程；不能鎖就從可疑腔給藥。</li>
+            <li>療程：CoNS 且 72 小時反應好 ≤7 天；S. aureus 先 TEE，無心內膜炎＋已拔管＋非免疫低下＋無人工裝置 → 14 天，否則 4–6 週；腸球菌／GN 7–14 天。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 治了 72 小時還敗血 <span class="en">Persistent sepsis</span></summary>
+        <div class="box-inner"><p class="kp"><b>找化膿性血栓靜脈炎（血管內膿瘍）與心內膜炎。</b></p>
+          <ul><li>化膿性血栓靜脈炎：S. aureus 最常見；出口膿、肢體腫、肺多發空洞（敗血栓塞）；超音波血栓＋持續菌血症無他源 → 拔管＋4–6 週抗生素，手術罕見，heparin 考慮。</li>
+            <li>院內心內膜炎每年 2–3 例、導管占 30–50%、葡萄球菌 75%（MRSA 漸多）；<b>2/3 沒有雜音</b> → S. aureus 菌血症一律 TEE。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 作者觀點：來源是腸道不是皮膚 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>皮膚菌與尖端菌相關性差、抗生素藥膏無效、周邊導管少感染；一半病原是腸道菌、腸道去污能大減 CRBSI。</b></p>
+          <ul><li>S. epidermidis 是 MOF 病人上消化道最盛行的菌之一——名字裡的 epidermidis 是誤稱。</li><li>長導管的血管內段在隱性菌血症時被播種，再反過來播種血流。</li><li>「如果來源不是皮膚，我們一直在消毒錯的表面。」</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
+    </div>
+    <div class="dirhead" id="dw-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>項目</th><th>建議</th></tr>
+      <tr><td>透明敷料</td><td>≥7 天換一次；潮濕、有血、封閉破壞立即換</td></tr>
+      <tr><td>紗布敷料</td><td>≥48 小時換一次；髒了就換；皮膚濕時優先</td></tr>
+      <tr><td>沖洗／鎖管</td><td>保存劑 free 生理鹽水；動脈導管可用 1.4% citrate</td></tr>
+      <tr><td>換管</td><td>不定期換；周邊：靜脈炎／外滲／阻塞；中央：感染證據</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>阻塞原因</th><th>解法</th></tr>
+      <tr><td>血栓（60%）</td><td>Alteplase 2 mg／2 mL，30 → 120 分鐘，可第二劑</td></tr>
+      <tr><td>鹼性藥物沉澱</td><td>NaHCO₃ 或 NaOH</td></tr>
+      <tr><td>酸性藥物或礦物沉澱</td><td>HCl</td></tr>
+      <tr><td>脂質殘留</td><td>70% 乙醇</td></tr>
+      <tr><td>機械（縫線）、位置</td><td>檢查固定與位置</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>排名</th><th>病原</th><th>占比</th><th>排名</th><th>病原</th><th>占比</th></tr>
+      <tr><td>1</td><td>CoNS</td><td>16%</td><td>6</td><td>Candida albicans</td><td>6%</td></tr>
+      <tr><td>2</td><td>S. aureus</td><td>13%</td><td>7</td><td>E. coli</td><td>5.4%</td></tr>
+      <tr><td>3</td><td>E. faecalis</td><td>8.4%</td><td>8</td><td>其他 Candida</td><td>5%</td></tr>
+      <tr><td>4</td><td>K. pneumoniae</td><td>8.4%</td><td>9</td><td>Enterobacter</td><td>4.4%</td></tr>
+      <tr><td>5</td><td>E. faecium</td><td>7%</td><td>10</td><td>P. aeruginosa</td><td>4%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>病原</th><th>經驗性抗生素</th><th>備註</th></tr>
+      <tr><td>葡萄球菌</td><td>Vancomycin</td><td>MRSA MIC &gt;2 盛行 → daptomycin</td></tr>
+      <tr><td>腸球菌</td><td>Vancomycin</td><td>疑 VRE → daptomycin</td></tr>
+      <tr><td>革蘭氏陰性桿菌</td><td>Carbapenem／cefepime／piperacillin-tazobactam</td><td>中性球低下或疑 MDR 加 aminoglycoside</td></tr>
+      <tr><td>Candida</td><td>Echinocandin</td><td>股靜脈導管、TPN、血液惡性、長期抗生素、移植、他處 Candida</td></tr>
+    </table></div>
+    <div class="dirhead" id="dw-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c3cx">
+      <div class="rxbox-t">配對血液培養判讀</div>
+      <div class="lead">定量法填菌落數；時間差法填轉陽時間。兩法擇一即可。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>同一菌種？</label><select id="cx_same"><option value="yes">是</option><option value="no">否</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管血菌落數 <span class="rx-en">CFU/mL</span></label><input type="number" id="cx_cath" step="1" placeholder="300"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>周邊血菌落數 <span class="rx-en">CFU/mL</span></label><input type="number" id="cx_per" step="1" placeholder="60"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管血轉陽時間 <span class="rx-en">h</span></label><input type="number" id="cx_tcath" step="0.5" placeholder="10"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>周邊血轉陽時間 <span class="rx-en">h</span></label><input type="number" id="cx_tper" step="0.5" placeholder="14"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c3cx_out"></div>
+    </div>
+    <div class="dirhead" id="dw-flow"><span class="dh-n">決策流程</span><span class="dh-e">Suspected CRBSI</span></div>
+    <div class="lead">先培養、立刻經驗性治療、導管先留；確認後才談拔管與療程。</div>
+    <div id="cr_flow">
+      <div class="flow-step" id="cr_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">重症或中性球低下？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="crPick('sick','yes',this)">是</button><button class="flow-opt" onclick="crPick('sick','no',this)">否</button></div></div>
+      <div class="flow-connector" id="cr_c2">↓</div>
+      <div class="flow-step" id="cr_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">有 Candida 風險條件嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="crPick('cand','yes',this)">有<span class="fo-sub">股靜脈導管、TPN、血液惡性、長期抗生素、移植、他處 Candida</span></button><button class="flow-opt" onclick="crPick('cand','no',this)">沒有</button></div></div>
+      <div class="flow-connector" id="cr_c3">↓</div>
+      <div class="flow-step" id="cr_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">配對培養確認了嗎？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="crPick('conf','no',this)">還在等或未確認</button><button class="flow-opt" onclick="crPick('conf','yes',this)">已確認導管相關菌血症</button></div></div>
+      <div class="flow-connector hidden" id="cr_c4">↓</div>
+      <div class="flow-step hidden" id="cr_s4"><div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">病原是？</span></div>
+        <div class="flow-opts"><button class="flow-opt" onclick="crPick('org','cons',this)">CoNS</button><button class="flow-opt" onclick="crPick('org','sa',this)">S. aureus</button><button class="flow-opt" onclick="crPick('org','gn',this)">腸球菌或革蘭氏陰性桿菌</button><button class="flow-opt" onclick="crPick('org','cand',this)">Candida</button></div></div>
+      <div class="flow-rec rec-idle" id="cr_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="crReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="dw-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_dwell"></div>
+    <div class="dirhead" id="dw-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素指引（台大菌譜）</a><a class="flow-link" data-ct="tools/candida-score.html" href="#">🧮 Candida score</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 1–3 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28844205/" target="_blank" rel="noopener" class="ref-link">Saugel et al. Ultrasound-guided CVC placement. Crit Care 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34759541/" target="_blank" rel="noopener" class="ref-link">Kumar et al. Posterior wall puncture, short vs long axis. JACP 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34842905/" target="_blank" rel="noopener" class="ref-link">Swaminathan et al. Midline vs PICC. JAMA Intern Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32078703/" target="_blank" rel="noopener" class="ref-link">Tyler et al. Intraosseous access in trauma. EJTES 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21460264/" target="_blank" rel="noopener" class="ref-link">O'Grady et al. CDC/HICPAC intravascular catheter guideline. CID 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12044127/" target="_blank" rel="noopener" class="ref-link">Chaiyakunapruk et al. Chlorhexidine vs povidone-iodine. Ann Intern Med 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25981758/" target="_blank" rel="noopener" class="ref-link">Parienti et al. 3SITES. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22809915/" target="_blank" rel="noopener" class="ref-link">Marik et al. Femoral vs other sites CRBSI meta-analysis. CCM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30778648/" target="_blank" rel="noopener" class="ref-link">Schmidt et al. Ultrasound-guided vascular access in critical illness. ICM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25803646/" target="_blank" rel="noopener" class="ref-link">Lalu et al. Ultrasound-guided subclavian cannulation meta-analysis. CCM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28802790/" target="_blank" rel="noopener" class="ref-link">Brull & Prielipp. Vascular air embolism. J Crit Care 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17197859/" target="_blank" rel="noopener" class="ref-link">Mirski et al. Vascular air embolism. Anesthesiology 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21546439/" target="_blank" rel="noopener" class="ref-link">Ding et al. Pneumothorax: radiography vs ultrasound meta-analysis. Chest 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27922877/" target="_blank" rel="noopener" class="ref-link">Ablordeppey et al. Ultrasound vs CXR for CVC confirmation. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16415318/" target="_blank" rel="noopener" class="ref-link">Stonelake & Bodenham. Carina as landmark. BJA 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25304887/" target="_blank" rel="noopener" class="ref-link">Pittiruti & Lamperti. Late tamponade from RA tip: urban legend? JCVA 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20702000/" target="_blank" rel="noopener" class="ref-link">Torres-Millán et al. CVC tip in right atrium, 2,348 patients. Med Intensiva 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11773185/" target="_blank" rel="noopener" class="ref-link">Deitcher et al. Alteplase for occluded CVCs (COOL trial). JCO 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12483050/" target="_blank" rel="noopener" class="ref-link">Safdar & Maki. Insertion-site inflammation not predictive of CRBSI. CCM 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30095499/" target="_blank" rel="noopener" class="ref-link">Takashima et al. CVAD complications in adult critical care. CCM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19489710/" target="_blank" rel="noopener" class="ref-link">Mermel et al. IDSA intravascular catheter-related infection guideline. CID 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17304454/" target="_blank" rel="noopener" class="ref-link">Bouza et al. Three procedures for CRBSI diagnosis without catheter withdrawal. CID 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20455693/" target="_blank" rel="noopener" class="ref-link">Guembe et al. How many lumens to culture. CID 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27573805/" target="_blank" rel="noopener" class="ref-link">Weiner et al. NHSN antimicrobial-resistant pathogens. ICHE 2016</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/access.js"></script>
+<script>ICU.makeTabs('access'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

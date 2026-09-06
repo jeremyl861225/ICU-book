@@ -1,0 +1,19 @@
+{
+  "name": "ICU Book 重症筆記",
+  "short_name": "ICU Book",
+  "description": "Marino's The ICU Book 5e 的統整式互動筆記：依 Section 分頁，重點卡、對照表、章內公式計算器、決策流程與章末測驗。設計沿用臨床工具箱，可離線使用。",
+  "lang": "zh-Hant",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f2ec",
+  "theme_color": "#234551",
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "./icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

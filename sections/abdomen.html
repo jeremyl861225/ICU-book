@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>腹部與骨盆 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="腹部與骨盆">
+<div class="sheet">
+<div class="view active" id="view-abdomen">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XII</div><h1>腹部與骨盆</h1><div class="sub">Abdomen & Pelvis · 肝衰竭 → 急性胰臟炎 → 腹腔感染 → 泌尿道感染 · 第 39–42 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-abdomen'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="abdomen_tabs">
+    <button class="tab-btn active" data-p="liver">肝衰竭 <span class="mono">Ch39</span></button>
+    <button class="tab-btn" data-p="panc">急性胰臟炎 <span class="mono">Ch40</span></button>
+    <button class="tab-btn" data-p="abdinf">腹腔感染 <span class="mono">Ch41</span></button>
+    <button class="tab-btn" data-p="uti">泌尿道感染 <span class="mono">Ch42</span></button>
+  </div>
+
+  <!-- ==================== Ch39 Liver Failure ==================== -->
+  <section class="abdomen-panel" data-panel="liver" id="abdomen-p-liver">
+    <div class="dirhead"><span class="dh-n">第 39 章 肝衰竭</span><span class="dh-e">Chapter 39 · Liver Failure</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#liver/lv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#liver/lv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#liver/lv-calc"><i>03</i>計算</a><a class="sp-chip" href="#liver/lv-flow"><i>04</i>流程</a><a class="sp-chip" href="#liver/lv-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#liver/lv-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>急性肝衰竭＝acetaminophen 為首、腦水腫為主角</b>：NAC 任何時間都給；氨 >150、寡尿或腦水腫就 CVVH，越早越好；復甦用 5% albumin、不用低張液。</span></div>
+        <div class="lede-item"><span>②</span><span><b>失代償肝硬化的四件事</b>：曲張出血（12 小時內內視鏡、octreotide、ceftriaxone、TEG 不看 INR）、腦病變、感染（SBP：PMN >250 就給抗生素＋albumin）、AKI。</span></div>
+        <div class="lede-item"><span>③</span><span><b>肝腎症候群是功能性 AKI</b>：排除低血容、休克、腎毒、結構病後，terlipressin ＋ albumin；緊繃腹水量腹內壓、>12 放腹水；診斷即照會移植。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="lv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="lv-kc">全部展開</button></div>
+    <div id="lv-kc">
+      <details class="def-box"><summary>01 · 急性肝衰竭的原因 <span class="en">Etiologies of ALF</span></summary>
+        <div class="box-inner"><p class="kp"><b>Acetaminophen 遙遙領先（美 46%、英 64%）：glutathione 耗竭 → 代謝物氧化傷害，12 小時起、3–5 天高峰，ALT 高、bilirubin 只微升；一半是無意過量、一半血中測不到。其他：藥物（劑量相關或特異體質，後者不移植存活只 40%）、缺血（AST/ALT >3,000、bilirubin <5，25% 需移植）、自體免疫（80% 女性）、病毒 <10%（多 B 肝、不移植存活 25%）、HELLP、Budd-Chiari、浸潤性腫瘤。</b></p>
+          <ul><li>NAC 是 glutathione 替身：10 小時內最有效，但任何時間都給、給到肝功能改善；75% 不需移植。非 acetaminophen 原因的 ALF 經驗性 NAC 無證據但合理。</li></ul></div></details>
+      <details class="def-box"><summary>02 · ALF 的臨床樣貌 <span class="en">Clinical features</span></summary>
+        <div class="box-inner"><p class="kp"><b>沒有腹水與曲張出血；是全身性發炎（來自受損的肝）＋血行動力不穩＋多器官失能，像發炎性休克。低血壓來自血管擴張與低白蛋白：輸液＋升壓劑，白蛋白 <3 g/dL 用 5% albumin（70% 留在血管內）；不用 Ringer（低血鈉加重腦水腫）。AKI 70%、RRT 用得積極（清氨＋清水）。</b></p></div></details>
+      <details class="def-box"><summary>03 · 肝性腦病變的機轉 <span class="en">Pathogenesis of encephalopathy</span></summary>
+        <div class="box-inner"><p class="kp"><b>腸道蛋白分解產氨 → 肝的尿素循環失能 → 血氨升 → 過血腦障壁進星狀細胞合成 glutamine → 滲透力把水拉進細胞：細胞毒性腦水腫。ALF 中氨與嚴重度較相關；動脈氨 >150 μmol/L（正常 <60）＝腦水腫風險。</b></p></div></details>
+      <details class="def-box"><summary>04 · West Haven 分級與治療 <span class="en">Grading &amp; management</span></summary>
+        <div class="box-inner"><p class="kp"><b>1 級注意力短、性格改變；2 級淡漠嗜睡、時間定向差；3 級木僵可喚醒、時間地點定向差；4 級昏迷；運動徵象（僵硬、吞嚥困難、失調、撲翼震顫）任何一級。Lactulose 20–30 g q1h 到排便 → 20 g q8h（目標每天 2–3 次軟便；灌腸 200 g/1 L 保留 30–60 分）；rifaximin 400 mg tid ≥10 天；CVVH 在 ALF 優於兩者——持續寡尿、氨 >150、腦水腫證據就開始，不看肌酸酐。</b></p>
+          <ul><li>進行性腦病變一律照會移植：死亡率 80% → 33%。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 曲張出血 <span class="en">Variceal hemorrhage</span></summary>
+        <div class="box-inner"><p class="kp"><b>12 小時內內視鏡（找源＋結紮）；MAP 65、白蛋白 <3 用 5% albumin、不用低張液；RBC：血漿：血小板 1:1:1、Hb 目標 7；INR 不代表肝硬化的出血風險——用 TEG；octreotide 與 ceftriaxone 2 g/天越早越好；意識改變先插管。20% 頑固 → TIPS（換來腦病變風險）。</b></p></div></details>
+      <details class="def-box"><summary>06 · 自發性細菌性腹膜炎 <span class="en">Spontaneous bacterial peritonitis</span></summary>
+        <div class="box-inner"><p class="kp"><b>失代償肝硬化 1/3 有感染、SBP 最常見：腸道菌移位＋肝失去清除功能；只發生在有腹水者。1/3 無症狀——入 ICU 或突然惡化都要抽腹水。診斷：腹水 PMN >250/mm³（不管培養）；培養陽性 60%、床邊打進血瓶；培養陽性但 PMN 不夠不算。</b></p>
+          <ul><li>來源：社區 50%、照護相關 25%、院內 25%；革蘭陰性（E. coli、Klebsiella）為主；抗藥全球 35%、美國 16%。</li></ul></div></details>
+      <details class="def-box"><summary>07 · SBP 的治療 <span class="en">Treating SBP</span></summary>
+        <div class="box-inner"><p class="kp"><b>社區型：第三代 cephalosporin；院內型：meropenem 1 g q8h ± vancomycin（MRSA）／daptomycin（VRE）；照護相關看院內抗藥盛行率，不太可能抗藥用 piperacillin-tazobactam。至少 7 天；48 小時重抽，PMN 降 ≥25% 算有效。Albumin 1.5 g/kg 第 1 天＋1 g/kg 第 3 天（25%）改善存活、與肌酸酐無關；SBP 30% 併 AKI。</b></p></div></details>
+      <details class="def-box"><summary>08 · 肝腎症候群 <span class="en">Hepatorenal syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>失代償肝硬化 AKI 達 50%；HRS 是無腎實質病的功能性 AKI：內臟擴張 → 腎素系統 → 腎血管收縮，敗血症加重。判準五項：腹水、48 小時 +0.3 或 ×1.5、停利尿劑與 albumin 1 g/kg × 2 天無反應、無休克無腎毒藥、無結構性腎病；尿液指數像腎前性。</b></p></div></details>
+      <details class="def-box"><summary>09 · HRS 的治療 <span class="en">Treating HRS</span></summary>
+        <div class="box-inner"><p class="kp"><b>Albumin 20–40 g/天（25%，不只是體積：抗氧化、免疫調節）＋ terlipressin（首選；改善腎功能，不改善存活或移植需求；副作用腹痛腹瀉、靜水性肺水腫、缺血）。Norepinephrine 相當但經驗少；midodrine ＋ octreotide 較差、只在沒有 terlipressin 的地方。緊繃腹水一律量腹內壓，>12 大量放腹水（≥4 L 改善腎功能）後密切監測。診斷即照會移植。</b></p>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>本章寫腹內壓「>12 cm H₂O」放腹水，第 34 章與 WSACS 用 mmHg（≥12 mmHg＝腹內高壓）；本頁以 mmHg 呈現。</div></div></details>
+      <details class="def-box"><summary>10 · 肝與腸道敗血症 <span class="en">The liver &amp; bowel sepsis</span></summary>
+        <div class="box-inner"><p class="kp"><b>SBP 證明肝是腸黏膜之後的第二道防線：3/4 的網狀內皮系統在腹部（多在肝），專門攔截穿過腸壁的菌。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="lv-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>肝損傷藥物</th><th>劑量相關</th><th>特異體質</th></tr>
+      <tr><td>兩者皆可</td><td colspan="2">Amiodarone、statin</td></tr>
+      <tr><td>單一類</td><td>Acetaminophen、antimetabolite、抗反轉錄病毒藥、cyclosporine、valproic acid</td><td>Amoxicillin、dantrolene、halothane、lisinopril、phenytoin、sulfonamide</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>曲張出血</th><th>做法</th></tr>
+      <tr><td>內視鏡</td><td>12 小時內</td></tr>
+      <tr><td>體積</td><td>MAP 65；白蛋白 <3 用 5% albumin；不用低張液</td></tr>
+      <tr><td>血品</td><td>1:1:1；Hb 目標 7；TEG 引導（不看 INR）</td></tr>
+      <tr><td>血管活性</td><td>Octreotide 越早越好</td></tr>
+      <tr><td>抗生素</td><td>Ceftriaxone 2 g/天</td></tr>
+      <tr><td>頑固（20%）</td><td>TIPS</td></tr>
+    </table></div>
+    <div class="note">原書表 39.2（West Haven）、39.3（曲張出血）、39.4（HRS）抽出時截斷，依內文重建；octreotide 劑量落在截斷處、未列。</div>
+    <div class="dirhead" id="lv-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c39he">
+      <div class="rxbox-t">肝性腦病變：分級、氨與 CVVH</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>West Haven <span class="rx-en">grade</span></label><select id="he_g"><option value="">—</option><option value="1">1 級</option><option value="2">2 級</option><option value="3">3 級</option><option value="4">4 級</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>動脈氨 <span class="rx-en">μmol/L</span></label><input type="number" id="he_nh3" step="1" placeholder="180"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>持續寡尿 <span class="rx-en">oliguria</span></label><select id="he_uo"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腦水腫證據 <span class="rx-en">cerebral edema</span></label><select id="he_ed"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c39he_out"></div>
+    </div>
+    <div class="rxbox" id="c39sbp">
+      <div class="rxbox-t">SBP：診斷、抗生素與 albumin</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>腹水 PMN <span class="rx-en">/mm³</span></label><input type="number" id="sb_pmn" step="1" placeholder="600"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>來源 <span class="rx-en">origin</span></label><select id="sb_org"><option value="comm">社區</option><option value="hca">照護相關</option><option value="noso">院內</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑 MRSA <span class="rx-en">MRSA</span></label><select id="sb_mrsa"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑 VRE <span class="rx-en">VRE</span></label><select id="sb_vre"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="sb_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c39sbp_out"></div>
+    </div>
+    <div class="rxbox" id="c39hrs">
+      <div class="rxbox-t">肝腎症候群：判準與治療</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>基線肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="hr_cr0" step="0.1" placeholder="1.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>現在肌酸酐 <span class="rx-en">mg/dL</span></label><input type="number" id="hr_cr1" step="0.1" placeholder="2.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肝硬化併腹水 <span class="rx-en">ascites</span></label><select id="hr_asc"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Albumin 挑戰有反應 <span class="rx-en">1 g/kg × 2 d</span></label><select id="hr_alb"><option value="n">無反應</option><option value="y">有反應</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>休克或腎毒藥 <span class="rx-en">shock／nephrotoxin</span></label><select id="hr_shock"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腹內壓 <span class="rx-en">mmHg</span></label><input type="number" id="hr_iap" step="1" placeholder="15"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c39hrs_out"></div>
+    </div>
+    <div class="rxbox" id="c39var">
+      <div class="rxbox-t">曲張出血組套</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>白蛋白 <span class="rx-en">g/dL</span></label><input type="number" id="vb_alb" step="0.1" placeholder="2.4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Hb <span class="rx-en">g/dL</span></label><input type="number" id="vb_hb" step="0.1" placeholder="6.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>意識改變 <span class="rx-en">mentation</span></label><select id="vb_ms"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>內視鏡與藥物無效 <span class="rx-en">refractory</span></label><select id="vb_ref"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c39var_out"></div>
+    </div>
+    <div class="dirhead" id="lv-flow"><span class="dh-n">決策流程</span><span class="dh-e">SBP: empiric antibiotic</span></div>
+    <div id="sb_flow">
+      <div class="flow-step" id="sb_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">SBP 的來源？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="sbPick('org','comm',this)">社區</button>
+          <button class="flow-opt" onclick="sbPick('org','hca',this)">照護相關<span class="fo-sub">90 天內醫療接觸、入院 48 小時內</span></button>
+          <button class="flow-opt" onclick="sbPick('org','noso',this)">院內<span class="fo-sub">>48 小時</span></button>
+        </div></div>
+      <div class="flow-step" id="sb_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（照護相關）院內抗藥菌可能嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="sbPick('res','yes',this)">可能</button>
+          <button class="flow-opt" onclick="sbPick('res','no',this)">不太可能</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="sb_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="sbReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="lv-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_liver"></div>
+    <div class="dirhead" id="lv-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/gi-bleeding.html" href="#">消化道出血</a><a class="flow-link" data-ct="tools/child-pugh.html" href="#">Child-Pugh</a><a class="flow-link" data-ct="tools/meld.html" href="#">MELD</a><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素</a><a class="flow-link" href="renallyte.html#aki">Marino 第 34 章 AKI 與腹內壓</a><a class="flow-link" href="blood.html#rbc">Marino 第 19 章 輸血</a></div>
+  </section>
+
+  <!-- ==================== Ch40 Acute Pancreatitis ==================== -->
+  <section class="abdomen-panel hidden" data-panel="panc" id="abdomen-p-panc">
+    <div class="dirhead"><span class="dh-n">第 40 章 急性胰臟炎</span><span class="dh-e">Chapter 40 · Acute Pancreatitis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#panc/pc-key"><i>01</i>重點卡</a><a class="sp-chip" href="#panc/pc-tab"><i>02</i>對照表</a><a class="sp-chip" href="#panc/pc-calc"><i>03</i>計算</a><a class="sp-chip" href="#panc/pc-flow"><i>04</i>流程</a><a class="sp-chip" href="#panc/pc-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#panc/pc-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>診斷三選二、lipase 優於 amylase</b>；嚴重度看器官衰竭是否超過 48 小時，酵素與 CT 都不預測。</span></div>
+        <div class="lede-item"><span>②</span><span><b>Ringer’s lactate、不要灌太多</b>：低血容才 bolus 10 mL/kg、維持 1.5 mL/kg/hr；48 小時內鼻胃管餵食；避 phenylephrine。</span></div>
+        <div class="lede-item"><span>③</span><span><b>壞死型 1/3 在 7–10 天感染</b>：CT 氣泡、抗生素＋早期引流，預防性抗生素不建議；高三酸甘油酯用 insulin。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="pc-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pc-kc">全部展開</button></div>
+    <div id="pc-kc">
+      <details class="def-box"><summary>01 · 機轉與原因 <span class="en">Pathogenesis &amp; etiologies</span></summary>
+        <div class="box-inner"><p class="kp"><b>腺泡細胞受損釋出消化酵素、trypsin 自我消化 → 全身發炎 → 多器官衰竭。3/4 是膽結石（21–33%）、酒精（16–27%）、原因不明（10–15%）；高三酸甘油酯 2–7%（PUFA 氧化、較嚴重）、藥物 3–4%（thiazide、azathioprine、doxycycline 最常見）、感染、高血鈣、創傷、懷孕、血管炎。整體死亡約 25%、二十年沒變。</b></p></div></details>
+      <details class="def-box"><summary>02 · Atlanta 分類 <span class="en">Revised Atlanta classification</span></summary>
+        <div class="box-inner"><p class="kp"><b>型態：水腫型（最常見、自限）vs 壞死型（5–40%）。診斷三選二：典型腹痛、amylase／lipase ≥3 倍上限、影像。嚴重度：輕度（無器官衰竭、無併發症；50%）、中重度（暫時性器官衰竭 <48 小時或局部併發症）、重度（器官衰竭 >48 小時；死亡 20–25%）。</b></p></div></details>
+      <details class="def-box"><summary>03 · Lipase 優於 amylase <span class="en">Pancreatic enzymes</span></summary>
+        <div class="box-inner"><p class="kp"><b>3 倍上限的專一性較高；4–8 小時就升（amylase 6–12）；持續 8–14 天（amylase 3–5）；單測 lipase 準確度與兩者都測相同。腹痛＋酵素可診斷 75–80%。</b></p></div></details>
+      <details class="def-box"><summary>04 · 影像 <span class="en">Imaging</span></summary>
+        <div class="box-inner"><p class="kp"><b>顯影 CT 分水腫（腫大、完整顯影、邊界模糊）與壞死（不顯影區）、找局部併發症；壞死第一週可能還照不出來，症狀持續或重症要重照。不能打顯影劑用 MRI。膽結石是首因：每個確診都要看膽道，CT 不夠就床邊超音波。</b></p></div></details>
+      <details class="def-box"><summary>05 · 輸液 <span class="en">Fluid management</span></summary>
+        <div class="box-inner"><b>微血管滲漏 → 低血容 → 更多壞死，所以早期顧體積。Ringer’s lactate（結局優於食鹽水；高血鈣相關者不用）：低血容才 bolus 10 mL/kg，之後 1.5 mL/kg/hr；目標 MAP ≥65、尿 ≥0.5。積極方案（20 mL/kg ＋ 3 mL/kg/hr）只造成過載。升壓劑 norepinephrine、小心調、避 phenylephrine（內臟血流）。</b></div></details>
+      <details class="def-box"><summary>06 · 營養 <span class="en">Nutrition</span></summary>
+        <div class="box-inner"><p class="kp"><b>48 小時內開始，口服或腸道管灌（元素配方、低脂）；TPN 只給不耐受（腸阻塞）。腸道營養維持黏膜、減少菌移位（胰臟感染主要來源）：少感染、少器官衰竭、低死亡。胃或空腸未定，鼻胃無害、先鼻胃。</b></p></div></details>
+      <details class="def-box"><summary>07 · 局部併發症 <span class="en">Abdominal complications</span></summary>
+        <div class="box-inner"><p class="kp"><b>感染：壞死型 1/3、7–10 天，發燒白血球不專一，CT 氣泡提示；抗生素蓋腸道革蘭陰性菌 ＋ CT 導引引流（早優於晚），失敗才清創；預防性抗生素不建議。腹內高壓：積液、腹水、腸壁水腫，>12 在重症 55%、>20 寡尿——併寡尿一定量。假性囊腫。</b></p></div></details>
+      <details class="def-box"><summary>08 · 特定治療 <span class="en">Specific therapies</span></summary>
+        <div class="box-inner"><p class="kp"><b>高三酸甘油酯：insulin 0.1–0.4 U/kg/hr ＋ 禁食（24 小時降 85–90%）、配 D5–10% 監測血糖，目標 <500，之後 gemfibrozil／fenofibric acid。膽結石併阻塞：ERCP 括約肌切開；膽囊切除輕症同次住院、重症延 4–6 週。</b></p></div></details>
+      <details class="def-box"><summary>09 · 酒精與胰臟炎（？） <span class="en">Alcohol &amp; pancreatitis</span></summary>
+        <div class="box-inner"><p class="kp"><b>關聯建立在只靠 amylase 診斷的年代，而酒精刺激唾液 amylase（急性酒精中毒 40% 有）；美國 3,000 萬酒癮者每年只 0.2% 得胰臟炎。有酒癮史時仍要找別的原因。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="pc-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>嚴重度</th><th>定義</th><th>比例／死亡</th></tr>
+      <tr><td>輕度</td><td>無器官衰竭、無局部或全身併發症</td><td>約 50%</td></tr>
+      <tr><td>中重度</td><td>暫時性器官衰竭（<48 小時）或局部併發症</td><td>約 25%</td></tr>
+      <tr><td>重度</td><td>持續性器官衰竭（>48 小時）</td><td>約 25%；死亡 20–25%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th></th><th>Lipase</th><th>Amylase</th></tr>
+      <tr><td>開始上升</td><td>4–8 小時</td><td>6–12 小時</td></tr>
+      <tr><td>持續</td><td>8–14 天</td><td>3–5 天</td></tr>
+      <tr><td>專一性（3 倍）</td><td>較高</td><td>較低（唾液來源）</td></tr>
+    </table></div>
+    <div class="note">原書表 40.2（Atlanta 分類）在嚴重度欄截斷，依內文重建。</div>
+    <div class="dirhead" id="pc-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c40dx">
+      <div class="rxbox-t">診斷與嚴重度</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>典型腹痛 <span class="rx-en">pain</span></label><select id="dx_pain"><option value="y">有</option><option value="n">無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Lipase／amylase <span class="rx-en">× ULN</span></label><input type="number" id="dx_enz" step="0.1" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>影像符合 <span class="rx-en">CT／MRI</span></label><select id="dx_img"><option value="n">未做或不符</option><option value="y">符合</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>器官衰竭 <span class="rx-en">organ failure</span></label><select id="dx_of"><option value="none">無</option><option value="trans">暫時 <48 h</option><option value="persist">持續 >48 h</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>局部併發症 <span class="rx-en">local</span></label><select id="dx_local"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c40dx_out"></div>
+    </div>
+    <div class="rxbox" id="c40fluid">
+      <div class="rxbox-t">輸液處方</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="fl_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>低血容證據 <span class="rx-en">hypovolemia</span></label><select id="fl_hypo"><option value="y">有</option><option value="n">無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>高血鈣相關 <span class="rx-en">hypercalcemia</span></label><select id="fl_ca"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c40fluid_out"></div>
+    </div>
+    <div class="rxbox" id="c40tg">
+      <div class="rxbox-t">高三酸甘油酯：insulin</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>三酸甘油酯 <span class="rx-en">mg/dL</span></label><input type="number" id="tg_v" step="10" placeholder="2400"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="tg_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c40tg_out"></div>
+    </div>
+    <div class="dirhead" id="pc-flow"><span class="dh-n">決策流程</span><span class="dh-e">Fever in pancreatitis</span></div>
+    <div id="pn_flow">
+      <div class="flow-step" id="pn_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">發燒或白血球升高：CT 有壞死嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="pnPick('nec','yes',this)">壞死型</button>
+          <button class="flow-opt" onclick="pnPick('nec','no',this)">水腫型</button>
+        </div></div>
+      <div class="flow-step" id="pn_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">壞死區有氣泡嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="pnPick('gas','yes',this)">有</button>
+          <button class="flow-opt" onclick="pnPick('gas','no',this)">無</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="pn_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="pnReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="pc-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_panc"></div>
+    <div class="dirhead" id="pc-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/pancreatitis.html" href="#">急性胰臟炎流程</a><a class="flow-link" data-ct="pathways/iah-acs.html" href="#">IAH／ACS</a><a class="flow-link" data-ct="pathways/nutrition.html" href="#">營養</a><a class="flow-link" href="fluids.html#iv">Marino 第 10 章 輸液選擇</a><a class="flow-link" href="renallyte.html#capo">Marino 第 38 章 高血鈣</a></div>
+  </section>
+
+  <!-- ==================== Ch41 Abdominal Infections ==================== -->
+  <section class="abdomen-panel hidden" data-panel="abdinf" id="abdomen-p-abdinf">
+    <div class="dirhead"><span class="dh-n">第 41 章 ICU 的腹腔感染</span><span class="dh-e">Chapter 41 · Abdominal Infections in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#abdinf/ai-key"><i>01</i>重點卡</a><a class="sp-chip" href="#abdinf/ai-tab"><i>02</i>對照表</a><a class="sp-chip" href="#abdinf/ai-calc"><i>03</i>計算</a><a class="sp-chip" href="#abdinf/ai-flow"><i>04</i>流程</a><a class="sp-chip" href="#abdinf/ai-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#abdinf/ai-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>無結石膽囊炎表現不專一、惡化快</b>：超音波先、HIDA 金標準；腹腔鏡切除或經皮引流，抗生素選膽汁穿透好的。</span></div>
+        <div class="lede-item"><span>②</span><span><b>C. difficile 只憑 PCR 治療是過度診斷</b>：PCR 篩、毒素確診；vancomycin 或 fidaxomicin 10 天，猛爆型加 IV metronidazole，多次復發糞便移植；PPI 是危險因子。</span></div>
+        <div class="lede-item"><span>③</span><span><b>複雜性腹腔感染先控制來源</b>：無抗藥疑慮 piperacillin-tazobactam、休克 meropenem、術後蓋 ESBL 與 Candida；術後一週內游離氣與 CT 都不可靠。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ai-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ai-kc">全部展開</button></div>
+    <div id="ai-kc">
+      <details class="def-box"><summary>01 · 無結石膽囊炎 <span class="en">Acalculous cholecystitis</span></summary>
+        <div class="box-inner"><p class="kp"><b>重症病人的膽囊炎、比結石型更嚴重。誘因：中風、敗血症、休克、長期禁食（TPN）、術後（體外循環）；機轉：低灌流、不收縮淤泥、Oddi 鬆弛讓腸道菌上行、微結石。發燒低血壓多器官衰竭不專一，1/3 無右上腹痛；血液培養 90% 陽性、幾乎都革蘭陰性桿菌。</b></p></div></details>
+      <details class="def-box"><summary>02 · 診斷與處置 <span class="en">Diagnosis &amp; management</span></summary>
+        <div class="box-inner"><p class="kp"><b>超音波先（合併 26 篇敏感度 81%、專一性 83%）：脹大與淤泥不專一、腔內脫落黏膜＝壞疽；不確定用 HIDA（金標準、需肝功能送示蹤劑）；MRI 與超音波相當、CT 差。腹腔鏡膽囊切除首選、不穩定經皮引流；確診即抗生素蓋腸道革蘭陰性菌，選膽汁穿透好的（ampicillin-sulbactam、ceftriaxone、fluoroquinolone、piperacillin-tazobactam、tigecycline）。</b></p></div></details>
+      <details class="def-box"><summary>03 · C. difficile 的機轉與危險因子 <span class="en">CDI pathogenesis</span></summary>
+        <div class="box-inner"><p class="kp"><b>產孢革蘭陽性厭氧桿菌，微生物群被打亂（dysbiosis）才增生；不侵入、靠毒素 A／B 傷黏膜，偽膜＝重症。危險因子：高齡、醫療接觸、抗生素，還有 PPI（胃酸是抗菌防線）。院內為主（醫護的手），社區型已占 34–48%。最常見的醫療相關感染。</b></p></div></details>
+      <details class="def-box"><summary>04 · CDI 的診斷 <span class="en">Diagnostic evaluation</span></summary>
+        <div class="box-inner"><p class="kp"><b>PCR（毒素 B 基因）敏感、當篩檢：陰性排除；陽性只證明帶菌 → 毒素 A／B ELISA 確診，但 ELISA 漏 20%；PCR 陽性毒素陰性者多半不治療也好。只憑 PCR 治療是過度診斷（一半沒毒素）。高度懷疑而毒素陰性：大腸鏡找偽膜（優於乙狀結腸鏡）。</b></p>
+          <ul><li>典型：水瀉、低燒 ≤38.3、白血球 <15,000；猛爆型 3–5%：低血壓、腸阻塞腹脹、毒性巨結腸（外科急症）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · CDI 的治療 <span class="en">Treatment</span></summary>
+        <div class="box-inner"><p class="kp"><b>初次：vancomycin 125 mg PO qid 或 fidaxomicin 200 mg PO bid × 10 天（燒 24–48 小時退、瀉 4–5 天退；復發 25% vs 13%）。猛爆型：vancomycin 500 mg q6h（口服／鼻胃管／灌腸）＋ metronidazole 500 mg IV q8h，手術用次全結腸切除。第一次復發：fidaxomicin 10 天或 vancomycin 延長；多次復發（5%）：糞便微生物移植 80–100%。</b></p></div></details>
+      <details class="def-box"><summary>06 · CDI 的預防 <span class="en">Prevention</span></summary>
+        <div class="box-inner"><p class="kp"><b>手套隔離衣、接觸前後洗手，但無症狀帶菌者也傳播、消滅不了。益生菌不建議：證據不定、且會阻礙抗生素後的重新定殖。</b></p></div></details>
+      <details class="def-box"><summary>07 · 腸穿孔 <span class="en">Bowel perforation</span></summary>
+        <div class="box-inner"><p class="kp"><b>直立胸片橫膈下游離氣敏感度達 85%；CT 更敏感、85% 能定位；術後一週內游離氣無意義。先手術；體積：腸內容物汙染丟很多水，尿少或血壓降就補；術前盡量不用升壓劑（內臟收縮加重腸缺血）。</b></p></div></details>
+      <details class="def-box"><summary>08 · 經驗性抗生素 <span class="en">Empiric antibiotics for cIAI</span></summary>
+        <div class="box-inner"><p class="kp"><b>無抗藥疑慮：piperacillin-tazobactam 單方（ceftriaxone ＋ metronidazole 只給不重者、覆蓋差很多）。疑 ESBL：meropenem（最廣、休克首選、不蓋 MRSA／VRE、抗藥快要節制）、tigecycline（不蓋 Pseudomonas、蓋 MRSA／VRE、休克不用）、ceftazidime-avibactam（蓋 Pseudomonas、不蓋腸球菌厭氧菌、經驗少）。β-lactam 過敏：amikacin ＋ metronidazole。上消化道穿孔、術後不穩定：加 echinocandin。</b></p></div></details>
+      <details class="def-box"><summary>09 · 術後腹膜炎與膿瘍 <span class="en">Postoperative infections</span></summary>
+        <div class="box-inner"><p class="kp"><b>術後腹膜炎是 ICU 最常見腹腔感染（吻合口滲漏）：經驗性蓋 ESBL、不穩定蓋 Candida；因術後游離氣一週內無意義而常延遲診斷，CRP 預測未普及。膿瘍：發燒幾乎都有但 60% 無局部壓痛、<10% 摸得到、X 光腔外氣 <15%；CT 術後第一週後才可靠（血與沖洗液誤判）；CT 導引引流 90–95% 成功、少需手術。</b></p></div></details>
+      <details class="def-box"><summary>10 · C. difficile 與胃酸 <span class="en">C. difficile &amp; gastric acid</span></summary>
+        <div class="box-inner"><p class="kp"><b>21 世紀第一個十年 CDI 大增，正好是 PPI 壓力性潰瘍預防普及的時候——巧合或因果，胃酸的抗菌作用都足以成為節制 PPI 的理由。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ai-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>膽汁穿透好</th><th>膽汁穿透差</th></tr>
+      <tr><td>Ampicillin-sulbactam、ceftriaxone</td><td>Cefepime、cefotaxime、ceftazidime</td></tr>
+      <tr><td>Ciprofloxacin、levofloxacin</td><td>Gentamicin</td></tr>
+      <tr><td>Piperacillin-tazobactam、tigecycline</td><td>Meropenem、vancomycin</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>CDI</th><th>方案</th></tr>
+      <tr><td>初次</td><td>Vancomycin 125 mg PO qid × 10 天，或 fidaxomicin 200 mg PO bid × 10 天</td></tr>
+      <tr><td>猛爆型</td><td>Vancomycin 500 mg q6h（PO／NG／灌腸）＋ metronidazole 500 mg IV q8h</td></tr>
+      <tr><td>第一次復發</td><td>Fidaxomicin 10 天，或 vancomycin 延長遞減</td></tr>
+      <tr><td>多次復發</td><td>糞便微生物移植</td></tr>
+    </table></div>
+    <div class="note">原書表 41.2 在第一次復發列截斷、表 41.3（抗生素覆蓋）為圖檔未抽出，依內文重建。</div>
+    <div class="dirhead" id="ai-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c41cdi">
+      <div class="rxbox-t">C. difficile：判讀與方案</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>PCR <span class="rx-en">toxin B gene</span></label><select id="cd_pcr"><option value="pos">陽性</option><option value="neg">陰性</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>毒素 ELISA <span class="rx-en">toxin A／B</span></label><select id="cd_tox"><option value="nd">未驗</option><option value="pos">陽性</option><option value="neg">陰性</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>猛爆型 <span class="rx-en">hypotension／ileus／megacolon</span></label><select id="cd_ful"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>先前發作次數 <span class="rx-en">prior episodes</span></label><select id="cd_rec"><option value="0">0（初次）</option><option value="1">1</option><option value="2">≥2</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c41cdi_out"></div>
+    </div>
+    <div class="rxbox" id="c41iai">
+      <div class="rxbox-t">複雜性腹腔感染：經驗性抗生素</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>敗血性休克 <span class="rx-en">septic shock</span></label><select id="ia_shock"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑 ESBL <span class="rx-en">colonized／infected</span></label><select id="ia_esbl"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>β-lactam 過敏 <span class="rx-en">allergy</span></label><select id="ia_bla"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>上消化道穿孔或術後不穩 <span class="rx-en">Candida risk</span></label><select id="ia_cand"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c41iai_out"></div>
+    </div>
+    <div class="rxbox" id="c41acc">
+      <div class="rxbox-t">無結石膽囊炎：下一步</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>超音波 <span class="rx-en">ultrasound</span></label><select id="ac_us"><option value="sus">脹大、淤泥</option><option value="gang">腔內脫落黏膜</option><option value="neg">無異常</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肝功能可用 <span class="rx-en">for HIDA</span></label><select id="ac_liver"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>可耐受手術 <span class="rx-en">stable</span></label><select id="ac_st"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c41acc_out"></div>
+    </div>
+    <div class="dirhead" id="ai-flow"><span class="dh-n">決策流程</span><span class="dh-e">Suspected C. difficile</span></div>
+    <div id="cd_flow">
+      <div class="flow-step" id="cd_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">糞便 PCR？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cdPick('pcr','neg',this)">陰性</button>
+          <button class="flow-opt" onclick="cdPick('pcr','pos',this)">陽性</button>
+        </div></div>
+      <div class="flow-step" id="cd_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">毒素 ELISA？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cdPick('tox','pos',this)">陽性</button>
+          <button class="flow-opt" onclick="cdPick('tox','neg',this)">陰性</button>
+        </div></div>
+      <div class="flow-step" id="cd_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">臨床懷疑程度？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cdPick('sus','high',this)">高</button>
+          <button class="flow-opt" onclick="cdPick('sus','low',this)">低</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="cd_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="cdReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ai-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_abdinf"></div>
+    <div class="dirhead" id="ai-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/cholecystitis.html" href="#">急性膽囊炎</a><a class="flow-link" data-ct="pathways/gi-perforation.html" href="#">消化道穿孔</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素</a><a class="flow-link" href="practices.html#gi">Marino 第 4 章 壓力性潰瘍預防</a></div>
+  </section>
+
+  <!-- ==================== Ch42 Urinary Tract Infections ==================== -->
+  <section class="abdomen-panel hidden" data-panel="uti" id="abdomen-p-uti">
+    <div class="dirhead"><span class="dh-n">第 42 章 ICU 的泌尿道感染</span><span class="dh-e">Chapter 42 · Urinary Tract Infections in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#uti/ut-key"><i>01</i>重點卡</a><a class="sp-chip" href="#uti/ut-tab"><i>02</i>對照表</a><a class="sp-chip" href="#uti/ut-calc"><i>03</i>計算</a><a class="sp-chip" href="#uti/ut-flow"><i>04</i>流程</a><a class="sp-chip" href="#uti/ut-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#uti/ut-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>感染不等於疾病</b>：導管每天 3–8% 產生菌尿，多數是無症狀菌尿、不治；不需要就拔導管是唯一有效的預防。</span></div>
+        <div class="lede-item"><span>②</span><span><b>CAUTI 有定義</b>：導管 ≥2 天＋症狀＋培養 ≤2 種且 ≥10⁵；發燒不專一、膿尿不確診但無膿尿是反證據；尿血同菌不管症狀都算 UTI。</span></div>
+        <div class="lede-item"><span>③</span><span><b>念珠菌尿多是定殖</b>：無症狀不治（嗜中性球低下除外）；有症狀依菌種選 fluconazole 或 amphotericin，疑播散用 echinocandin。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ut-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ut-kc">全部展開</button></div>
+    <div id="ut-kc">
+      <details class="def-box"><summary>01 · 機轉：黏附 <span class="en">Pathogenesis</span></summary>
+        <div class="box-inner"><p class="kp"><b>導管上的生物膜是持續來源，但把菌直接打進健康人膀胱不會感染——關鍵是黏附：膀胱上皮平時被共生菌覆蓋、擋住致病菌；導管引發局部發炎與上皮脫落，才讓致病菌附著。與口腔定殖前導呼吸器肺炎同理。</b></p></div></details>
+      <details class="def-box"><summary>02 · 菌與預防 <span class="en">Microbiology &amp; prevention</span></summary>
+        <div class="box-inner"><p class="kp"><b>E. coli 28%、Klebsiella 23%、腸球菌 17%、Pseudomonas 10%、Candida 5%、葡萄球菌與鏈球菌各 3%；<30 天單一菌、≥30 天多菌。風險由留置時間決定：不需要就拔。每天清潔插入口反而增加菌尿、不建議；不預防性抗生素；銀合金導管要配合定期更換。</b></p></div></details>
+      <details class="def-box"><summary>03 · CAUTI 的 NHSN 定義 <span class="en">Diagnostic criteria</span></summary>
+        <div class="box-inner"><p class="kp"><b>三者全要：留置導管 ≥2 天（仍在或前一天拔除）；至少一項症狀（發燒 >38、恥骨上壓痛、肋脊角痛；急迫頻尿與排尿痛不適用留置導管）；培養 ≤2 種、至少一種細菌 ≥10⁵ cfu/mL。發燒不專一（有無 CAUTI 兩組發燒率相同）；膿尿（>10 WBC/HPF）不確診，但無膿尿是反證據。</b></p>
+          <div class="kbox alert"><div class="kbox-t">原文截斷</div>原書菌落數的上標在抽出時遺失（印成「>10 cfu/mL」），本頁依 NHSN 定義寫 10⁵。</div></div></details>
+      <details class="def-box"><summary>04 · 菌血症與無症狀菌尿 <span class="en">ABUTI &amp; asymptomatic bacteriuria</span></summary>
+        <div class="box-inner"><p class="kp"><b>20% 住院菌血症來自 CAUTI，但菌血症不是診斷條件；尿血同一菌（尿 ≥10⁵）不管症狀都算 UTI（ABUTI，Candida 除外）。無症狀菌尿＝單一菌 ≥10⁵＋血液培養無＋無症狀：不治療，除非要做會出血的泌尿科處置。</b></p></div></details>
+      <details class="def-box"><summary>05 · CAUTI 的治療 <span class="en">Treatment</span></summary>
+        <div class="box-inner"><p class="kp"><b>經驗性蓋革蘭陰性桿菌與腸球菌：piperacillin-tazobactam 或 carbapenem 單方；二線 ceftazidime、cefepime、levofloxacin。培養出來後窄化；>2 週的導管換或拔。反應快 7 天、否則 10–14 天。</b></p></div></details>
+      <details class="def-box"><summary>06 · 念珠菌尿 <span class="en">Candiduria</span></summary>
+        <div class="box-inner"><p class="kp"><b>多是定殖，但也可能是播散性念珠菌症的結果（血液培養 >50% 陰性、可能是唯一線索）；菌落數無預測價值。Albicans 約 50%、其次 glabrata（抗 fluconazole）。無症狀不治，嗜中性球低下用 echinocandin 預防；有症狀：抗黴菌＋血液培養＋腎臟影像——albicans 用 fluconazole 200–400 mg × 2 週，glabrata／krusei 用 amphotericin B 0.3–0.6 mg/kg × 1–7 天（echinocandin 尿中穿透差）；疑全身性 echinocandin；真菌球手術、腎造口管 amphotericin 沖洗。</b></p></div></details>
+      <details class="def-box"><summary>07 · 黏附與院內感染 <span class="en">Bacterial adherence</span></summary>
+        <div class="box-inner"><p class="kp"><b>消化道、呼吸道、泌尿道的院內感染共同點：上皮表面的菌從無害變成致病——決定於黏附能力不是密度。E. coli 的 pili 結合膀胱上皮醣蛋白、mannose 能競爭阻斷：不靠抗生素的預防新方向。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ut-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>分類</th><th>導管</th><th>症狀</th><th>尿培養</th><th>血液培養</th><th>治療</th></tr>
+      <tr><td>CAUTI</td><td>≥2 天</td><td>至少一項</td><td>≤2 種、≥10⁵</td><td>不要求</td><td>抗生素 7 或 10–14 天</td></tr>
+      <tr><td>ABUTI</td><td>有或無</td><td>無</td><td>≥10⁵</td><td>同一菌</td><td>視為 UTI 治療</td></tr>
+      <tr><td>無症狀菌尿</td><td>有或無</td><td>無</td><td>單一菌 ≥10⁵</td><td>無</td><td>不治（泌尿科出血性處置前除外）</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>念珠菌尿</th><th>處置</th></tr>
+      <tr><td>無症狀</td><td>不治；嗜中性球低下 → echinocandin 預防</td></tr>
+      <tr><td>有症狀、C. albicans</td><td>Fluconazole 200–400 mg/天 × 2 週</td></tr>
+      <tr><td>有症狀、C. glabrata／krusei</td><td>Amphotericin B 0.3–0.6 mg/kg/天 × 1–7 天</td></tr>
+      <tr><td>疑全身性</td><td>Echinocandin</td></tr>
+      <tr><td>真菌球</td><td>手術；腎造口管 amphotericin B 25–50 mg／200–500 mL 沖洗</td></tr>
+    </table></div>
+    <div class="dirhead" id="ut-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c42cauti">
+      <div class="rxbox-t">CAUTI／ABUTI／無症狀菌尿</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>導管留置 <span class="rx-en">days</span></label><input type="number" id="ut_days" step="1" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>症狀 <span class="rx-en">fever／tenderness</span></label><select id="ut_sym"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>菌落數 <span class="rx-en">cfu/mL</span></label><select id="ut_cfu"><option value="hi">≥10⁵</option><option value="lo"><10⁵</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>菌種數 <span class="rx-en">species</span></label><input type="number" id="ut_sp" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血液同一菌 <span class="rx-en">bacteremia</span></label><select id="ut_blood"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>膿尿 <span class="rx-en">>10 WBC/HPF</span></label><select id="ut_py"><option value="u">未驗</option><option value="y">有</option><option value="n">無</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>治療反應快 <span class="rx-en">prompt response</span></label><select id="ut_resp"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c42cauti_out"></div>
+    </div>
+    <div class="rxbox" id="c42cand">
+      <div class="rxbox-t">念珠菌尿</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>有症狀 <span class="rx-en">symptomatic</span></label><select id="cn_sym"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>嗜中性球低下 <span class="rx-en">neutropenia</span></label><select id="cn_neut"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>菌種 <span class="rx-en">species</span></label><select id="cn_sp"><option value="unk">未知</option><option value="alb">C. albicans</option><option value="res">glabrata／krusei</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑全身性 <span class="rx-en">disseminated</span></label><select id="cn_sys"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="cn_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c42cand_out"></div>
+    </div>
+    <div class="dirhead" id="ut-flow"><span class="dh-n">決策流程</span><span class="dh-e">Candiduria</span></div>
+    <div id="cu_flow">
+      <div class="flow-step" id="cu_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有症狀嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cuPick('sym','no',this)">無</button>
+          <button class="flow-opt" onclick="cuPick('sym','yes',this)">有<span class="fo-sub">發燒、恥骨上或肋脊角壓痛</span></button>
+        </div></div>
+      <div class="flow-step" id="cu_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（無症狀）嗜中性球低下？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cuPick('neut','yes',this)">是</button>
+          <button class="flow-opt" onclick="cuPick('neut','no',this)">否</button>
+        </div></div>
+      <div class="flow-step" id="cu_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（有症狀）菌種？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="cuPick('sp','alb',this)">C. albicans</button>
+          <button class="flow-opt" onclick="cuPick('sp','res',this)">C. glabrata／krusei</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="cu_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="cuReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ut-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_uti"></div>
+    <div class="dirhead" id="ut-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" href="access.html#dwell">Marino 第 3 章 導管相關感染</a><a class="flow-link" href="vent.html#vap">Marino 第 29 章 呼吸器相關肺炎</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 39–42 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37052436/" target="_blank" rel="noopener" class="ref-link">Nanchal et al. Guidelines for adult acute and acute-on-chronic liver failure in the ICU: neurology, infectious disease, GI. CCM 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32058387/" target="_blank" rel="noopener" class="ref-link">Nanchal et al. Guidelines for adult acute and acute-on-chronic liver failure in the ICU: cardiovascular, renal. CCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28417882/" target="_blank" rel="noopener" class="ref-link">EASL Clinical Practice Guidelines on the management of acute (fulminant) liver failure. J Hepatol 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27786365/" target="_blank" rel="noopener" class="ref-link">Garcia-Tsao et al. Portal hypertensive bleeding in cirrhosis: AASLD 2016 practice guidance. Hepatology 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33942342/" target="_blank" rel="noopener" class="ref-link">Biggins et al. Ascites, SBP and hepatorenal syndrome: AASLD 2021 practice guidance. Hepatology 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31498101/" target="_blank" rel="noopener" class="ref-link">Stravitz & Lee. Acute liver failure. Lancet 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30731196/" target="_blank" rel="noopener" class="ref-link">Leventhal et al. Acetaminophen undetectable in plasma from more than half of patients with acetaminophen ALF. CGH 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33294991/" target="_blank" rel="noopener" class="ref-link">Siu et al. N-acetylcysteine for non-paracetamol acute liver failure. Cochrane 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25019700/" target="_blank" rel="noopener" class="ref-link">Tujios et al. Risk factors and outcomes of AKI in acute liver failure. CGH 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12637132/" target="_blank" rel="noopener" class="ref-link">Ong et al. Correlation between ammonia levels and severity of hepatic encephalopathy. Am J Med 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15959460/" target="_blank" rel="noopener" class="ref-link">Tofteng et al. Persistent arterial hyperammonemia and intracranial pressure in fulminant hepatic failure. JCBFM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28859230/" target="_blank" rel="noopener" class="ref-link">Cardoso et al. CRRT is associated with reduced ammonia and mortality in acute liver failure. Hepatology 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31939790/" target="_blank" rel="noopener" class="ref-link">Warrillow et al. Correction and control of hyperammonemia in ALF: CRRT timing, intensity, duration. CCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30552895/" target="_blank" rel="noopener" class="ref-link">Piano et al. Epidemiology and effects of bacterial infections in cirrhosis worldwide. Gastroenterology 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23178229/" target="_blank" rel="noopener" class="ref-link">Salerno et al. Albumin infusion improves outcomes in SBP: meta-analysis. CGH 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10432325/" target="_blank" rel="noopener" class="ref-link">Sort et al. Intravenous albumin on renal impairment and mortality in cirrhosis with SBP. NEJM 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32928750/" target="_blank" rel="noopener" class="ref-link">Simonetto et al. Hepatorenal syndrome: pathophysiology, diagnosis, and management. BMJ 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26896734/" target="_blank" rel="noopener" class="ref-link">Boyer et al. Terlipressin plus albumin vs albumin alone in hepatorenal syndrome. Gastroenterology 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33657294/" target="_blank" rel="noopener" class="ref-link">Wong et al. Terlipressin plus albumin for type 1 hepatorenal syndrome (CONFIRM). NEJM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22322237/" target="_blank" rel="noopener" class="ref-link">Singh et al. Noradrenaline vs terlipressin in hepatorenal syndrome. J Hepatol 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25644760/" target="_blank" rel="noopener" class="ref-link">Cavallin et al. Terlipressin vs midodrine and octreotide in hepatorenal syndrome. Hepatology 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18197961/" target="_blank" rel="noopener" class="ref-link">Umgelter et al. Albumin and paracentesis in cirrhotic patients with tense ascites and HRS. Crit Care 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33496779/" target="_blank" rel="noopener" class="ref-link">Mederos et al. Acute pancreatitis: a review. JAMA 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35876365/" target="_blank" rel="noopener" class="ref-link">Wolbrink et al. Trends in early and late mortality in severe acute pancreatitis in ICUs. CCM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29923163/" target="_blank" rel="noopener" class="ref-link">Rawla et al. Hypertriglyceridemia-induced pancreatitis: updated review. Clin J Gastroenterol 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32878711/" target="_blank" rel="noopener" class="ref-link">Chadalavada et al. Drug-induced acute pancreatitis: prevalence, causative agents, outcomes. Pancreatology 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23100216/" target="_blank" rel="noopener" class="ref-link">Banks et al. Classification of acute pancreatitis 2012: revised Atlanta classification. Gut 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12094843/" target="_blank" rel="noopener" class="ref-link">Yadav et al. A critical evaluation of laboratory tests in acute pancreatitis. AJG 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34172360/" target="_blank" rel="noopener" class="ref-link">Aziz et al. Lactated Ringer's vs normal saline for acute pancreatitis: meta-analysis. Pancreatology 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36103415/" target="_blank" rel="noopener" class="ref-link">de-Madaria et al. Aggressive or moderate fluid resuscitation in acute pancreatitis (WATERFALL). NEJM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15667504/" target="_blank" rel="noopener" class="ref-link">Eatock et al. Early nasogastric vs nasojejunal feeding in severe acute pancreatitis. AJG 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29409760/" target="_blank" rel="noopener" class="ref-link">Crockett et al. AGA guideline on initial management of acute pancreatitis. Gastroenterology 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34614330/" target="_blank" rel="noopener" class="ref-link">Boxhoorn et al. Immediate vs postponed intervention for infected necrotizing pancreatitis (POINTER). NEJM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18192879/" target="_blank" rel="noopener" class="ref-link">Al-Bahrani et al. Intra-abdominal hypertension in severe acute pancreatitis. Pancreas 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25499946/" target="_blank" rel="noopener" class="ref-link">Thuzar et al. Extreme hypertriglyceridemia managed with insulin. J Clin Lipidol 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33153472/" target="_blank" rel="noopener" class="ref-link">Pisano et al. 2020 WSES guidelines for acute acalculous cholecystitis. World J Emerg Surg 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22798223/" target="_blank" rel="noopener" class="ref-link">Kiewiet et al. Diagnostic performance of imaging in acute cholecystitis: meta-analysis. Radiology 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32242357/" target="_blank" rel="noopener" class="ref-link">Guh et al. Trends in U.S. burden of Clostridioides difficile infection. NEJM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34003176/" target="_blank" rel="noopener" class="ref-link">Kelly et al. ACG clinical guidelines: Clostridioides difficile infections. AJG 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29562266/" target="_blank" rel="noopener" class="ref-link">McDonald et al. IDSA/SHEA clinical practice guidelines for C. difficile infection: 2017 update. CID 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16414946/" target="_blank" rel="noopener" class="ref-link">Dial et al. Gastric acid-suppressing agents and community-acquired C. difficile disease. JAMA 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26348734/" target="_blank" rel="noopener" class="ref-link">Polage et al. Overdiagnosis of C. difficile infection in the molecular test era. JAMA Intern Med 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17599306/" target="_blank" rel="noopener" class="ref-link">Zar et al. Vancomycin vs metronidazole for C. difficile diarrhea by severity. CID 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21288078/" target="_blank" rel="noopener" class="ref-link">Louie et al. Fidaxomicin vs vancomycin for C. difficile infection. NEJM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30193113/" target="_blank" rel="noopener" class="ref-link">Suez et al. Post-antibiotic gut mucosal microbiome reconstitution is impaired by probiotics. Cell 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34563232/" target="_blank" rel="noopener" class="ref-link">Sartelli et al. WSES/GAIS/SIS-E/WSIS/AAST global clinical pathways for intra-abdominal infections. World J Emerg Surg 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19328377/" target="_blank" rel="noopener" class="ref-link">Chiu et al. Radiographic signs of pneumoperitoneum at the emergency department. Am J Emerg Med 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17056902/" target="_blank" rel="noopener" class="ref-link">Hainaux et al. Accuracy of MDCT in predicting site of GI tract perforation. AJR 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31701205/" target="_blank" rel="noopener" class="ref-link">Bassetti et al. Post-operative abdominal infections: epidemiology, definitions, outcomes. ICM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30335020/" target="_blank" rel="noopener" class="ref-link">Zhao et al. CT-guided drainage for intra-abdominal and pelvic abscesses. Medicine 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20175247/" target="_blank" rel="noopener" class="ref-link">Hooton et al. IDSA 2009 guidelines for catheter-associated urinary tract infection. CID 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24670166/" target="_blank" rel="noopener" class="ref-link">Magill et al. Multistate point-prevalence survey of health care-associated infections. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10724054/" target="_blank" rel="noopener" class="ref-link">Tambyah & Maki. Catheter-associated urinary tract infection is rarely symptomatic. Arch Intern Med 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30895288/" target="_blank" rel="noopener" class="ref-link">Nicolle et al. IDSA 2019 guideline for asymptomatic bacteriuria. CID 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26679628/" target="_blank" rel="noopener" class="ref-link">Pappas et al. IDSA 2016 guideline for the management of candidiasis. CID 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10619727/" target="_blank" rel="noopener" class="ref-link">Sobel et al. Candiduria: randomized trial of fluconazole vs placebo. CID 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18721329/" target="_blank" rel="noopener" class="ref-link">Hollenbach. To treat or not to treat: critically ill patients with candiduria. Mycoses 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32071440/" target="_blank" rel="noopener" class="ref-link">Klein & Hultgren. Urinary tract infections: microbial pathogenesis and host-pathogen interactions. Nat Rev Microbiol 2020</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/abdomen.js"></script>
+<script>ICU.makeTabs('abdomen'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

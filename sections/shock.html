@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>休克症候群 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="休克症候群">
+<div class="sheet">
+<div class="view active" id="view-shock">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section VI</div><h1>休克症候群</h1><div class="sub">Shock Syndromes · 總論 → 出血性 → 心因性 → 發炎性（敗血／毒性／過敏）· 第 14–17 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-shock'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="shock_tabs">
+    <button class="tab-btn active" data-p="ov">總論 <span class="mono">Ch14</span></button>
+    <button class="tab-btn" data-p="hem">出血性 <span class="mono">Ch15</span></button>
+    <button class="tab-btn" data-p="cs">心因性 <span class="mono">Ch16</span></button>
+    <button class="tab-btn" data-p="inf">發炎性 <span class="mono">Ch17</span></button>
+  </div>
+
+  <!-- ====================================================================
+       Ch14 Approaches to Clinical Shock
+       ==================================================================== -->
+  <section class="shock-panel" data-panel="ov" id="shock-p-ov">
+    <div class="dirhead"><span class="dh-n">第 14 章 休克總論</span><span class="dh-e">Chapter 14 · Approaches to Clinical Shock</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ov/ov-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ov/ov-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ov/ov-calc"><i>03</i>計算</a><a class="sp-chip" href="#ov/ov-flow"><i>04</i>流程</a><a class="sp-chip" href="#ov/ov-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ov/ov-x"><i>06</i>相關工具</a></div>
+
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>休克是「細胞用不到氧」，不是「血壓低」。</b>血壓正常可以是休克、低血壓也可以不是；乳酸、尿量、意識、PCO₂ gap 才是證據。</span></div>
+        <div class="lede-item"><span>②</span><span><b>四型休克是一條式子拆出來的：</b>MAP = CO × SVR + RAP。低 RAP＝低血容、低 CO＝心因／阻塞、低 SVR＝血管擴張。三型 SVR 是代償性升高，只有血管擴張性是低的。</span></div>
+        <div class="lede-item"><span>③</span><span><b>所有休克第一步都是輸液，目標是 MAP ≥65 與乳酸正常化</b>；升壓劑是手段，多加一種沒有存活證據。作者更進一步主張：低血壓可能是休克的<b>結果</b>而非原因。</span></div>
+      </div>
+    </div>
+
+    <div class="dirhead" id="ov-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ov-kc">全部展開</button></div>
+    <div id="ov-kc">
+      <details class="def-box"><summary>01 · 休克的定義與表現 <span class="en">What is clinical shock</span></summary>
+        <div class="box-inner"><p class="kp"><b>危及生命的循環障礙，特徵是細胞氧利用不足 → ATP 生成缺陷 → 器官功能障礙。</b></p>
+          <p>來源可以是組織氧合不足，也可以是線粒體無法處理氧（敗血症），結局一樣：氧化性 ATP 產量不足，一個或多個器官失能，可進展到多重器官衰竭。</p>
+          <ul>
+            <li><b>低血壓</b>：收縮壓 <b class="mono">&lt;90</b> 或平均壓 <b class="mono">&lt;70</b> mmHg——常見但不可靠，有共識建議不再當判準。</li>
+            <li><b>乳酸</b> <b class="mono">&gt;2</b> mmol/L：細胞氧利用不足的證據（其他原因見第 9 章）。</li>
+            <li><b>器官功能障礙</b>：最早常是寡尿（<b class="mono">&lt;0.5</b> mL/kg/h）與意識改變（躁動、混亂、嗜睡）。</li>
+            <li><b>低流量休克</b>的皮膚：冰冷、末梢發紺，進一步成花斑（mottled skin、livedo reticularis）。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag ctrl">陷阱：血壓正常仍可休克</span><span class="dg-tag ctrl">低血壓不等於休克</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>02 · 四型休克的水力學 <span class="en">Four shock syndromes</span></summary>
+        <div class="box-inner"><p class="kp"><b>Q = (P<sub>in</sub> − P<sub>out</sub>) / R → CO = (MAP − RAP) / SVR → MAP = CO × SVR + RAP。</b></p>
+          <ul>
+            <li><b>低血容性</b>（低 RAP，約 <b class="mono">16%</b>）：幾乎都是出血，血容量掉 <b class="mono">&gt;30%</b> 才出現。脫水很少造成休克——血漿膠體滲透壓上升會把間質液拉回血管，輸液就能修正。</li>
+            <li><b>心因性</b>（低 CO，約 <b class="mono">16%</b>）：急性冠心症近半、非缺血性心肌病變 28%、瓣膜／心律 17%；死亡率仍約 <b class="mono">50%</b>。</li>
+            <li><b>阻塞性</b>（低 CO，只有 <b class="mono">2%</b>）：大量肺栓塞、張力性氣胸、心包膜填塞——治病因。</li>
+            <li><b>血管擴張性</b>（低 SVR，最多）：動靜脈都擴張；敗血性休克占絕大多數，是美國院內死亡首因；其他：過敏、脊髓休克、腎上腺危象。</li>
+          </ul>
+          <p>前三型都是低 CO ＋ 高 SVR：SVR 升高是交感與 RAAS 對低流量的代償，撐住血壓。</p>
+        </div></details>
+
+      <details class="def-box"><summary>03 · 血壓監測：追 MAP，用動脈導管 <span class="en">Blood pressure monitoring</span></summary>
+        <div class="box-inner"><p class="kp"><b>收縮壓往周邊會被反射波放大最多 20 mmHg，MAP 不變且是驅動血流的壓力。</b></p>
+          <p>壓力波離開近端主動脈後收縮波變窄變高（分岐處與狹窄血管的反射波追上主波），所以周邊收縮壓偏高、MAP 不變。反射波增加左心後負荷，卻不推動血流。</p>
+          <ul>
+            <li>MAP 是壓力波下的面積除以心週期；休克管理的目標 <b class="mono">MAP ≥65</b> mmHg（腦血流自我調節的下限）；長期高血壓者需要更高目標的說法沒有被驗證（SEPSISPAM）。</li>
+            <li><b>非侵襲性血壓的最大誤差來源是袖帶尺寸</b>：氣囊長度應 ≥80% 臂圍、寬度 ≥40%；太小 → 假性偏高，太大幾乎不影響。ICU 有 2/3 用錯尺寸，其中 62% 與動脈壓差 &gt;10 mmHg。</li>
+            <li>meta-analysis：自動血壓計與動脈壓在個別病人可差 −15 到 +40 mmHg——這就是重症要放動脈導管的理由。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag ctrl">不要追收縮壓</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>04 · 組織灌流與氧合指標 <span class="en">Tissue perfusion &amp; oxygenation</span></summary>
+        <div class="box-inner"><p class="kp"><b>CI、DO₂、VO₂、萃取率、ScvO₂、PCO₂ gap、乳酸——各有臨界值，各有失效的情境。</b></p>
+          <ul>
+            <li><b>CI</b> 正常 2.4–4，<b class="mono">&lt;2.5</b> L/min/m² 表示灌流不足。</li>
+            <li><b>DO₂</b> = CI × CaO₂，正常 520–600；<b class="mono">&lt;300</b> mL/min/m² 是組織氧合不足的門檻（不是每篇研究都找得到）。</li>
+            <li><b>VO₂</b> = CI × (CaO₂ − CvO₂)，正常 110–160；<b class="mono">&lt;110</b> 表示氧利用障礙。</li>
+            <li><b>O₂ 萃取率</b> = VO₂/DO₂ ≈ SaO₂ − ScvO₂，正常 0.2–0.3，DO₂ 下降時可升到約 0.5 維持 VO₂；<b class="mono">≥50%</b> 表示有氧代謝已受威脅。萃取率<b>固定或 ≤20%</b> 是萃取障礙（敗血症、肝衰竭），此時它不再反映 DO₂。</li>
+            <li><b>ScvO₂</b> ≈ 1 − 萃取率，正常 65–75%；<b class="mono">≤50%</b> 是威脅氧合的標記；<b class="mono">≥80%</b> 是萃取障礙（敗血性休克的特徵），可能固定不動。</li>
+            <li><b>PCO₂ gap</b>（靜脈 − 動脈 PCO₂）正常 2–5，<b class="mono">&gt;6</b> mmHg 表示低灌流；只反映灌流不反映氧合，每個休克病人都該測，敗血症的低流量期也抓得到。<b>代謝性酸中毒會假性升高</b>（非代謝性 CO₂ 生成），此時只有「正常」有意義。</li>
+            <li><b>乳酸</b> &gt;2 mmol/L；若休克是原因，<b class="mono">24 小時</b>內未正常化預後差。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>05 · 容積復甦：第一步，但有上限 <span class="en">Volume resuscitation</span></summary>
+        <div class="box-inner"><p class="kp"><b>不分型別都先輸液（心因性也是），晶體液 75% 進間質，1–2 小時內不超過 2 L。</b></p>
+          <p>敗血性休克的建議是 3 小時內 ≥30 mL/kg 理想體重：70 kg 約 2 L，其中只有約 500 mL（25%）留在血漿——約是血漿容積（40 mL/kg）的 15%，剛好等於出血 15% 開始有症狀的門檻。但這個 one size fits all 對不同體型與女性（血漿容積較小）不合適。</p>
+          <ul>
+            <li>依休克類型與病人體型／性別調整；晶體液 <b class="mono">1–2 小時內不超過 2 L</b>。</li>
+            <li>立即目標是回到<b>基礎血壓</b>；未達標且有低灌流證據（尿少、意識、乳酸）→ 開始升壓劑。</li>
+            <li>初期之後的輸液全部依 <b>fluid responsiveness</b>（第 11 章）決定。</li>
+            <li>心因性休克也要輸液：急性心衰竭的充填壓常不足，尤其右心。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag">作者建議</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>06 · 升壓劑輸注的實務 <span class="en">Vasopressor infusions</span></summary>
+        <div class="box-inner"><p class="kp"><b>沒有中央靜脈不是理由：上臂周邊靜脈 48 小時、midline 7 天、IO 暫代；外滲用 phentolamine。</b></p>
+          <ul>
+            <li>≥16 篇研究支持升壓劑經<b>上臂周邊靜脈</b>安全輸注達 48 小時；midline 連續 7 天無事故；打不到血管就<b>骨內針</b>。</li>
+            <li><b>外滲處置</b>：停止輸注、把管路接針筒輕輕回抽殘液與滲出液、拔管，<b>不要沖洗</b>。局部注射 <b>phentolamine 5–10 mg in 10 mL NS</b>，皮膚蒼白應立刻消失；<b class="mono">12 小時</b>內才有效。</li>
+            <li>目標 MAP ≥65 mmHg（共識），不因慢性高血壓而拉高。</li>
+          </ul>
+          <div class="kbox"><div class="kbox-t">在地備註</div>台大藥品資料庫查無 phentolamine（Regitine）注射劑；外滲處置要先確認院內有無替代方案。</div>
+        </div></details>
+
+      <details class="def-box"><summary>07 · 升壓藥物：七種，各有一句話 <span class="en">Vasopressor agents</span></summary>
+        <div class="box-inner"><p class="kp"><b>Norepinephrine 首選；epinephrine 過敏首選、敗血二線；dopamine 失寵；phenylephrine 不建議用於休克；vasopressin 固定劑量；angiotensin II 血栓；midodrine 對休克無用。</b></p>
+          <ul>
+            <li><b>Norepinephrine</b>：α₁ 收縮＋弱 β 心臟刺激（所以常用劑量不傷腎）。5–10 μg/min 起；&lt;10 以 β 增加 CO，&gt;10 α 主導，<b class="mono">30 μg/min</b> 達平台再加第二藥。嚴重不良事件（缺血、心律不整）約 10%，但很多其實是休克本身造成。<b>免疫抑制</b>：白血球活化被抑制——用在敗血性休克很諷刺，臨床意義未明。</li>
+            <li><b>Epinephrine</b>：強 β 效應，劑量依賴地升 HR、SV、BP。心跳停止與過敏的角色見第 21／17 章；敗血性休克是二線，0.1 → 0.5 μg/kg/min 不打負荷。代價：心搏過速、內臟低灌流（腸黏膜屏障）、代謝率上升、高血糖、<b>乳酸假性升高</b>。</li>
+            <li><b>Dopamine</b>：≤3 μg/kg/min 腎／內臟血管擴張；3–10 β；&gt;10 α 收縮（增加後負荷，抵銷低劑量的 SV 增益）。通常 5 起、5–20 見效。心搏過速與 AF 最多，已不受青睞；低劑量會升眼壓。</li>
+            <li><b>Phenylephrine</b>：純 α，可致心搏過緩、SV 下降、腎腸低灌流。主要用在麻醉低血壓（bolus 50–100 μg；輸注 10–35 → 200 μg/min）；敗血性休克 0.5 → 6 μg/kg/min。指引不建議用於休克，但 RCT 與 NE 在敗血性休克無差；<b>作者觀察</b>：快速 AF 的敗血性休克很好用。</li>
+            <li><b>Vasopressin</b>：V₁ 收縮（皮膚、骨骼肌、內臟），健康人不升血壓、血管擴張性休克升得多。心跳停止 40 U 單次可取代第一或第二劑 epinephrine；敗血性休克 NE ≥0.2 μg/kg/min 仍不足時加，<b class="mono">0.03–0.04 U/min</b> 固定不滴定，可省 catecholamine，<b>無存活效益</b>。</li>
+            <li><b>Angiotensin II</b>（2018 核准）：NE 抗性時用，67% 升壓成功、死亡率不一致。20 ng/kg/min 起、每 10–15 分鐘調、3 小時內最高 80，之後 ≤40；肝腎不需調整。<b>靜脈血栓</b> 13% vs 5%（PAI-1、血小板黏附）。</li>
+            <li><b>Midodrine</b>：口服 α 激動劑，透析前 20–30 分鐘 5–20 mg 可防透析低血壓；20 mg q8h 不能加速停掉靜脈升壓劑（MIDAS、MAVERIC）——對休克沒有優勢。</li>
+          </ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>Vasopressin 劑量原文寫「0.03–0.04 Units/<b>hr</b>」，SSC 2021 與臨床慣用單位是 <b>U/min</b>，本頁以 U/min 呈現。</div>
+          <div class="kbox"><div class="kbox-t">在地備註</div>台大藥品資料庫：phenylephrine 只有眼藥水、查無注射劑；angiotensin II（Giapreza）查無。</div>
+        </div></details>
+
+      <details class="def-box"><summary>08 · 復甦目標 <span class="en">Goals of resuscitation</span></summary>
+        <div class="box-inner"><p class="kp"><b>灌流：MAP ≥65、CI ≥2.5、PCO₂ gap &lt;6、尿量 &gt;0.5。氧輸送：DO₂ &gt;300、VO₂ &gt;110、ScvO₂ &gt;50%。共同：乳酸 &lt;2。</b></p>
+          <ul>
+            <li>第一件事是<b>準確的 MAP</b>（動脈導管），維持 ≥65；不看收縮壓，微循環是層流、沒有收縮舒張。</li>
+            <li>有 CO 就維持 CI &gt;2.5；PCO₂ gap &lt;6 表示灌流足夠——即使 CO 正常微循環仍可能遲滯，所以有 CO 也要測 gap。PA 導管「不改善存活」是對監測工具的苛刻判決。</li>
+            <li>尿量 &gt;0.5 mL/kg/h 是最早、最好量化的器官灌流指標。</li>
+            <li>低血容／心因／阻塞：目標 CI &gt;2.5、DO₂ &gt;300、VO₂ &gt;110；沒監測就用 ScvO₂ &gt;50% ＋ 乳酸 &lt;2。</li>
+            <li>敗血性休克<b>不是</b> DO₂ 不足，是線粒體氧化磷酸化缺陷（cytopathic hypoxia），ScvO₂ 不可靠；目標 VO₂ &gt;110、萃取不要「固定在 ≥80% 飽和」，沒監測就只追乳酸正常化。</li>
+          </ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>敗血性休克目標原文寫「O₂ extraction &lt;80%」；依上下文（ScvO₂ ≥80% ＝ 萃取障礙）應是指 <b>ScvO₂ 不應 ≥80%</b>，非萃取率。</div>
+        </div></details>
+
+      <details class="def-box"><summary>09 · 作者觀點：低血壓是結果，不是原因 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>70 年來以升壓為核心的治療沒有降低死亡率；血管可能只是另一個失能的器官。</b></p>
+          <ul>
+            <li>休克的定義是氧利用異常，不是血壓異常。</li>
+            <li>1950 年 norepinephrine 進入臨床以來，死亡率仍高；兩、三種升壓劑並用<b>沒有存活效益</b>。</li>
+            <li>低血壓也出現在非休克狀態（自主神經病變、腎上腺功能不足、5% 健康成人），並不造成缺氧性器官損傷；穿刺傷的低血壓甚至有益（限制失血）。</li>
+            <li>若血管是休克造成的失能器官之一，修正血壓就像用透析處理休克造成的腎衰竭——不會修正休克、也不改善存活。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div>
+        </div></details>
+    </div>
+
+    <div class="dirhead" id="ov-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>休克型態</th><th>CVP / RAP</th><th>CO</th><th>SVR</th><th>占比</th><th>代表病因</th></tr>
+      <tr><td>低血容性</td><td>低</td><td>低</td><td>高</td><td>16%</td><td>出血（&gt;30% 血容量）</td></tr>
+      <tr><td>阻塞性</td><td>高</td><td>低</td><td>高</td><td>2%</td><td>大量肺栓塞、張力性氣胸、心包膜填塞</td></tr>
+      <tr><td>心因性</td><td>高</td><td>低</td><td>高</td><td>16%</td><td>ACS 近半、非缺血性心肌病變、瓣膜／心律</td></tr>
+      <tr><td>血管擴張性</td><td>正常／低</td><td>高</td><td>低</td><td>最多</td><td>敗血性為主；過敏、脊髓休克、腎上腺危象</td></tr>
+    </table></div>
+    <div class="note">依 MAP = CO × SVR + RAP 的三個決定因子分型；占比為書中引用的相對頻率。</div>
+
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>指標</th><th>正常</th><th>臨界值</th><th>解讀與失效情境</th></tr>
+      <tr><td>Cardiac index</td><td>2.4–4 L/min/m²</td><td>&lt;2.5</td><td>灌流不足；熱稀釋最準，或動脈波形 SV、主動脈 Doppler</td></tr>
+      <tr><td>DO₂</td><td>520–600 mL/min/m²</td><td>&lt;300</td><td>三種低流量休克的核心缺陷；門檻並非每篇研究都成立</td></tr>
+      <tr><td>VO₂</td><td>110–160 mL/min/m²</td><td>&lt;110</td><td>氧利用障礙（有氧低代謝在重症少見）</td></tr>
+      <tr><td>O₂ 萃取率</td><td>20–30%</td><td>≥50%</td><td>有氧代謝受威脅；固定或 ≤20% ＝ 萃取障礙，不再反映 DO₂</td></tr>
+      <tr><td>ScvO₂</td><td>65–75%</td><td>≤50%</td><td>≥80% ＝ 萃取障礙（敗血性）；可能固定不動</td></tr>
+      <tr><td>PCO₂ gap</td><td>2–5 mmHg</td><td>&gt;6</td><td>只反映灌流；代謝性酸中毒假性升高，此時只有正常值有意義</td></tr>
+      <tr><td>乳酸</td><td>&lt;2 mmol/L</td><td>&gt;2</td><td>排除有氧高乳酸血症；24 小時未正常化預後差</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥物</th><th>劑量</th><th>受體</th><th>一句話</th></tr>
+      <tr><td>Norepinephrine</td><td>5–40 μg/min</td><td>α₁ ≫ β</td><td>首選；30 μg/min 平台</td></tr>
+      <tr><td>Epinephrine</td><td>0.1–0.5 μg/kg/min</td><td>β ＞ α</td><td>過敏首選、敗血二線；乳酸假性升高</td></tr>
+      <tr><td>Dopamine</td><td>5–20 μg/kg/min</td><td>劑量依賴 D → β → α</td><td>心律不整最多，已失寵</td></tr>
+      <tr><td>Phenylephrine</td><td>0.5–6 μg/kg/min（敗血）</td><td>純 α</td><td>指引不建議用於休克；快速 AF 時作者會用</td></tr>
+      <tr><td>Vasopressin</td><td>0.03–0.04 U/min 固定</td><td>V₁</td><td>NE 抗性時加；省 catecholamine、無存活效益</td></tr>
+      <tr><td>Angiotensin II</td><td>20 → 80 ng/kg/min（3 h 內），維持 ≤40</td><td>AT₁</td><td>血栓 13% vs 5%；台大查無</td></tr>
+      <tr><td>Midodrine（口服）</td><td>5–20 mg 透析前</td><td>α</td><td>對休克無優勢</td></tr>
+    </table></div>
+
+    <div class="dirhead" id="ov-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c14ox">
+      <div class="rxbox-t">氧輸送與灌流指標判讀 <span class="en">DO₂ · VO₂ · extraction · gap</span></div>
+      <div class="lead">填得到的就填。CI 可直接輸入，或給 CO 與身高體重由 Mosteller 體表面積換算。CaO₂ 以 1.34 × Hb × SaO₂ 計，略去溶解氧。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Hb <span class="rx-en">g/dL</span></label><input type="number" id="ox_hb" step="0.1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SaO₂ <span class="rx-en">%</span></label><input type="number" id="ox_sao2" step="1" placeholder="98"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ScvO₂ / SvO₂ <span class="rx-en">%</span></label><input type="number" id="ox_svo2" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Cardiac index <span class="rx-en">L/min/m²</span></label><input type="number" id="ox_ci" step="0.1" placeholder="3.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>或 CO <span class="rx-en">L/min</span></label><input type="number" id="ox_co" step="0.1" placeholder="5.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="ox_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ox_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PCO₂ gap <span class="rx-en">mmHg</span></label><input type="number" id="ox_gap" step="1" placeholder="4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>乳酸 <span class="rx-en">mmol/L</span></label><input type="number" id="ox_lac" step="0.1" placeholder="1.5"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c14ox_out"></div>
+    </div>
+
+    <div class="rxbox" id="c14vp">
+      <div class="rxbox-t">升壓劑劑量換算 <span class="en">μg/min ↔ μg/kg/min ↔ mL/h</span></div>
+      <div class="lead">書中 norepinephrine 用 μg/min、其餘用 μg/kg/min，SSC 的升階門檻又是 μg/kg/min——同一個病人要在兩套單位之間換算。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥物</label><select id="vp_drug"><option value="ne">Norepinephrine</option><option value="epi">Epinephrine</option><option value="dopa">Dopamine</option><option value="phe">Phenylephrine</option><option value="at2">Angiotensin II</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="vp_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>目前劑量</label><input type="number" id="vp_dose" step="0.01" placeholder="10"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>劑量單位</label><select id="vp_mode"><option value="min">μg/min</option><option value="kg">μg/kg/min</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>泡法：藥量 <span class="rx-en">mg</span></label><input type="number" id="vp_mg" step="0.1" placeholder="8"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>泡法：溶液量 <span class="rx-en">mL</span></label><input type="number" id="vp_ml" step="1" placeholder="250"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c14vp_out"></div>
+    </div>
+
+    <div class="rxbox" id="c14cuff">
+      <div class="rxbox-t">血壓袖帶尺寸 <span class="en">Cuff bladder vs arm circumference</span></div>
+      <div class="lead">量上臂中點臂圍。氣囊長度至少 80%、寬度至少 40% 臂圍。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>上臂臂圍 <span class="rx-en">cm</span></label><input type="number" id="cuff_c" step="1" placeholder="30"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c14cuff_out"></div>
+    </div>
+
+    <div class="dirhead" id="ov-flow"><span class="dh-n">決策流程</span><span class="dh-e">Initial approach to shock</span></div>
+    <div class="lead">先問有沒有休克的證據，再定型態，最後看初始輸液的反應。這是第 14 章的骨架，不取代各型別自己的流程。</div>
+    <div id="ov_flow">
+      <div class="flow-step" id="ov_s1">
+        <div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有休克的證據嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="ovPick('evid','hypoperf',this)">有低灌流證據<span class="fo-sub">乳酸 &gt;2、尿量 &lt;0.5 mL/kg/h、意識改變、皮膚花斑——不論血壓</span></button>
+          <button class="flow-opt" onclick="ovPick('evid','hypoonly',this)">只有低血壓<span class="fo-sub">SBP &lt;90 或 MAP &lt;70，但乳酸、尿量、意識都正常</span></button>
+          <button class="flow-opt" onclick="ovPick('evid','none',this)">兩者都沒有</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="ov_c2">↓</div>
+      <div class="flow-step hidden" id="ov_s2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">血行動力學型態？（CVP／超音波充填、CO、SVR）</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="ovPick('type','hypo',this)">低 CVP、低 CO、高 SVR<span class="fo-sub">低血容性——幾乎都是出血</span></button>
+          <button class="flow-opt" onclick="ovPick('type','pump',this)">高 CVP、低 CO、高 SVR<span class="fo-sub">心因性或阻塞性</span></button>
+          <button class="flow-opt" onclick="ovPick('type','vaso',this)">高 CO、低 SVR<span class="fo-sub">血管擴張性——敗血性最常見</span></button>
+          <button class="flow-opt" onclick="ovPick('type','unk',this)">還不知道</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="ov_c3">↓</div>
+      <div class="flow-step hidden" id="ov_s3">
+        <div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">初始輸液後（晶體液 ≤2 L／1–2 小時）：血壓回到基礎且灌流改善？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="ovPick('resp','ok',this)">是</button>
+          <button class="flow-opt" onclick="ovPick('resp','no',this)">否<span class="fo-sub">MAP 仍 &lt;65 或乳酸／尿量沒有改善</span></button>
+        </div>
+      </div>
+      <div class="flow-rec rec-idle" id="ov_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="ovReset()">重新開始</button></div>
+    </div>
+
+    <div class="dirhead" id="ov-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_ov"></div>
+
+    <div class="dirhead" id="ov-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks">
+      <a class="flow-link" data-ct="tools/vasopressor.html" href="#">🧮 升壓／強心藥物流速換算</a>
+      <a class="flow-link" data-ct="tools/vasoactive.html" href="#">血管活性藥物對照</a>
+      <a class="flow-link" data-ct="pathways/swan-ganz.html" href="#">Swan-Ganz 導管判讀</a>
+      <a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣判讀</a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Ch15 Hemorrhagic Shock
+       ==================================================================== -->
+  <section class="shock-panel hidden" data-panel="hem" id="shock-p-hem">
+    <div class="dirhead"><span class="dh-n">第 15 章 出血性休克</span><span class="dh-e">Chapter 15 · Hemorrhagic Shock</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#hem/hem-key"><i>01</i>重點卡</a><a class="sp-chip" href="#hem/hem-tab"><i>02</i>對照表</a><a class="sp-chip" href="#hem/hem-calc"><i>03</i>計算</a><a class="sp-chip" href="#hem/hem-flow"><i>04</i>流程</a><a class="sp-chip" href="#hem/hem-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#hem/hem-x"><i>06</i>相關工具</a></div>
+
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>血容量有限、心臟靠容積驅動</b>：肺肝腎可以失去 75% 功能質量還活著，血容量掉 30% 就可能致命。</span></div>
+        <div class="lede-item"><span>②</span><span><b>前幾小時的 Hb／Hct 反映的是你輸了什麼，不是病人失了多少血</b>。全血流失時血漿與紅血球等比例減少，數字要 8–12 小時才降。</span></div>
+        <div class="lede-item"><span>③</span><span><b>損傷控制復甦</b>：及時止血、允許性低血壓、限制晶體液、以 1:1:1 模擬全血補回——因為致死的是持續出血與凝血病變，晶體液會把兩者都弄得更糟。</span></div>
+      </div>
+    </div>
+
+    <div class="dirhead" id="hem-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="hem-kc">全部展開</button></div>
+    <div id="hem-kc">
+      <details class="def-box"><summary>01 · 血容量與代償 <span class="en">Blood volume &amp; compensation</span></summary>
+        <div class="box-inner"><p class="kp"><b>男 66、女 60 mL/kg 瘦體重；四道代償：跨毛細血管回填、交感、ADH、RAAS。</b></p>
+          <ul>
+            <li>75 kg 男性 ≈ <b class="mono">5 L</b>；60 kg 女性 ≈ <b class="mono">3.6 L</b>。血漿容積：男 40、女 36 mL/kg。</li>
+            <li>血壓下降把間質液拉進血管：<b>跨毛細血管回填最多約 1 L</b>，代價是間質液缺損。</li>
+            <li>交感活化 → 心搏過速、周邊血管收縮；ADH → 腎臟保水；RAAS → angiotensin 廣泛收縮、aldosterone 保鈉。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>02 · 失血四級 <span class="en">Class I–IV blood loss</span></summary>
+        <div class="box-inner"><p class="kp"><b>&lt;15% 回填即可；15–30% 代償期；31–40% 失代償＝出血性休克；&gt;40% 可能不可逆。</b></p>
+          <ul>
+            <li><b>Class I</b>（&lt;15%、&lt;10 mL/kg，通常 &lt;1 L）：回填補足，幾乎無臨床表現，不必輸液。</li>
+            <li><b>Class II</b>（15–30%、10–20 mL/kg）：血管收縮撐住血壓；尿量開始下降但未到寡尿。收縮最強在<b>內臟</b>，可致腸黏膜破壞與腸道菌入血。</li>
+            <li><b>Class III</b>（31–40%、21–30 mL/kg）：收縮撐不住 → 仰臥低血壓、寡尿、意識改變、末梢冰冷、乳酸上升。</li>
+            <li><b>Class IV</b>（&gt;40%、&gt;30 mL/kg）：重度、可能不可逆，多重器官衰竭與嚴重乳酸性酸中毒；大量失血歸此類。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>03 · Hb／Hct 是復甦的鏡子，不是失血的尺 <span class="en">Hemoglobin &amp; hematocrit</span></summary>
+        <div class="box-inner"><p class="kp"><b>全血流失時 H&amp;H 不變；生理鹽水稀釋才降、全血補回就不降。</b></p>
+          <p>用 H&amp;H 判斷急性失血的有無與嚴重度「常見且不恰當」：Hct 與血容量缺損、紅血球缺損的相關性都差。回填與 ADH／aldosterone 讓 H&amp;H 慢慢下降，<b class="mono">8–12 小時</b>才看得到、數天才穩定。</p>
+          <div class="kc-tags"><span class="dg-tag ctrl">早期正常的 Hb 不能安心</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>04 · 導管決定流速 <span class="en">Catheters &amp; Hagen-Poiseuille</span></summary>
+        <div class="box-inner"><p class="kp"><b>流量 ∝ r⁴ / L：短而粗的周邊導管勝過長的中央導管。</b></p>
+          <ul>
+            <li>同號數下，1.2 吋周邊導管的重力流約為 8 吋中央導管的 <b class="mono">5 倍</b>；18G → 16G 流量<b class="mono">翻倍</b>。</li>
+            <li><b>快速輸液導管</b>（RIC）7／9 Fr（≈13／11 G）、約 2 吋，配加壓系統可達 <b class="mono">1 L/min</b>。</li>
+            <li><b>Introducer</b> 8.5／9 Fr 也可 1 L/min，但約 10 cm、要進中央大靜脈；<b>側口流量只有本體 25%</b>，快速輸液時繞過它。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>05 · 復甦液的六種選擇 <span class="en">Resuscitation fluids</span></summary>
+        <div class="box-inner"><p class="kp"><b>膠體擴張血漿容積最有效卻不是首選；PRBC 不增加 CO；液態血漿與纖維蛋白原濃縮劑不必解凍；全血在民間沒重現軍方的存活效益。</b></p>
+          <ul>
+            <li><b>無血液復甦液</b>用於 Class II 與出血性休克的最初階段。膠體對 CI 的提升遠勝晶體，但晶體長年是首選——來自 1960 年代動物實驗（回輸失血＋乳酸林格液才活、間質液缺損 40%）。現行共識：死因是持續出血與凝血病變，<b>晶體過量稀釋凝血因子</b> → 限用。</li>
+            <li><b>PRBC</b>：Hct 約 60%、約 350 mL；黏稠、不增加 CO，只為載氧。</li>
+            <li><b>FFP</b>：約 230 mL，需解凍、解凍後保存期短；<b>液態血漿</b>不冷凍、可存 26 天、效果相同、浪費少。</li>
+            <li><b>Cryo</b> 10–15 mL、富纖維蛋白原與 VIII；需解凍、含量不定、感染風險。<b>纖維蛋白原濃縮劑</b> 20 g/L、不需解凍、無傳染。</li>
+            <li><b>全血</b> 1–6 °C 可存 35 天；軍方「行走血庫」有存活效益，民間冷藏全血沒重現，但<b>與成分療法合併有效益</b>。<b>低效價 O 型血</b>同理。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>06 · 快速輸液系統 <span class="en">Rapid infusion systems</span></summary>
+        <div class="box-inner"><p class="kp"><b>滾輪泵 300 mmHg、加溫到體溫、1 L/min；PRBC 靠重力幾乎流不動。</b></p>
+          <ul>
+            <li>未稀釋 PRBC 重力流只有 <b class="mono">5–7 mL/min</b>（18／16 G）；加 100 mL 生理鹽水變 39–49 mL/min。致命出血要 <b class="mono">5 L/h（83 mL/min）</b>以上，只有加壓做得到。</li>
+            <li>加溫線圈消除室溫輸液造成的低體溫；快速系統造成溶血的疑慮未被證實。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>07 · 無休克的出血：Class II 路徑 <span class="en">Hemorrhage without shock</span></summary>
+        <div class="box-inner"><p class="kp"><b>血壓／尿量降但乳酸不高 → 無血液復甦液，晶體給 3 倍血漿缺損；補足後再看血品門檻。</b></p>
+          <ul>
+            <li>估血漿容積（40／36 mL/kg）→ 估 % 缺損 → <b>晶體 = 3 × 缺損</b>（只有 20–25% 留在血管，×3 已算保守）、膠體 = 1 × 缺損。</li>
+            <li>補足後：Hb 目標 <b class="mono">7–8</b> g/dL；INR <b class="mono">&gt;1.5</b> 給 FFP；血小板 <b class="mono">&lt;50,000</b>/μL 輸血小板。持續出血 → 轉損傷控制復甦。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>08 · 損傷控制復甦 <span class="en">Damage control resuscitation</span></summary>
+        <div class="box-inner"><p class="kp"><b>止血、允許性低血壓、限晶體、以 1:1:1 模擬全血——為所有致命出血，不只大量輸血。</b></p>
+          <ul>
+            <li><b>允許性低血壓</b>：止血前 SBP <b class="mono">80–90</b> 或 MAP <b class="mono">50</b> mmHg。減少輸血量與稀釋性凝血病變（Bickell 1994 穿刺傷），死亡率證據不一致；最大風險是組織低灌流，乳酸與尿量不能停。</li>
+            <li><b>止血復甦</b>：1 FFP : 1 PRBC，每 5 單位加 1 份血小板（≈5–6 位捐者）；全部加溫。</li>
+            <li><b>輔助</b>：離子鈣 <b class="mono">1.2–1.3</b> mmol/L；fibrinogen &lt;100 mg/dL 給 cryo 2 U；<b>TXA 1 g bolus → 1 g / 8 h</b> 經驗性抗纖溶。</li>
+            <li><b>終點</b>：fibrinogen &gt;100、INR &lt;1.5、aPTT &lt;1.5×、血小板 ≥100,000——但對 TIC 不夠靈敏，TEG／ROTEM 更好。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag">EAST 2017</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>09 · 創傷性凝血病變 TIC <span class="en">Trauma-induced coagulopathy</span></summary>
+        <div class="box-inner"><p class="kp"><b>入院時 40% 已有、死亡率 6 倍；主角是內皮損傷活化的 protein C。</b></p>
+          <ul>
+            <li>傳統三因：酸中毒（pH <b class="mono">&lt;7.2</b> 抑制凝血因子）、低體溫（血小板黏附下降）、無血液輸液稀釋。TIC 獨立於這三者。</li>
+            <li>活化的 protein C 使 V／VIII 失活（抑制凝塊形成）並觸發纖溶（凝塊溶解、纖維蛋白原消耗）；血小板功能障礙也參一腳。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>10 · TEG 五個數字 <span class="en">Thromboelastography</span></summary>
+        <div class="box-inner"><p class="kp"><b>R 5–10 min、k 1–3 min、α 53–72°、MA 50–70 mm、LY30 2.3–5.7%；TEG 導向改善存活、減少血品。</b></p>
+          <ul>
+            <li><b>R</b>（反應時間）凝塊起始：凝血因子；所有抗凝劑除 warfarin 都延長——<b>INR 是 warfarin 唯一可靠的量尺</b>。</li>
+            <li><b>k</b>（動力時間）起始到 20 mm；<b>α 角</b> 早期凝塊形成速度，靠纖維蛋白聚合。</li>
+            <li><b>MA</b> 凝塊強度：纖維蛋白原把血小板交聯起來。</li>
+            <li><b>LY30</b>：MA 後 30 分鐘溶解百分比，纖溶指標。</li>
+            <li>介入：R &gt;9 min → 血漿或逆轉抗凝；k／α 異常 → 纖維蛋白原；MA 低 → 血小板；LY30 高 → TXA（各家切點不同）。ROTEM 是杯靜針轉的變體。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>11 · 復甦後損傷 <span class="en">Postresuscitation injury</span></summary>
+        <div class="box-inner"><p class="kp"><b>成功復甦後 48–72 小時的多重器官衰竭，死亡率 50–60%；先呼吸、再腎肝心 CNS。</b></p>
+          <ul>
+            <li>本質是源於內臟的<b>再灌流損傷</b>：缺血腸道再灌流釋出細胞激素 → 全身發炎。</li>
+            <li>危險因子：逆轉休克所需時間、<b>晶體液量</b>（腸水腫 → 腹腔室隔症候群）、RBC &gt;6 U／12 h。</li>
+            <li>沒有特定治療；發病 &gt;72 小時要想<b>腸源性敗血症</b>，及早辨識治療。</li>
+          </ul>
+        </div></details>
+    </div>
+
+    <div class="dirhead" id="hem-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>分級</th><th>失血 % 血容量</th><th>mL/kg</th><th>生理狀態</th><th>臨床</th><th>處置</th></tr>
+      <tr><td>I</td><td>&lt;15%</td><td>&lt;10</td><td>回填即補足</td><td>幾乎無</td><td>不必輸液</td></tr>
+      <tr><td>II</td><td>15–30%</td><td>10–20</td><td>代償（血管收縮）</td><td>尿量下降、內臟低灌流</td><td>無血液復甦液（3× PV 缺損）</td></tr>
+      <tr><td>III</td><td>31–40%</td><td>21–30</td><td>失代償＝出血性休克</td><td>仰臥低血壓、寡尿、意識、乳酸</td><td>損傷控制復甦</td></tr>
+      <tr><td>IV</td><td>&gt;40%</td><td>&gt;30</td><td>重度、可能不可逆</td><td>MOF、嚴重乳酸性酸中毒</td><td>大量輸血 1:1:1</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table">
+      <tr><th>復甦液</th><th>要點</th><th>主要效果</th></tr>
+      <tr><td>膠體（albumin 5／25%、HES、dextran）</td><td>擴張血漿容積最有效；台大有 Voluven（HES）</td><td>擴張血漿容積、提升 CI</td></tr>
+      <tr><td>晶體（生理鹽水、乳酸林格液）</td><td>只有 20–25% 留在血管；過量 → 稀釋性凝血病變</td><td>擴張間質為主</td></tr>
+      <tr><td>PRBC</td><td>Hct ~60%、~350 mL/U；黏稠不增加 CO</td><td>載氧能力</td></tr>
+      <tr><td>FFP／液態血漿</td><td>~230 mL/U；液態血漿不需解凍、可存 26 天</td><td>凝血因子、MTP 的容積</td></tr>
+      <tr><td>Cryo／纖維蛋白原濃縮劑</td><td>Cryo 10–15 mL 需解凍；濃縮劑 20 g/L 不需解凍</td><td>纖維蛋白原</td></tr>
+      <tr><td>全血／低效價 O 型</td><td>1–6 °C 存 35 天；軍方有效益、民間未重現，合併成分療法有效益</td><td>最接近失去的東西</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>PRBC 輸注條件</th><th>18 G（1.2 吋）</th><th>16 G（1.2 吋）</th><th>7 Fr RIC（2 吋）</th></tr>
+      <tr><td>1 U 未稀釋、重力</td><td>5 mL/min</td><td>7 mL/min</td><td>—</td></tr>
+      <tr><td>1 U ＋ 100 mL 生理鹽水、重力</td><td>39 mL/min</td><td>49 mL/min</td><td>—</td></tr>
+      <tr><td>加壓（300 mmHg）系統</td><td colspan="3">最高可達 1 L/min；致命出血所需的 ≥83 mL/min 只有加壓做得到</td></tr>
+    </table></div>
+    <div class="note">書中表 15.3 尚有 PRBC ＋ FFP 與加壓各列，原表未完整抽出，這裡只列可確認的格。</div>
+
+    <div class="dirhead" id="hem-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c15bv">
+      <div class="rxbox-t">血容量與失血分級 <span class="en">Blood volume &amp; class</span></div>
+      <div class="lead">用瘦體重。估計失血量可留白，只看容量。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>性別 <span class="rx-en">血容量 男 66 · 女 60 mL/kg</span></label><select id="bv_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>瘦體重 <span class="rx-en">kg</span></label><input type="number" id="bv_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>估計失血 <span class="rx-en">mL</span></label><input type="number" id="bv_loss" step="50" placeholder="1500"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c15bv_out"></div>
+    </div>
+
+    <div class="rxbox" id="c15cl2">
+      <div class="rxbox-t">Class II 的無血液復甦量 <span class="en">Asanguinous resuscitation volume</span></div>
+      <div class="lead">適用血壓或尿量下降、但乳酸正常的出血。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>性別 <span class="rx-en">血漿容積 男 40 · 女 36 mL/kg</span></label><select id="cl2_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="cl2_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>估計 PV 缺損</label><select id="cl2_pct"><option value="10">10%</option><option value="15">15%</option><option value="20" selected>20%</option><option value="25">25%</option><option value="30">30%</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c15cl2_out"></div>
+    </div>
+
+    <div class="rxbox" id="c15mtp">
+      <div class="rxbox-t">1:1:1 與止血終點 <span class="en">Hemostatic resuscitation</span></div>
+      <div class="lead">輸入已給或預計的 PRBC 單位數，與目前的凝血檢驗。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>PRBC <span class="rx-en">U</span></label><input type="number" id="mtp_rbc" step="1" placeholder="6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Fibrinogen <span class="rx-en">mg/dL</span></label><input type="number" id="mtp_fib" step="5" placeholder="150"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>INR</label><input type="number" id="mtp_inr" step="0.1" placeholder="1.3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>aPTT 比值 <span class="rx-en">× 正常</span></label><input type="number" id="mtp_ptt" step="0.1" placeholder="1.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血小板 <span class="rx-en">×10³/μL</span></label><input type="number" id="mtp_plt" step="5" placeholder="120"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>離子鈣 <span class="rx-en">mmol/L</span></label><input type="number" id="mtp_ica" step="0.01" placeholder="1.15"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c15mtp_out"></div>
+    </div>
+
+    <div class="rxbox" id="c15teg">
+      <div class="rxbox-t">TEG 判讀 <span class="en">Thromboelastography</span></div>
+      <div class="lead">五個參數對照書中正常範圍；提示的介入方向依表 15.5 與內文。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>R <span class="rx-en">min</span></label><input type="number" id="teg_r" step="0.1" placeholder="7"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>k <span class="rx-en">min</span></label><input type="number" id="teg_k" step="0.1" placeholder="2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>α 角 <span class="rx-en">°</span></label><input type="number" id="teg_a" step="1" placeholder="60"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>MA <span class="rx-en">mm</span></label><input type="number" id="teg_ma" step="1" placeholder="60"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>LY30 <span class="rx-en">%</span></label><input type="number" id="teg_ly" step="0.1" placeholder="3"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c15teg_out"></div>
+    </div>
+
+    <div class="dirhead" id="hem-flow"><span class="dh-n">決策流程</span><span class="dh-e">Resuscitation of the bleeding patient</span></div>
+    <div class="lead">先分「有沒有休克」，有休克就是損傷控制復甦；後面三題只調整細節。</div>
+    <div id="hem_flow">
+      <div class="flow-step" id="hem_s1">
+        <div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">出血病人有休克的證據嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hemPick('shock','no',this)">沒有<span class="fo-sub">血壓或尿量下降，但乳酸不高（≈ Class II）</span></button>
+          <button class="flow-opt" onclick="hemPick('shock','yes',this)">有<span class="fo-sub">乳酸上升、低血壓、寡尿／意識改變（Class III–IV）</span></button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="hem_c2">↓</div>
+      <div class="flow-step hidden" id="hem_s2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">出血已經控制了嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hemPick('ctrl','no',this)">還沒<span class="fo-sub">等待手術／栓塞／內視鏡</span></button>
+          <button class="flow-opt" onclick="hemPick('ctrl','yes',this)">已控制</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="hem_c3">↓</div>
+      <div class="flow-step hidden" id="hem_s3">
+        <div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">大量出血？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hemPick('massive','yes',this)">是<span class="fo-sub">1 小時內 ≥4 U PRBC，或預期如此</span></button>
+          <button class="flow-opt" onclick="hemPick('massive','no',this)">否</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="hem_c4">↓</div>
+      <div class="flow-step hidden" id="hem_s4">
+        <div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">有 TEG／ROTEM 嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hemPick('teg','yes',this)">有</button>
+          <button class="flow-opt" onclick="hemPick('teg','no',this)">沒有<span class="fo-sub">只有 PT／aPTT／fibrinogen／血小板</span></button>
+        </div>
+      </div>
+      <div class="flow-rec rec-idle" id="hem_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="hemReset()">重新開始</button></div>
+    </div>
+
+    <div class="dirhead" id="hem-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_hem"></div>
+
+    <div class="dirhead" id="hem-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks">
+      <a class="flow-link" data-ct="pathways/trauma-resuscitation.html" href="#">重大創傷出血復甦決策</a>
+      <a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a>
+      <a class="flow-link" data-ct="pathways/gi-bleeding.html" href="#">消化道出血處置決策</a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Ch16 Cardiogenic Shock
+       ==================================================================== -->
+  <section class="shock-panel hidden" data-panel="cs" id="shock-p-cs">
+    <div class="dirhead"><span class="dh-n">第 16 章 心因性休克</span><span class="dh-e">Chapter 16 · Cardiogenic Shock</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#cs/cs-key"><i>01</i>重點卡</a><a class="sp-chip" href="#cs/cs-tab"><i>02</i>對照表</a><a class="sp-chip" href="#cs/cs-calc"><i>03</i>計算</a><a class="sp-chip" href="#cs/cs-flow"><i>04</i>流程</a><a class="sp-chip" href="#cs/cs-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#cs/cs-x"><i>06</i>相關工具</a></div>
+
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>心因性休克的治療是「買時間」</b>——等心臟從急性打擊復原，或等確定性處置（再灌流、手術）。即使盡力，一半病人仍死亡。</span></div>
+        <div class="lede-item"><span>②</span><span><b>升壓劑與強心劑都在增加心臟工作量</b>（後負荷、收縮力、心率），對衰竭的心肌是反效果；藥物支持沒有快速改善，就該提早機械循環支持。</span></div>
+        <div class="lede-item"><span>③</span><span><b>沒有一種機械支持被證明比另一種更能存活</b>；併呼吸衰竭選 VA-ECMO，其餘依院內可得性。等到多重器官衰竭才上機是「bridge to nowhere」。</span></div>
+      </div>
+    </div>
+
+    <div class="dirhead" id="cs-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="cs-kc">全部展開</button></div>
+    <div id="cs-kc">
+      <details class="def-box"><summary>01 · 病因：AMI 占 2/3，機械併發症在 24 小時內 <span class="en">Etiologies</span></summary>
+        <div class="box-inner"><p class="kp"><b>AMI 中 5–10% 發生心因性休克；LV 梗塞 80%（要失去 ≥40% 功能質量）、RV &lt;5%。</b></p>
+          <ul>
+            <li>梗塞相關的三種機械併發症：乳突肌斷裂（<b class="mono">7%</b>，急性重度 MR）、心室中隔破裂（<b class="mono">4%</b>，大量左向右分流）、游離壁破裂（<b class="mono">1%</b>，心包膜填塞）——<b>多在 24 小時內出現</b>，與「晚期併發症」的傳統印象相反。</li>
+            <li>非 AMI 病因十年來增加：慢性心衰竭急性惡化最多 <b class="mono">30%</b>、Takotsubo、急性心肌炎、晚期瓣膜病變、動態流出道阻塞、心臟術後（2–5%，心肌頓抑／保護不足／血管擴張）、產週心肌病變（1/3,000–4,000，&gt;30 歲、多胎、非裔、家族史；死亡率 7–20%）。</li>
+            <li><b>阻塞性休克</b>本質上是心外因素的心因性休克（肺栓塞、心包膜填塞、張力性氣胸），血行動力學一樣，處理病因。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>02 · 動態 LVOT 阻塞：治療方向相反 <span class="en">Dynamic outflow obstruction</span></summary>
+        <div class="box-inner"><p class="kp"><b>HCM 的窄流出道把二尖瓣前葉吸向中隔；要減慢心率、增加舒張充填，用非血管擴張 β-blocker。</b></p>
+          <ul>
+            <li>診斷：CW Doppler 心尖四腔切面算主動脈瓣下峰值收縮壓差。</li>
+            <li>治療：metoprolol、nadolol ＋ 輸液；升壓用純 α 的 <b>phenylephrine</b>（反射性心搏過緩有利）；<b>強心劑禁忌</b>。</li>
+          </ul>
+          <div class="kbox"><div class="kbox-t">在地備註</div>台大藥品資料庫查無 phenylephrine 注射劑，只有眼藥水。</div>
+        </div></details>
+
+      <details class="def-box"><summary>03 · 血行動力學與它的例外 <span class="en">Hemodynamic changes &amp; exceptions</span></summary>
+        <div class="box-inner"><p class="kp"><b>CO↓、充填壓↑、SVR↑ 是教科書；但 30% 充填壓不高、併發炎時 SVR 不高、5% 沒有低血壓。</b></p>
+          <ul>
+            <li>心衰竭與心因性休克的差別是<b>低灌流</b>（低血壓、尿少）與<b>氧合不足</b>（乳酸）。典型 CI <b class="mono">&lt;2.2</b>（正常 2.4–4.0）。</li>
+            <li><b>右心衰竭</b>：CVP/PAWP 比值升高、RV 擴大、LVEF 正常；死亡率較低；重度 RV 擴大把中隔推進 LV，再減少 LV 充填（第 18 章）。</li>
+            <li><b>微循環</b>：舌下顯微鏡示毛細血管灌流下降與 CO／BP 無關、對死亡率影響更大——修正宏觀指標不保證存活，PCO₂ gap 是可用的窗口。</li>
+            <li><b>全身性發炎</b>：心肌壞死的發炎可擴及全身，20–40% 的梗塞相關 CS 有發燒、白血球升高，SVR 較低（NO）、死亡率較高，並與微循環障礙相關。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>04 · 監測：PA 導管在這裡是對的 <span class="en">Monitoring</span></summary>
+        <div class="box-inner"><p class="kp"><b>熱稀釋 CO、充填壓、SVR、氧輸送一次到手；PA 導管改善 CS 結果，AHA 2021 明確支持。</b></p>
+          <ul>
+            <li>微循環缺損可以在 CO 與血壓正常化後持續 → 追 <b>PCO₂ gap</b> 與尿量。</li>
+            <li>組織氧合是 CS 最重要的參數：<b>SvO₂</b>（供需平衡）與<b>乳酸</b>（間接）。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>05 · 目標與最佳充填壓 <span class="en">Goals · optimal filling pressure</span></summary>
+        <div class="box-inner"><p class="kp"><b>PAWP 18–20、CI ≥2.5、SVRI 25–30 Wood、MAP ≥65、PCO₂ gap &lt;6、尿量 &gt;0.5。</b></p>
+          <p>充填壓不高時（30%）輸液能增加 CO；目標是不造成肺水腫的最高 PAWP，取決於血漿膠體滲透壓（COP）。正常 COP 約 28 mmHg，低白蛋白的重症病人約 <b class="mono">20–25</b>，所以最佳 PAWP 定在 <b class="mono">18–20</b> mmHg。</p>
+          <p>SVRI 單位 Wood units = mmHg/L/min/m²。</p>
+        </div></details>
+
+      <details class="def-box"><summary>06 · 升壓劑：norepinephrine <span class="en">Vasopressor therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>SBP ≥90 或 MAP ≥65；NE 比 epinephrine／dopamine 心律不整少、死亡少，輕度 β 保住 CO。</b></p>
+          <ul>
+            <li>5 μg/min（0.05 μg/kg/min）起、每 5 分鐘上調；研究常用 <b class="mono">5–30</b> μg/min（0.05–0.5 μg/kg/min）。</li>
+            <li>唯一例外：動態 LVOT 阻塞用 phenylephrine。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>07 · 強心劑三種 <span class="en">Inotropic therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>Dobutamine 最常用（保血壓、代價心率與 MVO₂）；milrinone 低血壓風險大、腎功能要調；levosimendan 不增耗氧、有死亡率效益、美國未核准。</b></p>
+          <ul>
+            <li><b>Dobutamine</b>：β₁ 增加 SV 與 HR，輕度血管擴張被 SV 抵銷所以不降血壓——這是它在 CS 的優勢。心率通常 +5–15（可 &gt;30）、心肌耗氧上升，對 AMI 與衰竭心肌都是負擔。3–5 μg/kg/min 起、每次加 3–5。</li>
+            <li><b>Milrinone</b>：PDE 抑制 → cAMP → 鈣內流；也是血管擴張劑。強心效果同 dobutamine、心搏過速少，但<b>低血壓</b>是大缺點；t½ 2.5 h，CrCl &lt;50 要減量。更適合<b>沒有低血壓</b>的失代償心衰竭。</li>
+            <li><b>Levosimendan</b>：鈣敏感化＋鉀通道血管擴張；擴張冠脈、不增加心肌耗氧，對比 dobutamine 有死亡率效益（Cochrane）；也會低血壓。t½ 80 h、輸注限 24 h；歐洲南美 2000 年起常用、<b>美國未核准</b>。</li>
+          </ul>
+          <div class="kbox"><div class="kbox-t">在地備註</div>台大藥品資料庫查無 levosimendan（Simdax）；dobutamine、milrinone 皆有。</div>
+        </div></details>
+
+      <details class="def-box"><summary>08 · 心臟工作量：藥物的原罪 <span class="en">Cardiac workload</span></summary>
+        <div class="box-inner"><p class="kp"><b>升壓劑增加後負荷、強心劑增加收縮力與心率——都在讓衰竭的心臟更累。</b></p>
+          <p>藥物不太可能促進「原生」心功能的改善；機械支持的設計目的正是減少心臟工作。因此藥物支持下沒有快速改善的證據，就不要延遲機械支持。</p>
+        </div></details>
+
+      <details class="def-box"><summary>09 · IABP <span class="en">Intra-aortic balloon pump</span></summary>
+        <div class="box-inner"><p class="kp"><b>最老、最普及、不改善存活（IABP-SHOCK II）；禁忌主動脈瓣閉鎖不全與主動脈剝離。</b></p>
+          <ul>
+            <li>股動脈進、尖端在左鎖骨下動脈起點下方；氦氣 35–40 mL。<b>舒張期充氣</b>（主動脈瓣關閉後，常以 R 波觸發）→ 舒張壓峰值上升 → 冠脈血流與 MAP 增加；<b>收縮前放氣</b>（等容收縮期）→ 抽吸效應降低後負荷、增加 SV。</li>
+            <li>併發症：<b>肢體缺血</b>（多為穿刺處原位血栓）——只失去遠端脈搏但感覺運動正常不必拔；<b>感覺運動喪失立即拔</b>並考慮手術。敗血、氣球破裂、周邊神經病變、假性動脈瘤；發燒 50%、菌血症只有 15%。</li>
+            <li>只是暫時措施；與其他 MCS 比較沒有一種改善存活，但個別病人受益、事前難預測。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>10 · Impella <span class="en">Microaxial flow catheter</span></summary>
+        <div class="box-inner"><p class="kp"><b>離心泵把血從 LV 送到主動脈，2.5–5.5 L/min；存活與 IABP 相同，出血／肢體缺血／溶血較多。</b></p>
+          <ul>
+            <li>股動脈進 LV，豬尾巴尖端安全前進；可監測原生 CO、自動調到預設總 CO。也有 RV 版本。</li>
+            <li>血行動力學效果同 IABP（卸載 LV、增加 CO 與冠脈血流）；在末期 LV 衰竭有長期植入的優勢。</li>
+            <li>禁忌：主動脈瓣疾病或人工主動脈瓣、LV 血栓。溶血 <b class="mono">5–10%</b> 高於其他裝置。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>11 · VA-ECMO <span class="en">Veno-arterial ECMO</span></summary>
+        <div class="box-inner"><p class="kp"><b>雙心室支持＋氣體交換，5–6 L/min；併呼吸衰竭時首選；代價是 LV 後負荷與一長串併發症。</b></p>
+          <ul>
+            <li>股靜脈引流（尖端近右心房）→ 離心泵 → 膜式氧合器 → 加溫 37 °C → 股動脈回輸；逆行血流要到主動脈弓以供腦部。</li>
+            <li>併發症：大出血 <b class="mono">41%</b>、敗血 30%、肢體缺血 17%、下肢腔室症候群 10%、中風 6%、截肢 5%。</li>
+            <li><b>LV 後負荷</b>：逆行主動脈血流可把 LV 壓到出不了血 → 急性肺水腫；對策：合併 IABP／Impella 或 LV venting。</li>
+            <li>最大註冊資料：CS 出院存活 <b class="mono">42%</b>；與 IABP／LVAD 比較結果不一致。</li>
+            <li>全部 MCS 都需完整抗凝。裝置選擇取決於可得性與院內偏好；沒有 ECMO 的醫院先 IABP／LVAD、無改善再轉。</li>
+          </ul>
+        </div></details>
+    </div>
+
+    <div class="dirhead" id="cs-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>類別</th><th>目標</th><th>備註</th></tr>
+      <tr><td rowspan="4">血行動力學</td><td>PAWP 18–20 mmHg</td><td>重症 COP 約 20–25；30% 的 CS 充填壓並不高</td></tr>
+      <tr><td>CI ≥2.5 L/min/m²</td><td>典型 CS &lt;2.2</td></tr>
+      <tr><td>SVRI 25–30 Wood units</td><td>mmHg/L/min/m²；偏低想合併發炎</td></tr>
+      <tr><td>MAP ≥65 mmHg</td><td>SBP ≥90 亦可</td></tr>
+      <tr><td rowspan="2">組織灌流</td><td>PCO₂ gap &lt;6 mmHg</td><td>微循環與 CO 無關</td></tr>
+      <tr><td>尿量 &gt;0.5 mL/kg/h</td><td></td></tr>
+      <tr><td>組織氧合</td><td>SvO₂ 65–75%、乳酸 &lt;2 mmol/L</td><td>CS 最重要的參數</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>強心劑</th><th>劑量</th><th>優點</th><th>缺點</th></tr>
+      <tr><td>Dobutamine</td><td>3–5 μg/kg/min 起，每次 +3–5</td><td>不降血壓、最常用</td><td>心率 +5–15（可 &gt;30）、MVO₂ 上升</td></tr>
+      <tr><td>Milrinone</td><td>負荷 50 μg/kg／10 min → 0.375–0.75 μg/kg/min；CrCl &lt;50 減量</td><td>心搏過速少</td><td>低血壓；t½ 2.5 h、腎功能差時延長</td></tr>
+      <tr><td>Levosimendan</td><td>12 μg/kg／10 min → 0.1（0.05–0.2）μg/kg/min，限 24 h</td><td>不增耗氧、擴張冠脈、死亡率效益</td><td>低血壓；t½ 80 h；美國未核准、台大查無</td></tr>
+    </table></div>
+    <div class="note">Milrinone 負荷劑量與腎功能調整取自仿單（書中表 16.3 引用），非書中內文明寫。</div>
+
+    <div class="tw"><table class="def-table">
+      <tr><th>機械支持</th><th>機轉</th><th>流量</th><th>禁忌</th><th>特有問題</th><th>存活</th></tr>
+      <tr><td>IABP</td><td>舒張期充氣↑冠脈與 MAP；收縮前放氣↓後負荷</td><td>—（卸載）</td><td>主動脈瓣閉鎖不全、主動脈剝離</td><td>肢體缺血；發燒 50% 但菌血症 15%</td><td>不改善（IABP-SHOCK II）</td></tr>
+      <tr><td>Impella</td><td>離心泵 LV → 主動脈</td><td>2.5–5.5 L/min</td><td>主動脈瓣疾病／人工瓣、LV 血栓</td><td>出血、肢體缺血較多；溶血 5–10%</td><td>與 IABP 相同</td></tr>
+      <tr><td>VA-ECMO</td><td>股靜脈引流 → 泵 → 氧合器 → 股動脈</td><td>5–6 L/min</td><td>—</td><td>LV 後負荷↑→肺水腫（需 venting）；大出血 41%</td><td>出院 42%；與他者比較不一致</td></tr>
+    </table></div>
+
+    <div class="dirhead" id="cs-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c16hd">
+      <div class="rxbox-t">血行動力學與目標檢核 <span class="en">SVRI · targets (Table 16.2)</span></div>
+      <div class="lead">SVRI = (MAP − CVP) / CI，單位 Wood（mmHg/L/min/m²）。CI 可直接填，或用 CO ＋ 身高體重換算。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg</span></label><input type="number" id="hd_map" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CVP / RAP <span class="rx-en">mmHg</span></label><input type="number" id="hd_cvp" step="1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PAWP <span class="rx-en">mmHg</span></label><input type="number" id="hd_pawp" step="1" placeholder="22"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Cardiac index <span class="rx-en">L/min/m²</span></label><input type="number" id="hd_ci" step="0.1" placeholder="2.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>或 CO <span class="rx-en">L/min</span></label><input type="number" id="hd_co" step="0.1" placeholder="3.6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="hd_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="hd_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PCO₂ gap <span class="rx-en">mmHg</span></label><input type="number" id="hd_gap" step="1" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿量 <span class="rx-en">mL/kg/h</span></label><input type="number" id="hd_uo" step="0.1" placeholder="0.4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SvO₂ <span class="rx-en">%</span></label><input type="number" id="hd_svo2" step="1" placeholder="55"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>乳酸 <span class="rx-en">mmol/L</span></label><input type="number" id="hd_lac" step="0.1" placeholder="3.2"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c16hd_out"></div>
+    </div>
+
+    <div class="rxbox" id="c16ino">
+      <div class="rxbox-t">升壓與強心劑量 <span class="en">NE · dobutamine · milrinone · levosimendan</span></div>
+      <div class="lead">依體重把書中的每公斤劑量換成每分鐘量；milrinone 依 CrCl 給維持速率。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ino_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CrCl <span class="rx-en">mL/min</span></label><input type="number" id="ino_crcl" step="1" placeholder="60"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c16ino_out"></div>
+    </div>
+
+    <div class="dirhead" id="cs-flow"><span class="dh-n">決策流程</span><span class="dh-e">Pharmacological → mechanical support</span></div>
+    <div class="lead">先問病因（有一個病因的處置方向完全相反），再依充填壓、血壓、CI 決定藥，最後用 1–2 小時的軌跡決定要不要上機。</div>
+    <div id="cs_flow">
+      <div class="flow-step" id="cs_s1">
+        <div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">心電圖與超音波指向哪一種病因？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('etio','ami',this)">急性心肌梗塞<span class="fo-sub">2/3 的心因性休克；LV 梗塞 80%</span></button>
+          <button class="flow-opt" onclick="csPick('etio','mech',this)">機械併發症<span class="fo-sub">乳突肌斷裂、心室中隔破裂、游離壁破裂／填塞</span></button>
+          <button class="flow-opt" onclick="csPick('etio','lvot',this)">動態 LVOT 阻塞<span class="fo-sub">HCM、CW Doppler 主動脈瓣下壓差</span></button>
+          <button class="flow-opt" onclick="csPick('etio','rv',this)">右心衰竭為主<span class="fo-sub">CVP/PAWP 比升高、RV 擴大、LVEF 正常</span></button>
+          <button class="flow-opt" onclick="csPick('etio','other',this)">其他<span class="fo-sub">慢性心衰急性惡化、Takotsubo、心肌炎、術後、產週、阻塞性</span></button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="cs_c2">↓</div>
+      <div class="flow-step hidden" id="cs_s2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">左心充填壓（PAWP）？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('pawp','low',this)">不高<span class="fo-sub">&lt;18 mmHg 或超音波示充填不足</span></button>
+          <button class="flow-opt" onclick="csPick('pawp','high',this)">已高<span class="fo-sub">≥18–20 mmHg、肺水腫</span></button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="cs_c3">↓</div>
+      <div class="flow-step hidden" id="cs_s3">
+        <div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">血壓？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('bp','low',this)">SBP &lt;90 或 MAP &lt;65</button>
+          <button class="flow-opt" onclick="csPick('bp','ok',this)">血壓尚可但仍低灌流<span class="fo-sub">約 5% 的 CS 沒有低血壓</span></button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="cs_c4">↓</div>
+      <div class="flow-step hidden" id="cs_s4">
+        <div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">心輸出？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('ci','low',this)">CI &lt;2.2 併低灌流</button>
+          <button class="flow-opt" onclick="csPick('ci','ok',this)">CI ≥2.5</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="cs_c5">↓</div>
+      <div class="flow-step hidden" id="cs_s5">
+        <div class="flow-step-head"><span class="flow-num">5</span><span class="flow-q">藥物支持 1–2 小時後的軌跡？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('traj','better',this)">改善<span class="fo-sub">乳酸下降、尿量回來、藥可減量</span></button>
+          <button class="flow-opt" onclick="csPick('traj','worse',this)">無改善或惡化<span class="fo-sub">升壓／強心需求上升、乳酸不降</span></button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="cs_c6">↓</div>
+      <div class="flow-step hidden" id="cs_s6">
+        <div class="flow-step-head"><span class="flow-num">6</span><span class="flow-q">合併呼吸衰竭嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="csPick('resp','yes',this)">有<span class="fo-sub">需要氣體交換支持</span></button>
+          <button class="flow-opt" onclick="csPick('resp','no',this)">沒有</button>
+        </div>
+      </div>
+      <div class="flow-rec rec-idle" id="cs_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="csReset()">重新開始</button></div>
+    </div>
+
+    <div class="dirhead" id="cs-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_cs"></div>
+
+    <div class="dirhead" id="cs-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks">
+      <a class="flow-link" data-ct="pathways/cardiogenic-shock.html" href="#">心因性休克處置決策（SCAI 分級、台大心衰竭指引）</a>
+      <a class="flow-link" data-ct="tools/classifications.html#sys=scai" href="#">SCAI 分級（互動式）</a>
+      <a class="flow-link" data-ct="pathways/swan-ganz.html" href="#">Swan-Ganz 導管判讀</a>
+      <a class="flow-link" data-ct="tools/vasopressor.html" href="#">🧮 升壓／強心藥物流速換算</a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Ch17 Inflammatory Shock Syndromes
+       ==================================================================== -->
+  <section class="shock-panel hidden" data-panel="inf" id="shock-p-inf">
+    <div class="dirhead"><span class="dh-n">第 17 章 發炎性休克</span><span class="dh-e">Chapter 17 · Inflammatory Shock Syndromes</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#inf/inf-key"><i>01</i>重點卡</a><a class="sp-chip" href="#inf/inf-tab"><i>02</i>對照表</a><a class="sp-chip" href="#inf/inf-calc"><i>03</i>計算</a><a class="sp-chip" href="#inf/inf-flow"><i>04</i>流程</a><a class="sp-chip" href="#inf/inf-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#inf/inf-x"><i>06</i>相關工具</a></div>
+
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>發炎有兩張臉</b>：殺菌與修復的那張靠活性氧；當它變成自我延續的「惡性發炎」，就是敗血性、毒性、過敏性休克背後共同的傷害機轉。</span></div>
+        <div class="lede-item"><span>②</span><span><b>敗血性休克的器官衰竭是線粒體用不掉氧，不是組織缺氧</b>——所以乳酸不是缺氧指標、ScvO₂ 會假性偏高、氧氣不該濫給。處置上仍是 30 mL/kg、norepinephrine、1 小時內抗生素。</span></div>
+        <div class="lede-item"><span>③</span><span><b>過敏反應唯一能終止反應的藥是 epinephrine</b>；抗組織胺與支氣管擴張劑只緩解症狀，類固醇在急性處置「沒有角色」。</span></div>
+      </div>
+    </div>
+
+    <div class="dirhead" id="inf-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="inf-kc">全部展開</button></div>
+    <div id="inf-kc">
+      <details class="def-box"><summary>01 · 發炎性損傷的機轉 <span class="en">Inflammatory injury</span></summary>
+        <div class="box-inner"><p class="kp"><b>中性球呼吸爆發（O₂ 消耗 20 倍、15–20 分鐘）產生活性氧殺菌，也傷宿主；器官衰竭數目直接決定死亡率。</b></p>
+          <ul>
+            <li>NADPH oxidase 把電子一顆顆加到氧上：superoxide → H₂O₂ → hydroxyl radical；myeloperoxidase 把 H₂O₂ 變成次氯酸（漂白水的成分）。慢性肉芽腫病（NADPH oxidase 缺陷）反覆致命感染，證明 ROS 的殺菌角色。</li>
+            <li>ROS 破壞細胞外基質、實質細胞、內皮與其糖萼；H₂O₂ 可穿過組織進入血流，遇到 Fe²⁺ 在遠處器官生成 hydroxyl radical——是 ARDS、敗血症、心跳停止後症候群造成多重器官衰竭的一種機轉。</li>
+            <li>內皮的 NADPH oxidase 促進白血球黏附與遷移，也造成滲漏水腫；<b>O₂•⁻ ＋ NO• → ONOO⁻</b>：失去 NO 的血流效益、還生成過氧亞硝酸這個毒素。</li>
+            <li>器官衰竭數目與死亡率呈直接關係（美國與歐洲調查一致）；最典型的發炎性器官損傷是 ARDS。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>02 · 敗血症的定義與它的問題 <span class="en">Definitions (Sepsis-3)</span></summary>
+        <div class="box-inner"><p class="kp"><b>Sepsis ＝ 感染＋危及生命的器官功能障礙；septic shock ＝ 需升壓劑＋乳酸 &gt;2。SIRS 已廢止。</b></p>
+          <ul>
+            <li>2016 年定義取代 1992 年的 SIRS 版：SIRS 不具特異性，&lt;50% 有記錄感染。</li>
+            <li>美國每 2–3 個院內死亡有 1 個是敗血症、全球每 5 個死亡有 1 個；入院時就有的敗血性休克死亡率約 30%、入院後發生約 50%。<b>死亡率與病原無關</b>（含多重抗藥菌）——問題在宿主反應。</li>
+            <li><b>作者：</b>250 萬敗血症病人中 70% 沒有記錄感染；懷疑感染的依據又多是全身發炎反應——敗血症更像是「對<b>發炎</b>的失調反應」。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>03 · 敗血性休克的血行動力學 <span class="en">Hemodynamic alterations</span></summary>
+        <div class="box-inner"><p class="kp"><b>血管擴張性低血壓＋內皮滲漏的低血容；CO 通常升高（warm shock），末期才降。</b></p>
+          <ul>
+            <li>低血壓歸因於內皮 NO 生成增加，但 oxidant stress 會消耗 NO，顯示另有因素。</li>
+            <li>細胞激素造成收縮與舒張功能障礙，但心搏過速與後負荷下降讓 CO 通常增加 → hyperdynamic／warm shock；CO 開始下降是壞預兆。</li>
+            <li>CO 高但<b>內臟血流減少</b> → 腸黏膜破壞 → 腸道菌移位，火上加油。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>04 · 線粒體功能障礙：敗血症不缺氧 <span class="en">Mitochondrial dysfunction</span></summary>
+        <div class="box-inner"><p class="kp"><b>骨骼肌 PO₂ 在重症敗血症反而升高；電子傳遞鏈氧化損傷＋PDH 被抑制，氧用不掉。</b></p>
+          <ul>
+            <li>全身 VO₂ 上升與線粒體 VO₂ 下降的矛盾：上升的部分是<b>中性球活化</b>的耗氧。</li>
+            <li><b>意涵一</b>：組織氧不缺，濫給氧不但無益、可能因氧化壓力有害。</li>
+            <li><b>意涵二</b>：乳酸上升不是缺氧，而是代謝壓力下的替代燃料（第 9 章）。但乳酸仍有預後意義，正常化仍是目標。</li>
+            <li><b>監測</b>：組織的<b>氧萃取率下降</b>（線粒體用不掉氧，血流過微血管時被拿走的氧變少，動靜脈氧飽和度差縮小）→ 回流的靜脈血仍然很飽，<b>ScvO₂ 假性偏高</b>、不能拿來判斷氧輸送夠不夠；PCO₂ gap 不受氧合影響、仍可用。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>05 · 初始處置（SSC 2021） <span class="en">Initial management</span></summary>
+        <div class="box-inner"><p class="kp"><b>30 mL/kg 理想體重／3 小時 → norepinephrine → 0.25–0.5 μg/kg/min 加 vasopressin → epinephrine 第三線；MAP ≥65。</b></p>
+          <ul>
+            <li>之後的輸液只依 fluid responsiveness；<b>液體累積增加死亡率</b>，初期後每日出入平衡。</li>
+            <li>升壓劑可先由肘窩以上周邊靜脈開始，儘早轉中央；midline 7 天無害。</li>
+            <li><b>作者兩點保留</b>：NE 有免疫抑制效應（動物與人體皆抑制促發炎細胞激素）；加 vasopressin 或第三種升壓劑沒有改善結果的說服性證據（VASST）。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>06 · 類固醇：一場未了的戀情 <span class="en">Corticosteroids</span></summary>
+        <div class="box-inner"><p class="kp"><b>NE／epi ≥0.25 μg/kg/min 時 hydrocortisone 50 mg q6h；縮短休克 1.5 天、不改善存活。</b></p>
+          <ul>
+            <li>理論上抗發炎＋增強對 catecholamine 的收縮反應；1960 年代以來無數研究沒有說服性的存活效益（ADRENAL）。</li>
+            <li>現行建議來自單一 meta-analysis（休克緩解快 1.5 天）；沒有療程建議，多數研究約 7 天。</li>
+          </ul>
+          <div class="kc-tags"><span class="dg-tag">作者持保留態度</span></div>
+        </div></details>
+
+      <details class="def-box"><summary>07 · 抗微生物治療 <span class="en">Antimicrobial therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>1 小時內開始；先抽 ≥2 套血液培養（不同穿刺點、每套 ≥20 mL）；培養陰性且無感染證據就停。</b></p>
+          <ul>
+            <li>2 套約偵測 <b class="mono">90%</b> 血流感染、3 套近 <b class="mono">98%</b>；一套可從留置導管取。</li>
+            <li>經驗性廣效（如 piperacillin/tazobactam）；MRSA 病史或院內盛行 → 加 vancomycin 或 daptomycin，培養與<b>鼻拭子</b>陰性可停；疑多重抗藥菌 → 兩種革蘭氏陰性覆蓋（如 cefepime ＋ piperacillin/tazobactam）。</li>
+            <li>目標同第 14 章：PCO₂ gap &lt;6、尿量 &gt;0.5 mL/kg/h、乳酸 &lt;2。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>08 · 毒性休克症候群 <span class="en">Toxic shock syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>超抗原大規模活化 T 細胞 → 細胞激素風暴 → 快速 MOF ＋ DIC；葡萄球菌與 A 群鏈球菌兩種。</b></p>
+          <ul>
+            <li><b>表現</b>：流感樣（發燒、肌痛、倦怠）、腹瀉、<b>日曬樣彌漫紅疹</b>含手掌腳底（2–3 週後脫屑）→ 48 小時內低血壓與多器官（腦、ARDS、AKI、肝、橫紋肌溶解、DIC）；末梢發紺、非凹陷性水腫。皮疹可以很淡、稍縱即逝，易被當成一般敗血性休克。</li>
+            <li><b>葡萄球菌 TSS</b>：定殖或侵襲性感染皆可、MSSA 較多；40% 與月經相關（tampon）、非月經來自手術傷口與皮下膿瘡；35% 找不到感染源；<b>血液培養只有 5% 陽性</b>。死亡率月經型 &lt;2%、非月經 6%。</li>
+            <li><b>鏈球菌 TSS</b>：壞死性筋膜炎、肌炎、產褥感染；近半找不到源；血液培養 60% 陽性；<b>痛與理學檢查不成比例</b>要想深部感染，MRI 或床邊超音波。死亡率 <b class="mono">35%</b>。</li>
+            <li><b>治療</b>：積極輸液（內皮滲漏更兇）→ 升壓；多數需插管。經驗性 piperacillin/tazobactam 或 meropenem ＋ vancomycin ＋ <b>clindamycin</b>（抑制毒素生成，所有 TSS 都加）。源頭控制：移除 tampon／IUD、引流、鼻腔去定殖；鏈球菌<b>清創</b>是存活關鍵。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>09 · 過敏反應與 Kounis 症候群 <span class="en">Anaphylaxis</span></summary>
+        <div class="box-inner"><p class="kp"><b>IgE 介導的多器官反應，數分鐘內發生、72 小時內可雙相復發；死亡率只有 0.25–0.33%；最被忽略的表現是急性冠心症。</b></p>
+          <ul>
+            <li>觸發：藥物（尤其抗微生物）、食物、昆蟲。特徵是<b>血管通透性上升 → 受累器官水腫</b>：蕁麻疹／血管性水腫 60–90%、上呼吸道水腫 50–60%、潮紅 45–55%、喘 45–50%；最令人怕的是低血壓。</li>
+            <li><b>Kounis 症候群</b>：冠脈痙攣 73%、斑塊破裂 22%、支架血栓 5%；多在過敏反應後 1 小時內，年輕無冠心病史者以痙攣為主。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>10 · 過敏的治療 <span class="en">Treatment</span></summary>
+        <div class="box-inner"><p class="kp"><b>Epinephrine 0.3–0.5 mg IM 前外側大腿、每 5–15 分鐘；β-blocker 使用者反應差時給 glucagon；類固醇無角色。</b></p>
+          <ul>
+            <li>Epinephrine 透過 β 受體阻斷肥大細胞脫顆粒，是唯一能停止反應的藥；皮下吸收慢；喉頭水腫可霧化（1:100 溶液 0.25 mL ＝ 2.5 mg 加 2 mL NS），效果不明。</li>
+            <li><b>Glucagon</b> 1–5 mg 緩慢 IV（5 分鐘）→ 5–15 μg/min 滴定；會嘔吐，意識不清者側躺。</li>
+            <li>二線只緩解症狀、絕不取代 epinephrine：diphenhydramine 25–50 mg ＋ H₂ 阻斷劑（ranitidine 50 mg IV／150 mg PO）併用最佳；albuterol 霧化 2.5 mL 0.5%。</li>
+            <li>類固醇：沒有證據能逆轉、減緩或預防復發——「在急性處置沒有角色」。</li>
+          </ul>
+          <div class="kbox"><div class="kbox-t">在地備註</div>Ranitidine 在多國已因 NDMA 問題下市；台大藥品資料庫有 famotidine 可作 H₂ 阻斷劑替代。</div>
+        </div></details>
+
+      <details class="def-box"><summary>11 · 過敏性休克 <span class="en">Anaphylactic shock</span></summary>
+        <div class="box-inner"><p class="kp"><b>滲漏可失去 35% 血管內容積，足以單獨造成低血容性休克：IV epinephrine 5–15 μg/min ＋ 1–2 L 晶體或 500 mL 5% albumin／5–10 分鐘。</b></p>
+          <ul>
+            <li>可先 10 μg IV bolus、需要時重複，維持 MAP ≥65。</li>
+            <li>之後考慮加膠體——嚴重滲漏下晶體液多半會漏到間質變水腫。</li>
+            <li>難治性低血壓：近期 β-blocker → glucagon；否則加 norepinephrine 或 phenylephrine（vasopressin 未評估）；此時預後差。</li>
+          </ul>
+        </div></details>
+
+      <details class="def-box"><summary>12 · 作者觀點：發炎（不是缺氧）是 ICU 最常見的死因 <span class="en">A Final Word</span></summary>
+        <div class="box-inner"><p class="kp"><b>敗血性休克是院內死亡首因、它的器官衰竭來自發炎造成的線粒體障礙——那麼「促進組織氧合」可能適得其反。</b></p>
+          <p>發炎的破壞主要靠氧化；提升組織氧合（氧氣吸入、輸血）在重症病人可能與目的相反。詳見第 25 章氧氣治療。</p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div>
+        </div></details>
+    </div>
+
+    <div class="dirhead" id="inf-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table">
+      <tr><th>治療</th><th>SSC 2021 建議</th><th>Marino 的註</th></tr>
+      <tr><td>輸液</td><td>30 mL/kg 理想體重晶體液，3 小時內；之後依 fluid responsiveness</td><td>液體累積增加死亡率；初期後出入平衡</td></tr>
+      <tr><td>升壓劑</td><td>Norepinephrine 首選；0.25–0.5 μg/kg/min 仍低血壓 → 加 vasopressin；仍難治 → epinephrine</td><td>NE 有免疫抑制；多重升壓劑無存活證據</td></tr>
+      <tr><td>類固醇</td><td>NE／epi ≥0.25 μg/kg/min → hydrocortisone 50 mg q6h（200 mg/day）</td><td>只縮短休克 1.5 天、不改善存活</td></tr>
+      <tr><td>抗微生物</td><td>1 小時內；先培養 ≥2 套；廣效 ± MRSA 覆蓋 ± 雙 GN 覆蓋；培養陰性且無感染證據即停</td><td>—</td></tr>
+      <tr><td>目標</td><td>MAP ≥65</td><td>加 PCO₂ gap &lt;6、尿量 &gt;0.5、乳酸正常化</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table">
+      <tr><th>特徵</th><th>葡萄球菌 TSS</th><th>鏈球菌 TSS</th></tr>
+      <tr><td>來源</td><td>月經（tampon）40%、手術傷口、皮下膿瘡；無源 35%</td><td>壞死性筋膜炎、肌炎、產褥感染；無源近半</td></tr>
+      <tr><td>血液培養陽性</td><td>5%</td><td>60%</td></tr>
+      <tr><td>診斷線索</td><td>月經、皮疹、任何葡萄球菌感染證據</td><td>痛與理學檢查不成比例；MRI／床邊超音波找筋膜炎</td></tr>
+      <tr><td>源頭控制</td><td>移除 tampon／IUD、鼻腔去定殖、引流</td><td>清創（存活關鍵）</td></tr>
+      <tr><td>抗生素</td><td colspan="2">經驗性 piperacillin/tazobactam 或 meropenem ＋ vancomycin ＋ clindamycin（抑制毒素）；再依菌種標靶</td></tr>
+      <tr><td>死亡率</td><td>月經型 &lt;2%、非月經 6%</td><td>35%</td></tr>
+    </table></div>
+
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Epinephrine 水溶液</th><th>濃度</th><th>用途</th><th>用法</th></tr>
+      <tr><td>1 : 100</td><td>10 mg/mL</td><td>喉頭水腫</td><td>0.25 mL（2.5 mg）加 2 mL NS 霧化；效果不明</td></tr>
+      <tr><td>1 : 1,000</td><td>1 mg/mL</td><td>過敏反應</td><td>0.3–0.5 mL（mg）前外側大腿深部 IM，每 5–15 分鐘可重複</td></tr>
+      <tr><td>1 : 10,000</td><td>0.1 mg/mL</td><td>過敏性休克</td><td>10 μg IV bolus 可重複；輸注 5–15 μg/min 維持 MAP ≥65</td></tr>
+    </table></div>
+    <div class="note">1:10,000 那一列的用法取自內文（過敏性休克段），原表 17.5 該列未完整抽出。</div>
+
+    <div class="dirhead" id="inf-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c17fl">
+      <div class="rxbox-t">敗血性休克初始輸液 <span class="en">30 mL/kg ideal body weight</span></div>
+      <div class="lead">SSC 指名用理想體重（這裡用 Devine 公式）。肥胖病人用實際體重會多給很多。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>性別</label><select id="sf_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="sf_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>實際體重 <span class="rx-en">kg</span></label><input type="number" id="sf_w" step="1" placeholder="85"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c17fl_out"></div>
+    </div>
+
+    <div class="rxbox" id="c17vp">
+      <div class="rxbox-t">升壓劑升階門檻 <span class="en">When to add vasopressin / hydrocortisone</span></div>
+      <div class="lead">把目前的 norepinephrine μg/min 換成 μg/kg/min，對照 SSC 2021 的 0.25–0.5 門檻。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="sv_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>目前 NE <span class="rx-en">μg/min</span></label><input type="number" id="sv_ne" step="1" placeholder="20"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c17vp_out"></div>
+    </div>
+
+    <div class="rxbox" id="c17ana">
+      <div class="rxbox-t">過敏反應給藥 <span class="en">Epinephrine · fluids · glucagon</span></div>
+      <div class="lead">成人劑量。輸注速率依你的泡法換算成 mL/h。</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="an_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Epinephrine 泡法 <span class="rx-en">10 · 4 · 16 μg/mL</span></label><select id="an_conc"><option value="10">1 mg/100 mL</option><option value="4">1 mg/250 mL</option><option value="16">4 mg/250 mL</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label class="toggle-inline"><input type="checkbox" id="an_bb"> 近期使用 β-blocker</label></div>
+      </div>
+      <div class="rx-out" id="c17ana_out"></div>
+    </div>
+
+    <div class="dirhead" id="inf-flow"><span class="dh-n">決策流程</span><span class="dh-e">Three inflammatory shocks</span></div>
+    <div class="lead">第一題先分清是哪一種，後面的問題只屬於該支。</div>
+    <div id="inf_flow">
+      <div class="flow-step" id="inf_s1">
+        <div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">表現型？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('pheno','sepsis',this)">疑似／確診感染＋器官功能障礙<span class="fo-sub">敗血性休克：需升壓劑＋乳酸 &gt;2</span></button>
+          <button class="flow-opt" onclick="infPick('pheno','tss',this)">日曬樣彌漫紅疹＋快速多重器官衰竭<span class="fo-sub">毒性休克症候群；月經／產褥／傷口／軟組織劇痛</span></button>
+          <button class="flow-opt" onclick="infPick('pheno','ana',this)">暴露觸發物數分鐘內：蕁麻疹、血管性水腫、喘<span class="fo-sub">過敏反應</span></button>
+        </div>
+      </div>
+
+      <div class="flow-connector hidden" id="inf_cS2">↓</div>
+      <div class="flow-step hidden" id="inf_sS2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">30 mL/kg 理想體重晶體液之後仍低血壓？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('hypo','yes',this)">是<span class="fo-sub">MAP &lt;65</span></button>
+          <button class="flow-opt" onclick="infPick('hypo','no',this)">否</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="inf_cS3">↓</div>
+      <div class="flow-step hidden" id="inf_sS3">
+        <div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">Norepinephrine 用到哪裡了？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('ne','lt',this)">&lt;0.25 μg/kg/min 已達 MAP ≥65</button>
+          <button class="flow-opt" onclick="infPick('ne','ge',this)">≥0.25–0.5 μg/kg/min 仍 MAP &lt;65<span class="fo-sub">70 kg：18–35 μg/min</span></button>
+          <button class="flow-opt" onclick="infPick('ne','ref',this)">NE ＋ vasopressin 仍難治</button>
+        </div>
+      </div>
+
+      <div class="flow-connector hidden" id="inf_cT2">↓</div>
+      <div class="flow-step hidden" id="inf_sT2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">比較像哪一種？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('org','staph',this)">葡萄球菌<span class="fo-sub">月經、tampon、手術傷口、皮下膿瘡</span></button>
+          <button class="flow-opt" onclick="infPick('org','strep',this)">A 群鏈球菌<span class="fo-sub">軟組織劇痛、壞死性筋膜炎、產褥</span></button>
+          <button class="flow-opt" onclick="infPick('org','unk',this)">還不知道</button>
+        </div>
+      </div>
+
+      <div class="flow-connector hidden" id="inf_cA2">↓</div>
+      <div class="flow-step hidden" id="inf_sA2">
+        <div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">有低血壓（過敏性休克）嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('shock','no',this)">沒有</button>
+          <button class="flow-opt" onclick="infPick('shock','yes',this)">有</button>
+        </div>
+      </div>
+      <div class="flow-connector hidden" id="inf_cA3">↓</div>
+      <div class="flow-step hidden" id="inf_sA3">
+        <div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">近期使用 β-blocker、對 epinephrine 反應差？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="infPick('bb','yes',this)">是</button>
+          <button class="flow-opt" onclick="infPick('bb','no',this)">否</button>
+        </div>
+      </div>
+
+      <div class="flow-rec rec-idle" id="inf_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="infReset()">重新開始</button></div>
+    </div>
+
+    <div class="dirhead" id="inf-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_inf"></div>
+
+    <div class="dirhead" id="inf-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks">
+      <a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症與敗血性休克處置決策（SSC 2026）</a>
+      <a class="flow-link" data-ct="tools/sofa.html" href="#">🧮 SOFA</a>
+      <a class="flow-link" data-ct="tools/news2.html" href="#">🧮 NEWS2</a>
+      <a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素指引（台大菌譜）</a>
+      <a class="flow-link" data-ct="pathways/adrenal-crisis.html" href="#">腎上腺危象</a>
+    </div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 14–17 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示；台大院內藥品有無依臨床工具箱的藥品資料庫。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24171518/" target="_blank" rel="noopener" class="ref-link">Vincent &amp; De Backer. Circulatory shock. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25392034/" target="_blank" rel="noopener" class="ref-link">Cecconi et al. ESICM consensus on circulatory shock. ICM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24635770/" target="_blank" rel="noopener" class="ref-link">Asfar et al. SEPSISPAM. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33863361/" target="_blank" rel="noopener" class="ref-link">Owen et al. Peripheral vasopressors meta-analysis. Crit Care 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28528561/" target="_blank" rel="noopener" class="ref-link">Khanna et al. ATHOS-3. NEJM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29561287/" target="_blank" rel="noopener" class="ref-link">Scheeren et al. CO₂ gaps. Curr Opin Crit Care 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36734453/" target="_blank" rel="noopener" class="ref-link">Nedel et al. Oscillometric NIBP in ICU. Anaesthesiol Intensive Ther 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7935634/" target="_blank" rel="noopener" class="ref-link">Bickell et al. Immediate vs delayed fluid resuscitation. NEJM 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28225743/" target="_blank" rel="noopener" class="ref-link">Cannon et al. EAST damage control resuscitation. JTACS 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26720428/" target="_blank" rel="noopener" class="ref-link">Gonzalez et al. TEG-guided resuscitation RCT. Ann Surg 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33769424/" target="_blank" rel="noopener" class="ref-link">Brill et al. TEG in damage control resuscitation. Shock 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28923988/" target="_blank" rel="noopener" class="ref-link">van Diepen et al. AHA cardiogenic shock statement. Circulation 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33657830/" target="_blank" rel="noopener" class="ref-link">Henry et al. AHA invasive management of AMI-CS. Circulation 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29976291/" target="_blank" rel="noopener" class="ref-link">Levy et al. Epinephrine vs norepinephrine in CS. JACC 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22920912/" target="_blank" rel="noopener" class="ref-link">Thiele et al. IABP-SHOCK II. NEJM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32682486/" target="_blank" rel="noopener" class="ref-link">Combes et al. Temporary circulatory support. Lancet 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26903338/" target="_blank" rel="noopener" class="ref-link">Singer et al. Sepsis-3. JAMA 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34599691/" target="_blank" rel="noopener" class="ref-link">Evans et al. Surviving Sepsis Campaign 2021. ICM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11445683/" target="_blank" rel="noopener" class="ref-link">Sair et al. Tissue oxygenation in sepsis. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32520577/" target="_blank" rel="noopener" class="ref-link">Stolk et al. Norepinephrine dysregulates immune response. AJRCCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29347874/" target="_blank" rel="noopener" class="ref-link">Venkatesh et al. ADRENAL. NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29761216/" target="_blank" rel="noopener" class="ref-link">Rygård et al. Low-dose steroids meta-analysis. ICM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19393958/" target="_blank" rel="noopener" class="ref-link">Lappin &amp; Ferguson. Gram-positive toxic shock. Lancet Infect Dis 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30225523/" target="_blank" rel="noopener" class="ref-link">Schmitz et al. Streptococcal TSS in the ICU. Ann Intensive Care 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26505932/" target="_blank" rel="noopener" class="ref-link">Lieberman et al. Anaphylaxis practice parameter 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32001253/" target="_blank" rel="noopener" class="ref-link">Shaker et al. Anaphylaxis 2020 practice parameter update. JACI 2020</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/shock.js"></script>
+<script>ICU.makeTabs('shock'); /* 分頁由 location.hash 決定（#ov／#hem／#cs／#inf），造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

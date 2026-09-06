@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>心臟疾患 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="心臟疾患">
+<div class="sheet">
+<div class="view active" id="view-cardiac">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section VII</div><h1>心臟疾患</h1><div class="sub">Cardiac Disorders · 急性心衰竭 → 心搏過速 → 急性冠心症 → 心跳停止 · 第 18–21 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-cardiac'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="cardiac_tabs">
+    <button class="tab-btn active" data-p="hf">心衰竭 <span class="mono">Ch18</span></button>
+    <button class="tab-btn" data-p="tachy">心搏過速 <span class="mono">Ch19</span></button>
+    <button class="tab-btn" data-p="acs">冠心症 <span class="mono">Ch20</span></button>
+    <button class="tab-btn" data-p="arrest">心跳停止 <span class="mono">Ch21</span></button>
+  </div>
+
+  <!-- ==================== Ch18 Acute Heart Failure(s) ==================== -->
+  <section class="cardiac-panel" data-panel="hf" id="cardiac-p-hf">
+    <div class="dirhead"><span class="dh-n">第 18 章 急性心衰竭</span><span class="dh-e">Chapter 18 · Acute Heart Failure(s)</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#hf/hf-key"><i>01</i>重點卡</a><a class="sp-chip" href="#hf/hf-tab"><i>02</i>對照表</a><a class="sp-chip" href="#hf/hf-calc"><i>03</i>計算</a><a class="sp-chip" href="#hf/hf-flow"><i>04</i>流程</a><a class="sp-chip" href="#hf/hf-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#hf/hf-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>心衰竭不是一種病</b>：收縮（EF ≤40／41–49）或舒張（EF ≥50，已占一半）、左或右；壓力分不出來，容積與 EF 才分得出來。</span></div>
+        <div class="lede-item"><span>②</span><span><b>沒有休克的急性心衰竭，主角是靜脈鬱血</b>：肺水腫與心腎症候群都是靜脈壓的問題，不是心輸出量的問題。</span></div>
+        <div class="lede-item"><span>③</span><span><b>利尿劑要保守</b>：IV furosemide 會降心輸出量、flash 肺水腫不是液體過多、HFpEF 更怕充填不足；高血壓先擴血管，正常血壓才 1 小時內利尿。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="hf-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="hf-kc">全部展開</button></div>
+    <div id="hf-kc">
+      <details class="def-box"><summary>01 · 收縮 vs 舒張功能障礙 <span class="en">Systolic vs diastolic dysfunction</span></summary>
+        <div class="box-inner"><p class="kp"><b>兩者 EDP 都升、心搏量都降；差在 EDV——收縮障礙 EDV 變大、舒張障礙（順應性 ＝ ΔEDV/ΔEDP 下降）EDV 變小。門檻 97 mL/m²。</b></p>
+          <ul><li>EDV 床邊難量 → 用 EF ＝ SV/EDV：正常 ≥55，心衰竭病人以 ≥50 當正常（後負荷升會壓低 EF 5–10%）。</li><li>HFpEF ≥50%（舒張）、HFmrEF 41–49%、HFrEF ≤40%。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 舒張功能障礙 <span class="en">Diastolic dysfunction / HFpEF</span></summary>
+        <div class="box-inner"><p class="kp"><b>至少 50% 的左心衰竭；EF 保留但 EDV 小，所以心搏量仍低。</b></p>
+          <ul><li>原因：心室肥厚、缺血頓抑、限制型（纖維化）心肌病變、心包填塞；呼吸器的高胸內壓會加重。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 右心衰竭 <span class="en">Right heart failure</span></summary>
+        <div class="box-inner"><p class="kp"><b>多來自肺高壓（肺栓塞、慢性肺病）或下壁梗塞，機轉是收縮障礙 → RVEDV 升；CVP 要到心包限制才升，臨床難察覺。</b></p>
+          <ul><li>TTE 是床邊標準：RV 腔正常約 LV 的 2/3；RV 比 LV 大＋舒張期中隔變平＝容積過載；中隔推向左 → 左心舒張功能障礙（室間相依）。3D 超音波可算 RVEF（正常 >45%）；MRI 最準。</li><li>有 PA 導管：CVP ≥ PAWP 想右心衰竭——但心包填塞也會，要超音波分辨。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 三個進展階段 <span class="en">Progressive stages</span></summary>
+        <div class="box-inner"><p class="kp"><b>① 充填壓（wedge）先升、心搏量維持——代價是肺鬱血與喘；② 心搏量降、心跳升補償，心輸出量維持；③ 心輸出量開始掉＝失代償。</b></p></div></details>
+      <details class="def-box"><summary>05 · 神經體液反應 <span class="en">Neurohumoral responses</span></summary>
+        <div class="box-inner"><p class="kp"><b>利鈉胜肽（卸載：排鈉、擴血管）是有益的；交感與 RAA（縮血管、留鈉留水）早期有用、晚期反噬。</b></p>
+          <ul><li>Angiotensin 收縮出球小動脈維持腎絲球過濾；aldosterone 留鈉水、vasopressin 縮血管又留水——晚期促成肺水腫。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 靜脈鬱血的兩個後果 <span class="en">Venous congestion</span></summary>
+        <div class="box-inner"><p class="kp"><b>失代償時周邊縮血管通常撐得住血壓與灌流，所以表現以鬱血為主：心因性肺水腫（自肺門向外放射的浸潤、常併肋膜積液）與心腎症候群。</b></p>
+          <ul><li>心腎：心輸出量與腎功能<b>不相關</b>、MAP >70 腎自動調節仍在——腎功能差是靜脈壓升高降低腎動靜脈壓差；低心輸出量只在心因性休克才是主角。主要治療是利尿。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 利鈉胜肽 <span class="en">BNP / NT-proBNP</span></summary>
+        <div class="box-inner"><p class="kp"><b>BNP <100、NT-proBNP <300 pg/mL → 心衰竭不太可能；升高不專一，ICU 只拿來排除。</b></p>
+          <ul><li>proBNP 由兩側心室因壁張力釋放，切成 BNP（活性）與 NT-proBNP（無活性、半衰期長、值高 3–5 倍）；腎清除為主，脂肪組織受體也清（肥胖偏低）。</li><li>非心衰竭升高：心肌炎、心室肥厚、ACS、心包疾病、AF、電擊、心臟手術、高齡、腎衰竭、貧血、肺栓塞、肺高壓、細菌性敗血症、重症。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 高血壓型：先擴血管 <span class="en">Hypertensive AHF: vasodilators first</span></summary>
+        <div class="box-inner"><p class="kp"><b>Nitroglycerin 5 μg/min 起、每 5 分加 5，多數 5–100，>200 不建議；玻璃瓶＋聚乙烯管（PVC 吸附 80%）；≤24 小時（耐受、propylene glycol 中毒）。</b></p>
+          <ul><li>擴動靜脈：降前負荷（肺鬱血）＋降後負荷（升心輸出量），肺微血管靜水壓下降。</li><li>Propylene glycol 中毒：乳酸酸中毒、譫妄、低血壓、MOF。極高劑量可 methemoglobin（治療劑量幾乎不會）。</li><li>20% 對 NTG 無反應 → nitroprusside：5 個氰化物（腎肝功能不全不用、可加 sodium thiosulfate）、冠狀竊血（缺血性心臟病不用）。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 利尿劑的時機與三個警語 <span class="en">Diuretics: timing &amp; caveats</span></summary>
+        <div class="box-inner"><p class="kp"><b>高血壓型：血壓控制後仍鬱血才利尿（IV furosemide 經腎素→angiotensin II 急性縮血管；wedge >20 才加）。正常血壓型：1 小時內給利尿劑與較好結局相關（有灌流下降證據則考慮 NTG）。</b></p>
+          <ul><li>① IV furosemide 降心輸出量（前負荷降＋後負荷升）；② 肺水腫不等於液體過多——缺血頓抑的「flash」肺水腫；③ HFpEF 利尿會減少充填。利尿後灌流變差 → NTG，有時要 bolus 輸液。</li><li>利尿只在劑量有限時改善結局。</li></ul></div></details>
+      <details class="def-box"><summary>10 · Furosemide 怎麼給 <span class="en">Furosemide dosing</span></summary>
+        <div class="box-inner"><p class="kp"><b>未用過 40 mg IV（腎功能不全 60–80）；門診有在吃＝每日總量；2 小時尿 <1 L 就加倍到 200，200 無效＝抗藥；有效劑量改 bid，鬱血解除後改口服（吸收只 50%）。</b></p>
+          <ul><li>5 分鐘起效、20–60 分高峰、2 小時結束。</li><li>抗藥原因：低白蛋白（高蛋白結合）、腎低灌流、diuretic braking。對策：bumetanide 1 mg ＝ torsemide 20 mg ＝ furosemide 40 mg；加 metolazone 2.5–10 mg qd（腎功能不全仍有效、1 小時起效 9 小時高峰、先幾小時給；低血鉀風險）。</li><li>大量過載連續輸注：80 mg bolus → eGFR ≥30：5 mg/hr，尿 <100 mL/hr 再 bolus 升 10，最高 40；eGFR <30：20 → 40 mg/hr。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 改善長期結局的藥 <span class="en">Long-term therapies (HFrEF)</span></summary>
+        <div class="box-inner"><p class="kp"><b>穩定後才開、低血壓或低灌流不開：RAA 抑制（sacubitril/valsartan 最強）、β 阻斷劑（carvedilol、metoprolol succinate）、SGLT2i（HFrEF 與 HFpEF 都建議、不分糖尿病）、aldosterone 拮抗劑。</b></p>
+          <ul><li>Sacubitril/valsartan 24/26 bid（高血壓 49/51）→ 目標 97/103，4–8 週爬；低血壓、腎惡化、高血鉀、血管性水腫（任何來源的血管性水腫史禁忌）；HFpEF 無一致效益。</li><li>β 阻斷劑：carvedilol 3.125 bid → 25–50；metoprolol succinate 12.5–25 → 200 qd；突然停會反彈，穩定就重啟；HFpEF 無建議。</li><li>SGLT2i：效益與降糖無關；euglycemic DKA 風險。</li><li>Spironolactone／eplerenone：HFrEF 存活效益；GFR <30 或近期高血鉀不用；HFpEF 慎。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文截斷</div>表 18.5 在抽出時止於 SGLT2i 品名，dapagliflozin／empagliflozin 與 aldosterone 拮抗劑的劑量欄未取得，依 2022 AHA/ACC/HFSA 指引：dapagliflozin 10 mg qd、empagliflozin 10 mg qd、spironolactone 12.5–25 → 25–50 mg qd、eplerenone 25 → 50 mg qd。</div></div></details>
+      <details class="def-box"><summary>12 · 正壓呼吸 <span class="en">Positive pressure breathing</span></summary>
+        <div class="box-inner"><p class="kp"><b>胸內正壓降低收縮期跨壁壓 → 降左心室後負荷、助排空；CPAP 升心輸出量、加速心因性肺水腫改善——非侵襲性正壓已是急性心衰竭併肺水腫的標準選項。</b></p></div></details>
+    </div>
+    <div class="dirhead" id="hf-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>分類</th><th>LVEF</th><th>問題</th><th>長期藥物</th></tr>
+      <tr><td>HFpEF</td><td>≥50%</td><td>舒張功能障礙</td><td>SGLT2i；RAA 抑制與 β 阻斷劑無一致效益；利尿慎</td></tr>
+      <tr><td>HFmrEF</td><td>41–49%</td><td>輕度收縮障礙</td><td>依 HFrEF 類推</td></tr>
+      <tr><td>HFrEF</td><td>≤40%</td><td>中重度收縮障礙</td><td>RAA 抑制＋β 阻斷劑＋SGLT2i＋aldosterone 拮抗劑</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>擴血管劑</th><th>劑量</th><th>陷阱</th></tr>
+      <tr><td>Nitroglycerin</td><td>5 μg/min 起，每 5 分 +5；有效 5–100，>200 不建議</td><td>PVC 吸附（玻璃瓶＋PE 管）；>24 h 耐受；propylene glycol 中毒</td></tr>
+      <tr><td>Nitroprusside</td><td>NTG 無反應時的替代（可加 thiosulfate）</td><td>氰化物（腎肝功能不全不用）；冠狀竊血（缺血性心臟病不用）</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Furosemide</th><th>做法</th></tr>
+      <tr><td>首劑</td><td>未用過 40 mg IV（腎功能不全 60–80）；門診使用者＝每日總量</td></tr>
+      <tr><td>調整</td><td>2 小時尿 <1 L → 加倍，到 200；200 無效＝抗藥</td></tr>
+      <tr><td>維持</td><td>有效劑量 bid；改口服要注意吸收 50%</td></tr>
+      <tr><td>抗藥</td><td>bumetanide 1 mg／torsemide 20 mg；＋metolazone 2.5–10 mg qd（先給幾小時）</td></tr>
+      <tr><td>連續輸注</td><td>80 mg bolus → eGFR ≥30：5→10→40 mg/hr；eGFR <30：20→40 mg/hr（目標尿量 ≥100 mL/hr）</td></tr>
+    </table></div>
+    <div class="dirhead" id="hf-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c18ef">
+      <div class="rxbox-t">EF 與心衰竭分類</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>舒張末容積 EDV <span class="rx-en">mL</span></label><input type="number" id="ef_edv" step="1" placeholder="150"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心搏量 SV <span class="rx-en">mL</span></label><input type="number" id="ef_sv" step="1" placeholder="55"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>BSA <span class="rx-en">m²</span></label><input type="number" id="ef_bsa" step="0.01" placeholder="1.8"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c18ef_out"></div>
+    </div>
+    <div class="rxbox" id="c18bnp">
+      <div class="rxbox-t">利鈉胜肽判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>檢驗 <span class="rx-en">assay</span></label><select id="bn_t"><option value="bnp">BNP</option><option value="nt">NT-proBNP</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>數值 <span class="rx-en">pg/mL</span></label><input type="number" id="bn_v" step="10" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肥胖 <span class="rx-en">obese</span></label><select id="bn_ob"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腎衰竭 <span class="rx-en">renal failure</span></label><select id="bn_rf"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c18bnp_out"></div>
+    </div>
+    <div class="rxbox" id="c18ntg">
+      <div class="rxbox-t">Nitroglycerin 輸注</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>劑量 <span class="rx-en">μg/min</span></label><input type="number" id="ng_d" step="5" placeholder="20"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>藥量 <span class="rx-en">mg</span></label><input type="number" id="ng_mg" step="5" placeholder="50"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>溶液 <span class="rx-en">mL</span></label><input type="number" id="ng_ml" step="50" placeholder="250"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c18ntg_out"></div>
+    </div>
+    <div class="rxbox" id="c18fur">
+      <div class="rxbox-t">Furosemide 劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>門診每日總量 <span class="rx-en">mg（無則 0）</span></label><input type="number" id="fu_home" step="20" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腎功能不全 <span class="rx-en">renal impairment</span></label><select id="fu_renal"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>上一劑 <span class="rx-en">mg</span></label><input type="number" id="fu_last" step="20" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>2 小時尿量 ≥1 L <span class="rx-en">response</span></label><select id="fu_resp"><option value="yes">有</option><option value="no">沒有</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>eGFR <span class="rx-en">mL/min/1.73m²</span></label><input type="number" id="fu_gfr" step="1" placeholder="45"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c18fur_out"></div>
+    </div>
+    <div class="dirhead" id="hf-flow"><span class="dh-n">決策流程</span><span class="dh-e">Acute left heart failure: first moves</span></div>
+    <div id="hf_flow">
+      <div class="flow-step" id="hf_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">血壓？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hfPick('bp','high',this)">高血壓</button>
+          <button class="flow-opt" onclick="hfPick('bp','normal',this)">正常</button>
+          <button class="flow-opt" onclick="hfPick('bp','low',this)">低血壓或乳酸升高<span class="fo-sub">心因性休克</span></button>
+        </div></div>
+      <div class="flow-step" id="hf_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（正常血壓）有周邊灌流下降的證據嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hfPick('cong','hypo',this)">有<span class="fo-sub">PCO₂ gap 大、ScvO₂ 低</span></button>
+          <button class="flow-opt" onclick="hfPick('cong','yes',this)">沒有，只有靜脈鬱血</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="hf_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="hfReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="hf-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_hf"></div>
+    <div class="dirhead" id="hf-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/heart-failure.html" href="#">心衰竭</a><a class="flow-link" data-ct="pathways/cardiogenic-shock.html" href="#">心因性休克</a><a class="flow-link" data-ct="tools/vasoactive.html" href="#">血管活性藥</a><a class="flow-link" data-ct="pathways/hypertension.html" href="#">高血壓用藥</a><a class="flow-link" href="shock.html#cs">Marino 第 16 章 心因性休克</a><a class="flow-link" href="monitoring.html#pac">Marino 第 8 章 肺動脈導管</a></div>
+  </section>
+
+  <!-- ==================== Ch19 Tachyarrhythmias ==================== -->
+  <section class="cardiac-panel hidden" data-panel="tachy" id="cardiac-p-tachy">
+    <div class="dirhead"><span class="dh-n">第 19 章 心搏過速</span><span class="dh-e">Chapter 19 · Tachyarrhythmias</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#tachy/ta-key"><i>01</i>重點卡</a><a class="sp-chip" href="#tachy/ta-tab"><i>02</i>對照表</a><a class="sp-chip" href="#tachy/ta-calc"><i>03</i>計算</a><a class="sp-chip" href="#tachy/ta-flow"><i>04</i>流程</a><a class="sp-chip" href="#tachy/ta-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#tachy/ta-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>三件事就能分類</b>：QRS 寬度、R-R 規律性、心房活動——窄且規律看 P 波，窄且不規律幾乎是 AF，寬且規律當 VT，寬且不規律是 AF 併傳導異常（VT 從不不規律）。</span></div>
+        <div class="lede-item"><span>②</span><span><b>AF 是 ICU 最常見的心律不整</b>：穩定就速率控制（diltiazem、β 阻斷劑、amiodarone；digoxin 不單用），不穩定就同步電擊；WPW 併 AF 禁 AV 結阻斷劑。</span></div>
+        <div class="lede-item"><span>③</span><span><b>不穩定的寬 QRS 一律電擊</b>；穩定且確定 VT 給 amiodarone、不確定就試 adenosine（SVT 會停、VT 不會）。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ta-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ta-kc">全部展開</button></div>
+    <div id="ta-kc">
+      <details class="def-box"><summary>01 · 辨識三步驟 <span class="en">Recognition</span></summary>
+        <div class="box-inner"><p class="kp"><b>QRS ≤0.12 秒＝上心室（竇性、心房、AVNRT、撲動、顫動）；>0.12＝VT 或 SVT 併傳導延長。</b></p>
+          <ul><li>窄且規律：P 與 PR 一致＝竇性；無 P＝AVNRT；鋸齒＝撲動（固定 2:1／3:1）。</li><li>窄且不規律：多種 P 形態＋PR 變動＝MAT；無 P＋雜亂顫動波＝AF。</li><li>寬且不規律＝SVT 併傳導異常；AV 分離＝VT。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 心房顫動的面貌 <span class="en">Atrial fibrillation</span></summary>
+        <div class="box-inner"><p class="kp"><b>成人最常見（2–4%）；陣發 ≤7 天、持續 >7 天、長期持續 >1 年、永久；中位年齡 75。</b></p>
+          <ul><li>ICU 新發 2–44%：老年、冠心病、敗血症、休克、呼吸衰竭；25% 自行轉律、易復發、20% 因 AF 再住院、3 年中風只 1%。</li><li>術後 AF：心臟／胸腔手術達 45%、其他大手術 10%，多在術後 5 天內；心臟手術後 β 阻斷劑與鎂可預防。</li></ul></div></details>
+      <details class="def-box"><summary>03 · AF 的兩個代價 <span class="en">Consequences</span></summary>
+        <div class="box-inner"><p class="kp"><b>心房收縮貢獻 25% 的 EDV——只在二尖瓣狹窄或心室順應性差時才有感；快速率縮短充填 → 收縮壓隨 R-R 變動 → 脈搏短絀。中風風險 5 倍（<48 小時首發除外）。</b></p>
+          <ul><li>脈搏短絀消失是速率控制更生理的終點（研究終點 80–110 沒有共識）。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 速率控制藥 <span class="en">Rate control</span></summary>
+        <div class="box-inner"><p class="kp"><b>Diltiazem 最常用（1 小時 55% 達標、維持 90%；低血壓 20–30%、負性肌力）；β 阻斷劑 70%（高腎上腺狀態最好，esmolol 半衰期 9 分好滴定）；amiodarone 心臟抑制少、HFrEF 較宜；digoxin 起效太慢不單用。</b></p>
+          <ul><li>Diltiazem 頭幾小時勝過 amiodarone 與 digoxin。</li><li>IV amiodarone 低血壓遠少於 diltiazem（是溶劑 polysorbate 80 造成）；延長 QT（torsade 罕見）；抑制 digoxin、warfarin 代謝。轉口服：停輸注前 4–5 小時給 400 mg，400 bid 到總負荷 10 g，再 100–200 qd。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 電擊與 WPW <span class="en">Cardioversion &amp; WPW</span></summary>
+        <div class="box-inner"><p class="kp"><b>不穩定才電擊：雙相 100 J（單相 200）、固定能量優於遞增、新發最易成功；先 TEE 排除心房血栓、DOAC 盡早；<48 小時首發不需抗凝。</b></p>
+          <ul><li>WPW（短 PR＋delta 波）併 AF：AV 結阻斷劑（鈣離子阻斷劑、β 阻斷劑、digoxin）不但無效還會誘發 VF——改電擊或 amiodarone／procainamide。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 中風預防 <span class="en">Stroke prevention</span></summary>
+        <div class="box-inner"><p class="kp"><b>CHA₂DS₂-VASc：男 ≥2、女 ≥3 確定抗凝（風險 ≥5 倍）；男 1、女 2 考慮。瓣膜性 AF 一律抗凝且 warfarin 優於 DOAC。</b></p>
+          <ul><li>禁忌：活動性出血、腦出血史、顱內腫瘤、病灶仍在的反覆出血、血小板 <50k；<b>跌倒史不是禁忌</b>。</li><li>Warfarin 降中風達 65%，但治療窗窄要監測 INR；非瓣膜性 AF 首選 DOAC（同效、大出血少、固定劑量免監測）；edoxaban 效果可能稍差、dabigatran 出血可能較多。</li><li>CrCl <30 全部減量（可測 Xa 活性）、<15 避免。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>表 19.3 把 dabigatran 標準劑量印成 50 mg BID，應為 150 mg BID（減量 110 mg BID 用於 ≥80 歲或 CrCl <30）。</div></div></details>
+      <details class="def-box"><summary>07 · 多源性心房搏過速 <span class="en">Multifocal atrial tachycardia</span></summary>
+        <div class="box-inner"><p class="kp"><b>老年（平均 70）、過半慢性肺病；鎂鉀缺乏、冠心病；頑固難治。</b></p>
+          <ul><li>先補鎂鉀（先鎂後鉀）；血鎂正常也可經驗性給：MgSO₄ 2 g/15 分 → 6 g/6 小時，轉律 88%、與血鎂無關。</li><li>無效且非 COPD → metoprolol 80%；COPD → verapamil（轉律 <50% 但可減速；每 15–30 分可重複，總量 20 mg；HFrEF 不用）。</li></ul>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>Verapamil 劑量原文印成「0.25–5 mg IV over 2 min」，依 ACLS 2010 應為 2.5–5 mg。</div></div></details>
+      <details class="def-box"><summary>08 · 陣發性 SVT 與 adenosine <span class="en">PSVT &amp; adenosine</span></summary>
+        <div class="box-inner"><p class="kp"><b>AVNRT 占 PSVT 50–60%：突發、140–250、無 P、多無心臟病、女性較多；先迷走操作（改良式 Valsalva 44%、傳統 24%、頸動脈按摩 9%），再 adenosine 6 → 12 → 12 mg（>90% 終止）。</b></p>
+          <ul><li>快推、沖管、貼接頭；<30 秒起效、作用 1–2 分鐘；經中央導管減半（心室停搏報告）。</li><li>副作用：轉律後心搏過緩／AV 阻斷（atropine 無效、60 秒內自解）；dipyridamole 加強阻斷不併用；氣喘禁忌（喘感非支氣管痙攣）。</li><li>無效 → diltiazem／verapamil；抗藥或不穩定 → 同步電擊（可能 >100 J）。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 心室頻脈 vs SVT <span class="en">VT vs SVT with aberrancy</span></summary>
+        <div class="box-inner"><p class="kp"><b>VT：寬 QRS、突發、規律、140–200，幾乎都有結構性心臟病；有心臟病者的寬 QRS 心搏過速 95% 是 VT——當 VT 處理。</b></p>
+          <ul><li>直接證據：AV 分離（P 在下壁與前胸導程最明顯）、融合波。</li><li>自行轉律後 QRS 仍寬 → 原有束支阻斷 → 其實是 SVT。</li><li>不穩定 → 同步 100 J（無效再 100 J 雙相 → 200；避免 360 傷心肌）；穩定確定 VT → amiodarone；不確定 → adenosine 試驗。</li></ul></div></details>
+      <details class="def-box"><summary>10 · Torsade de pointes 與 QTc <span class="en">Torsade &amp; QT</span></summary>
+        <div class="box-inner"><p class="kp"><b>多形 VT 繞著等電位線扭；多為後天 QT 延長（Class IA／III、macrolide、phenothiazine／butyrophenone、cisapride；低鉀低鈣低鎂）；QT 正常的多形 VT 是缺血。</b></p>
+          <ul><li>QTc ＝ QT/√RR，V3–V4 最可靠；≤0.44 正常、>0.5 風險——但 ICU QT 延長常見、torsade 少見。</li><li>持續多形 VT → 不同步電擊；MgSO₄ 1–2 g/15 分（可與電擊併用）；補鉀鎂、停高風險藥（haloperidol）；QT 正常者 amiodarone／β 阻斷劑防復發。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="ta-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>AF 速率控制</th><th>劑量</th><th>備註</th></tr>
+      <tr><td>Diltiazem</td><td>0.25 mg/kg IV/2 分 → 5–15 mg/hr</td><td>最常用；低血壓 20–30%、負性肌力（HFrEF 慎）</td></tr>
+      <tr><td>Esmolol</td><td>500 μg/kg bolus → 50–200 μg/kg/min（每升階前再 bolus）</td><td>半衰期 9 分，好滴定</td></tr>
+      <tr><td>Metoprolol</td><td>2.5–5 mg IV/2 分，每 5–10 分可重複</td><td>心臟選擇性；低血壓</td></tr>
+      <tr><td>Amiodarone</td><td>150 mg/10 分（可重複）→ 1 mg/min × 6 h → 0.5 mg/min × 18 h；24 h ≤2.2 g</td><td>HFrEF 較宜；可能轉律；QT、digoxin／warfarin 交互作用</td></tr>
+      <tr><td>Digoxin</td><td>—</td><td>起效慢，6 小時仍未達標；只當輔助</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>CHA₂DS₂-VASc</th><th>分</th><th>抗凝</th></tr>
+      <tr><td>心衰竭 C</td><td>1</td><td rowspan="8">確定：男 ≥2、女 ≥3<br>考慮：男 1、女 2<br>瓣膜性 AF：一律（warfarin）</td></tr>
+      <tr><td>高血壓 H</td><td>1</td></tr>
+      <tr><td>年齡 >75 A₂</td><td>2</td></tr>
+      <tr><td>糖尿病 D</td><td>1</td></tr>
+      <tr><td>中風／TIA／VTE S₂</td><td>2</td></tr>
+      <tr><td>血管疾病 V</td><td>1</td></tr>
+      <tr><td>年齡 65–74 A</td><td>1</td></tr>
+      <tr><td>女性 Sc</td><td>1</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>DOAC</th><th>標準</th><th>減量</th></tr>
+      <tr><td>Dabigatran</td><td>150 mg bid</td><td>110 mg bid：≥80 歲或 CrCl <30</td></tr>
+      <tr><td>Rivaroxaban</td><td>20 mg qd</td><td>15 mg qd：CrCl <30</td></tr>
+      <tr><td>Apixaban</td><td>5 mg bid</td><td>2.5 mg bid：≥80 歲、≤60 kg、Cr ≥1.5 任二項</td></tr>
+      <tr><td>全部</td><td colspan="2">CrCl <30 減量；<15 避免</td></tr>
+    </table></div>
+    <div class="note">原書表 19.3 抽出時在 apixaban 減量條件處截斷，依 2020 ESC 指引補齊。</div>
+    <div class="dirhead" id="ta-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c19qtc">
+      <div class="rxbox-t">QTc（Bazett）</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>QT <span class="rx-en">秒</span></label><input type="number" id="qt_qt" step="0.01" placeholder="0.40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心跳 <span class="rx-en">bpm</span></label><input type="number" id="qt_hr" step="1" placeholder="90"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c19qtc_out"></div>
+    </div>
+    <div class="rxbox" id="c19cha">
+      <div class="rxbox-t">CHA₂DS₂-VASc</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>心衰竭 <span class="rx-en">C</span></label><select id="ch_c"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>高血壓 <span class="rx-en">H</span></label><select id="ch_h"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>年齡 <span class="rx-en">A</span></label><select id="ch_a"><option value="0"><65</option><option value="1">65–74</option><option value="2">>75</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>糖尿病 <span class="rx-en">D</span></label><select id="ch_d"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>中風／TIA／VTE <span class="rx-en">S₂</span></label><select id="ch_s"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血管疾病 <span class="rx-en">V</span></label><select id="ch_v"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>女性 <span class="rx-en">Sc</span></label><select id="ch_f"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c19cha_out"></div>
+    </div>
+    <div class="rxbox" id="c19rate">
+      <div class="rxbox-t">心律藥物劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>藥物 <span class="rx-en">drug</span></label><select id="rt_d"><option value="dilt">Diltiazem</option><option value="esm">Esmolol</option><option value="meto">Metoprolol</option><option value="amio">Amiodarone</option><option value="dig">Digoxin</option><option value="aden">Adenosine</option><option value="mg">MgSO₄（MAT）</option><option value="vera">Verapamil</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rt_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c19rate_out"></div>
+    </div>
+    <div class="rxbox" id="c19amio">
+      <div class="rxbox-t">Amiodarone 負荷量追蹤</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>已給 IV <span class="rx-en">mg</span></label><input type="number" id="am_iv" step="50" placeholder="1000"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>口服 400 bid 天數 <span class="rx-en">days</span></label><input type="number" id="am_d" step="1" placeholder="5"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c19amio_out"></div>
+    </div>
+    <div class="dirhead" id="ta-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which tachycardia, what first</span></div>
+    <div id="ta_flow">
+      <div class="flow-step" id="ta_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">QRS 寬度？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="taPick('qrs','narrow',this)">窄 ≤0.12 秒</button>
+          <button class="flow-opt" onclick="taPick('qrs','wide',this)">寬 >0.12 秒</button>
+        </div></div>
+      <div class="flow-step" id="ta_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">R-R 規律嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="taPick('reg','reg',this)">規律</button>
+          <button class="flow-opt" onclick="taPick('reg','irr',this)">不規律</button>
+        </div></div>
+      <div class="flow-step" id="ta_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（窄 QRS）心房活動？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="taPick('p','sinus',this)">P 波與 PR 一致、漸進起始</button>
+          <button class="flow-opt" onclick="taPick('p','nop',this)">看不到 P、突發</button>
+          <button class="flow-opt" onclick="taPick('p','saw',this)">鋸齒波</button>
+          <button class="flow-opt" onclick="taPick('p','multi',this)">多種 P 形態、PR 變動</button>
+          <button class="flow-opt" onclick="taPick('p','fib',this)">無 P、雜亂顫動波</button>
+        </div></div>
+      <div class="flow-step" id="ta_s4"><div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">（寬 QRS、規律）狀態？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="taPick('wp','unstable',this)">血行動力學不穩</button>
+          <button class="flow-opt" onclick="taPick('wp','vt',this)">穩定，VT 確定<span class="fo-sub">AV 分離、融合波、有心臟病</span></button>
+          <button class="flow-opt" onclick="taPick('wp','unsure',this)">穩定，不確定</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ta_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="taReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ta-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_tachy"></div>
+    <div class="dirhead" id="ta-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/ekg.html" href="#">心電圖圖鑑</a><a class="flow-link" data-ct="tools/cha2ds2-vasc.html" href="#">CHA₂DS₂-VASc</a><a class="flow-link" data-ct="tools/has-bled.html" href="#">HAS-BLED</a><a class="flow-link" data-ct="tools/acls.html" href="#">ACLS</a><a class="flow-link" data-ct="tools/pacemaker.html" href="#">暫時性節律器</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a></div>
+  </section>
+
+  <!-- ==================== Ch20 Acute Coronary Syndromes ==================== -->
+  <section class="cardiac-panel hidden" data-panel="acs" id="cardiac-p-acs">
+    <div class="dirhead"><span class="dh-n">第 20 章 急性冠心症</span><span class="dh-e">Chapter 20 · Acute Coronary Syndromes</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#acs/ac-key"><i>01</i>重點卡</a><a class="sp-chip" href="#acs/ac-tab"><i>02</i>對照表</a><a class="sp-chip" href="#acs/ac-calc"><i>03</i>計算</a><a class="sp-chip" href="#acs/ac-flow"><i>04</i>流程</a><a class="sp-chip" href="#acs/ac-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#acs/ac-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>心肌梗塞是血栓塞住冠狀動脈</b>，不是氧供需失衡——所以休克病人不會因此梗塞；診斷靠臨床、10 分鐘內的 ECG、hs-troponin 的 1 小時變化。</span></div>
+        <div class="lede-item"><span>②</span><span><b>STEMI 的一切是時間</b>：door-to-balloon 90（上限 120），到不了就 30 分內溶栓再轉；NSTEMI 不溶栓、不穩定才緊急 PCI。</span></div>
+        <div class="lede-item"><span>③</span><span><b>保護心肌的少做多做</b>：SaO₂ ≥90 不給氧、aspirin 嚼碎＋P2Y12 在 PCI 前、heparin 全給、β 阻斷劑避開心衰竭與 SBP <120；胸痛像撕裂要想主動脈剝離。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ac-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ac-kc">全部展開</button></div>
+    <div id="ac-kc">
+      <details class="def-box"><summary>01 · 冠狀動脈血栓的成因 <span class="en">Pathogenesis</span></summary>
+        <div class="box-inner"><p class="kp"><b>斑塊破裂（發炎＋分支處剪力）釋出致血栓脂質；活性氧與白血球的 myeloperoxidase（生成次氯酸）氧化脂蛋白——MPO 與冠心病嚴重度相關、破裂處染色濃。</b></p>
+          <ul><li>1980 年發現透壁梗塞是閉塞性血栓 → 溶栓 → 氣球與支架；2010–2020 冠心病年死亡率降 20%，仍是美國首因。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 三種症候群 <span class="en">STEMI / NSTEMI / UA</span></summary>
+        <div class="box-inner"><p class="kp"><b>STEMI＝完全閉塞的透壁梗塞；NSTEMI＝不完全閉塞；UA＝反覆開關式閉塞、無 ST 上升。後兩者合稱 NSTE-ACS。</b></p></div></details>
+      <details class="def-box"><summary>03 · 臨床表現 <span class="en">Presentation</span></summary>
+        <div class="box-inner"><p class="kp"><b>80% 有胸部不適：突發、>15 分、深沉無法定點、可到肩頸臂腹；焦慮、噁心、喘。</b></p>
+          <ul><li>不像 ACS：尖銳、短暫、可定點、吸氣痛、動作或按壓誘發。</li><li><b>NTG 止痛不是缺血的證據</b>——食道痙攣也會好。</li></ul></div></details>
+      <details class="def-box"><summary>04 · ECG 與 troponin <span class="en">ECG &amp; hs-cTn</span></summary>
+        <div class="box-inner"><p class="kp"><b>ECG 首次接觸 10 分鐘內；LBBB 或節律器遮蔽 ST 且疑缺血 → 當 STEMI。hs-cTn 到院與 1 小時後各一次：症狀 ≥3 小時且超過第 99 百分位＝心肌壞死，1 小時變化 >10%＝急性缺血。</b></p>
+          <ul><li>STEMI：≥2 相鄰導程 J 點 ST 上升，V2–V3 女 ≥1.5 mm、男 ≥2.0，其他 ≥1 mm；後壁：V1–V3 ST 下降＋正 T。NSTE-ACS：J 點下降 V2–V3 ≥0.5、其他 ≥1 mm 或 T 倒置；ECG 也可正常。</li><li>非缺血升高：心肌病變、持續心搏過速、心衰竭、肺高壓、敗血症——不會急性變化；各廠參考值不同。</li></ul></div></details>
+      <details class="def-box"><summary>05 · STEMI 再灌流 <span class="en">STEMI reperfusion</span></summary>
+        <div class="box-inner"><p class="kp"><b>緊急 PCI，door-to-balloon 90–120 分；無 PCI → 立即轉送（總計 ≤120）；轉送 >120 → 30 分內溶栓再轉；CABG 留給 PCI 失敗且持續缺血。</b></p>
+          <ul><li>>120 分死亡率顯著升；AHA 90 分留 30 分緩衝。美國 <30% 醫院能 PCI、1/4 STEMI 先到非 PCI 醫院；120 分內轉送有存活效益。</li></ul></div></details>
+      <details class="def-box"><summary>06 · NSTE-ACS 再灌流 <span class="en">NSTE-ACS</span></summary>
+        <div class="box-inner"><p class="kp"><b>NSTEMI 併不穩定、心因性休克、急性心衰竭或持續胸痛 → 盡快 PCI；否則 24–72 小時；溶栓無存活效益；穩定無痛的 UA 住院期間可不做 PCI。</b></p></div></details>
+      <details class="def-box"><summary>07 · 溶栓 <span class="en">Thrombolysis</span></summary>
+        <div class="box-inner"><p class="kp"><b>比 PCI 差、只用於 PCI 拿不到的單純 STEMI；效益隨時間遞減、12 小時後消失；出血是主要限制（顯著 10%、致命 1%）。</b></p>
+          <ul><li>Alteplase 15 → 0.75 mg/kg（≤50）/30 分 → 0.5 mg/kg（≤35）/60 分，≤100 mg，通暢 73–84%，慢已不受青睞；reteplase 10 U ×2 隔 30 分，84%；tenecteplase 單次 30–50 mg 依體重，85%，最流行——都無存活優勢。</li><li>出血伴 fibrinogen <100 → cryo／fibrinogen 濃縮製劑；不用 TXA（血栓風險）。禁忌見第 47 章。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 氧氣：SaO₂ ≥90 不給 <span class="en">Oxygen</span></summary>
+        <div class="box-inner"><p class="kp"><b>SaO₂ ≥90% 給氧無益（DETO2X）；氧收縮冠狀動脈、活性氧加重再灌流傷害——只在 SaO₂ <90% 給。</b></p></div></details>
+      <details class="def-box"><summary>09 · 止痛 <span class="en">Relieving chest pain</span></summary>
+        <div class="box-inner"><p class="kp"><b>NTG 0.4 mg 舌下／噴霧每 5 分 ×3；復發、高血壓或心衰竭 → 輸注 5 μg/min 起；morphine 4–8 mg → 2–8 mg q5–15 分給 NTG 無效者；焦慮可加 midazolam 0.01 mg/kg。</b></p>
+          <ul><li>NTG 不用：右心室梗塞（靜脈擴張反效果）、嚴重主動脈瓣狹窄、24–48 小時內用過 PDE 抑制劑。</li><li>Morphine／fentanyl 會減弱 P2Y12 抑制劑的效果（臨床意義未證實）。</li></ul></div></details>
+      <details class="def-box"><summary>10 · β 阻斷劑 <span class="en">β-blockers</span></summary>
+        <div class="box-inner"><p class="kp"><b>24 小時內開始（metoprolol）；IV 用於心搏過速、高血壓或 STEMI PCI 前。避開：急性心衰竭（穩定後 HFrEF 長期仍建議）、SBP <120（心因性休克風險）、古柯鹼（無對抗的 α 收縮）；傳統禁忌心搏過緩、低血壓、高度 AV 阻斷。</b></p>
+          <div class="kbox alert"><div class="kbox-t">原文疑義</div>表 20.3 的 metoprolol 劑量欄與 morphine 相同（4–8 mg IV → 2–8 mg q5–15 分），疑為排版錯置；IV metoprolol 慣用 5 mg q5 分 ×3（同表 20.5）。</div></div></details>
+      <details class="def-box"><summary>11 · 抗血小板 <span class="en">Antiplatelet therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>Aspirin 162–325 嚼碎頰吸收（不吞、不能口服就肛門）→ 81 qd 無限期，每 42 人救 1 命；P2Y12 全部加、PCI 前先給。</b></p>
+          <ul><li>Clopidogrel 300–600 → 75：前驅藥、效果不定、PPI 阻活化（意義存疑）、不可逆、術前停 5 天、CABG 在即不用。</li><li>Ticagrelor 180 → 90 bid：較強較穩、死亡率與再梗塞優於 clopidogrel，ICH 較多（ICH 史禁）。</li><li>Prasugrel：防支架血栓較強、出血多、中風／TIA 史禁。</li><li>IIb/IIIa（eptifibatide、tirofiban）「超級 aspirin」：高風險緊急 PCI 前給，由心導管團隊管理；CrCl 低減半。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 抗凝 <span class="en">Anticoagulation</span></summary>
+        <div class="box-inner"><p class="kp"><b>所有 ACS 診斷時開始：緊急 PCI／溶栓用 UFH 60 U/kg（≤4,000）→ 12 U/kg/hr（≤1,000）、aPTT 1.5–2 倍、24–48 小時；PCI 非緊急用 enoxaparin 30 mg IV → 1 mg/kg SC q12h（>75 歲不 bolus、CrCl <30 改 q24h）。</b></p>
+          <ul><li>HIT 病史：PCI 用 bivalirudin 0.75 mg/kg → 1.75 mg/kg/hr（CrCl <30 降 1），成功後停；溶栓用 fondaparinux 2.5 mg IV → 隔天起 2.5 SC qd 到心導管（CrCl <30 禁）。</li></ul></div></details>
+      <details class="def-box"><summary>13 · 長期治療 <span class="en">Long-term therapies</span></summary>
+        <div class="box-inner"><p class="kp"><b>穩定後全部給、無限期：atorvastatin 80、RAA 抑制（sacubitril/valsartan；高血壓、前壁 STEMI、HFrEF 尤其；血管性水腫史禁、腎損傷慎高血鉀）、β 阻斷劑（metoprolol）。</b></p></div></details>
+      <details class="def-box"><summary>14 · 急性主動脈剝離 <span class="en">Acute aortic dissection</span></summary>
+        <div class="box-inner"><p class="kp"><b>可模仿或併發 ACS；不開刀 60% 死亡；每 3 例漏 1 例——疼痛自行消退是漏診主因，再痛常是破裂前兆。</b></p>
+          <ul><li>Type A（升主動脈到頭臂動脈）：逆行 → 主動脈瓣逆流、冠狀動脈閉塞、心包填塞；順行 → 弓部血管的神經缺損。</li><li>撕裂樣尖銳痛（升＝胸骨後、降＝背）、只 5% 無痛；高血壓 50%、主動脈瓣逆流 50%、上肢脈搏不等 15%、縱膈增寬 60%（20% 胸片正常）、ECG 缺血 15%／正常 30%。</li><li>影像：MRI 98/98、TEE 98/77、CT 血管攝影 94/87、主動脈攝影 88/94；內膜瓣分隔真假腔。</li><li>降壓不可伴心搏過速或心輸出量上升：β 阻斷劑優先（esmolol 500 μg/kg → 50–200 μg/kg/min；labetalol 20 → 20–40 q10 分或 1–2 mg/min ≤300，急性心衰竭不用；metoprolol 5 ×3 → 5–10 q4–6h），擴血管只能合併 β 阻斷劑；目標 SBP 120（可到 90）；IV 類鴉片止痛；每小時死亡率增 1–2%，開刀降到 10%。</li></ul></div></details>
+      <details class="def-box"><summary>15 · 氧供需教條的問題 <span class="en">The O₂ supply-demand dogma</span></summary>
+        <div class="box-inner"><p class="kp"><b>梗塞是血栓，不是全身氧輸送下降；所以貧血、低血氧、甚至進行性休克都不會「造成」急性 MI。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ac-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>再灌流</th><th>STEMI／LBBB</th><th>NSTEMI</th><th>UA</th></tr>
+      <tr><td>PCI</td><td>緊急，door-to-balloon 90（≤120）</td><td>不穩定→盡快；否則 24–72 h</td><td>穩定無痛可不做</td></tr>
+      <tr><td>溶栓</td><td>轉送 >120 分且症狀 <12 h，door-to-needle 30</td><td>無存活效益</td><td>—</td></tr>
+      <tr><td>CABG</td><td>PCI 失敗且持續缺血</td><td>同左</td><td>—</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>溶栓劑</th><th>劑量</th><th>90 分通暢</th></tr>
+      <tr><td>Alteplase</td><td>15 mg → 0.75 mg/kg（≤50）/30 分 → 0.5 mg/kg（≤35）/60 分；≤100 mg</td><td>73–84%</td></tr>
+      <tr><td>Reteplase</td><td>10 U bolus ×2，隔 30 分</td><td>84%</td></tr>
+      <tr><td>Tenecteplase</td><td><60 kg 30、60–69 35、70–79 40、80–89 45、≥90 50 mg 單次</td><td>85%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>抗栓</th><th>劑量</th><th>備註</th></tr>
+      <tr><td>Aspirin</td><td>162–325 嚼 → 81（雙抗）或 325</td><td>過敏改 clopidogrel</td></tr>
+      <tr><td>Clopidogrel</td><td>300–600 → 75 qd</td><td>術前停 5 天</td></tr>
+      <tr><td>Ticagrelor</td><td>180 → 90 bid</td><td>ICH 史禁</td></tr>
+      <tr><td>Prasugrel</td><td>依標籤</td><td>中風／TIA 史禁</td></tr>
+      <tr><td>UFH</td><td>60 U/kg（≤4,000）→ 12 U/kg/hr（≤1,000）</td><td>aPTT 1.5–2×，24–48 h</td></tr>
+      <tr><td>Enoxaparin</td><td>30 mg IV → 1 mg/kg SC q12h</td><td>>75 歲不 bolus；CrCl <30 q24h</td></tr>
+      <tr><td>Bivalirudin（HIT，PCI）</td><td>0.75 mg/kg → 1.75 mg/kg/hr</td><td>CrCl <30：1 mg/kg/hr</td></tr>
+      <tr><td>Fondaparinux（HIT，溶栓）</td><td>2.5 mg IV → 2.5 SC qd</td><td>CrCl <30 禁</td></tr>
+    </table></div>
+    <div class="note">原書表 20.4 在 prasugrel 劑量處截斷；IIb/IIIa 抑制劑的 bolus 欄也不完整，本頁只保留原文可辨的減量規則。</div>
+    <div class="dirhead" id="ac-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c20rep">
+      <div class="rxbox-t">再灌流策略</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>類型 <span class="rx-en">ACS type</span></label><select id="rp_st"><option value="stemi">STEMI／新 LBBB</option><option value="nstemi">NSTEMI</option><option value="ua">不穩定心絞痛</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>症狀至今 <span class="rx-en">小時</span></label><input type="number" id="rp_h" step="0.5" placeholder="2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>本院可 PCI <span class="rx-en">on site</span></label><select id="rp_pci"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>轉送到球囊 <span class="rx-en">預計分鐘</span></label><input type="number" id="rp_tx" step="10" placeholder="90"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>不穩定／休克／心衰竭／持續痛 <span class="rx-en">NSTEMI</span></label><select id="rp_un"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c20rep_out"></div>
+    </div>
+    <div class="rxbox" id="c20lys">
+      <div class="rxbox-t">溶栓劑劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ly_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c20lys_out"></div>
+    </div>
+    <div class="rxbox" id="c20hep">
+      <div class="rxbox-t">抗凝與抗血小板</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="hp_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>年齡 <span class="rx-en">years</span></label><input type="number" id="hp_age" step="1" placeholder="65"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CrCl <span class="rx-en">mL/min</span></label><input type="number" id="hp_cr" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>情境 <span class="rx-en">setting</span></label><select id="hp_set"><option value="pci">緊急 PCI／溶栓</option><option value="def">PCI 非緊急或延後</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>HIT 病史 <span class="rx-en">HIT</span></label><select id="hp_hit"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c20hep_out"></div>
+    </div>
+    <div class="rxbox" id="c20tn">
+      <div class="rxbox-t">hs-troponin 0／1 小時</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>到院值 <span class="rx-en">ng/L</span></label><input type="number" id="tn_0" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>1 小時值 <span class="rx-en">ng/L</span></label><input type="number" id="tn_1" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>第 99 百分位 <span class="rx-en">ng/L（依廠）</span></label><input type="number" id="tn_u" step="1" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>症狀至今 <span class="rx-en">小時</span></label><input type="number" id="tn_h" step="0.5" placeholder="4"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c20tn_out"></div>
+    </div>
+    <div class="dirhead" id="ac-flow"><span class="dh-n">決策流程</span><span class="dh-e">Is this an aortic dissection?</span></div>
+    <div id="ad_flow">
+      <div class="flow-step" id="ad_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">胸痛的性質？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="adPick('pain','tear',this)">突發撕裂樣尖銳痛<span class="fo-sub">胸骨後或背；曾自行消退又回來</span></button>
+          <button class="flow-opt" onclick="adPick('pain','acs',this)">深沉壓迫、無法定點</button>
+        </div></div>
+      <div class="flow-step" id="ad_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">有沒有：上肢脈搏不等、主動脈瓣逆流雜音、縱膈增寬、神經缺損？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="adPick('find','yes',this)">有任一項</button>
+          <button class="flow-opt" onclick="adPick('find','no',this)">都沒有</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ad_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="adReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ac-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_acs"></div>
+    <div class="dirhead" id="ac-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/acs.html" href="#">急性冠心症</a><a class="flow-link" data-ct="tools/grace.html" href="#">GRACE</a><a class="flow-link" data-ct="pathways/acute-aortic-syndrome.html" href="#">急性主動脈症候群</a><a class="flow-link" data-ct="pathways/cardiogenic-shock.html" href="#">心因性休克</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a><a class="flow-link" href="blood.html#plt">Marino 第 13 章 血小板與血漿</a></div>
+  </section>
+
+  <!-- ==================== Ch21 Cardiac Arrest ==================== -->
+  <section class="cardiac-panel hidden" data-panel="arrest" id="cardiac-p-arrest">
+    <div class="dirhead"><span class="dh-n">第 21 章 心跳停止</span><span class="dh-e">Chapter 21 · Cardiac Arrest</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#arrest/ar-key"><i>01</i>重點卡</a><a class="sp-chip" href="#arrest/ar-tab"><i>02</i>對照表</a><a class="sp-chip" href="#arrest/ar-calc"><i>03</i>計算</a><a class="sp-chip" href="#arrest/ar-flow"><i>04</i>流程</a><a class="sp-chip" href="#arrest/ar-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#arrest/ar-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>全身只有 1 公升氧、4 分鐘就用完</b>：10 秒內開始高品質壓胸、少中斷、不要吹太快（intrinsic PEEP 會殺掉冠狀灌流壓）。</span></div>
+        <div class="lede-item"><span>②</span><span><b>電擊是少數改善存活的介入</b>（5 分鐘內 40%、20 分鐘 <10%）；epinephrine 升 ROSC 但存活效益不明；ETCO₂ 20 分鐘 ≤10–15 就不太會回來。</span></div>
+        <div class="lede-item"><span>③</span><span><b>ROSC 後 70% 仍死於住院</b>：現在的目標是不發燒（≤37.5°C）、MAP ≥75 用 norepinephrine、不高氧、血糖 145–180；預後判斷等第 4 天的腦幹反射。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ar-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ar-kc">全部展開</button></div>
+    <div id="ar-kc">
+      <details class="def-box"><summary>01 · 時間依賴 <span class="en">Time dependence</span></summary>
+        <div class="box-inner"><p class="kp"><b>全身氧約 1 L、休息 VO₂ 250 mL/min → 血流停止 4–5 分鐘細胞開始缺氧死亡；冷水溺水是例外。</b></p>
+          <ul><li>1960 年閉胸按摩 5 例報告、未經驗證就成為全球強制作法——而它多數時候失敗。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 高品質壓胸 <span class="en">High-quality compressions</span></summary>
+        <div class="box-inner"><p class="kp"><b>無脈搏 10 秒內開始；下胸骨 1/3、深 5–6 cm、100–120/分、完全回彈、2 分鐘換人；中斷可占復甦時間的 50%，除電器貼上前不要停。</b></p>
+          <ul><li>CAB 順序；30:2 用袋瓣面罩；插管後每 6 秒一次（10/分）不停壓、不與壓胸同步。</li><li>血管通路不中斷壓胸——骨內針快又穩。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 通氣的量與速度 <span class="en">Lung inflations</span></summary>
+        <div class="box-inner"><p class="kp"><b>每次 500–600 mL 或看到胸起伏；1 L 袋壓到半滿約 500、單手壓約 600–700。實測平均 30/分（3 倍）→ intrinsic PEEP → 靜脈回流與冠狀灌流壓下降。</b></p></div></details>
+      <details class="def-box"><summary>04 · 電擊 <span class="en">Defibrillation</span></summary>
+        <div class="box-inner"><p class="kp"><b>不同步電擊是少數改善存活的介入：5 分鐘內電擊存活 40%、20 分鐘 <10%。雙相 120–200 J 起（或廠商建議）、可升到 360；電後立刻壓 2 分鐘再看律。</b></p>
+          <ul><li>第 2 次電擊後 epinephrine 1 mg q3–5 分；第 3 次後 amiodarone 300 → 150（無則 lidocaine 1–1.5 mg/kg → 0.5–0.75 q5–10 分，≤3 mg/kg）。</li><li>三次無效只有 5% 好結局 → 24 小時 ECMO 的單位考慮。</li></ul></div></details>
+      <details class="def-box"><summary>05 · PEA／asystole <span class="en">Non-shockable rhythms</span></summary>
+        <div class="box-inner"><p class="kp"><b>Epinephrine 為主、不電擊（除非轉 VF/VT）；找可逆原因 T：張力性氣胸、心包填塞、肺栓塞、冠狀動脈血栓——POCUS 幫得上。</b></p></div></details>
+      <details class="def-box"><summary>06 · Epinephrine 的真相 <span class="en">Epinephrine</span></summary>
+        <div class="box-inner"><p class="kp"><b>唯一的循環支持藥；升 ROSC，存活效益不明（多數研究無差；PARAMEDIC2 30 天存活升但神經完整者少）。</b></p>
+          <ul><li>好處是縮血管升冠狀灌流壓（主動脈−右房壓差）30%、持續 3 分鐘；壞處是 β 刺激抵銷效益、促成復甦後心衰竭。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 復甦監測：ETCO₂ 與超音波 <span class="en">Monitoring</span></summary>
+        <div class="box-inner"><p class="kp"><b>手摸脈搏敏感度低又要停壓；ETCO₂ 隨心輸出量成比例變動——ROSC 組逐漸上升、非 ROSC 組下降；20 分鐘 ≤10–15 mmHg 復甦不太會成功，>15 可繼續到 1.5 小時仍有好結局。</b></p>
+          <ul><li>ETCO₂ 也反映壓胸深度。</li><li>POCUS：氣胸敏感 91%／專一 99%；任何心包積液 → 立即穿刺（心跳停止時 RV 舒張塌陷不可靠）；創傷停止時心臟靜止 100% 預測死亡，但判讀者差異大 → 指引不建議拿它終止 CPR。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 心跳停止後症候群 <span class="en">Post-cardiac arrest syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>ROSC 後 70% 仍死於住院：缺血＋再灌流（活性氧）。腦損傷占死因 23–68%（不醒、肌陣攣、癲癇）；心肌頓抑可進展到心因性休克、72 小時內恢復；全身發炎幾乎必然。</b></p></div></details>
+      <details class="def-box"><summary>09 · 體溫管理的演變 <span class="en">Targeted temperature management</span></summary>
+        <div class="box-inner"><p class="kp"><b>1950 年代「人體冷藏」→ 2002 兩篇 32–34°C 改善神經預後 → 2013 TTM 36 同效 → 2021 TTM2 37.5 同效：現在是防發燒。</b></p>
+          <ul><li>對象：ROSC 後不清醒者；目標 ≤37.5°C 維持 72 小時或到清醒；膀胱溫連續監測；>37.7 才啟動降溫裝置（表面降溫即可）；ROSC 後輕度低溫（32–36）不主動回溫。</li><li>33°C 仍是未決選項，但代價是低血壓（冷利尿、心臟抑制）、心搏過緩、顫抖要重鎮靜（延誤評估）、偶爾要肌鬆。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 其他早期照護 <span class="en">Other post-arrest concerns</span></summary>
+        <div class="box-inner"><p class="kp"><b>高氧加重神經損傷 → SaO₂ <90 才給氧；自動調節失效 → MAP ≥75 較佳（標準 ≥65）；norepinephrine 優於 epinephrine；血糖 145–180、避開含糖輸液。</b></p></div></details>
+      <details class="def-box"><summary>11 · 預測神經恢復 <span class="en">Prognostication</span></summary>
+        <div class="box-inner"><p class="kp"><b>高確定度差預後：第 4 天雙側瞳孔或角膜反射消失、第 2 天嘔吐或眼頭反射消失、任何時間的肌陣攣性癲癇重積、N20 雙側消失、EEG 等電位／非抽搐性重積／抑制背景併週期放電、CT 瀰漫腦水腫。</b></p>
+          <ul><li>80–95% 會醒的人 72 小時內醒，但可到 5 天以上（低溫更久）；第一週的「醒得慢」不是好指標，尤其重鎮靜者。</li><li>早期肌陣攣不等於無望；<b>去大腦姿勢不是高確定度指標</b>。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 認知 vs 現實 <span class="en">Perception vs reality</span></summary>
+        <div class="box-inner"><p class="kp"><b>CPR 成功只有 1–7%；95% 民眾以為過半能無後遺症回家，電視劇演到 75% 成功——而決定要不要 CPR 的是病人。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ar-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>BLS 要素</th><th>規格</th></tr>
+      <tr><td>開始</td><td>確認無脈搏 10 秒內</td></tr>
+      <tr><td>壓胸</td><td>下胸骨 1/3、5–6 cm、100–120/分、完全回彈、2 分鐘換人</td></tr>
+      <tr><td>通氣</td><td>30:2；插管後每 6 秒 1 次不停壓；500–600 mL</td></tr>
+      <tr><td>中斷</td><td>除顫器貼上前不停；電擊瞬間暫停</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>ACLS</th><th>VF／無脈 VT</th><th>PEA／asystole</th></tr>
+      <tr><td>電擊</td><td>120–200 J 雙相起，可升；三次一組</td><td>不電擊（除非轉 VF/VT）</td></tr>
+      <tr><td>Epinephrine</td><td>第 2 次電擊後 1 mg q3–5 分</td><td>立即 1 mg q3–5 分</td></tr>
+      <tr><td>抗心律不整</td><td>第 3 次後 amiodarone 300 → 150；或 lidocaine 1–1.5 → 0.5–0.75 mg/kg（≤3）</td><td>—</td></tr>
+      <tr><td>其他</td><td>三次無效 → ECMO</td><td>找 T（氣胸、填塞、肺栓塞、冠狀動脈血栓）</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>ROSC 後</th><th>目標</th></tr>
+      <tr><td>體溫</td><td>≤37.5°C × 72 h；>37.7 才降溫；輕度低溫不回溫</td></tr>
+      <tr><td>血壓</td><td>MAP ≥75（標準 ≥65）；norepinephrine 優於 epinephrine</td></tr>
+      <tr><td>氧氣</td><td>SaO₂ <90 才給；避免高氧</td></tr>
+      <tr><td>血糖</td><td>145–180 mg/dL；避開含糖輸液</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>高確定度差預後</th><th>時點</th></tr>
+      <tr><td>雙側瞳孔光反射或角膜反射消失</td><td>ROSC 後第 4 天</td></tr>
+      <tr><td>眼頭或嘔吐反射消失</td><td>第 2 天</td></tr>
+      <tr><td>肌陣攣性癲癇重積</td><td>任何時間</td></tr>
+      <tr><td>SSEP N20 雙側消失</td><td>—</td></tr>
+      <tr><td>EEG 等電位（<2 μV）、非抽搐性重積、抑制背景＋週期放電</td><td>—</td></tr>
+      <tr><td>CT 瀰漫腦水腫</td><td>第 2 天起尤其</td></tr>
+    </table></div>
+    <div class="note">原書表 21.5 抽出時缺第 6 項（EEG），依內文補回。</div>
+    <div class="dirhead" id="ar-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c21o2">
+      <div class="rxbox-t">缺氧時窗</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>VO₂ <span class="rx-en">mL/min</span></label><input type="number" id="ox_vo2" step="10" placeholder="250"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>全身氧存量 <span class="rx-en">mL</span></label><input type="number" id="ox_st" step="50" placeholder="1000"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>核心體溫 <span class="rx-en">°C（選填）</span></label><input type="number" id="ox_t" step="0.5" placeholder="37"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c21o2_out"></div>
+    </div>
+    <div class="rxbox" id="c21et">
+      <div class="rxbox-t">ETCO₂ 與 ROSC</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>起始 ETCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="et_0" step="1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>20 分鐘 ETCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="et_20" step="1" placeholder="18"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>通氣次數 <span class="rx-en">/分</span></label><input type="number" id="et_r" step="1" placeholder="10"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c21et_out"></div>
+    </div>
+    <div class="rxbox" id="c21drug">
+      <div class="rxbox-t">急救藥物與電擊</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="dr_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c21drug_out"></div>
+    </div>
+    <div class="rxbox" id="c21post">
+      <div class="rxbox-t">ROSC 後目標核對</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>核心體溫 <span class="rx-en">°C</span></label><input type="number" id="po_t" step="0.1" placeholder="37.9"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>MAP <span class="rx-en">mmHg</span></label><input type="number" id="po_map" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SaO₂ <span class="rx-en">%</span></label><input type="number" id="po_sa" step="1" placeholder="99"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血糖 <span class="rx-en">mg/dL</span></label><input type="number" id="po_g" step="5" placeholder="220"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c21post_out"></div>
+    </div>
+    <div class="dirhead" id="ar-flow"><span class="dh-n">決策流程</span><span class="dh-e">ACLS branches</span></div>
+    <div id="ca_flow">
+      <div class="flow-step" id="ca_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">初始心律？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="caPick('rhythm','shock',this)">VF／無脈 VT<span class="fo-sub">可電擊</span></button>
+          <button class="flow-opt" onclick="caPick('rhythm','noshock',this)">PEA／asystole</button>
+        </div></div>
+      <div class="flow-step" id="ca_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（可電擊）這是第幾次電擊？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="caPick('shocks','1',this)">第 1 次</button>
+          <button class="flow-opt" onclick="caPick('shocks','2',this)">第 2 次</button>
+          <button class="flow-opt" onclick="caPick('shocks','3',this)">第 3 次或以上</button>
+        </div></div>
+      <div class="flow-step" id="ca_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">CPR 20 分鐘時的 ETCO₂？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="caPick('et','low',this)">≤10–15 mmHg 且下降</button>
+          <button class="flow-opt" onclick="caPick('et','ok',this)">>15 mmHg 且上升</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ca_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="caReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ar-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_arrest"></div>
+    <div class="dirhead" id="ar-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/acls.html" href="#">ACLS</a><a class="flow-link" data-ct="tools/ekg.html" href="#">心電圖圖鑑</a><a class="flow-link" data-ct="tools/vasopressor.html" href="#">升壓劑</a><a class="flow-link" data-ct="tools/rsi.html" href="#">RSI 插管</a><a class="flow-link" href="monitoring.html#ox">Marino 第 7 章 二氧化碳監測</a><a class="flow-link" href="access.html#primer">Marino 第 1 章 骨內通路</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 18–21 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35379503/" target="_blank" rel="noopener" class="ref-link">2022 AHA/ACC/HFSA heart failure guideline. JACC 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34447992/" target="_blank" rel="noopener" class="ref-link">2021 ESC acute and chronic heart failure guidelines. EHJ 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30852913/" target="_blank" rel="noopener" class="ref-link">AHA scientific statement: cardiorenal syndrome. Circulation 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17428822/" target="_blank" rel="noopener" class="ref-link">Paulus et al. How to diagnose diastolic heart failure. EHJ 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36416769/" target="_blank" rel="noopener" class="ref-link">Prada et al. Focused cardiac ultrasonography for RV size and function. NEJM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27173030/" target="_blank" rel="noopener" class="ref-link">Hanberg et al. Reduced cardiac index is not the dominant driver of renal dysfunction. JACC 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12124404/" target="_blank" rel="noopener" class="ref-link">Maisel et al. Rapid BNP measurement in the emergency diagnosis of heart failure. NEJM 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16293638/" target="_blank" rel="noopener" class="ref-link">Januzzi et al. NT-proBNP in acute destabilized heart failure. EHJ 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2860833/" target="_blank" rel="noopener" class="ref-link">Francis et al. Acute vasoconstrictor response to IV furosemide. Ann Intern Med 1985</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28641794/" target="_blank" rel="noopener" class="ref-link">Matsue et al. Time-to-furosemide and mortality. JACC 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30415601/" target="_blank" rel="noopener" class="ref-link">PIONEER-HF: angiotensin-neprilysin inhibition in acute decompensated HF. NEJM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32860505/" target="_blank" rel="noopener" class="ref-link">2020 ESC atrial fibrillation guidelines. EHJ 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30686041/" target="_blank" rel="noopener" class="ref-link">2019 AHA/ACC/HRS focused update on atrial fibrillation. Circulation 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33081529/" target="_blank" rel="noopener" class="ref-link">2020 AHA adult basic and advanced life support. Circulation 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31089761/" target="_blank" rel="noopener" class="ref-link">Wetterslev et al. New-onset AF in critically ill patients. ICM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19487941/" target="_blank" rel="noopener" class="ref-link">Siu et al. IV diltiazem vs amiodarone vs digoxin for rate control. CCM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11395591/" target="_blank" rel="noopener" class="ref-link">Delle Karth et al. Amiodarone vs diltiazem in critically ill patients. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15194019/" target="_blank" rel="noopener" class="ref-link">Niebauer et al. Biphasic vs monophasic cardioversion of AF. Am J Cardiol 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19717844/" target="_blank" rel="noopener" class="ref-link">RE-LY: dabigatran vs warfarin. NEJM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21830957/" target="_blank" rel="noopener" class="ref-link">ROCKET AF: rivaroxaban vs warfarin. NEJM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21870978/" target="_blank" rel="noopener" class="ref-link">ARISTOTLE: apixaban vs warfarin. NEJM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/4050650/" target="_blank" rel="noopener" class="ref-link">Iseri et al. Magnesium and potassium in multifocal atrial tachycardia. Am Heart J 1985</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26399663/" target="_blank" rel="noopener" class="ref-link">2015 ACC/AHA/HRS supraventricular tachycardia guideline. Circulation 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31443919/" target="_blank" rel="noopener" class="ref-link">Ceylan et al. Three vagal maneuvers in SVT. J Emerg Med 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12709470/" target="_blank" rel="noopener" class="ref-link">Al-Khatib et al. What clinicians should know about the QT interval. JAMA 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37622654/" target="_blank" rel="noopener" class="ref-link">2023 ESC acute coronary syndromes guidelines. EHJ 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34709879/" target="_blank" rel="noopener" class="ref-link">2021 AHA/ACC chest pain guideline. Circulation 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23256914/" target="_blank" rel="noopener" class="ref-link">2013 ACCF/AHA STEMI guideline. JACC 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25260718/" target="_blank" rel="noopener" class="ref-link">2014 AHA/ACC NSTE-ACS guideline. JACC 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10865271/" target="_blank" rel="noopener" class="ref-link">Cannon et al. Door-to-balloon time and mortality. JAMA 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12517460/" target="_blank" rel="noopener" class="ref-link">Keeley et al. Primary angioplasty vs thrombolysis: 23 trials. Lancet 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7905143/" target="_blank" rel="noopener" class="ref-link">Fibrinolytic Therapy Trialists overview. Lancet 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28844200/" target="_blank" rel="noopener" class="ref-link">DETO2X: oxygen therapy in suspected acute MI. NEJM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19717846/" target="_blank" rel="noopener" class="ref-link">PLATO: ticagrelor vs clopidogrel. NEJM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17982182/" target="_blank" rel="noopener" class="ref-link">TRITON-TIMI 38: prasugrel vs clopidogrel. NEJM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16271643/" target="_blank" rel="noopener" class="ref-link">COMMIT: early IV then oral metoprolol in acute MI. Lancet 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34112502/" target="_blank" rel="noopener" class="ref-link">AATS consensus: surgical treatment of acute type A aortic dissection. JTCVS 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34968970/" target="_blank" rel="noopener" class="ref-link">Lovatt et al. Misdiagnosis of aortic dissection. Am J Emerg Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36336195/" target="_blank" rel="noopener" class="ref-link">2022 ILCOR consensus on CPR science. Resuscitation 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8214853/" target="_blank" rel="noopener" class="ref-link">Larsen et al. Predicting survival from out-of-hospital cardiac arrest. Ann Emerg Med 1993</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30021076/" target="_blank" rel="noopener" class="ref-link">PARAMEDIC2: epinephrine in out-of-hospital cardiac arrest. NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18786260/" target="_blank" rel="noopener" class="ref-link">Kolar et al. End-tidal CO₂ predicts successful CPR. Crit Care 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24237006/" target="_blank" rel="noopener" class="ref-link">TTM: 33 vs 36°C after cardiac arrest. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34133859/" target="_blank" rel="noopener" class="ref-link">TTM2: hypothermia vs normothermia after cardiac arrest. NEJM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29437118/" target="_blank" rel="noopener" class="ref-link">Roberts et al. Early hyperoxia after cardiac arrest. Circulation 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24901606/" target="_blank" rel="noopener" class="ref-link">Kilgannon et al. Arterial pressure and neurologic outcome after cardiac arrest. CCM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35129643/" target="_blank" rel="noopener" class="ref-link">Bougouin et al. Epinephrine vs norepinephrine in post-resuscitation shock. ICM 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32915254/" target="_blank" rel="noopener" class="ref-link">Sandroni et al. Prediction of poor neurologic outcome after cardiac arrest. ICM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30171974/" target="_blank" rel="noopener" class="ref-link">Bartos et al. Refractory VF cardiac arrest and ECMO. Resuscitation 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15508657/" target="_blank" rel="noopener" class="ref-link">Aufderheide & Lurie. Death by hyperventilation during CPR. CCM 2004</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/cardiac.js"></script>
+<script>ICU.makeTabs('cardiac'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

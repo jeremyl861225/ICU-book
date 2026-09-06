@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>呼吸疾患 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="呼吸疾患">
+<div class="sheet">
+<div class="view active" id="view-respdis">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section VIII</div><h1>呼吸疾患</h1><div class="sub">Respiratory Disorders · 急性肺栓塞 → 氣喘與 COPD → ARDS · 第 22–24 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-respdis'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="respdis_tabs">
+    <button class="tab-btn active" data-p="pe">肺栓塞 <span class="mono">Ch22</span></button>
+    <button class="tab-btn" data-p="obst">氣喘與 COPD <span class="mono">Ch23</span></button>
+    <button class="tab-btn" data-p="ards">ARDS <span class="mono">Ch24</span></button>
+  </div>
+
+  <!-- ==================== Ch22 Acute Pulmonary Embolism ==================== -->
+  <section class="respdis-panel" data-panel="pe" id="respdis-p-pe">
+    <div class="dirhead"><span class="dh-n">第 22 章 急性肺栓塞</span><span class="dh-e">Chapter 22 · Acute Pulmonary Embolism</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#pe/pe-key"><i>01</i>重點卡</a><a class="sp-chip" href="#pe/pe-tab"><i>02</i>對照表</a><a class="sp-chip" href="#pe/pe-calc"><i>03</i>計算</a><a class="sp-chip" href="#pe/pe-flow"><i>04</i>流程</a><a class="sp-chip" href="#pe/pe-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#pe/pe-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>想到它時通常不是，是它時通常沒想到</b>：懷疑的只有 10% 證實、屍檢 30% 有但沒被懷疑；沒有一個臨床表現或 D-dimer 靠得住，ICU 的 D-dimer 更沒用。</span></div>
+        <div class="lede-item"><span>②</span><span><b>先照腿再照肺</b>：30–50% 的 PE 有近端 DVT，超音波陽性且穩定就不必再做影像；CTPA 是首選（陰性預測值 95%），但要付 15 mSv 與顯影劑腎病變的代價。</span></div>
+        <div class="lede-item"><span>③</span><span><b>分三層再動手</b>：低風險直接 DOAC 可出院；中風險住院觀察 48 小時用 enoxaparin；高風險 UFH 依體重＋溶栓，不行就取栓——抗凝的目的是防下一顆。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="pe-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pe-kc">全部展開</button></div>
+    <div id="pe-kc">
+      <details class="def-box"><summary>01 · 診斷的兩難 <span class="en">Underdiagnosis and overtesting</span></summary>
+        <div class="box-inner"><p class="kp"><b>VTE 是全球第三大心血管死因、45 歲以上年風險近 10%；屍檢 30% 有 PE 且多未被懷疑，但懷疑 PE 的影像只有 10% 證實。</b></p>
+          <ul><li>ICU 待超過幾天的都算高風險，術後、脊髓損傷、多重創傷更高。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 臨床表現不敏感也不專一 <span class="en">Clinical findings</span></summary>
+        <div class="box-inner"><p class="kp"><b>沒有一個表現的陽性預測值超過 50%，也沒有一個能排除（陰性預測值要 ≥98% 才行）；低血氧的陰性預測值只有 70%——30% 的 PE PaO₂ 正常，A-a 差也可正常。</b></p>
+          <ul><li>發燒 15%（多 <38.9°C）、暈厥 10%（右心勞損）、COPD 惡化 <10% 是 PE。</li></ul></div></details>
+      <details class="def-box"><summary>03 · D-dimer <span class="en">D-dimer</span></summary>
+        <div class="box-inner"><p class="kp"><b>PPV 27%、NPV 92%：正常可排除、升高不代表高機率；ICU 80% 都升高（敗血症、發炎、心衰竭、腎衰竭、懷孕、高齡）——在 ICU 不算有用的檢查。</b></p></div></details>
+      <details class="def-box"><summary>04 · 靜脈超音波 <span class="en">Venous ultrasound</span></summary>
+        <div class="box-inner"><p class="kp"><b>壓不扁＝血栓；雙工超音波近端 DVT 敏感 ≥95、專一 ≥97、PPV 97、NPV 98；30–50% 的 PE 找得到，找到就不必再做影像（不穩定除外）。</b></p>
+          <ul><li>床邊做、不必送出 ICU，適合不能做 CTPA 的人。</li><li>上肢 DVT（中央導管）：症狀性 PE <10%；敏感 97、專一 96；陽性 → 抗凝並立即拔管。</li></ul></div></details>
+      <details class="def-box"><summary>05 · CTPA <span class="en">CT pulmonary angiography</span></summary>
+        <div class="box-inner"><p class="kp"><b>首選；多偵測器可看到亞段；陰性預測值 95%。代價：顯影劑腎病變（腎功能不穩或 CrCl <30 避免；輸液＋N-acetylcysteine）、過敏史禁忌、15 mSv（胸片 0.02、工作者年限 50）。</b></p>
+          <ul><li>亞段栓塞（<2.5 mm）：單顆＋腿無殘餘血栓＋無 RV 障礙＋無顯著共病可不抗凝；多顆不抗凝復發高。</li><li>懷孕與哺乳優先考慮替代。</li></ul></div></details>
+      <details class="def-box"><summary>06 · V/Q 掃描與心臟超音波 <span class="en">V/Q scan &amp; echo</span></summary>
+        <div class="box-inner"><p class="kp"><b>V/Q 只在 20–30% 有診斷價值（肺部疾病讓 3/4 不確定）、2 mSv，留給不能 CTPA 者：正常＝排除、高機率＝確診、不確定＋超音波陰性且穩定＝排除。</b></p>
+          <ul><li>心臟超音波在確診後看 RV：RV 擴大＋troponin 是預後指標不是診斷指標。專一的只有活動性右心血栓（2–18%，massive 較多）與 McConnell 徵象（RV 游離壁不動、心尖正常，20%）。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 三層風險 <span class="en">Risk stratification</span></summary>
+        <div class="box-inner"><p class="kp"><b>低：無 RV 障礙、無不穩定、無顯著共病；中（submassive）：RV 障礙 ± troponin、穩定；高（massive）：右心勞損＋血行動力學不穩。</b></p></div></details>
+      <details class="def-box"><summary>08 · 低風險：口服抗凝、可出院 <span class="en">Low-risk PE</span></summary>
+        <div class="box-inner"><p class="kp"><b>Apixaban 10 bid × 7 天 → 5 bid；rivaroxaban 15 bid × 3 週 → 20 qd；起始劑量比一般高但出血不增；沒有共病可從急診或病房出院。</b></p>
+          <ul><li>CrCl ≤30：warfarin，用減量 enoxaparin 1 mg/kg qd 橋接到 INR 達標（要 2–3 天）；enoxaparin 可用到 CrCl 15。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 中風險：觀察 24–48 小時 <span class="en">Intermediate-risk PE</span></summary>
+        <div class="box-inner"><p class="kp"><b>Enoxaparin 1 mg/kg q12h、住院看有無惡化；未惡化再轉口服。溶栓不是正式建議：減少失代償但增大出血與顱內出血（PEITHO）。</b></p>
+          <ul><li>作者與他人在嚴重 RV 障礙或持續右心勞損時仍會用。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 高風險：抗凝與溶栓 <span class="en">High-risk PE</span></summary>
+        <div class="box-inner"><p class="kp"><b>UFH 依實際體重（比固定劑量快達標），PTT 46–70 秒（1.5–2.5 倍），溶栓期間繼續；alteplase 100 mg/2 小時，即將崩潰 0.6 mg/kg/15 分（≤50 mg）。</b></p>
+          <ul><li>>130 kg 原公式會過量：BMI ≥40 用校正體重 ＝ IBW ＋ 0.4 × (實際 − IBW)。</li><li>絕對禁忌：活動性出血、出血性中風史、6 個月內缺血性中風、CNS 腫瘤、3 週內大創傷／手術／頭部外傷。</li><li>全身溶栓大出血 10–12%、顱內 1–2%，把效益抵掉；導管溶栓劑量低、出血少、PA 壓效果相當，但要介入放射且效益 48 小時內最大。</li><li>溶栓後更要 heparin：血塊溶解釋出凝血酶會再閉塞。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 機械取栓 <span class="en">Mechanical thrombectomy</span></summary>
+        <div class="box-inner"><p class="kp"><b>經股靜脈導管抽吸；PA 壓與 RV 功能改善遠大於溶栓、維持 3 個月；目前是溶栓失敗或禁忌的救援，有的話可直接取代。</b></p>
+          <ul><li>看一眼取出的血塊量就懂為什麼溶栓對致命 PE 的影響這麼有限。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 血行動力學 <span class="en">Hemodynamic management</span></summary>
+        <div class="box-inner"><p class="kp"><b>問題是物理阻塞：輸液 ≤500 mL 且超音波導引（RV 過載推中隔擠左心）；右心衰竭下 CVP 4–6 代表低血容；dobutamine 用於右心勞損＋血壓正常（它擴血管，低血壓不單用）；低血壓用 norepinephrine（不升肺血管阻力）。</b></p></div></details>
+      <details class="def-box"><summary>13 · IVC 濾器 <span class="en">Vena cava filters</span></summary>
+        <div class="box-inner"><p class="kp"><b>適應症：DVT／PE 併抗凝絕對禁忌；治療中仍發生 PE 且來源在下肢／骨盆。預防性用於創傷／減重手術：PE −60% 但 DVT +70%，淨效益存疑。</b></p>
+          <ul><li>圓錐設計裝到 75% 仍不阻塞；放腎靜脈下；可回收型 2003、可降解型 60 天溶解。</li><li>濾器後症狀性 PE 約 5%、致命併發症（移位）<1%、幾乎不感染。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="pe-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>表現</th><th>陽性預測值</th><th>陰性預測值</th></tr>
+      <tr><td>呼吸困難</td><td>37%</td><td>75%</td></tr>
+      <tr><td>心搏過速</td><td>47%</td><td>86%</td></tr>
+      <tr><td>呼吸急促</td><td>48%</td><td>75%</td></tr>
+      <tr><td>肋膜性胸痛</td><td>39%</td><td>71%</td></tr>
+      <tr><td>咳血</td><td>32%</td><td>67%</td></tr>
+      <tr><td>肺浸潤</td><td>33%</td><td>71%</td></tr>
+      <tr><td>肋膜積液</td><td>40%</td><td>69%</td></tr>
+      <tr><td>低血氧</td><td>34%</td><td>70%</td></tr>
+      <tr><td>D-dimer</td><td>27%</td><td>92%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>影像</th><th>陽性</th><th>陰性</th><th>代價</th></tr>
+      <tr><td>靜脈超音波</td><td>30–50% 的 PE 有近端 DVT → 不必再查</td><td>不能排除 PE</td><td>無</td></tr>
+      <tr><td>CTPA</td><td>首選；亞段可見</td><td>NPV 95%，幾乎排除</td><td>15 mSv、顯影劑腎病變、過敏</td></tr>
+      <tr><td>V/Q</td><td>高機率＝確診</td><td>正常＝排除；不確定（3/4）＋超音波陰性且穩定＝排除</td><td>2 mSv；肺病讓它不可判</td></tr>
+      <tr><td>心臟超音波</td><td>右心血栓、McConnell 專一但少</td><td>診斷性發現不常見</td><td>RV 勞損是預後不是診斷</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>風險層</th><th>定義</th><th>抗栓策略</th></tr>
+      <tr><td>低</td><td>無 RV 障礙、穩定、無共病</td><td>DOAC：apixaban 10 bid ×7 天 → 5 bid；rivaroxaban 15 bid ×3 週 → 20 qd；CrCl ≤30 用 warfarin＋enoxaparin 1 mg/kg qd 橋接</td></tr>
+      <tr><td>中</td><td>RV 障礙 ± troponin、穩定</td><td>Enoxaparin 1 mg/kg q12h、觀察 24–48 h → 口服；溶栓非正式建議</td></tr>
+      <tr><td>高</td><td>右心勞損＋不穩定</td><td>UFH 依體重（PTT 46–70）＋alteplase 100 mg/2 h（崩潰 0.6 mg/kg/15 分 ≤50）→ 導管溶栓／取栓</td></tr>
+    </table></div>
+    <div class="note">原書表 22.3 的高風險 UFH 劑量列與中風險段落在抽出時被截斷，依內文與 ESC 2019 補齊。</div>
+    <div class="dirhead" id="pe-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c22hep">
+      <div class="rxbox-t">UFH 依體重（含肥胖校正）</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>實際體重 <span class="rx-en">kg</span></label><input type="number" id="hp_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="hp_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="hp_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c22hep_out"></div>
+    </div>
+    <div class="rxbox" id="c22lys">
+      <div class="rxbox-t">溶栓劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ly_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>即將循環崩潰 <span class="rx-en">collapse</span></label><select id="ly_c"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c22lys_out"></div>
+    </div>
+    <div class="rxbox" id="c22ac">
+      <div class="rxbox-t">抗凝方案（低／中風險）</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>風險層 <span class="rx-en">risk</span></label><select id="ac_r"><option value="low">低</option><option value="int">中</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ac_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CrCl <span class="rx-en">mL/min</span></label><input type="number" id="ac_cr" step="1" placeholder="60"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c22ac_out"></div>
+    </div>
+    <div class="rxbox" id="c22rad">
+      <div class="rxbox-t">影像輻射累積</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>CTPA 次數 <span class="rx-en">n</span></label><input type="number" id="rd_n" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>V/Q 次數 <span class="rx-en">n</span></label><input type="number" id="rd_vq" step="1" placeholder="0"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c22rad_out"></div>
+    </div>
+    <div class="dirhead" id="pe-flow"><span class="dh-n">決策流程</span><span class="dh-e">Stratify, then act</span></div>
+    <div id="pe_flow">
+      <div class="flow-step" id="pe_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">血行動力學不穩定？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="pePick('hd','yes',this)">是<span class="fo-sub">低血壓、休克</span></button>
+          <button class="flow-opt" onclick="pePick('hd','no',this)">否</button>
+        </div></div>
+      <div class="flow-step" id="pe_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（穩定）超音波有 RV 功能障礙？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="pePick('rv','yes',this)">有<span class="fo-sub">± troponin 升高</span></button>
+          <button class="flow-opt" onclick="pePick('rv','no',this)">沒有</button>
+        </div></div>
+      <div class="flow-step" id="pe_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（不穩定）溶栓的絕對禁忌？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="pePick('ci','no',this)">沒有</button>
+          <button class="flow-opt" onclick="pePick('ci','yes',this)">有</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="pe_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="peReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="pe-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_pe"></div>
+    <div class="dirhead" id="pe-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/pe.html" href="#">急性肺栓塞</a><a class="flow-link" data-ct="tools/wells-pe.html" href="#">Wells</a><a class="flow-link" data-ct="tools/perc.html" href="#">PERC</a><a class="flow-link" data-ct="tools/pesi.html" href="#">PESI</a><a class="flow-link" data-ct="tools/vte-risk.html" href="#">VTE 風險</a><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a><a class="flow-link" href="practices.html#vte">Marino 第 5 章 血栓預防</a></div>
+  </section>
+
+  <!-- ==================== Ch23 Asthma and COPD ==================== -->
+  <section class="respdis-panel hidden" data-panel="obst" id="respdis-p-obst">
+    <div class="dirhead"><span class="dh-n">第 23 章 氣喘與 COPD</span><span class="dh-e">Chapter 23 · Asthma and COPD in the ICU</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#obst/ob-key"><i>01</i>重點卡</a><a class="sp-chip" href="#obst/ob-tab"><i>02</i>對照表</a><a class="sp-chip" href="#obst/ob-calc"><i>03</i>計算</a><a class="sp-chip" href="#obst/ob-flow"><i>04</i>流程</a><a class="sp-chip" href="#obst/ob-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#obst/ob-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>臨床看不準阻塞有多重</b>：PEFR 才客觀但急性期做不到；急性氣喘 PaCO₂「正常」就是滯留，該進 ICU。</span></div>
+        <div class="lede-item"><span>②</span><span><b>吸入的藥只有一成到肺</b>：噴霧器 12%、MDI 9%、MDI＋spacer 20%——劑量差 7 倍效果卻一樣，穩定後就換 MDI。</span></div>
+        <div class="lede-item"><span>③</span><span><b>處方很簡單</b>：支氣管擴張劑＋類固醇（COPD 加抗生素、氧氣 88–92%），不夠就 BiPAP，再不行就插管——並且防動態過度充氣。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ob-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ob-kc">全部展開</button></div>
+    <div id="ob-kc">
+      <details class="def-box"><summary>01 · 進 ICU 是凶兆 <span class="en">ICU admission is ominous</span></summary>
+        <div class="box-inner"><p class="kp"><b>COPD：1/4 死於住院、存活者 40% 一年內再住院；氣喘：需要呼吸器是死亡最強的危險因子。</b></p>
+          <ul><li>1931 年就說「刺激交感、擴張支氣管」，近百年後主軸沒變。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 阻塞嚴重度怎麼量 <span class="en">Monitoring obstruction</span></summary>
+        <div class="box-inner"><p class="kp"><b>臨床徵象（心搏過速、呼吸急促、輔助肌、講不完句、意識改變、pulsus paradoxus >12 mmHg）都不敏感不專一；PEFR % 預測值 ≥70 輕、40–69 中、<40 重；<200 L/min 重度；<25% 才高碳酸。</b></p>
+          <ul><li>PEFR 要吸到 TLC 再吐到 RV，急性發作做不到，所以急性期不流行；喘緩解後可追蹤。</li><li>呼吸器上用內生性 PEEP 反映阻塞嚴重度。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 吸入藥的沉積 <span class="en">Aerosol delivery</span></summary>
+        <div class="box-inner"><p class="kp"><b>噴霧器：肺 12%、裝置 66%、呼出 20%；MDI 直噴：口咽 80%（噴速 >30 m/s）、肺 9%；MDI＋spacer：肺 20%——spacer 是所有 MDI 的標配。</b></p>
+          <ul><li>噴霧器 2.5 mg vs MDI 4 噴 0.36 mg 效果相同（到肺 300 vs 72 μg，4 倍差同效，原因不明）。</li><li>呼吸器：管路與氣管內管冷凝讓沉積更少；放慢吸氣流速、拉長吸氣有助；劑量不變。</li><li>MDI＋spacer 劑量低副作用少，一般偏好；急性發作偏好噴霧器（沒有證據更好），穩定就換。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 急性氣喘：albuterol <span class="en">SABA regimens</span></summary>
+        <div class="box-inner"><p class="kp"><b><5 分起效、15–60 分高峰、2–5 小時；2.5–5 mg（或 4–8 噴）q20 分 ×3 → 每小時 ×3 或連續 5–15 mg/hr → 住院 q4–6h。分鐘通氣量倍增下 PaCO₂ 42 就是滯留。</b></p>
+          <ul><li>吸入優於口服與 IV；levalbuterol 半劑量同效、無優勢。</li><li>不耐受吸入（咳）：SC epinephrine 0.3–0.5 mg q20 ×3 或 terbutaline 0.25 mg q20 ×3。</li><li>副作用：心搏過速、顫抖、高血糖、低鉀（β 把鉀推進細胞）、低鎂、低磷、乳酸升高（代謝率升，非無氧）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · Ipratropium <span class="en">Anticholinergics</span></summary>
+        <div class="box-inner"><p class="kp"><b>效益邊際：只在重度發作與 SABA 併用、只用前 3–4 小時；0.5 mg（可與 albuterol 同噴）q20 ×3 或 8 噴（18 μg/噴）q20；住院後停。</b></p>
+          <ul><li>全身吸收極少，幾乎沒有抗膽鹼副作用。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 類固醇 <span class="en">Corticosteroids</span></summary>
+        <div class="box-inner"><p class="kp"><b>一兩次擴張劑反應不佳就給；口服＝IV；12 小時後才見效；沒有劑量反應（>100 mg prednisone 無益）；40–80 mg/天 prednisone 或 methylprednisolone；10 天內可直接停不必漸減；吸入型隨時可加、系統性停後續用。</b></p>
+          <ul><li>Dexamethasone 抗發炎最強（30–40 倍）卻不建議用於氣喘——類固醇在氣喘（與許多發炎症）的機轉存疑。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 輔助措施 <span class="en">Adjuncts</span></summary>
+        <div class="box-inner"><p class="kp"><b>MgSO₄ 2 g/15–30 分（鈣通道阻斷的輕度擴張；吸入型不建議）；ketamine 0.1–0.2 mg/kg → 0.15–0.25 mg/kg/hr × 1–5 小時（鎮靜降速率減少氣體滯留＋擴張）；SaO₂ ≥90 即可；吸氣流速可 >60 L/min → 高流量鼻導管；高碳酸 → BiPAP，PaCO₂ 沒降就插管。</b></p>
+          <ul><li>Ketamine 副作用：躁動不安、幻覺、分泌物增加。</li></ul></div></details>
+      <details class="def-box"><summary>08 · COPD 急性惡化 <span class="en">COPD exacerbation</span></summary>
+        <div class="box-inner"><p class="kp"><b>誘因：呼吸道感染、隱藏的 PE、左心衰竭（有時找不到）；進 ICU 的多是低血氧＋高碳酸、意識受抑。處方同氣喘但劑量不同：albuterol 2.5–5 mg 或 2–8 噴 q4–6h（MDI 較宜）；ipratropium 併用有 3 篇研究不支持。</b></p>
+          <ul><li>矛盾：COPD 的定義就是肺功能對擴張劑無反應，卻用擴張劑治。</li></ul></div></details>
+      <details class="def-box"><summary>09 · COPD 類固醇與抗生素 <span class="en">Steroids &amp; antibiotics in COPD</span></summary>
+        <div class="box-inner"><p class="kp"><b>Prednisone 40 mg × 5 天（NNT 9、NNH 6，副作用比治療失敗輕；IV 無優勢）。抗生素：痰量增、膿痰、需 NIV／MV → ICU 收治者都給；只 50% 是細菌；H. influenzae、S. pneumoniae、呼吸器者 Pseudomonas；cefepime 類 5–7 天。</b></p>
+          <ul><li>痰培養問題：穩定期與惡化期常分離同樣的菌。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 氧氣 88–92% <span class="en">Oxygen in COPD</span></summary>
+        <div class="box-inner"><p class="kp"><b>慢性 CO₂ 滯留者高濃度氧會升 PaCO₂——不是失去低氧驅動（驅動沒降），可能是 Haldane 效應；目標 SaO₂ 88–92%、不要更高。</b></p></div></details>
+      <details class="def-box"><summary>11 · BiPAP 與插管門檻 <span class="en">NIV thresholds</span></summary>
+        <div class="box-inner"><p class="kp"><b>COPD 高碳酸先 BiPAP；1 小時 PaCO₂ 沒降 10 mmHg 就插管。氣喘最重者高碳酸也試 BiPAP，PaCO₂ 沒降常是插管指標。</b></p></div></details>
+      <details class="def-box"><summary>12 · 動態過度充氣與內生性 PEEP <span class="en">Dynamic hyperinflation</span></summary>
+        <div class="box-inner"><p class="kp"><b>吐不完就吸 → 滯留氣體產生內生性 PEEP → 在較平的壓力容積曲線上呼吸、呼吸功增加（深吸一口氣再從那裡呼吸就是那種感覺）。</b></p>
+          <ul><li>正壓通氣從更高的壓力起跳，大 VT 或快速率再加重 → 峰壓升＝氣壓傷（氣胸）、平均壓升＝靜脈回流受阻。</li><li>監測：流量波形在下一次吹氣前還有吐氣流量；嚴重度看內生性 PEEP（第 28 章）。</li><li>對策：VT ≤6–8 mL/kg；鎮靜降速率；拉高吸氣流速讓吸氣只占 1/3 週期。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="ob-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>沉積位置</th><th>噴霧器 2.5 mg</th><th>MDI 200 μg</th><th>MDI＋spacer 200 μg</th></tr>
+      <tr><td>呼出</td><td>20%</td><td>1%</td><td>1%</td></tr>
+      <tr><td>裝置</td><td>66%</td><td>10%</td><td>78%</td></tr>
+      <tr><td>口咽</td><td>2%</td><td>80%</td><td>1%</td></tr>
+      <tr><td>肺</td><td>12%</td><td>9%</td><td>20%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥物</th><th>急性氣喘</th><th>COPD 惡化</th></tr>
+      <tr><td>Albuterol</td><td>2.5–5 mg（4–8 噴）q20 分 ×3 → 每小時或連續 5–15 mg/hr（≤3 h）→ 2.5 mg（2 噴）q4–6h</td><td>2.5–5 mg 或 2–8 噴 q4–6h；MDI 較宜</td></tr>
+      <tr><td>Levalbuterol</td><td>1.25–2.5 mg，同上時程</td><td>1.25–2.5 mg 或 2–8 噴 q4–6h</td></tr>
+      <tr><td>Ipratropium</td><td>0.5 mg q20 ×3（或 8 噴）只前 3–4 h</td><td>反應不佳時併用（證據不支持）</td></tr>
+      <tr><td>類固醇</td><td>Prednisone／methylpred 40–80 mg/天，口服＝IV</td><td>Prednisone 40 mg × 5 天</td></tr>
+      <tr><td>其他</td><td>MgSO₄ 2 g；ketamine；SC epinephrine／terbutaline</td><td>抗生素 5–7 天；SaO₂ 88–92</td></tr>
+    </table></div>
+    <div class="note">原書表 23.2 與 23.4 在 levalbuterol 之後截斷，其餘列依內文重建。</div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>類固醇</th><th>等效 mg</th><th>相對抗發炎</th><th>相對礦物皮質</th></tr>
+      <tr><td>Hydrocortisone</td><td>20</td><td>1</td><td>20</td></tr>
+      <tr><td>Prednisone</td><td>5</td><td>3.5</td><td>1</td></tr>
+      <tr><td>Methylprednisolone</td><td>4</td><td>5</td><td>0.5</td></tr>
+      <tr><td>Dexamethasone</td><td>0.75</td><td>30–40</td><td>0</td></tr>
+    </table></div>
+    <div class="dirhead" id="ob-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c23pefr">
+      <div class="rxbox-t">PEFR 嚴重度</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>實測 PEFR <span class="rx-en">L/min</span></label><input type="number" id="pf_m" step="10" placeholder="180"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>預測 PEFR <span class="rx-en">L/min</span></label><input type="number" id="pf_p" step="10" placeholder="500"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c23pefr_out"></div>
+    </div>
+    <div class="rxbox" id="c23dep">
+      <div class="rxbox-t">吸入藥到肺的劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>裝置 <span class="rx-en">device</span></label><select id="dp_d"><option value="neb">噴霧器</option><option value="mdi">MDI 直噴</option><option value="sp">MDI＋spacer</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>標示劑量 <span class="rx-en">mg</span></label><input type="number" id="dp_dose" step="0.1" placeholder="2.5"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c23dep_out"></div>
+    </div>
+    <div class="rxbox" id="c23ster">
+      <div class="rxbox-t">類固醇等效換算</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>由 <span class="rx-en">from</span></label><select id="st_f"><option value="pred">Prednisone</option><option value="mp">Methylprednisolone</option><option value="hc">Hydrocortisone</option><option value="dex">Dexamethasone</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>劑量 <span class="rx-en">mg</span></label><input type="number" id="st_d" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>換成 <span class="rx-en">to</span></label><select id="st_t"><option value="mp">Methylprednisolone</option><option value="pred">Prednisone</option><option value="hc">Hydrocortisone</option><option value="dex">Dexamethasone</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c23ster_out"></div>
+    </div>
+    <div class="rxbox" id="c23ket">
+      <div class="rxbox-t">Ketamine 與鎂</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="kt_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Ketamine 濃度 <span class="rx-en">mg/mL</span></label><input type="number" id="kt_c" step="0.5" placeholder="1"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c23ket_out"></div>
+    </div>
+    <div class="rxbox" id="c23vent">
+      <div class="rxbox-t">呼吸器：吐氣時間與潮氣量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>速率 <span class="rx-en">/分</span></label><input type="number" id="vt_rr" step="1" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>吸氣時間 <span class="rx-en">秒</span></label><input type="number" id="vt_ti" step="0.1" placeholder="1.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>潮氣量 <span class="rx-en">mL</span></label><input type="number" id="vt_vt" step="10" placeholder="450"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="vt_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="vt_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c23vent_out"></div>
+    </div>
+    <div class="dirhead" id="ob-flow"><span class="dh-n">決策流程</span><span class="dh-e">Obstructive airway disease in the ICU</span></div>
+    <div id="ob_flow">
+      <div class="flow-step" id="ob_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">哪一種？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="obPick('dz','asthma',this)">急性氣喘</button>
+          <button class="flow-opt" onclick="obPick('dz','copd',this)">COPD 急性惡化</button>
+        </div></div>
+      <div class="flow-step" id="ob_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">有高碳酸血症嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="obPick('hc','no',this)">沒有</button>
+          <button class="flow-opt" onclick="obPick('hc','yes',this)">有<span class="fo-sub">氣喘：PaCO₂「正常」也算</span></button>
+        </div></div>
+      <div class="flow-step" id="ob_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">BiPAP 1 小時後？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="obPick('bp','ok',this)">PaCO₂ 有降</button>
+          <button class="flow-opt" onclick="obPick('bp','fail',this)">沒降（COPD：<10 mmHg）</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ob_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="obReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ob-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_obst"></div>
+    <div class="dirhead" id="ob-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/respiratory-failure.html" href="#">呼吸衰竭總論</a><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣</a><a class="flow-link" data-ct="tools/rox.html" href="#">ROX 指數</a><a class="flow-link" data-ct="tools/dose-conversion.html" href="#">劑量換算</a><a class="flow-link" data-ct="tools/antibiotics.html" href="#">抗生素</a><a class="flow-link" data-ct="tools/rsi.html" href="#">RSI 插管</a></div>
+  </section>
+
+  <!-- ==================== Ch24 ARDS ==================== -->
+  <section class="respdis-panel hidden" data-panel="ards" id="respdis-p-ards">
+    <div class="dirhead"><span class="dh-n">第 24 章 急性呼吸窘迫症候群</span><span class="dh-e">Chapter 24 · Acute Respiratory Distress Syndrome</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ards/ar-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ards/ar-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ards/ar-calc"><i>03</i>計算</a><a class="sp-chip" href="#ards/ar-flow"><i>04</i>流程</a><a class="sp-chip" href="#ards/ar-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ards/ar-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>ARDS 是中性球造成的瀰漫性發炎肺傷</b>，肺炎與敗血症最常引起；診斷錯誤達 50%，胸片的排除力只像擲銅板，wedge 正常也排除不了。</span></div>
+        <div class="lede-item"><span>②</span><span><b>沒有藥治得好它</b>：HFNO 讓呼吸舒服、早插管避免 P-SILI、避免正水平衡、中重度可考慮類固醇與俯臥。</span></div>
+        <div class="lede-item"><span>③</span><span><b>呼吸器會製造 ARDS</b>：容積傷、atelectrauma、biotrauma——6 mL/kg PBW＋PEEP＋平台壓 ≤30 是唯一有存活效益的策略；但七成死於多器官衰竭，只盯著肺是失敗的處方。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ar-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ar-kc">全部展開</button></div>
+    <div id="ar-kc">
+      <details class="def-box"><summary>01 · 病生理 <span class="en">Pathogenesis</span></summary>
+        <div class="box-inner"><p class="kp"><b>1967 年 12 例、7 死、屍檢無感染的發炎滲出；中性球活化 → 滯留肺微循環 → 脫顆粒（蛋白酶、活性氧）→ 微血管壁破 → 富蛋白滲出液充滿肺泡；纖維蛋白幾週內不退就不可逆纖維化。</b></p>
+          <ul><li>名字換過很多（休克肺、Da Nang lung、非心因性肺水腫……），沒有一個講出它是什麼。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 誘因 <span class="en">Predisposing conditions</span></summary>
+        <div class="box-inner"><p class="kp"><b>肺炎 60%、肺外敗血症 16%、胃內容物吸入 14%、敗血性休克 8%、肺挫傷 6%、輸血 4%、多重創傷 4%、吸入傷 2%、藥物過量 2%；10% 找不到。</b></p>
+          <ul><li>COVID-19：住院者 1/3 ARDS，但嚴重低血氧常伴正常順應性——是特殊型，近年很多 ARDS 研究以它為對象、結果未必能推廣。</li></ul></div></details>
+      <details class="def-box"><summary>03 · Berlin 診斷與嚴重度 <span class="en">Diagnosis &amp; severity</span></summary>
+        <div class="box-inner"><p class="kp"><b>7 天內急性、雙側肺泡浸潤、PaO₂/FIO₂ ≤300 且 PEEP ≥5、非左心衰竭或過載、有誘因。輕 201–300（死亡 35%）、中 100–200（40%）、重 <100（45%）；80% 在 48 小時內插管。</b></p>
+          <ul><li>PEEP 條件需要插管，把不需呼吸器的 ARDS 排除在外——被質疑。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 診斷陷阱 <span class="en">Diagnostic pitfalls</span></summary>
+        <div class="box-inner"><p class="kp"><b>錯誤（過與不及）達 50%：典型瀰漫毛玻璃只 15–25%（下肺野局限更常見、可像心因性）；胸片對 CT 的陰性預測值 47%；屍檢只 50% 相符；wedge ≤18 不能排除靜水壓性肺水腫（wedge 低於微血管壓）。</b></p>
+          <ul><li>CT：早期後側（仰臥的依賴區）緻密實變；晚期全肺網狀（纖維化）。CT 型態影響處置（俯臥）。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 失敗的藥物與 P-SILI <span class="en">Failed drugs &amp; P-SILI</span></summary>
+        <div class="box-inner"><p class="kp"><b>失敗清單：surfactant（成人）、吸入 NO、吸入前列環素、statin、類固醇（少數例外）、肌鬆劑、β 促效劑、interferon β-1a、G-CSF。P-SILI：用力呼吸的大負壓（負壓性肺水腫）與大 VT（容積傷）會自傷——呼吸器上「overbreathe」也會。</b></p>
+          <ul><li>意義：持續用力呼吸者早插管而非晚；先用氧氣、鎮靜讓呼吸舒服。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 高流量鼻導管與氧毒性 <span class="en">HFNO &amp; O₂ toxicity</span></summary>
+        <div class="box-inner"><p class="kp"><b>一般給氧 15 L/min 不夠先 HFNO（40–60 L/min、加溫加濕、可獨立調 FIO₂）：COVID 研究插管較少（死亡率無差）、呼吸舒服減少 P-SILI，已建議取代一般給氧。</b></p>
+          <ul><li>代價：FIO₂ ≥70% 久了是肺氧毒性——重症者抗氧化物（glutathione）不足、高氧加速呼吸器傷害、氧毒性的病理與 ARDS 相同（惡化可能是氧造成的）。</li></ul></div></details>
+      <details class="def-box"><summary>07 · NIV：輕度最有用、失敗要早認 <span class="en">Noninvasive ventilation</span></summary>
+        <div class="box-inner"><p class="kp"><b>NIV 在輕度（P/F 201–300）最能避免插管；失敗者死亡率高很多。1 小時 P/F 沒升＝反應差；失敗者 VT ≥9.5 mL/kg PBW（用力呼吸 → P-SILI）→ 該插管。</b></p></div></details>
+      <details class="def-box"><summary>08 · 輸液 <span class="en">Fluid management</span></summary>
+        <div class="box-inner"><p class="kp"><b>微血管漏 → 避免或矯正正水平衡（縮短呼吸器天數）：每天看進出、利尿劑；但正壓通氣會放大低血容的心輸出量下降，別脫水（加重多器官失能）。</b></p></div></details>
+      <details class="def-box"><summary>09 · 類固醇 <span class="en">Corticosteroids</span></summary>
+        <div class="box-inner"><p class="kp"><b>50 年爭論、建議每 5–10 年變（「50 年還不確定就該放下」）。COVID 需氧或通氣支持：dexamethasone 6 mg × ≤10 天（不影響病毒清除）。中重度（P/F <200、PEEP 10）弱建議：methylpred 1 mg/kg/天 IBW（72 小時內）或 2 mg/kg/天（持續 7–14 天，針對纖維增生期），連續輸注、14 天內慢慢減。</b></p>
+          <ul><li>最常見副作用高血糖；與肌鬆劑併用的急性肌病變罕見但可怕。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 俯臥 <span class="en">Prone positioning</span></summary>
+        <div class="box-inner"><p class="kp"><b>後側緻密實變 → 趴著讓血流到前側、後側通氣；自主呼吸時降速率與呼吸功、降 PA 壓。清醒俯臥只在 HFNO／NIV 減少插管（COVID、無死亡率效益）；插管中重度（P/F <150、FIO₂ ≥60、PEEP ≥5）且 VT ~6 有存活效益（PROSEVA；非一致）。</b></p>
+          <ul><li>清醒 ≥8 小時／天（單次）；插管 ≥16 小時。第一次就該看到 P/F 或順應性改善，持續 4 小時就不必再趴；沒反應不再趴。CT 後側實變者較可能成功。</li><li>絕對禁忌：活動性出血、脊椎不穩定（原表截斷，另含顱內壓升高等）；相對：休克、懷孕、近期致命心律不整、胸管；升壓劑不是禁忌。併發症：不適、嘔吐、臂神經叢、壓瘡、管路脫落、短暫心律不整。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 呼吸器造成的肺傷 <span class="en">Ventilator-induced lung injury</span></summary>
+        <div class="box-inner"><p class="kp"><b>1950 年代小兒麻痺就發現氣胸；1967「respirator lung」；肺泡微血管界面的應力破裂。容積傷（不是壓力傷：傳統 12–15 mL/kg 是正常的 2 倍、塞進只剩 50% 容量的肺）、atelectrauma（小氣道週期性開合剪力，PEEP 可防）、biotrauma（細胞激素入血 → 多器官衰竭）。</b></p></div></details>
+      <details class="def-box"><summary>12 · 肺保護通氣 <span class="en">Lung protective ventilation</span></summary>
+        <div class="box-inner"><p class="kp"><b>PBW（男 50／女 45.5 ＋ 2.3 × (吋 − 60)）→ VT 8 → 6 mL/kg、PEEP 5、最低 FIO₂ 達 SpO₂ 88–95、平台壓 ≤30、pH 7.30–7.45；允許性高碳酸 PaCO₂ 60–70、pH 7.2–7.25 多數安全（無 CO₂ 麻醉）。</b></p>
+          <ul><li>唯一有存活效益的通氣策略（ARDSNet）；非一致、未普及——不到 2/3 拿到 ≤8 mL/kg。</li><li>APRV：長時間高壓自主呼吸（＝上次平台壓、≤30）間歇短暫釋放到 5；縮短呼吸器天數、無存活效益。</li></ul></div></details>
+      <details class="def-box"><summary>13 · 治療方向錯了？ <span class="en">Therapeutic misdirection</span></summary>
+        <div class="box-inner"><p class="kp"><b>呼吸器不是治療，是少傷一點；70% 的死亡是多器官衰竭，死亡率隨衰竭器官數上升——只盯著肺是失敗的處方。ECMO：P/F <80 ≥6 小時或 <50 ≥3 小時的 10–15%，VV-ECMO＋肺保護；成功取決於可逆性（病毒性肺炎較有成績）。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ar-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>嚴重度</th><th>PaO₂/FIO₂（PEEP ≥5）</th><th>院內死亡</th><th>處置門檻</th></tr>
+      <tr><td>輕</td><td>201–300</td><td>35%</td><td>NIV 最有用；清醒俯臥</td></tr>
+      <tr><td>中</td><td>100–200</td><td>40%</td><td>P/F <200＋PEEP 10：類固醇弱建議；P/F <150＋FIO₂ ≥60：俯臥 ≥16 h</td></tr>
+      <tr><td>重</td><td><100</td><td>45%</td><td>P/F <80 ≥6 h 或 <50 ≥3 h：ECMO</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>肺保護協定</th><th>設定</th></tr>
+      <tr><td>PBW</td><td>男 50 ＋ 2.3 × (身高吋 − 60)；女 45.5 ＋ …</td></tr>
+      <tr><td>VT</td><td>起始 8 → 目標 6 mL/kg PBW</td></tr>
+      <tr><td>PEEP</td><td>5 cmH₂O 起（防 atelectrauma）</td></tr>
+      <tr><td>FIO₂</td><td>最低能達 SpO₂ 88–95%</td></tr>
+      <tr><td>平台壓</td><td>≤30 cmH₂O</td></tr>
+      <tr><td>pH</td><td>7.30–7.45；允許 PaCO₂ 60–70、pH 7.2–7.25</td></tr>
+    </table></div>
+    <div class="note">原書表 24.5 第一階段第 5 項之後截斷（ARDSNet 協定有 PEEP/FIO₂ 對照與 VT 下調步驟），本頁只列可辨的部分。</div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>類固醇</th><th>方案</th></tr>
+      <tr><td>COVID-19 需氧／NIV／MV</td><td>Dexamethasone 6 mg IV/PO qd ≤10 天</td></tr>
+      <tr><td>中重度 ARDS，72 小時內</td><td>Methylprednisolone 1 mg/kg/天（IBW）連續輸注，14 天內慢減</td></tr>
+      <tr><td>持續 7–14 天的 ARDS</td><td>Methylprednisolone 2 mg/kg/天，同上</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>俯臥</th><th>內容</th></tr>
+      <tr><td>清醒</td><td>HFNO／NIV 的病人，≥8 小時/天單次；減少插管、無死亡率效益</td></tr>
+      <tr><td>插管</td><td>P/F <150、FIO₂ ≥60%、PEEP ≥5、VT ~6；≥16 小時/天；存活效益</td></tr>
+      <tr><td>評估</td><td>第一次應見 P/F／順應性改善；持續 4 小時就停；無反應不再趴</td></tr>
+      <tr><td>絕對禁忌</td><td>活動性出血、脊椎不穩定（原表截斷）</td></tr>
+      <tr><td>相對禁忌</td><td>休克、懷孕、近期致命心律不整、胸管；升壓劑不是禁忌</td></tr>
+    </table></div>
+    <div class="dirhead" id="ar-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c24pf">
+      <div class="rxbox-t">P/F 與嚴重度</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>PaO₂ <span class="rx-en">mmHg</span></label><input type="number" id="pf_pa" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>FIO₂ <span class="rx-en">0.21–1 或 %</span></label><input type="number" id="pf_fi" step="0.05" placeholder="0.6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PEEP <span class="rx-en">cmH₂O</span></label><input type="number" id="pf_peep" step="1" placeholder="10"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>持續時數 <span class="rx-en">hours</span></label><input type="number" id="pf_hr" step="1" placeholder="6"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c24pf_out"></div>
+    </div>
+    <div class="rxbox" id="c24pbw">
+      <div class="rxbox-t">PBW、潮氣量與類固醇劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="pb_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="pb_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>目前 VT <span class="rx-en">mL</span></label><input type="number" id="pb_vt" step="10" placeholder="500"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c24pbw_out"></div>
+    </div>
+    <div class="rxbox" id="c24vent">
+      <div class="rxbox-t">肺保護目標核對</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>平台壓 <span class="rx-en">cmH₂O</span></label><input type="number" id="vn_ppl" step="1" placeholder="28"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>pH <span class="rx-en"></span></label><input type="number" id="vn_ph" step="0.01" placeholder="7.28"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="vn_pco2" step="1" placeholder="62"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SpO₂ <span class="rx-en">%</span></label><input type="number" id="vn_spo2" step="1" placeholder="93"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c24vent_out"></div>
+    </div>
+    <div class="rxbox" id="c24niv">
+      <div class="rxbox-t">NIV／HFNO 1 小時評估</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>起始 P/F <span class="rx-en">mmHg</span></label><input type="number" id="nv_0" step="5" placeholder="180"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>1 小時 P/F <span class="rx-en">mmHg</span></label><input type="number" id="nv_1" step="5" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>潮氣量 <span class="rx-en">mL/kg PBW</span></label><input type="number" id="nv_vt" step="0.5" placeholder="10"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>仍用力呼吸 <span class="rx-en">labored</span></label><select id="nv_eff"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c24niv_out"></div>
+    </div>
+    <div class="dirhead" id="ar-flow"><span class="dh-n">決策流程</span><span class="dh-e">Respiratory support escalation</span></div>
+    <div id="ar_flow">
+      <div class="flow-step" id="ar_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">已插管？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="arPick('tube','no',this)">未插管</button>
+          <button class="flow-opt" onclick="arPick('tube','yes',this)">已插管</button>
+        </div></div>
+      <div class="flow-step" id="ar_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（已插管）嚴重度？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="arPick('sev','mild',this)">P/F ≥150</button>
+          <button class="flow-opt" onclick="arPick('sev','mod',this)">P/F <150、FIO₂ ≥60%</button>
+          <button class="flow-opt" onclick="arPick('sev','ref',this)">俯臥後仍 P/F <80（≥6 h）或 <50（≥3 h）</button>
+        </div></div>
+      <div class="flow-step" id="ar_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（未插管）HFNO／NIV 1 小時後？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="arPick('resp','ok',this)">P/F 上升、呼吸舒服</button>
+          <button class="flow-opt" onclick="arPick('resp','fail',this)">P/F 沒升、VT ≥9.5 或仍用力</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ar_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="arReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ar-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_ards"></div>
+    <div class="dirhead" id="ar-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/ards.html" href="#">ARDS</a><a class="flow-link" data-ct="pathways/lung-protective-ventilation.html" href="#">肺保護通氣</a><a class="flow-link" data-ct="pathways/respiratory-failure.html" href="#">呼吸衰竭總論</a><a class="flow-link" data-ct="tools/body-metrics.html" href="#">BSA／IBW</a><a class="flow-link" data-ct="tools/rox.html" href="#">ROX 指數</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" href="blood.html#rbc">Marino 第 12 章 TRALI</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 22–24 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31473594/" target="_blank" rel="noopener" class="ref-link">2019 ESC/ERS acute pulmonary embolism guidelines. Eur Respir J 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34352279/" target="_blank" rel="noopener" class="ref-link">CHEST antithrombotic therapy for VTE, second update. Chest 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33007077/" target="_blank" rel="noopener" class="ref-link">ASH 2020 VTE treatment guidelines. Blood Adv 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3753109/" target="_blank" rel="noopener" class="ref-link">Hoellerich & Wigton. Diagnosing PE using clinical findings. Arch Intern Med 1986</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11926847/" target="_blank" rel="noopener" class="ref-link">Kelly et al. Plasma D-dimers in VTE diagnosis. Arch Intern Med 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10708176/" target="_blank" rel="noopener" class="ref-link">Kollef et al. D-dimer in critically ill patients. CCM 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16738268/" target="_blank" rel="noopener" class="ref-link">PIOPED II: multidetector CT for acute PE. NEJM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29498138/" target="_blank" rel="noopener" class="ref-link">Bariteau et al. Subsegmental PE with/without anticoagulation meta-analysis. Acad Emerg Med 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34807722/" target="_blank" rel="noopener" class="ref-link">Le Gal et al. Subsegmental PE managed without anticoagulation. Ann Intern Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31961246/" target="_blank" rel="noopener" class="ref-link">ACR/NKF consensus on iodinated contrast in kidney disease. Radiology 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27427291/" target="_blank" rel="noopener" class="ref-link">Kurnicka et al. Echocardiographic pattern of acute PE. JASE 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22449293/" target="_blank" rel="noopener" class="ref-link">EINSTEIN-PE: oral rivaroxaban for symptomatic PE. NEJM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23808982/" target="_blank" rel="noopener" class="ref-link">AMPLIFY: oral apixaban for acute VTE. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24716681/" target="_blank" rel="noopener" class="ref-link">PEITHO: fibrinolysis for intermediate-risk PE. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8214998/" target="_blank" rel="noopener" class="ref-link">Raschke et al. Weight-based heparin dosing nomogram. Ann Intern Med 1993</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37880651/" target="_blank" rel="noopener" class="ref-link">Lauder et al. Mechanical thrombectomy in acute PE. Respir Res 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28935036/" target="_blank" rel="noopener" class="ref-link">Bikdeli et al. IVC filters meta-analysis. JACC 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33399840/" target="_blank" rel="noopener" class="ref-link">PEP: prevalence of PE among COPD exacerbations. JAMA 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20818877/" target="_blank" rel="noopener" class="ref-link">Lazarus. Emergency treatment of asthma. NEJM 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8449049/" target="_blank" rel="noopener" class="ref-link">Idris et al. MDI plus holding chamber equivalent to nebulizer. Chest 1993</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23949578/" target="_blank" rel="noopener" class="ref-link">Lewis et al. Albuterol and serum lactate in acute asthma. Chest 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19854321/" target="_blank" rel="noopener" class="ref-link">Krishnan et al. Corticosteroids for acute asthma: umbrella review. Am J Med 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10453853/" target="_blank" rel="noopener" class="ref-link">Rodrigo & Rodrigo. Corticosteroids in ED therapy of acute asthma. Chest 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12065366/" target="_blank" rel="noopener" class="ref-link">Rodrigo & Rodrigo. Anticholinergics in acute asthma. Chest 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24865567/" target="_blank" rel="noopener" class="ref-link">Kew et al. IV magnesium sulfate for acute asthma (Cochrane). 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20551406/" target="_blank" rel="noopener" class="ref-link">Lindenauer et al. Corticosteroid dose and route in COPD exacerbation. JAMA 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30371937/" target="_blank" rel="noopener" class="ref-link">Vollenweider et al. Antibiotics for COPD exacerbations (Cochrane). 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28702957/" target="_blank" rel="noopener" class="ref-link">Osadnik et al. NIV for hypercapnic COPD exacerbation (Cochrane). 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10713013/" target="_blank" rel="noopener" class="ref-link">Anton et al. Predicting NIV result in severe COPD exacerbation. Chest 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6774639/" target="_blank" rel="noopener" class="ref-link">Aubier et al. Central respiratory drive in COPD respiratory failure. Am Rev Respir Dis 1980</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7046541/" target="_blank" rel="noopener" class="ref-link">Pepe & Marini. The auto-PEEP effect. Am Rev Respir Dis 1982</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32283960/" target="_blank" rel="noopener" class="ref-link">ATS guideline: pharmacologic management of COPD. AJRCCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26903337/" target="_blank" rel="noopener" class="ref-link">LUNG SAFE: epidemiology and outcomes of ARDS in 50 countries. JAMA 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37326646/" target="_blank" rel="noopener" class="ref-link">ESICM 2023 ARDS guidelines. ICM 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28459336/" target="_blank" rel="noopener" class="ref-link">ATS/ESICM/SCCM mechanical ventilation in ARDS guideline. AJRCCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/4143721/" target="_blank" rel="noopener" class="ref-link">Ashbaugh et al. Acute respiratory distress in adults. Lancet 1967</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22797452/" target="_blank" rel="noopener" class="ref-link">ARDS Definition Task Force: the Berlin definition. JAMA 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19118274/" target="_blank" rel="noopener" class="ref-link">de Hemptinne et al. ARDS: a clinicopathological confrontation. Chest 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23566733/" target="_blank" rel="noopener" class="ref-link">Figueroa-Casas et al. Chest radiograph accuracy in ARDS vs CT. J Crit Care 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32291463/" target="_blank" rel="noopener" class="ref-link">Gattinoni et al. COVID-19 pneumonia phenotypes. ICM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27626833/" target="_blank" rel="noopener" class="ref-link">Brochard et al. Mechanical ventilation to minimize progression of lung injury. AJRCCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36166027/" target="_blank" rel="noopener" class="ref-link">SOHO-COVID: high-flow nasal oxygen vs standard oxygen. JAMA 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25981908/" target="_blank" rel="noopener" class="ref-link">FLORALI: high-flow oxygen in acute hypoxemic respiratory failure. NEJM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27753501/" target="_blank" rel="noopener" class="ref-link">Bellani et al. NIV in ARDS: LUNG SAFE insights. AJRCCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26584191/" target="_blank" rel="noopener" class="ref-link">Carteaux et al. NIV failure and tidal volume. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16714767/" target="_blank" rel="noopener" class="ref-link">FACTT: two fluid-management strategies in acute lung injury. NEJM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32678530/" target="_blank" rel="noopener" class="ref-link">RECOVERY: dexamethasone in hospitalized Covid-19. NEJM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28938253/" target="_blank" rel="noopener" class="ref-link">SCCM/ESICM CIRCI guidelines part I. CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35305308/" target="_blank" rel="noopener" class="ref-link">Li et al. Awake prone positioning meta-analysis. Lancet Respir Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23688302/" target="_blank" rel="noopener" class="ref-link">PROSEVA: prone positioning in severe ARDS. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33942659/" target="_blank" rel="noopener" class="ref-link">Moran & Graham. Prone positioning mortality meta-analysis. J Intensive Care Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9445314/" target="_blank" rel="noopener" class="ref-link">Dreyfuss & Saumon. Ventilator-induced lung injury. AJRCCM 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3057957/" target="_blank" rel="noopener" class="ref-link">Dreyfuss et al. High inflation pressure pulmonary edema. Am Rev Respir Dis 1988</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10404912/" target="_blank" rel="noopener" class="ref-link">Ranieri et al. Mechanical ventilation and inflammatory mediators in ARDS. JAMA 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10793162/" target="_blank" rel="noopener" class="ref-link">ARDSNet: lower tidal volumes in ALI/ARDS. NEJM 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/7924367/" target="_blank" rel="noopener" class="ref-link">Hickling et al. Permissive hypercapnia in ARDS. CCM 1994</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28936695/" target="_blank" rel="noopener" class="ref-link">Zhou et al. Early APRV in ARDS. ICM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12441753/" target="_blank" rel="noopener" class="ref-link">Estenssoro et al. Incidence, course and outcome of ARDS. CCM 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33140180/" target="_blank" rel="noopener" class="ref-link">Combes et al. Extracorporeal life support for adults with ARDS. ICM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15599157/" target="_blank" rel="noopener" class="ref-link">Sinclair et al. Hyperoxia and mechanical ventilation interaction. CCM 2004</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/respdis.js"></script>
+<script>ICU.makeTabs('respdis'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

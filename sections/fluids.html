@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>靜脈輸液治療 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="靜脈輸液治療">
+<div class="sheet">
+<div class="view active" id="view-fluids">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section IV</div><h1>靜脈輸液治療</h1><div class="sub">Intravenous Fluid Therapy · 輸液種類 → 輸液管理與液體反應性 · 第 10–11 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-fluids'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="fluids_tabs">
+    <button class="tab-btn active" data-p="iv">輸液種類 <span class="mono">Ch10</span></button>
+    <button class="tab-btn" data-p="mgmt">輸液管理 <span class="mono">Ch11</span></button>
+  </div>
+
+  <!-- ==================== Ch10 Intravenous Fluids ==================== -->
+  <section class="fluids-panel" data-panel="iv" id="fluids-p-iv">
+    <div class="dirhead"><span class="dh-n">第 10 章 靜脈輸液</span><span class="dh-e">Chapter 10 · Intravenous Fluids</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#iv/iv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#iv/iv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#iv/iv-calc"><i>03</i>計算</a><a class="sp-chip" href="#iv/iv-flow"><i>04</i>流程</a><a class="sp-chip" href="#iv/iv-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#iv/iv-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>「生理食鹽水」既不化學正常也不生理正常</b>：氯 154 對血漿 103，灌快灌多就高氯代謝性酸中毒與腎血管收縮；平衡液沒有這個問題。</span></div>
+        <div class="lede-item"><span>②</span><span><b>等張晶體液撐的是間質不是血漿</b>：1 公升只有四分之一留在血管，其餘變成水腫；葡萄糖水更慘，三分之二進了細胞。</span></div>
+        <div class="lede-item"><span>③</span><span><b>膠體晶體之爭問錯了問題</b>：沒有一種液體適合所有低血容——危及生命用 5% 白蛋白、脫水用 RL、低白蛋白併水腫用 25% 白蛋白。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="iv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="iv-kc">全部展開</button></div>
+    <div id="iv-kc">
+      <details class="def-box"><summary>01 · 體液分區 <span class="en">Body water distribution</span></summary>
+        <div class="box-inner"><p class="kp"><b>總體水量＝淨體重的 60%（男）／50%（女）；2/3 在細胞內；ECF 的 80% 是間質、只有 20% 是血漿。</b></p>
+          <ul><li>75 kg 男性：TBW 45 L → ICF 29、ECF 16 → 間質 13、血漿 3 L。60 kg 女性：30 → 20／10 → 8／2 L。</li><li>血漿只占全身水分 6–7%，卻是輸液治療唯一的目標——記住這個比例，就懂為什麼晶體液會水腫。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 滲透與膠體滲透壓 <span class="en">Osmotic forces &amp; COP</span></summary>
+        <div class="box-inner"><p class="kp"><b>水往滲透活性高的那一區走；鈉決定 ECF 容積，白蛋白決定水留不留在血管。</b></p>
+          <ul><li>滲透活性只看粒子數，不看大小、電荷、化學性質。血漿 93% 是水，osmolarity 與 osmolality 常互換使用。</li><li>膠體滲透壓（oncotic pressure）來自過不了內皮的大分子；血漿 COP 約 28 mmHg，80% 由白蛋白貢獻。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 0.9% 食鹽水不「正常」 <span class="en">Normal saline is not normal</span></summary>
+        <div class="box-inner"><p class="kp"><b>1 N NaCl 是 58 g/L，0.9% 只有 9 g/L；和血漿比：鈉 154 vs 140、氯 154 vs 103、滲透壓 308 vs 290、pH 5.7 vs 7.4。</b></p>
+          <ul><li>名字來自荷蘭化學家 Hamburger 用冰點下降推算血漿是 0.9% 鹽水——算錯了，實際約 0.6%。美國一年賣 2 億公升。</li><li>較恰當的名字是「等張食鹽水」，但連這也不精確（它略高張）。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 晶體液的體積效應 <span class="en">Volume effects of crystalloids</span></summary>
+        <div class="box-inner"><p class="kp"><b>1 L 0.9% 食鹽水：血漿 +275 mL、間質 +825 mL，ECF 共 +1,100 mL（多出的 100 是從細胞內拉出的水）。</b></p>
+          <ul><li>所有晶體液都促進水腫，食鹽水因鈉更高、又可能引起 AKI 造成鈉滯留，傾向更強。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 氯的兩宗罪 <span class="en">The evils of chloride</span></summary>
+        <div class="box-inner"><p class="kp"><b>高氯代謝性酸中毒（快速或長時間灌注）與氯介導的腎血管收縮／AKI。</b></p>
+          <ul><li>婦科手術以 30 mL/kg/hr 灌注：食鹽水組 pH 7.41 → 7.28，RL 組（氯 109、含乳酸緩衝）不變。</li><li>限氯策略（RL、Plasma-Lyte）的 AKI 較少，但食鹽水引起的 AKI 多為輕度、不需 RRT。</li><li>DKA 已不建議用食鹽水復甦。</li></ul></div></details>
+      <details class="def-box"><summary>06 · Ringer's lactate <span class="en">RL / Hartmann's</span></summary>
+        <div class="box-inner"><p class="kp"><b>氯 109 ≈ 血漿 103 → 不酸；乳酸 28 mmol/L 在肝臟轉成葡萄糖時消耗 H⁺，每 mmol 生成 1 mmol HCO₃⁻。</b></p>
+          <ul><li>1880 年 Sydney Ringer 為青蛙心臟加鉀加鈣；1930 年代 Hartmann 加乳酸鈉治酸中毒。</li><li>肝每小時清 100 mmol 乳酸 ＝ 3.5 L RL/hr；健康人 30 mL/kg 快速輸注只升 0.9 mmol/L（食鹽水也差不多）。休克或肝功能不全的病人沒研究過。</li><li><b>從輸 RL 的導管抽血，乳酸會假性偏高</b>——換一個位置抽。</li><li>鈣會與 CPD 抗凝劑結合：不建議當紅血球稀釋液（證據薄弱，快速共輸研究是安全的）。</li><li>鉀 4 mEq/L 從未讓高血鉀惡化；食鹽水造成的酸中毒反而更會。</li></ul></div></details>
+      <details class="def-box"><summary>07 · Ringer's acetate 與 Plasma-Lyte／Normosol <span class="en">Other balanced solutions</span></summary>
+        <div class="box-inner"><p class="kp"><b>醋酸在肌肉代謝，肝衰竭可用；Plasma-Lyte 最接近理想血漿替代液，但臨床優越性未證實。</b></p>
+          <ul><li>Ringer's acetate：成分同 RL、乳酸換醋酸；可能有心肌抑制（臨床意義不明）。</li><li>Plasma-Lyte／Normosol 成分相同：pH 更接近血漿、非乳酸緩衝、氯接近血漿、用鎂不用鈣（可與血品共輸）、更等張。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 高張食鹽水 <span class="en">Hypertonic saline</span></summary>
+        <div class="box-inner"><p class="kp"><b>250 mL 7.5%（2,567 mOsm/L）→ ECF +1,235 mL，約 5 倍輸入量，水來自細胞內。</b></p>
+          <ul><li>動物出血性休克：1/5 體積就能維持心輸出量；但人體創傷復甦與等張晶體液存活無差。</li><li>主要用途是創傷腦損傷降 ICP：與 mannitol 等效、更能維持腦灌流壓、無 mannitol 的 AKI。10% 食鹽水 0.6 mL/kg ≈ 20% mannitol 2 mL/kg，每 6–8 小時，ICP <20、滲透壓 <320 才繼續。</li><li>不管哪一種，都沒有改善存活。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 5% 葡萄糖溶液：該退場了 <span class="en">Dextrose solutions</span></summary>
+        <div class="box-inner"><p class="kp"><b>3.4 kcal/g、D5W 170 kcal/L、3 L/天 510 kcal 的蛋白節省效應已無必要；1 L D5W 有 650 mL 進細胞內。</b></p>
+          <ul><li>D5W 278 mOsm/L 起初等張，葡萄糖被吸收代謝後就變純水；D5NS 卻是 560 mOsm/L，葡萄糖利用差時造成細胞脫水。</li><li>健康人只有 5% 的葡萄糖變乳酸，血行動力學不穩者可達 85%；主動脈夾鉗研究中葡萄糖組乳酸顯著上升並持續。</li><li>ICU 20% 有糖尿病、90% 曾高血糖：免疫抑制、腦缺血惡化、死亡率上升。能不用就不用。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 膠體液比較 <span class="en">Colloid comparisons</span></summary>
+        <div class="box-inner"><p class="kp"><b>撐血漿的能力由 COP 決定；COP 超過血漿（28）的膠體，血漿增量會超過輸入量。</b></p>
+          <ul><li>1 L 5% 白蛋白：血漿 +700、間質 +300——是食鹽水（275）的 2.5 倍，所以同樣血漿增量只要 30% 體積。</li><li>見下方對照表：25% 白蛋白 COP 70、dextran 40、hetastarch 30、5% 白蛋白 20。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 白蛋白溶液 <span class="en">Albumin</span></summary>
+        <div class="box-inner"><p class="kp"><b>5%：每次 250 mL、≥70% 留在血漿、6 小時開始消退 12 小時失效；25%：每次 50–100 mL、血漿增 3–4 倍、水從間質來。</b></p>
+          <ul><li>白蛋白還是血中主要運輸蛋白（benzodiazepine、cephalosporin、furosemide、phenytoin、warfarin、膽紅素、脂肪酸…）並有抗氧化活性。</li><li>低白蛋白時所有白蛋白製劑的擴容效果更好。</li><li>安全性：早期回顧說增加死亡，後來的研究說無害；例外是創傷腦損傷（SAFE：白蛋白組死亡率較高）。25% 在休克病人有腎損傷風險——所有高滲透膠體共通。</li></ul></div></details>
+      <details class="def-box"><summary>12 · Hydroxyethyl starch <span class="en">HES</span></summary>
+        <div class="box-inner"><p class="kp"><b>分類看分子量（450／200／130 kD）與取代比 MSR（hetastarch 0.7 → tetrastarch 0.4）；越高越持久、也越毒。</b></p>
+          <ul><li>血中澱粉酶切到 50 kD 才由腎排出；澱粉酶黏在 HES 上排不掉 → 血清澱粉酶 2–3 倍、停藥一週恢復（脂肪酶不變）。</li><li>擴容與 5% 白蛋白相近；hetastarch 撐 24 小時、tetrastarch 6 小時或更短。</li><li>凝血：抑制 Factor VII、vWF、血小板黏附；hetastarch 增加圍術期出血與輸血；tetrastarch >50 mL/kg 才顯著。</li><li>AKI：早期研究（舊製劑、休克病人）風險上升；腹部手術用 tetrastarch 未見。仍是未解問題。</li></ul></div></details>
+      <details class="def-box"><summary>13 · Dextran <span class="en">Dextrans</span></summary>
+        <div class="box-inner"><p class="kp"><b>Leuconostoc 菌在蔗糖培養出的葡萄糖聚合物；COP 40，撐血漿比白蛋白與 HES 都強，但美國不流行。</b></p>
+          <ul><li>10% dextran-40 作用 6 小時、6% dextran-70 12 小時。</li><li>劑量相關出血傾向（血小板凝集↓、Factor VIII／vWF↓、纖溶↑）：每日 ≤20 mL/kg。</li><li>包覆紅血球干擾交叉配血（要洗血球）、ESR 上升；罕見高滲透腎損傷；過敏 0.03%。</li></ul></div></details>
+      <details class="def-box"><summary>14 · 膠體晶體之爭 <span class="en">The colloid–crystalloid conundrum</span></summary>
+        <div class="box-inner"><p class="kp"><b>早年動物實驗：只補血會死、加 RL 才活 → 晶體派成形；如今焦點是心輸出量，膠體明顯較強，但沒有存活優勢。</b></p>
+          <ul><li>500 mL dextran-40 提升的心輸出量是 1 L RL 的 3 倍。</li><li>晶體派：無存活差異、便宜。反方：體積要 3 倍以上、水腫與死亡率相關。</li><li>作者：依情境挑液體才是「問對問題」。</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="iv-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>晶體液</th><th>Na</th><th>Cl</th><th>K</th><th>緩衝</th><th>mOsm/L</th><th>pH</th></tr>
+      <tr><td>血漿</td><td>140</td><td>103</td><td>4</td><td>HCO₃ 24</td><td>290</td><td>7.4</td></tr>
+      <tr><td>0.9% 食鹽水</td><td>154</td><td>154</td><td>—</td><td>—</td><td>308</td><td>5.7</td></tr>
+      <tr><td>Ringer's lactate</td><td>130</td><td>109</td><td>4</td><td>乳酸 28</td><td>273</td><td>6.5</td></tr>
+      <tr><td>Ringer's acetate</td><td>130</td><td>109</td><td>4</td><td>醋酸 28</td><td>273</td><td>6.5</td></tr>
+      <tr><td>Plasma-Lyte／Normosol</td><td>140</td><td>98</td><td>5</td><td>醋酸 27＋葡萄糖酸 23</td><td>294</td><td>7.4</td></tr>
+      <tr><td>7.5% 食鹽水</td><td>1,283</td><td>1,283</td><td>—</td><td>—</td><td>2,567</td><td>—</td></tr>
+      <tr><td>D5W</td><td>—</td><td>—</td><td>—</td><td>—</td><td>278</td><td>4.5</td></tr>
+    </table></div>
+    <div class="note">原書表 10.2 在抽出時是圖檔；本表依內文數字與各製劑標示重繪，RL 另含鈣 3 mEq/L、Plasma-Lyte 含鎂 3 mEq/L。</div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>輸入</th><th>血漿</th><th>間質</th><th>細胞內</th></tr>
+      <tr><td>1 L 0.9% 食鹽水</td><td>+275</td><td>+825</td><td>−100</td></tr>
+      <tr><td>1 L D5W</td><td colspan="2">ECF 共 +350</td><td>+650</td></tr>
+      <tr><td>250 mL 7.5% 食鹽水</td><td colspan="2">ECF 共 +1,235</td><td>−985</td></tr>
+      <tr><td>1 L 5% 白蛋白</td><td>+700</td><td>+300</td><td>0</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>膠體液</th><th>COP mmHg</th><th>血漿增量／輸入量</th><th>作用時間</th></tr>
+      <tr><td>25% 白蛋白</td><td>70</td><td>3–4×</td><td>12 h</td></tr>
+      <tr><td>10% dextran-40</td><td>40</td><td>1–1.5×</td><td>6 h</td></tr>
+      <tr><td>6% hetastarch</td><td>30</td><td>1–1.3×</td><td>24 h</td></tr>
+      <tr><td>5% 白蛋白</td><td>20</td><td>0.7–1.3×</td><td>24 h（6 h 開始消退）</td></tr>
+      <tr><td>血漿</td><td>28</td><td>—</td><td>—</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>HES 製劑</th><th>濃度</th><th>分子量</th><th>MSR</th></tr>
+      <tr><td>Hetastarch</td><td>6%</td><td>450 kD</td><td>0.7</td></tr>
+      <tr><td>Hexastarch</td><td>6%</td><td>200 kD</td><td>0.6</td></tr>
+      <tr><td>Pentastarch</td><td>6%、10%</td><td>200 kD</td><td>0.5</td></tr>
+      <tr><td>Tetrastarch（Voluven）</td><td>6%</td><td>130 kD</td><td>0.4</td></tr>
+    </table></div>
+    <div class="dirhead" id="iv-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c10bw">
+      <div class="rxbox-t">體液分區估算</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>淨體重 <span class="rx-en">kg</span></label><input type="number" id="bw_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="bw_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c10bw_out"></div>
+    </div>
+    <div class="rxbox" id="c10vol">
+      <div class="rxbox-t">輸液去了哪裡</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>輸液 <span class="rx-en">fluid</span></label><select id="vd_f"><option value="ns">0.9% 食鹽水</option><option value="rl">RL／平衡液</option><option value="d5">D5W</option><option value="hts">7.5% 食鹽水</option><option value="alb5">5% 白蛋白</option><option value="alb25">25% 白蛋白</option><option value="hes">6% HES</option><option value="dex">10% dextran-40</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>輸入量 <span class="rx-en">mL</span></label><input type="number" id="vd_v" step="50" placeholder="1000"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c10vol_out"></div>
+    </div>
+    <div class="rxbox" id="c10hts">
+      <div class="rxbox-t">高張食鹽水 vs mannitol（顱內壓）</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ht_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血清滲透壓 <span class="rx-en">mOsm/kg</span></label><input type="number" id="ht_osm" step="1" placeholder="300"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ICP <span class="rx-en">mmHg</span></label><input type="number" id="ht_icp" step="1" placeholder="22"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c10hts_out"></div>
+    </div>
+    <div class="rxbox" id="c10dex">
+      <div class="rxbox-t">葡萄糖溶液的熱量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>輸注速率 <span class="rx-en">mL/hr</span></label><input type="number" id="dx_r" step="5" placeholder="125"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>葡萄糖濃度 <span class="rx-en">%</span></label><select id="dx_p"><option value="5">5%</option><option value="10">10%</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c10dex_out"></div>
+    </div>
+    <div class="rxbox" id="c10hes">
+      <div class="rxbox-t">合成膠體的安全上限</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="hes_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>已輸入量 <span class="rx-en">mL</span></label><input type="number" id="hes_g" step="50" placeholder="1500"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c10hes_out"></div>
+    </div>
+    <div class="dirhead" id="iv-flow"><span class="dh-n">決策流程</span><span class="dh-e">Which fluid for which patient</span></div>
+    <div id="fs_flow">
+      <div class="flow-step" id="fs_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">病人的情境是？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fsPick('sit','life',this)">危及生命的低血容<span class="fo-sub">要快速撐起血漿</span></button>
+          <button class="flow-opt" onclick="fsPick('sit','dehyd',this)">脫水<span class="fo-sub">整個 ECF 均勻流失</span></button>
+          <button class="flow-opt" onclick="fsPick('sit','hypoalb',this)">低白蛋白併水腫<span class="fo-sub">水在間質、血管內不夠</span></button>
+          <button class="flow-opt" onclick="fsPick('sit','icp',this)">顱內壓升高</button>
+          <button class="flow-opt" onclick="fsPick('sit','trauma',this)">創傷院前小體積復甦</button>
+          <button class="flow-opt" onclick="fsPick('sit','rbc',this)">要當紅血球的稀釋液</button>
+          <button class="flow-opt" onclick="fsPick('sit','hyperk',this)">病人有高血鉀</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="fs_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="fsReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="iv-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_iv"></div>
+    <div class="dirhead" id="iv-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/nutrition.html" href="#">輸液營養</a><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣判讀</a><a class="flow-link" data-ct="tools/osmolality.html" href="#">血清滲透壓</a><a class="flow-link" data-ct="pathways/dka-hhs.html" href="#">DKA／HHS</a><a class="flow-link" data-ct="pathways/tbi.html" href="#">創傷性腦損傷</a><a class="flow-link" href="shock.html#hem">Marino 第 14 章 出血與低血容</a></div>
+  </section>
+
+  <!-- ==================== Ch11 Fluid Management ==================== -->
+  <section class="fluids-panel hidden" data-panel="mgmt" id="fluids-p-mgmt">
+    <div class="dirhead"><span class="dh-n">第 11 章 輸液管理</span><span class="dh-e">Chapter 11 · Fluid Management</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#mgmt/mg-key"><i>01</i>重點卡</a><a class="sp-chip" href="#mgmt/mg-tab"><i>02</i>對照表</a><a class="sp-chip" href="#mgmt/mg-calc"><i>03</i>計算</a><a class="sp-chip" href="#mgmt/mg-flow"><i>04</i>流程</a><a class="sp-chip" href="#mgmt/mg-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#mgmt/mg-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>靜脈回流靠的是 Pms − CVP，不是動脈壓</b>：CVP 每升 1 mmHg 回流少 14%，所以 CVP 既不是容積指標也不該是輸液目標。</span></div>
+        <div class="lede-item"><span>②</span><span><b>血漿只有 2–3 公升，觸發復甦的缺失只有三、四百毫升</b>：用晶體液補要灌 5 倍，其中 4/5 變成水腫——醫源性液體過多有確鑿的死亡率代價。</span></div>
+        <div class="lede-item"><span>③</span><span><b>只有一半的不穩定病人對輸液有反應</b>：先用 SVV 或被動抬腿判斷，靠 PCO₂ gap 與 ScvO₂ 找低灌流，並且在沒有反應時立刻降階。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="mg-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="mg-kc">全部展開</button></div>
+    <div id="mg-kc">
+      <details class="def-box"><summary>01 · 靜脈回流的驅動壓 <span class="en">Determinants of venous return</span></summary>
+        <div class="box-inner"><p class="kp"><b>靜脈回流 ＝ (Pms − CVP) / Rv。靜脈系統裝著 75% 的血量，像水槽：流出靠水位（Pms），不靠上游水塔（動脈壓）。</b></p>
+          <ul><li>Pms（平均系統壓）＝ 血流停止時系統循環的壓力，等於小靜脈／微靜脈的上游壓。</li><li>輸液幾乎不改變 Rv，所以復甦的目標是拉大 (Pms − CVP)。</li></ul></div></details>
+      <details class="def-box"><summary>02 · CVP 升高會阻礙靜脈回流 <span class="en">The venous return curve</span></summary>
+        <div class="box-inner"><p class="kp"><b>右房壓每升 1 mmHg，靜脈回流平均少 14%；升到等於 Pms 時回流歸零。</b></p>
+          <ul><li>Guyton 的曲線是在血量不變下單獨改變 PRA 畫出來的；血量增減會讓 Pms 同向變動——Pms 是容積依賴的。</li><li>把「提高 CVP」當復甦目標（舊版 SSC）在生理上說不通。</li></ul></div></details>
+      <details class="def-box"><summary>03 · Pms 的數值與量法 <span class="en">Measuring Pms</span></summary>
+        <div class="box-inner"><p class="kp"><b>動物 7–8 mmHg；術後 ICU 病人 14–20。停流法用手臂袖帶，充氣保持法用呼吸器。</b></p>
+          <ul><li><b>停流法</b>：橈動脈導管＋快速充氣袖帶，0.3 秒充到收縮壓 +50 mmHg，30 秒平衡後橈動脈壓＝Pms；量三次、差 ≤5%。</li><li><b>充氣保持法</b>：限深鎮靜、規律心律、無自主呼吸的呼吸器病人；10／15／20 cmH₂O 各保持 12 秒，最後 3 秒記 CO 與 CVP，外插到 x 軸。</li><li>輸液挑戰（250–500 mL）一定會升 Pms，但只有 <b>(Pms − CVP) 梯度變大</b>才算有反應。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 血漿量很小 <span class="en">Plasma volume &amp; the trigger deficit</span></summary>
+        <div class="box-inner"><p class="kp"><b>男 3 L／女 2 L（速算 40／36 mL/kg）；低血容在缺 15%（450／300 mL）之前多半沒有症狀。</b></p>
+          <ul><li>復甦常為了幾百毫升的缺失啟動，不想這一點就容易灌過頭。</li><li>I-131 白蛋白稀釋法（BVA-100，約 1 小時）可實測血量：敗血性休克病人血漿與血量都明顯偏多，證實醫源性過載；急性心衰竭已用它導引利尿。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 晶體液的分布與加重因子 <span class="en">Why crystalloids make edema</span></summary>
+        <div class="box-inner"><p class="kp"><b>補 450 mL 血漿要 2.25 L RL，1.8 L 進間質；低白蛋白（COP 的 80%）與微血管滲漏（敗血症、ARDS）再放大。</b></p>
+          <ul><li>兩個加重因子常並存。膠體＋晶體合併使用可減少總量，值得重視。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 生命徵象不可靠 <span class="en">Vital signs: a comedy of errors</span></summary>
+        <div class="box-inner"><p class="kp"><b>仰臥心搏過速在失血 25% 時多半沒有（心搏過緩反而可能更常見）；仰臥低血壓要缺 >30%；站立心跳 +≥30 bpm 最敏感（15% 即出現）。</b></p>
+          <ul><li>ICU 病人多半站不起來，最敏感的那一項用不上。</li></ul></div></details>
+      <details class="def-box"><summary>07 · CVP 不是容積指標、也不該是目標 <span class="en">CVP</span></summary>
+        <div class="box-inner"><p class="kp"><b>112 組配對量測：CVP 與循環血量沒有相關；CVP 升高又會阻礙回流——不該用 CVP 做輸液決策。</b></p>
+          <ul><li>干擾：右心室順應性下降會抬高 CVP；正壓通氣傳到上腔靜脈——呼氣末量測可減少但消不掉 PEEP 的影響。</li><li>IVC 直徑的呼吸變異曾流行一陣，證明不可靠。</li></ul></div></details>
+      <details class="def-box"><summary>08 · ScvO₂ 判讀 <span class="en">Central venous O₂ saturation</span></summary>
+        <div class="box-inner"><p class="kp"><b>正常 70–75%（65–80）；<65% ＝ DO₂ 下降（先排除貧血）；≤50% ＝ 組織氧合受威脅；>80% 在敗血症＝氧利用缺陷。</b></p>
+          <ul><li>VO₂ ＝ DO₂ × (SaO₂ − SvO₂)：DO₂ 降時萃取代償到 50% 之後 VO₂ 才開始掉。</li><li>ScvO₂ 與混合靜脈 SvO₂ 可差很多，看趨勢不看單點。</li><li>ScvO₂ <70% 曾被提為輸血指標；貧血＋ScvO₂ <65% 時用 PCO₂ gap 分辨有沒有低灌流。</li></ul></div></details>
+      <details class="def-box"><summary>09 · PCO₂ gap <span class="en">Venoarterial PCO₂ difference</span></summary>
+        <div class="box-inner"><p class="kp"><b>(PvCO₂ − PaCO₂) ＝ VCO₂ / (CO × k)：與心輸出量成反比。正常 2–5 mmHg（0.3–0.7 kPa），>6（>0.8 kPa）＝ 低灌流。</b></p>
+          <ul><li>用上腔靜脈血；反映 CO₂ 洗出，是低灌流的專一指標，敗血症也可靠，已被建議為復甦目標。</li><li>它不告訴你組織氧合夠不夠；Haldane 效應可能影響可靠度（臨床意義不明）。</li><li>結論：敗血症或貧血時優先看 gap，但兩者合看最好。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 液體反應性 <span class="en">Fluid responsiveness</span></summary>
+        <div class="box-inner"><p class="kp"><b>只有約 50% 的不穩定病人對輸液有反應；輸液挑戰 500 mL 晶體／10–15 分（速率比體積重要），心搏量 >10% 為陽性。</b></p>
+          <ul><li>反應高峰在幾分鐘內、10 分鐘後消退——熱稀釋來不及，要用脈波輪廓（FloTrac：需動脈導管、規律心律；低阻力時略低估）或食道都卜勒（主動脈瓣狹窄會失真）。</li><li>有反應不等於低血容：正常甚至高血容也可能有反應。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 不用給水的方法：SVV 與被動抬腿 <span class="en">SVV &amp; passive leg raising</span></summary>
+        <div class="box-inner"><p class="kp"><b>SVV ≥15% → 80% 是反應者（限控制通氣、無心律不整）；被動抬腿 45° 搬 300 mL 血回心，≥10% 心搏量上升敏感度 85%／專一度 92%。</b></p>
+          <ul><li>PLR 做法：從半坐 30–45° 開始 → 用病床放平軀幹、抬腿 30–45° → 有反應且持續幾分鐘就回半坐位，反應應消失。</li><li>陷阱：只看血壓不行；腹內高壓假陰性；疼痛假陽性（心跳加快、回半坐後仍持續）。</li><li>非侵襲性替代（脈壓變異、PLR 後 PETCO₂）都還不夠可靠。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 減少醫源性過載的四個做法 <span class="en">Practical considerations</span></summary>
+        <div class="box-inner"><p class="kp"><b>膠體＋晶體合併、無反應就降階、腸道攝取夠就停維持輸液、正平衡當天處理——擋住「fluid creep」。</b></p>
+          <ul><li>身體對缺水的保護（RAAS、ADH）強而多層，對過載的處理卻很弱：排掉 2 L 食鹽水要超過 2 天。保守輸液有生理依據。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="mg-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>組織低灌流標記</th><th>正常</th><th>低灌流</th><th>組織氧合受威脅</th></tr>
+      <tr><td>ScvO₂</td><td>65–75%</td><td>&lt;65%</td><td>≤50%</td></tr>
+      <tr><td>PCO₂ gap</td><td>2–5 mmHg（0.3–0.7 kPa）</td><td>&gt;6 mmHg（&gt;0.8 kPa）</td><td>—</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>液體反應性方法</th><th>條件</th><th>陽性</th><th>陷阱</th></tr>
+      <tr><td>輸液挑戰</td><td>500 mL 晶體／10–15 分＋連續 CO</td><td>心搏量 &gt;10%</td><td>加重過載；反應 10 分鐘消退</td></tr>
+      <tr><td>SVV</td><td>控制通氣、無自主呼吸、規律心律</td><td>≥15%（80% 反應者）</td><td>適用者少</td></tr>
+      <tr><td>被動抬腿</td><td>自主呼吸可、需連續 CO；半坐起始</td><td>心搏量 ≥10%</td><td>腹內高壓假陰性、疼痛假陽性、血壓不夠用</td></tr>
+      <tr><td>Pms 梯度</td><td>停流法或充氣保持法</td><td>(Pms − CVP) 變大</td><td>設備與操作門檻高</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>生命徵象</th><th>出現時的缺失量</th></tr>
+      <tr><td>站立心跳 +≥30 bpm</td><td>15%（最敏感，ICU 難做）</td></tr>
+      <tr><td>仰臥心搏過速</td><td>25% 也常沒有</td></tr>
+      <tr><td>仰臥低血壓</td><td>&gt;30%</td></tr>
+    </table></div>
+    <div class="dirhead" id="mg-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c11pv">
+      <div class="rxbox-t">血漿缺失與補液需求</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>淨體重 <span class="rx-en">kg</span></label><input type="number" id="pv_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="pv_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血漿缺失 <span class="rx-en">%</span></label><input type="number" id="pv_pct" step="5" placeholder="15"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c11pv_out"></div>
+    </div>
+    <div class="rxbox" id="c11vr">
+      <div class="rxbox-t">靜脈回流梯度 Pms − CVP</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Pms 輸液前 <span class="rx-en">mmHg</span></label><input type="number" id="vr_pms0" step="1" placeholder="16"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CVP 輸液前 <span class="rx-en">mmHg</span></label><input type="number" id="vr_cvp0" step="1" placeholder="8"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Pms 輸液後 <span class="rx-en">mmHg</span></label><input type="number" id="vr_pms1" step="1" placeholder="19"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>CVP 輸液後 <span class="rx-en">mmHg</span></label><input type="number" id="vr_cvp1" step="1" placeholder="9"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c11vr_out"></div>
+    </div>
+    <div class="rxbox" id="c11gap">
+      <div class="rxbox-t">PCO₂ gap ＋ ScvO₂</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>中央靜脈 PCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="gp_v" step="1" placeholder="46"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>動脈 PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="gp_a" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ScvO₂ <span class="rx-en">%</span></label><input type="number" id="gp_sc" step="1" placeholder="70"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c11gap_out"></div>
+    </div>
+    <div class="rxbox" id="c11fr">
+      <div class="rxbox-t">液體反應性判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>心搏量 基線 <span class="rx-en">mL</span></label><input type="number" id="fr_sv0" step="1" placeholder="60"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心搏量 試驗後 <span class="rx-en">mL</span></label><input type="number" id="fr_sv1" step="1" placeholder="68"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心跳 基線 <span class="rx-en">bpm</span></label><input type="number" id="fr_hr0" step="1" placeholder="100"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>心跳 試驗後 <span class="rx-en">bpm</span></label><input type="number" id="fr_hr1" step="1" placeholder="100"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SVV <span class="rx-en">%</span></label><input type="number" id="fr_svv" step="1" placeholder="12"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c11fr_out"></div>
+    </div>
+    <div class="dirhead" id="mg-flow"><span class="dh-n">決策流程</span><span class="dh-e">Is this patient fluid responsive?</span></div>
+    <div id="fr_flow">
+      <div class="flow-step" id="fr_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有連續心輸出量監測嗎（脈波輪廓／食道都卜勒）？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="frPick('mon','yes',this)">有</button>
+          <button class="flow-opt" onclick="frPick('mon','no',this)">沒有<span class="fo-sub">只有血壓與 CVP</span></button>
+        </div></div>
+      <div class="flow-step" id="fr_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">呼吸型態？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="frPick('vent','ctrl',this)">控制通氣、無自主呼吸、規律心律</button>
+          <button class="flow-opt" onclick="frPick('vent','spont',this)">有自主呼吸或心律不整</button>
+        </div></div>
+      <div class="flow-step" id="fr_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">腹內高壓？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="frPick('iah','no',this)">沒有</button>
+          <button class="flow-opt" onclick="frPick('iah','yes',this)">有</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="fr_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="frReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="mg-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_mgmt"></div>
+    <div class="dirhead" id="mg-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/nutrition.html" href="#">輸液營養</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症與敗血性休克</a><a class="flow-link" data-ct="pathways/iah-acs.html" href="#">腹內高壓</a><a class="flow-link" href="shock.html#ov">Marino 第 14 章 休克總論</a><a class="flow-link" href="monitoring.html#o2">Marino 第 9 章 全身氧合</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 10–11 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10319771/" target="_blank" rel="noopener" class="ref-link">Scheingraber et al. Rapid saline infusion produces hyperchloremic acidosis. Anesthesiology 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23073953/" target="_blank" rel="noopener" class="ref-link">Yunos et al. Chloride-liberal vs chloride-restrictive fluids and kidney injury. JAMA 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29485925/" target="_blank" rel="noopener" class="ref-link">SMART: balanced crystalloids vs saline in critically ill adults. NEJM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35436929/" target="_blank" rel="noopener" class="ref-link">Dong et al. Balanced crystalloids vs saline meta-analysis. Scand J Trauma Resusc Emerg Med 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30037514/" target="_blank" rel="noopener" class="ref-link">Zitek et al. Does lactated Ringer's raise serum lactate? J Emerg Med 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15845718/" target="_blank" rel="noopener" class="ref-link">O'Malley et al. Lactated Ringer's vs 0.9% NaCl in renal transplantation. Anesth Analg 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30877299/" target="_blank" rel="noopener" class="ref-link">Mangat et al. Hypertonic saline vs mannitol in severe TBI. Neurosurgery 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24066745/" target="_blank" rel="noopener" class="ref-link">Myburgh & Mythen. Resuscitation fluids. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17761591/" target="_blank" rel="noopener" class="ref-link">SAFE: saline or albumin in severe head injury. NEJM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18685828/" target="_blank" rel="noopener" class="ref-link">Schortgen et al. Hyperoncotic colloids in shock. ICM 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23423413/" target="_blank" rel="noopener" class="ref-link">Zarychanski et al. HES and mortality/AKI meta-analysis. JAMA 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34854822/" target="_blank" rel="noopener" class="ref-link">Pensier et al. HES in major abdominal surgery meta-analysis. Anesth Analg 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30073665/" target="_blank" rel="noopener" class="ref-link">Lewis et al. Colloids vs crystalloids (Cochrane). 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20975548/" target="_blank" rel="noopener" class="ref-link">Boyd et al. Positive fluid balance, CVP and mortality in septic shock. CCM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33009098/" target="_blank" rel="noopener" class="ref-link">Messmer et al. Fluid overload and mortality meta-analysis. CCM 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27613307/" target="_blank" rel="noopener" class="ref-link">Magder. Volume, cardiac output and venous return. Crit Care 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35610620/" target="_blank" rel="noopener" class="ref-link">Persichini et al. Venous return and mean systemic filling pressure. Crit Care 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22584797/" target="_blank" rel="noopener" class="ref-link">Maas et al. Three methods to estimate Pms. ICM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23653181/" target="_blank" rel="noopener" class="ref-link">Cecconi et al. Pms changes during a fluid challenge. ICM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11505146/" target="_blank" rel="noopener" class="ref-link">Marik. Assessment of intravascular volume: a comedy of errors. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10086438/" target="_blank" rel="noopener" class="ref-link">McGee et al. Is this patient hypovolemic? JAMA 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29343170/" target="_blank" rel="noopener" class="ref-link">Orso et al. IVC ultrasound for fluid responsiveness meta-analysis. J Intensive Care Med 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29561287/" target="_blank" rel="noopener" class="ref-link">Scheeren et al. Understanding the carbon dioxide gaps. Curr Opin Crit Care 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23559077/" target="_blank" rel="noopener" class="ref-link">van Beest et al. Central venous-arterial PCO₂ difference in sepsis. ICM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20236457/" target="_blank" rel="noopener" class="ref-link">Vallet et al. Venous O₂ saturation as a transfusion trigger. Crit Care 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26683506/" target="_blank" rel="noopener" class="ref-link">Aya et al. Pharmacodynamic analysis of a fluid challenge. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25658678/" target="_blank" rel="noopener" class="ref-link">Monnet & Teboul. Passive leg raising: five rules. Crit Care 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26741579/" target="_blank" rel="noopener" class="ref-link">Cherpanath et al. PLR meta-analysis of 23 trials. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31306258/" target="_blank" rel="noopener" class="ref-link">Beurton et al. Intra-abdominal hypertension and false-negative PLR. CCM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/1590419/" target="_blank" rel="noopener" class="ref-link">Drummer et al. Acute saline infusion and fluid/electrolyte metabolism. Am J Physiol 1992</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19602972/" target="_blank" rel="noopener" class="ref-link">Marik et al. Dynamic arterial waveform variables and fluid responsiveness meta-analysis. CCM 2009</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/fluids.js"></script>
+<script>ICU.makeTabs('fluids'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

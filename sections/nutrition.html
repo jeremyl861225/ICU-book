@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>營養與代謝 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="營養與代謝">
+<div class="sheet">
+<div class="view active" id="view-nutrition">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section XV</div><h1>營養與代謝</h1><div class="sub">Nutrition & Metabolism · 營養需求 → 腸道營養 → 靜脈營養 → 腎上腺與甲狀腺 · 第 48–51 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-nutrition'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="nutrition_tabs">
+    <button class="tab-btn active" data-p="req">營養需求 <span class="mono">Ch48</span></button>
+    <button class="tab-btn" data-p="ent">腸道營養 <span class="mono">Ch49</span></button>
+    <button class="tab-btn" data-p="tpn">靜脈營養 <span class="mono">Ch50</span></button>
+    <button class="tab-btn" data-p="endo">腎上腺與甲狀腺 <span class="mono">Ch51</span></button>
+  </div>
+
+  <!-- ==================== Ch48 Nutritional Requirements ==================== -->
+  <section class="nutrition-panel" data-panel="req" id="nutrition-p-req">
+    <div class="dirhead"><span class="dh-n">第 48 章 營養需求</span><span class="dh-e">Chapter 48 · Nutritional Requirements</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#req/rq-key"><i>01</i>重點卡</a><a class="sp-chip" href="#req/rq-tab"><i>02</i>對照表</a><a class="sp-chip" href="#req/rq-calc"><i>03</i>計算</a><a class="sp-chip" href="#req/rq-flow"><i>04</i>流程</a><a class="sp-chip" href="#req/rq-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#req/rq-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>REE 用間接熱量測定、沒有就 25 kcal/kg</b>；急性期糖質新生已在運作，前 7 天 ≤70%、norepinephrine >0.2 μg/kg/min 只給 10–15 kcal/kg。</span></div>
+        <div class="lede-item"><span>②</span><span><b>蛋白 1.2–2.0 g/kg、碳水 ≤5 mg/kg/min、脂肪 ≤1.5 g/kg</b>；氮平衡要先有夠的非蛋白熱量才轉正；propofol 的熱量要扣。</span></div>
+        <div class="lede-item"><span>③</span><span><b>Thiamine 是 ICU 最該想的維生素</b>：敗血性休克 70% 缺、不明乳酸升高就想；治療 500 mg IV q8h 不是 100 mg；重症不補鐵。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="rq-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="rq-kc">全部展開</button></div>
+    <div id="rq-kc">
+      <details class="def-box"><summary>01 · 燃料的氧化 <span class="en">Oxidation of fuels</span></summary>
+        <div class="box-inner"><p class="kp"><b>能量存在碳鍵、與氧反應釋出：脂肪 9.1、碳水 3.7 kcal/g；RQ ＝ VCO₂/VO₂，碳水 1.0、脂肪 0.7；全身 RQ 反映燃料組成。庫存：脂肪 15 kg（141,000 kcal）、肌肉蛋白 6 kg（24,000）、肝醣 0.09 kg（900）。</b></p></div></details>
+      <details class="def-box"><summary>02 · 間接熱量測定與 25 kcal/kg <span class="en">Indirect calorimetry &amp; the simple formula</span></summary>
+        <div class="box-inner"><p class="kp"><b>代謝車量 VO₂ 與 VCO₂ 算 REE：穩態 15–30 分 × 1,440 與 24 小時等效；FiO₂ >70% 不可靠；所有指引都建議但貴、要人。沒有就 25 kcal/kg（200 多條公式沒有更準的）；實際體重 >125% 理想體重用調整體重。</b></p>
+          <div class="note">原書表 48.1 與式 48.1–48.3 抽出時遺失，REE 依第 49、50 章內文。</div></div></details>
+      <details class="def-box"><summary>03 · 前期少給 <span class="en">Start low</span></summary>
+        <div class="box-inner"><p class="kp"><b>24–48 小時內開始，但起始低於 REE：急性期內生性調整（糖質新生）已在運作，加上全量就是過度餵食（高血糖、脂肪生成），營養不良者還有再餵食風險。歐洲指引：量測 REE 前 3 天 ≤70% 再於第一週漸增到 100%；估算 REE 前 7 天 ≤70%；norepinephrine >0.2 μg/kg/min（70 kg >14 μg/min）10–15 kcal/kg × 7 天或到改善。</b></p></div></details>
+      <details class="def-box"><summary>04 · 碳水與脂肪 <span class="en">Carbohydrates &amp; lipids</span></summary>
+        <div class="box-inner"><p class="kp"><b>碳水約 70% 非蛋白熱量、至少 130 g（中樞每天用 100–120 g）、上限 5 mg/kg/min（70 kg 約 500 g）：壓力性胰島素阻抗、過多升 CO₂ 與脂肪生成。脂肪約 30%：linoleic acid 是唯一必需脂肪酸（0.5% 即可，來自大豆油）；PUFA 高度可氧化、傷組織（尤其肺）與免疫，上限 1.5 g/kg；propofol 10% 乳劑 1.1 kcal/mL 要算進去、長期監測三酸甘油酯。</b></p></div></details>
+      <details class="def-box"><summary>05 · 蛋白與氮平衡 <span class="en">Protein &amp; nitrogen balance</span></summary>
+        <div class="box-inner"><p class="kp"><b>健康 0.8–1.0、重症 1.2–2.0 g/kg（高分解代謝）。氮平衡 ＝ 蛋白/6.25 − (UUN ＋ 4)：2/3 從尿排、85% 是尿素，糞便等 4–6 g；腹瀉時不可靠；目標 +4–6 g、要穩定才做。蛋白固定時非蛋白熱量達 REE 氮平衡才轉正——熱量不夠，加蛋白沒用。</b></p></div></details>
+      <details class="def-box"><summary>06 · Thiamine 缺乏 <span class="en">Thiamine deficiency</span></summary>
+        <div class="box-inner"><p class="kp"><b>TPP 是 pyruvate dehydrogenase 輔因子：缺乏＝葡萄糖代謝的能量缺口。庫存 30 mg、2–3 週耗盡、需求 1 mg/天。誘因：酒精（抑制吸收）、營養不良、敗血性休克（達 70%）、furosemide（腎排泄）、缺鎂（TPP 轉換受阻）、減重手術、葡萄糖負荷（邊緣庫存被用掉，與再餵食相似但不同）。表現：高輸出心衰竭（濕性腳氣病）、Wernicke（三聯徵只 20%；意識改變 80%、眼徵 30%）、周邊神經病變、乳酸酸中毒（可能是敗血症與 DKA 部分乳酸的原因）——不明乳酸升高都要想。</b></p></div></details>
+      <details class="def-box"><summary>07 · Thiamine 的診斷與治療 <span class="en">Diagnosis &amp; treatment</span></summary>
+        <div class="box-inner"><p class="kp"><b>臨床診斷：血中 thiamine 不可靠，全血 TPP 63–229 nmol/L 但不普及；MRI 敏感度 53%、專一性 93%（內側視丘、下視丘、乳頭體、小腦中線）。常規 100 mg/天不夠治療：500 mg IV q8h × 2–3 天 → 250 mg IV/天 × 3–5 天 → 100 mg PO tid × 1–2 週 → 100 mg/天；IV 優先（腸道吸收不穩）；同時矯正缺鎂。心衰竭補 thiamine 未見可靠效果。</b></p></div></details>
+      <details class="def-box"><summary>08 · 維生素 D、C、E <span class="en">Vitamin D &amp; antioxidants</span></summary>
+        <div class="box-inner"><p class="kp"><b>維生素 D 缺乏 40–100%（需求 600 IU、配方只給 200–400）；25-OHD <50 缺乏、<30 嚴重；與感染率相關；口服可靠性不明，單次 IM cholecalciferol 150,000 IU 90% 正常化。維生素 E（脂溶性、保護膜）與 C（水溶性、清除活性氧、維持 E 活性）重症常缺；補充改善結局的證據不一致，但氧化壓力的角色足以支持維持。</b></p></div></details>
+      <details class="def-box"><summary>09 · 鐵與硒 <span class="en">Iron &amp; selenium</span></summary>
+        <div class="box-inner"><p class="kp"><b>4.5 g 鐵幾乎都結合（transferrin 只 30% 飽和）：游離鐵 Fe²⁺ 產生 hydroxyl radical、脂質過氧化 → ferroptosis（發炎觸發、發炎性器官傷害的主角）；發炎時低血鐵是保護——重症不補鐵，除非組織缺鐵（鐵蛋白 <18；>100 不缺）併貧血。硒是 glutathione peroxidase 輔因子，需求 55 μg、急性病利用增加、重症常缺；<100 μg/L 活性降；亞硒酸鈉 IV、安全上限 225 μg/天。</b></p></div></details>
+      <details class="def-box"><summary>10 · 藥膏裡的蒼蠅 <span class="en">A fly in the ointment</span></summary>
+        <div class="box-inner"><p class="kp"><b>重症的營養不良是營養處理異常不是飢餓，餵食矯正不了、還可能有害：急性病人葡萄糖負荷可有 85% 變乳酸（健康 <5%；主動脈手術 D5W 組乳酸 >2）、脂肪在發炎環境被氧化。也許生病沒胃口是有道理的——Hippocrates 2,500 年前就說了。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="rq-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>基質</th><th>比例</th><th>下限</th><th>上限</th></tr>
+      <tr><td>碳水</td><td>約 70% 非蛋白熱量</td><td>130 g/天</td><td>5 mg/kg/min（約 500 g）</td></tr>
+      <tr><td>脂肪</td><td>約 30%</td><td>Linoleic acid 0.5%</td><td>1.5 g/kg/天</td></tr>
+      <tr><td>蛋白</td><td>非熱量來源</td><td>1.2 g/kg</td><td>2.0 g/kg</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Thiamine 缺乏</th><th>誘因</th><th>表現</th></tr>
+      <tr><td rowspan="2">治療：500 mg IV q8h × 2–3 天 → 250 mg IV/天 × 3–5 天 → 100 mg PO tid × 1–2 週 → 100 mg/天</td><td>酒精、營養不良、敗血性休克、furosemide、缺鎂</td><td>心肌病變（腳氣病）、Wernicke、周邊神經病變、乳酸酸中毒</td></tr>
+      <tr><td colspan="2">診斷：臨床；全血 TPP 63–229 nmol/L；MRI 53%／93%</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>微量營養素</th><th>判準</th><th>處置</th></tr>
+      <tr><td>25-OH 維生素 D</td><td><50 nmol/L 缺乏、<30 嚴重</td><td>Cholecalciferol 150,000 IU IM 單次</td></tr>
+      <tr><td>硒</td><td><100 μg/L</td><td>亞硒酸鈉 IV ≤225 μg/天</td></tr>
+      <tr><td>鐵蛋白</td><td><18 可能缺鐵；>100 不缺</td><td>重症不補鐵（除非缺鐵＋貧血）</td></tr>
+    </table></div>
+    <div class="dirhead" id="rq-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c48ree">
+      <div class="rxbox-t">REE 與基質目標</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="re_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>身高 <span class="rx-en">cm</span></label><input type="number" id="re_h" step="1" placeholder="170"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="re_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>時期 <span class="rx-en">phase</span></label><select id="re_d"><option value="d1">前 3 天</option><option value="d4">第 4–7 天</option><option value="d7">第 8 天起</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>有間接熱量測定 <span class="rx-en">calorimetry</span></label><select id="re_ic"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Norepinephrine <span class="rx-en">μg/kg/min</span></label><input type="number" id="re_ne" step="0.05" placeholder="0.1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Propofol <span class="rx-en">mL/hr</span></label><input type="number" id="re_p" step="1" placeholder="0"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c48ree_out"></div>
+    </div>
+    <div class="rxbox" id="c48nbal">
+      <div class="rxbox-t">氮平衡</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>蛋白攝入 <span class="rx-en">g/天</span></label><input type="number" id="nb_p" step="1" placeholder="100"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>尿尿素氮 <span class="rx-en">g/24h</span></label><input type="number" id="nb_u" step="0.5" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腹瀉 <span class="rx-en">diarrhea</span></label><select id="nb_d"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c48nbal_out"></div>
+    </div>
+    <div class="rxbox" id="c48thi">
+      <div class="rxbox-t">Thiamine 缺乏</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>酒精 <span class="rx-en">alcohol</span></label><select id="th_a"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>敗血性休克 <span class="rx-en">septic shock</span></label><select id="th_s"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Furosemide <span class="rx-en">chronic</span></label><select id="th_f"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>缺鎂 <span class="rx-en">hypomagnesemia</span></label><select id="th_m"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>剛開始葡萄糖負荷 <span class="rx-en">glucose load</span></label><select id="th_g"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>表現 <span class="rx-en">manifestation</span></label><select id="th_c"><option value="we">腦病變</option><option value="hf">心衰竭</option><option value="la">乳酸酸中毒</option><option value="pn">神經病變</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c48thi_out"></div>
+    </div>
+    <div class="rxbox" id="c48micro">
+      <div class="rxbox-t">維生素 D、硒、鐵</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>25-OH 維生素 D <span class="rx-en">nmol/L</span></label><input type="number" id="mi_d" step="1" placeholder="28"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>硒 <span class="rx-en">μg/L</span></label><input type="number" id="mi_se" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>鐵蛋白 <span class="rx-en">μg/L</span></label><input type="number" id="mi_f" step="1" placeholder="350"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c48micro_out"></div>
+    </div>
+    <div class="dirhead" id="rq-flow"><span class="dh-n">決策流程</span><span class="dh-e">Feed or not, how much</span></div>
+    <div id="fd_flow">
+      <div class="flow-step" id="fd_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">循環狀態？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fdPick('shock','ok',this)">穩定<span class="fo-sub">或升壓劑穩定／下降</span></button>
+          <button class="flow-opt" onclick="fdPick('shock','highne',this)">Norepinephrine >0.2 μg/kg/min</button>
+          <button class="flow-opt" onclick="fdPick('shock','uncontrolled',this)">失控或進行中的休克</button>
+        </div></div>
+      <div class="flow-step" id="fd_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">腸道有禁忌嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fdPick('ci','no',this)">無</button>
+          <button class="flow-opt" onclick="fdPick('ci','yes',this)">有<span class="fo-sub">缺血、阻塞、出血、瘻、ACS</span></button>
+        </div></div>
+      <div class="flow-step" id="fd_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">時期？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="fdPick('day','early',this)">第一週前段</button>
+          <button class="flow-opt" onclick="fdPick('day','late',this)">之後</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="fd_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="fdReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="rq-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_req"></div>
+    <div class="dirhead" id="rq-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/nutrition.html" href="#">營養流程</a><a class="flow-link" data-ct="tools/nutrition-risk.html" href="#">營養風險評估</a><a class="flow-link" href="acidbase.html#lac">Marino 第 32 章 乳酸與 thiamine</a><a class="flow-link" href="renallyte.html#mg">Marino 第 37 章 鎂</a><a class="flow-link" href="neuro.html#consc">Marino 第 45 章 Wernicke</a></div>
+  </section>
+
+  <!-- ==================== Ch49 Enteral Nutrition ==================== -->
+  <section class="nutrition-panel hidden" data-panel="ent" id="nutrition-p-ent">
+    <div class="dirhead"><span class="dh-n">第 49 章 腸道營養</span><span class="dh-e">Chapter 49 · Enteral Nutrition</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ent/en-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ent/en-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ent/en-calc"><i>03</i>計算</a><a class="sp-chip" href="#ent/en-flow"><i>04</i>流程</a><a class="sp-chip" href="#ent/en-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ent/en-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>腸道營養是感染控制措施</b>：食物團塊滋養黏膜、維持屏障與 IgA；48 小時內開始、不需腸音；升壓劑穩定就能餵、失控休克才不能。</span></div>
+        <div class="lede-item"><span>②</span><span><b>四步配方</b>：25 kcal/kg 與 1.2–2.0 g/kg 蛋白 → 標準 1–1.2 kcal/mL → 體積 ÷ 24 連續輸注 → 蛋白不夠加粉；扣 propofol；前期 70%。</span></div>
+        <div class="lede-item"><span>③</span><span><b>餵食管靠 X 光確認、whoosh 放棄</b>；胃殘餘量不常規測、>500 才停並用 erythromycin；腹瀉先看液劑與 C. difficile。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="en-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="en-kc">全部展開</button></div>
+    <div id="en-kc">
+      <details class="def-box"><summary>01 · 腸道營養的非營養角色 <span class="en">Infectious risk</span></summary>
+        <div class="box-inner"><p class="kp"><b>腸道是多器官衰竭的馬達。腸腔的食物團塊有滋養作用：維持黏膜結構與屏障（防菌移位）、腸壁 IgA（阻擋黏附）；靠的是團塊不是燃料（口服 TPN 液沒有效果；glutamine 是腸細胞燃料）；禁食黏膜漸萎縮、菌易入侵。早期腸道營養（48 小時內）感染率較低。</b></p></div></details>
+      <details class="def-box"><summary>02 · 誰、何時、禁忌 <span class="en">Who, when, contraindications</span></summary>
+        <div class="box-inner"><p class="kp"><b>腸道永遠優先；不能進食就 48 小時內管灌；不需腸音。禁忌：失控或進行中的休克、腸缺血、頑固致命低血氧或高碳酸、活動性上消化道出血、腸阻塞、高流量腸瘻、腹腔腔室症候群、GRV >500 mL/6 小時。穩定或下降的升壓劑不是禁忌；norepinephrine >0.2 μg/kg/min 用 10–15 kcal/kg × 7 天。</b></p></div></details>
+      <details class="def-box"><summary>03 · 配方的成分 <span class="en">Feeding formulas</span></summary>
+        <div class="box-inner"><p class="kp"><b>熱量密度 1、1.2、1.5、2 kcal/mL——多用低密度（高密度滲透壓高促腹瀉；限水才用）。蛋白 35–65 g/L、HN 多 20%；聚合（完整蛋白）、半元素（胜肽）、元素（胺基酸；助吸收與水再吸收）。碳水達 70% 熱量；纖維＝可發酵（丁酸養結腸黏膜與好菌）＋不可發酵（滲透導瀉），配方混合。脂肪約 30%、大豆油 PUFA；魚油 ω-3 不促發炎（免疫營養）：不常規、ARDS 可能有益、創傷與腹部大手術或許。沒有證據哪種配方結局較好，每院 1–2 種。</b></p>
+          <div class="note">原書表 49.2–49.4 是圖檔或只剩標題，配方數字未收錄。</div></div></details>
+      <details class="def-box"><summary>04 · 條件性必需營養素 <span class="en">Conditionally essential nutrients</span></summary>
+        <div class="box-inner"><p class="kp"><b>Arginine（受傷肌肉的基質、NO 前驅物）：圍手術期減感染；指引「考慮」用於 TBI 與外科 ICU，內科尤其敗血症不用（NO 低血壓）。Glutamine（glutathione 前驅物、核酸、腸黏膜燃料；敗血症創傷燒傷耗竭）：創傷 0.2–0.3 g/kg × 5 天、燒傷 >20% 0.3–0.5 × 10–15 天，其他不建議。Carnitine（長鏈脂肪酸進粒線體）：<20 mmol/L 缺乏（低血糖、心肌病變），20–30 mg/kg。</b></p></div></details>
+      <details class="def-box"><summary>05 · 四步配方 <span class="en">Creating a regimen</span></summary>
+        <div class="box-inner"><p class="kp"><b>①REE（間接熱量測定或 25 kcal/kg；>125% IBW 用調整體重）與蛋白 1.2–2.0 g/kg（中位 1.6）；②標準 1–1.2 kcal/mL；③體積 ＝ 熱量 ÷ 密度，速率 ＝ 體積 ÷ 24、連續不 bolus，扣 propofol（1 kcal/mL：mL/hr ＝ kcal/hr）；④蛋白 ＝ 體積 × 濃度，不夠加蛋白粉。前期：量測 REE 前 3 天 ≤70%、估算前 7 天 ≤70%。</b></p></div></details>
+      <details class="def-box"><summary>06 · 餵食管的置入與確認 <span class="en">Feeding tubes</span></summary>
+        <div class="box-inner"><p class="kp"><b>8–10 Fr、50–100 cm 聚氨酯軟管、要導絲；NEX（鼻–耳垂–劍突）50–60 cm。進肺約 1%、重症常無咳嗽（尤其插管深鎮靜）、可穿破胸膜——每次置入都要胸部 X 光：直下縱膈、平分氣管分岔角、尖端在左橫膈頂下約 10 cm；進肺者在分岔處偏右。Whoosh 試驗不可靠（肺內氣流也能在上腹聽到）、應放棄；超音波 96%／91% 未取代 X 光；置入時 CO₂ 波形或 ≥15 mmHg ＝ 進肺（96%／99%）但測不到食道盤繞。胃優先（吸入風險與十二指腸相同、較易），反覆吸入才後移。</b></p></div></details>
+      <details class="def-box"><summary>07 · 阻塞與胃殘餘量 <span class="en">Occlusion &amp; gastric residual volume</span></summary>
+        <div class="box-inner"><p class="kp"><b>胃酸逆流讓蛋白沉澱：每 4 小時 30 mL 水沖、給藥後 10 mL；變慢用溫水（30%）→ Viokase 1 錠＋碳酸鈉 324 mg 溶 5 mL 注入夾 5 分再沖（75%）；完全塞試軟導線、不行立刻換。GRV：微吸入近半數病人；傳統 150–250 mL 門檻沒證據、只造成反覆中斷與餵食不足——不常規測，疑吸入才測，>500/6 小時暫停、床頭 ≥30°、試促動劑，再發就前移部位。</b></p></div></details>
+      <details class="def-box"><summary>08 · 促動劑 <span class="en">Prokinetics</span></summary>
+        <div class="box-inner"><p class="kp"><b>Erythromycin 100–200 mg IV q8h × 3 天：motilin、最有效、第一線；幾天耐受、3 天不影響菌群。Metoclopramide 10 mg IV q8h × 3 天：較差、合併更好。兩者都延長 QT。鴉片相關：胃內 naloxone 選擇性阻斷腸道受體不抵銷止痛（經驗少）。臨床意義難證明。</b></p></div></details>
+      <details class="def-box"><summary>09 · 腹瀉 <span class="en">Diarrhea</span></summary>
+        <div class="box-inner"><p class="kp"><b>達 70%：配方高滲、抗生素、C. difficile、液劑（高滲 >3,000 mOsm：acetaminophen、dexamethasone、硫酸亞鐵、hydroxyzine、metoclopramide、多維生素、KCl、磷酸鈉；含 sorbitol：acetaminophen、cimetidine、isoniazid、lithium、metoclopramide、theophylline、tetracycline）。換低滲或元素配方、避免問題液劑；混合纖維配方沒有幫助。</b></p></div></details>
+      <details class="def-box"><summary>10 · 吃飯是抗菌防禦 <span class="en">Eating as antimicrobial defense</span></summary>
+        <div class="box-inner"><p class="kp"><b>消化道在身體之外（像甜甜圈的洞）；黏膜屏障靠腸腔的食物團塊維持——腸道營養有非營養的防禦角色。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="en-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>腸道營養禁忌</th></tr>
+      <tr><td>失控或進行中的休克 · 腸缺血（疑或證實） · 頑固致命低血氧或高碳酸 · 活動性上消化道出血 · 腸阻塞 · 高流量腸瘻 · 腹腔腔室症候群 · GRV >500 mL/6 小時</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>促動劑</th><th>劑量</th><th>備註</th></tr>
+      <tr><td>Erythromycin</td><td>100–200 mg IV q8h × 3 天</td><td>最有效、第一線；耐受快；不影響菌群</td></tr>
+      <tr><td>Metoclopramide</td><td>10 mg IV q8h × 3 天</td><td>較差；合併更好；兩者都延長 QT</td></tr>
+      <tr><td>Naloxone（胃內）</td><td>—</td><td>鴉片相關；經驗少</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>促腹瀉液劑：>3,000 mOsm/kg</th><th>含 sorbitol</th></tr>
+      <tr><td>Acetaminophen、dexamethasone、硫酸亞鐵、hydroxyzine、metoclopramide、多維生素、KCl、磷酸鈉</td><td>Acetaminophen、cimetidine、isoniazid、lithium、metoclopramide、theophylline、tetracycline</td></tr>
+    </table></div>
+    <div class="dirhead" id="en-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c49reg">
+      <div class="rxbox-t">腸道營養配方四步</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rg_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>蛋白目標 <span class="rx-en">g/kg</span></label><input type="number" id="rg_pk" step="0.1" placeholder="1.6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>配方密度 <span class="rx-en">kcal/mL</span></label><input type="number" id="rg_k" step="0.1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>配方蛋白 <span class="rx-en">g/L</span></label><input type="number" id="rg_pr" step="1" placeholder="44"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Propofol <span class="rx-en">mL/hr</span></label><input type="number" id="rg_p" step="1" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>時期 <span class="rx-en">phase</span></label><select id="rg_d"><option value="early">前期（≤70%）</option><option value="full">全量</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c49reg_out"></div>
+    </div>
+    <div class="rxbox" id="c49grv">
+      <div class="rxbox-t">胃殘餘量與促動劑</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>胃殘餘量 <span class="rx-en">mL/6 h</span></label><input type="number" id="gv_v" step="10" placeholder="600"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>疑吸入 <span class="rx-en">aspiration</span></label><select id="gv_s"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>用鴉片 <span class="rx-en">opioid</span></label><select id="gv_o"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>QT 延長 <span class="rx-en">QTc</span></label><select id="gv_q"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c49grv_out"></div>
+    </div>
+    <div class="rxbox" id="c49tube">
+      <div class="rxbox-t">餵食管：確認、阻塞、腹瀉</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>置入時 CO₂ <span class="rx-en">mmHg</span></label><input type="number" id="tb_c" step="1" placeholder="3"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>管路 <span class="rx-en">patency</span></label><select id="tb_s"><option value="ok">通暢</option><option value="slow">變慢</option><option value="block">完全阻塞</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腹瀉 <span class="rx-en">diarrhea</span></label><select id="tb_d"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c49tube_out"></div>
+    </div>
+    <div class="dirhead" id="en-flow"><span class="dh-n">決策流程</span><span class="dh-e">Same flow as Ch48 (feed or not)</span></div>
+    <div class="note">餵食決策流程在第 48 章分頁（循環 → 腸道禁忌 → 時期），本章重點在配方與併發症。</div>
+    <div class="dirhead" id="en-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_ent"></div>
+    <div class="dirhead" id="en-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/nutrition.html" href="#">營養流程</a><a class="flow-link" href="practices.html#gi" >Marino 第 4 章 腸道與敗血症</a><a class="flow-link" href="abdomen.html#abdinf">Marino 第 41 章 C. difficile</a><a class="flow-link" href="abdomen.html#panc">Marino 第 40 章 胰臟炎的營養</a></div>
+  </section>
+
+  <!-- ==================== Ch50 Parenteral Nutrition ==================== -->
+  <section class="nutrition-panel hidden" data-panel="tpn" id="nutrition-p-tpn">
+    <div class="dirhead"><span class="dh-n">第 50 章 靜脈營養</span><span class="dh-e">Chapter 50 · Parenteral Nutrition</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#tpn/tp-key"><i>01</i>重點卡</a><a class="sp-chip" href="#tpn/tp-tab"><i>02</i>對照表</a><a class="sp-chip" href="#tpn/tp-calc"><i>03</i>計算</a><a class="sp-chip" href="#tpn/tp-flow"><i>04</i>流程</a><a class="sp-chip" href="#tpn/tp-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#tpn/tp-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>三合一配方</b>：10% 胺基酸（100 g/L）＋ 20% 脂肪乳劑（2 kcal/mL）＋ D50（1.7 kcal/mL、要中心靜脈）＋ 30 mL 添加物；70 kg 約 2 L、84 mL/hr。</span></div>
+        <div class="lede-item"><span>②</span><span><b>併發症是葡萄糖與大豆油</b>：高血糖（目標 140–180）、低磷低鉀、高碳酸；發炎傷害、肝脂肪變、膽汁鬱積、脂肪過載。</span></div>
+        <div class="lede-item"><span>③</span><span><b>再餵食高風險從 40–50% 起</b>、先 thiamine 與電解質、4–7 天進階；周邊 PPN 只夠蛋白節省；能免則免。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="tp-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="tp-kc">全部展開</button></div>
+    <div id="tp-kc">
+      <details class="def-box"><summary>01 · 葡萄糖溶液 <span class="en">Dextrose solutions</span></summary>
+        <div class="box-inner"><p class="kp"><b>碳水約 70% 非蛋白熱量；葡萄糖能量低（3.4 kcal/g 水合型）所以要濃：D5 70 kcal/L（253 mOsm）、D10 340（505）、D20 680（1,080）、D40 1,360（2,220）、D50 1,700（2,525）——標準 D50、要大中心靜脈。</b></p></div></details>
+      <details class="def-box"><summary>02 · 胺基酸與脂肪乳劑 <span class="en">Amino acids &amp; lipids</span></summary>
+        <div class="box-inner"><p class="kp"><b>10% 胺基酸 100 g 蛋白/L（16.5 g 氮）、50% 必需 50% 非必需（9 種必需）；支鏈胺基酸配方（阻擋芳香族過血腦障壁、肌肉代謝）理論上利肝性腦病變與創傷敗血症氮平衡，但都未改善結局。脂肪乳劑：大豆油（linoleic 50%、oleic 25%、α-linolenic 10%）10% 1 kcal/mL、20% 2 kcal/mL、等張可走周邊；必需脂肪酸只要 3–4% 熱量。新乳劑：Clinolipid（80% 橄欖油＋MCT）、Smoflipid（大豆 30、MCT 30、橄欖 20、魚油 15）、Omegaven（純魚油、要配大豆油）——經驗有限。</b></p></div></details>
+      <details class="def-box"><summary>03 · 添加物 <span class="en">Additives</span></summary>
+        <div class="box-inner"><p class="kp"><b>電解質混合液（多 20 mL：鈉氯鉀鎂，其他要另加）、水溶性多維生素（重症需求較高所以缺乏常見）、微量元素（Multi-Trace 5：7 種有 5 種達不到每日需求——鉻 10 vs 30 μg、銅 1 vs 900 μg、碘與鐵無、錳 0.5 vs 2.3 mg、硒 60 vs 55 μg、鋅 5 vs 11 mg；後果未知）。</b></p></div></details>
+      <details class="def-box"><summary>04 · 四步配 TPN <span class="en">Creating a TPN regimen</span></summary>
+        <div class="box-inner"><p class="kp"><b>70 kg 範例：①REE 25 × 70 ＝ 1,750 kcal（扣 propofol 1 kcal/mL）、蛋白 1.4 g/kg ＝ 98 g；②10% 胺基酸 1 L；③20% 脂肪 250 mL ＝ 500 kcal，剩 1,250 ÷ 1.7 ＝ D50 735 mL；④總量 2,015 mL（含 30 mL 添加物）÷ 24 ＝ 84 mL/hr；再餵食風險從 40–50%（42 mL/hr）起、4–7 天依磷鉀鎂進階。</b></p></div></details>
+      <details class="def-box"><summary>05 · 碳水的併發症 <span class="en">Carbohydrate complications</span></summary>
+        <div class="box-inner"><p class="kp"><b>高血糖 >200 達 45%：不嚴控（低血糖後果更重）、目標 140–180；regular insulin 連續輸注（可加進袋）＋ lispro 皮下，穩定後一半換每日 glargine。低磷、低鉀：葡萄糖進細胞帶著走（再餵食的核心）。高碳酸：過度餵食（不只碳水）——葡萄糖 RQ 最高但主因是總量。</b></p>
+          <div class="note">原書表 50.4（胰島素製劑）只剩標題。</div></div></details>
+      <details class="def-box"><summary>06 · 脂肪的併發症 <span class="en">Lipid complications</span></summary>
+        <div class="box-inner"><p class="kp"><b>發炎傷害：大豆油 ω-6／ω-9 是 eicosanoid 前驅物，oleic acid 打進肺動脈是 ARDS 動物模型——TPN 脂肪輸注惡化氧合、延長呼吸衰竭；魚油 ω-3 抗發炎。肝脂肪變（ω-6：ω-3 比、植物固醇；長期可到肝炎肝硬化）。膽汁鬱積：近端小腸沒脂肪、膽囊不收縮 → 無結石膽囊炎。脂肪過載症候群：三酸甘油酯超過分解能力——發燒、頭痛、呼吸窘迫、黃疸、胰臟炎、全血球減少、凝血病變；小孩多、暫停可緩解。</b></p></div></details>
+      <details class="def-box"><summary>07 · 再餵食症候群 <span class="en">Refeeding syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>二戰餵戰俘與集中營倖存者首次描述。機轉：葡萄糖負荷進細胞帶走磷鉀鎂、耗盡 thiamine，低白蛋白留鈉。表現：全身無力（低磷）、意識改變與乳酸酸中毒（thiamine）、心搏過速心律不整（低鉀低鎂）、肺水腫（留鈉）、低血壓。高風險：1 個月減重 ≥5% 或 6 個月 >10%、BMI ≤18.5、5 天攝食差、基線鉀磷鎂低、藥物濫用等高營養不良風險。處置：先矯正電解質＋thiamine（ASPEN 100–200 mg 不夠，用第 48 章方案）；40–50% 目標或 10–15 kcal/kg 或葡萄糖 150 g（300 mL D50）起、4–7 天進階、盯磷鉀鎂。</b></p></div></details>
+      <details class="def-box"><summary>08 · 周邊靜脈營養 <span class="en">Peripheral parenteral nutrition</span></summary>
+        <div class="box-inner"><p class="kp"><b>截短版：只供非蛋白熱量以節省蛋白，當腸道營養補充或短期橋接；高分解代謝或營養不良者不適用。周邊 <900 mOsm/L、pH 7.2–7.4：3% 胺基酸＋20% 葡萄糖各半（終 1.5%＋10%、500 mOsm）2.5 L ＝ 850 kcal，加 250 mL 20% 脂肪（等張）到 1,350——接近未壓力成人 20 kcal/kg。</b></p></div></details>
+      <details class="def-box"><summary>09 · 能免則免 <span class="en">AVOID</span></summary>
+        <div class="box-inner"><p class="kp"><b>靜脈營養的最後一句話：能免就免——理由見第 49 章第一節（腸道營養的防禦角色）與第 48 章結語。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="tp-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>葡萄糖</th><th>g/L</th><th>kcal/L</th><th>mOsm/L</th></tr>
+      <tr><td>D5</td><td>50</td><td>70</td><td>253</td></tr>
+      <tr><td>D10</td><td>100</td><td>340</td><td>505</td></tr>
+      <tr><td>D20</td><td>200</td><td>680</td><td>1,080</td></tr>
+      <tr><td>D40</td><td>400</td><td>1,360</td><td>2,220</td></tr>
+      <tr><td>D50</td><td>500</td><td>1,700</td><td>2,525</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>微量元素</th><th>每日需求</th><th>製劑提供</th></tr>
+      <tr><td>鉻</td><td>30 μg</td><td>10 μg</td></tr>
+      <tr><td>銅</td><td>900 μg</td><td>1 μg</td></tr>
+      <tr><td>碘</td><td>150 μg</td><td>—</td></tr>
+      <tr><td>鐵</td><td>8 mg</td><td>—</td></tr>
+      <tr><td>錳</td><td>2.3 mg</td><td>0.5 mg</td></tr>
+      <tr><td>硒</td><td>55 μg</td><td>60 μg</td></tr>
+      <tr><td>鋅</td><td>11 mg</td><td>5 mg</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>再餵食症候群</th><th>機轉</th><th>表現</th></tr>
+      <tr><td>電解質</td><td>低磷、低鉀、低鎂（葡萄糖帶進細胞）</td><td>全身無力、心搏過速心律不整</td></tr>
+      <tr><td>維生素</td><td>Thiamine 缺乏</td><td>意識改變、乳酸酸中毒</td></tr>
+      <tr><td>水鈉</td><td>腎留鈉（低白蛋白）</td><td>肺水腫、低血壓</td></tr>
+    </table></div>
+    <div class="dirhead" id="tp-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c50tpn">
+      <div class="rxbox-t">TPN 三合一配方</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="tp_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>蛋白目標 <span class="rx-en">g/kg</span></label><input type="number" id="tp_pk" step="0.1" placeholder="1.4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>20% 脂肪乳劑 <span class="rx-en">mL</span></label><input type="number" id="tp_l" step="10" placeholder="250"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Propofol <span class="rx-en">mL/hr</span></label><input type="number" id="tp_p" step="1" placeholder="0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>再餵食風險 <span class="rx-en">refeeding risk</span></label><select id="tp_r"><option value="n">無</option><option value="y">有</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c50tpn_out"></div>
+    </div>
+    <div class="rxbox" id="c50refeed">
+      <div class="rxbox-t">再餵食風險與起始</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>1 個月減重 <span class="rx-en">%</span></label><input type="number" id="rf_w1" step="1" placeholder="6"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>6 個月減重 <span class="rx-en">%</span></label><input type="number" id="rf_w6" step="1" placeholder="12"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>BMI <span class="rx-en">kg/m²</span></label><input type="number" id="rf_b" step="0.1" placeholder="17.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>5 天攝食差 <span class="rx-en">poor intake</span></label><select id="rf_p"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>基線鉀磷鎂低 <span class="rx-en">low K／P／Mg</span></label><select id="rf_e"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>藥物濫用等 <span class="rx-en">high risk</span></label><select id="rf_a"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rf_kg" step="1" placeholder="50"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c50refeed_out"></div>
+    </div>
+    <div class="rxbox" id="c50ppn">
+      <div class="rxbox-t">周邊靜脈營養</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="pp_w" step="1" placeholder="65"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>加 20% 脂肪 250 mL <span class="rx-en">lipid</span></label><select id="pp_l"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c50ppn_out"></div>
+    </div>
+    <div class="dirhead" id="tp-flow"><span class="dh-n">決策流程</span><span class="dh-e">TPN complication: what is it</span></div>
+    <div id="tc_flow">
+      <div class="flow-step" id="tc_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">TPN 期間出現什麼？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tcPick('sign','glu',this)">高血糖</button>
+          <button class="flow-opt" onclick="tcPick('sign','lyte',this)">低磷／鉀／鎂＋無力或心律不整</button>
+          <button class="flow-opt" onclick="tcPick('sign','co2',this)">PaCO₂ 上升</button>
+          <button class="flow-opt" onclick="tcPick('sign','lung',this)">氧合惡化</button>
+          <button class="flow-opt" onclick="tcPick('sign','liver',this)">肝功能異常或黃疸</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="tc_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="tcReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="tp-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_tpn"></div>
+    <div class="dirhead" id="tp-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/nutrition.html" href="#">營養流程</a><a class="flow-link" data-ct="pathways/diabetes.html" href="#">住院血糖</a><a class="flow-link" href="renallyte.html#capo">Marino 第 38 章 低血磷</a><a class="flow-link" href="access.html#cvc">Marino 第 2 章 中心靜脈</a><a class="flow-link" href="abdomen.html#abdinf">Marino 第 41 章 無結石膽囊炎</a></div>
+  </section>
+
+  <!-- ==================== Ch51 Adrenal and Thyroid ==================== -->
+  <section class="nutrition-panel hidden" data-panel="endo" id="nutrition-p-endo">
+    <div class="dirhead"><span class="dh-n">第 51 章 腎上腺與甲狀腺</span><span class="dh-e">Chapter 51 · Adrenal and Thyroid Dysfunction</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#endo/ed-key"><i>01</i>重點卡</a><a class="sp-chip" href="#endo/ed-tab"><i>02</i>對照表</a><a class="sp-chip" href="#endo/ed-calc"><i>03</i>計算</a><a class="sp-chip" href="#endo/ed-flow"><i>04</i>流程</a><a class="sp-chip" href="#endo/ed-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#endo/ed-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>CIRCI 的表現是輸液無反應的低血壓</b>：隨機 cortisol <10 抑制、≥35 足夠；敗血性休克不必驗，直接試 hydrocortisone 100 mg q8h。</span></div>
+        <div class="lede-item"><span>②</span><span><b>ICU 甲狀腺檢驗 90% 異常、多是非甲狀腺病</b>：TSH 正常＋free T4 低＝正常甲狀腺病態，不治療；原發性反向、次發性同向。</span></div>
+        <div class="lede-item"><span>③</span><span><b>兩個急症</b>：甲狀腺風暴 propranolol＋PTU＋碘＋hydrocortisone；黏液水腫昏迷 hydrocortisone 先、levothyroxine 200–400 μg IV、可加 T3。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ed-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ed-kc">全部展開</button></div>
+    <div id="ed-kc">
+      <details class="def-box"><summary>01 · 腎上腺與 cortisol <span class="en">Adrenal activity</span></summary>
+        <div class="box-inner"><p class="kp"><b>CRH → ACTH → 皮質醇（糖質可用性、細胞外容積）與髓質兒茶酚胺；喪失則血行動力不穩、體積耗竭、能量代謝失常，平時沉默、遇壓力才現形。Cortisol 平時 15–25 mg/天、最大壓力達 350；90% 結合 CBG 與白蛋白，急性病 CBG 降一半、總 cortisol 可誤導，但游離值不普及、仍用總值。</b></p></div></details>
+      <details class="def-box"><summary>02 · CIRCI <span class="en">Critical illness-related corticosteroid insufficiency</span></summary>
+        <div class="box-inner"><p class="kp"><b>重症 10–20%、嚴重敗血症與敗血性休克達 60%；多可逆；全身發炎是主因、下視丘腦下垂體層級占敗血症 75%。誘因：敗血症、HIV、全身黴菌、腦膜炎雙球菌（腎上腺出血）；突然停慢性類固醇、DIC 或抗凝的腎上腺出血、抑制合成（etomidate、ketoconazole）或加速代謝（phenytoin、rifampin）。表現：輸液無反應的低血壓；慢性腎上腺功能不全的低鈉高鉀少見。</b></p></div></details>
+      <details class="def-box"><summary>03 · 診斷 <span class="en">Diagnosis</span></summary>
+        <div class="box-inner"><p class="kp"><b>血壓不穩或不明低血壓輸液無反應就懷疑。最佳預測：隨機 cortisol <10 μg/dL，或 cosyntropin 250 μg IV 後 60 分增量 <9。流行做法：隨機值 ≥35 足夠、<10 抑制、中間才做 ACTH 試驗；但 ACTH 反應正常不排除次發性（要驗 ACTH、ICU 很少做）。敗血性休克不必驗：輸液與中等升壓劑仍低血壓就試 hydrocortisone。</b></p></div></details>
+      <details class="def-box"><summary>04 · 治療與等效劑量 <span class="en">Treatment &amp; equivalents</span></summary>
+        <div class="box-inner"><p class="kp"><b>Hydrocortisone 100 mg IV q8h（200–300 mg/天）；fludrocortisone 50 μg PO/天可選（hydrocortisone 礦物皮質素活性已好）。敗血性休克升壓劑停、乳酸正常就停，幾天內漸減防發炎介質反彈。等效：hydrocortisone 20 ＝ prednisone 5 ＝ methylprednisolone 4 ＝ dexamethasone 0.75 mg；礦物皮質素活性 hydrocortisone 最強、抗發炎 dexamethasone 最強——抗發炎用途卻多用 methylprednisolone、原因不明。</b></p></div></details>
+      <details class="def-box"><summary>05 · 甲狀腺檢驗怎麼看 <span class="en">Evaluating thyroid function</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 達 90% 異常、多是非甲狀腺病。T4 是主要分泌、T3 是活性型（周邊去碘）；>99% 結合蛋白，急性病蛋白變動所以用 free T4（free T3 不普及）。TSH 最可靠：原發性與荷爾蒙反向、次發性同向、非甲狀腺影響 TSH 正常。正常 free T4 0.8–1.8 ng/dL、TSH 0.3–4.5 mU/mL。</b></p></div></details>
+      <details class="def-box"><summary>06 · 甲狀腺毒症與風暴 <span class="en">Thyrotoxicosis &amp; storm</span></summary>
+        <div class="box-inner"><p class="kp"><b>幾乎都是原發性（Graves 最常見）：躁動、怕熱、心搏快（心房顫動）、細震顫；老人淡漠型（嗜睡＋心房顫動）。風暴（急性病或手術誘發）：高熱 >40、躁動譫妄、心搏快高輸出心衰竭，晚期昏迷癲癇不穩；死亡達 25%。診斷：TSH 最敏感專一（亢進 <0.01、正常排除）、free T4 升；T3 毒症 TSH 低 T4 正常；正常甲狀腺高 T4 血症（amiodarone、amphetamine、heparin）TSH 正常。</b></p></div></details>
+      <details class="def-box"><summary>07 · 亢進的治療 <span class="en">Treating hyperthyroidism</span></summary>
+        <div class="box-inner"><p class="kp"><b>β 阻斷劑：propranolol 10–40 mg PO tid–qid（風暴 60–80 mg IV/PO q4h；高劑量阻斷 T4→T3；非選擇性）、metoprolol 25–50 mg bid–tid（心衰竭、氣喘史）、esmolol 輸注快速控率；急性氣喘發作所有 β 阻斷劑禁忌。抗甲狀腺藥：methimazole 10–20 mg/天（風暴 60–80；膽汁鬱積黃疸）、PTU 50–150 mg tid（風暴偏好 500–1,000 mg 起；猛爆性肝壞死、顆粒球缺乏）。嚴重加 Lugol 碘（阻斷合成與釋放）、碘過敏 lithium 300 mg q8h。風暴另加：積極輸液、hydrocortisone 300 mg 負荷 → 100 mg q8h（相對腎上腺功能不全）、治誘因。</b></p>
+          <div class="note">原書表 51.3（metoprolol 列）、51.4（PTU 風暴劑量）截斷，依內文重建。</div></div></details>
+      <details class="def-box"><summary>08 · 機能低下與黏液水腫昏迷 <span class="en">Hypothyroidism &amp; myxedema coma</span></summary>
+        <div class="box-inner"><p class="kp"><b>3–7%；Hashimoto 最多、放射碘、手術、下視丘腦下垂體（腫瘤、Sheehan）、藥物（lithium、amiodarone、tetracycline、抗腫瘤藥）。表現細微：乾皮、疲勞、抽筋、便秘（肥胖不是）；進階低血鈉、肌病變（CPK、肌酸酐升而非腎）、舒張性心衰竭、心包積液、QT 延長 torsade。Free T4 一定低、原發性 TSH 升（常 >10）、次發性 TSH 低。黏液水腫昏迷（誤稱）：意識低下、低體溫、低血鈉、心血管不穩；死亡達 60%——hydrocortisone 100 mg q8h 先給 → levothyroxine 200–400 μg IV 緩推 → 50–100 μg PO/天（1.6 μg/kg、IV 75%）→ 可加 liothyronine 5–20 μg IV → 2.5–10 μg q8h 到清醒穩定。一般低下 levothyroxine 1.5–1.8 μg/kg 依 TSH 調到最低有效（通常 75–150）。</b></p></div></details>
+      <details class="def-box"><summary>09 · 正常甲狀腺病態 <span class="en">Euthyroid sick</span></summary>
+        <div class="box-inner"><p class="kp"><b>非甲狀腺急性病：T4→T3 轉換受抑 free T3 低；越重 free T4 也低（ICU 30–50%）；TSH 正常。不治療——不算臨床甲狀腺機能低下。</b></p></div></details>
+      <details class="def-box"><summary>10 · 小題大作 <span class="en">Much ado about not much</span></summary>
+        <div class="box-inner"><p class="kp"><b>CIRCI 在敗血性休克常見但類固醇沒改善結局；正常甲狀腺病態不需治療——重症與腎上腺甲狀腺的互動臨床意義不大（果實不多的樹）。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ed-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>類固醇</th><th>等效劑量</th><th>礦物皮質素（1 最強）</th><th>抗發炎（1 最強）</th></tr>
+      <tr><td>Hydrocortisone</td><td>20 mg</td><td>1</td><td>4</td></tr>
+      <tr><td>Prednisone</td><td>5 mg</td><td>2</td><td>3</td></tr>
+      <tr><td>Methylprednisolone</td><td>4 mg</td><td>3</td><td>2</td></tr>
+      <tr><td>Dexamethasone</td><td>0.75 mg</td><td>4</td><td>1</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>型態</th><th>Free T4</th><th>TSH</th></tr>
+      <tr><td>正常</td><td>0.8–1.8 ng/dL</td><td>0.3–4.5 mU/mL</td></tr>
+      <tr><td>原發性亢進</td><td>↑</td><td>↓</td></tr>
+      <tr><td>T3 毒症</td><td>正常</td><td>↓</td></tr>
+      <tr><td>正常甲狀腺高 T4 血症</td><td>↑</td><td>正常</td></tr>
+      <tr><td>原發性低下</td><td>↓</td><td>↑</td></tr>
+      <tr><td>次發性低下</td><td>↓</td><td>↓</td></tr>
+      <tr><td>正常甲狀腺病態</td><td>↓</td><td>正常</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>藥</th><th>甲狀腺毒症</th><th>甲狀腺風暴</th></tr>
+      <tr><td>Propranolol</td><td>10–40 mg PO tid–qid</td><td>60–80 mg IV/PO q4h</td></tr>
+      <tr><td>Metoprolol</td><td colspan="2">25–50 mg PO bid–tid（心衰竭、氣喘史）</td></tr>
+      <tr><td>Methimazole</td><td>10–20 mg/天（偏好）</td><td>60–80 mg/天</td></tr>
+      <tr><td>PTU</td><td>50–150 mg tid</td><td>500–1,000 mg 起（偏好）</td></tr>
+      <tr><td>其他</td><td>—</td><td>Lugol 碘（過敏 lithium 300 q8h）、hydrocortisone 300 → 100 q8h、輸液</td></tr>
+    </table></div>
+    <div class="dirhead" id="ed-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c51adr">
+      <div class="rxbox-t">腎上腺抑制：判讀與治療</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>敗血性休克 <span class="rx-en">septic shock</span></label><select id="ad_ss"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>輸液＋中等升壓劑仍低血壓 <span class="rx-en">refractory</span></label><select id="ad_r"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>隨機 cortisol <span class="rx-en">μg/dL</span></label><input type="number" id="ad_c" step="1" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ACTH 後增量 <span class="rx-en">μg/dL</span></label><input type="number" id="ad_i" step="1" placeholder="6"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c51adr_out"></div>
+    </div>
+    <div class="rxbox" id="c51thy">
+      <div class="rxbox-t">甲狀腺：型態與治療</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Free T4 <span class="rx-en">ng/dL</span></label><input type="number" id="ty_t4" step="0.1" placeholder="0.4"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>TSH <span class="rx-en">mU/mL</span></label><input type="number" id="ty_tsh" step="0.1" placeholder="42"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>甲狀腺風暴 <span class="rx-en">storm</span></label><select id="ty_st"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>氣喘或收縮性心衰竭 <span class="rx-en">asthma／HFrEF</span></label><select id="ty_a"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>黏液水腫昏迷 <span class="rx-en">myxedema</span></label><select id="ty_mx"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ty_w" step="1" placeholder="60"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c51thy_out"></div>
+    </div>
+    <div class="dirhead" id="ed-flow"><span class="dh-n">決策流程</span><span class="dh-e">Thyroid test pattern</span></div>
+    <div id="ty_flow">
+      <div class="flow-step" id="ty_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">Free T4？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tyPick('t4','high',this)">高</button>
+          <button class="flow-opt" onclick="tyPick('t4','normal',this)">正常</button>
+          <button class="flow-opt" onclick="tyPick('t4','low',this)">低</button>
+        </div></div>
+      <div class="flow-step" id="ty_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">TSH？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tyPick('tsh','high',this)">高</button>
+          <button class="flow-opt" onclick="tyPick('tsh','normal',this)">正常</button>
+          <button class="flow-opt" onclick="tyPick('tsh','low',this)">低</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ty_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="tyReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ed-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_endo"></div>
+    <div class="dirhead" id="ed-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/adrenal-crisis.html" href="#">腎上腺危象</a><a class="flow-link" data-ct="tools/thyroid-storm.html" href="#">甲狀腺風暴</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" href="shock.html#inf">Marino 第 17 章 敗血性休克</a><a class="flow-link" href="temp.html#thermo">Marino 第 43 章 高體溫與低體溫</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 48–51 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34784064/" target="_blank" rel="noopener" class="ref-link">Compher et al. ASPEN guidelines for nutrition support in the adult critically ill patient. JPEN 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26771786/" target="_blank" rel="noopener" class="ref-link">Taylor et al. SCCM/ASPEN guidelines for nutrition support therapy in the adult critically ill. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30348463/" target="_blank" rel="noopener" class="ref-link">Singer et al. ESPEN guideline on clinical nutrition in the intensive care unit. Clin Nutr 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37403125/" target="_blank" rel="noopener" class="ref-link">Wischmeyer et al. Personalized nutrition therapy in critical care: expert recommendations. Crit Care 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31491883/" target="_blank" rel="noopener" class="ref-link">Delsoglio et al. Indirect calorimetry in clinical practice. J Clin Med 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9168370/" target="_blank" rel="noopener" class="ref-link">Smyrnios et al. Accuracy of 30-minute indirect calorimetry in ventilated patients. JPEN 1997</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33990505/" target="_blank" rel="noopener" class="ref-link">De Waele et al. Indirect calorimetry in critical illness: a new standard of care? Curr Opin Crit Care 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9590315/" target="_blank" rel="noopener" class="ref-link">Tappy et al. Glucose-based or lipid-based parenteral nutrition and de novo lipogenesis in critically ill. CCM 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23315514/" target="_blank" rel="noopener" class="ref-link">Rio et al. Occurrence of refeeding syndrome in adults started on artificial nutrition support. BMJ Open 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23052949/" target="_blank" rel="noopener" class="ref-link">Devaud et al. Hypertriglyceridemia: a potential side effect of propofol sedation. ICM 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28432843/" target="_blank" rel="noopener" class="ref-link">Collie et al. Vitamin B1 in critically ill patients: needs and challenges. Clin Chem Lab Med 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24412011/" target="_blank" rel="noopener" class="ref-link">Costa et al. Serum thiamine and oxidative stress as predictors of mortality in septic shock. J Crit Care 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/1867241/" target="_blank" rel="noopener" class="ref-link">Seligmann et al. Thiamine deficiency in heart failure patients on long-term furosemide. Am J Med 1991</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17434099/" target="_blank" rel="noopener" class="ref-link">Sechi & Serra. Wernicke's encephalopathy: new clinical settings and advances. Lancet Neurol 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20646908/" target="_blank" rel="noopener" class="ref-link">Donnino et al. Thiamine deficiency in critically ill patients with sepsis. J Crit Care 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27002274/" target="_blank" rel="noopener" class="ref-link">Flannery et al. Unpeeling the evidence for the banana bag. CCM 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25475621/" target="_blank" rel="noopener" class="ref-link">de Haan et al. Vitamin D deficiency as a risk factor for infection, sepsis and mortality: meta-analysis. Crit Care 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/26186566/" target="_blank" rel="noopener" class="ref-link">Nair et al. Single-dose intramuscular cholecalciferol in critically ill adults: RCT. CCM 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27312081/" target="_blank" rel="noopener" class="ref-link">Koekkoek & van Zanten. Antioxidant vitamins and trace elements in critical illness. Nutr Clin Pract 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15333422/" target="_blank" rel="noopener" class="ref-link">Crimi et al. Antioxidant supplementation in enteral feeding of critically ill patients: RCT. Anesth Analg 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2178409/" target="_blank" rel="noopener" class="ref-link">Guyatt et al. Diagnosis of iron-deficiency anemia in the elderly. Am J Med 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2318056/" target="_blank" rel="noopener" class="ref-link">Hawker et al. Effects of acute illness on selenium homeostasis. CCM 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8839598/" target="_blank" rel="noopener" class="ref-link">Marino & Finnegan. Nutrition support is not beneficial and can be harmful in critically ill patients. Crit Care Clin 1996</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2774262/" target="_blank" rel="noopener" class="ref-link">Degoute et al. Intraoperative glucose infusion and blood lactate during abdominal aortic surgery. Anesthesiology 1989</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28168570/" target="_blank" rel="noopener" class="ref-link">Reintam Blaser et al. Early enteral nutrition in critically ill patients: ESICM guidelines. ICM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33395086/" target="_blank" rel="noopener" class="ref-link">Wischmeyer. Overcoming challenges to enteral nutrition delivery in critical care. Curr Opin Crit Care 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3135625/" target="_blank" rel="noopener" class="ref-link">Alverdy et al. Total parenteral nutrition promotes bacterial translocation from the gut. Surgery 1988</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16484911/" target="_blank" rel="noopener" class="ref-link">Singer et al. Enteral diet enriched with EPA and GLA in ventilated patients with acute lung injury. CCM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28935438/" target="_blank" rel="noopener" class="ref-link">Calder et al. Lipids in the intensive care unit: ESPEN expert group recommendations. Clin Nutr 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16439769/" target="_blank" rel="noopener" class="ref-link">Baskin. Acute complications associated with bedside placement of feeding tubes. Nutr Clin Pract 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36639660/" target="_blank" rel="noopener" class="ref-link">Boeykens et al. Nasogastric tube insertion length measurement and tip verification: narrative review. Crit Care 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2121668/" target="_blank" rel="noopener" class="ref-link">Metheny et al. Detection of inadvertent respiratory placement of small-bore feeding tubes. Heart Lung 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20622259/" target="_blank" rel="noopener" class="ref-link">Freeberg et al. Tension pneumothorax complicating narrow-bore enteral feeding tube placement. J Intensive Care Med 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34520886/" target="_blank" rel="noopener" class="ref-link">Chau et al. Diagnostic accuracy of end-tidal CO₂ detection for nasogastric tube placement: meta-analysis. Int J Nurs Stud 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12793890/" target="_blank" rel="noopener" class="ref-link">Marik & Zaloga. Gastric versus post-pyloric feeding: a systematic review. Crit Care 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2112629/" target="_blank" rel="noopener" class="ref-link">Marcuard & Stegall. Unclogging feeding tubes with pancreatic enzyme. JPEN 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34596901/" target="_blank" rel="noopener" class="ref-link">Yasuda et al. Monitoring of gastric residual volume during enteral nutrition. Cochrane 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17205032/" target="_blank" rel="noopener" class="ref-link">Nguyen et al. Erythromycin is more effective than metoclopramide for feed intolerance in critical illness. CCM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17828038/" target="_blank" rel="noopener" class="ref-link">Nguyen et al. Prokinetic therapy for feed intolerance: one drug or two? CCM 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12626983/" target="_blank" rel="noopener" class="ref-link">Meissner et al. Enteral naloxone reduces gastric tube reflux and pneumonia during opioid analgesia. CCM 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19052281/" target="_blank" rel="noopener" class="ref-link">Williams. Medication administration through enteral feeding tubes. Am J Health Syst Pharm 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24531708/" target="_blank" rel="noopener" class="ref-link">Boullata et al. ASPEN clinical guidelines: parenteral nutrition ordering, compounding, dispensing. JPEN 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36364743/" target="_blank" rel="noopener" class="ref-link">Berlana. Parenteral nutrition overview. Nutrients 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28518283/" target="_blank" rel="noopener" class="ref-link">Gluud et al. Branched-chain amino acids for hepatic encephalopathy. Cochrane 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6782957/" target="_blank" rel="noopener" class="ref-link">Barr et al. Essential fatty acid deficiency during total parenteral nutrition. Ann Surg 1981</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32115791/" target="_blank" rel="noopener" class="ref-link">da Silva et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20018803/" target="_blank" rel="noopener" class="ref-link">Marik & Preiser. Toward understanding tight glycemic control in the ICU. Chest 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19429873/" target="_blank" rel="noopener" class="ref-link">Moghissi et al. AACE/ADA consensus statement on inpatient glycemic control. Diabetes Care 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/1643946/" target="_blank" rel="noopener" class="ref-link">Talpers et al. Nutritionally associated increased CO₂ production: excess total calories vs carbohydrate. Chest 1992</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11505129/" target="_blank" rel="noopener" class="ref-link">Suchner et al. Intravenous fat emulsions and lung function in ARDS or sepsis. CCM 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9253908/" target="_blank" rel="noopener" class="ref-link">Battistella et al. Intravenous fat emulsion in trauma victims requiring TPN: RCT. J Trauma 1997</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16766237/" target="_blank" rel="noopener" class="ref-link">Guglielmi et al. TPN-related gastroenterological complications. Dig Liver Dis 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28938253/" target="_blank" rel="noopener" class="ref-link">Annane et al. SCCM/ESICM 2017 guidelines for critical illness-related corticosteroid insufficiency (CIRCI). CCM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19136406/" target="_blank" rel="noopener" class="ref-link">Marik. Critical illness-related corticosteroid insufficiency. Chest 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18496365/" target="_blank" rel="noopener" class="ref-link">Marik et al. Diagnosis and management of corticosteroid insufficiency in critically ill adults: ACCM consensus. CCM 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16973979/" target="_blank" rel="noopener" class="ref-link">Annane et al. Diagnosis of adrenal insufficiency in severe sepsis and septic shock. AJRCCM 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19474430/" target="_blank" rel="noopener" class="ref-link">Bornstein. Predisposing factors for adrenal insufficiency. NEJM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15084695/" target="_blank" rel="noopener" class="ref-link">Hamrahian et al. Measurements of serum free cortisol in critically ill patients. NEJM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16399019/" target="_blank" rel="noopener" class="ref-link">Peeters et al. Changes within the thyroid axis during critical illness. Crit Care Clin 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27521067/" target="_blank" rel="noopener" class="ref-link">Ross et al. 2016 ATA guidelines for hyperthyroidism and other causes of thyrotoxicosis. Thyroid 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37847271/" target="_blank" rel="noopener" class="ref-link">Lee & Pearce. Hyperthyroidism: a review. JAMA 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23246686/" target="_blank" rel="noopener" class="ref-link">Garber et al. Clinical practice guidelines for hypothyroidism in adults. Endocr Pract 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25266247/" target="_blank" rel="noopener" class="ref-link">Jonklaas et al. ATA guidelines for the treatment of hypothyroidism. Thyroid 2014</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/nutrition.js"></script>
+<script>ICU.makeTabs('nutrition'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

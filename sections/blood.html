@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>血液成分 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="血液成分">
+<div class="sheet">
+<div class="view active" id="view-blood">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section V</div><h1>血液成分</h1><div class="sub">Blood Components · 貧血與紅血球輸血 → 血小板與血漿 · 第 12–13 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-blood'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="blood_tabs">
+    <button class="tab-btn active" data-p="rbc">貧血與紅血球 <span class="mono">Ch12</span></button>
+    <button class="tab-btn" data-p="plt">血小板與血漿 <span class="mono">Ch13</span></button>
+  </div>
+
+  <!-- ==================== Ch12 Anemia and RBC Transfusions ==================== -->
+  <section class="blood-panel" data-panel="rbc" id="blood-p-rbc">
+    <div class="dirhead"><span class="dh-n">第 12 章 貧血與紅血球輸血</span><span class="dh-e">Chapter 12 · Anemia and Red Blood Cell Transfusions</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#rbc/rb-key"><i>01</i>重點卡</a><a class="sp-chip" href="#rbc/rb-tab"><i>02</i>對照表</a><a class="sp-chip" href="#rbc/rb-calc"><i>03</i>計算</a><a class="sp-chip" href="#rbc/rb-flow"><i>04</i>流程</a><a class="sp-chip" href="#rbc/rb-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#rbc/rb-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>Hb／Hct 是濃度，不是氧攜帶能力</b>：平躺或一袋食鹽水就能讓 Hct 掉 4%，ICU 病人血漿量偏多，貧血被高估。</span></div>
+        <div class="lede-item"><span>②</span><span><b>只要血量夠，極度貧血也撐得住</b>：黏稠度降讓心輸出量升、氧萃取升到 50%，Hct 要掉到 10% 組織氧合才受損。</span></div>
+        <div class="lede-item"><span>③</span><span><b>輸血把 Hb 拉高卻不改善組織氧合</b>：DO₂ 升、VO₂ 不變；45 篇研究裡 42 篇風險大於效益——門檻 7（冠心病 8），更好的觸發是氧萃取 50%。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="rb-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="rb-kc">全部展開</button></div>
+    <div id="rb-kc">
+      <details class="def-box"><summary>01 · ICU 貧血幾乎人人有 <span class="en">Anemia in the ICU</span></summary>
+        <div class="box-inner"><p class="kp"><b>入院時 2/3、一週後 97%；定義 Hb <13（Hct <40%）男、<12（<38%）女——但這是濃度，受血漿量左右。</b></p>
+          <ul><li>最準的氧攜帶能力指標是紅血球量（鉻標記，26／24 mL/kg），臨床不用。</li><li>ICU 50% 病人輸過血，其中 90% 是為了拉高沒有出血病人的 Hb。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 血漿量的干擾 <span class="en">Postural &amp; dilutional pseudoanemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>健康人平躺 Hct 絕對值降 4.1%（血漿 +420 mL）；20 mL/kg 食鹽水 90 分鐘後降 4.2%——都等於少一單位血。</b></p>
+          <ul><li>ICU 病人血漿量常偏多（第 11 章），Hct／Hb 會高估貧血的盛行率與嚴重度；偏偏所有貧血與輸血研究都用它。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 發炎性貧血與抽血 <span class="en">ICU-related anemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>Hepcidin 把鐵封在巨噬細胞 → 小球低色素、鐵／TIBC／transferrin 都低；只有 ferritin 分得開（發炎 >100、缺鐵 <30 μg/L）。</b></p>
+          <ul><li>每天抽 40–70 mL、一週 500 mL；每次棄血約 5 mL，回輸可讓每日抽血量減半。</li></ul></div></details>
+      <details class="def-box"><summary>04 · 黏稠度與心輸出量 <span class="en">Viscosity &amp; cardiac output</span></summary>
+        <div class="box-inner"><p class="kp"><b>黏稠度主要由 Hct 決定；Hct 45 的全血是血漿的 3 倍、水的 4 倍。Poiseuille：R ＝ 8μL/πr⁴。</b></p>
+          <ul><li>血是非牛頓流體（流越快越稀），所以貧血時心輸出量上升幅度比 Hct 下降還大；反過來，血管破口處血流慢、血變稠、有助止血。</li></ul></div></details>
+      <details class="def-box"><summary>05 · 貧血時的全身氧合 <span class="en">Systemic oxygenation in anemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>VO₂ ＝ DO₂ × 萃取：DO₂ 降但萃取升，VO₂ 恆定到 Hct 10%（Hb 3）才掉、乳酸才升；萃取上限約 50%。</b></p>
+          <ul><li>兩個結論：最嚴重的貧血也耐受得了；萃取 50% 就是組織氧合受威脅的門檻，可當輸血指徵。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 極度貧血的耐受 <span class="en">Tolerance to severe anemia</span></summary>
+        <div class="box-inner"><p class="kp"><b>動物 Hct 5–10%（Hb 1.5–3）不損組織氧合（連清醒呼吸室內空氣的也是）；300 位術後耶和華見證人：Hb 2–3 存活 50%、3–4 存活 75%；健康人 Hb 5 無害。</b></p>
+          <ul><li>前提是血管內容積維持——血量比血球重要。</li></ul></div></details>
+      <details class="def-box"><summary>07 · 輸血門檻的演變 <span class="en">The transfusion trigger</span></summary>
+        <div class="box-inner"><p class="kp"><b>1942 年 Hb ≤10 用了 60 年；TRICC 之後降到 7；48 篇研究：7–8 vs 9–10 結局相同（含心臟事件）、少用血 41%。</b></p>
+          <ul><li>21 套指引多數：穩定重症 <7（含心臟術後、敗血性休克）；冠心病、心臟或骨科手術 <8。</li><li>近 5,000 次輸血的調查：60% 不照指引。</li></ul></div></details>
+      <details class="def-box"><summary>08 · Hb 當觸發的兩個問題 <span class="en">What's wrong with Hb</span></summary>
+        <div class="box-inner"><p class="kp"><b>Hb 不告訴你組織氧合夠不夠；急性下降可能只是稀釋。生理性觸發：SaO₂ − ScvO₂ ≥50%、或 ScvO₂ <70%（SaO₂ 近 100% 時）。</b></p>
+          <ul><li>可用脈搏血氧＋中央靜脈血氧導管連續監測，但這個做法少有人理。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 紅血球製劑 <span class="en">RBC preparations</span></summary>
+        <div class="box-inner"><p class="kp"><b>PRBC 350 mL、Hct 60%、殘血漿 30–50 mL、含大量白血球、含 adenine 可存 42 天；1 單位升 Hb 1 g/dL、Hct 3%。</b></p>
+          <ul><li>減白：濾掉白血球，防非溶血性發燒（美國尚未全面）。</li><li>洗滌：食鹽水洗掉血漿蛋白，給過敏反應史與 IgA 缺乏者；洗不掉白血球。</li></ul></div></details>
+      <details class="def-box"><summary>10 · 輸注與濾器 <span class="en">Infusing PRBCs</span></summary>
+        <div class="box-inner"><p class="kp"><b>未稀釋 20G 117 分、18G 70 分；加 100 mL 食鹽水快 6 倍（19／12 分）；穩定病人建議 2 小時/單位，矯正貧血不必稀釋。</b></p>
+          <ul><li>所有血品必須經 170–260 μm 標準濾器：擋血塊與碎屑，不擋白血球；流速變慢就換。</li></ul></div></details>
+      <details class="def-box"><summary>11 · 輸血不改善組織氧合 <span class="en">No improvement in tissue oxygenation</span></summary>
+        <div class="box-inner"><p class="kp"><b>Hb 6.4 → 8（+25%）、DO₂ 同幅上升，VO₂ 不變——萃取被壓回去，正好是貧血的反向。</b></p>
+          <ul><li>多項研究一致；久存血甚至讓組織氧合變差。指引：「不應把輸血視為改善重症組織氧合的絕對方法」。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 急性溶血反應 <span class="en">Acute hemolytic reactions</span></summary>
+        <div class="box-inner"><p class="kp"><b>ABO 錯配（人為錯誤）；開始後幾分鐘內發燒、呼吸困難、胸痛、腰痛、低血壓；1:35,000，致死 1:190 萬。</b></p>
+          <ul><li>立刻停、核對；嚴重度與已輸入量成正比。血庫：血漿游離血紅素、direct Coombs。配對正確就不太可能。</li><li>確診：支持治療（輸液、升壓、呼吸支持）；可併消耗性凝血病變與 MOF。</li></ul></div></details>
+      <details class="def-box"><summary>13 · 非溶血性發燒 <span class="en">Febrile nonhemolytic reactions</span></summary>
+        <div class="box-inner"><p class="kp"><b>最常見（1:60）：>1°C、輸血中到 6 小時內、無其他原因；多在第一小時之後，可寒顫。</b></p>
+          <ul><li>受血者抗白血球抗體 → 吞噬細胞放致熱原；曾輸血者、經產婦。減白可降但不能消除。</li><li>處理同溶血反應、排除溶血即可；血庫革蘭氏染色。>75% 不再發，第二次才改減白製劑。</li></ul></div></details>
+      <details class="def-box"><summary>14 · 過敏反應 <span class="en">Hypersensitivity reactions</span></summary>
+        <div class="box-inner"><p class="kp"><b>蕁麻疹 1:100、過敏反應 1:1,000、過敏性休克 1:50,000；IgA 缺乏者不需先前致敏。</b></p>
+          <ul><li>不發燒的輕微蕁麻疹不必停（習慣：暫停＋diphenhydramine 25–50 mg）。突發喘鳴＝過敏反應，立刻停；低血壓可能被誤判為溶血。</li><li>之後用洗滌血球；過敏性反應者非必要不輸；查 IgA。</li></ul></div></details>
+      <details class="def-box"><summary>15 · TRALI <span class="en">Transfusion-related acute lung injury</span></summary>
+        <div class="box-inner"><p class="kp"><b>1:12,000 但是輸血死亡首因，死亡率近 50%；80% 是捐血者抗白血球抗體活化受血者中性球 → 肺內發炎損傷。</b></p>
+          <ul><li>第一小時最常見、6 小時內都可能；發燒常見；胸片與 ARDS 無法區分；常需呼吸器。CRP 高、無心衰竭／過載支持 TRALI。</li><li>停輸血、通知血庫；依 ARDS 支持；日後是否洗滌無定論。</li></ul></div></details>
+      <details class="def-box"><summary>16 · TACO <span class="en">Transfusion-associated circulatory overload</span></summary>
+        <div class="box-inner"><p class="kp"><b>最常見的肺部併發症（1%）：6 小時內的靜水壓性肺水腫，死亡率 20%；與單位數無關，心衰竭、腎衰竭好發。</b></p>
+          <ul><li>30% 發燒、3/4 需呼吸器——與 TRALI 難分。停輸血、靜脈 loop 利尿劑；下次輸血前先矯正正水平衡。</li></ul></div></details>
+      <details class="def-box"><summary>17 · 院內感染與免疫抑制 <span class="en">Nosocomial infections</span></summary>
+        <div class="box-inner"><p class="kp"><b>1970 年代發現移植前輸血讓腎移植存活更好——輸血抑制免疫；≥22 篇研究證實輸血是院內感染的獨立危險因子，與量與儲存時間相關。</b></p></div></details>
+      <details class="def-box"><summary>18 · 貧血糟還是輸血糟？ <span class="en">Anemia vs transfusion</span></summary>
+        <div class="box-inner"><p class="kp"><b>45 篇研究、27 萬人：42 篇風險大於效益、只有 1 篇相反；18 篇看存活，17 篇輸血是死亡的獨立危險因子。</b></p>
+          <ul><li>「為了升 Hb 而輸血——利尿不也能升 Hb？」低血容是公認的休克原因，貧血不是：血量比血球重要。</li></ul>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="rb-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>紅血球參數</th><th>男</th><th>女</th></tr>
+      <tr><td>Hb</td><td>13.5–18 g/dL</td><td>12–16（懷孕中期後 −1）</td></tr>
+      <tr><td>Hct</td><td>40–54%</td><td>38–47%</td></tr>
+      <tr><td>紅血球量</td><td>26 mL/kg</td><td>24 mL/kg</td></tr>
+      <tr><td>MCV</td><td colspan="2">80–100 fL</td></tr>
+      <tr><td>網狀紅血球</td><td colspan="2">25–75 × 10⁹/L</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>Hct</th><th>0</th><th>10</th><th>20</th><th>30</th><th>40</th><th>50</th><th>60</th></tr>
+      <tr><td>相對黏稠度（水＝1）</td><td>1.4</td><td>1.8</td><td>2.1</td><td>2.8</td><td>3.7</td><td>4.8</td><td>5.8</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>不良事件（每單位）</th><th>頻率</th><th>不良事件</th><th>頻率</th></tr>
+      <tr><td>非溶血性發燒</td><td>1:60</td><td>TRALI</td><td>1:12,000</td></tr>
+      <tr><td>蕁麻疹</td><td>1:100</td><td>急性溶血</td><td>1:35,000</td></tr>
+      <tr><td>TACO（每人）</td><td>1:100</td><td>致死溶血</td><td>1:1,900,000</td></tr>
+      <tr><td>過敏反應</td><td>1:1,000</td><td>院內感染</td><td>？（獨立危險因子）</td></tr>
+      <tr><td>過敏性休克</td><td>1:50,000</td><td>病毒傳播</td><td>核酸檢驗後幾近零</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th></th><th>TRALI</th><th>TACO</th></tr>
+      <tr><td>機轉</td><td>捐血者抗白血球抗體（80%）→ 發炎性肺損傷</td><td>靜水壓性肺水腫</td></tr>
+      <tr><td>發生率／死亡率</td><td>1:12,000／近 50%</td><td>1%／20%</td></tr>
+      <tr><td>時間</td><td>第一小時最常，6 小時內</td><td>6 小時內</td></tr>
+      <tr><td>支持點</td><td>CRP 高、無心衰竭或過載</td><td>心衰竭、腎衰竭、正水平衡；與單位數無關</td></tr>
+      <tr><td>處置</td><td>停、通知血庫、ARDS 式支持</td><td>停、loop 利尿劑、支持</td></tr>
+    </table></div>
+    <div class="dirhead" id="rb-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c12rcm">
+      <div class="rxbox-t">紅血球量與抽血失血</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="rc_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>性別 <span class="rx-en">sex</span></label><select id="rc_sex"><option value="m">男</option><option value="f">女</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Hct <span class="rx-en">%</span></label><input type="number" id="rc_hct" step="1" placeholder="30"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>每日抽血 <span class="rx-en">mL</span></label><input type="number" id="rc_ph" step="5" placeholder="50"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>天數 <span class="rx-en">days</span></label><input type="number" id="rc_d" step="1" placeholder="7"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>棄血回輸 <span class="rx-en">reinfuse</span></label><select id="rc_ret"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c12rcm_out"></div>
+    </div>
+    <div class="rxbox" id="c12trig">
+      <div class="rxbox-t">輸血觸發：指引門檻 vs 生理指標</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Hb <span class="rx-en">g/dL</span></label><input type="number" id="tg_hb" step="0.1" placeholder="7.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>病人群 <span class="rx-en">group</span></label><select id="tg_grp"><option value="gen">穩定重症</option><option value="cad">冠心病／心臟或骨科手術</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血行動力學穩定 <span class="rx-en">no active bleeding</span></label><select id="tg_st"><option value="y">是</option><option value="n">否</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>SaO₂ <span class="rx-en">%</span></label><input type="number" id="tg_sa" step="1" placeholder="98"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>ScvO₂ <span class="rx-en">%</span></label><input type="number" id="tg_sc" step="1" placeholder="65"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c12trig_out"></div>
+    </div>
+    <div class="rxbox" id="c12inf">
+      <div class="rxbox-t">PRBC 重力輸注時間</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>單位數 <span class="rx-en">units</span></label><input type="number" id="in_u" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>導管 <span class="rx-en">gauge</span></label><select id="in_g"><option value="20">20G</option><option value="18">18G</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>加 100 mL 食鹽水 <span class="rx-en">dilute</span></label><select id="in_dil"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c12inf_out"></div>
+    </div>
+    <div class="rxbox" id="c12visc">
+      <div class="rxbox-t">Hct 與血液黏稠度</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Hct <span class="rx-en">%</span></label><input type="number" id="vs_h" step="1" placeholder="25"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c12visc_out"></div>
+    </div>
+    <div class="dirhead" id="rb-flow"><span class="dh-n">決策流程</span><span class="dh-e">Transfusion reaction triage</span></div>
+    <div id="tr_flow">
+      <div class="flow-step" id="tr_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">輸血中或輸血後 6 小時內，主要表現是？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="trPick('sx','hemo',this)">幾分鐘內發燒＋腰痛／胸痛＋低血壓</button>
+          <button class="flow-opt" onclick="trPick('sx','fever',this)">只有發燒 >1°C（多在一小時後）<span class="fo-sub">可寒顫</span></button>
+          <button class="flow-opt" onclick="trPick('sx','urt',this)">蕁麻疹、不發燒</button>
+          <button class="flow-opt" onclick="trPick('sx','ana',this)">突發喘鳴、呼吸困難 ± 低血壓</button>
+          <button class="flow-opt" onclick="trPick('sx','resp',this)">低血氧呼吸衰竭、胸片肺水腫</button>
+        </div></div>
+      <div class="flow-step" id="tr_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（呼吸衰竭時）有心衰竭、腎衰竭或正水平衡的證據嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="trPick('hf','yes',this)">有</button>
+          <button class="flow-opt" onclick="trPick('hf','no',this)">沒有<span class="fo-sub">CRP 高、全身發炎</span></button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="tr_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="trReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="rb-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_rbc"></div>
+    <div class="dirhead" id="rb-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/trauma-resuscitation.html" href="#">創傷復甦與大量輸血</a><a class="flow-link" data-ct="pathways/gi-bleeding.html" href="#">消化道出血</a><a class="flow-link" data-ct="pathways/ards.html" href="#">ARDS</a><a class="flow-link" href="monitoring.html#o2">Marino 第 9 章 全身氧合</a><a class="flow-link" href="shock.html#hem">Marino 第 14 章 出血與低血容</a></div>
+  </section>
+
+  <!-- ==================== Ch13 Platelets and Plasma ==================== -->
+  <section class="blood-panel hidden" data-panel="plt" id="blood-p-plt">
+    <div class="dirhead"><span class="dh-n">第 13 章 血小板與血漿</span><span class="dh-e">Chapter 13 · Platelets and Plasma</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#plt/pl-key"><i>01</i>重點卡</a><a class="sp-chip" href="#plt/pl-tab"><i>02</i>對照表</a><a class="sp-chip" href="#plt/pl-calc"><i>03</i>計算</a><a class="sp-chip" href="#plt/pl-flow"><i>04</i>流程</a><a class="sp-chip" href="#plt/pl-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#plt/pl-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>沒有出血時，血小板低下的問題不是數字而是原因</b>：預防性輸注在重症很少需要，門檻沒有一個被驗證過。</span></div>
+        <div class="lede-item"><span>②</span><span><b>血小板低下最致命的後果是血栓不是出血</b>：HIT、DIC、TTP、HUS 都是——微血管病輸血小板是添柴。</span></div>
+        <div class="lede-item"><span>③</span><span><b>INR 是 FFP 的誤導指標</b>：它只看維生素 K 因子，FFP 同時拉高抗凝蛋白，淨止血能力可能沒變；預防性 FFP 沒有證據。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="pl-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pl-kc">全部展開</button></div>
+    <div id="pl-kc">
+      <details class="def-box"><summary>01 · 止血總覽 <span class="en">Hemostasis in one card</span></summary>
+        <div class="box-inner"><p class="kp"><b>Glycocalyx 擋大分子、維持血液流動性；破了 → 血小板黏膠原（一級止血）→ 組織因子路徑／接觸活化路徑 → 凝血酶 → 纖維蛋白（二級止血）。</b></p>
+          <ul><li>血小板釋鈣 → GP IIb/IIIa 活化 → 綁 vWF 錨定、綁 fibrinogen 搭橋，栓子收縮讓血流恢復。</li><li>血量只占體液 11–12%，失 35% 可致命。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 血小板低下的定義 <span class="en">Thrombocytopenia</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 最常見的止血異常（達 60%）；<150k 是傳統定義，<100k 才臨床顯著；無病灶時 5k 也可耐受；<10k 的風險是自發腦出血（少見）。</b></p>
+          <ul><li>假性血小板低下（2%）：EDTA 抗體讓血小板凝集被機器算成白血球——改 citrate／heparin 管。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 原因 <span class="en">Causes in the ICU</span></summary>
+        <div class="box-inner"><p class="kp"><b>敗血症最常見（巨噬細胞吞噬）；較少但更危險：heparin、DIC／TTP／HUS。</b></p>
+          <ul><li>藥物：多為免疫性交叉抗體——heparin 最多，其次 IIb/IIIa 拮抗劑、linezolid、β-lactam、vancomycin；化療是骨髓抑制。</li><li>非藥物：體外循環、IABP、RRT、肝病／脾亢、HIV、惡性腫瘤、大量輸血。</li></ul></div></details>
+      <details class="def-box"><summary>04 · HIT：機轉與風險 <span class="en">HIT pathogenesis &amp; risk</span></summary>
+        <div class="box-inner"><p class="kp"><b>Heparin＋PF4 形成抗原 → IgG 活化血小板 → 血栓；發生率 <1–5%，UFH 是 LMWH 的 2–10 倍。</b></p>
+          <ul><li>非劑量依賴：沖管、塗層導管都會。骨科／心臟手術、肥胖。一般 ICU <1%（不論哪種 heparin）；心胸 ICU 用 UFH 1–3%。</li><li>抗體 3 個月內消失。</li></ul></div></details>
+      <details class="def-box"><summary>05 · HIT：臨床 <span class="en">HIT clinical features</span></summary>
+        <div class="box-inner"><p class="kp"><b>5–10 天發作（3 個月內接觸過可 24 小時內；遲發到 3 週）；血小板降 50% 但很少 <20k；血栓才是重點。</b></p>
+          <ul><li>未治療：VTE 17–55%、動脈血栓 1–3%（中風、心肌梗塞）；25% 血栓先於血小板下降；沒發現死亡率達 30%。</li></ul></div></details>
+      <details class="def-box"><summary>06 · HIT：檢驗與 4Ts <span class="en">Testing &amp; the 4Ts</span></summary>
+        <div class="box-inner"><p class="kp"><b>ELISA 高敏感低專一（陰性排除、陽性不確診）；SRA 金標準但多數醫院沒有。4Ts 低：不查不停；中：停＋非 heparin 抗凝＋ELISA；高：停＋全量抗凝。</b></p>
+          <ul><li>ELISA 陽性而無血栓證據：下肢超音波，有 CVC 加上肢。</li><li><b>所有 HIT 都要全量抗凝</b>——延遲抗凝血栓多 10 倍。</li></ul></div></details>
+      <details class="def-box"><summary>07 · HIT：替代抗凝 <span class="en">Alternative anticoagulants</span></summary>
+        <div class="box-inner"><p class="kp"><b>Warfarin 急性期絕對禁忌（促凝 → 肢體壞疽、皮膚壞死），近日用過要維生素 K 逆轉。Argatroban 1–2 μg/kg/min（肝 0.5）、aPTT 1.5–3 倍、腎不調、到血小板 >150k。</b></p>
+          <ul><li>Argatroban 是美國唯一核准；PCI 用 bivalirudin；穩定者 fondaparinux 或 DOAC（rivaroxaban 經驗最多）。</li><li>之後 DOAC 1–3 個月；3 個月戴識別牌、終身避 heparin。</li></ul></div></details>
+      <details class="def-box"><summary>08 · 血栓性微血管病的共同特徵 <span class="en">Thrombotic microangiopathies</span></summary>
+        <div class="box-inner"><p class="kp"><b>消耗性血小板低下＋微血管血栓與器官失能＋非免疫性微血管溶血（schistocytes 是標誌；LDH↑、haptoglobin↓）。</b></p>
+          <ul><li>三種：DIC、TTP、HUS——鑑別看 INR／aPTT／fibrinogen／D-dimer 與腎衰竭嚴重度（見對照表）。</li></ul></div></details>
+      <details class="def-box"><summary>09 · DIC <span class="en">Disseminated intravascular coagulation</span></summary>
+        <div class="box-inner"><p class="kp"><b>組織因子釋放 → 全身微血管血栓＋因子與血小板消耗；創傷、敗血性休克、產科急症。</b></p>
+          <ul><li>敗血症以血栓為主（肺、腎、CNS），產科以出血為主；purpura fulminans（肢體壞疽）見於腦膜炎雙球菌血症。</li><li>唯一有因子消耗的微血管病：INR／aPTT 延長、fibrinogen 低、D-dimer 高。</li><li>無特效治療：治病因、支持；血品只在危及生命的出血時給，而且可能添柴。併 MOF 死亡率 ≥80%。</li></ul></div></details>
+      <details class="def-box"><summary>10 · TTP <span class="en">Thrombotic thrombocytopenic purpura</span></summary>
+        <div class="box-inner"><p class="kp"><b>ADAMTS-13 抗體 → vWF 切不斷 → 血小板黏附失控；不治 24–48 小時致死；48 小時內血漿置換存活 90%。</b></p>
+          <ul><li>中年、女性 3 倍；五聯徵（發燒、意識改變、腎功能不全、血小板低、MAHA）常不齊。</li><li>INR／aPTT／fibrinogen 正常；腎功能多輕微（Cr <2）。ADAMTS-13 活性大降可確診但不易取得。</li><li>每日置換 1.5 倍血漿量，直到血小板正常連續 2 天。</li></ul></div></details>
+      <details class="def-box"><summary>11 · HUS <span class="en">Hemolytic uremic syndrome</span></summary>
+        <div class="box-inner"><p class="kp"><b>三聯徵：血小板低、AKI、MAHA；感染最常見（Shiga toxin 大腸桿菌、肺炎鏈球菌、流感）；腎衰竭比 TTP 重。</b></p>
+          <ul><li>其他誘因：懷孕、狼瘡、抗磷脂症候群、惡性腫瘤、quinine／cyclosporin／tacrolimus。</li><li>非典型 HUS：補體失控，20% 有腎外（神經）表現；eculizumab（抗 C5）有效，沒有就血漿置換；可腎移植。</li><li>感染相關：支持、治感染、需要就 RRT。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 血小板輸注指徵 <span class="en">Platelet transfusion thresholds</span></summary>
+        <div class="box-inner"><p class="kp"><b>活動性出血 >50k、顱內出血 >100k；預防（AABB）：無出血 ≤10k、擇期非神經軸手術與腰椎穿刺 <50k、CVC <20k——沒有一個驗證過。</b></p>
+          <ul><li>微血管病的消耗性血小板低下<b>不輸</b>。</li></ul></div></details>
+      <details class="def-box"><summary>13 · 血小板製劑與反應 <span class="en">Preparations &amp; response</span></summary>
+        <div class="box-inner"><p class="kp"><b>Pooled（4–6 人）或 apheresis（單人）血小板數相當；室溫存放只有 5 天；1 單位 1 小時升 35–50k、24 小時低 40%、輸過 5 次低 25%。</b></p>
+          <ul><li>單人血小板「較少感染與同種免疫」未證實；200 萬單位的調查顯示<b>單人製劑不良反應反而多</b>（血漿量較多 → 過敏）。減白後兩者同種免疫無差。</li><li>Refractoriness 是對 ABO 的抗體 → 用 ABO 相符血小板。減白降發燒、CMV、同種免疫。</li><li>細菌傳播比紅血球高（室溫）但仍很低。</li></ul></div></details>
+      <details class="def-box"><summary>14 · FFP <span class="en">Fresh frozen plasma</span></summary>
+        <div class="box-inner"><p class="kp"><b>230 mL、−18°C 存一年、解凍後 1–6°C 5 天；主要用途是大量失血（1 FFP：1–2 PRBC）與 warfarin 逆轉。</b></p>
+          <ul><li>Liquid plasma 不冷凍、可存 26 天、療效相當、少浪費。</li><li>ICU 大多數 FFP 用在「INR 高但沒出血」的病人（如肝硬化）——沒有證據減少出血或任何臨床效益。</li><li>Warfarin 逆轉：先維生素 K，再 FFP 10–15 mL/kg；解凍慢、體積大 → 4F-PCC（II／VII／IX／X，100 mL，<30 分鐘）。</li></ul></div></details>
+      <details class="def-box"><summary>15 · INR 的誤導 <span class="en">FFP and the INR</span></summary>
+        <div class="box-inner"><p class="kp"><b>INR 只反映維生素 K 因子（II／VII／IX／X），不看 antithrombin、protein C／S；FFP 12 mL/kg 降 INR 的同時也升 antithrombin——淨止血能力可能沒變。</b></p></div></details>
+      <details class="def-box"><summary>16 · FFP 的不良反應 <span class="en">Plasma adverse reactions</span></summary>
+        <div class="box-inner"><p class="kp"><b>過敏最常見（1:600–1:2,000）；TRALI 1:250,000；TACO 1:70–1:1,500（速率 >1 mL/kg/hr 的高風險者）；ABO 配對後已無急性溶血。</b></p>
+          <ul><li>發燒 <1:100,000；HBV 1:280,000、HCV 1:120 萬、HIV 1:160 萬；CMV 未見（在白血球裡）。</li></ul></div></details>
+      <details class="def-box"><summary>17 · Cryoprecipitate 與 fibrinogen 濃縮製劑 <span class="en">Cryoprecipitate</span></summary>
+        <div class="box-inner"><p class="kp"><b>FFP 在 4°C 解凍的沉澱：fibrinogen 10–20 g/L、vWF、VIII；10–15 mL、解凍後 4 小時內用；創傷大出血 fibrinogen 150–200 mg/dL 就給；1 U/10 kg 升約 50 mg/dL。</b></p>
+          <ul><li>Fibrinogen 是最早耗竭、也最易被稀釋的因子；活動性出血時需求更大，可用 TEG 導引。</li><li>缺點：濃度不定、要解凍、未經病原減除 → fibrinogen 濃縮製劑（20 g/L、免解凍）正在取代。</li></ul></div></details>
+    </div>
+    <div class="dirhead" id="pl-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>4Ts</th><th>2 分</th><th>1 分</th><th>0 分</th></tr>
+      <tr><td>血小板下降</td><td>降 >50% 且最低 ≥20k 且 3 天內無手術</td><td>降 30–50% 或最低 10–19k</td><td>降 <30% 或最低 <10k</td></tr>
+      <tr><td>時間</td><td>5–10 天；或 ≤1 天而 30 天內接觸過</td><td>可能 5–10 天但不明；>10 天；≤1 天而 30–100 天內接觸過</td><td><4 天且近期無接觸</td></tr>
+      <tr><td>血栓</td><td>新血栓、皮膚壞死、UFH 靜注後急性全身反應</td><td>血栓進展或復發、非壞死性皮膚病灶、疑血栓</td><td>無</td></tr>
+      <tr><td>其他原因</td><td>無</td><td>可能</td><td>確定</td></tr>
+      <tr><td>合計</td><td colspan="3">0–3 低 · 4–5 中 · 6–8 高</td></tr>
+    </table></div>
+    <div class="note">原書表 13.2 抽出時只剩前兩列，「血栓」與「其他原因」兩列依 Lo 2006 原始 4Ts 補齊。</div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th></th><th>DIC</th><th>TTP</th><th>HUS</th></tr>
+      <tr><td>Schistocytes</td><td>有</td><td>有</td><td>有</td></tr>
+      <tr><td>血小板</td><td>低</td><td>低</td><td>低</td></tr>
+      <tr><td>INR／aPTT</td><td>延長</td><td>正常</td><td>正常</td></tr>
+      <tr><td>Fibrinogen</td><td>低</td><td>正常</td><td>正常</td></tr>
+      <tr><td>D-dimer</td><td>高</td><td>正常</td><td>正常</td></tr>
+      <tr><td>腎衰竭</td><td>可有</td><td>輕（Cr 多 <2）</td><td>重</td></tr>
+      <tr><td>治療</td><td>治病因、支持</td><td>血漿置換</td><td>支持／eculizumab（aHUS）</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>血小板不良反應（每 10 萬單位）</th><th>多人 pooled</th><th>單人 apheresis</th></tr>
+      <tr><td>非溶血性發燒</td><td>37</td><td>136</td></tr>
+      <tr><td>過敏反應</td><td>27</td><td>325</td></tr>
+      <tr><td>TRALI</td><td>1</td><td>22</td></tr>
+      <tr><td>TACO</td><td>7</td><td>8</td></tr>
+      <tr><td>急性溶血</td><td>0.2</td><td>1.8</td></tr>
+      <tr><td>細菌傳播</td><td>0.8</td><td>1.4</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>血漿製品</th><th>體積</th><th>保存</th><th>用途</th></tr>
+      <tr><td>FFP</td><td>230 mL</td><td>−18°C 一年；解凍後 1–6°C 5 天</td><td>大量失血（1:1–2）、warfarin 逆轉 10–15 mL/kg</td></tr>
+      <tr><td>Liquid plasma</td><td>—</td><td>1–6°C 26 天</td><td>同 FFP、少浪費</td></tr>
+      <tr><td>4F-PCC</td><td>100 mL</td><td>凍乾粉</td><td>Warfarin 逆轉 <30 分</td></tr>
+      <tr><td>Cryoprecipitate</td><td>10–15 mL（fibrinogen 10–20 g/L）</td><td>−18°C 一年；解凍後 4 小時</td><td>Fibrinogen <150–200 mg/dL；1 U/10 kg ≈ +50</td></tr>
+      <tr><td>Fibrinogen 濃縮製劑</td><td>20 g/L</td><td>免解凍、病原減除</td><td>取代 cryo</td></tr>
+    </table></div>
+    <div class="dirhead" id="pl-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c13ft">
+      <div class="rxbox-t">4Ts 分數</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血小板下降 <span class="rx-en">thrombocytopenia</span></label><select id="ft_t"><option value="2">降 >50%、最低 ≥20k、無近期手術</option><option value="1">降 30–50% 或最低 10–19k</option><option value="0">降 <30% 或最低 <10k</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>時間 <span class="rx-en">timing</span></label><select id="ft_o"><option value="2">5–10 天，或 ≤1 天而 30 天內接觸過</option><option value="1">不明／>10 天／≤1 天而 30–100 天內</option><option value="0"><4 天且近期無接觸</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血栓 <span class="rx-en">thrombosis</span></label><select id="ft_th"><option value="0">無</option><option value="1">進展、復發、疑似、非壞死皮膚病灶</option><option value="2">新血栓、皮膚壞死、UFH 後急性反應</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>其他原因 <span class="rx-en">other cause</span></label><select id="ft_x"><option value="2">無</option><option value="1">可能</option><option value="0">確定</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c13ft_out"></div>
+    </div>
+    <div class="rxbox" id="c13plt">
+      <div class="rxbox-t">血小板輸注：門檻與預期增量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>血小板 <span class="rx-en">× 10³/μL</span></label><input type="number" id="pl_n" step="1" placeholder="35"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>情境 <span class="rx-en">setting</span></label><select id="pl_sit"><option value="none">無出血、預防</option><option value="bleed">活動性出血</option><option value="ich">顱內出血</option><option value="surg">擇期手術</option><option value="lp">腰椎穿刺</option><option value="cvc">中央靜脈導管</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>微血管病 <span class="rx-en">DIC / TTP / HUS</span></label><select id="pl_tma"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>單位數 <span class="rx-en">units</span></label><input type="number" id="pl_u" step="1" placeholder="1"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>已輸過幾次 <span class="rx-en">prior</span></label><input type="number" id="pl_pr" step="1" placeholder="0"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c13plt_out"></div>
+    </div>
+    <div class="rxbox" id="c13arg">
+      <div class="rxbox-t">Argatroban 輸注</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="ar_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>肝功能不全 <span class="rx-en">hepatic</span></label><select id="ar_hep"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>劑量 <span class="rx-en">μg/kg/min</span></label><input type="number" id="ar_d" step="0.1" placeholder="2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>濃度 <span class="rx-en">mg/mL</span></label><input type="number" id="ar_c" step="0.1" placeholder="1"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c13arg_out"></div>
+    </div>
+    <div class="rxbox" id="c13pl">
+      <div class="rxbox-t">血漿製品劑量</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="pp_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Fibrinogen <span class="rx-en">mg/dL</span></label><input type="number" id="pp_f" step="10" placeholder="120"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>目標 <span class="rx-en">mg/dL</span></label><input type="number" id="pp_t" step="10" placeholder="200"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c13pl_out"></div>
+    </div>
+    <div class="dirhead" id="pl-flow"><span class="dh-n">決策流程</span><span class="dh-e">Thrombocytopenia: which one is it?</span></div>
+    <div id="tp_flow">
+      <div class="flow-step" id="tp_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">血液抹片有 schistocytes 嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tpPick('sch','yes',this)">有<span class="fo-sub">LDH 高、haptoglobin 低</span></button>
+          <button class="flow-opt" onclick="tpPick('sch','no',this)">沒有</button>
+        </div></div>
+      <div class="flow-step" id="tp_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（有）INR／aPTT 延長、fibrinogen 低、D-dimer 高？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tpPick('coag','yes',this)">是</button>
+          <button class="flow-opt" onclick="tpPick('coag','no',this)">都正常</button>
+        </div></div>
+      <div class="flow-step" id="tp_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">（凝血正常）腎衰竭的嚴重度？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tpPick('renal','mild',this)">輕微（Cr <2）± 神經症狀</button>
+          <button class="flow-opt" onclick="tpPick('renal','severe',this)">明顯 AKI</button>
+        </div></div>
+      <div class="flow-step" id="tp_s4"><div class="flow-step-head"><span class="flow-num">4</span><span class="flow-q">（沒有）過去 100 天內有 heparin 暴露（含沖管、塗層導管）？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="tpPick('hep','yes',this)">有</button>
+          <button class="flow-opt" onclick="tpPick('hep','no',this)">沒有</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="tp_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="tpReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="pl-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_plt"></div>
+    <div class="dirhead" id="pl-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/anticoagulant-reversal.html" href="#">抗凝逆轉</a><a class="flow-link" data-ct="tools/periop-anticoag.html" href="#">圍手術期抗凝</a><a class="flow-link" data-ct="pathways/trauma-resuscitation.html" href="#">創傷復甦與大量輸血</a><a class="flow-link" data-ct="pathways/sepsis.html" href="#">敗血症</a><a class="flow-link" href="shock.html#hem">Marino 第 15 章 出血性休克</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 12–13 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9971864/" target="_blank" rel="noopener" class="ref-link">TRICC: transfusion requirements in critical care. NEJM 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25270275/" target="_blank" rel="noopener" class="ref-link">TRISS: lower vs higher Hb threshold in septic shock. NEJM 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34932836/" target="_blank" rel="noopener" class="ref-link">Carson et al. Transfusion thresholds (Cochrane). 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27732721/" target="_blank" rel="noopener" class="ref-link">AABB red blood cell transfusion thresholds and storage. JAMA 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28953438/" target="_blank" rel="noopener" class="ref-link">Carson et al. Indications for and adverse effects of red-cell transfusions. NEJM 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19773646/" target="_blank" rel="noopener" class="ref-link">Napolitano et al. RBC transfusion in adult trauma and critical care guideline. CCM 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18679112/" target="_blank" rel="noopener" class="ref-link">Marik & Corwin. Efficacy of RBC transfusion in the critically ill: systematic review. CCM 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24691607/" target="_blank" rel="noopener" class="ref-link">Rohde et al. Health care-associated infection after RBC transfusion meta-analysis. JAMA 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30808638/" target="_blank" rel="noopener" class="ref-link">Semple et al. TACO and TRALI. Blood 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29300236/" target="_blank" rel="noopener" class="ref-link">Roubinian et al. Contemporary risk factors and outcomes of TACO. CCM 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31291517/" target="_blank" rel="noopener" class="ref-link">Panch et al. Hemolytic transfusion reactions. NEJM 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9438742/" target="_blank" rel="noopener" class="ref-link">Weiskopf et al. Human response to acute severe isovolemic anemia. JAMA 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/12375651/" target="_blank" rel="noopener" class="ref-link">Carson et al. Very low postoperative Hb in patients declining transfusion. Transfusion 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15887428/" target="_blank" rel="noopener" class="ref-link">Jacob et al. Postural pseudoanemia. Mayo Clin Proc 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21258235/" target="_blank" rel="noopener" class="ref-link">Lasocki et al. Hepcidin and anemia of the critically ill. Anesthesiology 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/14707558/" target="_blank" rel="noopener" class="ref-link">CRIT: anemia and blood transfusion in the critically ill. CCM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19590304/" target="_blank" rel="noopener" class="ref-link">Kiraly et al. Aged PRBC transfusion and tissue oxygenation. J Trauma 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29253554/" target="_blank" rel="noopener" class="ref-link">East et al. HIT in the critically ill. Chest 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/30482768/" target="_blank" rel="noopener" class="ref-link">ASH 2018 guidelines: heparin-induced thrombocytopenia. Blood Adv 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16634744/" target="_blank" rel="noopener" class="ref-link">Lo et al. The 4Ts score for HIT. J Thromb Haemost 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25775976/" target="_blank" rel="noopener" class="ref-link">Warkentin et al. The platelet serotonin-release assay. Am J Hematol 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21417952/" target="_blank" rel="noopener" class="ref-link">PROTECT: dalteparin vs UFH in critically ill patients. NEJM 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2062330/" target="_blank" rel="noopener" class="ref-link">Rock et al. Plasma exchange vs plasma infusion in TTP. NEJM 1991</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23738544/" target="_blank" rel="noopener" class="ref-link">Legendre et al. Eculizumab in atypical HUS. NEJM 2013</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36272423/" target="_blank" rel="noopener" class="ref-link">Michael et al. Hemolytic uremic syndrome. Lancet 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32172818/" target="_blank" rel="noopener" class="ref-link">Kalpathi & Kiss. TTP, HIT and DIC. Crit Care Clin 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25383671/" target="_blank" rel="noopener" class="ref-link">AABB platelet transfusion guideline. Ann Intern Med 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33934903/" target="_blank" rel="noopener" class="ref-link">Mowla et al. Adverse reactions among platelet preparations (NHSN). Transfus Med Rev 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15692069/" target="_blank" rel="noopener" class="ref-link">Slichter et al. Post-transfusion platelet increments and refractoriness. Blood 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25647203/" target="_blank" rel="noopener" class="ref-link">PROPPR: 1:1:1 vs 1:1:2 in severe trauma. JAMA 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21466676/" target="_blank" rel="noopener" class="ref-link">Stanworth et al. National study of plasma use in critical care. Crit Care 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25809519/" target="_blank" rel="noopener" class="ref-link">Müller et al. FFP fails to influence hemostatic balance. J Thromb Haemost 2015</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21762464/" target="_blank" rel="noopener" class="ref-link">Narick et al. TACO after plasma transfusion. Transfusion 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27072503/" target="_blank" rel="noopener" class="ref-link">European trauma bleeding guideline, 4th ed. Crit Care 2016</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31574543/" target="_blank" rel="noopener" class="ref-link">Grottke et al. Fibrinogen supplementation. Semin Thromb Hemost 2020</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/blood.js"></script>
+<script>ICU.makeTabs('blood'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

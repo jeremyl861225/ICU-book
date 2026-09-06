@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>酸鹼失衡 · ICU Book</title>
+<link rel="stylesheet" href="../css/styles.css">
+<!-- pwa-head-tags -->
+<!-- ui-mode:start -->
+<script>try{if(localStorage.getItem('ct-ui')!=='classic')document.documentElement.setAttribute('data-ui','sentence')}catch(e){}</script>
+<link rel="stylesheet" href="../css/ui-sentence.css">
+<script src="../js/ui-mode.js" defer></script>
+<!-- ui-mode:end -->
+<!-- sentence-nav:start -->
+<script src="../data/facets.js" defer></script>
+<script src="../js/sentence-nav.js" defer></script>
+<!-- sentence-nav:end -->
+<link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/icu.css">
+<meta name="theme-color" content="#234551">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ICU Book">
+<script src="../js/backlink.js" defer></script>
+</head>
+<body data-back-label="酸鹼失衡">
+<div class="sheet">
+<div class="view active" id="view-acidbase">
+  <div class="app-header">
+    <div><div class="eyebrow">Marino's The ICU Book 5e · Section X</div><h1>酸鹼失衡</h1><div class="sub">Acid-Base Disorders · 酸鹼分析 → 乳酸與酮酸中毒 → 代謝性鹼中毒 · 第 31–33 章統整</div></div>
+    <div class="back-stack">
+      <button class="back-btn" onclick="location.href='../index.html#card-view-acidbase'">← 返回主選單</button>
+    </div>
+  </div>
+
+  <div class="tab-row" id="acidbase_tabs">
+    <button class="tab-btn active" data-p="ab">酸鹼分析 <span class="mono">Ch31</span></button>
+    <button class="tab-btn" data-p="lac">乳酸與酮酸 <span class="mono">Ch32</span></button>
+    <button class="tab-btn" data-p="alk">代謝性鹼中毒 <span class="mono">Ch33</span></button>
+  </div>
+
+  <!-- ==================== Ch31 Acid-Base Analysis ==================== -->
+  <section class="acidbase-panel" data-panel="ab" id="acidbase-p-ab">
+    <div class="dirhead"><span class="dh-n">第 31 章 酸鹼分析</span><span class="dh-e">Chapter 31 · Acid-Base Analysis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#ab/ab-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ab/ab-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ab/ab-calc"><i>03</i>計算</a><a class="sp-chip" href="#ab/ab-flow"><i>04</i>流程</a><a class="sp-chip" href="#ab/ab-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ab/ab-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>兩條規則就分得出原發</b>：pH 與 PaCO₂ 同向＝代謝、反向＝呼吸；PaCO₂ 異常而 pH 正常＝兩個原發（代償從不矯正 pH）。</span></div>
+        <div class="lede-item"><span>②</span><span><b>代償有公式</b>：代謝性酸中毒 1.2、鹼中毒 0.7 × ΔHCO₃（分鐘級）；呼吸性急性 0.1／0.2、慢性 0.4 × ΔPaCO₂（2–3 天）——實測偏離就是次發失衡。</span></div>
+        <div class="lede-item"><span>③</span><span><b>代謝性酸中毒要算三個 gap</b>：白蛋白校正的陰離子間隙、delta gap（混合型）、滲透壓間隙（隱藏的酸）。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="ab-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ab-kc">全部展開</button></div>
+    <div id="ab-kc">
+      <details class="def-box"><summary>01 · pH 與 [H⁺] <span class="en">Hydrogen ion as trace element</span></summary>
+        <div class="box-inner"><p class="kp"><b>pH ＝ −log[H⁺]；7.40 ＝ 40 nEq/L——比鈉氯小一百萬倍的「微量元素」，正常範圍 7.36–7.44 只差不到 10 nEq/L。酸側每 0.1 pH 對應約 60 nEq、鹼側只 24：同樣的 pH 變化在酸側是 2.5 倍的 [H⁺] 變化。</b></p>
+          <ul><li>[H⁺] ＝ 24 × PCO₂/HCO₃：比值決定一切原發與代償。</li></ul></div></details>
+      <details class="def-box"><summary>02 · 四種原發與代償方向 <span class="en">Primary disorders &amp; compensation</span></summary>
+        <div class="box-inner"><p class="kp"><b>PCO₂ 先變＝呼吸性（升＝酸、降＝鹼）；HCO₃ 先變＝代謝性（降＝酸、升＝鹼）。代償把比值的另一項往同方向推，只限制、不矯正 [H⁺] 的變化。</b></p></div></details>
+      <details class="def-box"><summary>03 · 代謝性的呼吸代償 <span class="en">Responses to metabolic disorders</span></summary>
+        <div class="box-inner"><p class="kp"><b>頸動脈體化學受體 30–120 分鐘就反應：酸中毒 ΔPaCO₂ ＝ 1.2 × ΔHCO₃（HCO₃ 14 → 預期 28）；鹼中毒 0.7 × ΔHCO₃（HCO₃ 40 → 預期 51），較不劇烈因為受體平時不活躍、容易開難關。實測高於預期＝次發呼吸性酸中毒、低於＝次發呼吸性鹼中毒。</b></p></div></details>
+      <details class="def-box"><summary>04 · 呼吸性的腎代償 <span class="en">Responses to respiratory disorders</span></summary>
+        <div class="box-inner"><p class="kp"><b>近曲小管 HCO₃ 再吸收同向調整、2–3 天才完成，所以分急性／慢性：急性酸中毒 ΔHCO₃ ＝ 0.1、急性鹼中毒 0.2、慢性兩者 0.4 × ΔPaCO₂（PaCO₂ 60 慢性 → HCO₃ 32）。實測落在急性與慢性預期之間＝部分代償。</b></p></div></details>
+      <details class="def-box"><summary>05 · 三階段規則 <span class="en">Stepwise approach</span></summary>
+        <div class="box-inner"><p class="kp"><b>I：pH 與 PaCO₂ 都異常 → 同向代謝、反向呼吸；只有 PaCO₂ 異常 → 混合（PaCO₂ 方向定呼吸型、代謝型反向）。II：用預期代償找次發（代謝型算預期 PaCO₂；呼吸型算急性與慢性預期 HCO₃）。III：代謝性酸中毒算 gap。</b></p>
+          <ul><li>例：pH 7.50、PaCO₂ 26、HCO₃ 14 → 原發呼吸性鹼中毒，預期 HCO₃ 18–21，實測 14 → 加次發代謝性酸中毒。</li></ul></div></details>
+      <details class="def-box"><summary>06 · 陰離子間隙與白蛋白 <span class="en">Anion gap &amp; albumin</span></summary>
+        <div class="box-inner"><p class="kp"><b>AG ＝ Na − (Cl ＋ HCO₃) ＝ 未測陰離子 − 未測陽離子，參考 8–12（各實驗室不同）。白蛋白是主要未測陰離子、每克 2.5 mEq：校正 AG ＝ AG ＋ 2.5 × (4.5 − 白蛋白)；ICU 90% 低白蛋白，AG 10、白蛋白 2 校正後是 16。</b></p></div></details>
+      <details class="def-box"><summary>07 · 高 AG vs 正常 AG <span class="en">Using the anion gap</span></summary>
+        <div class="box-inner"><p class="kp"><b>高 AG ＝ 非揮發性酸累積（乳酸、酮酸、晚期腎衰竭、甲醇→甲酸、乙二醇→草酸、水楊酸）；正常 AG ＝ HCO₃ 直接流失、氯補上（高氯性）：食鹽水、腹瀉、早期腎功能不全、RTA、acetazolamide、輸尿管腸吻合。</b></p>
+          <ul><li>常漏的兩個：D-乳酸（腸道菌、短腸症、神經症狀，實驗室只測 L 型、要特別要求；也可能參與 propylene glycol 中毒）；5-oxoproline／pyroglutamic acid（長期 acetaminophen、血中濃度在治療範圍、無常規檢驗）。</li></ul></div></details>
+      <details class="def-box"><summary>08 · Delta gap <span class="en">The gap-gap</span></summary>
+        <div class="box-inner"><p class="kp"><b>(AG − 12)/(24 − HCO₃)：純高 AG 酸中毒 ≈1；<1 ＝ 合併正常 AG（高氯）酸中毒；>1 ＝ 合併代謝性鹼中毒（ICU 常見：利尿劑）。</b></p>
+          <ul><li>DKA 用食鹽水復甦：HCO₃ 停在低點是高氯酸中毒暫時取代酮酸，只看 HCO₃ 會誤判沒好轉。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 滲透壓間隙 <span class="en">Osmolal gap</span></summary>
+        <div class="box-inner"><p class="kp"><b>計算 ＝ 2Na ＋ 葡萄糖/18 ＋ BUN/2.8 ≈ 290；實測 − 計算正常 <10。升高＝有未測到的溶質：高 AG 酸中毒而乳酸酮酸解釋不了時，找隱藏的酸（D-乳酸、草酸、甲酸、水楊酸、pyroglutamic acid）。</b></p></div></details>
+      <details class="def-box"><summary>10 · 不信任這個簡單 <span class="en">Distrusting the simplicity</span></summary>
+        <div class="box-inner"><p class="kp"><b>百年來只靠 CO₂ ⇌ H₂CO₃ ⇌ H⁺ ＋ HCO₃ 一條反應：但血中 CO₂ 幾乎就是 HCO₃、難有獨立身分；HCO₃ 在生理 pH 不是緩衝劑；[H⁺] 其實由血漿蛋白的陰離子電荷決定——Stewart 的物理化學觀點更站得住。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="ab-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>原發</th><th>原發變化</th><th>代償</th><th>預期公式</th><th>時程</th></tr>
+      <tr><td>代謝性酸中毒</td><td>HCO₃ ↓</td><td>PaCO₂ ↓</td><td>40 − 1.2 × (24 − HCO₃)</td><td>30–120 分</td></tr>
+      <tr><td>代謝性鹼中毒</td><td>HCO₃ ↑</td><td>PaCO₂ ↑</td><td>40 ＋ 0.7 × (HCO₃ − 24)</td><td>30–120 分</td></tr>
+      <tr><td>呼吸性酸中毒</td><td>PaCO₂ ↑</td><td>HCO₃ ↑</td><td>急性 24 ＋ 0.1 × Δ；慢性 24 ＋ 0.4 × Δ</td><td>2–3 天</td></tr>
+      <tr><td>呼吸性鹼中毒</td><td>PaCO₂ ↓</td><td>HCO₃ ↓</td><td>急性 24 − 0.2 × Δ；慢性 24 − 0.4 × Δ</td><td>2–3 天</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>高陰離子間隙</th><th>正常陰離子間隙（高氯）</th></tr>
+      <tr><td>L-乳酸、D-乳酸、酮酸</td><td>腹瀉、等張食鹽水</td></tr>
+      <tr><td>乙二醇（草酸）、甲醇（甲酸）、水楊酸</td><td>早期腎功能不全、腎小管酸中毒</td></tr>
+      <tr><td>Pyroglutamic acid（長期 acetaminophen）</td><td>Acetazolamide</td></tr>
+      <tr><td>晚期腎衰竭</td><td>輸尿管腸吻合</td></tr>
+    </table></div>
+    <div class="dirhead" id="ab-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c31abg">
+      <div class="rxbox-t">三階段酸鹼分析</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>pH <span class="rx-en"></span></label><input type="number" id="ab_ph" step="0.01" placeholder="7.28"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="ab_pco2" step="1" placeholder="23"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>HCO₃ <span class="rx-en">mEq/L</span></label><input type="number" id="ab_hco3" step="1" placeholder="14"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c31abg_out"></div>
+    </div>
+    <div class="rxbox" id="c31ag">
+      <div class="rxbox-t">陰離子間隙與 delta gap</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Na <span class="rx-en">mEq/L</span></label><input type="number" id="ag_na" step="1" placeholder="138"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>Cl <span class="rx-en">mEq/L</span></label><input type="number" id="ag_cl" step="1" placeholder="100"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>HCO₃ <span class="rx-en">mEq/L</span></label><input type="number" id="ag_hco3" step="1" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>白蛋白 <span class="rx-en">g/dL</span></label><input type="number" id="ag_alb" step="0.1" placeholder="2.5"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c31ag_out"></div>
+    </div>
+    <div class="rxbox" id="c31osm">
+      <div class="rxbox-t">滲透壓間隙</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>Na <span class="rx-en">mEq/L</span></label><input type="number" id="os_na" step="1" placeholder="140"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>葡萄糖 <span class="rx-en">mg/dL</span></label><input type="number" id="os_glu" step="5" placeholder="90"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>BUN <span class="rx-en">mg/dL</span></label><input type="number" id="os_bun" step="1" placeholder="14"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>實測滲透壓 <span class="rx-en">mOsm/kg</span></label><input type="number" id="os_m" step="1" placeholder="310"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c31osm_out"></div>
+    </div>
+    <div class="dirhead" id="ab-flow"><span class="dh-n">決策流程</span><span class="dh-e">High anion gap: which acid</span></div>
+    <div id="ga_flow">
+      <div class="flow-step" id="ga_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">高 AG 代謝性酸中毒：乳酸升高嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="gaPick('lac','yes',this)">升高</button>
+          <button class="flow-opt" onclick="gaPick('lac','no',this)">正常</button>
+        </div></div>
+      <div class="flow-step" id="ga_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">β-hydroxybutyrate 升高嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="gaPick('ket','yes',this)">升高</button>
+          <button class="flow-opt" onclick="gaPick('ket','no',this)">正常</button>
+        </div></div>
+      <div class="flow-step" id="ga_s3"><div class="flow-step-head"><span class="flow-num">3</span><span class="flow-q">滲透壓間隙 ≥10？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="gaPick('osm','yes',this)">是</button>
+          <button class="flow-opt" onclick="gaPick('osm','no',this)">否</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ga_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="gaReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="ab-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_ab"></div>
+    <div class="dirhead" id="ab-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣判讀</a><a class="flow-link" data-ct="tools/osmolality.html" href="#">滲透壓與間隙</a><a class="flow-link" data-ct="tools/corrected-labs.html" href="#">校正檢驗值</a><a class="flow-link" href="fluids.html#iv">Marino 第 10 章 食鹽水的氯</a></div>
+  </section>
+
+  <!-- ==================== Ch32 Lactic Acidosis and Ketoacidosis ==================== -->
+  <section class="acidbase-panel hidden" data-panel="lac" id="acidbase-p-lac">
+    <div class="dirhead"><span class="dh-n">第 32 章 乳酸酸中毒與酮酸中毒</span><span class="dh-e">Chapter 32 · Lactic Acidosis and Ketoacidosis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#lac/la-key"><i>01</i>重點卡</a><a class="sp-chip" href="#lac/la-tab"><i>02</i>對照表</a><a class="sp-chip" href="#lac/la-calc"><i>03</i>計算</a><a class="sp-chip" href="#lac/la-flow"><i>04</i>流程</a><a class="sp-chip" href="#lac/la-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#lac/la-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>乳酸不是酸、不是無氧的產物、是燃料</b>；但它的數值與清除時間仍是最好的預後指標，原因清單超過 300 種藥物。</span></div>
+        <div class="lede-item"><span>②</span><span><b>問題不在酸中毒，在造成它的病</b>：碳酸氫鹽在生理 pH 不是緩衝劑、還會讓細胞內更酸——只留給 pH ≤7.1 且不穩定者，先補一半缺口。</span></div>
+        <div class="lede-item"><span>③</span><span><b>酮酸看 β-hydroxybutyrate</b>：nitroprusside 只測 acetoacetate，酒精性酮酸中毒可陰性；DKA 的關鍵是鉀（<3.3 不給 insulin）與平衡液。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="la-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="la-kc">全部展開</button></div>
+    <div id="la-kc">
+      <details class="def-box"><summary>01 · 乳酸的新典範 <span class="en">The evolving lactate paradigm</span></summary>
+        <div class="box-inner"><p class="kp"><b>每天有氧產 1,500 mmol（肌肉、皮膚各 25%、紅血球 20%、腦 20%、腸 10%；活化的中性球也產），正常 ≤2、乳酸:丙酮酸 10:1；肝清 60%、腎 30%、心 10%。不由無氧驅動；壓力下是燃料（心 60%、腦 30%）；運動時 3/4 被氧化、白肌 → 紅肌的乳酸接駁。</b></p></div></details>
+      <details class="def-box"><summary>02 · 乳酸不是酸 <span class="en">Lactate is not an acid</span></summary>
+        <div class="box-inner"><p class="kp"><b>糖解的終產物是乳酸陰離子；產生它的反應消耗 H⁺；H⁺ 其實來自 2 ATP 的水解，如何影響細胞外 pH 不清楚；高乳酸可以沒有酸中毒。</b></p></div></details>
+      <details class="def-box"><summary>03 · 預後價值 <span class="en">Prognostic value</span></summary>
+        <div class="box-inner"><p class="kp"><b>初值與死亡率直接相關（≥4 才有預後意義）；清除時間更重要：24 小時內正常化死亡率最低。動脈靜脈皆可測；不能馬上驗就冰起來。AG 正常不能排除乳酸酸中毒。</b></p></div></details>
+      <details class="def-box"><summary>04 · 休克與敗血症 <span class="en">Shock syndromes</span></summary>
+        <div class="box-inner"><p class="kp"><b>敗血症可能是 ICU 最常見的乳酸酸中毒：丙酮酸生產增加＋粒線體氧利用缺陷（細胞病性缺氧、PDH 被抑制），組織氧合沒有受損甚至升高。壓力性高乳酸：全身發炎、2–5、L:P 正常、pH 正常；嚴重敗血症 L:P 升、pH 降。</b></p></div></details>
+      <details class="def-box"><summary>05 · Thiamine 缺乏 <span class="en">Thiamine deficiency</span></summary>
+        <div class="box-inner"><p class="kp"><b>Thiamine pyrophosphate 是 PDH 輔因子；缺乏 → 濕性腳氣病（高輸出心衰竭）、Wernicke、周邊神經病變、可極嚴重的乳酸酸中毒；重症可能比想像常見——所有不明乳酸酸中毒都要想。</b></p></div></details>
+      <details class="def-box"><summary>06 · 藥物與毒物 <span class="en">Drugs &amp; toxins</span></summary>
+        <div class="box-inner"><p class="kp"><b>>300 種藥物。Epinephrine／albuterol（糖解加速、有氧）；metformin（腎功能不全、死亡 17–30%、洗腎優於鹼）；抗反轉錄病毒核苷類（8–18%，>10 死亡 33–57%）；linezolid（罕見、25% 死亡、男性多）；propofol；CO、氰化物；propylene glycol（lorazepam、diazepam、esmolol、NTG、phenytoin 溶劑；高劑量 lorazepam >2 天 19–66% 中毒：躁動、昏迷、癲癇、低血壓、乳酸酸中毒 → 停藥換非 diazepam）。</b></p></div></details>
+      <details class="def-box"><summary>07 · 其他來源 <span class="en">Other sources</span></summary>
+        <div class="box-inner"><p class="kp"><b>鹼中毒（pH ≥7.6 肝正常才顯現；肝差更早）、全身性癲癇（可達 15、短暫）、肝功能不全（清除差）、急性氣喘（albuterol、呼吸肌）、血液惡性腫瘤。D-乳酸：小腸大量切除或空迴腸繞道後腸道菌發酵、代謝性腦病變，要特別要求檢驗。</b></p></div></details>
+      <details class="def-box"><summary>08 · 酸中毒不傷人、碳酸氫鹽不是緩衝劑 <span class="en">Alkali therapy</span></summary>
+        <div class="box-inner"><p class="kp"><b>怕心肌收縮力降是離體心臟的結果，完整生物體酸血症反升心輸出量（兒茶酚胺）；細胞外酸中毒延緩能量耗竭細胞的死亡（醃漬 pH 4）。碳酸氫鹽 pK 6.1、有效 5.1–7.1，不含生理 pH；它是 CO₂ 運輸的終產物（RBC 內碳酸酐酶、H⁺ 給血紅素、HCO₃ 換氯出來）。</b></p>
+          <ul><li>反效果：生成 CO₂ 進細胞與 CSF 讓 pH 更低（溶液 PCO₂ 200 mmHg，是 CO₂ 負荷）；升乳酸。</li><li>多數專家仍建議 pH ≤7.1 或 HCO₃ ≤5；作者只給血行動力學不穩者；腎功能不全（HCO₃ 流失）最可能受益。缺口 0.6 × 體重 × (15 − HCO₃)，先補一半、改善再續、無改善就停。8.4% 50 mEq/50 mL、2,000 mOsm/L（稀釋在 D5W 慢輸）；監測游離鈣；呼吸器加分鐘通氣量。</li></ul></div></details>
+      <details class="def-box"><summary>09 · 酮體 <span class="en">Ketogenesis &amp; testing</span></summary>
+        <div class="box-inner"><p class="kp"><b>沒碳水就分解脂肪 → 肝產 acetoacetate、β-hydroxybutyrate、acetone（不是酸，造成水果味）；4 kcal/g 略高於葡萄糖 3.7。正常 0.1、飢餓 3 天 1 mmol/L；≥3 才降 pH。β-OHB:AcAc DKA 3:1、AKA 8:1。Nitroprusside（Acetest、Ketostix）只測 AcAc（≥3 才陽性）——AKA 總酮酸 13 仍可陰性；β-OHB 指尖儀 10 秒，ADA 首選。</b></p></div></details>
+      <details class="def-box"><summary>10 · DKA：診斷 <span class="en">DKA diagnosis</span></summary>
+        <div class="box-inner"><p class="kp"><b>37% 無糖尿病史；誘因 insulin 不當與併發疾病；死亡 ≤1%。ADA：葡萄糖 >250、HCO₃ <18、pH ≤7.30、高 AG、酮體。例外：3% 正常血糖 DKA（SGLT2i、懷孕、飢餓）；AG 可正常（腎排酮伴氯再吸收）。白血球隨酮體升（看 band）；27% troponin 升；高血糖稀釋鈉（每 100 mg/dL −2.4）與氯——AG 用實測鈉。</b></p></div></details>
+      <details class="def-box"><summary>11 · DKA：處置 <span class="en">DKA management</span></summary>
+        <div class="box-inner"><p class="kp"><b>缺水 50–100 mL/kg：平衡液（SCOPE-DKA）15–20 mL/kg/hr（約 1 L/hr）數小時 → 穩定 250 → 葡萄糖 ≤250 改 D5 ½NS 150–200；正常血糖 DKA 全加 D5。Insulin：K >3.3 才開，0.1 U/kg bolus 直接推入靜脈 → 0.1 U/kg/hr（管路先跑 10 mL），每小時降 100，≤250 減到 0.05、維持 150–200；AG 正常且 HCO₃ >18 才轉皮下、重疊 1 小時；新病人 0.5–0.8 U/kg/天一半長效一半短效。</b></p>
+          <ul><li>鉀：缺口 3–5 mEq/kg 但 96% 初始正常或偏高；<3.3 停 insulin 補 40/hr；3.3–4 補 20；4–5.5 補 10；>5.5 每 2 小時驗；前 6 小時每 1–2 小時驗。磷缺 1–1.5 mmol/kg 但 <1 mg/dL 才補；碳酸氫鹽不常規。</li></ul></div></details>
+      <details class="def-box"><summary>12 · 酒精性酮酸中毒 <span class="en">Alcoholic ketoacidosis</span></summary>
+        <div class="box-inner"><p class="kp"><b>營養不良的慢性酒癮者狂飲後 1–3 天：不吃 → 脂解、乙醇氧化生 NADH → β-OHB 與乳酸、脫水 → 排不掉酮。噁心嘔吐腹痛、各種「低」（鈉鉀磷鎂糖）、混合失衡（高 AG 酸中毒＋嘔吐的鹼中毒），酸血症輕、有的還鹼血；乙醇可測不到；要排除胰臟炎。治療只要含葡萄糖的食鹽水（葡萄糖矯正酸、體積排酮）＋thiamine，24 小時內解。</b></p></div></details>
+    </div>
+    <div class="dirhead" id="la-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>高乳酸的原因：狀況</th><th>藥物與毒物</th></tr>
+      <tr><td>循環休克、敗血症、癲癇、急性氣喘、劇烈運動</td><td>Epinephrine、albuterol、metformin、linezolid、propofol</td></tr>
+      <tr><td>DKA、肝衰竭、thiamine 缺乏、嗜鉻細胞瘤</td><td>抗反轉錄病毒（核苷類）</td></tr>
+      <tr><td>腔室症候群、腸繫膜缺血、白血病／淋巴瘤</td><td>CO、氰化物、propylene glycol</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>DKA 鉀補充</th><th>做法</th></tr>
+      <tr><td><3.3</td><td>停 insulin；K 40 mEq/hr IV 到 >3.3</td></tr>
+      <tr><td>3.3–4.0</td><td>K 20 mEq/hr</td></tr>
+      <tr><td>4.0–5.5</td><td>K 10 mEq/hr</td></tr>
+      <tr><td>>5.5</td><td>不補，每 2 小時驗</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>碳酸氫鈉</th><th>7.5%</th><th>8.4%</th></tr>
+      <tr><td>每支</td><td>50 mL</td><td>50 mL</td></tr>
+      <tr><td>濃度</td><td>0.9 mEq/mL</td><td>1 mEq/mL</td></tr>
+      <tr><td>含量</td><td>45 mEq</td><td>50 mEq</td></tr>
+      <tr><td>滲透壓</td><td>1,790 mOsm/L</td><td>2,000 mOsm/L</td></tr>
+    </table></div>
+    <div class="note">原書表 32.3（DKA 處置）在輸液第 4 項截斷，其餘依內文重建。</div>
+    <div class="dirhead" id="la-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c32lac">
+      <div class="rxbox-t">乳酸判讀</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>乳酸 <span class="rx-en">mmol/L</span></label><input type="number" id="la_v" step="0.1" placeholder="4.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>丙酮酸 <span class="rx-en">mmol/L</span></label><input type="number" id="la_p" step="0.01" placeholder="0.2"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>pH <span class="rx-en"></span></label><input type="number" id="la_ph" step="0.01" placeholder="7.36"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>正常化所需 <span class="rx-en">小時</span></label><input type="number" id="la_t" step="1" placeholder="18"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c32lac_out"></div>
+    </div>
+    <div class="rxbox" id="c32bic">
+      <div class="rxbox-t">碳酸氫鹽：該不該、給多少</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="bc_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>HCO₃ <span class="rx-en">mEq/L</span></label><input type="number" id="bc_h" step="1" placeholder="5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>pH <span class="rx-en"></span></label><input type="number" id="bc_ph" step="0.01" placeholder="7.0"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>需升壓劑 <span class="rx-en">unstable</span></label><select id="bc_u"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+        <div class="rx-row"><label>腎功能不全 <span class="rx-en">renal</span></label><select id="bc_r"><option value="n">否</option><option value="y">是</option></select><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c32bic_out"></div>
+    </div>
+    <div class="rxbox" id="c32dka">
+      <div class="rxbox-t">DKA 起始處方</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>體重 <span class="rx-en">kg</span></label><input type="number" id="dk_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血鉀 <span class="rx-en">mEq/L</span></label><input type="number" id="dk_k" step="0.1" placeholder="4.5"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血糖 <span class="rx-en">mg/dL</span></label><input type="number" id="dk_g" step="10" placeholder="480"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>實測鈉 <span class="rx-en">mEq/L</span></label><input type="number" id="dk_na" step="1" placeholder="132"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c32dka_out"></div>
+    </div>
+    <div class="dirhead" id="la-flow"><span class="dh-n">決策流程</span><span class="dh-e">Hyperlactatemia: what kind</span></div>
+    <div id="hl_flow">
+      <div class="flow-step" id="hl_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">有休克嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hlPick('shock','yes',this)">有<span class="fo-sub">低血容、心因性、敗血性</span></button>
+          <button class="flow-opt" onclick="hlPick('shock','no',this)">沒有</button>
+        </div></div>
+      <div class="flow-step" id="hl_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（無休克）pH？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="hlPick('ph','normal',this)">正常、乳酸 2–5</button>
+          <button class="flow-opt" onclick="hlPick('ph','low',this)">酸血症</button>
+          <button class="flow-opt" onclick="hlPick('ph','high',this)">鹼血症</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="hl_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="hlReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="la-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_lac"></div>
+    <div class="dirhead" id="la-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="pathways/dka-hhs.html" href="#">DKA／HHS</a><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣</a><a class="flow-link" data-ct="tools/corrected-labs.html" href="#">校正鈉</a><a class="flow-link" href="monitoring.html#o2">Marino 第 9 章 乳酸再思考</a><a class="flow-link" href="shock.html#inf">Marino 第 17 章 敗血性休克</a></div>
+  </section>
+
+  <!-- ==================== Ch33 Metabolic Alkalosis ==================== -->
+  <section class="acidbase-panel hidden" data-panel="alk" id="acidbase-p-alk">
+    <div class="dirhead"><span class="dh-n">第 33 章 代謝性鹼中毒</span><span class="dh-e">Chapter 33 · Metabolic Alkalosis</span></div>
+    <div class="ch-nav sp-chips"><a class="sp-chip" href="#alk/al-key"><i>01</i>重點卡</a><a class="sp-chip" href="#alk/al-tab"><i>02</i>對照表</a><a class="sp-chip" href="#alk/al-calc"><i>03</i>計算</a><a class="sp-chip" href="#alk/al-flow"><i>04</i>流程</a><a class="sp-chip" href="#alk/al-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#alk/al-x"><i>06</i>相關工具</a></div>
+    <div class="lede">
+      <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <div class="lede-body">
+        <div class="lede-item"><span>①</span><span><b>住院最常見的酸鹼失衡</b>（HCO₃ >30）：誘因多、會自我維持、常被忽略——主角是氯缺乏（抑制 pendrin 排 HCO₃）、不是「收縮」。</span></div>
+        <div class="lede-item"><span>②</span><span><b>多半無害</b>：低通氣反應弱（HCO₃ 升近 10 才 PaCO₂ >46）；HCO₃ 151 的病人都穩定恢復。</span></div>
+        <div class="lede-item"><span>③</span><span><b>照 ECV 與尿氯分型</b>：氯敏感型補食鹽水＋KCl（先驗鎂）；水腫者改 KCl＋acetazolamide；HCO₃ >50 或 pH >7.55 才考慮 HCl。</span></div>
+      </div>
+    </div>
+    <div class="dirhead" id="al-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="al-kc">全部展開</button></div>
+    <div id="al-kc">
+      <details class="def-box"><summary>01 · HCO₃ 的腎處理 <span class="en">Bicarbonate homeostasis</span></summary>
+        <div class="box-inner"><p class="kp"><b>每天濾 4,000–4,500 mEq 全部回收：85–90% 近曲小管、10–15% 集尿管的特化細胞（氯換 HCO₃、同時泌 H⁺ 排成銨）；另一群細胞用 pendrin（氯-HCO₃ 交換）分泌 HCO₃，平時幾乎不動、鹼中毒時上調。</b></p></div></details>
+      <details class="def-box"><summary>02 · 誘發與維持 <span class="en">What generates and sustains it</span></summary>
+        <div class="box-inner"><p class="kp"><b>胃酸流失（H⁺ 50–100、Cl 120–160、K 10–15 mEq/L）等量生成 HCO₃；低血容 → GFR 降濾出少＋RAAS 醛固酮（Na-K 交換排鉀、刺激 H⁺-ATPase）；氯缺乏升再吸收、抑制 pendrin（主要機轉）；低鉀讓 H⁺ 進細胞、腎小管細胞內酸升 HCO₃ 再吸收；thiazide／loop 利尿劑同時丟氯與鉀。</b></p>
+          <ul><li>「收縮性鹼中毒」是誤稱：問題是 HCO₃ 過多不是自由水少。</li></ul></div></details>
+      <details class="def-box"><summary>03 · 臨床後果 <span class="en">Clinical consequences</span></summary>
+        <div class="box-inner"><p class="kp"><b>多數無症狀；神經症狀（意識、癲癇、感覺異常、腕足痙攣）多屬呼吸性鹼中毒；低通氣不劇烈（ΔPaCO₂ ＝ 0.7 × ΔHCO₃：升近 10 才 >46、嚴重才 >50）；Bohr 左移降靜脈 PO₂ 但無組織缺氧證據。</b></p></div></details>
+      <details class="def-box"><summary>04 · 氯敏感型 <span class="en">Low ECV, urine Cl <20</span></summary>
+        <div class="box-inner"><p class="kp"><b>ICU 常見型：嘔吐／鼻胃管、低血容的續發性高醛固酮、thiazide／loop 利尿劑（效應退了尿氯才低）、瀉藥濫用（糞便 K、Cl 70–90，是鹼中毒不是腹瀉的酸中毒；病人常否認）。</b></p></div></details>
+      <details class="def-box"><summary>05 · 氯抗性型與其他 <span class="en">High ECV, urine Cl >20</span></summary>
+        <div class="box-inner"><p class="kp"><b>原發性高醛固酮（腺瘤、特發性增生）、甘草、外源性礦物皮質素——ICU 少見。鉀或鎂耗竭則 ECV 與尿氯不定。</b></p></div></details>
+      <details class="def-box"><summary>06 · 食鹽水與 KCl <span class="en">Saline &amp; potassium</span></summary>
+        <div class="box-inner"><p class="kp"><b>氯缺口 ＝ 0.2 × 淨體重 × (100 − Cl)；食鹽水（L）＝ 缺口/154；速率流失＋100 mL/hr（70 kg、Cl 80 → 280 mEq → 1.8 L）。KCl 視需要；利尿劑的低鉀常因缺鎂補不上——先驗鎂。</b></p></div></details>
+      <details class="def-box"><summary>07 · 水腫狀態與 acetazolamide <span class="en">Edematous states</span></summary>
+        <div class="box-inner"><p class="kp"><b>心衰竭、肝硬化、肺心症的利尿劑鹼中毒：食鹽水反效果，改 KCl；acetazolamide 250–375 mg IV/PO qd–bid 抑制近曲小管 HCO₃ 再吸收、排 NaHCO₃ 兼利尿。</b></p></div></details>
+      <details class="def-box"><summary>08 · HCl 輸注 <span class="en">Hydrochloric acid</span></summary>
+        <div class="box-inner"><p class="kp"><b>只給 HCO₃ >50 或 pH >7.55 且前述無效者。H⁺ 缺口 ＝ 0.5 × 淨體重 × (HCO₃ − 24)；0.1N（100 mL 1N ＋ 900 mL 食鹽水或無菌水 ＝ 100 mEq/L），體積 ＝ 缺口/100；大中央靜脈、≤0.2 mEq/kg/hr；pH <7.5 就停。腐蝕：外滲即使經中央靜脈也可嚴重壞死。</b></p></div></details>
+      <details class="def-box"><summary>09 · 氯：電解質女王 <span class="en">Spotlight on chloride</span></summary>
+        <div class="box-inner"><p class="kp"><b>ECF 第二多的電解質：缺氯造成鹼中毒、過多造成高氯酸中毒、還決定細胞外容積——遠不只是鈉的配角。</b></p>
+          <div class="kc-tags"><span class="dg-tag">作者觀點</span></div></div></details>
+    </div>
+    <div class="dirhead" id="al-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>ECV</th><th>尿氯</th><th>原因</th><th>處置</th></tr>
+      <tr><td>低</td><td><20</td><td>嘔吐、鼻胃管、利尿劑後效應、瀉藥濫用、續發性高醛固酮</td><td>食鹽水＋KCl（先驗鎂）</td></tr>
+      <tr><td>高</td><td>>20</td><td>原發性高醛固酮、外源性礦物皮質素、甘草</td><td>治病因；KCl</td></tr>
+      <tr><td>不定</td><td>不定</td><td>鉀耗竭、鎂耗竭</td><td>補鉀鎂</td></tr>
+      <tr><td>水腫</td><td>—</td><td>心衰竭／肝硬化／肺心症的利尿劑</td><td>KCl＋acetazolamide，不灌食鹽水</td></tr>
+    </table></div>
+    <div class="tw"><table class="def-table dt-dose">
+      <tr><th>公式</th><th>內容</th></tr>
+      <tr><td>氯缺口</td><td>0.2 × 淨體重 × (100 − Cl)；食鹽水 L ＝ 缺口/154；速率流失＋100 mL/hr</td></tr>
+      <tr><td>H⁺ 缺口</td><td>0.5 × 淨體重 × (HCO₃ − 24)；0.1N HCl L ＝ 缺口/100；≤0.2 mEq/kg/hr；中央靜脈</td></tr>
+      <tr><td>預期 PaCO₂</td><td>40 ＋ 0.7 × (HCO₃ − 24)</td></tr>
+      <tr><td>Acetazolamide</td><td>250–375 mg IV/PO qd–bid</td></tr>
+    </table></div>
+    <div class="dirhead" id="al-calc"><span class="dh-n">計算</span><span class="dh-e">Calculators</span></div>
+    <div class="rxbox" id="c33cl">
+      <div class="rxbox-t">氯缺口與食鹽水</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>淨體重 <span class="rx-en">kg</span></label><input type="number" id="cd_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>血氯 <span class="rx-en">mEq/L</span></label><input type="number" id="cd_cl" step="1" placeholder="80"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>每小時流失 <span class="rx-en">mL</span></label><input type="number" id="cd_l" step="10" placeholder="50"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c33cl_out"></div>
+    </div>
+    <div class="rxbox" id="c33resp">
+      <div class="rxbox-t">預期 PaCO₂</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>HCO₃ <span class="rx-en">mEq/L</span></label><input type="number" id="rs_h" step="1" placeholder="40"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>實測 PaCO₂ <span class="rx-en">mmHg</span></label><input type="number" id="rs_p" step="1" placeholder="50"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c33resp_out"></div>
+    </div>
+    <div class="rxbox" id="c33hcl">
+      <div class="rxbox-t">HCl 輸注</div>
+      <div class="rx-grid">
+        <div class="rx-row"><label>淨體重 <span class="rx-en">kg</span></label><input type="number" id="hc_w" step="1" placeholder="70"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>HCO₃ <span class="rx-en">mEq/L</span></label><input type="number" id="hc_h" step="1" placeholder="55"><span class="rx-u"></span></div>
+        <div class="rx-row"><label>pH <span class="rx-en"></span></label><input type="number" id="hc_ph" step="0.01" placeholder="7.58"><span class="rx-u"></span></div>
+      </div>
+      <div class="rx-out" id="c33hcl_out"></div>
+    </div>
+    <div class="dirhead" id="al-flow"><span class="dh-n">決策流程</span><span class="dh-e">Metabolic alkalosis by volume and urine chloride</span></div>
+    <div id="ma_flow">
+      <div class="flow-step" id="ma_s1"><div class="flow-step-head"><span class="flow-num">1</span><span class="flow-q">細胞外容積與尿氯？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="maPick('ecv','low',this)">低 ECV、尿氯 <20</button>
+          <button class="flow-opt" onclick="maPick('ecv','high',this)">高 ECV、尿氯 >20</button>
+          <button class="flow-opt" onclick="maPick('ecv','var',this)">不定，有低鉀或低鎂</button>
+        </div></div>
+      <div class="flow-step" id="ma_s2"><div class="flow-step-head"><span class="flow-num">2</span><span class="flow-q">（低 ECV）有水腫狀態（心衰竭、肝硬化、肺心症）嗎？</span></div>
+        <div class="flow-opts">
+          <button class="flow-opt" onclick="maPick('edema','no',this)">沒有</button>
+          <button class="flow-opt" onclick="maPick('edema','yes',this)">有</button>
+        </div></div>
+      <div class="flow-rec rec-idle" id="ma_rec"></div>
+      <div class="flow-reset"><button class="btn-reset" onclick="maReset()">重新開始</button></div>
+    </div>
+    <div class="dirhead" id="al-quiz"><span class="dh-n">章末測驗</span><span class="dh-e">Self-test</span></div>
+    <div id="qz_alk"></div>
+    <div class="dirhead" id="al-x"><span class="dh-n">相關工具</span><span class="dh-e">Clinical Tools</span></div>
+    <div class="xlinks"><a class="flow-link" data-ct="tools/abg.html" href="#">動脈血氣</a><a class="flow-link" data-ct="pathways/electrolyte.html" href="#">電解質</a><a class="flow-link" href="cardiac.html#hf">Marino 第 18 章 利尿劑</a><a class="flow-link" href="fluids.html#iv">Marino 第 10 章 氯</a></div>
+  </section>
+
+  <div class="lead src-line"><b>來源與寫法</b>：本頁是 Marino PL. <i>Marino's The ICU Book</i>, 5th ed.（Wolters Kluwer）第 31–33 章的統整筆記。內容經改寫與重組，不含原書文字、圖與表格的複製；數字以原書為準。原書的「A Final Word」以「作者觀點」標示，與現行指引不同或疑似誤植處另以「原文疑義」標示。臨床決策請以現行指引與病人狀況為準。</div>
+
+  <footer class="tool-footer">
+    REF — 原書各章引用中的關鍵一次文獻（PMID 已核對）：
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35998977/" target="_blank" rel="noopener" class="ref-link">Achanti & Szerlip. Acid-base disorders in the critically ill. CJASN 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19812535/" target="_blank" rel="noopener" class="ref-link">Adrogué et al. Assessing acid-base disorders. Kidney Int 2009</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20431042/" target="_blank" rel="noopener" class="ref-link">Adrogué & Madias. Secondary responses to altered acid-base status. JASN 2010</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34400023/" target="_blank" rel="noopener" class="ref-link">Fenves & Emmett. High anion gap metabolic acidoses: core curriculum. AJKD 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9824071/" target="_blank" rel="noopener" class="ref-link">Figge et al. Anion gap and hypoalbuminemia. CCM 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8770942/" target="_blank" rel="noopener" class="ref-link">Halperin & Kamel. D-lactic acidosis. Kidney Int 1996</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/24235282/" target="_blank" rel="noopener" class="ref-link">Emmett. Acetaminophen toxicity and 5-oxoproline. CJASN 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/17656477/" target="_blank" rel="noopener" class="ref-link">Rastegar. Delta AG/delta HCO₃ ratio in mixed disorders. JASN 2007</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3099570/" target="_blank" rel="noopener" class="ref-link">Paulson. Anion gap–bicarbonate relationship in DKA. Am J Med 1986</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/14534340/" target="_blank" rel="noopener" class="ref-link">Turchin et al. Mind the gap. NEJM 2003</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15862085/" target="_blank" rel="noopener" class="ref-link">Purssell et al. The osmole gap as a screening test. Toxicol Rev 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/6423247/" target="_blank" rel="noopener" class="ref-link">Stewart. Modern quantitative acid-base chemistry. Can J Physiol Pharmacol 1983</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21440203/" target="_blank" rel="noopener" class="ref-link">Okorie & Dellinger. Lactate: biomarker and therapeutic target. Crit Care Clin 2011</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29322250/" target="_blank" rel="noopener" class="ref-link">Ferguson et al. Lactate metabolism: prior misinterpretations. Eur J Appl Physiol 2018</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/37173749/" target="_blank" rel="noopener" class="ref-link">Dargent et al. Lactic alkalosis in intensive care. Crit Care 2023</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/8678625/" target="_blank" rel="noopener" class="ref-link">Gore et al. Lactic acidosis in sepsis and pyruvate production. Ann Surg 1996</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11219231/" target="_blank" rel="noopener" class="ref-link">Fink. Cytopathic hypoxia. Crit Care Clin 2001</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31361914/" target="_blank" rel="noopener" class="ref-link">Smith et al. Medication-induced hyperlactatemia: systematic review. Pharmacotherapy 2019</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28693440/" target="_blank" rel="noopener" class="ref-link">Yeh et al. Metformin-associated lactic acidosis requiring RRT. BMC Nephrol 2017</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/11850865/" target="_blank" rel="noopener" class="ref-link">Falco et al. Nucleoside-associated lactic acidosis in HIV. CID 2002</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16162774/" target="_blank" rel="noopener" class="ref-link">Wilson et al. Propylene glycol toxicity with IV benzodiazepines. Chest 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15286548/" target="_blank" rel="noopener" class="ref-link">Arroliga et al. Lorazepam infusion and propylene glycol concentration. CCM 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/19702/" target="_blank" rel="noopener" class="ref-link">Orringer et al. Lactic acidosis after grand-mal seizures. NEJM 1977</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/2302951/" target="_blank" rel="noopener" class="ref-link">Iberti et al. Low sensitivity of the anion gap for hyperlactatemia. CCM 1990</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10631227/" target="_blank" rel="noopener" class="ref-link">Forsythe & Schmidt. Sodium bicarbonate for lactic acidosis. Chest 2000</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/18614899/" target="_blank" rel="noopener" class="ref-link">Boyd & Walley. Bicarbonate in lactic acidosis from shock? Curr Opin Crit Care 2008</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22998993/" target="_blank" rel="noopener" class="ref-link">Cartwright et al. Toxigenic and metabolic causes of ketosis. Crit Care Clin 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/14693938/" target="_blank" rel="noopener" class="ref-link">ADA. Hyperglycemic crises in diabetes. Diabetes Care 2004</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33626481/" target="_blank" rel="noopener" class="ref-link">Long et al. Euglycemic diabetic ketoacidosis. Am J Emerg Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/20222205/" target="_blank" rel="noopener" class="ref-link">Gamblin et al. DKA presenting with a normal anion gap. Am J Med 1986</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10225241/" target="_blank" rel="noopener" class="ref-link">Hillier et al. Hyponatremia correction factor for hyperglycemia. Am J Med 1999</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34609547/" target="_blank" rel="noopener" class="ref-link">SCOPE-DKA: Plasma-Lyte vs saline in severe DKA. ICM 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/33196806/" target="_blank" rel="noopener" class="ref-link">Self et al. Balanced crystalloids vs saline in DKA. JAMA Netw Open 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34711442/" target="_blank" rel="noopener" class="ref-link">Long et al. Alcoholic ketoacidosis. J Emerg Med 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16714496/" target="_blank" rel="noopener" class="ref-link">McGuire et al. Alcoholic ketoacidosis. Emerg Med J 2006</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/25001067/" target="_blank" rel="noopener" class="ref-link">Maehle et al. Metabolic alkalosis is the most common acid-base disorder in ICU. Crit Care 2014</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/32586924/" target="_blank" rel="noopener" class="ref-link">Emmett. Metabolic alkalosis: pathophysiologic review. CJASN 2020</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/35525634/" target="_blank" rel="noopener" class="ref-link">Vasquez & Soleimani. Metabolic alkalosis: core curriculum. AJKD 2022</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22223876/" target="_blank" rel="noopener" class="ref-link">Luke & Galla. Chloride depletion alkalosis, not contraction alkalosis. JASN 2012</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/15650864/" target="_blank" rel="noopener" class="ref-link">Giovannini et al. Exceptional nonfatal metabolic alkalosis. ICM 2005</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3116894/" target="_blank" rel="noopener" class="ref-link">Javaheri & Kazemi. Metabolic alkalosis and hypoventilation. Am Rev Respir Dis 1987</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/34798068/" target="_blank" rel="noopener" class="ref-link">Reincke et al. Primary aldosteronism. Lancet Diabetes Endocrinol 2021</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/4026498/" target="_blank" rel="noopener" class="ref-link">Whang et al. Mg depletion and refractory potassium depletion. Arch Intern Med 1985</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9420343/" target="_blank" rel="noopener" class="ref-link">Adrogué & Madias. Management of life-threatening acid-base disorders, part 2. NEJM 1998</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/3928258/" target="_blank" rel="noopener" class="ref-link">Brimioulle et al. Hydrochloric acid infusion for metabolic alkalosis. CCM 1985</a> ·
+    <a href="https://pubmed.ncbi.nlm.nih.gov/22385875/" target="_blank" rel="noopener" class="ref-link">Berend et al. Chloride: the queen of electrolytes? Eur J Intern Med 2012</a>
+  </footer>
+</div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/icu.js"></script>
+<script src="../js/acidbase.js"></script>
+<script>ICU.makeTabs('acidbase'); /* 分頁由 location.hash 決定，造句導覽的 parseTabs 也靠這一行認出本頁的分頁 */</script>
+<script src="../js/pull-to-refresh.js" defer></script>
+<!-- pwa-sw-register -->
+<script>
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (e) { console.warn('SW 註冊失敗:', e); });
+    });
+  }
+</script>
+</body>
+</html>

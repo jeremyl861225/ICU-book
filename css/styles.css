@@ -1,0 +1,750 @@
+  :root{
+    color-scheme: light dark;
+    /* ---- 色票（2026-09 換版）----------------------------------------
+       五色一組的暖色階：近黑 → 深梅 → 酒紅 → 緋紅 → 橘。
+       兩件事**照舊不動**：米白底（--paper／--sentence-bg）與虎鯨的顏色。
+       分工原則：**深色成員承載文字、亮色成員承載填色。**
+       這不是美感問題而是量出來的——緋紅在米白上只有 4.44、橘只有 2.15，
+       當內文都不到 AA 的 4.5；所以臨床語意色改用它們**加深後**的變體
+       （每一項都與換版前的對比等值或更好，沒有無障礙退步），
+       原色則留給燈號填色、圖磚與螢光筆。 */
+    --pal-ink:#1f1f1d; --pal-plum:#40263a; --pal-wine:#820b33;
+    --pal-crimson:#cb2e3e; --pal-orange:#ed893a;
+
+    --ink:#1f1f1d; --paper:#f4f2ec; --panel:#ffffff; --line:#d8d3c4;
+    --accent:#40263a; --accent-soft:#dbd5d3;
+    --accent2:#820b33; --accent2-soft:#e4d2d2;
+    --muted:#5b5a57; --muted-soft:#868582; --label-ink:#343431;
+    /* 手繪螢光筆：一道略帶傾斜、上下緣起伏的筆觸，起筆處疊一層（筆停頓的地方較深）、
+       下緣壓一條積墨。整段是內嵌 SVG，離線可用、不發請求；顏色烘在檔案裡，
+       所以亮暗兩套各有一份（要換螢光筆顏色就是換這兩行）。 */
+    /* ---- 菌譜的感受性階序（暗＝低感受性、亮＝最有效）----
+       使用者指定用色票本身的階序表達「這支藥對這隻菌有多好」：
+       深梅 → 酒紅 → 緋紅 → 橘。但徽章上的字只有 9.5px，緋紅在米白上 4.44、
+       橘只有 2.15，直接當字色兩個都不到 AA 的 4.5。所以：
+         · 緋紅那一級改用同色相的加深變體（6.43）；
+         · 最有效那一級改成**實心橘底 ＋ 墨字**（6.48）——它因此是整條階序裡
+           最亮、最突出的一顆，正是「最有效」該有的份量，而且合格。
+       明度是單調遞增的，所以「越亮＝越有效」這件事不靠色相也讀得出來。 */
+    --susc-1:#40263a; --susc-2:#820b33; --susc-3:#ab0027;
+    --susc-top:#ed893a; --susc-top-ink:#1f1f1d;
+    --hl-img-deep:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%2044%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.46%22%20d%3D%22M4.6%2013.2C38%208.4%2082%2011.2%20126%209.1C168%207.2%20204%2010.4%20232.2%208.6L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.1%22%20d%3D%22M3.8%2014.1C20%2011.2%2034%2012.6%2047%2011.3L51.4%2033.8C34%2035.6%2018%2034.1%202.6%2035.9Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.09%22%20d%3D%22M3.2%2031.4C48%2034.8%20118%2031.6%20168%2032.4C196%2032.9%20218%2031.2%20236.6%2027.4L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3C%2Fsvg%3E");
+    --hl-img:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%2044%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.34%22%20d%3D%22M4.6%2013.2C38%208.4%2082%2011.2%20126%209.1C168%207.2%20204%2010.4%20232.2%208.6L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.16%22%20d%3D%22M3.8%2014.1C20%2011.2%2034%2012.6%2047%2011.3L51.4%2033.8C34%2035.6%2018%2034.1%202.6%2035.9Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.13%22%20d%3D%22M3.2%2031.4C48%2034.8%20118%2031.6%20168%2032.4C196%2032.9%20218%2031.2%20236.6%2027.4L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3C%2Fsvg%3E");
+    --field-bg:#ffffff; --box-bg:#faf8f2; --hover-bg:#fbfaf6; --soft-bg:#eef4f5;
+    --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+    --serif:"Iowan Old Style","Georgia","Noto Serif TC",serif;
+    --sans:"Inter","Noto Sans TC",-apple-system,sans-serif;
+  }
+  /* 深色模式：依作業系統配色自動切換（iOS/Android/桌面皆適用） */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e7e4db; --paper:#14181b; --panel:#1e2429; --line:#39424a;
+      --accent:#af8fa6; --accent-soft:#2c202c;
+      --accent2:#eb7289; --accent2-soft:#421325;
+      --muted:#a4a49e; --muted-soft:#8a8a86; --label-ink:#cbc7be;
+      /* 暗色：同一條階序，改成在深底上單調變亮（4.98 / 6.52 / 8.83） */
+      --susc-1:#987c91; --susc-2:#e4788b; --susc-3:#ff9593;
+      --susc-top:#ed893a; --susc-top-ink:#0a1512;
+      --hl-img:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%2044%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.3%22%20d%3D%22M4.6%2013.2C38%208.4%2082%2011.2%20126%209.1C168%207.2%20204%2010.4%20232.2%208.6L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.14%22%20d%3D%22M3.8%2014.1C20%2011.2%2034%2012.6%2047%2011.3L51.4%2033.8C34%2035.6%2018%2034.1%202.6%2035.9Z%22%2F%3E%3Cpath%20fill%3D%22%23ed893a%22%20fill-opacity%3D%220.12%22%20d%3D%22M3.2%2031.4C48%2034.8%20118%2031.6%20168%2032.4C196%2032.9%20218%2031.2%20236.6%2027.4L237.4%2030.4C206%2036.6%20152%2033.0%20106%2035.7C64%2038.0%2028%2034.4%202.4%2036.3Z%22%2F%3E%3C%2Fsvg%3E");
+      --field-bg:#232b31; --box-bg:#222a2f; --hover-bg:#262e34; --soft-bg:#1b3037;
+    }
+    /* 「新增藥物」按鈕在淺色 accent 上改用深色文字以維持對比 */
+    .btn-add{color:#0e1417;}
+  }
+  /* 全站文字選取:亮色為金、暗色為青,與底色反白 */
+  ::selection{background:var(--pal-wine); color:#f4f2ec;}
+  @media (prefers-color-scheme: dark){
+    ::selection{background:var(--pal-orange); color:#14181b;}
+  }
+
+  *{box-sizing:border-box;}
+  /* 版面固定於裝置寬度：不以手指縮放（meta viewport 已鎖 scale，iOS Safari 另由
+     js/nav.js 擋掉雙指手勢）。此處負責兩件 CSS 才做得到的事：
+     manipulation 取消輕點兩下放大；text-size-adjust 阻止 iOS 橫放時自行放大字級。 */
+  html{touch-action:manipulation; -webkit-text-size-adjust:100%; text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.55; padding:20px 14px 60px;}
+  .sheet{max-width:820px; margin:0 auto;}
+  .view{display:none;}
+  .view.active{display:block;}
+
+  .app-header{border-bottom:2px solid var(--ink); padding-bottom:12px; margin-bottom:18px; display:flex; justify-content:space-between; align-items:flex-end;}
+  .eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);}
+  h1{font-family:var(--serif); font-size:25px; margin:4px 0 4px; font-weight:600;}
+  .sub{font-size:12.5px; color:var(--muted);}
+  .back-btn{font-family:var(--mono); font-size:12px; background:none; border:1px solid var(--line); padding:7px 12px; border-radius:2px; cursor:pointer; color:var(--ink); white-space:nowrap;}
+  /* 兩顆返回鍵直向堆疊（來源流程圖在上、主選單在下）；靠右對齊以貼齊 app-header 右緣 */
+  .back-stack{display:flex; flex-direction:column; gap:6px; align-items:flex-end;}
+  .back-btn:hover{background:var(--accent-soft);}
+  /* 由某頁連進來時自動長出的「返回來源頁」鍵（js/backlink.js 注入）：
+     以第二強調色與主選單鍵區隔，原本各頁是寫成 inline style，現統一於此。 */
+  .back-origin{border-color:var(--accent2); color:var(--accent2);}
+  .back-origin:hover{background:var(--accent2-soft);}
+
+  /* 返回首頁時，剛才所在的卡片短暫高亮（配合置中捲動） */
+  .tool-card.card-return{animation:cardReturn 1.6s ease-out;}
+  @keyframes cardReturn{
+    0%,55%{border-color:var(--accent); border-left-color:var(--accent); background:var(--accent-soft);}
+    100%{border-color:var(--line); border-left-color:var(--accent-soft); background:var(--panel);}
+  }
+  /* 圖磚沒有底色可漸變，改以金框脈動標示「剛才所在的入口」 */
+  .hub-card.card-return::after{animation:tileReturn 1.6s ease-out;}
+  @keyframes tileReturn{
+    0%,55%{border-color:var(--tile-accent); box-shadow:inset 0 0 0 2px rgba(237,137,58,.5);}
+    100%{border-color:transparent; box-shadow:none;}
+  }
+  .tool-card.deci-card.card-return{animation:cardReturnDeci 1.6s ease-out;}
+  @keyframes cardReturnDeci{
+    0%,55%{border-color:var(--accent2); border-left-color:var(--accent2); background:var(--accent2-soft);}
+    100%{border-color:var(--line); border-left-color:var(--accent2-soft); background:var(--panel);}
+  }
+
+  /* ---- 首頁頁首：標題與橫桿之間留一條空白帶給像素貓 ---- */
+  .home-header{display:block; padding-bottom:0; margin-bottom:22px;}
+  .home-header .eyebrow{letter-spacing:.2em; font-size:10.5px;}
+  .home-header h1{font-size:31px; letter-spacing:.06em; margin:6px 0 5px;}
+  .home-header .sub{font-family:var(--mono); font-size:11px; letter-spacing:.04em; color:var(--muted-soft);}
+  /* 兩段各自不斷行：窄螢幕只會斷在中間的分隔點，不會把日期切成兩行 */
+  .sub-part{white-space:nowrap;}
+  @media(max-width:560px){
+    .home-header .sub .sub-sep{display:none;}
+    .home-header .sub .sub-part{display:block;}
+  }
+  .cat-strip{height:51px; margin-top:6px; pointer-events:none;}
+  /* 整頁疊層：飼料要能落在圖卡與查詢欄上，故不能只蓋住頁首那一條。
+     必須是 absolute（隨文件被合成器原生捲動）而非 fixed：fixed 疊層得在 JS 裡
+     用 scrollY 補償捲動，但捲動在合成器執行緒、重繪在主執行緒，快速捲動時
+     重繪永遠慢半拍，貓會整隻「飛離」橫桿（手機動量捲動時最明顯）。
+     高度由 pixel-cat.js 依文件高度設定。 */
+  #cat-canvas{position:absolute; left:0; top:0; width:100%;
+              pointer-events:none; z-index:40; image-rendering:pixelated;}
+
+  /* ---- 全站查詢欄（單一樣式，各頁的查詢欄一律用這一組）----
+     結構固定為 .gs-field > .gs-icon + .gs-input + .gs-clear，行為由 js/searchbar.js 接線
+     （× 只在有字時出現）。工具列裡與晶片、按鈕同列者加 .gs-field--inline。
+     .gs-field .gs-input 用兩層選取器，才壓得過個別頁面自帶的 input[type=search] 規則。 */
+  .gs-box{margin:0 0 22px;}
+  .gs-box--tight{margin:0 0 11px;}   /* 下方緊接篩選晶片／方格時用 */
+  .gs-field{display:flex; align-items:center; gap:10px; background:var(--field-bg); border:1px solid var(--line); border-radius:2px; padding:0 13px;
+            transition:border-color .18s, box-shadow .18s;}
+  .gs-field:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
+  .gs-field--inline{flex:1; min-width:190px;}
+  .gs-icon{font-size:17px; color:var(--muted-soft); line-height:1; transition:color .18s; user-select:none;}
+  .gs-field:focus-within .gs-icon{color:var(--accent);}
+  .gs-field .gs-input{flex:1; border:0; outline:0; background:transparent; color:var(--ink); font-family:var(--sans); font-size:14px; padding:13px 0; min-width:0; border-radius:0;}
+  .gs-field--inline .gs-input{padding:10px 0;}
+  .gs-input::placeholder{color:var(--muted-soft); font-size:12.5px;}
+  .gs-input::-webkit-search-cancel-button{display:none;}
+  .gs-clear{border:0; background:transparent; color:var(--muted-soft); font-size:19px; line-height:1; padding:2px 4px; cursor:pointer;}
+  .gs-clear:hover{color:var(--accent2);}
+  .gs-clear[hidden]{display:none;}
+  .gs-results{margin-bottom:24px;}
+  .gs-count{font-family:var(--mono); font-size:10.5px; color:var(--muted-soft); margin:0 0 10px;}
+  .gs-group-head{display:flex; align-items:baseline; gap:8px; font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); border-bottom:1px solid var(--accent-soft); padding-bottom:4px; margin:16px 0 8px;}
+  .gs-group-head:first-of-type{margin-top:0;}
+  .gs-group-n{margin-left:auto; color:var(--muted-soft);}
+  .gs-item{display:block; text-decoration:none; color:inherit; background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent-soft); border-radius:2px; padding:9px 13px; margin-bottom:7px; transition:border-color .15s, background .15s;}
+  .gs-item:hover{border-color:var(--accent); border-left-color:var(--accent); background:var(--hover-bg);}
+  .gs-pathway, .gs-guide{border-left-color:var(--accent2-soft);}
+  .gs-pathway:hover, .gs-guide:hover{border-color:var(--accent2); border-left-color:var(--accent2);}
+  .gs-name{display:flex; align-items:baseline; gap:7px; flex-wrap:wrap; font-family:var(--serif); font-size:15px; font-weight:600;}
+  .gs-en{font-family:var(--mono); font-size:10.5px; color:var(--muted-soft); font-weight:400;}
+  .gs-sub{display:block; font-size:11.5px; color:var(--muted); margin-top:2px;}
+  /* 搜尋命中、內文的 <mark>、以及要刻意標重點的 .hl，一律走手繪螢光筆。
+     刻意**不**掛在 <b> 上：全站 <b> 有 19,058 個（臨床內文用它標關鍵詞），
+     螢光筆一旦變成常態就不再是強調。box-decoration-break:clone 讓換行的每一段
+     各自得到一筆，不會被拉成一條橫跨兩行的怪東西。 */
+  /* 建議處置是整條流程的答案，它裡面的粗體就是重點——除了粗體之外再上一筆螢光。
+     面板是深底，共用那支 0.34 的筆疊上去幾乎看不見，所以另給一支濃的（約 0.52）；
+     實測面板文字壓在螢光筆上仍有 4.9–6.5 的對比。rec-idle 是淺底，用一般那支。 */
+  .flow-rec b, .flow-rec strong{
+    background:var(--hl-img-deep) no-repeat center/100% 100%;
+    color:inherit; padding:.04em .26em; margin:0 -.10em;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  }
+  .flow-rec.rec-idle b, .flow-rec.rec-idle strong{ background-image:var(--hl-img); }
+
+  mark, strong, .gs-hl, .hl{
+    background:var(--hl-img) no-repeat center/100% 100%;
+    color:inherit; border-radius:0;
+    padding:.04em .26em; margin:0 -.10em;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  }
+  /* 頁面內文命中：名稱較輕、以命中片段為主體 */
+  .gs-text{border-left-color:var(--line);}
+  .gs-text .gs-name{font-size:13.5px; font-weight:500;}
+  .gs-nhit{margin-left:auto; font-family:var(--mono); font-size:10px; color:var(--muted-soft);}
+  .gs-snip{display:block; font-size:11.5px; line-height:1.65; color:var(--muted); margin-top:3px;}
+  .gs-pending{display:inline-block; margin-top:6px; font-family:var(--mono); font-size:10.5px; color:var(--muted-soft);}
+  .gs-empty{font-size:12.5px; color:var(--muted); background:var(--box-bg); border:1px dashed var(--line); border-radius:2px; padding:14px; text-align:center;}
+
+  /* ---- 回到最上面（右下角的上箭頭）----
+     由 js/searchbar.js 注入，只在捲離頁首之後才出現；框線與尺寸比照側欄的
+     三橫槓開合鍵（38×38、方角、1px 框），箭頭筆畫也用同樣的 1.5px。
+     底部再退 env(safe-area-inset-bottom)，iPhone 上不會被首頁指示條壓住。 */
+  .to-top{
+    position:fixed; right:16px; z-index:50;
+    bottom:calc(18px + env(safe-area-inset-bottom, 0px));
+    width:38px; height:38px; padding:0;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--panel); border:1px solid var(--line); border-radius:2px;
+    color:var(--ink); cursor:pointer;
+    transition:border-color .15s, background .15s, opacity .18s ease, transform .18s ease;
+  }
+  .to-top:hover{border-color:var(--accent); background:var(--hover-bg); color:var(--accent);}
+  .to-top:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  /* 收起時不用 display:none，否則沒有淡出；用 opacity＋pointer-events 讓它滑掉 */
+  .to-top[aria-hidden="true"]{opacity:0; transform:translateY(6px); pointer-events:none;}
+  @media (prefers-reduced-motion:reduce){ .to-top{transition:border-color .15s, background .15s;} }
+  @media print{ .to-top{display:none;} }
+
+  /* ---- 首頁六大類入口：標本方磚（與 tools/cancer.html 的癌別方磚同款）----
+     圖已離線處理成 640px 正方灰階（照片置中裁切、SOFA 表格補白邊全幅保留），
+     故一律 cover 不再裁切；亮色→淺灰版畫、暗色→深板岩反相，隨 OS 外觀切換。
+     變數scoped 在 .hub-grid：cancer-staging.css 有同名的 :root 變數，兩者互不載入同一頁，
+     但仍避免日後同頁載入時互相覆寫。 */
+  .hub-grid{
+    /* 電腦：四張方磚一行（滿版），兩張長方磚並排於第二列——急重症處置在左、
+       藥物資料庫在右，各佔兩欄；平板以下折成 2 欄，四張方磚 2×2，兩張長方磚
+       則改為上下各佔滿一整列（急重症處置在上）。版位以 grid-template-areas 明寫，
+       故 HTML 的順序不影響排版。
+       （2×2 若在電腦全寬呈現，820px 的正方形會高達 1600px，一屏塞不下，故仍限寬置中） */
+    display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:0 0 8px;
+    grid-template-areas:
+      "abd abx canc scor"
+      "crit crit drug drug";
+    --tile-bg:#e9e7e1;
+    --tile-label:#fdf8ee; --tile-label-soft:rgba(253,248,238,.86);
+    --tile-label-shadow:0 0 2px rgba(0,0,0,.95), 0 0 4px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.85), 0 0 9px rgba(0,0,0,.6);
+    --tile-accent:var(--pal-orange);
+    --plate-filter:url(#plate-duo) brightness(1) contrast(1.02);
+    --plate-filter-hover:url(#plate-duo) brightness(1.04) contrast(1.03);
+    /* 比癌別方磚(.12)壓得深：那些是白底版畫，這裡是照片，且有藥錠、表格等亮底 */
+    --scrim:rgba(18,14,10,.3);
+    --scrim-hover:rgba(18,14,10,.2);
+  }
+  @media (prefers-color-scheme:dark){
+    .hub-grid{
+      --tile-bg:#262b2f;
+      --tile-label:#eaf4fb; --tile-label-soft:rgba(234,244,251,.82);
+      --tile-label-shadow:0 0 2px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.7), 0 0 10px rgba(0,0,0,.35);
+      --tile-accent:var(--pal-orange);
+      --plate-filter:url(#plate-cyano) brightness(1) contrast(1.06);
+      --plate-filter-hover:url(#plate-cyano) brightness(1.08) contrast(1.08);
+      --scrim:radial-gradient(ellipse 68% 42% at 50% 50%, rgba(6,10,14,.5), rgba(6,10,14,.2) 70%, rgba(6,10,14,.06) 100%);
+      --scrim-hover:radial-gradient(ellipse 66% 40% at 50% 50%, rgba(6,10,14,.42), rgba(6,10,14,.15) 72%, rgba(6,10,14,.04) 100%);
+    }
+  }
+  @media(max-width:720px){
+    .hub-grid{
+      grid-template-columns:1fr 1fr; gap:10px; max-width:560px; margin-inline:auto;
+      grid-template-areas:
+        "abd abx"
+        "canc scor"
+        "crit crit"
+        "drug drug";
+    }
+  }
+  .hub-abd{grid-area:abd;} .hub-abx{grid-area:abx;} .hub-crit{grid-area:crit;}
+  .hub-canc{grid-area:canc;} .hub-scor{grid-area:scor;} .hub-drug{grid-area:drug;}
+  .hub-card{
+    /* 字級跟著方磚寬度走：一行四張(≈192px)與 2×2(≈275px)共用一組規則 */
+    container-type:inline-size;
+    position:relative; aspect-ratio:1; overflow:hidden; display:block;
+    background:var(--tile-bg); border:0; border-radius:2px; padding:0;
+    text-decoration:none; color:var(--tile-label); cursor:pointer;
+  }
+  .hub-card .hub-img{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; filter:var(--plate-filter);
+    transition:transform .6s cubic-bezier(.16,1,.3,1), filter .5s;
+    /* 強制每張圖各自成一個合成層（translateZ(0)）。SVG 參考濾鏡（url(#plate-duo)）
+       由多張圖共用時，Chromium 常隨機讓其中幾張整片不上色、只剩底色。
+       will-change 只是提示、仍會漏；實測唯有「真的套上」translateZ(0) 才每張穩定。
+       故 hover 與 reduced-motion 也一律帶著 translateZ(0)，合成層自始至終不掉，
+       否則濾鏡會在 transform 歸零那一刻重新搶畫、灰磚回來。 */
+    transform:translateZ(0);
+  }
+  .hub-card .hub-scrim{position:absolute; inset:0; pointer-events:none; background:var(--scrim); transition:background .5s;}
+  .hub-card .hub-label{
+    position:absolute; inset:0; z-index:2;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:7px; text-align:center; padding:10px;
+  }
+  /* letter-spacing 會在最後一字右側多留一格，令視覺重心左偏；
+     以等量 text-indent 補回，兩者必須同步修改，否則字就不置中了。 */
+  .hub-card .hub-zh{
+    font-family:var(--serif); font-size:clamp(24px,5.6vw,38px); font-weight:500;
+    letter-spacing:.34em; text-indent:.34em; line-height:1.2; text-align:center;
+    color:var(--tile-label); text-shadow:var(--tile-label-shadow);
+  }
+  .hub-card .hub-en{
+    font-family:var(--sans); font-size:clamp(10px,1.9vw,14px); font-weight:400;
+    letter-spacing:.16em; text-indent:.16em; line-height:1.4; max-width:96%; text-align:center;
+    color:var(--tile-label-soft); text-shadow:var(--tile-label-shadow);
+  }
+  @supports (font-size:1cqw){
+    .hub-card .hub-zh{font-size:clamp(22px,17cqw,40px);}
+    .hub-card .hub-en{font-size:clamp(9.5px,6.2cqw,14px);}
+  }
+  /* 懸停：圖微放大提亮、壓暗減弱、浮現細金框 */
+  .hub-card::after{
+    content:""; position:absolute; inset:0; z-index:3; pointer-events:none;
+    border:1px solid transparent; transition:border-color .4s, box-shadow .4s;
+  }
+  .hub-card:hover .hub-img, .hub-card:focus-visible .hub-img{ transform:scale(1.04) translateZ(0); filter:var(--plate-filter-hover); }
+  .hub-card:hover .hub-scrim, .hub-card:focus-visible .hub-scrim{ background:var(--scrim-hover); }
+  .hub-card:hover::after{ border-color:var(--tile-accent); box-shadow:inset 0 0 0 1px rgba(237,137,58,.24); }
+  .hub-card:focus-visible{ outline:none; }
+  .hub-card:focus-visible::after{ border-color:var(--tile-accent); box-shadow:0 0 0 2px rgba(237,137,58,.5); }
+  @media (prefers-reduced-motion:reduce){
+    .hub-card .hub-img, .hub-card .hub-scrim, .hub-card::after{transition:none;}
+    .hub-card:hover .hub-img, .hub-card:focus-visible .hub-img{transform:translateZ(0);}
+  }
+
+  /* ---- 長方磚（急重症處置／藥物資料庫）----
+     跨兩欄，故中文不拆上下兩半、改為單行加英文副標。
+     電腦並排、手機上下排，但兩種版位下長方磚都正好是「2 張方磚＋1 道 gap」寬
+     （≈2.06 倍方磚寬），故高度與字級不必分版位：一律 3.4:1、cqw 係數取方磚的
+     一半（17→8.25、6.2→3），上下限照抄方磚，算出來的字級即與方磚同大。
+     不支援容器查詢時兩者都吃 vw，本來就同大小，無須另寫。 */
+  .hub-card--wide{aspect-ratio:3.4/1;}
+  @supports (font-size:1cqw){
+    .hub-card--wide .hub-zh{font-size:clamp(22px,8.25cqw,40px);}
+    .hub-card--wide .hub-en{font-size:clamp(9.5px,3cqw,14px);}
+  }
+
+  /* ---- 尚未配圖的方磚 ----
+     沒有 .hub-img 時只剩底色，原本那層給照片用的壓暗不足以讓白字站得住，
+     故底色壓深一階、壓暗層加重（含 hover，否則 hover 反而變得更難讀）。
+     六張方磚目前都已配圖，此組規則留給下一張新磚過渡期用：
+     掛上 .hub-card--nopic 即可，補圖後拿掉。 */
+  .hub-card--nopic{--tile-bg:#a8a49b;}
+  .hub-card--nopic .hub-scrim{background:rgba(18,14,10,.42);}
+  .hub-card--nopic:hover .hub-scrim, .hub-card--nopic:focus-visible .hub-scrim{background:rgba(18,14,10,.32);}
+  @media (prefers-color-scheme:dark){
+    .hub-card--nopic{--tile-bg:#39424a;}
+    .hub-card--nopic .hub-scrim{background:rgba(6,10,14,.34);}
+    .hub-card--nopic:hover .hub-scrim, .hub-card--nopic:focus-visible .hub-scrim{background:rgba(6,10,14,.24);}
+  }
+
+  /* ---- 首頁分類頁（腹部急症／急重症處置／計分工具）----
+     這幾類沒有各自的 .html，是首頁裡的區塊；展開時把主頁的標題、查詢欄與像素貓
+     收起來，只留分類自己的 .app-header，看起來就與癌症／抗生素等獨立頁一致。
+     只收主頁那一顆查詢欄（#gs-home），分類自己的查詢欄（如計分工具）不受影響。 */
+  body.sec-open .home-header,
+  body.sec-open #gs-home,
+  body.sec-open #cat-canvas{display:none;}
+
+  .tool-group{margin-bottom:24px;}
+  .group-head{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap; margin:0 0 10px; padding-bottom:5px; border-bottom:2px solid var(--accent-soft);}
+  .group-title{font-family:var(--serif); font-size:17px; font-weight:600; color:var(--accent);}
+  .group-en{font-family:var(--mono); font-size:10px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted-soft);}
+  .group-count{margin-left:auto; font-family:var(--mono); font-size:10.5px; color:var(--muted-soft);}
+  .home-list{display:flex; flex-direction:column; gap:10px;}
+  .tool-card{background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent-soft); border-radius:2px; padding:13px 16px; cursor:pointer; transition:border-color .15s, background .15s;}
+  .tool-card:hover{border-color:var(--accent); border-left-color:var(--accent); background:var(--hover-bg);}
+  .tool-name{font-family:var(--serif); font-size:17px; font-weight:600; margin:0 0 3px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .tool-en{font-family:var(--mono); font-size:11px; color:var(--muted-soft); font-weight:400;}
+  .tool-desc{font-size:12px; color:var(--muted); margin-top:2px;}
+  .tool-sig{font-size:11.5px; color:var(--accent2); margin-top:6px; padding-top:6px; border-top:1px dashed var(--line); font-weight:500;}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:16px 18px; margin-bottom:14px;}
+  .section-title{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:20px 0 8px; border-bottom:2px solid var(--accent-soft); padding-bottom:4px;}
+  .organ-head{display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--accent-soft); padding-bottom:6px; margin-bottom:10px;}
+  .organ-name{font-family:var(--serif); font-size:16.5px; font-weight:600;}
+  .organ-en{font-family:var(--mono); font-size:11px; color:var(--muted-soft); margin-left:6px;}
+  .organ-score{font-family:var(--mono); font-size:19px; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:14px; padding:2px 12px;}
+  .field-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:6px 0;}
+  .field-row label{font-size:13.5px; min-width:140px; color:var(--label-ink);}
+  input[type=number]{width:110px; padding:7px 9px; border:1px solid var(--line); border-radius:2px; font-family:var(--mono); font-size:14.5px; background:var(--field-bg); color:var(--ink);}
+  select{padding:7px 9px; border:1px solid var(--line); border-radius:2px; background:var(--field-bg); color:var(--ink); font-size:13.5px; font-family:var(--sans); max-width:100%;}
+  .unit{font-family:var(--mono); font-size:12px; color:var(--muted-soft);}
+  .note{font-size:11.5px; color:var(--muted-soft); margin-top:4px;}
+  .toggle-inline{display:flex; align-items:center; gap:6px; font-size:13px; cursor:pointer;}
+  .toggle-inline input{width:15px; height:15px; accent-color:var(--accent); flex-shrink:0;}
+  label.item{display:flex; align-items:center; flex-wrap:wrap; gap:5px 9px; padding:6px 2px; cursor:pointer; font-size:14px;}
+  label.item:hover{background:var(--hover-bg);}
+  label.item input{margin-top:2px; accent-color:var(--accent2); width:16px; height:16px; flex-shrink:0;}
+  /* 長條目：label.item 是 flex 容器，直接放在裡面的裸文字會成為一個匿名 flex item，
+     文字一長就整段被擠到勾選框的下一行。把文字（含其後的 .unit）包進 .it-t，
+     使其成為可佔滿剩餘寬度並自行折行的單一 flex item，即可與勾選框對齊。
+     短條目不需要，維持原本寫法即可。 */
+  label.item>.it-t{flex:1 1 0; min-width:0;}
+  /* 條目的採計標準：放在名稱底下自成一行，而不是塞進 .unit 的括號裡——
+     標準一長，括號會把整列撐成三四行、勾選框與文字也對不齊。 */
+  label.item .it-def{display:block; margin-top:3px; font-size:11.5px; line-height:1.6; color:var(--muted); font-weight:400;}
+
+  label.item:has(>.it-t){align-items:flex-start;}
+  label.item:has(>.it-t)>input{margin-top:4px;}
+  .pt-badge{margin-left:auto; flex-shrink:0; font-family:var(--mono); font-size:11px; font-weight:700; color:var(--accent2); background:var(--accent2-soft); border-radius:10px; padding:2px 8px; white-space:nowrap;}
+  /* 含分數 badge 之欄位列：label 與 badge（靠最右）固定同一行，select 排至下一行
+     （所有寬度一致；避免長選單將 badge 擠到獨立一行） */
+  .field-row.scored-row label{order:0;}
+  .field-row.scored-row .pt-badge{order:1; margin-left:auto;}
+  .field-row.scored-row select{order:2; flex-basis:100%;}
+  .exclusive-note{font-size:11.5px; color:var(--accent2); font-family:var(--mono); margin-top:4px;}
+
+  /* Accordion / info-box */
+  details.info-box{margin-top:6px; margin-bottom:2px;}
+  details.info-box summary{cursor:pointer; font-family:var(--mono); font-size:11.5px; color:var(--accent); list-style:none; user-select:none;}
+  details.info-box summary::-webkit-details-marker{display:none;}
+  details.info-box summary::marker{content:'';}
+  details.info-box summary:before{content:'▸ 查看評分區間 '; }
+  details.info-box[open] summary:before{content:'▾ 查看評分區間 ';}
+  details.info-box.en summary:before{content:'▸ View scoring bands ';}
+  details.info-box.en[open] summary:before{content:'▾ View scoring bands ';}
+  details.info-box .box-inner{background:var(--box-bg); border:1px solid var(--line); border-radius:2px; padding:8px 10px; margin-top:5px;}
+  table.score-ref{width:100%; border-collapse:collapse; font-size:12px;}
+  table.score-ref td{padding:3px 4px; border-bottom:1px solid var(--line);}
+  table.score-ref td:first-child{font-family:var(--mono); white-space:nowrap; color:var(--muted);}
+  table.score-ref td:last-child{font-family:var(--mono); font-weight:700; color:var(--accent2); text-align:right;}
+
+  /* 卡片內的純參考條列（非互動，不可勾選）：用於「照錄指引原表」這類清單。
+     加 .cols 時於寬螢幕分兩欄，避免數十項的長清單獨占一整屏。 */
+  .plain-list{margin:4px 0 0; padding-left:16px; font-size:13px; line-height:1.7;}
+  .plain-list li{margin:2px 0;}
+  @media(min-width:640px){
+    .plain-list.cols{column-count:2; column-gap:24px;}
+    .plain-list.cols li{break-inside:avoid;}
+  }
+
+  /* 導言框（.lede）：分頁最上方那段「先讀這個」——版本提醒、最初數小時、使用前必讀。
+     刻意與 .card 不同：紙色底而非白卡，讓它與下方的互動卡片分層；內文用 --ink 正常
+     字色（早期版本誤用 .note 的 --muted-soft 灰，把整頁最重要的一段做成最不顯眼的
+     一段）。①②③ 用 .lede-item 懸吊對齊，續行不再回到行首；補充說明用 .lede-foot
+     收在虛線下，取代原本內嵌的 <span class="note">。 */
+  .lede{background:var(--box-bg); border:1px solid var(--line); border-left:3px solid var(--accent2); border-radius:2px; padding:14px 16px 13px; margin-bottom:14px;}
+  .lede-title{font-family:var(--mono); font-size:11.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent2); font-weight:700; margin-bottom:9px;}
+  .lede-body{font-size:13.5px; line-height:1.8; color:var(--ink);}
+  .lede-body>p{margin:0 0 6px;}
+  .lede-body>p:last-child{margin-bottom:0;}
+  .lede-item{display:grid; grid-template-columns:1.5em 1fr; margin:0 0 5px;}
+  .lede-item>span:first-child{font-family:var(--mono); font-weight:700; color:var(--accent2);}
+  .lede-foot{margin-top:9px; padding-top:8px; border-top:1px dashed var(--line); font-size:12px; line-height:1.7; color:var(--muted);}
+
+  details.def-box{margin:8px 0;}
+  details.def-box summary{cursor:pointer; font-family:var(--mono); font-size:12px; color:var(--accent); list-style:none; font-weight:700;}
+  details.def-box summary::-webkit-details-marker{display:none;}
+  details.def-box summary::marker{content:'';}
+  details.def-box summary:before{content:'▸ ';}
+  details.def-box[open] summary:before{content:'▾ ';}
+  details.def-box .box-inner{background:var(--box-bg); border:1px solid var(--line); border-radius:2px; padding:10px 12px; margin-top:6px; font-size:12.5px; line-height:1.7;}
+  details.def-box .box-inner ul{margin:4px 0; padding-left:18px;}
+  /* 「・」條列的懸掛縮排：點凸出、續行文字對齊到點之後（提升 def-box／note 內
+     全形點條列的層次清晰度）。用於 <div class="dot-line">・…</div>。 */
+  .dot-line{padding-left:1.3em; text-indent:-1.3em;}
+  /* def-box 內的多欄對照表（分級／分類）。score-ref 是「數值→分數」兩欄專用，
+     這裡需要具表頭、可換行的一般表格。 */
+  table.def-table{width:100%; border-collapse:collapse; font-size:12px; margin:6px 0 8px;}
+  table.def-table th,table.def-table td{border-bottom:1px solid var(--line); padding:4px 6px; text-align:left; vertical-align:top;}
+  table.def-table th{font-family:var(--mono); font-size:11px; color:var(--accent); white-space:nowrap;}
+  table.def-table td:first-child{font-family:var(--mono); white-space:nowrap; color:var(--accent2); font-weight:700;}
+  /* .dt-pair：左右兩組欄位其實是同一序列的前後段（如 PEEP/FiO₂ 對照表），第 3 欄的鍵值要與第 1 欄同樣式 */
+  table.def-table.dt-pair td:nth-child(3){font-family:var(--mono); white-space:nowrap; color:var(--accent2); font-weight:700;}
+  table.def-table tr.dt-warn td{color:var(--accent2);}
+
+  /* Drug calculator */
+  .drug-calc{background:var(--soft-bg); border:1px solid var(--accent-soft); border-radius:2px; padding:12px 14px; margin-top:10px;}
+  .drug-calc-title{font-family:var(--mono); font-size:12px; color:var(--accent); font-weight:700; margin-bottom:8px;}
+  .drug-row-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
+  @media(max-width:480px){ .drug-row-grid{grid-template-columns:1fr;} }
+  .drug-out{margin-top:10px; padding:10px; background:#132126; color:#fff; border-radius:2px; font-family:var(--mono); font-size:16px; text-align:center;}
+  .vaso-row{background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:12px 14px; margin-bottom:10px; position:relative;}
+  .vaso-remove{position:absolute; top:8px; right:8px; background:none; border:none; color:var(--accent2); font-size:18px; cursor:pointer; line-height:1;}
+  .vaso-dose-out{font-family:var(--mono); font-size:13px; color:var(--accent); margin-top:6px; background:var(--accent-soft); border-radius:2px; padding:4px 8px; display:inline-block;}
+  .btn-add{background:var(--accent); color:#fff; border:none; font-family:var(--mono); font-size:12.5px; padding:9px 16px; border-radius:2px; cursor:pointer;}
+  .btn-add:hover{opacity:.88;}
+
+  /* Result panel */
+  .result{background:#132126; color:#f4f2ec; padding:22px; border-radius:2px; margin-top:16px;}
+  .result-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:14px; margin-bottom:14px;}
+  .metric-label{font-family:var(--mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:#9fb3ae; margin-bottom:3px;}
+  .metric-value{font-family:var(--serif); font-size:32px; color:#fff; font-weight:600;}
+  .metric-value.big{font-size:44px;}
+/* ── §A → css/styles.css（新增，不取代 .metric-value.big 的 44px）───────── */
+
+.result-grid > * { container-type: inline-size; }
+
+.metric-value.big.is-text {
+  /* 上限 44px＝正式版 .metric-value.big 的固定字級。不可寫 68px：補了 container-type
+     之後 1280px 的 tools/aas.html 欄寬 405px，17cqw 會算到 64.8px，判讀就比總分（44px）
+     還大，剛好把「畫面上最大的東西是臨床數值」弄反。實測踩過一次。 */
+  font-size: clamp(22px, 17cqw, 44px);
+  line-height: 1.15;
+  overflow-wrap: break-word;
+}
+  /* .result 面板恆為深色，故以下色值與該面板同組，不走亮/暗色 token。 */
+  .result-headline{font-family:var(--serif); font-size:18px; color:#fff; font-weight:600; margin-top:2px;}
+  .result-body{font-size:13.5px; line-height:1.75; color:#e4e0d4; margin-top:5px;}
+  .result-notes{margin:9px 0 0; padding-left:16px; font-size:12.5px; line-height:1.7; color:#c9c4b4;}
+  .result-notes li{margin:5px 0;}
+  /* 判讀句：結果面板裡「這個分數代表什麼」的那一段。
+     原本各頁自行寫 inline font-size，全站散出 14／15／19／24／26／32px 六種寫法，
+     同一種資訊在不同工具之間忽大忽小；一律改用本類別。 */
+  .result-interp{font-size:15px; line-height:1.7; color:#f4f2ec; margin-top:2px;}
+  .result-interp b{color:#fff;}
+
+  /* 風險分級徽章：低→高共 b0–b3。
+     這組色碼原本被複製到 15 個以上的頁面各自命名（.bm-band、.ni-band、.vt-band…），
+     改一處就得記得改其餘十幾處；統一收在此。
+     位於恆深色的 .result 面板內，故不走亮/暗色 token（與上方註解同理）。 */
+  .risk-band{display:inline-block; font-family:var(--mono); font-size:11px; letter-spacing:.04em;
+             padding:3px 9px; border-radius:2px; white-space:nowrap;}
+  .risk-band.b0{color:#cfe6d8; background:#1b3d2e; border:1px solid #356b4f;}
+  .risk-band.b1{color:#d8e4c4; background:#2f3d1b; border:1px solid #5c6b35;}
+  .risk-band.b2{color:#f0dcb4; background:#4a3a15; border:1px solid #7d6426;}
+  .risk-band.b3{color:#f0c9c0; background:#4a1d15; border:1px solid #7d3626;}
+  table.ref{width:100%; border-collapse:collapse; font-size:12px; margin-top:8px;}
+  table.ref th,table.ref td{border-bottom:1px solid #2a3a3a; padding:5px 6px; text-align:left; color:#c9c4b4;}
+  table.ref th{color:#fff; font-family:var(--mono); font-size:11px;}
+  /* 標出病人目前落點的那一列（底色沿用 .breakdown 的深色格） */
+  table.ref tr.ref-current td{color:#fff; font-weight:700; background:#1f2e2e;}
+  .risk-note{font-size:12px; color:#c9c4b4; margin-top:12px; border-top:1px solid #2a3a3a; padding-top:10px;}
+  .breakdown{display:grid; grid-template-columns:repeat(3,1fr); gap:8px; font-family:var(--mono); font-size:12px; color:#c9c4b4; margin-bottom:14px;}
+  .breakdown div{background:#1f2e2e; padding:6px 8px; border-radius:2px;}
+  .breakdown b{color:#fff; font-size:14px;}
+
+  /* MELD field layout — label 與輸入框同行，減少篇幅 */
+  .meld-field{margin-bottom:9px;}
+  .meld-field .mf-label{display:inline-block; width:120px; font-size:13.5px; color:var(--label-ink); font-weight:600; vertical-align:middle;}
+  .meld-field .mf-inputwrap{display:inline-flex; align-items:center; gap:10px; vertical-align:middle;}
+  .meld-field input, .meld-field select{max-width:130px;}
+  .meld-field .mf-note{display:block; font-size:11.5px; color:var(--muted-soft); font-family:var(--mono); margin-top:2px; margin-left:120px;}
+  .meld-field .toggle-inline{margin-top:5px; margin-left:120px;}
+
+  /* 壓縮 SOFA / APACHE II 卡片篇幅 */
+  #view-sofa .card, #view-apache .card{padding:11px 14px; margin-bottom:9px;}
+  #view-sofa .organ-head, #view-apache .organ-head{margin-bottom:7px; padding-bottom:5px;}
+  #view-sofa .field-row, #view-apache .field-row{margin:4px 0;}
+
+  /* Formula box */
+  .formula-box{background:#0e1a1d; border:1px solid #2a3a3a; border-radius:4px; padding:18px; margin-top:8px;}
+  .formula-title{font-family:var(--mono); font-size:11px; color:#9fb3ae; text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px;}
+  .formula-list{display:flex; flex-direction:column; gap:4px;}
+  .formula-term{font-family:var(--mono); font-size:13px; color:#e8e4d8; display:flex; align-items:baseline; gap:8px;}
+  .formula-term .fop{color:#6b8f8a; width:14px; flex-shrink:0; text-align:center;}
+  .formula-term .fcoef{color:#f0a875; font-weight:700; min-width:44px; display:inline-block; text-align:right;}
+  .formula-term .fvar{color:#c9d8d6;}
+  .formula-result{margin-top:10px; padding-top:10px; border-top:1px dashed #2a3a3a; font-family:var(--mono); font-size:13px; color:#fff;}
+
+  .btn-reset{background:none; border:1px solid var(--line); color:var(--ink); font-family:var(--mono); font-size:12px; padding:8px 14px; border-radius:2px; cursor:pointer;}
+  .btn-reset:hover{background:var(--accent-soft);}
+  footer.tool-footer{margin-top:16px; font-size:11px; color:var(--muted-soft); font-family:var(--mono); line-height:1.7;}
+
+  /* ---- 分級清單 Graded reference list（緊急手術分級） ---- */
+  /* 級別配色：紫→紅→橘→黃→灰，實心底、深淺色模式共用；
+     黃底與白字對比不足，第四級改用深色字 */
+  .lv1{background:#6b3fa0;} .lv2{background:#b02a1f;} .lv3{background:#b25c0e;}
+  .lv4{background:#e0b020;} .lv5{background:#6a6a66;}
+
+  .lv-legend{display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:6px;}
+  .lv-chip{display:flex; flex-direction:column; gap:2px; text-align:left; border:1px solid var(--line); background:var(--field-bg); color:var(--ink); border-radius:2px; padding:8px 10px; cursor:pointer; font-family:var(--sans); font-size:12.5px; line-height:1.4;}
+  .lv-chip:hover{background:var(--hover-bg);}
+  .lv-chip.selected{border-color:var(--accent); background:var(--accent-soft);}
+  .lv-chip .lv-name{font-weight:600;}
+  .lv-chip .lv-wait{font-family:var(--mono); font-size:11px; color:var(--muted);}
+  .lv-chip .lv-badge{align-self:flex-start; margin-bottom:2px;}
+
+  .lv-badge{display:inline-block; flex-shrink:0; font-family:var(--mono); font-size:10px; font-weight:700; letter-spacing:.04em; color:#fff; border-radius:2px; padding:2px 6px; white-space:nowrap;}
+  .lv-badge.lv4{color:#1a1a16;}   /* 黃底白字對比不足，改深色字 */
+
+  .dept-block{background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:12px 14px; margin-bottom:8px;}
+  .dept-head{display:flex; align-items:baseline; gap:8px; border-bottom:1px solid var(--line); padding-bottom:6px; margin-bottom:6px;}
+  .dept-name{font-family:var(--serif); font-size:15px; font-weight:600;}
+  .dept-en{font-family:var(--mono); font-size:10.5px; color:var(--muted-soft); text-transform:uppercase; letter-spacing:.04em;}
+  .dept-n{margin-left:auto; font-family:var(--mono); font-size:10.5px; color:var(--muted-soft);}
+  .op-item{display:flex; gap:9px; align-items:flex-start; padding:5px 0; border-bottom:1px dotted var(--line); font-size:13px; line-height:1.55;}
+  .op-item:last-child{border-bottom:0;}
+  .op-item .lv-badge{margin-top:2px;}
+  .op-note{display:block; font-size:11.5px; color:var(--muted); margin-top:2px;}
+  .op-hl{background:var(--accent-soft); border-radius:2px;}
+  .list-empty{font-size:12.5px; color:var(--muted-soft); text-align:center; padding:18px 0;}
+
+  /* ---- 臨床決策流程 Decision pathways ---- */
+  .home-divider{text-align:center; font-family:var(--mono); font-size:11px; letter-spacing:.1em; color:var(--muted-soft); text-transform:uppercase; margin:4px 0 20px; display:flex; align-items:center; gap:12px;}
+  .home-divider:before,.home-divider:after{content:""; flex:1; height:1px; background:var(--line);}
+  .deci-group .group-head{border-bottom-color:var(--accent2-soft);}
+  .deci-group .group-title{color:var(--accent2);}
+  .deci-card{border-left:3px solid var(--accent2);}
+  .deci-card:hover{border-color:var(--accent2); border-left-color:var(--accent2);}
+  .deci-tag{font-family:var(--mono); font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent2); background:var(--accent2-soft); border-radius:8px; padding:1px 7px; vertical-align:middle;}
+
+  .flow-step{background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:14px 16px; margin-bottom:4px;}
+  .flow-step-head{display:flex; align-items:center; gap:9px; margin-bottom:10px;}
+  .flow-num{flex-shrink:0; width:23px; height:23px; border-radius:50%; background:var(--accent); color:#fff; font-family:var(--mono); font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .flow-q{font-family:var(--serif); font-size:15.5px; font-weight:600; color:var(--ink);}
+  .flow-opts{display:flex; flex-direction:column; gap:8px;}
+  .flow-opt{display:block; width:100%; text-align:left; background:var(--field-bg); border:1px solid var(--line); border-radius:2px; padding:10px 12px; cursor:pointer; font-family:var(--sans); font-size:13.5px; line-height:1.5; color:var(--ink); transition:border-color .15s, background .15s;}
+  .flow-opt:hover{border-color:var(--accent);}
+  .flow-opt.selected{border-color:var(--accent); background:var(--accent-soft); font-weight:600;}
+  .flow-opt .fo-sub{display:block; font-size:11.5px; color:var(--muted-soft); font-weight:400; margin-top:3px;}
+  .flow-opt.selected .fo-sub{color:var(--muted);}
+  .flow-connector{text-align:center; color:var(--accent); font-size:17px; line-height:1; margin:16px 0;}
+  .flow-step{margin-bottom:0;}
+  .flow-step.hidden,.flow-connector.hidden,.hidden{display:none;}
+  .flow-link{display:inline-block; margin-top:9px; font-family:var(--mono); font-size:12px; color:var(--accent); background:none; border:1px dashed var(--accent-soft); border-radius:2px; padding:5px 10px; cursor:pointer;}
+  .flow-link:hover{border-color:var(--accent); background:var(--accent-soft);}
+  /* 2026-09-06：連到計分工具／別頁的鍵統一用「→ 」當記號（原本各頁自己放 🧮🔗🧭 等 emoji，設計規範列為反面參照） */
+  .flow-link::before{content:'→ '; opacity:.7;}
+  /* SOFA 藥物流速換算器的摺疊標題（原本寫在 inline style）*/
+  .drug-calc-details > summary{cursor:pointer; font-family:var(--mono); font-size:12.5px; color:var(--accent); font-weight:700; margin-top:10px; list-style:none;}
+  .drug-calc-details > summary::-webkit-details-marker{display:none;}
+  /* .flow-link 的 display 與上方 .hidden 同特異度且排在後面，會蓋掉 .hidden；
+     可切換顯示的 flow-link 必須靠這條才藏得住（僅加 class 不會生效）。 */
+  .flow-link.hidden{display:none;}
+  /* 等寬工具類：供說明區之 ※ 註腳與行內代碼使用（顏色沿用所在容器） */
+  .mono{font-family:var(--mono);}
+  /* 行內計算機連結：以 currentColor 上色，故淺色說明區與深色建議卡皆可用 */
+  a.tool-link{font-family:var(--mono); font-size:11.5px; color:inherit; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px;}
+  a.tool-link:hover{text-decoration-style:solid;}
+  /* 適應症徽章：同上以 currentColor 描邊，供流程圖框列具名適應症 */
+  .ind-badge{display:inline-block; font-family:var(--mono); font-size:11px; font-weight:700; line-height:1.6;
+    border:1px solid currentColor; border-radius:10px; padding:1px 9px; margin:3px 5px 0 0; max-width:100%; opacity:.92;}
+
+  .flow-rec{border-radius:2px; padding:18px 20px; margin-top:14px; border:1px solid var(--line);}
+  .flow-rec.rec-idle{background:var(--box-bg);}
+  .flow-rec.rec-elective{background:#123028; color:#eef6f2; border:none;}
+  .flow-rec.rec-urgent{background:#3a0007; color:#fdeee9; border:none;}
+  .flow-rec.rec-nonop{background:#1b1b19; color:#eef4f2; border:none;}
+  .flow-rec.rec-blue{background:#251421; color:#e9f1f8; border:none;}
+  .flow-rec .rec-label{font-family:var(--mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; opacity:.8; margin-bottom:5px;}
+  .flow-rec .rec-title{font-family:var(--serif); font-size:20px; font-weight:600; margin-bottom:4px; line-height:1.3;}
+  .flow-rec .rec-detail{margin:8px 0 0; padding-left:18px; font-size:13px; line-height:1.75;}
+  .flow-rec .rec-detail li{margin:2px 0;}
+  /* 證據／論文引述：與臨床建議同層但降一階，供流程圖在建議項下補充試驗數據與正反立場 */
+  .flow-rec .rec-detail li.ev{font-size:11.5px; line-height:1.65; opacity:.82; margin:3px 0 5px;}
+  .flow-rec .rec-detail li.ev::marker{font-size:9px;}
+  /* 建議卡內的小標題（局部處置／腋下／輔助治療）。與建議條列同在一個 ul，
+     但不掛點點、並向左退回容器的 padding，讀起來才是標題而不是又一條建議。 */
+  .flow-rec .rec-detail li.hd{list-style:none; margin:13px 0 3px -18px;}
+  .flow-rec .rec-detail li.hd:first-child{margin-top:0;}
+  /* 標題底下的子條列（例如「這四種情況要做 SLNB」）：縮一階、字級降半級 */
+  .flow-rec .rec-detail ul.rec-sub{margin:3px 0 4px; padding-left:17px; list-style:disc; font-size:12.5px;}
+  .flow-rec .rec-detail ul.rec-sub li{margin:3px 0;}
+  /* 空的建議框佔位（「請完成上方步驟」）不顯示 —— 由 cancer-staging.js 的
+     sweepIdlePlaceholders() 掛上，讓建議框只在真的有建議時才出現。 */
+  .flow-rec.rec-idle.idle-hidden{display:none;}
+  .flow-rec .rec-note{margin-top:11px; padding-top:9px; border-top:1px solid rgba(180,180,180,.28); font-size:11.5px; opacity:.9; line-height:1.6;}
+  .flow-rec.rec-idle .rec-title{color:var(--muted); font-size:15px; font-family:var(--sans); font-weight:600;}
+  .flow-rec.rec-idle .rec-label,.flow-rec.rec-idle .rec-note{color:var(--muted-soft);}
+  .flow-reset{margin-top:12px; display:flex; justify-content:flex-end;}
+
+  /* ---- multi-page additions ---- */
+  footer.tool-footer a.ref-link{color:var(--accent); text-decoration:underline; text-underline-offset:2px;}
+  footer.tool-footer a.ref-link:hover{color:var(--accent2);}
+
+  /* ---- 分頁列 tab-row —— 一頁內切換多個區塊（分類與分級系統頁）。
+     外觀沿用抗生素指引的分頁列，但改為可換行：分頁數多於三、四個時，
+     手機上等分會壓成看不懂的兩個字，故改以換行處理。 ---- */
+  .tab-row{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; border-bottom:2px solid var(--accent-soft);}
+  .tab-btn{font-family:var(--mono); font-size:12.5px; background:none; border:1px solid var(--line); border-bottom:none;
+           padding:9px 13px; border-radius:4px 4px 0 0; cursor:pointer; color:var(--muted); position:relative; top:2px;}
+  .tab-btn:hover{background:var(--hover-bg); color:var(--ink);}
+  .tab-btn.active{color:var(--accent); background:var(--accent-soft); border-color:var(--accent-soft); font-weight:700;}
+  @media(max-width:520px){ .tab-btn{padding:8px 9px; font-size:11.5px;} }
+  /* 分級內容本體：與 details.def-box .box-inner 同一套字級與行高。
+     這些卡片不是收合區塊，套不到那條選擇器，若不另給就會落回 body 的字級，
+     整段變成一大片同樣大小的字、看不出層次。 */
+  .sys-body{font-size:12.5px; line-height:1.7;}
+  .sys-body table.def-table{margin:8px 0 10px;}
+  /* 一套分級底下的小節（診斷準則／嚴重度／引流時機…）：比 .sys-head 低一階，
+     讓一張卡片裡的數張表格分得出各自在講什麼 */
+  .sys-sub{font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--accent);
+           margin:14px 0 4px; padding-bottom:3px; border-bottom:1px solid var(--accent-soft);}
+  /* 段落之間的呼吸：各級／各型之間本來只靠 <br><br>，字級縮小後會擠在一起 */
+  .sys-body .lv{display:block; margin-top:10px;}
+  .sys-body .lv:first-child{margin-top:0;}
+  /* 附註／原文歧義／版本說明：降一階，與判定準則本身分得開 */
+  .sys-caveat{display:block; font-family:var(--mono); font-size:11px; line-height:1.65;
+              color:var(--muted); margin-top:8px;}
+
+  /* 分級系統之間的分隔標題：一個分頁裡通常放好幾套分類，需要看得出邊界 */
+  .sys-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; margin:26px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line);}
+  .sys-head:first-child{margin-top:2px;}
+  .sys-name{font-family:var(--serif); font-size:18px; font-weight:600; color:var(--ink);}
+  .sys-en{font-family:var(--mono); font-size:11.5px; color:var(--muted-soft);}
+  .sys-src{font-family:var(--mono); font-size:11px; color:var(--accent); margin-left:auto;}
+  /* 由深層連結（#sys=）跳進來時短暫標示，否則捲到定位後看不出停在哪一套 */
+  .sys-head.sys-hit{background:var(--accent-soft); animation:sysFade 2.4s ease forwards;}
+  @keyframes sysFade{0%,55%{background:var(--accent-soft);} 100%{background:transparent;}}
+
+  /* ================================================================
+   * 動態系統 Motion（全站共用層，兩套主題都吃這一段）
+   * ================================================================
+   * DESIGN.md 原本只有三句話：快 180ms、慢 260ms、緩動 cubic-bezier(.22,.61,.36,1)，
+   * 而且「動畫只用於狀態回饋，不用於入場或裝飾」。這一段把那三句話變成真的能用的一層。
+   *
+   * 一條貫穿全站的比喻——**上墨**：
+   *   新出現的資訊不是滑進來、也不是淡進來，是**沿著閱讀方向被畫上去**的。
+   *   句子裡的詞由左而右上墨、流程圖的下一步由上而下上墨、改變的數字亮一道螢光。
+   *   這是骨白紙上的墨字這套語言自己的動法，不是借來的介面慣例。
+   *
+   * 三條界線（照 DESIGN.md 的既有規則推出來，不是憑感覺）：
+   *   1. **不做位移、不做投影。**「平的規則」說表面永遠是平的，要浮起來只能換邊框
+   *      粗細或底色階。所以全段沒有任何 translate／scale／box-shadow 當層次用；
+   *      唯一的 inset box-shadow 是按壓回饋，那是**狀態訊號**（DESIGN.md 允許的那一類）。
+   *   2. **不做入場。** 捲到哪裡就淡出一塊，是裝飾不是回饋，全站不做。
+   *   3. **收起一律比展開快。** 使用者已經知道要收起來了，不必再看一次過程。
+   */
+  :root{
+    --mo-tap:110ms;    /* 按下的當下 */
+    --mo-fast:180ms;   /* 一般狀態切換 */
+    --mo-slow:260ms;   /* 上墨、展開、換版 */
+    --mo-exit:140ms;   /* 收起 */
+    --mo-ease:cubic-bezier(.22,.61,.36,1);
+  }
+
+  /* ---------------- 按下 ----------------
+     手機沒有 hover，所以在觸控上，全站 119 頁按下任何東西都沒有回應——這是原本
+     最大的一個洞。回饋刻意用**中性灰的 inset 填色**而不是主題色：這一段是共用層，
+     兩套主題的色票不同，用 --hover-bg 之類的正式版變數會把正式版的暖白帶進造句設計
+     （兩套主題不得互相污染）。中性灰在骨白與深墨底上都成立，而且 .sc-x:hover
+     本來就是用 rgba(128,128,128,…)，不是新發明的手法。
+     刻意不加 transition：按壓要當下就有，而且共用層若在這些元素上宣告 transition，
+     會整條蓋掉它們各自原有的 transition 清單（CSS 沒有可疊加的寫法）。 */
+  button:active,
+  summary:active,
+  .tool-card:active,
+  .gs-item:active,
+  label.item:active,
+  .flow-opt:active,
+  .flow-link:active,
+  .back-btn:active,
+  .back-origin:active{ box-shadow:inset 0 0 0 999px rgba(128,128,128,.14); }
+  /* 方磚有底圖與遮罩，蓋一層灰會把圖弄髒；改成沿用它自己既有的 hover 表現。 */
+  .hub-card:active{ box-shadow:none; }
+  .hub-card:active .hub-scrim{ background:var(--scrim-hover); }
+
+  /* ---------------- 展開層 ----------------
+     PRODUCT.md 的第一條原則是「答案先出來，細節收在後面」，所以 <details> 是全站
+     最常被打開的東西。::details-content 是漸進增強：瀏覽器不支援時就是現在的即時展開，
+     不會壞掉。只做開、不做關——收起要快，而且使用者已經知道自己收了什麼。 */
+  @supports selector(::details-content){
+    details[open]::details-content{ animation:mo-ink-down var(--mo-slow) var(--mo-ease); }
+  }
+
+  /* ---------------- 決策流程（37 條共用 js/common.js 的 flowShow／flowRec） ----------------
+     下一步是「上一個選擇造成的結果」，它出現的時候要看得出因果，否則畫面只是突然變長。
+     由上而下上墨＝順著流程往下走的方向。版面空間是即時就位的（display 一換就佔位），
+     動的只有內容的裁切，所以不會有東西被推著跑。 */
+  .flow-step.flow-revealed{ animation:mo-ink-down var(--mo-slow) var(--mo-ease); }
+  /* 建議處置是整頁的答案。標籤→標題→細節→附註依序上墨，讀起來像被寫下來；
+     總長 290ms，最後一行也只晚 110ms，不會擋到讀。 */
+  .flow-rec.rec-landed .rec-label { animation:mo-ink-in var(--mo-fast) var(--mo-ease) both; }
+  .flow-rec.rec-landed .rec-title { animation:mo-ink-in var(--mo-fast) var(--mo-ease) 40ms both; }
+  .flow-rec.rec-landed .rec-detail{ animation:mo-ink-in var(--mo-fast) var(--mo-ease) 80ms both; }
+  .flow-rec.rec-landed .rec-note  { animation:mo-ink-in var(--mo-fast) var(--mo-ease) 110ms both; }
+
+  @keyframes mo-ink-down{ from{clip-path:inset(0 0 100% 0);} to{clip-path:inset(0 0 0 0);} }
+  @keyframes mo-ink-in{ from{opacity:0;} to{opacity:1;} }
+
+  /* 關掉動態效果時：不做上墨（那是位移型的揭露），但**保留**按下的回饋與依序出現的
+     節奏感——animate 的規範是「減少位移、不是把回饋一起關掉」。答案仍然要看得出剛換過。 */
+  @media (prefers-reduced-motion:reduce){
+    @supports selector(::details-content){ details[open]::details-content{ animation:none; } }
+    .flow-step.flow-revealed{ animation:mo-ink-in var(--mo-fast) var(--mo-ease); }
+    .flow-rec.rec-landed .rec-label,
+    .flow-rec.rec-landed .rec-title,
+    .flow-rec.rec-landed .rec-detail,
+    .flow-rec.rec-landed .rec-note{ animation-delay:0s; }
+  }
