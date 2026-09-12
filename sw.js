@@ -19,6 +19,7 @@ const PRECACHE_URLS = [
   './js/pull-to-refresh.js',
   './js/icu.js',
   './js/backlink.js',
+  './js/searchbar.js',
   './js/sentence-nav.js',
   './data/facets.js',
   './js/shock.js',
