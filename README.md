@@ -8,8 +8,9 @@
 - `css/styles.css`、`ui-sentence.css`、`guide.css`、`js/ui-mode.js`、`common.js`、`pull-to-refresh.js`、`backlink.js`、`icons/` 是 Clinical-Tools 的逐字副本；本套自己的只有 `css/icu.css`、`js/icu.js`、`js/<k>.js`、`data/facets.js`、`sections/`。
 - 一個 Section 頁在 `facets.js` 登錄成「頁面本身 ＋ 各章 `#hash` 深層連結」，句子才收斂得到章；章的 c 詞各自掛，共通的 a 詞掛在頁面那筆。
 - 內容規則：不搬原書文字與圖表，數字以原書為準；作者觀點（A Final Word）在重點卡尾端標 `.kc-tags > .dg-tag`「作者觀點」，原書疑似誤植處放 `.kbox.alert`（標題「原文疑義」），抽出時截斷的表格用 `.note` 註明「依內文重建」，台大在地備註放 `.kbox`。
+- **可讀性（2026-09-12 使用者：讀者沒讀過原書，要把這個 app 當教材）**：每章 `.lede` 的三句話上方加一段 `.lede-intro` 導讀（白話講主題、核心概念、為什麼重要，名詞第一次出現要解釋）；每張重點卡是 `.kp`（一句完整主張，粗體）＋ `.kx`（3–5 句解說：先結論、再機制或理由、再數字怎麼用），既有的 `<ul>` 條列保留不動；`chapters.html` 每一章附一到兩句 `.ch-desc`。改寫一律**數字守恆**——原本 `.kp` 那行的每個數字都必須留在新的主張或解說裡。工作腳本在 `workspace/work/icu-book-enrich/`（`extract.py` 抽卡片與原文、`inject.py` 把代理交回的 `<k>.json` 灌回頁面並逐卡檢查數字，`PROMPT.md` 是給代理的規格）。
 
-## 進度（2026-09-06：全書完成）
+## 進度（2026-09-12：全書完成、全書內容加厚）
 
 | k | Section | 分頁（`data-panel`） | 計算器／流程／題 |
 |---|---|---|---|
@@ -41,6 +42,7 @@
 4. 登錄：`data/facets.js`（c／a 新詞＋頁面與各章 tools 條目）、`sw.js` 兩行、`index.html` 卡片去 `.soon` 加 onclick 與計數、`sentence-nav.js` 的 `TAB_PAGES`。
 5. 檢查：標籤配對、js 引用的 id 都存在、錨點、onclick 函式、跨頁 `other.html#tab` 的 panel 存在、`data-ct` 目標在 Clinical-Tools 存在。
 6. 瀏覽器：清 SW 與 caches、`fetch(f,{cache:'reload'})`、JS 灌值核對計算、點流程、數題、375px 溢出、console。
+7. 內容加厚：`workspace/work/icu-book-enrich/extract.py <k>` 產出 `<k>.cards.txt`（現有卡片）與 `<k>.book.txt`（原書該幾章全文）→ 背景代理照 `PROMPT.md` 寫 `<k>.json` → `inject.py <k>` 灌回並檢查數字守恆 → 瀏覽器複驗。**`extract.py` 的章名對照要記得 `html.unescape`**（`&amp;` 會讓 alias 對不上，第 35 章曾因此整章沒有原文可讀）。
 
 ## 匯入 Clinical-Tools 時
 
