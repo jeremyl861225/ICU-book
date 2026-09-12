@@ -52,6 +52,7 @@
     <div class="ch-nav sp-chips"><a class="sp-chip" href="#ox/ox-key"><i>01</i>重點卡</a><a class="sp-chip" href="#ox/ox-tab"><i>02</i>對照表</a><a class="sp-chip" href="#ox/ox-calc"><i>03</i>計算</a><a class="sp-chip" href="#ox/ox-flow"><i>04</i>流程</a><a class="sp-chip" href="#ox/ox-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#ox/ox-x"><i>06</i>相關工具</a></div>
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">這一章講兩種靠「光」做的非侵入連續監測。血氧測定（oximetry）利用不同型態血紅素吸光模式不同，以 660 與 940 nm 兩個波長分辨 HbO₂（氧合血紅素）與 Hb（去氧血紅素）；脈搏血氧只取隨動脈搏動變化的訊號，算出 SpO₂（脈搏血氧飽和度）作為 SaO₂（動脈血氧飽和度）的替代值。要會用它，得知道它的盲點：不認得一氧化碳血紅素與變性血紅素、深膚色會高估、單次誤差 3–4%，而且 SpO₂ 正常不等於組織有氧——加上靜脈血氧 SvO₂ 做「雙重血氧」才看得到氧萃取。二氧化碳測定（capnography）用紅外線量呼氣的 CO₂，畫成四相波形；呼氣末的 PETCO₂ 同時反映通氣、把 CO₂ 帶到肺的血流量與死腔，因此在程序鎮靜、插管確認、CPR 預後與呼吸器調整各有用處。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>脈搏血氧只看搏動的那一部分光</b>，所以量到的是動脈；它不認得 COHb 與 metHb、在深膚色會高估、單次誤差 3–4%。</span></div>
         <div class="lede-item"><span>②</span><span><b>SpO₂ 說不出組織氧合，SpO₂ − SvO₂ 可以</b>：這個差 ≈ 氧萃取率，≥50% 就是有氧代謝受威脅，也是輸血指標。</span></div>
@@ -61,34 +62,34 @@
     <div class="dirhead" id="ox-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="ox-kc">全部展開</button></div>
     <div id="ox-kc">
       <details class="def-box"><summary>01 · 光與血紅素：脈搏血氧的原理 <span class="en">Pulse oximetry</span></summary>
-        <div class="box-inner"><p class="kp"><b>660 nm（紅）HbO₂ 吸收少、940 nm（紅外）HbO₂ 吸收多；只分析隨動脈搏動變化的光，就排除了靜脈與組織。</b></p>
+        <div class="box-inner"><p class="kp"><b>脈搏血氧用 660 與 940 nm 兩個波長分辨氧合與去氧血紅素，只分析隨脈搏變化的光。</b></p><p class="kx">每種血紅素構形吸光的模式不同：在 660 nm 的紅光區，HbO₂（氧合血紅素）比 Hb（去氧血紅素）吸得少，所以動脈血比較鮮紅；到 940 nm 的紅外光區則反過來，HbO₂ 吸得多。用這兩個波長的透光比例就能算出氧合血紅素占的比例。第二個關鍵是「脈搏」：動脈在收縮期充血，透過的光會週期性變弱，儀器只取這段隨搏動起伏的訊號來分析，靜脈血、皮膚色素、組織厚度這些不搏動的成分就被自動扣掉——這正是早年耳垂血氧做不到的事。SpO₂ 就是這樣算出來的動脈血氧飽和度估計值。</p>
           <ul><li>1940 年代耳垂血氧因皮膚色素、組織厚度與動靜脈不分而失敗；1970 年代脈搏血氧解決了它。</li><li>SpO₂ ＝ HbO₂ / (Hb ＋ HbO₂) × 100。</li></ul></div></details>
       <details class="def-box"><summary>02 · 指尖 vs 額頭 <span class="en">Fingertip vs forehead</span></summary>
-        <div class="box-inner"><p class="kp"><b>低血壓或周邊血管收縮時指尖不可靠，額頭（內頸動脈供應）反射式較不受影響；要配彈性頭帶壓掉靜脈搏動。</b></p>
+        <div class="box-inner"><p class="kp"><b>低血壓或周邊血管收縮時指尖讀不到，改用額頭反射式探頭；但要用彈性頭帶壓掉靜脈搏動。</b></p><p class="kx">指尖探頭靠「透射」：光從一側穿過手指到另一側；休克、升壓劑或低溫時指端血管收縮，搏動訊號太弱，SpO₂ 會讀不到或不準。額頭的動脈來自內頸動脈，較不受周邊血管收縮影響，所以是備用位置。額頭沒有對側可穿透，改用「反射式」：發光二極體與偵測器並排，讀從皮下動脈反射回來的光。缺點是額頭靜脈搏動也明顯，會被誤認成動脈而讀出假性偏低的值，因此探頭要放在眉毛上方並用彈性頭帶固定加壓，把靜脈搏動壓掉。</p>
           <ul><li>正壓通氣時額頭靜脈搏動明顯，會被誤讀成動脈。智慧手錶用的也是反射式。</li></ul></div></details>
       <details class="def-box"><summary>03 · CO-oximetry：SpO₂ 看不到的兩種血紅素 <span class="en">COHb · metHb</span></summary>
-        <div class="box-inner"><p class="kp"><b>標準脈搏血氧不偵測 COHb 與 metHb；一氧化碳中毒與變性血紅素血症時 SpO₂ 高估 SaO₂。</b></p>
+        <div class="box-inner"><p class="kp"><b>標準脈搏血氧看不到 COHb 與 metHb，一氧化碳中毒與變性血紅素血症時 SpO₂ 會高估 SaO₂。</b></p><p class="kx">COHb（一氧化碳血紅素）與 metHb（變性血紅素）都不能載氧，它們升高時真正的 SaO₂（動脈血氧飽和度）會下降，因為 HbO₂ 占總血紅素的比例變小了。但脈搏血氧只用兩個波長，只分得出 HbO₂ 和 Hb，這兩種異常血紅素對 SpO₂ 幾乎沒影響，結果就是 SpO₂ 看起來正常、病人其實在缺氧。所以懷疑一氧化碳中毒或變性血紅素血症時，不能靠 SpO₂ 排除，要抽動脈血送檢驗室做完整的 CO-oximetry（多波長血氧分析）。</p>
           <ul><li>正常兩者合計 <5%。實驗室 CO-oximeter 用到 8 個波長、需動脈血；攜帶型 pulse CO-oximeter 準確度不一致。</li></ul></div></details>
       <details class="def-box"><summary>04 · 準確度與膚色 <span class="en">Accuracy</span></summary>
-        <div class="box-inner"><p class="kp"><b>單次 3–4%、連續 2–3%；SpO₂ 通常高於 SaO₂，深膚色多高估 1–3%。</b></p>
+        <div class="box-inner"><p class="kp"><b>SpO₂ 單次誤差 3–4%、連續 2–3%，通常高於 SaO₂，深膚色再多高估 1–3%。</b></p><p class="kx">SpO₂ 是估計值，不是動脈血實測值。單次讀值與 SaO₂ 的誤差約 3–4%，連續監測因為看趨勢可到 2–3%；所以讀值上下 1–2% 的變動沒有意義。SpO₂ 系統性地比 SaO₂ 高一點，原因之一是血中本來就有少量 COHb 與 metHb 沒被算進去。深膚色病人的高估更明顯，再多 1–3%，臨床後果就是「隱藏的低血氧」——儀器顯示安全、動脈血其實已經低於門檻——在黑人與西語裔更常見。這些差異是單一時間點記錄的，臨床意義還不完全清楚，但提醒我們：SpO₂ 在邊緣值時要抽血氣確認。</p>
           <ul><li>88,000 組配對：未偵測低血氧（SaO₂ <88% 而 SpO₂ ≥92%）黑人 6.9%、西語裔 6.0%、白人與亞裔 4.9%。</li><li>SpO₂ 變化 3–4% 才算顯著。</li></ul></div></details>
       <details class="def-box"><summary>05 · SpO₂ 的用法與目標 <span class="en">Applications</span></summary>
-        <div class="box-inner"><p class="kp"><b>CaO₂ ＝ 1.34 × Hb × SaO₂（15 g/dL、98% → 19.7 mL/dL）；目標 SpO₂ 90–94%，高碳酸呼吸衰竭 88–92%。</b></p>
+        <div class="box-inner"><p class="kp"><b>SpO₂ 只是 CaO₂ 的一個因子；氧療目標 90–94%，高碳酸呼吸衰竭 88–92%。</b></p><p class="kx">SpO₂ 是 SaO₂ 的替代值，而 SaO₂ 只是動脈血氧含量 CaO₂ 的三個決定因子之一：CaO₂ ＝ 1.34 × Hb × SaO₂，1.34 是每公克血紅素能結合的氧 mL 數，Hb 單位 g/dL，SaO₂ 用小數。健康成人 Hb 15 g/dL、SaO₂ 98% 算出 19.7 mL/dL。這個式子提醒你：SpO₂ 正常不代表血氧含量夠，貧血病人 SpO₂ 可以 100% 卻嚴重缺氧。氧療目標依現行指引是 SpO₂ 90–94%，多數病人不需要更高；高碳酸呼吸衰竭（如 COPD）改用 88–92%，避免高氧壓掉呼吸驅動與惡化通氣血流配比。</p>
           <ul><li>ICU 與手術室是病人安全要件，問題不是要不要用，是怎麼用。</li></ul></div></details>
       <details class="def-box"><summary>06 · 靜脈血氧與雙重血氧 <span class="en">Venous &amp; dual oximetry</span></summary>
-        <div class="box-inner"><p class="kp"><b>SvO₂ ＝ 1 − VO₂/DO₂，正常 70–75%；SpO₂ − SvO₂ ≈ 氧萃取，>25% DO₂ 相對不足、≥50% 威脅有氧代謝。</b></p>
+        <div class="box-inner"><p class="kp"><b>SvO₂ 正常 70–75%；SpO₂ − SvO₂ ≈ 氧萃取，&gt;25% 供氧不足、≥50% 威脅有氧代謝。</b></p><p class="kx">SvO₂（混合靜脈血氧飽和度，肺動脈血）是全身靜脈血的平均，反映氧輸送 DO₂ 與氧消耗 VO₂ 的平衡：SvO₂ ＝ 1 − VO₂/DO₂，正常 70–75%；下降就是供氧相對於消耗不夠了。光纖 oximetry 導管用反射式原理連續量測。「雙重血氧」再把 SpO₂ 加進來，SpO₂ − SvO₂ 差值約等於微血管的氧萃取率：DO₂ 因心輸出量、貧血或低血氧開始下降時，組織先多抽一點氧來守住 VO₂，差值從約 25% 線性升到約 50%；超過 50% 萃取已經加不上去，代表氧限制的代謝要開始了。所以 &gt;25% 代表 DO₂ 相對不足但還撐得住，≥50% 就是威脅。</p>
           <ul><li>光纖 oximetry 導管每 5 秒更新；PA 導管型準確 1–2%；穩定病人幾小時內 SvO₂ 自然波動 5–6% → <b>變化 >5% 且持續 >10 分鐘</b>才顯著。</li><li>ScvO₂（上腔靜脈）健康時略低於 SvO₂，休克時反而較高（腦血流相對保留）；單次可差 10%、多次在 5% 內 → 看趨勢。</li><li>SpO₂ − SvO₂ ≥50% 是驗證過的輸血指標。</li></ul></div></details>
       <details class="def-box"><summary>07 · 紅外線 capnography 與 capnogram 四相 <span class="en">Capnography</span></summary>
-        <div class="box-inner"><p class="kp"><b>I 解剖死腔（幾乎無 CO₂）→ II 上升（COPD 上升慢＝肺泡死腔多）→ III 平台 → IV 吸氣。</b></p>
+        <div class="box-inner"><p class="kp"><b>Capnogram 四相：I 死腔無 CO₂、II 上升、III 平台、IV 吸氣；II 相升得慢＝肺泡死腔多。</b></p><p class="kx">紅外線 capnography 利用 CO₂ 吸收紅外光的特性：探頭發出連續紅外光束穿過呼吸氣體，對側快速反應的偵測器算出每次呼氣中 PCO₂ 的變化，畫成 capnogram（二氧化碳波形圖）。第 I 相是呼氣最開始，吐出的是解剖死腔（氣道）裡的氣體，幾乎沒有 CO₂；第 II 相 CO₂ 迅速上升，通氣與灌流配比良好的正常肺上升得快，COPD 之類肺泡死腔多的病（那些肺泡 PCO₂ 低）上升就慢；第 III 相是平台，代表肺泡排空達穩定狀態，平台末的值就是 PETCO₂（呼氣末 CO₂）；第 IV 相是吸氣開始，曲線掉回零。</p>
           <ul><li>探頭放在呼吸器與病人之間；非插管病人有鼻管型探頭。比色偵測只做定性（插管確認）。</li></ul></div></details>
       <details class="def-box"><summary>08 · PETCO₂ 的四個用途 <span class="en">Applications of capnography</span></summary>
-        <div class="box-inner"><p class="kp"><b>程序鎮靜、插管確認、心輸出量／CPR、PaCO₂ − PETCO₂ 差。</b></p>
+        <div class="box-inner"><p class="kp"><b>PETCO₂ 四個用途：鎮靜早期警訊、插管確認、心輸出量與 CPR 預後、PaCO₂ − PETCO₂ 差。</b></p><p class="kx">四個用途各自靠一個生理原理。鎮靜造成低通氣時 CO₂ 先累積，所以 PETCO₂ 上升會比 SpO₂ 下降更早出現，抓的是「還沒缺氧的低通氣」。插管確認靠的是「只有氣管才會持續吐出 CO₂」，比色偵測器與紅外線偵測都行，比聽診可靠。PETCO₂ 又和把 CO₂ 送到肺的血流量相關，所以心輸出量急降它就跟著掉，可用來看容積負荷的反應與 CPR 的效果。最後，健康肺的 PETCO₂ 接近 PaCO₂，任何讓肺泡「有通氣沒灌流」（死腔）的病都會讓 PETCO₂ 掉到 PaCO₂ 之下，兩者差距可以追蹤病程，也能幫忙找呼吸器的最適潮氣量。</p>
           <ul><li><b>程序鎮靜</b>：低通氣先升 PETCO₂ 後降 SpO₂；高齡、肥胖、睡眠呼吸中止、慢性 CO₂ 滯留風險最高；所有程序鎮靜都建議。</li>
             <li><b>插管確認</b>：未察覺食道插管每 18 次緊急插管 1 次；聽診不可靠；心跳停止時氣管內也可能無 CO₂。</li>
             <li><b>心輸出量</b>：PETCO₂ 與 CO 變化相關，可預測呼吸器病人的液體反應性（自主呼吸健康人不行）；<b>CPR 20 分鐘後 ≤10 mmHg → ROSC 機會低</b>。</li>
             <li><b>PaCO₂ − PETCO₂</b>：健康肺接近；死腔增加（肺炎、COPD、肺水腫、PE、CO 急降、管路漏氣、過度充氣）→ PETCO₂ 偏低；可用來找最適潮氣量。PETCO₂ > PaCO₂：高代謝、代謝性酸中毒、高氧。</li></ul></div></details>
       <details class="def-box"><summary>09 · 作者觀點：填補 PA 導管退場後的空缺 <span class="en">A Final Word</span></summary>
-        <div class="box-inner"><p class="kp"><b>SpO₂ 本身說不出組織氧合，雙重血氧可以；PETCO₂ 可以抓心輸出量的急變、也是 CPR 預後的利器。</b></p></div></details>
+        <div class="box-inner"><p class="kp"><b>作者主張：PA 導管退場後留下的組織氧合空缺，可由雙重血氧與 PETCO₂ 部分補上。</b></p><p class="kx">這是作者 Marino 的主張。PA 導管（肺動脈導管）使用量大減後，床邊少了評估組織灌流與氧合的工具，本章的兩項技術正好能填補一部分。單看 SpO₂ 只知道動脈血氧飽和度，對組織有沒有拿到夠多的氧一無所知；把 SvO₂ 或 ScvO₂ 一起監測（雙重血氧），SpO₂ − SvO₂ 的差值就能反映氧萃取有沒有被逼到極限。PETCO₂ 則因為和把 CO₂ 帶到肺的血流量掛鉤，能即時抓到心輸出量的急遽變化，並且在 CPR 中是預測能否恢復自發循環的有力指標。</p></div></details>
     </div>
     <div class="dirhead" id="ox-tab"><span class="dh-n">對照表</span><span class="dh-e">Tables, redrawn</span></div>
     <div class="tw"><table class="def-table">
@@ -142,6 +143,7 @@
     <div class="ch-nav sp-chips"><a class="sp-chip" href="#pac/pa-key"><i>01</i>重點卡</a><a class="sp-chip" href="#pac/pa-tab"><i>02</i>對照表</a><a class="sp-chip" href="#pac/pa-calc"><i>03</i>計算</a><a class="sp-chip" href="#pac/pa-flow"><i>04</i>流程</a><a class="sp-chip" href="#pac/pa-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#pac/pa-x"><i>06</i>相關工具</a></div>
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">PA 導管（肺動脈導管，Swan-Ganz 導管）1970 年問世，靠尖端氣球隨血流漂進肺動脈，床邊就能做右心導管，一次拿到 CVP、肺動脈壓、wedge 壓、熱稀釋心輸出量與混合靜脈血氧。本章先教你從壓力波形認出導管走到哪，再解釋 wedge（楔壓）的原理：氣球阻斷血流後尖端到左心房是靜止血柱，所以 wedge ＝ 左心房壓 ＝ 左心室舒張末壓，前提是呼氣末、微血管壓高於肺泡壓、二尖瓣正常；同時提醒 wedge 不是微血管靜水壓，正常的 wedge 排除不了靜水壓性肺水腫。接著是熱稀釋心輸出量的做法與誤差、十個參數的正常範圍與適應症。二十一世紀初一批研究說它不改善存活，用量因此掉了 70%；作者認為這是冤枉——監測工具不該用死亡率評分。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>Wedge 壓＝左房壓＝左心室舒張末壓，前提有五個</b>：血流停止、微血管壓高於肺泡壓、呼氣末、無肺高壓、二尖瓣正常。</span></div>
         <div class="lede-item"><span>②</span><span><b>熱稀釋是床邊心輸出量的黃金標準</b>，但三次差 ≤10% 才可信、變化 >10% 才顯著；三尖瓣逆流與分流會騙它。</span></div>
@@ -151,30 +153,30 @@
     <div class="dirhead" id="pa-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pa-kc">全部展開</button></div>
     <div id="pa-kc">
       <details class="def-box"><summary>01 · 導管本體 <span class="en">The catheter</span></summary>
-        <div class="box-inner"><p class="kp"><b>110 cm、2.3 mm（約 7 Fr）；遠端 PA 腔、近端 RA 腔在尖端後 30 cm；1.5 mL 氣球；thermistor 近尖端。</b></p>
+        <div class="box-inner"><p class="kp"><b>PA 導管 110 cm、約 7 Fr，遠端 PA 腔在尖端、近端 RA 腔後退 30 cm，尖端有 1.5 mL 氣球。</b></p><p class="kx">1970 年問世的 PA 導管（肺動脈導管，Swan-Ganz 導管）核心設計是尖端那顆 1.5 mL 的氣球：充飽後靜脈血流會像載著內胎順流而下一樣，把導管帶過右心進到肺動脈，床邊就能做右心導管而不需要透視。導管長 110 cm、外徑 2.3 mm，約 7 Fr。兩個內腔：遠端腔開口在尖端，用來量肺動脈壓與 wedge 壓、也可抽混合靜脈血；近端腔開口在尖端後方 30 cm，正確放置時落在右心房，量 CVP 並打熱稀釋的冷液。尖端附近的 thermistor（溫度感測器）記錄冷液流過造成的血溫變化，就是熱稀釋心輸出量的依據。</p>
           <ul><li>經 8–9 Fr introducer 從鎖骨下或內頸靜脈進；氣球充飽時把尖端包住，避免刮血管壁。</li></ul></div></details>
       <details class="def-box"><summary>02 · 放置：靠壓力波形認位置 <span class="en">Placement &amp; waveforms</span></summary>
-        <div class="box-inner"><p class="kp"><b>SVC 小振幅靜脈波（＝CVP）→ RV 搏動波（舒張壓＝RA 壓）→ PA 舒張壓突升、收縮壓不變 → 搏動消失＝wedge（正常＝PA 舒張壓）。</b></p>
+        <div class="box-inner"><p class="kp"><b>放置靠壓力波形認位置：靜脈波（SVC）→ 搏動波（RV）→ 舒張壓突升（PA）→ 搏動消失（wedge）。</b></p><p class="kx">導管經 introducer 進入上腔靜脈後接上壓力轉換器，一路看波形前進。上腔靜脈是小振幅的靜脈波，這個壓力等於右心房平均壓，也就是 CVP。過三尖瓣進右心室，出現大幅搏動波：收縮壓反映右心室收縮力，舒張壓等於右心房壓。過肺動脈瓣進肺動脈時，收縮壓不變、舒張壓突然升高——因為肺循環有阻力，舒張期壓力掉不下去。繼續前進到搏動消失，剩下一條不搏動的壓力，正常時和肺動脈舒張壓同高，就是 wedge（楔壓），代表左心的充填壓。看到 wedge 就要立刻放氣，搏動波必須回來。</p>
           <ul><li>進 SVC 見靜脈波才充氣 1.5 mL，帶著氣球前進；wedge 出現就放氣，搏動波應回來。<b>球長期充氣 → 肺動脈破裂或肺梗塞</b>。</li><li>肺高壓時 PA 收縮壓也會升。wedge 一直不出現：沒有肺高壓才可用 PA 舒張壓代替。</li></ul></div></details>
       <details class="def-box"><summary>03 · Wedge 的原理與波形 <span class="en">Wedge pressure principle</span></summary>
-        <div class="box-inner"><p class="kp"><b>球囊阻斷血流（Q＝0）後尖端到左房是一段靜止血柱：Pw ＝ Pc ＝ PLA；二尖瓣正常時 ＝ LVEDP。</b></p>
+        <div class="box-inner"><p class="kp"><b>氣球阻斷血流後尖端到左房是靜止血柱：Pw ＝ Pc ＝ PLA，二尖瓣正常時等於 LVEDP。</b></p><p class="kx">Wedge 壓的原理是「沒有血流就沒有壓力落差」。氣球慢慢充到搏動消失，那條肺動脈分支的血流 Q＝0，導管尖端到左心房之間變成一段靜止的血柱，沿途壓力處處相等，所以尖端量到的 wedge 壓 Pw 等於肺微血管壓 Pc、也等於左心房壓 PLA。舒張期二尖瓣打開時左心房與左心室相通，若二尖瓣功能正常，左心房壓又等於左心室舒張末壓 LVEDP——這就是 wedge 被當作左心充填壓的整條推理鏈。任何一環壞掉（例如二尖瓣狹窄或逆流），wedge 就不再代表左心室的充填。</p>
           <ul><li>a 波左房收縮、c 波二尖瓣關閉、v 波心室收縮頂著關閉的二尖瓣；二尖瓣逆流的 v 波很大。</li><li>肺高壓：wedge 低於 PA 舒張壓。</li></ul></div></details>
       <details class="def-box"><summary>04 · 呼吸變異與 PEEP <span class="en">Respiratory variations · PEEP</span></summary>
-        <div class="box-inner"><p class="kp"><b>Wedge 只在肺微血管壓 > 肺泡壓時反映左房壓；有呼吸變異就在呼氣末讀——正壓通氣取最低點、自主呼吸取最高點。</b></p>
+        <div class="box-inner"><p class="kp"><b>Wedge 只在微血管壓高於肺泡壓時反映左房壓；有呼吸變異就在呼氣末讀。</b></p><p class="kx">靜止血柱的前提是微血管沒被肺泡壓扁；若肺泡壓比微血管壓高，導管量到的其實是肺泡壓。壓力波形隨呼吸上下起伏就是這個警訊。起伏來自胸內壓的傳遞：低壓血管（靜脈、微血管）會把胸內壓的變化照單全收，記錄到的血管內壓一直在動，但決定血管充盈的穿壁壓（血管內減血管外）其實沒變。呼氣末胸內壓回到零（大氣壓），血管內壓才等於穿壁壓，所以要在那一刻讀。正壓通氣時吸氣把胸內壓推高，呼氣末是波谷；自主呼吸吸氣讓胸內壓變負，呼氣末反而是波峰。</p>
           <ul><li>胸內壓變化會傳進低壓血管，記錄壓在動、穿壁壓沒動；呼氣末胸內壓＝0。</li><li>PEEP 讓呼氣末胸內壓 >0 → wedge 與 CVP 假性升高 → 可短暫脫離呼吸器測；intrinsic PEEP 更難（第 29 章有校正法）。</li></ul></div></details>
       <details class="def-box"><summary>05 · 自發變異 <span class="en">Spontaneous variation</span></summary>
-        <div class="box-inner"><p class="kp"><b>60% 病人 ≤4 mmHg、可達 7；變化 >4 mmHg 才算臨床顯著。</b></p></div></details>
+        <div class="box-inner"><p class="kp"><b>Wedge 自發波動 60% 病人 ≤4 mmHg、可達 7 mmHg，變化 &gt;4 mmHg 才算顯著。</b></p><p class="kx">除了呼吸造成的起伏，wedge 壓在病況沒有任何改變時也會自己漂移。研究顯示 60% 的病人漂移在 4 mmHg 以內（≤4 mmHg），但有人可以到 7 mmHg。這個「背景雜訊」決定了判讀門檻：兩次量測差不到 4 mmHg，很可能只是自然波動，不能據此說病人變好或變壞，也不該因此調整輸液或利尿劑；差距 &gt;4 mmHg 才視為臨床上有意義的變化。這和後面熱稀釋心輸出量的 10%、SvO₂ 的 5% 是同一個邏輯——每個監測值都要先知道自己的雜訊有多大。</p></div></details>
       <details class="def-box"><summary>06 · Wedge ≠ 微血管靜水壓 <span class="en">Wedge vs hydrostatic pressure</span></summary>
-        <div class="box-inner"><p class="kp"><b>Pc − Pw ＝ Q × Rv：有血流時微血管壓一定高於 wedge；肺靜脈收縮（低血氧、內毒素、升壓劑、ARDS）會放大差距。</b></p>
+        <div class="box-inner"><p class="kp"><b>有血流時微血管壓一定高於 wedge（Pc − Pw ＝ Q × Rv），wedge 正常排除不了靜水壓性肺水腫。</b></p><p class="kx">Wedge 是在氣球阻斷、血流為零時量的，常被誤當成肺微血管的靜水壓。氣球一放氣血流恢復，血要從微血管流過肺靜脈回左心房，就必須有壓力落差：Pc − Pw ＝ Q × Rv，Q 是血流量、Rv 是肺靜脈阻力。所以正常運作時微血管壓永遠高於 wedge，差多少無法算（肺靜脈阻力量不到），但任何讓肺靜脈收縮的情況——低血氧、內毒素、升壓劑輸注、ARDS——都會把差距拉大。這就是為什麼「wedge 正常」不能證明肺水腫不是靜水壓造成的，尤其在 ARDS 差距被放大時；把正常 wedge 當 ARDS 的診斷條件在邏輯上站不住腳。</p>
           <ul><li>所以「wedge 正常」不能排除靜水壓性肺水腫——把它當 ARDS 診斷條件應該廢棄。</li></ul></div></details>
       <details class="def-box"><summary>07 · 熱稀釋心輸出量 <span class="en">Thermodilution</span></summary>
-        <div class="box-inner"><p class="kp"><b>近端腔打 10 mL 冷液，遠端 thermistor 記溫度—時間曲線，曲線下面積與流量成反比；三次差 ≤10% 取平均。</b></p>
+        <div class="box-inner"><p class="kp"><b>熱稀釋：近端腔打 10 mL 冷液，溫度—時間曲線下面積與心輸出量成反比；三次差 ≤10% 取平均。</b></p><p class="kx">指示劑稀釋法的原理是：把已知量的指示劑打進血流，流量愈大、指示劑被沖淡得愈快、濃度變化曲線下的面積就愈小。熱稀釋用「冷」當指示劑：從右心房的近端腔打 10 mL 比血冷的生理食鹽水，冷液在右心混合後隨血射入肺動脈，流過尖端的 thermistor，機器把溫度—時間曲線積分，面積與肺動脈血流（沒有心內分流時等於心輸出量）成反比，直接顯示數值。這是床邊心輸出量的黃金標準，但單次不可信：要連打三次，彼此差 ≤10% 才算可靠，取三次平均；差超過 10% 整組作廢重打。</p>
           <ul><li>低 CO 曲線緩升緩降、面積大；高 CO 陡升、峰短、陡降。</li><li>病況不變 CO 也波動 10% → 變化 >10% 才顯著。</li><li>誤差：注射量少或太溫 → 高估；隨呼吸週期時機不一；三尖瓣逆流 → 注射液再循環，曲線拉長低幅 → 多為低估（回溫則高估）；心內分流 → 高估。</li><li><b>連續 CO</b>：加熱絲讓血升溫 0.02 °C，每 20–30 秒更新、3 分鐘平均；與 bolus 相關良好，省人力與液體，可併 SvO₂。</li></ul></div></details>
       <details class="def-box"><summary>08 · 十個參數與 BSA <span class="en">Catheter-derived hemodynamics</span></summary>
-        <div class="box-inner"><p class="kp"><b>BSA ＝ (身高 cm ＋ 體重 kg − 60) / 100；一般成人 1.7 m²。CO 與代謝率掛鉤，所以用 BSA 不用體重。</b></p>
+        <div class="box-inner"><p class="kp"><b>參數用 BSA 校正成指數：BSA ＝ (身高 cm ＋ 體重 kg − 60)/100，一般成人 1.7 m²。</b></p><p class="kx">PA 導管能導出十個血流動力與氧輸送參數，多數要依體型校正，用的是體表面積 BSA 而非體重，因為心輸出量跟著代謝率走、基礎代謝率本來就是以體表面積表示的。簡算式 BSA ＝ (身高 cm ＋ 體重 kg − 60)/100，一般成人約 1.7 m²；除以 BSA 之後的值叫「指數」（index），例如 CI（心指數）取代 CO。這十個參數分三群：充填壓（CVP 代表右心、PAWP 代表左心）；心臟表現（CI、SI 每搏指數）與血管阻力（SVRI、PVRI，用 Wood 單位就好）；以及氧輸送三參數 DO₂、VO₂、O₂ER。其中心輸出量是整支導管最重要的貢獻，因為有了它才算得出 DO₂ 與 VO₂。</p>
           <ul><li>CVP 0–5（＝RVEDP，坐姿可為負）；PAWP 6–12（略高於 CVP 以關閉卵圓孔）；CI 2.4–4.0；SI ＝ CI/HR 20–40 mL/m²。</li><li>SVRI ＝ (MAP − CVP)/CI 25–30 Wood；PVRI ＝ (PAP − PAWP)/CI 1–2 Wood；×80 轉 dyn 單位沒有好處。</li><li>DO₂ ＝ CO × 1.34 × Hb × SaO₂；VO₂ ＝ CO × 1.34 × Hb × (SaO₂ − SvO₂)；O₂ER ＝ VO₂/DO₂ 0.2–0.3。</li></ul></div></details>
       <details class="def-box"><summary>09 · 用在哪裡、與它的冤屈 <span class="en">Applications · A Final Word</span></summary>
-        <div class="box-inner"><p class="kp"><b>失代償心衰竭（血壓不穩、腎惡化）、心臟手術周術期、休克（心因性用它結果較好）、液體反應性、輸血與氧療的需求與反應、脫離呼吸器時的隱性心功能障礙。</b></p>
+        <div class="box-inner"><p class="kp"><b>PA 導管用在失代償心衰竭、心臟手術周術期、休克、液體與輸血反應、脫離呼吸器的隱性心功能障礙。</b></p><p class="kx">這張卡的後半是作者 Marino 的主張。先講用途：血壓不穩或腎功能惡化的失代償心衰竭、心臟手術前後、各種循環性休克（心因性休克用它反而結果較好）、判斷病人對輸液有沒有反應、決定要不要輸血或給氧以及給了之後的反應、還有脫離呼吸器失敗時揪出隱藏的左心功能障礙。再講冤屈：一系列設計不佳的研究顯示 PA 導管不改善存活，用量因此大跌；但作者指出 PA 導管是監測工具，死亡率該用來評估治療而不是量測；醫師常看不懂它的數值，工具在錯的手裡當然無效；而且不是每個介入都得救命才有價值，監測工具的目標是提供有用的資訊，這點 PA 導管做得很好。</p>
           <ul><li>作者：監測工具不該用死亡率評估；調查顯示醫師常看不懂它的數值——工具在錯的手裡當然無效；不是每個介入都得救命才有價值。</li></ul>
           <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
     </div>
@@ -245,6 +247,7 @@
     <div class="ch-nav sp-chips"><a class="sp-chip" href="#o2/o2-key"><i>01</i>重點卡</a><a class="sp-chip" href="#o2/o2-tab"><i>02</i>對照表</a><a class="sp-chip" href="#o2/o2-calc"><i>03</i>計算</a><a class="sp-chip" href="#o2/o2-flow"><i>04</i>流程</a><a class="sp-chip" href="#o2/o2-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#o2/o2-x"><i>06</i>相關工具</a></div>
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">重症照護的處置多半在「促進組織氧合」，但臨床上量不到組織裡的氧，只能用全身性的間接指標。本章從血中氧講起：氧含量幾乎全由 1.34 × Hb × SO₂ 決定，溶解氧只占 1.5%，所以貧血對氧合的傷害遠大於低血氧。接著是三個氧輸送參數：DO₂（氧輸送）、VO₂（氧攝取，等於氧消耗）、O₂ER（氧萃取率，正常只有兩到三成）。DO₂ 下降時身體先把萃取率從 25% 提高到 50% 守住 VO₂，超過就變成輸送依賴——這就是 SvO₂ ≤50% 或 SaO₂ − SvO₂ ≥50% 這些門檻的來歷，也延伸出 ScvO₂ 與 NIRS 組織飽和度的用法與限制。最後是本章最顛覆的部分：乳酸與死亡率相關是真的，但把乳酸當缺氧指標是循環論證；重症的高乳酸多半是有氧生成，乳酸還是心腦的燃料。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>氧幾乎全靠血紅素載</b>：CaO₂ ＝ 1.34 × Hb × SaO₂，溶解氧只占 1.5%；貧血對氧合的傷害遠大於低血氧。</span></div>
         <div class="lede-item"><span>②</span><span><b>DO₂ 掉了身體先提高萃取</b>：萃取從 25% 升到 50% 都還能守住 VO₂，再掉 VO₂ 就變 delivery-dependent——SvO₂ ≤50%（或 SaO₂ − SvO₂ ≥50%）就是那條線。</span></div>
@@ -254,32 +257,32 @@
     <div class="dirhead" id="o2-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="o2-kc">全部展開</button></div>
     <div id="o2-kc">
       <details class="def-box"><summary>01 · 血中氧的量 <span class="en">Oxygen in blood</span></summary>
-        <div class="box-inner"><p class="kp"><b>動脈：PO₂ 90、SO₂ 98%、含量 20 mL/dL；靜脈：40、73%、15；血量 1.25 L vs 3.75 L → 氧 250 mL vs 555 mL，70% 的氧在靜脈裡。</b></p></div></details>
+        <div class="box-inner"><p class="kp"><b>動脈血 PO₂ 90、SO₂ 98%、含量 20 mL/dL；靜脈血 40、73%、15；但 70% 的氧在靜脈裡。</b></p><p class="kx">描述血中氧有四個量：氧分壓 PO₂、血紅素氧飽和度 SO₂、血紅素結合的氧與溶解的氧、以及兩者相加的氧含量。以 Hb 15 g/dL、37 °C 為例，動脈血 PO₂ 90 mmHg、SO₂ 98%、含量約 20 mL/dL；混合靜脈血 PO₂ 40 mmHg、SO₂ 73%、含量約 15 mL/dL。看含量動脈當然比靜脈高，但氧的「總量」是含量乘血量：全身 5 L 血只有 25% 在動脈（1.25 L）、75% 在靜脈（3.75 L），所以動脈裡的氧只有 250 mL，靜脈裡有 555 mL——總共約 805 mL 的氧有 70% 待在靜脈側，這部分是無法供有氧代謝使用的。</p></div></details>
       <details class="def-box"><summary>02 · 解離曲線與 P50 <span class="en">Oxyhemoglobin dissociation curve</span></summary>
-        <div class="box-inner"><p class="kp"><b>S 形：動脈端平坦（PaO₂ 掉到 60 SO₂ 只小降）、靜脈端陡（利於肺內攝取）；P50 正常 27 mmHg。</b></p>
+        <div class="box-inner"><p class="kp"><b>解離曲線 S 形：動脈端平坦（PaO₂ 掉到 60 SO₂ 只小降）、靜脈端陡；P50 正常 27 mmHg。</b></p><p class="kx">SO₂ 由兩件事決定：血中的 PO₂，以及血紅素對氧的親和力；兩者的關係就是氧合血紅素解離曲線。S 形有兩個好處：動脈的 PaO₂ 落在上方平坦段，PaO₂ 從 90 大幅掉到 60 mmHg 時 SO₂ 只小幅下降，給氧合一個安全緩衝；靜脈的 PvO₂ 約 40 mmHg 落在陡峭段，一點點 PO₂ 上升就能結合大量氧，有利肺微血管攝氧。曲線的位置用 P50 表示——SO₂ 剛好 50% 時對應的 PO₂——正常約 27 mmHg：曲線右移 P50 升高、親和力降低；左移 P50 降低、親和力升高。</p>
           <ul><li>右移利於組織釋氧、左移相反；ACD 保存 3 週的血 P50 降到 15（2,3-DPG 耗盡）。</li><li>移動對肺與組織的效應相反，整體意義不明。</li></ul></div></details>
       <details class="def-box"><summary>03 · 氧含量：貧血 vs 低血氧 <span class="en">Oxygen content</span></summary>
-        <div class="box-inner"><p class="kp"><b>HbO₂ ＝ 1.34 × Hb × SO₂；溶解 ＝ 0.003 × PO₂。Hb 減半 → CaO₂ 減半；PaO₂ 減半（98 → 78%）→ 只減 20%。</b></p>
+        <div class="box-inner"><p class="kp"><b>貧血比低血氧更傷氧含量：Hb 減半 CaO₂ 減半，PaO₂ 減半（SaO₂ 98 → 78%）只減 20%。</b></p><p class="kx">血中的氧有兩種形式：血紅素結合的 HbO₂ ＝ 1.34 × Hb × SO₂（1.34 是每公克血紅素能載的氧 mL 數），與溶在血漿裡的氧 ＝ 0.003 × PO₂（血漿 93% 是水，氧很難溶進去）。以正常值代入，動脈含量約 20 mL/dL，其中溶解氧只有 0.27 mL/dL，占 1.5%，所以平常的式子把它省略。這帶出關鍵比較：Hb 從 15 減半到 7.5 g/dL，CaO₂ 從 20 直接減半到 10 mL/dL；PaO₂ 從 90 減半到 45 mmHg，因為解離曲線平坦段的保護，SaO₂ 只從 98 掉到 78%，CaO₂ 只減 20%（20 → 16）。貧血對動脈氧合的傷害遠大於低血氧。</p>
           <ul><li>Ca − Cv ＝ 5 mL/dL ＝ 每公升血被拿走 50 mL 氧 × CO 5 L/min ＝ 靜息 VO₂ 250 mL/min。</li></ul></div></details>
       <details class="def-box"><summary>04 · 氧輸送三參數與變異 <span class="en">DO₂ · VO₂ · O₂ER</span></summary>
-        <div class="box-inner"><p class="kp"><b>DO₂ ＝ CO × CaO₂ × 10（900–1,100；520–600/m²）；VO₂ ＝ CO × 1.34 × Hb × (SaO₂ − SvO₂) × 10（200–270；110–160/m²）；O₂ER 0.2–0.3。</b></p>
+        <div class="box-inner"><p class="kp"><b>DO₂ ＝ CO × CaO₂ × 10（正常 900–1,100 mL/min）、VO₂ 200–270、O₂ER 0.2–0.3。</b></p><p class="kx">氧從肺到組織用三個參數描述。DO₂（氧輸送）是每分鐘動脈血送出的氧：CO × CaO₂ × 10，乘 10 是把 mL/dL 換成 mL/L；靜息成人 900–1,100 mL/min，除以 BSA 是 520–600/m²，需要心輸出量、Hb、SaO₂ 三個量測。VO₂（氧攝取，等於氧消耗，因為組織不存氧）＝ CO × 1.34 × Hb × (SaO₂ − SvO₂) × 10，是 Fick 式反過來用，多需要 SvO₂ 所以要 PA 導管；正常 200–270 mL/min、110–160/m²。O₂ER（氧萃取率）＝ VO₂/DO₂，正常 0.2–0.3：送到微血管的氧只有兩到三成被拿走。</p>
           <ul><li>計算 VO₂ 的變異 ±18%（CO 10、Hb 2、SO₂ 2、含量 4、動靜脈差 8）→ 變化要 >18% 才顯著；代謝車測量 VO₂ ＝ VE × (FIO₂ − FEO₂) 只 ±5%。</li><li>計算值不含肺的 VO₂（正常 <5%，肺發炎可達 20%）。</li></ul></div></details>
       <details class="def-box"><summary>05 · 氧萃取的代償 <span class="en">Oxygen extraction</span></summary>
-        <div class="box-inner"><p class="kp"><b>VO₂ ＝ DO₂ × O₂ER：DO₂ 降時萃取從 25% 升到 50% 守住 VO₂；再降就 delivery-dependent，這是氧限制代謝的門檻。</b></p></div></details>
+        <div class="box-inner"><p class="kp"><b>VO₂ ＝ DO₂ × O₂ER：DO₂ 降時萃取從 25% 升到 50% 守住 VO₂，再降就變 delivery-dependent。</b></p><p class="kx">把 O₂ER ＝ VO₂/DO₂ 改寫成 VO₂ ＝ DO₂ × O₂ER，就看得出身體怎麼保護氧消耗：DO₂ 因低血氧、貧血或心輸出量下降而減少時，組織按比例多抽一點氧，VO₂ 可以維持不變。SaO₂ &gt;90% 時可用 SaO₂ − SvO₂ 代表萃取率，畫成 DO₂ 對 VO₂ 的曲線：DO₂ 從正常往下走，VO₂ 先是一條平線，萃取差值從 25% 一路升到 50%；到了這裡萃取加不上去，VO₂ 開始跟著 DO₂ 一起掉，稱為「delivery-dependent（輸送依賴）」。這個轉折點就是氧限制（無氧）代謝的門檻，也是所有 SvO₂ 與萃取率判讀門檻的來源。</p></div></details>
       <details class="def-box"><summary>06 · SaO₂ − SvO₂ 與 SvO₂ 怎麼讀 <span class="en">Surrogates of extraction</span></summary>
-        <div class="box-inner"><p class="kp"><b>差 20–30% 正常、>30% DO₂ 降、≥50% 威脅、<20% 利用缺陷（敗血、周邊分流）；SvO₂ 65–75%、<65、≤50、≥80% 對應。</b></p>
+        <div class="box-inner"><p class="kp"><b>SaO₂ − SvO₂ 20–30% 正常、&gt;30% DO₂ 降、≥50% 威脅、&lt;20% 利用缺陷；SvO₂ 有對應的四個門檻。</b></p><p class="kx">兩個替代指標讀的是同一件事：組織抽走了多少氧。前提有兩個——SaO₂ 要 &gt;90%（差值才近似萃取率）、代謝率要正常（發燒、顫抖會讓萃取上升）。SaO₂ − SvO₂：正常 20–30%；升到 &gt;30% 表示 DO₂ 下降（低血氧、貧血或心輸出量降）；≥50% 組織氧合受威脅或已受損（動物研究驗證過）；掉到 &lt;20% 反而是組織用不了氧，多見於敗血症，因為表現像周邊動靜脈分流，所以也叫「周邊分流」。SvO₂ 單獨用：正常 65–75%、&lt;65% DO₂ 降、≤50% 威脅、≥80% 利用缺陷。SvO₂ 自然波動平均 5%，變化要 &gt;5% 才有意義。</p>
           <ul><li>前提：SaO₂ >90%、代謝率正常；SvO₂ 自然波動 5% → 變化 >5% 才顯著。</li></ul></div></details>
       <details class="def-box"><summary>07 · ScvO₂ 與 StO₂ <span class="en">Central venous · tissue saturation</span></summary>
-        <div class="box-inner"><p class="kp"><b>ScvO₂ 在重症比 SvO₂ 高（平均 7%、休克可達 18%）；趨勢比單值可靠；休克目標 70%。NIRS 的 StO₂ 主要是靜脈飽和度，正常值定不出來。</b></p>
+        <div class="box-inner"><p class="kp"><b>ScvO₂ 在重症比 SvO₂ 高（平均 7%、休克可達 18%），看趨勢、休克目標 70%；StO₂ 定不出正常值。</b></p><p class="kx">PA 導管少用後，改用中心靜脈導管或 PICC 的 oximetry 導管量上腔靜脈血的 ScvO₂（中心靜脈血氧飽和度）。健康人 ScvO₂ 略低於 SvO₂，重症病人卻反過來高出平均 7%，循環性休克時可差到 18%——上腔靜脈血受腦靜脈血影響大，休克時周邊血管收縮而腦血流相對保留。絕對值雖有差，ScvO₂ 的變化方向大致跟著 SvO₂ 走，所以趨勢比單一數值可靠，顯著變化同樣是 &gt;5%；正常範圍沒有明確定義，但休克處置的建議目標之一是 70%。StO₂（組織血氧飽和度）用 NIRS（近紅外線光譜）從皮膚量微循環，量到的主要是小靜脈血；健康人與休克病人的個體差異都太大，訂不出異常門檻。</p>
           <ul><li>ScvO₂ 受腦靜脈血影響；休克時周邊收縮、腦血流相對保留。</li><li>StO₂ 肌肉受肌紅蛋白影響；光子散射個體差異大；與 DO₂ 變化相關但無法定義異常。</li></ul></div></details>
       <details class="def-box"><summary>08 · 乳酸與存活 <span class="en">Lactate and survival</span></summary>
-        <div class="box-inner"><p class="kp"><b>初始乳酸與清除時間都與死亡率相關，所以要監測；但這不證明乳酸＝缺氧——那是循環論證。</b></p>
+        <div class="box-inner"><p class="kp"><b>初始乳酸與清除時間都和死亡率相關，所以要監測；但這不證明乳酸等於缺氧——那是循環論證。</b></p><p class="kx">血漿乳酸 &gt;2 mmol/L 傳統上被當成組織氧合不足最可靠的指標，也是循環性休克診斷的必要條件之一。臨床研究確實一致顯示：初始乳酸愈高、乳酸回到正常所需時間（乳酸清除）愈長，住院死亡率愈高——這是監測乳酸的正當理由。但「乳酸高與死亡相關」不等於「乳酸高代表缺氧」；把它解讀成缺氧，是因為大家相信氧剝奪是重症病人細胞死亡的共同原因，而這個信念本身又是建立在乳酸與死亡率的關聯上——繞了一圈回到原點。細胞內 PO₂ 量不到，所以「重症細胞死於缺氧」其實沒有直接證據，反證倒是有幾條（見條列）。</p>
           <ul><li>反證：PET 顯示敗血性休克各器官無細胞缺氧；人類敗血症骨骼肌 PO₂ 反而升高；細胞內 PO₂ 本來就 5 mmHg（可 <1）、心肌 0.2–2.4——細胞在低氧環境運作，低 PO₂ 傷細胞不太可能。</li></ul></div></details>
       <details class="def-box"><summary>09 · 有氧的乳酸生成 <span class="en">Aerobic hyperlactatemia</span></summary>
-        <div class="box-inner"><p class="kp"><b>每天有氧產乳酸 20 mmol/kg；LDH 平衡強烈偏向乳酸。敗血症是 PDH 被內毒素與細胞激素抑制＋兒茶酚胺驅動糖解。</b></p>
+        <div class="box-inner"><p class="kp"><b>乳酸本來就在有氧下生成（每天 20 mmol/kg）；敗血症的高乳酸是 PDH 抑制加兒茶酚胺驅動糖解。</b></p><p class="kx">傳統教法：糖解走到丙酮酸，有氧就經 PDH（丙酮酸去氫酶）進粒線體做氧化磷酸化，沒氧才由 LDH（乳酸去氫酶）轉成乳酸，所以乳酸＝無氧代謝。但事實是 LDH 反應的平衡常數強烈偏向乳酸，人體每天在完全有氧的狀態下就產出約 20 mmol/kg 的乳酸。敗血症的高乳酸有兩個有氧來源：內毒素等細菌產物與促發炎細胞激素抑制 PDH，丙酮酸進不了粒線體只好變乳酸——這也是敗血症細胞損傷被歸因於粒線體「氧利用缺陷」的原因；加上兒茶酚胺把糖解速率推高，兩者相乘。敗血症是美國住院死亡首因，所以重症的有氧高乳酸比想像中普遍。</p>
           <ul><li>來源：氣喘、酮酸、肝功能、癲癇、敗血症、壓力（GLUT 轉位 → 糖解 +40–50%）、硫胺缺乏（TPP 是 PDH 輔因子）、腫瘤；藥物：β 激動劑、兒茶酚胺、氰化物、metformin、propofol、propylene glycol、salicylate、毒性醇。</li><li>「缺氧驅動的乳酸累積是例外不是規則」。</li></ul></div></details>
       <details class="def-box"><summary>10 · 乳酸是燃料；作者觀點 <span class="en">Lactate as fuel · A Final Word</span></summary>
-        <div class="box-inner"><p class="kp"><b>乳酸 3.62 kcal/g ≈ 葡萄糖 3.74；壓力下供心肌 60%、腦 25–30% 能量，改善休克的心功能。</b></p>
+        <div class="box-inner"><p class="kp"><b>乳酸是燃料：3.62 kcal/g 與葡萄糖 3.74 相當，壓力下供心肌 60%、腦 25–30% 的能量。</b></p><p class="kx">這張卡的後半是作者 Marino 的主張。先看數據：乳酸的熱量密度 3.62 kcal/g，與葡萄糖的 3.74 幾乎相同，一分子葡萄糖產兩分子乳酸，完全氧化的能量產出相當，所以代謝壓力大、葡萄糖供不應求時乳酸是現成的替代燃料。敗血症等狀態下心臟與腦大量燒乳酸：可供心肌 60% 的能量需求、腦 25–30%，還有證據顯示乳酸能改善休克時的心臟表現——這是保住心腦的適應。作者由此推論：細胞死亡不是常見的缺氧結果，多重器官衰竭的元凶更可能是發炎性細胞損傷；細胞內的低氧環境是設計出來的，因為氧會分解有機物——道理和食物要真空包裝一樣。</p>
           <ul><li>作者：細胞缺氧不是常見死因；細胞內低氧是設計（氧會分解有機物，所以食物要真空包裝）；MOF 的元凶更可能是發炎性細胞損傷。</li></ul>
           <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
     </div>
