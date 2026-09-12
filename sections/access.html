@@ -53,6 +53,7 @@
 
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">每個 ICU 病人都掛著至少一條靜脈通路，這一章講的是通路本身的「工程學」。核心概念只有一個：輸液能多快，由導管的粗細與長短決定，跟打進哪條靜脈無關；Hagen-Poiseuille 定律說流量與半徑四次方成正比、與長度成反比，所以要快就用短而粗的管。接著依尖端位置把導管分成周邊（短、長、midline）與中央（PICC、CVC），說明為什麼進上臂深靜脈的 midline 正在取代 PICC 與 CVC。最後是兩項現代基本功：即時超音波（看不到、摸不到的靜脈也能打）與骨內通路（IO，靜脈打不上時的急救路）。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>輸液速率由導管決定，不是被插的靜脈。</b>流量與半徑四次方成正比、與長度成反比：要快就用短而粗的導管。</span></div>
         <div class="lede-item"><span>②</span><span><b>Midline 導管正在取代 CVC 與 PICC</b>：15–20 cm 進上臂深靜脈，平均留置 14 天，升壓劑可走 7–8 天，阻塞與感染都比 PICC 少。</span></div>
@@ -63,40 +64,40 @@
     <div class="dirhead" id="pr-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="pr-kc">全部展開</button></div>
     <div id="pr-kc">
       <details class="def-box"><summary>01 · 材質與尺寸 <span class="en">Catheter basics</span></summary>
-        <div class="box-inner"><p class="kp"><b>短期用 polyurethane（抗扭折），長期植入用 silicone（更軟、傷血管少，但難經皮插入）。</b></p>
+        <div class="box-inner"><p class="kp"><b>短期用 polyurethane 抗扭折，長期植入用 silicone 更軟但難經皮插入</b></p><p class="kx">血管導管都是化學惰性、生物相容的合成高分子，差別在軟硬。Polyurethane（聚氨酯，彈性衣料的纖維就是它）夠柔韌又有足夠的張力，插入時不易扭折，所以幾天到幾週的短期導管幾乎都用它。Silicone（矽膠，奶瓶奶嘴的材質）軟得多，對血管內皮的傷害小，適合放幾個月的長期通路；但正因為太軟，很難用經皮穿刺的方式推進血管，多半做成手術植入的導管（例如長期化療用的 port）。讀導管規格時先看材質，就知道它設計給多長的留置期。</p>
           <ul><li><b>Gauge</b>：源自鐵絲，數字越大管越細（16 G 最粗 → 21 G 最細）；<b>各廠外徑不標準化</b>。用在針、小口徑單腔導管、多腔導管的各腔。</li>
             <li><b>French</b>：從 0 起算，每一級外徑 +0.33 mm（<b class="mono">Fr × 0.33 ＝ 外徑 mm</b>）；4 Fr ＝ 1.2 mm、9 Fr ＝ 3.2 mm。用在多腔與大口徑導管、導尿管、鼻胃管、胸管。</li></ul></div></details>
       <details class="def-box"><summary>02 · Hagen-Poiseuille：半徑四次方 <span class="en">Flow through catheters</span></summary>
-        <div class="box-inner"><p class="kp"><b>Q ＝ ΔP × πr⁴ / 8μL——口徑對流量的影響遠大於長度。</b></p>
+        <div class="box-inner"><p class="kp"><b>流量與半徑四次方成正比、與長度成反比，口徑對流量的影響遠大於長度</b></p><p class="kx">Hagen-Poiseuille 定律描述剛性細管內的層流：Q ＝ ΔP × πr⁴ / 8μL，流量 Q 由壓力差 ΔP 推動，與半徑 r 的四次方成正比，與管長 L 和液體黏稠度 μ 成反比；括號內那一項就是阻力的倒數。四次方的意思是半徑只要略增，流量就被大幅放大，所以口徑一點點的差距會變成流量的巨大差距，而長度只是線性地拖慢流速。這也是為什麼輸液速率由導管決定、不由被插的靜脈決定：再粗的靜脈，接的是細管也快不起來。</p>
           <ul><li>實測重力流：<b class="mono">16 G</b> 是 18 G 的兩倍多、是 20 G 的近四倍，外徑差不到 1 mm。</li>
             <li>長度：2 吋 → 6 吋（CVC 常見長度）流量降 <b class="mono">40%</b>，→ 12 吋再降 40%。</li>
             <li>結論：需要快速輸液就用大口徑，<b>短而粗</b>最好。</li></ul></div></details>
       <details class="def-box"><summary>03 · 輸注壓力與幫浦 <span class="en">Infusion pressure &amp; pumps</span></summary>
-        <div class="box-inner"><p class="kp"><b>重力：袋子高 68 cm ＝ 50 mmHg（1 psi）、100 cm ＝ 75 mmHg；幫浦最高 15 psi。</b></p>
+        <div class="box-inner"><p class="kp"><b>重力輸液的壓力由袋子高度決定，幫浦最高也只能推到 15 psi</b></p><p class="kx">導管的阻力要靠壓力差來克服。重力系統的壓力差就是液面高於穿刺點的高度：袋子掛在 68 cm 高，輸注壓約 50 mmHg（相當於 1 psi）；提高到 100 cm 也只有 75 mmHg（1.5 psi），所以把點滴架搖到最高的效果有限。程式化輸液幫浦則靠調整輸注壓（上限 15 psi）來維持設定的速率，因此幫浦的意義是「精準」而不是「快」。真正要快的是大出血用的快速輸液系統，靠專用的短粗導管加溫加壓，流量遠超過一般幫浦。</p>
           <ul><li>容積式幫浦 0.1–1,000 mL/h（一般輸液與藥物）；針筒式 ≤100 mL、0.1–100 mL/h（PCA）。</li>
             <li>大出血專用快速輸液系統：加溫，最高 <b class="mono">1.5 L/min</b>，配 7–8 Fr、2–2.5 吋的快速輸液導管。</li></ul></div></details>
       <details class="def-box"><summary>04 · 周邊導管三種 <span class="en">Short · long · midline</span></summary>
-        <div class="box-inner"><p class="kp"><b>短（&lt;6 cm）快但 3 天內 40–60% 失效；長（6–&lt;15 cm）留 7–9 天；midline（15–20 cm）留兩週、可輸升壓劑。</b></p>
+        <div class="box-inner"><p class="kp"><b>短周邊 3 天內 40–60% 失效，長周邊留 7–9 天，midline 留兩週可輸升壓劑</b></p><p class="kx">周邊導管指尖端不超過肩膀的導管，依長度分三種。短周邊（&lt;6 cm）打在看得到、摸得到的淺靜脈，最快取得通路，但 3 天內失效率 40–60%。長周邊（6–&lt;15 cm）為延長留置時間而生，可留 7–9 天。Midline（15–20 cm）用超音波導引進上臂深靜脈，平均可留兩週，升壓劑走 midline 也安全；它正取代 PICC 成為需要幾天以上通路的首選，阻塞與感染都比 PICC 少，代價是要有專責團隊放。在 ICU，短周邊過了頭幾天就該換成更穩定的通路。</p>
           <ul><li><b>短周邊</b>：16–22 G、3–5 cm，catheter-over-needle 見回血再推；首次失敗約 <b class="mono">1/3</b>；失效原因：靜脈炎、阻塞、脫落、外滲——ICU 躁動病人尤其。</li>
             <li><b>長周邊</b>（extended dwell）約 8 cm，北美不流行。</li>
             <li><b>Midline</b>：超音波進 basilic（首選：直、不鄰近動脈神經）／brachial／cephalic；平均 14 天；<b>升壓劑 7–8 天無外滲</b>；比 PICC 阻塞少、CRBSI 少；DVT 略高但 <5%、差距 <2%。雙腔 15 cm 每腔重力流量約 1.3 L/h（短導管的 20%），仍超過幫浦上限。瓶頸是要專責團隊放。</li></ul></div></details>
       <details class="def-box"><summary>05 · 中央導管：PICC 與 CVC <span class="en">Central catheters</span></summary>
-        <div class="box-inner"><p class="kp"><b>尖端在腔靜脈才叫中央；PICC 太長流量剩 midline 的 20%，CVC 的遠端腔才是快速輸液用的那一腔。</b></p>
+        <div class="box-inner"><p class="kp"><b>尖端進腔靜脈才算中央；PICC 太長流量剩 midline 的 20%，CVC 遠端腔最粗</b></p><p class="kx">中央導管的定義只看尖端位置：在上腔或下腔靜脈裡就是中央，跟從哪裡打進去無關。PICC 從上臂同一組靜脈進、一路推到上腔靜脈，等於加長版的 midline；但長度效應讓它的流量只剩 midline 的 20%，這也是 PICC 容易阻塞的原因，midline 出現後 PICC 的使用正逐年下降。CVC 從頸部、胸部或鼠蹊的大靜脈進，最多四腔；三腔導管的遠端腔口徑最大，流量是其他腔的兩倍以上，要快速輸液就接遠端腔，不是隨便挑一個。</p>
           <ul><li><b>PICC</b> 40–55 cm，1–3 腔；曾是 CVC 的安全替代，現在被 midline 取代中；阻塞多與流量差有關。</li>
             <li><b>CVC</b> 15／20／30 cm，最多 4 腔；三腔最常見：<b>遠端腔 16 G</b>、近端中間腔 18 G，遠端流量是其他腔兩倍以上。</li>
             <li>CVC 需求逐年下降；仍是血行動力不穩病人的最後（go-to）通路。</li></ul></div></details>
       <details class="def-box"><summary>06 · Seldinger 技術 <span class="en">Guidewire technique</span></summary>
-        <div class="box-inner"><p class="kp"><b>小針探到血管 → 軟頭導線進管腔 → 撤針 → 擴張器開通道 → 導管沿導線推入。</b></p>
+        <div class="box-inner"><p class="kp"><b>Seldinger 技術：細針探到血管、軟頭導線進管腔、撤針、擴張、導管沿導線推入</b></p><p class="kx">除了最表淺、摸得到的靜脈可以直接用 catheter-over-needle 打，其他血管的插管幾乎都靠導線，這就是瑞典血管攝影醫師 Seldinger 提出的方法。先用小口徑的探針找血管，針尖進入管腔後，把一條前端柔軟的細導線經針送進血管（軟頭是為了減少導線推進時刮傷內皮）；接著把針沿導線退出，用擴張器沿導線撐開皮下的通道，最後把導管沿導線推入血管、抽出導線。理解這五步之後，中央導管、動脈導管、透析導管的插入邏輯都是同一套。</p>
           <ul><li>除了最表淺可摸到的靜脈，其他都靠導線；軟頭減少內皮損傷。</li></ul></div></details>
       <details class="def-box"><summary>07 · 血管超音波 <span class="en">Vascular ultrasound</span></summary>
-        <div class="box-inner"><p class="kp"><b>短軸找血管、看伴行動脈、確認穿刺；長軸確認導線與導管在管腔內。</b></p>
+        <div class="box-inner"><p class="kp"><b>短軸找血管、看伴行動脈、確認穿刺；長軸確認導線與導管在管腔內</b></p><p class="kx">血管超音波用高頻線陣探頭做 B-mode 灰階影像，液體不反射所以血管內腔是黑的。探頭橫切血管是短軸，順著血管是長軸。短軸容易找到目標、也看得到旁邊的動脈以避免誤穿，但針只有到達血管那一刻才顯示成一個亮點；長軸看得到整根針、導線和導管的路徑，卻看不到伴行動脈、還需要一段走得直的靜脈。因為靜脈被針碰到會塌陷、針容易一路穿破後壁，標準做法是先用短軸找血管與確認穿入，再切到長軸確認導線與導管確實在管腔內。</p>
           <ul><li>線陣探頭 5–15 MHz，解析高、深度只到約 9 cm；B-mode 灰階，液體黑。</li>
             <li><b>短軸</b>：容易找到目標、看得到動脈，但針只在到達血管時才成為一個亮點；<b>長軸</b>：整根針、導線、導管都看得到，但看不到伴行動脈、需要走直的靜脈。</li>
             <li><b>後壁穿破</b>：短軸 <b class="mono">40%</b>、長軸 18%——所以一定要確認導線與導管在管腔內。</li>
             <li>分辨動靜脈：<b>壓迫</b>（靜脈易塌；血栓例外）與<b>彩色 Doppler</b>（顏色是血流方向相對探頭，不是動靜脈本身）。</li>
             <li>協定三步：找到目標靜脈 → 確認針穿入 → 確認導線與導管在腔內。</li></ul></div></details>
       <details class="def-box"><summary>08 · 骨內通路 <span class="en">Intraosseous access</span></summary>
-        <div class="box-inner"><p class="kp"><b>IV 一次失敗或不可行 → IO；髓腔不會因低血容塌陷。近端脛骨首選。</b></p>
+        <div class="box-inner"><p class="kp"><b>IV 一次失敗或不可行就改骨內通路；髓腔不會因低血容塌陷，成人首選近端脛骨</b></p><p class="kx">骨內（IO）通路是把針打進骨髓腔，液體經骨髓的引流系統回到體循環。它最大的優點是骨髓腔是硬的：低血壓、低血容、循環崩潰時靜脈會塌掉、找不到，髓腔不會。因此心跳停止、重大創傷、休克時，只要靜脈打一次沒上或根本不可行，就直接改 IO，不要反覆嘗試靜脈浪費急救時間。成人兩個常用部位是近端脛骨與近端肱骨；脛骨成功率高、位置又不妨礙插管與胸外按壓，所以是首選，肱骨的優點是流量較大。IO 是暫時通路，流速慢、一律要加壓，穩定後盡快換成靜脈。</p>
           <ul><li>適應：心跳停止、重大創傷、休克時 IV 困難；院外成功率達 <b class="mono">97%</b>；ATLS 也列入。</li>
             <li>禁忌：該骨骨折或剛穿刺過（漏液）、該肢血管損傷、穿刺處燒傷／蜂窩組織炎／骨髓炎、osteopetrosis。</li>
             <li>部位：<b>近端脛骨</b>（成功率高、不礙插管與 CPR；插入點髕骨下緣下 3 cm、內側 2 cm）；近端肱骨流量較高。</li>
@@ -199,6 +200,7 @@
     <div class="ch-nav sp-chips"><a class="sp-chip" href="#cvc/cv-key"><i>01</i>重點卡</a><a class="sp-chip" href="#cvc/cv-tab"><i>02</i>對照表</a><a class="sp-chip" href="#cvc/cv-flow"><i>03</i>流程</a><a class="sp-chip" href="#cvc/cv-quiz"><i>04</i>測驗</a><a class="sp-chip" href="#cvc/cv-x"><i>05</i>相關工具</a></div>
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">中央靜脈導管（CVC）是 ICU 的日常，也是風險遠高於周邊導管的侵入性處置。這一章先問「真的需要嗎」：六項傳統適應症有四項已能由 midline 或 PICC 取代，剩下危及生命的血行動力不穩與透析、節律、監測。接著用插入 bundle 談預防感染，再逐一講內頸、鎖骨下、股靜脈的解剖、擺位、超音波與體表定位法和各自的併發症數字，並替股靜脈的壞名聲平反。最後是放完管當下要處理的三件事：靜脈空氣栓塞、氣胸（超音波看肺滑動勝過仰臥胸部 X 光）、導管尖端位置（進右心房可以留著）。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>中央導管的適應症在縮小</b>：六項傳統適應症有四項已被 midline 與 PICC 取代，剩下血行動力不穩與透析、節律、監測。</span></div>
         <div class="lede-item"><span>②</span><span><b>即時超音波在每個部位都提高成功率、降低併發症</b>；頸動脈穿刺從 9.2% 降到 1.8%。</span></div>
@@ -208,49 +210,49 @@
     <div class="dirhead" id="cv-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="cv-kc">全部展開</button></div>
     <div id="cv-kc">
       <details class="def-box"><summary>01 · 縮小中的適應症 <span class="en">Shrinking indications</span></summary>
-        <div class="box-inner"><p class="kp"><b>周邊困難、長期通路、多重藥物、升壓劑／高張液／發泡劑——這四項 midline 或 PICC 都能做。</b></p>
+        <div class="box-inner"><p class="kp"><b>六項傳統 CVC 適應症有四項已能由 midline 或 PICC 取代</b></p><p class="kx">過去放 CVC 的六個理由：周邊打不上或維持不住、需要幾天以上的通路、要多條藥物、要輸升壓劑／高張液（含 TPN）／發泡劑、危及生命的血行動力不穩，以及透析、暫時性節律、侵入性監測等特殊處置。前四項現在 midline 或 PICC 都能做：都從手臂進、有多腔規格、能安全輸升壓劑與高張液，PICC 還能放好幾個月。所以只有休克這種需要最穩固通路的情況，和非中央不可的特殊處置，才是今日真正的 CVC 適應症。放 CVC 前先問：用 midline 是不是就夠了？</p>
           <ul><li>仍需 CVC：<b>危及生命的血行動力不穩</b>；<b>急性透析、暫時性經靜脈節律、侵入性血行動力學監測</b>。</li>
             <li>Midline／PICC 沒有氣胸風險、病人接受度高；CVC 需求逐年下降。</li></ul></div></details>
       <details class="def-box"><summary>02 · 沒有絕對禁忌 <span class="en">Contraindications</span></summary>
-        <div class="box-inner"><p class="kp"><b>凝血異常（不論嚴重度）都不是禁忌；plt &lt;20,000 或 INR &gt;3 先矯正的建議沒有證據。</b></p></div></details>
+        <div class="box-inner"><p class="kp"><b>凝血異常不是 CVC 禁忌；plt &lt;20,000 或 INR &gt;3 先矯正並無證據</b></p><p class="kx">中央靜脈插管沒有絕對禁忌症。臨床上最常被拿來延遲插管的理由是凝血功能異常，但研究顯示不論凝血異常的嚴重程度，都不構成禁忌。有指引建議血小板 &lt;20,000 或 INR &gt;3 時先矯正再插管，作者指出這條建議沒有證據支持。實務上的意涵是：不必為了等血小板或血漿而拖延病人真正需要的通路；出血的顧慮應該用超音波導引與細心操作來降低，而不是拒絕插管。</p></div></details>
       <details class="def-box"><summary>03 · 插入 bundle <span class="en">Central line insertion bundle</span></summary>
-        <div class="box-inner"><p class="kp"><b>手部衛生、chlorhexidine-alcohol、最大屏障、避開股靜脈——合起來用才降 CRBSI。</b></p>
+        <div class="box-inner"><p class="kp"><b>手部衛生、chlorhexidine、最大屏障、避開股靜脈：合成 bundle 才有效</b></p><p class="kx">中央導管插入 bundle 是預防導管相關血流感染（CRBSI）的一組措施，重點在「合起來用」：單做任何一項效果有限，四項一起落實才證實能降低感染率。內容是插管前後確實做手部衛生、用 2% chlorhexidine 加 70% 酒精消毒皮膚並等它乾、插管與換導線時穿戴完整的無菌屏障，以及能避就避開股靜脈。Chlorhexidine 優於其他消毒劑，是因為它在皮膚上的抗菌活性能持續數小時，晾乾才發揮最大效果。至於部位，近年的看法已轉為感染風險與部位無關、與日後怎麼維護有關。</p>
           <ul><li>手部衛生：酒精乾洗手優先；摸穿刺處前後、戴手套前後。</li>
             <li>Chlorhexidine 在皮膚上活性 ≥6 小時，<b>要晾乾</b>（乾皮 30 秒、濕皮膚 2 分鐘）。</li>
             <li>最大屏障：帽、口罩、無菌手套、無菌衣、全身鋪單；<b>周邊靜脈只需手套</b>（可不滅菌，別碰導管）。</li>
             <li>部位：股靜脈血栓較多；感染風險現在認為<b>與部位無關、與維護有關</b>。</li></ul></div></details>
       <details class="def-box"><summary>04 · 內頸靜脈 <span class="en">Internal jugular vein</span></summary>
-        <div class="box-inner"><p class="kp"><b>最常用；右側較直。頭低 15° 就夠、頭轉不超過 40°、超音波是標準。</b></p>
+        <div class="box-inner"><p class="kp"><b>內頸靜脈最常用、右側較直；頭低 15° 就夠、頭轉不超過 40°、超音波是標準</b></p><p class="kx">內頸靜脈（IJV）是最常用的中央靜脈部位，右側因血管走向較直、導管誤位少而優先。Trendelenburg（頭低腳高）能撐大靜脈並提高靜脈壓來防空氣栓塞，但 15° 就是極限，再傾斜也不會更大；心衰竭鬱血的病人不需要，顱內壓高則不建議。頭稍微轉向對側能拉直靜脈，但轉超過 40° 會把 IJV 拉到頸動脈正上方，增加誤穿動脈的機會。IJV 貼近皮膚、沒有骨頭阻擋，是最適合超音波的部位，超音波導引已是標準做法；但靜脈與動脈本來就有部分重疊，一定要確認導管在管腔內才算完成。</p>
           <ul><li>解剖：SCM 下、耳垂到胸鎖關節連線；下頸部在頸動脈前外側，兩者都走在 SCM 兩頭的三角裡。</li>
             <li>Trendelenburg 15° 直徑 +20–25%，再多無用；心衰竭鬱血不需要、顱內壓高不建議。頭轉 >40° 會把 IJV 拉到頸動脈上方。</li>
             <li>超音波：成功率↑、次數↓、時間↓、頸動脈穿刺 <b class="mono">9.2% → 1.8%</b>；探頭放三角頂點、橫切肌肉；因有重疊，一定要確認導管在管腔內。</li>
             <li><b>Landmark 前路</b>：三角頂點、bevel 朝上、朝同側乳頭 45°，5 cm 未進就退出偏外側再進；<b>後路</b>：EJV 越過 SCM 外緣上 1 cm，bevel 3 點鐘，沿肌肉下方朝胸骨上切跡，5–6 cm 進靜脈。</li>
             <li>併發症：探針穿到頸動脈 → 拔針壓 5 分鐘（凝血異常加倍）；<b>導管進頸動脈 → 留著，會診血管外科／介入放射</b>（拔除可致命）。血／氣胸 landmark 2%、超音波 <1%。CRBSI 0.5% vs 鎖骨下 1.4%（視為相當）。</li></ul></div></details>
       <details class="def-box"><summary>05 · 鎖骨下靜脈 <span class="en">Subclavian vein</span></summary>
-        <div class="box-inner"><p class="kp"><b>筋膜固定不塌陷、不隨呼吸變；離胸膜頂只 5 mm；超音波受鎖骨遮擋。</b></p>
+        <div class="box-inner"><p class="kp"><b>鎖骨下靜脈被筋膜固定不塌陷、不隨呼吸變；離胸膜頂只 5 mm；超音波受鎖骨遮擋</b></p><p class="kx">鎖骨下靜脈是腋靜脈越過第一肋之後的延續，夾在鎖骨與第一肋之間，有幾處離肺尖的胸膜只有 5 mm，這是氣胸風險的來源。它的特色是有強韌的筋膜把血管固定在周圍構造上、撐著不塌，所以直徑不隨呼吸變化，可能連低血容時也不塌，過去因此是中央通路的首選部位。但正因為上面蓋著鎖骨，超音波的視野受阻、壓迫辨識靜脈也難，即時超音波普及後它的地位反而下滑。鎖骨下動脈與臂神經叢就在靜脈深處、膈神經貼著靜脈後下方，針一定要貼著鎖骨下緣走，不要往深處扎。</p>
           <ul><li>3–4 cm 長、直徑 7–12 mm；坐在前斜角肌上，膈神經貼後下方；鎖骨下動脈與臂神經叢在深處。</li>
             <li>Trendelenburg 15° 只讓直徑 +10%，但為了防空氣栓塞仍建議；<b>轉頭、墊肩會縮小截面，不建議</b>。</li>
             <li>超音波（infraclavicular）：成功率 82 → 97%、併發症 30 → 11%；壓迫不易，可能要彩色 Doppler；結束時看肺滑動。</li>
             <li>Landmark：標出鎖骨上覆蓋靜脈的區段（SCM 鎖骨頭附著處），從外側鎖骨下緣進、貼著鎖骨下方朝胸骨上切跡，bevel 12 → 進靜脈後轉 3 點鐘導線才會往 SVC。病態肥胖避免 landmark。</li>
             <li>併發症：動脈穿刺 1–6%、氣胸 1–4%、臂神經叢 0–3%、膈神經 0–2%、位置不正 8–9%；<b>靜脈狹窄 15–50%</b> → 未來可能透析的手臂那側不要放。</li></ul></div></details>
       <details class="def-box"><summary>06 · 股靜脈 <span class="en">Femoral vein</span></summary>
-        <div class="box-inner"><p class="kp"><b>名聲最差但大多不成立：3SITES 的 CRBSI 與血栓風險在三個部位都低。</b></p>
+        <div class="box-inner"><p class="kp"><b>股靜脈名聲最差但大多不成立：3SITES 顯示三個部位的 CRBSI 與血栓風險都低</b></p><p class="kx">股靜脈長期被列為最不理想的中央通路，理由是血栓與感染。但 3SITES 這個多中心隨機試驗把三個部位直接比較，結果三處的感染與症狀性 DVT 發生率都低得出乎意料：股靜脈的 CRBSI 甚至低於最受青睞的內頸靜脈；股靜脈的症狀性 DVT 雖然是三處最高，整體風險仍小。其他研究也支持這個結論，所以作者認為股靜脈的壞名聲大多不成立。實務上它的優點是不進胸腔，沒有氣胸與空氣栓塞的顧慮；感染風險現在認為取決於維護而非部位。</p>
           <ul><li>股三角：腹股溝韌帶下，靜脈在動脈內側、離皮膚幾公分；<b>反 Trendelenburg 15° 截面 +50%</b>，腿外展。</li>
             <li>超音波建議但證據少；Landmark：脈搏內側 1–2 cm、深 2–4 cm；摸不到脈搏就把 ASIS 到恥骨結節三等分，動脈在中內 1/3 交界下方，靜脈再內側 1–2 cm（成功 >90%）。</li>
             <li>3SITES（2,532 條）：症狀性 DVT 股 1.4% 最高但整體小；CRBSI 三處都低。</li></ul>
           <div class="kbox alert"><div class="kbox-t">原文疑義</div>內文寫「股靜脈的導管相關敗血症風險其實<b>低於</b>內頸靜脈」，但同章表 2.2 的數字是 IJV 0.5%、股 1.2%。本頁以表格數字為準：股靜脈與其他部位<b>相當</b>，不是更低。</div></div></details>
       <details class="def-box"><summary>07 · 靜脈空氣栓塞 <span class="en">Venous air embolism</span></summary>
-        <div class="box-inner"><p class="kp"><b>5 mmHg 的壓差經 14 G 每秒可吸入 100 mL 空氣；200–300 mL（3–5 mL/kg）幾秒內就致命。</b></p>
+        <div class="box-inner"><p class="kp"><b>5 mmHg 壓差經 14 G 每秒吸入 100 mL 空氣，200–300 mL 幾秒內致命</b></p><p class="kx">靜脈空氣栓塞是中央靜脈插管少見但可能致命的併發症。自主呼吸時的胸內負壓會經由開放的針或導管把空氣吸進靜脈：只要 5 mmHg 的壓差，經 14 G 導管每秒就能吸入 100 mL，累積到 200–300 mL（3–5 mL/kg）就足以在幾秒內致命。空氣在右心室形成 air lock 阻擋血流，造成急性右心衰竭與心因性休克；到肺循環會引起微血管滲漏的肺水腫；若有卵圓孔未閉（PFO），氣泡進入動脈側就是栓塞性中風。這就是為什麼內頸與鎖骨下插管要用頭低位提高靜脈壓，操作中也要隨時蓋住開放的接頭。</p>
           <ul><li>機轉：自主呼吸的胸內負壓；右心 air lock → 急性右心衰竭與心因性休克；肺微血管滲漏水腫；PFO → 栓塞性中風。</li>
             <li>預防：IJV／鎖骨下用 Trendelenburg；股靜脈不進胸腔，不需要。</li>
             <li>表現可無聲；有症狀者突發呼吸困難、咳嗽 → 呼吸衰竭與休克；mill-wheel 雜音。TEE 最敏感（0.02 mL/kg）；心前區 Doppler 可用但不特異。</li>
             <li>處置（效果未證實）：從導管回抽空氣、100% O₂（把氮氣趕出氣泡）、<b>左側臥</b>、循環崩潰考慮體外支持。</li></ul></div></details>
       <details class="def-box"><summary>08 · 氣胸：超音波勝過仰臥 CXR <span class="en">Pneumothorax</span></summary>
-        <div class="box-inner"><p class="kp"><b>仰臥 portable CXR 漏掉多達 50% 的氣胸（積氣在前胸而非肺尖）；看肺滑動更敏感。</b></p>
+        <div class="box-inner"><p class="kp"><b>仰臥的攜帶型 CXR 會漏掉多達 50% 的氣胸，超音波看肺滑動更敏感</b></p><p class="kx">插完中央導管後照攜帶型胸部 X 光排除氣胸是慣例，但研究顯示它在重症病人會漏掉多達 50% 的氣胸。原因是姿勢：病人仰臥時，肋膜腔的空氣不會跑到肺尖，而是積在前胸、可能靠近肺底，影像上被後方的肺紋理蓋住，看不出典型的肺尖透亮區。超音波用同一支線陣探頭放在肋間，正常時兩層肋膜滑動會呈現閃爍的「肺滑動」，滑動消失就提示氣胸，敏感度高於仰臥 X 光，因此已被建議取代插管後的例行 CXR。要注意肺滑動消失不是氣胸專屬，還要配合臨床判斷。</p>
           <ul><li>多與鎖骨下有關（超音波 1%、否則 4%）。</li>
             <li>肺滑動消失提示氣胸，但 bleb、肋膜沾黏也會沒有滑動——不是病徵性的。超音波已被建議取代插管後 CXR。</li></ul></div></details>
       <details class="def-box"><summary>09 · 導管位置 <span class="en">Catheter position</span></summary>
-        <div class="box-inner"><p class="kp"><b>尖端在上腔靜脈、右心房上 1–2 cm ＝ CXR 上 carina 的高度；誤位 15–18%，多是鎖骨下。</b></p>
+        <div class="box-inner"><p class="kp"><b>尖端應在上腔靜脈、右心房上 1–2 cm（CXR 的 carina 高度），誤位 15–18%</b></p><p class="kx">從內頸或鎖骨下進的導管，尖端應落在上腔靜脈內、右心房上方 1–2 cm。攜帶型 CXR 的判讀標記是 carina（氣管分叉）：它剛好在上腔靜脈與右心房交界的上方，尖端在 carina 或略高就是正確位置。誤位發生在 15–18% 的插管，多數是鎖骨下導管往上跑進內頸靜脈。超音波可取代 CXR 做兩件事：插管當下掃雙側內頸靜脈，抓到往上跑的導管立刻修正；從肋下窗看右心房，看不到導管就做 bubble study，用微氣泡出現的時間判斷尖端是否在上腔靜脈。尖端已進右心房的話，現在認為不必重放。</p>
           <ul><li>超音波兩件事：鎖骨下導管先掃雙側 IJV 找往上跑的誤位（術中即可修正）；subcostal 看右心房內導管，看不到就 <b>bubble study</b>（遠端腔快推 10 mL 生理鹽水，2 秒內右心房出現微氣泡 ＝ 尖端在 SVC）。</li>
             <li><b>尖端進右心房不必重放</b>：2,348 例無心臟穿孔或惱人心律不整；「晚期心包填塞」被稱為都市傳說。</li></ul></div></details>
     </div>
@@ -295,6 +297,7 @@
     <div class="ch-nav sp-chips"><a class="sp-chip" href="#dwell/dw-key"><i>01</i>重點卡</a><a class="sp-chip" href="#dwell/dw-tab"><i>02</i>對照表</a><a class="sp-chip" href="#dwell/dw-calc"><i>03</i>計算</a><a class="sp-chip" href="#dwell/dw-flow"><i>04</i>流程</a><a class="sp-chip" href="#dwell/dw-quiz"><i>05</i>測驗</a><a class="sp-chip" href="#dwell/dw-x"><i>06</i>相關工具</a></div>
     <div class="lede">
       <div class="lede-title">這一章的三句話 The Chapter in Three Lines</div>
+      <p class="lede-intro">導管放進去只是開始，之後每一天都在累積併發症的風險。這一章前半是照護的三個「不要」：不要定期換管、不要用 heparin 沖、不要用導線通阻塞（改用 alteplase 溶）。後半講四大併發症：導管相關血栓（PICC 最多但幾乎都無症狀、不必拔管）、上腔靜脈穿孔與右心房穿孔造成的心包填塞（罕見但致命），以及占最大篇幅的導管相關血流感染（CRBSI）：為什麼 biofilm（生物膜）讓抗生素殺不掉、為什麼發燒與紅斑都不能診斷而要靠配對血液培養、疑似案例為什麼先留管、確認後如何依病原決定拔管與療程。結尾是作者 Marino 的個人觀點：感染源可能是腸道而不是皮膚。</p>
       <div class="lede-body">
         <div class="lede-item"><span>①</span><span><b>不要定期換管、不要用 heparin 沖、不要用導線通</b>：定期換管增加併發症，生理鹽水同效且沒有 HIT，導線會把血栓推成栓塞——阻塞用 alteplase 溶。</span></div>
         <div class="lede-item"><span>②</span><span><b>導管相關血流感染沒有臨床診斷</b>：發燒是發炎、紅斑無預測價值，要靠配對培養（導管血 ≥3 倍或早 ≥2 小時陽性），而且每一腔都要抽。</span></div>
@@ -304,56 +307,56 @@
     <div class="dirhead" id="dw-key"><span class="dh-n">重點卡</span><span class="dh-e">Key Points</span><button type="button" class="flow-link" data-expand="dw-kc">全部展開</button></div>
     <div id="dw-kc">
       <details class="def-box"><summary>01 · 敷料 <span class="en">Dressings</span></summary>
-        <div class="box-inner"><p class="kp"><b>透明敷料至少 7 天換一次（潮濕、有血、封閉破壞就換）；紗布 48 小時；chlorhexidine 海綿最防感染但只在有問題的單位建議。</b></p>
+        <div class="box-inner"><p class="kp"><b>透明敷料至少 7 天換、紗布 48 小時；chlorhexidine 海綿只在問題單位建議</b></p><p class="kx">穿刺處在導管留置期間都要蓋無菌敷料，三種選擇各有角色。透明聚氨酯敷料能看穿刺處、又能封閉隔離，是首選，至少 7 天換一次；但它會把皮膚滲出的水分悶在底下，潮濕、有血或封閉被破壞時反而助長菌落，一發現就要換。紗布防感染效果與透明敷料相當，至少 48 小時換一次或弄髒就換，適合皮膚難保持乾燥的病人，因為透明敷料在濕皮膚上黏不住。Chlorhexidine 浸漬海綿（如 Biopatch）蓋在穿刺處再貼透明敷料，防感染效果最好，但只建議用在導管相關感染居高不下的單位。</p>
           <ul><li>透明敷料可看穿刺處、封閉隔離，但濕皮膚黏不住 → 皮膚難保持乾就用紗布。</li><li>紗布與透明敷料防感染效果相當。</li></ul></div></details>
       <details class="def-box"><summary>02 · 不要定期換管 <span class="en">Replacing catheters</span></summary>
-        <div class="box-inner"><p class="kp"><b>定期更換不減感染、反而增加機械與感染併發症。</b></p>
+        <div class="box-inner"><p class="kp"><b>定期更換導管不減少感染，反而增加機械與感染併發症</b></p><p class="kx">過去有「放滿幾天就換管」的習慣，現在的證據很明確：定期或排程更換導管不會降低導管相關感染的發生率，反而因為每次重插都帶來新的機械與感染風險，整體併發症更多。所以換管要有理由，而理由是臨床徵象，不是日曆。周邊導管的靜脈炎多半是機械或化學刺激，本身不代表感染，除非穿刺處有膿。中央導管只在有感染證據時才換，單純的穿刺處紅斑沒有預測導管感染的價值，不需要因此換管。</p>
           <ul><li>周邊：局部靜脈炎（多是機械／化學刺激，不是感染，除非有膿）、外滲、通不開的阻塞才換。</li><li>中央：有感染證據（出口膿或確認的導管相關菌血症）才換；<b>只有紅斑不換</b>。</li></ul></div></details>
       <details class="def-box"><summary>03 · 沖洗與鎖管 <span class="en">Flushing &amp; locking</span></summary>
-        <div class="box-inner"><p class="kp"><b>保存劑 free 的生理鹽水是首選；heparin（10–1,000 U/mL）有 HIT 風險且不比較好。</b></p>
+        <div class="box-inner"><p class="kp"><b>沖洗與鎖管首選無保存劑生理鹽水；heparin 有 HIT 風險且效果不更好</b></p><p class="kx">間歇使用的導管不用時容易長血栓阻塞，所以要定期沖洗，並把溶液留在管腔內「鎖」住。傳統沖洗液加 heparin，濃度從 10 到 1,000 U/mL 不等，但 heparin 有引發 heparin 誘導性血小板低下（HIT）的風險，而系統性回顧顯示等張生理鹽水防阻塞的效果跟 heparin 一樣好，因此現行標準是用不含保存劑的 0.9% 生理鹽水沖洗與鎖管。動脈導管是例外：生理鹽水維持通暢的效果不夠，要避開 heparin 的話，1.4% sodium citrate 是可行的替代品。</p>
           <ul><li>動脈導管例外：生理鹽水不夠，1.4% sodium citrate 可取代 heparin。</li></ul></div></details>
       <details class="def-box"><summary>04 · 阻塞的導管 <span class="en">Occluded catheters</span></summary>
-        <div class="box-inner"><p class="kp"><b>60% 是血栓：alteplase 2 mg／2 mL 灌入、等 30 → 120 分鐘、可第二劑，80–90% 通；不通再想非血栓原因。</b></p>
+        <div class="box-inner"><p class="kp"><b>阻塞 60% 是血栓：alteplase 2 mg 灌入等 30–120 分鐘、可打第二劑，80–90% 通</b></p><p class="kx">導管阻塞很常見，60% 是血栓，其餘是機械因素、位置不對或藥物與礦物質的沉澱。短周邊阻塞就換，但中央導管這類難重放的長導管應盡力救回；千萬不要拿導線去通，會把血栓推出去變成栓塞。第一線是局部灌 alteplase（重組組織型胞漿素原活化劑）：2 mg 溶在 2 mL 無菌水灌滿管腔、封住接頭，30 分鐘後試回抽，不通再等到總共 120 分鐘，仍不通就打第二劑重來，這套流程能讓 80–90% 的阻塞導管恢復通暢。兩劑都不通才轉向非血栓原因，依沉澱物的酸鹼性選溶劑。</p>
           <ul><li>表現：流速慢、無流、幫浦一直警報、回抽困難；<b>小針筒回抽</b>（負壓小不會把管腔吸扁）。</li>
             <li>短周邊直接換；長導管盡量救；<b>不要用導線通</b>（推成栓塞）。</li>
             <li>Alteplase：Cathflo 2 mg 加 2 mL 無菌水（1 mg/mL）→ 灌 2 mL 封住 → 30 分鐘試回抽 → 不通再等 90 分鐘（共 120）→ 不通第二劑重複 → 通了先抽掉 5 mL 血。血管性水腫 11 例報告、無異常出血。</li>
             <li>非血栓：機械（縫線勒住）、位置、藥物或礦物沉澱——<b>鹼性沉澱用 NaHCO₃／NaOH、酸性用 HCl、脂質用 70% 乙醇</b>。</li></ul></div></details>
       <details class="def-box"><summary>05 · 導管相關血栓 <span class="en">Catheter-related thrombosis</span></summary>
-        <div class="box-inner"><p class="kp"><b>PICC 特別多但 >95% 無症狀；上肢 DVT 九成與導管有關；診斷靠壓迫超音波，不必拔管。</b></p>
+        <div class="box-inner"><p class="kp"><b>導管血栓 PICC 最多但 &gt;95% 無症狀；上肢 DVT 九成與導管有關，不必拔管</b></p><p class="kx">導管會傷內皮、讓血小板黏附而形成血栓；PICC 特別多，但超過 95% 的病人完全沒症狀。深部靜脈血栓（DVT）不只發生在腿：上肢 DVT 有九成歸因於導管（midline 或 PICC），另一個危險因子是癌症。多數上肢 DVT 的唯一線索是導管回抽變困難，完全阻塞才會出現手臂腫脹與肩部淺靜脈怒張。診斷首選壓迫超音波（塞滿血栓的靜脈壓不扁），D-dimer 在重症病人本來就高、不能拿來篩。導管不必拔，只有腫痛嚴重或不能抗凝時才拔；抗凝療程比照下肢 DVT。股靜脈導管的 DVT 風險同樣被高估。</p>
           <ul><li>上肢 DVT 占所有 DVT 約 5%；危險因子是導管與癌症（1/4–1/3 有活動性惡性腫瘤）。</li>
             <li>表現：回抽困難 → 上臂腫、麻、無力、肩部淺靜脈怒張（Urschel 徵）；SVC 症候群罕見；症狀性 PE <10%。</li>
             <li>壓迫超音波敏感 97%／特異 96%；重症病人 D-dimer 本來就高，<b>不能篩</b>。</li>
             <li>只有嚴重腫痛或抗凝禁忌才拔管；抗凝療程比照下肢 DVT（第 22 章）。股靜脈導管症狀性 DVT 只有 1.6%、與留置天數無關。</li></ul></div></details>
       <details class="def-box"><summary>06 · 上腔靜脈穿孔 <span class="en">SVC perforation</span></summary>
-        <div class="box-inner"><p class="kp"><b>左側導管尖端抵在 SVC 外側壁會侵蝕穿孔：突然的縱膈變寬＋肋膜積液是線索。</b></p>
+        <div class="box-inner"><p class="kp"><b>左側導管尖端抵在上腔靜脈外側壁會侵蝕穿孔：突然的縱膈變寬加肋膜積液是線索</b></p><p class="kx">從左側進的中央導管推進上腔靜脈（SVC）後，有時轉不過朝右心房向下的急彎，尖端就頂在 SVC 的外側壁上，久了會把血管壁磨穿，血與輸液漏進縱膈與肋膜腔。症狀（胸骨後痛、咳嗽、喘）都不特異，多半是胸部 X 光突然出現縱膈變寬加上肋膜積液才被想到。確認的方法是抽胸水看成分是否像輸液，或經導管打顯影劑看它是否跑到縱膈或肋膜腔。一懷疑就先停掉這條導管的輸注；確診後拔管是安全的，不會引發縱膈出血；胸水沒有感染證據就不必用抗生素。事先看 CXR 上的尖端位置就能避免。</p>
           <ul><li>症狀不特異（胸骨後痛、咳、喘）；胸水成分像輸液；顯影劑經導管注射見縱膈或肋膜腔內即確診。</li>
             <li>疑似就停止輸注；確診拔管（不會引發縱膈出血）；胸水無感染證據不需抗生素。</li></ul></div></details>
       <details class="def-box"><summary>07 · 心包填塞 <span class="en">Cardiac tamponade</span></summary>
-        <div class="box-inner"><p class="kp"><b>最致命的導管併發症（右心房穿孔），幸好罕見：突發呼吸困難、一小時內崩潰。</b></p>
+        <div class="box-inner"><p class="kp"><b>心包填塞是最致命的導管併發症：右心房穿孔，突發呼吸困難、一小時內崩潰</b></p><p class="kx">導管尖端穿破右心房壁，血與輸液灌進心包腔，就是心包填塞——中央導管最致命的併發症，幸好極罕見。第一個徵象通常是突然的呼吸困難，接著可能在一小時內進展到循環崩潰。診斷靠床邊超音波：心包積液加上右心舒張期塌陷，就要立刻做心包穿刺減壓讓右心能充填；心壁裂口大的話還需要緊急開胸修補。文獻報告的死亡率從 40% 到 100%，關鍵是想到它並在幾分鐘內處理。與此相關的更新是：尖端只是進到右心房而沒有穿孔，現在已不視為必須重放的理由。</p>
           <ul><li>超音波：心包積液＋右心舒張期塌陷 → <b>立即心包穿刺</b>；大裂口需緊急開胸。死亡率 40–100%。</li></ul></div></details>
       <details class="def-box"><summary>08 · 導管相關血流感染：機轉與 biofilm <span class="en">CRBSI pathogenesis</span></summary>
-        <div class="box-inner"><p class="kp"><b>留置導管是院內血流感染主因，死亡率 12–25%，4.6 次／1,000 導管日；biofilm 讓抗生素需要 100–1,000 倍濃度。</b></p>
+        <div class="box-inner"><p class="kp"><b>留置導管是院內血流感染主因，死亡率 12–25%；biofilm 讓抗生素要 100–1,000 倍</b></p><p class="kx">除了短周邊以外的留置血管導管，是院內血流感染最主要的來源；ICU 病人一旦發生導管相關敗血症，死亡率 12–25%，中央通路的平均感染率是每 1,000 導管日 4.6 次。細菌附著在導管上後分泌 adhesin 黏牢，再分泌由多醣、蛋白、纖維蛋白與 DNA 組成的黏液（slime），形成 biofilm（生物膜）。生物膜是細菌的保護殼：吞噬細胞吃不到裡面的菌，要殺死膜內細菌的抗生素濃度是殺游離菌的 100–1,000 倍，而導管放一天就已經有生物膜。這解釋了為什麼單靠系統性抗生素不是 CRBSI 的理想治療。</p>
           <ul><li>四條路：污染的輸液（罕見）、接頭處進管腔（隧道式導管為主）、皮膚菌沿皮下徑（經皮導管的傳統主因）、血中菌附著血管內段。</li>
             <li>Biofilm：adhesins 黏附 → 分泌 slime（多醣、蛋白、纖維蛋白、DNA）；吞噬細胞吃不到；<b>放一天的導管就有 biofilm</b>；CoNS 特別會產 slime。</li>
             <li>意涵：系統性抗生素不是 CRBSI 的最佳治療（達到殺菌濃度會中毒）。</li></ul></div></details>
       <details class="def-box"><summary>09 · 診斷：配對培養 <span class="en">Diagnosis</span></summary>
-        <div class="box-inner"><p class="kp"><b>48 小時內不會發生；發燒、白血球、紅斑都不能診斷；要周邊血陽性＋導管是來源的證據。</b></p>
+        <div class="box-inner"><p class="kp"><b>CRBSI 48 小時內不會發生；發燒、白血球、紅斑都不能診斷，要靠配對培養</b></p><p class="kx">導管相關血流感染（CRBSI）不會在插管後 48 小時內出現，那是菌落定植需要的時間。它的臨床表現全都不特異：發燒與白血球升高是發炎而非感染的證據，穿刺處紅斑對預測導管感染沒有價值，穿刺處流膿算感染，但可能只是出口感染而沒進血流。所以診斷要靠培養：先要有周邊靜脈的血液培養陽性，再要有導管是來源的證據。現行方法是配對培養——導管血與周邊血同時抽，導管血的菌落數 ≥3 倍（定量法）或轉陽早 ≥2 小時（時間差法）。每一腔都要各抽一套，只抽一腔會漏掉相當比例的病例。</p>
           <ul><li><b>定量法</b>：導管血菌落數 ≥3 倍周邊血（準確 94%）；<b>時間差法</b>：導管血早 ≥2 小時轉陽（91%）——差別小、後者便宜。實務常只憑同菌種且無其他來源。</li>
             <li>尖端半定量培養已退場：要拔管、且漏掉腔內感染。</li>
             <li><b>每一腔都抽</b>：只抽一腔漏 38%；混合抽不夠靈敏。</li></ul></div></details>
       <details class="def-box"><summary>10 · 治療：經驗性用藥、拔管指徵、lock、療程 <span class="en">Management</span></summary>
-        <div class="box-inner"><p class="kp"><b>培養後立即 vancomycin；疑似案例只有 11% 確認，先留管；確認後依病原決定拔管與天數。</b></p>
+        <div class="box-inner"><p class="kp"><b>抽完培養立即給 vancomycin；疑似案例只有 11% 確認，先留管，確認後依病原處置</b></p><p class="kx">疑似 CRBSI 的 ICU 病人，抽完培養就要立刻開始經驗性抗生素。骨幹是 vancomycin，因為葡萄球菌加腸球菌就占了將近一半的病原；中性球低下或重症要加革蘭氏陰性菌覆蓋，有危險因子時加 echinocandin 覆蓋 Candida。導管先不要急著拔：一項研究拔了 1,527 條疑似感染的導管，最後只有 169 條（11%）證實，所以等培養結果再決定。一旦確認，是否拔管看病人是否不穩、病原是哪一種、治療是否有效；若導管留著，全身抗生素殺不掉生物膜裡的菌，要配合 antibiotic lock。</p>
           <ul><li>葡萄球菌＋腸球菌占 45%；MRSA MIC >2 或 VRE 疑慮 → daptomycin。中性球低下或重症加 GN 覆蓋（carbapenem／cefepime／pip-tazo），疑 MDR 加 aminoglycoside。</li>
             <li>Candida 覆蓋（echinocandin）：股靜脈導管、TPN、血液惡性腫瘤、長期抗生素、近期移植、他處有 Candida。</li>
             <li><b>拔管</b>：不穩或 MOF 惡化、心內膜炎或化膿性血栓靜脈炎、S. aureus／Candida／Pseudomonas／MDR GN、適當治療 >96 小時仍菌血症。換新穿刺點、不走導線（血管極少例外）。</li>
             <li><b>Antibiotic lock</b>：同一抗生素 2–5 mg/mL 於 heparinized saline，每腔留 24 小時、每天換，配合全身療程；不能鎖就從可疑腔給藥。</li>
             <li>療程：CoNS 且 72 小時反應好 ≤7 天；S. aureus 先 TEE，無心內膜炎＋已拔管＋非免疫低下＋無人工裝置 → 14 天，否則 4–6 週；腸球菌／GN 7–14 天。</li></ul></div></details>
       <details class="def-box"><summary>11 · 治了 72 小時還敗血 <span class="en">Persistent sepsis</span></summary>
-        <div class="box-inner"><p class="kp"><b>找化膿性血栓靜脈炎（血管內膿瘍）與心內膜炎。</b></p>
+        <div class="box-inner"><p class="kp"><b>抗生素治了 72 小時仍敗血，要找化膿性血栓靜脈炎（血管內膿瘍）與心內膜炎</b></p><p class="kx">適當的抗生素用了 72 小時，敗血症的徵象或菌血症還在，就不能只是換抗生素，要找兩個藏匿處。第一是化膿性血栓靜脈炎：導管周圍的血栓把導管上的細菌困在裡面，血是很好的培養基，血栓就變成一顆血管內膿瘍，最常見的病原是 S. aureus；它常沒有局部症狀，診斷靠超音波看到插管血管內有血栓，加上找不到其他來源的持續菌血症。第二是心內膜炎：院內心內膜炎有三到五成與血管導管有關，而 S. aureus 的院內心內膜炎有三分之二聽不到雜音，所以 S. aureus 菌血症一律做經食道超音波（TEE）。</p>
           <ul><li>化膿性血栓靜脈炎：S. aureus 最常見；出口膿、肢體腫、肺多發空洞（敗血栓塞）；超音波血栓＋持續菌血症無他源 → 拔管＋4–6 週抗生素，手術罕見，heparin 考慮。</li>
             <li>院內心內膜炎每年 2–3 例、導管占 30–50%、葡萄球菌 75%（MRSA 漸多）；<b>2/3 沒有雜音</b> → S. aureus 菌血症一律 TEE。</li></ul></div></details>
       <details class="def-box"><summary>12 · 作者觀點：來源是腸道不是皮膚 <span class="en">A Final Word</span></summary>
-        <div class="box-inner"><p class="kp"><b>皮膚菌與尖端菌相關性差、抗生素藥膏無效、周邊導管少感染；一半病原是腸道菌、腸道去污能大減 CRBSI。</b></p>
+        <div class="box-inner"><p class="kp"><b>作者觀點：CRBSI 的來源可能是腸道不是皮膚，我們一直在消毒錯的表面</b></p><p class="kx">這是作者 Marino 的主張，不是現行指引。主流模型認為皮膚菌沿導管的皮下徑往下爬、定植在導管尖端，但有幾個觀察對不上：穿刺處皮膚的菌與導管尖端的菌相關性差、穿刺處塗抗生素藥膏不減少感染、離皮膚最近的周邊導管反而很少引起菌血症。指向腸道的證據則有：革蘭氏陰性菌、腸球菌與 Candida 這些腸道居民占了一半的病原，上消化道培養與導管尖端培養的相關性比皮膚好，用不吸收的抗生素做腸道去污能大幅減少甚至消除 CRBSI。作者的解釋是：長導管的血管內段在隱性菌血症時被腸道菌播種，再反過來播種血流。</p>
           <ul><li>S. epidermidis 是 MOF 病人上消化道最盛行的菌之一——名字裡的 epidermidis 是誤稱。</li><li>長導管的血管內段在隱性菌血症時被播種，再反過來播種血流。</li><li>「如果來源不是皮膚，我們一直在消毒錯的表面。」</li></ul>
           <div class="kc-tags"><span class="dg-tag">作者觀點，非指引</span></div></div></details>
     </div>
